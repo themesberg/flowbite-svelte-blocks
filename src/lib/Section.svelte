@@ -6,7 +6,8 @@
 		| 'logos'
 		| 'feature'
 		| 'content'
-		| 'contentwithimg' = 'heroDefault';
+		| 'contentwithimg'
+		| 'headingwithctabutton' = 'heroDefault';
 	const sectionClasses = {
 		heroDefault: {
 			section: 'bg-white dark:bg-gray-900',
@@ -31,6 +32,10 @@
 		contentwithimg: {
 			section: 'bg-white dark:bg-gray-900',
 			div: 'gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6'
+		},
+		headingwithctabutton: {
+			section: 'bg-white dark:bg-gray-900',
+			div: 'py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6'
 		}
 	};
 </script>

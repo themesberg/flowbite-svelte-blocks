@@ -4,12 +4,15 @@ export { default as Section } from './Section.svelte'
 export { default as Content } from './content/Content.svelte'
 export { default as ContentWithImage } from './content/ContentWithImage.svelte'
 
+// cta
+export { default as HeadingWithCtaButton } from './cta/HeadingWithCtaButton.svelte'
+
 // feature
 export { default as FeatureDefault } from './feature/FeatureDefault.svelte'
 export { default as FeatureItem } from './feature/FeatureItem.svelte'
 
 // header
-// export { default as Navigation } from './headers/Navigation.svelte'
+// export { default as Navigation } from './header/Navigation.svelte'
 
 // hero
 export { default as HeroBody } from './hero/HeroBody.svelte'
