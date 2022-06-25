@@ -8,7 +8,15 @@
 		Content,
 		HeadingWithCtaButton
 	} from '$lib/index';
-	import { Navbar, NavBrand, NavHamburger, NavUl, NavLi, Button } from 'flowbite-svelte';
+	import {
+		Navbar,
+		NavBrand,
+		NavHamburger,
+		NavUl,
+		NavLi,
+		Button,
+		SocialMediaFooter
+	} from 'flowbite-svelte';
 	import {
 		ArrowRight,
 		PresentationChartLine,
@@ -25,6 +33,62 @@
 	import Mashable from './utils/icons/Mashable.svelte';
 	import Microsoft from './utils/icons/Microsoft.svelte';
 	import Spotify from './utils/icons/Spotify.svelte';
+	import { Facebook, Github, Twitter, Instagram } from 'svelte-simples';
+	let site = {
+		href: '/',
+		name: 'Flowbite',
+		img: 'https://flowbite.com/docs/images/logo.svg'
+	};
+	let links = [
+		{
+			parent: 'RESOURCES',
+			children: [
+				{ name: 'Flowbite-Svelte', href: '/' },
+				{
+					name: 'Flowbite',
+					href: '/'
+				}
+			]
+		},
+		{
+			parent: 'FOLLOW US',
+			children: [
+				{ name: 'Github', href: '/' },
+				{
+					name: 'Flowbite',
+					href: '/'
+				}
+			]
+		},
+		{
+			parent: 'LEGAL',
+			children: [
+				{ name: 'Privacy Policy', href: '/' },
+				{
+					name: 'Terms & Conditions',
+					href: '/'
+				}
+			]
+		}
+	];
+	let socialMedia = [
+		{
+			href: '/',
+			icon: Facebook
+		},
+		{
+			href: '/',
+			icon: Github
+		},
+		{
+			href: '/',
+			icon: Twitter
+		},
+		{
+			href: '/',
+			icon: Instagram
+		}
+	];
 	let navClass = 'bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800';
 	let navDivClass = 'flex flex-wrap justify-between items-center mx-auto max-w-screen-xl';
 </script>
@@ -277,3 +341,4 @@
 		>
 	</HeadingWithCtaButton>
 </Section>
+<SocialMediaFooter {socialMedia} {links} {site} />
