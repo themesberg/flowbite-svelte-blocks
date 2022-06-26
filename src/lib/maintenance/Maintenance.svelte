@@ -8,7 +8,7 @@
 	export let pClass: string = 'font-light text-gray-500 md:text-lg xl:text-xl dark:text-gray-400';
 </script>
 
-<Icon />
+<svelte:component this={Icon} />
 
 {#if $$slots.h1}
 	<h1 class={classNames(h1Class, $$props.classH1)}><slot name="h1" /></h1>
