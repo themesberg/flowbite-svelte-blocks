@@ -13,7 +13,7 @@ export { default as Content } from './content/Content.svelte'
 export { default as ContentWithImage } from './content/ContentWithImage.svelte'
 
 // cta
-export { default as HeadingWithCtaButton } from './cta/HeadingWithCtaButton.svelte'
+export { default as Cta } from './cta/Cta.svelte'
 
 // feature
 export { default as FeatureDefault } from './feature/FeatureDefault.svelte'
