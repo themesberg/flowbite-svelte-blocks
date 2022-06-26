@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.1.1...v0.1.2) (2022-06-26)
+
+
+### Bug Fixes
+
+* svg link update ([46f22b8](https://github.com/shinokada/flowbite-svelte-blocks/commit/46f22b86c73a16d778be0a6adef85724e24ddc2a))
+
 ### [0.1.1](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.1.0...v0.1.1) (2022-06-26)
 
 ## 0.1.0 (2022-06-26)
