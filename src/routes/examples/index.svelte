@@ -27,12 +27,12 @@
 		Collection,
 		ChevronRight
 	} from 'svelte-heros';
-	import Airbnb from './utils/icons/Airbnb.svelte';
-	import Google from './utils/icons/Google.svelte';
-	import Mailchimp from './utils/icons/Mailchimp.svelte';
-	import Mashable from './utils/icons/Mashable.svelte';
-	import Microsoft from './utils/icons/Microsoft.svelte';
-	import Spotify from './utils/icons/Spotify.svelte';
+	import Airbnb from '../utils/icons/Airbnb.svelte';
+	import Google from '../utils/icons/Google.svelte';
+	import Mailchimp from '../utils/icons/Mailchimp.svelte';
+	import Mashable from '../utils/icons/Mashable.svelte';
+	import Microsoft from '../utils/icons/Microsoft.svelte';
+	import Spotify from '../utils/icons/Spotify.svelte';
 	import { Facebook, Github, Twitter, Instagram } from 'svelte-simples';
 	let site = {
 		href: '/',
