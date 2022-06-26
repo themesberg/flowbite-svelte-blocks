@@ -1,6 +1,15 @@
 {
-	"name": "flowbite-blocks-svelte",
+	"name": "flowbite-svelte-blocks",
 	"version": "0.0.1",
+	"description": "Flowbite blocks components for Svelte",
+	"author": {
+		"name": "Shinichi Okada",
+		"email": "connect@codewithshin.com",
+		"url": "https://blog.codewithshin.com"
+	},
+	"bugs": "https://github.com/shinokada/flowbite-svelte-blocks/issues",
+	"homepage": "https://github.com/shinokada/flowbite-svelte-blocks",
+	"license": "MIT",
 	"scripts": {
 		"dev": "svelte-kit dev",
 		"build": "svelte-kit build",
@@ -39,5 +48,15 @@
 		"tslib": "^2.3.1",
 		"typescript": "^4.7.2"
 	},
-	"type": "module"
+	"type": "module",
+	"keywords": [
+		"svelte",
+		"sveltekit",
+		"flowbite",
+		"flowbite blocks"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/shinokada/flowbite-svelte-blocks"
+	}
 }
