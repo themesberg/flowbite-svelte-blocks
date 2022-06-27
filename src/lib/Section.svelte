@@ -12,8 +12,10 @@
 		| 'heroVisual'
 		| 'logos'
 		| 'maintenance'
+		| 'none'
 		| 'page500'
-		| 'page404' = 'heroDefault';
+		| 'page404'
+		| 'pricing' = 'heroDefault';
 	const sectionClasses = {
 		blog: {
 			section: 'bg-white dark:bg-gray-900',
@@ -47,7 +49,6 @@
 			section: 'bg-white dark:bg-gray-900',
 			div: 'py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12'
 		},
-
 		heroVisual: {
 			section: 'bg-white dark:bg-gray-900',
 			div: 'grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12'
@@ -60,6 +61,10 @@
 			section: 'bg-white dark:bg-gray-900',
 			div: 'py-8 px-4 mx-auto max-w-screen-md text-center lg:py-16 lg:px-12'
 		},
+		none: {
+			section: '',
+			div: ''
+		},
 		page500: {
 			section: 'bg-white dark:bg-gray-900',
 			div: 'py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6'
@@ -67,12 +72,16 @@
 		page404: {
 			section: 'bg-white dark:bg-gray-900',
 			div: 'py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6'
+		},
+		pricing: {
+			section: 'bg-white dark:bg-gray-900',
+			div: 'py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6'
 		}
 	};
 </script>
 
-<section class={classNames(sectionClasses[name]['section'], $$props.class)}>
-	<div class={classNames(sectionClasses[name]['div'])}>
+<section class={classNames(sectionClasses[name]['section'], $$props.classSection)}>
+	<div class={classNames(sectionClasses[name]['div'], $$props.classDiv)}>
 		<slot />
 	</div>
 </section>

@@ -6,8 +6,8 @@
 <Section name="feature">
 	<HeroHeader
 		class="max-w-screen-md mb-8 lg:mb-16"
-		h2Class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
-		pClass="text-gray-500 sm:text-xl dark:text-gray-400"
+		h2Class="mb-1 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"
+		pClass="text-lg text-gray-500 lg:mb-0 dark:text-gray-400 lg:max-w-2xl"
 	>
 		<svelte:fragment slot="h2">Content Default</svelte:fragment>
 	</HeroHeader>
@@ -39,8 +39,8 @@
 <Section name="feature">
 	<HeroHeader
 		class="max-w-screen-md mb-8 lg:mb-16"
-		h2Class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
-		pClass="text-gray-500 sm:text-xl dark:text-gray-400"
+		h2Class="mb-1 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"
+		pClass="text-lg text-gray-500 lg:mb-0 dark:text-gray-400 lg:max-w-2xl"
 	>
 		<svelte:fragment slot="h2">Content with Image</svelte:fragment>
 	</HeroHeader>

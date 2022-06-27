@@ -10,8 +10,8 @@
 <Section name="feature">
 	<HeroHeader
 		class="max-w-screen-md mb-8 lg:mb-16"
-		h2Class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
-		pClass="text-gray-500 sm:text-xl dark:text-gray-400"
+		h2Class="mb-1 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"
+		pClass="text-lg text-gray-500 lg:mb-0 dark:text-gray-400 lg:max-w-2xl"
 	>
 		<svelte:fragment slot="h2">Default hero section</svelte:fragment>
 		<svelte:fragment slot="paragraph">
@@ -20,6 +20,7 @@
 		</svelte:fragment>
 	</HeroHeader>
 </Section>
+
 <Section>
 	<News>
 		<span class="text-xs bg-primary-600 rounded-full text-white px-4 py-1.5 mr-3">New</span>
@@ -68,8 +69,8 @@
 <Section name="feature">
 	<HeroHeader
 		class="max-w-screen-md mb-8 lg:mb-16"
-		h2Class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
-		pClass="text-gray-500 sm:text-xl dark:text-gray-400"
+		h2Class="mb-1 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"
+		pClass="text-lg text-gray-500 lg:mb-0 dark:text-gray-400 lg:max-w-2xl"
 	>
 		<svelte:fragment slot="h2">Visual</svelte:fragment>
 		<svelte:fragment slot="paragraph">

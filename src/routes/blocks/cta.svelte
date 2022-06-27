@@ -1,8 +1,29 @@
 <script lang="ts">
-	import { Section, Cta } from '$lib';
+	import { Section, Cta, HeroHeader } from '$lib';
 </script>
 
-Default
+<h1 class="inline-block mb-2 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+	Tailwind CSS CTA Sections - Flowbite
+</h1>
+
+<p class="text-lg text-gray-500 xl:mr-64 lg:mb-0 dark:text-gray-400">
+	The CTA (call to action) website sections can be used anywhere on your website to encourage your
+	users to take any action, such as creating a new account.
+</p>
+
+<Section name="feature">
+	<HeroHeader
+		class="max-w-screen-md mb-8 lg:mb-16"
+		h2Class="mb-1 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"
+		pClass="text-lg text-gray-500 lg:mb-0 dark:text-gray-400 lg:max-w-2xl"
+	>
+		<svelte:fragment slot="h2">Default CTA</svelte:fragment>
+		<svelte:fragment slot="paragraph">
+			Use this example to show a simple heading, paragraph, and a couple of CTA buttons to encourage
+			users to take action.
+		</svelte:fragment>
+	</HeroHeader>
+</Section>
 
 <Section name="cta">
 	<Cta>
@@ -30,7 +51,19 @@ Default
 	</Cta>
 </Section>
 
-Image with CTA button
+<Section name="feature">
+	<HeroHeader
+		class="max-w-screen-md mb-8 lg:mb-16"
+		h2Class="mb-1 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"
+		pClass="text-lg text-gray-500 lg:mb-0 dark:text-gray-400 lg:max-w-2xl"
+	>
+		<svelte:fragment slot="h2">Image with CTA button</svelte:fragment>
+		<svelte:fragment slot="paragraph">
+			Use this example to show an image or app screenshot next to the CTA button to provide
+			additional visual impact.
+		</svelte:fragment>
+	</HeroHeader>
+</Section>
 
 <Section name="ctawithimg">
 	<Cta ctatype="image">
@@ -62,7 +95,19 @@ Image with CTA button
 	</Cta>
 </Section>
 
-Heading with CTA button
+<Section name="feature">
+	<HeroHeader
+		class="max-w-screen-md mb-8 lg:mb-16"
+		h2Class="mb-1 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"
+		pClass="text-lg text-gray-500 lg:mb-0 dark:text-gray-400 lg:max-w-2xl"
+	>
+		<svelte:fragment slot="h2">Heading with CTA button</svelte:fragment>
+		<svelte:fragment slot="paragraph">
+			Use this simple yet effective CTA section with a heading, short paragraph, and a button to
+			encourage users to start a free trial.
+		</svelte:fragment>
+	</HeroHeader>
+</Section>
 
 <Section name="cta">
 	<Cta ctatype="heading">
