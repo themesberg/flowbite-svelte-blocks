@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { Section, HeroHeader, FeatureDefault, FeatureItem } from '$lib';
 	import {
+		Home,
 		PresentationChartLine,
 		AcademicCap,
 		Cog,
@@ -10,7 +11,7 @@
 	} from 'svelte-heros';
 	import ExampleDiv from '../utils/ExampleDiv.svelte';
 	import SectionHeader from '../utils/SectionHeader.svelte';
-	import { Breadcrumb } from 'flowbite-svelte';
+	import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
 	let crumbs = [
 		{
 			label: 'Blocks',
@@ -24,7 +25,10 @@
 </script>
 
 <SectionHeader>
-	<Breadcrumb {crumbs} />
+	<Breadcrumb navClass="flex mb-3">
+		<BreadcrumbItem href="/" icon={Home} variation="solid">Blocks</BreadcrumbItem>
+		<BreadcrumbItem>Feature Sections</BreadcrumbItem>
+	</Breadcrumb>
 	<svelte:fragment slot="h1">Tailwind CSS Feature Sections - Flowbite</svelte:fragment>
 	<svelte:fragment slot="paragraph"
 		>Get started with a collection of responsive website sections built with Tailwind CSS to

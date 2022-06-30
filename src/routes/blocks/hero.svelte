@@ -1,24 +1,37 @@
 <script>
 	import { Section, News, HeroHeader, HeroBody } from '$lib/index';
-	import { Button } from 'flowbite-svelte';
-	import { ArrowRight, VideoCamera } from 'svelte-heros';
+	import { Button, Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
+	import { ArrowRight, VideoCamera, Home } from 'svelte-heros';
 	import Youtube from '../utils/icons/Youtube.svelte';
 	import ProductHunt from '../utils/icons/ProductHunt.svelte';
 	import Reddit from '../utils/icons/Reddit.svelte';
+	import SectionHeader from '../utils/SectionHeader.svelte';
 </script>
 
-<Section name="feature">
-	<HeroHeader
-		class="max-w-screen-md mb-8 lg:mb-16"
-		h2Class="mb-1 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"
-		pClass="text-lg text-gray-500 lg:mb-0 dark:text-gray-400 lg:max-w-2xl"
+<SectionHeader>
+	<Breadcrumb navClass="flex mb-3">
+		<BreadcrumbItem href="/" icon={Home} variation="solid">Blocks</BreadcrumbItem>
+		<BreadcrumbItem>Hero Sections</BreadcrumbItem>
+	</Breadcrumb>
+	<svelte:fragment slot="h1">Tailwind CSS Hero Sections - Flowbite</svelte:fragment>
+	<svelte:fragment slot="paragraph"
+		>Get started with a collection of hero sections coded with Tailwind CSS to showcase the most
+		important parts of your website based on multiple styles and layouts.</svelte:fragment
 	>
-		<svelte:fragment slot="h2">Default hero section</svelte:fragment>
-		<svelte:fragment slot="paragraph">
-			Use this default example with an announcement badge, heading, CTA buttons, and customer logos
-			to showcase what your website offers.
-		</svelte:fragment>
-	</HeroHeader>
+</SectionHeader>
+
+<Section name="none" classSection="py-6 sm:py-10" classDiv="px-4 mx-auto max-w-8xl">
+	<div class="grid lg:grid-cols-2">
+		<div>
+			<h2 class="mb-1 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+				Default hero section
+			</h2>
+			<p class="text-lg text-gray-500 lg:mb-0 dark:text-gray-400 lg:max-w-2xl">
+				Use this default example with an announcement badge, heading, CTA buttons, and customer
+				logos to showcase what your website offers.
+			</p>
+		</div>
+	</div>
 </Section>
 
 <Section>

@@ -70,7 +70,7 @@
 	let btnClass =
 		'text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2 ml-2';
 	let footerClass = 'justify-self-end pt-16 pb-8 lg:pt-24 lg:pb-10';
-  let divClass='px-4 mx-auto max-w-8xl lg:px-4'
+	let divClass = 'px-4 mx-auto max-w-8xl lg:px-4';
 </script>
 
 <div class="flex flex-col min-h-screen bg-white dark:bg-gray-900">

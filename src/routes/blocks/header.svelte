@@ -1,8 +1,31 @@
 <script>
-	import { Navbar, NavBrand, NavHamburger, NavUl, NavLi, Button } from 'flowbite-svelte';
+	import {
+		Navbar,
+		NavBrand,
+		NavHamburger,
+		NavUl,
+		NavLi,
+		Button,
+		Breadcrumb,
+		BreadcrumbItem
+	} from 'flowbite-svelte';
+	import SectionHeader from '../utils/SectionHeader.svelte';
+	import { ArrowRight, VideoCamera, Home } from 'svelte-heros';
 	let navClass = 'bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800';
 	let navDivClass = 'flex flex-wrap justify-between items-center mx-auto max-w-screen-xl';
 </script>
+
+<SectionHeader>
+	<Breadcrumb navClass="flex mb-3">
+		<BreadcrumbItem href="/" icon={Home} variation="solid">Blocks</BreadcrumbItem>
+		<BreadcrumbItem>Headers</BreadcrumbItem>
+	</Breadcrumb>
+	<svelte:fragment slot="h1">Tailwind CSS Header - Flowbite</svelte:fragment>
+	<svelte:fragment slot="paragraph"
+		>Get started with the header component for the navigation of a website featuring multi-level
+		dropdowns, mega-menus, search bars, language selectors, and more.</svelte:fragment
+	>
+</SectionHeader>
 
 <header>
 	<Navbar let:hidden let:toggle fluid={false} {navClass} {navDivClass}>
