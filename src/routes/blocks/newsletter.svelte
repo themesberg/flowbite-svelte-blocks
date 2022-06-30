@@ -1,0 +1,37 @@
+<script lang="ts">
+	import { Section } from '$lib';
+	import { ExampleDiv, SectionHeader, EditOnGithub } from '../utils/index';
+	import { Button, Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
+	import { Home } from 'svelte-heros';
+</script>
+
+<SectionHeader>
+	<Breadcrumb navClass="flex mb-3">
+		<BreadcrumbItem href="/" icon={Home} variation="solid">Blocks</BreadcrumbItem>
+		<BreadcrumbItem>Newsletter Sections</BreadcrumbItem>
+	</Breadcrumb>
+	<svelte:fragment slot="h1">Tailwind CSS Newsletter - Flowbite</svelte:fragment>
+	<svelte:fragment slot="paragraph"
+		>The newsletter component is an important marketing method that you can use to convince website
+		visitors to sign up for additional news from your organization.</svelte:fragment
+	>
+</SectionHeader>
+
+<Section name="none" classSection="py-6 sm:py-10" classDiv="px-4 mx-auto max-w-8xl">
+	<div class="grid lg:grid-cols-2">
+		<div>
+			<h2 class="mb-1 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+				Default newsletter
+			</h2>
+			<p class="text-lg text-gray-500 lg:mb-0 dark:text-gray-400 lg:max-w-2xl">
+				Use this example as a website section to allow website visitors to sign up for your
+				newsletter program featuring an input field and privacy notice.
+			</p>
+			<EditOnGithub
+				size="18"
+				href="https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/blocks/newsletter.svelte"
+				iconClass="text-gray-500"
+			/>
+		</div>
+	</div>
+</Section>
