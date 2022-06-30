@@ -2,6 +2,9 @@
 	import { Section, HeroHeader } from '$lib/index';
 	import { SocialMediaFooter } from 'flowbite-svelte';
 	import { Facebook, Github, Twitter, Instagram } from 'svelte-simples';
+	import { ExampleDiv, SectionHeader, EditOnGithub } from '../utils/index';
+	import { Button, Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
+	import { Home } from 'svelte-heros';
 	let site = {
 		href: '/',
 		name: 'Flowbite',
@@ -59,18 +62,35 @@
 	];
 </script>
 
-<Section name="feature">
-	<HeroHeader
-		class="max-w-screen-md mb-8 lg:mb-16"
-		h2Class="mb-1 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"
-		pClass="text-lg text-gray-500 lg:mb-0 dark:text-gray-400 lg:max-w-2xl"
+<SectionHeader>
+	<Breadcrumb navClass="flex mb-3">
+		<BreadcrumbItem href="/" icon={Home} variation="solid">Blocks</BreadcrumbItem>
+		<BreadcrumbItem>Footer Sections</BreadcrumbItem>
+	</Breadcrumb>
+	<svelte:fragment slot="h1">Tailwind CSS Footer Sections - Flowbite</svelte:fragment>
+	<svelte:fragment slot="paragraph"
+		>Get started with footer sections coded in Tailwind CSS to use at the bottom of every page of
+		your website and showcase your logo, sitemap links, and more.</svelte:fragment
 	>
-		<svelte:fragment slot="h2">Sitemap with logo and social media</svelte:fragment>
-		<svelte:fragment slot="paragraph">
-			Use this footer section to show the logo of your brand, the sitemap, social media accounts,
-			and the copyright notice.
-		</svelte:fragment>
-	</HeroHeader>
+</SectionHeader>
+
+<Section name="none" classSection="py-6 sm:py-10" classDiv="px-4 mx-auto max-w-8xl">
+	<div class="grid lg:grid-cols-2">
+		<div>
+			<h2 class="mb-1 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+				Default footer section
+			</h2>
+			<p class="text-lg text-gray-500 lg:mb-0 dark:text-gray-400 lg:max-w-2xl">
+				Use this example of a footer section to show the logo of your brand, a description, links,
+				and the copyright notice.
+			</p>
+			<EditOnGithub
+				size="18"
+				href="https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/blocks/footer.svelte"
+				iconClass="text-gray-500"
+			/>
+		</div>
+	</div>
 </Section>
 
 <SocialMediaFooter {socialMedia} {links} {site} />

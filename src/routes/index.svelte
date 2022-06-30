@@ -101,7 +101,6 @@
 				ulClass="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0"
 			>
 				<NavLi href="/">Home</NavLi>
-				<NavLi href="/blocks">Blocks</NavLi>
 				<NavLi href="/examples">Examples</NavLi>
 				<NavLi href="https://github.com/shinokada/flowbite-svelte-blocks">GitHub</NavLi>
 				<NavLi href="https://flowbite-svelte.com">Flowbite-Svelte</NavLi>
@@ -137,7 +136,6 @@
 									<h2 class="text-lg font-medium text-gray-500 dark:text-gray-400">
 										Hero Sections
 									</h2>
-									<p class="text-sm text-gray-500 dark:text-gray-400">14 components</p>
 								</div>
 								<div class="text-gray-900 dark:text-white">
 									<span
@@ -182,7 +180,6 @@
 									<h2 class="text-lg font-medium text-gray-500 dark:text-gray-400">
 										Feature Sections
 									</h2>
-									<p class="text-sm text-gray-500 dark:text-gray-400">9 components</p>
 								</div>
 								<div class="text-gray-900 dark:text-white">
 									<span
@@ -225,7 +222,6 @@
 							>
 								<div class="text-left">
 									<h2 class="text-lg font-medium text-gray-500 dark:text-gray-400">Headers</h2>
-									<p class="text-sm text-gray-500 dark:text-gray-400">8 components</p>
 								</div>
 								<div class="text-gray-900 dark:text-white">
 									<span
@@ -268,7 +264,6 @@
 							>
 								<div class="text-left">
 									<h2 class="text-lg font-medium text-gray-500 dark:text-gray-400">CTA Sections</h2>
-									<p class="text-sm text-gray-500 dark:text-gray-400">8 components</p>
 								</div>
 								<div class="text-gray-900 dark:text-white">
 									<span
@@ -313,7 +308,6 @@
 									<h2 class="text-lg font-medium text-gray-500 dark:text-gray-400">
 										Pricing Tables
 									</h2>
-									<p class="text-sm text-gray-500 dark:text-gray-400">7 components</p>
 								</div>
 								<div class="text-gray-900 dark:text-white">
 									<span
@@ -358,7 +352,6 @@
 									<h2 class="text-lg font-medium text-gray-500 dark:text-gray-400">
 										Content Sections
 									</h2>
-									<p class="text-sm text-gray-500 dark:text-gray-400">7 components</p>
 								</div>
 								<div class="text-gray-900 dark:text-white">
 									<span
@@ -403,7 +396,6 @@
 									<h2 class="text-lg font-medium text-gray-500 dark:text-gray-400">
 										Footer Sections
 									</h2>
-									<p class="text-sm text-gray-500 dark:text-gray-400">7 components</p>
 								</div>
 								<div class="text-gray-900 dark:text-white">
 									<span
@@ -446,7 +438,6 @@
 							>
 								<div class="text-left">
 									<h2 class="text-lg font-medium text-gray-500 dark:text-gray-400">Social Proof</h2>
-									<p class="text-sm text-gray-500 dark:text-gray-400">6 components</p>
 								</div>
 								<div class="text-gray-900 dark:text-white">
 									<span
@@ -489,7 +480,6 @@
 							>
 								<div class="text-left">
 									<h2 class="text-lg font-medium text-gray-500 dark:text-gray-400">Popups</h2>
-									<p class="text-sm text-gray-500 dark:text-gray-400">5 components</p>
 								</div>
 								<div class="text-gray-900 dark:text-white">
 									<span
@@ -534,7 +524,6 @@
 									<h2 class="text-lg font-medium text-gray-500 dark:text-gray-400">
 										Team Sections
 									</h2>
-									<p class="text-sm text-gray-500 dark:text-gray-400">5 components</p>
 								</div>
 								<div class="text-gray-900 dark:text-white">
 									<span
@@ -577,7 +566,6 @@
 							>
 								<div class="text-left">
 									<h2 class="text-lg font-medium text-gray-500 dark:text-gray-400">FAQ Sections</h2>
-									<p class="text-sm text-gray-500 dark:text-gray-400">5 components</p>
 								</div>
 								<div class="text-gray-900 dark:text-white">
 									<span
@@ -620,7 +608,6 @@
 							>
 								<div class="text-left">
 									<h2 class="text-lg font-medium text-gray-500 dark:text-gray-400">Testimonials</h2>
-									<p class="text-sm text-gray-500 dark:text-gray-400">5 components</p>
 								</div>
 								<div class="text-gray-900 dark:text-white">
 									<span
@@ -665,7 +652,6 @@
 									<h2 class="text-lg font-medium text-gray-500 dark:text-gray-400">
 										Newsletter Sections
 									</h2>
-									<p class="text-sm text-gray-500 dark:text-gray-400">5 components</p>
 								</div>
 								<div class="text-gray-900 dark:text-white">
 									<span
@@ -708,7 +694,6 @@
 							>
 								<div class="text-left">
 									<h2 class="text-lg font-medium text-gray-500 dark:text-gray-400">Banners</h2>
-									<p class="text-sm text-gray-500 dark:text-gray-400">5 components</p>
 								</div>
 								<div class="text-gray-900 dark:text-white">
 									<span
@@ -753,7 +738,6 @@
 									<h2 class="text-lg font-medium text-gray-500 dark:text-gray-400">
 										Contact Forms
 									</h2>
-									<p class="text-sm text-gray-500 dark:text-gray-400">5 components</p>
 								</div>
 								<div class="text-gray-900 dark:text-white">
 									<span
@@ -798,7 +782,6 @@
 									<h2 class="text-lg font-medium text-gray-500 dark:text-gray-400">
 										Blog Sections
 									</h2>
-									<p class="text-sm text-gray-500 dark:text-gray-400">5 components</p>
 								</div>
 								<div class="text-gray-900 dark:text-white">
 									<span
@@ -843,7 +826,6 @@
 									<h2 class="text-lg font-medium text-gray-500 dark:text-gray-400">
 										Customer Logos
 									</h2>
-									<p class="text-sm text-gray-500 dark:text-gray-400">4 components</p>
 								</div>
 								<div class="text-gray-900 dark:text-white">
 									<span
@@ -888,7 +870,6 @@
 									<h2 class="text-lg font-medium text-gray-500 dark:text-gray-400">
 										Cookie Consent
 									</h2>
-									<p class="text-sm text-gray-500 dark:text-gray-400">3 components</p>
 								</div>
 								<div class="text-gray-900 dark:text-white">
 									<span
@@ -931,7 +912,6 @@
 							>
 								<div class="text-left">
 									<h2 class="text-lg font-medium text-gray-500 dark:text-gray-400">404 Pages</h2>
-									<p class="text-sm text-gray-500 dark:text-gray-400">3 components</p>
 								</div>
 								<div class="text-gray-900 dark:text-white">
 									<span
@@ -974,7 +954,6 @@
 							>
 								<div class="text-left">
 									<h2 class="text-lg font-medium text-gray-500 dark:text-gray-400">500 Pages</h2>
-									<p class="text-sm text-gray-500 dark:text-gray-400">3 components</p>
 								</div>
 								<div class="text-gray-900 dark:text-white">
 									<span
@@ -1019,7 +998,6 @@
 									<h2 class="text-lg font-medium text-gray-500 dark:text-gray-400">
 										Maintenance Pages
 									</h2>
-									<p class="text-sm text-gray-500 dark:text-gray-400">3 components</p>
 								</div>
 								<div class="text-gray-900 dark:text-white">
 									<span

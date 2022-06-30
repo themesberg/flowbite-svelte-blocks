@@ -7,7 +7,7 @@
 			h2Class: 'mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white'
 		},
 		image: {
-			divClass: 'max-w-screen-md',
+			divClass: 'mt-4 md:mt-0',
 			h2Class: 'mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white'
 		},
 		heading: {
@@ -22,6 +22,9 @@
 	};
 </script>
 
+{#if $$slots.img}
+	<slot name="img" />
+{/if}
 <div class={classNames(ctaClasses[ctatype]['divClass'], $$props.classDiv)}>
 	{#if $$slots.h2}
 		<h2 class={classNames(ctaClasses[ctatype]['h2Class'], $$props.classH2)}><slot name="h2" /></h2>
