@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.3](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.1.2...v0.1.3) (2022-06-30)
+
+
+### Features
+
+* add page404 page500 maintenace components ([9796af6](https://github.com/shinokada/flowbite-svelte-blocks/commit/9796af677edeabdb3b757c03d3571f98b790fcd9))
+* add pricing ([bc0b9fd](https://github.com/shinokada/flowbite-svelte-blocks/commit/bc0b9fd33782a28aeee3e3f24aec764923fccee6))
+* add tests ([402d6c1](https://github.com/shinokada/flowbite-svelte-blocks/commit/402d6c1a65f94d8689945b79dcf6a7205c7127a8))
+* factor all CTA components to Cta ([88adced](https://github.com/shinokada/flowbite-svelte-blocks/commit/88adcedcb627eb0f08c5fc4460c1e18b34809d60))
+* update content, pricing, and footer pages ([6e9cb3d](https://github.com/shinokada/flowbite-svelte-blocks/commit/6e9cb3d5deda9e0144f871e5394d1c170964a5ab))
+
+
+### Bug Fixes
+
+* update Breadcrumb ([dea284a](https://github.com/shinokada/flowbite-svelte-blocks/commit/dea284a84232bc57e2a82af09b433a307539d4ab))
+
 ### [0.1.2](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.1.1...v0.1.2) (2022-06-26)
 
 
