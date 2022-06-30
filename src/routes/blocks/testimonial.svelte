@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Section } from '$lib';
 	import { ExampleDiv, SectionHeader, EditOnGithub } from '../utils/index';
-	import { Button, Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
+	import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
 	import { Home } from 'svelte-heros';
 </script>
 

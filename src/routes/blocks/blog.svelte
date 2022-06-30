@@ -8,31 +8,41 @@
 		BlogHead,
 		BlogBodyWrapper
 	} from '$lib';
-	import ExampleDiv from '../utils/ExampleDiv.svelte';
-	import SectionHeader from '../utils/SectionHeader.svelte';
-	import { Breadcrumb } from 'flowbite-svelte';
-	import { ArrowSmRight, VideoCamera, Newspaper } from 'svelte-heros';
-
-	let crumbs = [
-		{
-			label: 'Blocks',
-			href: '/'
-		},
-		{
-			label: 'Blog',
-			href: '/blocks/blog/'
-		}
-	];
+	import { ExampleDiv, SectionHeader, EditOnGithub } from '../utils/index';
+	import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
+	import { ArrowSmRight, VideoCamera, Newspaper, Home } from 'svelte-heros';
 </script>
 
 <SectionHeader>
-	<Breadcrumb {crumbs} />
+	<Breadcrumb navClass="flex mb-3">
+		<BreadcrumbItem href="/" icon={Home} variation="solid">Blocks</BreadcrumbItem>
+		<BreadcrumbItem>Blog Sections</BreadcrumbItem>
+	</Breadcrumb>
 	<svelte:fragment slot="h1">Tailwind CSS Blog Sections - Flowbite</svelte:fragment>
 	<svelte:fragment slot="paragraph"
 		>Get started with a collection of website sections related to the blog area of your website
 		including blog posts, article pages, comments, categories, and more.</svelte:fragment
 	>
 </SectionHeader>
+
+<Section name="none" classSection="py-6 sm:py-10" classDiv="px-4 mx-auto max-w-8xl">
+	<div class="grid lg:grid-cols-2">
+		<div>
+			<h2 class="mb-1 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+				Default blog card
+			</h2>
+			<p class="text-lg text-gray-500 lg:mb-0 dark:text-gray-400 lg:max-w-2xl">
+				Use this example to show a preview of a blog post including the title, description,
+				category, author, publication date, and CTA link.
+			</p>
+			<EditOnGithub
+				size="18"
+				href="https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/blocks/blog.svelte"
+				iconClass="text-gray-500"
+			/>
+		</div>
+	</div>
+</Section>
 
 <ExampleDiv>
 	<Section name="blog">

@@ -9,19 +9,8 @@
 		CurrencyDollar,
 		Collection
 	} from 'svelte-heros';
-	import ExampleDiv from '../utils/ExampleDiv.svelte';
-	import SectionHeader from '../utils/SectionHeader.svelte';
+	import { ExampleDiv, SectionHeader, EditOnGithub } from '../utils/index';
 	import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
-	let crumbs = [
-		{
-			label: 'Blocks',
-			href: '/'
-		},
-		{
-			label: 'Feature Sections',
-			href: '/blocks/feature/'
-		}
-	];
 </script>
 
 <SectionHeader>
@@ -46,6 +35,11 @@
 				Get started with this default example of feature items based on a grid layout where you can
 				show up to three items on a row featuring an icon, title and description.
 			</p>
+			<EditOnGithub
+				size="18"
+				href="https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/blocks/feature.svelte"
+				iconClass="text-gray-500"
+			/>
 		</div>
 	</div>
 </Section>

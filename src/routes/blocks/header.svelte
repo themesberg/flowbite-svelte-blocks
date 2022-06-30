@@ -10,8 +10,7 @@
 		Breadcrumb,
 		BreadcrumbItem
 	} from 'flowbite-svelte';
-	import ExampleDiv from '../utils/ExampleDiv.svelte';
-	import SectionHeader from '../utils/SectionHeader.svelte';
+	import { ExampleDiv, SectionHeader, EditOnGithub } from '../utils/index';
 	import { Home } from 'svelte-heros';
 	let navClass = 'bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800';
 	let navDivClass = 'flex flex-wrap justify-between items-center mx-auto max-w-screen-xl';
@@ -39,6 +38,11 @@
 				Use this example of a responsive navigation bar for your website by showing multiple menu
 				items, a few CTA buttons, and a hamburger icon to toggle the mobile view.
 			</p>
+			<EditOnGithub
+				size="18"
+				href="https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/blocks/header.svelte"
+				iconClass="text-gray-500"
+			/>
 		</div>
 	</div>
 </Section>

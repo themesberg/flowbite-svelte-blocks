@@ -1,9 +1,8 @@
 <script lang="ts">
-	import { Section, Cta, HeroHeader } from '$lib';
+	import { Section, Cta } from '$lib';
 	import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
 	import { Home } from 'svelte-heros';
-	import ExampleDiv from '../utils/ExampleDiv.svelte';
-	import SectionHeader from '../utils/SectionHeader.svelte';
+	import { ExampleDiv, SectionHeader, EditOnGithub } from '../utils/index';
 </script>
 
 <SectionHeader>
@@ -28,6 +27,11 @@
 				Use this example to show a simple heading, paragraph, and a couple of CTA buttons to
 				encourage users to take action.
 			</p>
+			<EditOnGithub
+				size="18"
+				href="https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/blocks/cta.svelte"
+				iconClass="text-gray-500"
+			/>
 		</div>
 	</div>
 </Section>

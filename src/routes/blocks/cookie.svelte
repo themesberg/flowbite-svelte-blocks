@@ -8,12 +8,12 @@
 <SectionHeader>
 	<Breadcrumb navClass="flex mb-3">
 		<BreadcrumbItem href="/" icon={Home} variation="solid">Blocks</BreadcrumbItem>
-		<BreadcrumbItem>Newsletter Sections</BreadcrumbItem>
+		<BreadcrumbItem>Cookie Consent</BreadcrumbItem>
 	</Breadcrumb>
-	<svelte:fragment slot="h1">Tailwind CSS Newsletter - Flowbite</svelte:fragment>
+	<svelte:fragment slot="h1">Tailwind CSS Cookie Consent - Flowbite</svelte:fragment>
 	<svelte:fragment slot="paragraph"
-		>The newsletter component is an important marketing method that you can use to convince website
-		visitors to sign up for additional news from your organization.</svelte:fragment
+		>Get started with the cookie banner component to interact with the website visitor and enable
+		them to decide whether you can collect their personal data or not.</svelte:fragment
 	>
 </SectionHeader>
 
@@ -21,15 +21,16 @@
 	<div class="grid lg:grid-cols-2">
 		<div>
 			<h2 class="mb-1 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-				Default newsletter
+				Cookie banner
 			</h2>
 			<p class="text-lg text-gray-500 lg:mb-0 dark:text-gray-400 lg:max-w-2xl">
-				Use this example as a website section to allow website visitors to sign up for your
-				newsletter program featuring an input field and privacy notice.
+				This banner positioned at the bottom of the page can be used as an example to quickly ask
+				for permission to store third-party cookies and collect personal information from your
+				website visitors.
 			</p>
 			<EditOnGithub
 				size="18"
-				href="https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/blocks/newsletter.svelte"
+				href="https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/blocks/cookie.svelte"
 				iconClass="text-gray-500"
 			/>
 		</div>

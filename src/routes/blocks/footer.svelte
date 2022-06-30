@@ -1,9 +1,9 @@
 <script>
-	import { Section, HeroHeader } from '$lib/index';
+	import { Section } from '$lib/index';
 	import { SocialMediaFooter } from 'flowbite-svelte';
 	import { Facebook, Github, Twitter, Instagram } from 'svelte-simples';
 	import { ExampleDiv, SectionHeader, EditOnGithub } from '../utils/index';
-	import { Button, Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
+	import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
 	import { Home } from 'svelte-heros';
 	let site = {
 		href: '/',
@@ -93,4 +93,6 @@
 	</div>
 </Section>
 
-<SocialMediaFooter {socialMedia} {links} {site} />
+<ExampleDiv>
+	<SocialMediaFooter {socialMedia} {links} {site} />
+</ExampleDiv>

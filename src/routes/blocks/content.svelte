@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { Section, Content, ContentWithImage, HeroHeader } from '$lib';
+	import { Section, Content, ContentWithImage } from '$lib';
 	import { ExampleDiv, SectionHeader, EditOnGithub } from '../utils/index';
-	import { Button, Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
+	import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
 	import { Home, ChevronRight } from 'svelte-heros';
 </script>
 
