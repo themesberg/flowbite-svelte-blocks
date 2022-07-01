@@ -1,5 +1,9 @@
 export { default as Section } from './Section.svelte'
 
+// account-recovery
+export { default as ForgotPassword } from './acount-recovery/ForgotPassword.svelte'
+export { default as ForgotPasswordHeader } from './acount-recovery/ForgotPasswordHeader.svelte'
+
 // blog
 export { default as ArticleAuthor } from './blog/ArticleAuthor.svelte'
 export { default as ArticleBody } from './blog/ArticleBody.svelte'

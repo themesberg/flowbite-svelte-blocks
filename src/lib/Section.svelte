@@ -9,6 +9,7 @@
 		| 'content'
 		| 'contentwithimg'
 		| 'feature'
+		| 'forgotpassword'
 		| 'headingwithctabutton'
 		| 'heroDefault'
 		| 'heroVisual'
@@ -39,6 +40,9 @@
 		},
 		feature: {
 			div: 'py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6'
+		},
+		forgotpassword: {
+			div: 'flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0'
 		},
 		headingwithctabutton: {
 			div: 'py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6'

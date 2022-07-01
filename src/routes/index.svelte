@@ -6,71 +6,19 @@
 		NavUl,
 		NavLi,
 		Button,
-		SocialMediaFooter,
-		DarkMode
+		DarkMode,		
+		Footer,
+		FooterBrand,
+		FooterLinkGroup,
+		FooterLink,
+		FooterCopyright,
+		FooterIcon
 	} from 'flowbite-svelte';
 	import { Facebook, Github, Twitter, Instagram } from 'svelte-simples';
-	let site = {
-		href: '/',
-		name: 'Flowbite',
-		img: 'https://flowbite.com/docs/images/logo.svg'
-	};
-	let links = [
-		{
-			parent: 'RESOURCES',
-			children: [
-				{ name: 'Flowbite-Svelte', href: '/' },
-				{
-					name: 'Flowbite',
-					href: '/'
-				}
-			]
-		},
-		{
-			parent: 'FOLLOW US',
-			children: [
-				{ name: 'Github', href: '/' },
-				{
-					name: 'Flowbite',
-					href: '/'
-				}
-			]
-		},
-		{
-			parent: 'LEGAL',
-			children: [
-				{ name: 'Privacy Policy', href: '/' },
-				{
-					name: 'Terms & Conditions',
-					href: '/'
-				}
-			]
-		}
-	];
-	let socialMedia = [
-		{
-			href: '/',
-			icon: Facebook
-		},
-		{
-			href: '/',
-			icon: Github
-		},
-		{
-			href: '/',
-			icon: Twitter
-		},
-		{
-			href: '/',
-			icon: Instagram
-		}
-	];
 	let navClass = 'bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800';
 	let navDivClass = 'flex flex-wrap justify-between items-center mx-auto max-w-screen-xl';
 	let btnClass =
 		'text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2 ml-2';
-	let footerClass = 'justify-self-end pt-16 pb-8 lg:pt-24 lg:pb-10';
-	let divClass = 'px-4 mx-auto max-w-8xl lg:px-4';
 </script>
 
 <div class="flex flex-col min-h-screen bg-white dark:bg-gray-900">
@@ -772,7 +720,10 @@
 									>
 								</div>
 							</div></a
-						><a
+						>
+						<a class="h-64 bg-white rounded-lg border border-gray-100 cursor-pointer md:h-80 hover:border-white dark:border-gray-700 dark:hover:border-gray-600 hover:shadow-lg dark:hover:shadow-lg-light dark:bg-gray-900" href="/blocks/account-recovery/"><article class="bg-gray-50 dark:bg-gray-700 rounded-t-md py-2.5 px-5 flex justify-between items-center border-b border-gray-200 dark:border-gray-700"><div class="text-left"><h2 class="text-lg font-medium text-gray-500 dark:text-gray-400">Account Recovery Forms</h2><p class="text-sm text-gray-500 dark:text-gray-400">5 components</p></div><div class="text-gray-900 dark:text-white"><span class="text-xs font-semibold px-2.5 py-0.5 rounded bg-green-100 text-green-800 dark:bg-green-200 dark:text-green-800">Marketing UI</span></div></article><div class="flex justify-center items-center h-48 sm:h-52 lg:h-56"><div class="hidden relative w-full h-5/6 dark:block"><span style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;"><img alt="Tailwind CSS Account Recovery Form - Flowbite - Icon dark" src="data:image/svg+xml;utf8,%3Csvg%20width%3D%22536%22%20height%3D%22345%22%20viewBox%3D%220%200%20536%20345%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%22133%22%20y%3D%22102%22%20width%3D%2257%22%20height%3D%226%22%20rx%3D%223%22%20fill%3D%22%239CA3AF%22%2F%3E%0A%3Crect%20x%3D%22133%22%20y%3D%22126%22%20width%3D%22270%22%20height%3D%224%22%20rx%3D%222%22%20fill%3D%22%236B7280%22%2F%3E%0A%3Crect%20x%3D%22133%22%20y%3D%22136%22%20width%3D%22112%22%20height%3D%224%22%20rx%3D%222%22%20fill%3D%22%236B7280%22%2F%3E%0A%3Crect%20x%3D%22133%22%20y%3D%22158%22%20width%3D%2251%22%20height%3D%223%22%20rx%3D%221.5%22%20fill%3D%22%239CA3AF%22%2F%3E%0A%3Crect%20x%3D%22132.5%22%20y%3D%22168.5%22%20width%3D%22271%22%20height%3D%2217%22%20rx%3D%224.5%22%20fill%3D%22%23374151%22%2F%3E%0A%3Crect%20x%3D%22140%22%20y%3D%22176%22%20width%3D%2256%22%20height%3D%222%22%20rx%3D%221%22%20fill%3D%22%236B7280%22%2F%3E%0A%3Crect%20x%3D%22132.5%22%20y%3D%22168.5%22%20width%3D%22271%22%20height%3D%2217%22%20rx%3D%224.5%22%20stroke%3D%22%234B5563%22%2F%3E%0A%3Crect%20x%3D%22132.5%22%20y%3D%22202.5%22%20width%3D%226%22%20height%3D%226%22%20rx%3D%221.5%22%20fill%3D%22%23374151%22%2F%3E%0A%3Crect%20x%3D%22132.5%22%20y%3D%22202.5%22%20width%3D%226%22%20height%3D%226%22%20rx%3D%221.5%22%20stroke%3D%22%234B5563%22%2F%3E%0A%3Crect%20x%3D%22143%22%20y%3D%22203.5%22%20width%3D%22136%22%20height%3D%224%22%20rx%3D%222%22%20fill%3D%22%236B7280%22%2F%3E%0A%3Crect%20x%3D%22133%22%20y%3D%22226%22%20width%3D%2266%22%20height%3D%2217%22%20rx%3D%222%22%20fill%3D%22%231A56DB%22%2F%3E%0A%3Crect%20x%3D%22145%22%20y%3D%22233%22%20width%3D%2242%22%20height%3D%223%22%20rx%3D%221%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A" decoding="async" data-nimg="fill" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain;"></span></div><div class="relative w-full h-5/6 dark:hidden"><span style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;"><img alt="Tailwind CSS Account Recovery Form - Flowbite - Icon light" src="data:image/svg+xml;utf8,%3Csvg%20width%3D%22536%22%20height%3D%22345%22%20viewBox%3D%220%200%20536%20345%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%22122%22%20y%3D%2291%22%20width%3D%22292%22%20height%3D%22163%22%20rx%3D%228%22%20fill%3D%22white%22%2F%3E%0A%3Crect%20x%3D%22122%22%20y%3D%2291%22%20width%3D%22292%22%20height%3D%22163%22%20rx%3D%225%22%20fill%3D%22white%22%2F%3E%0A%3Crect%20x%3D%22133%22%20y%3D%22102%22%20width%3D%2257%22%20height%3D%226%22%20rx%3D%223%22%20fill%3D%22%239CA3AF%22%2F%3E%0A%3Crect%20x%3D%22133%22%20y%3D%22126%22%20width%3D%22270%22%20height%3D%224%22%20rx%3D%222%22%20fill%3D%22%23D1D5DB%22%2F%3E%0A%3Crect%20x%3D%22133%22%20y%3D%22136%22%20width%3D%22112%22%20height%3D%224%22%20rx%3D%222%22%20fill%3D%22%23D1D5DB%22%2F%3E%0A%3Crect%20x%3D%22133%22%20y%3D%22158%22%20width%3D%2251%22%20height%3D%223%22%20rx%3D%221.5%22%20fill%3D%22%23D1D5DB%22%2F%3E%0A%3Crect%20x%3D%22132.5%22%20y%3D%22168.5%22%20width%3D%22271%22%20height%3D%2217%22%20rx%3D%224.5%22%20fill%3D%22white%22%2F%3E%0A%3Crect%20x%3D%22140%22%20y%3D%22176%22%20width%3D%2256%22%20height%3D%222%22%20rx%3D%221%22%20fill%3D%22%23E5E7EB%22%2F%3E%0A%3Crect%20x%3D%22132.5%22%20y%3D%22168.5%22%20width%3D%22271%22%20height%3D%2217%22%20rx%3D%224.5%22%20stroke%3D%22%23D1D5DB%22%2F%3E%0A%3Crect%20x%3D%22132.5%22%20y%3D%22202.5%22%20width%3D%226%22%20height%3D%226%22%20rx%3D%221.5%22%20fill%3D%22white%22%2F%3E%0A%3Crect%20x%3D%22132.5%22%20y%3D%22202.5%22%20width%3D%226%22%20height%3D%226%22%20rx%3D%221.5%22%20stroke%3D%22%23D1D5DB%22%2F%3E%0A%3Crect%20x%3D%22143%22%20y%3D%22203.5%22%20width%3D%22136%22%20height%3D%224%22%20rx%3D%222%22%20fill%3D%22%23D1D5DB%22%2F%3E%0A%3Crect%20x%3D%22133%22%20y%3D%22226%22%20width%3D%2266%22%20height%3D%2217%22%20rx%3D%222%22%20fill%3D%22%231A56DB%22%2F%3E%0A%3Crect%20x%3D%22145%22%20y%3D%22233%22%20width%3D%2242%22%20height%3D%223%22%20rx%3D%221%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A" decoding="async" data-nimg="fill" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain;"></span></div></div></a>
+						
+						<a
 							class="h-64 bg-white rounded-lg border border-gray-100 cursor-pointer md:h-80 hover:border-white dark:border-gray-700 dark:hover:border-gray-600 hover:shadow-lg dark:hover:shadow-lg-light dark:bg-gray-900"
 							href="/blocks/blog/"
 							><article
@@ -1038,5 +989,75 @@
 			</section>
 		</main>
 	</div>
-	<SocialMediaFooter {footerClass} {divClass} {socialMedia} {links} {site} />
+	<Footer footerType="socialmedia">
+		<div class="grid gap-12 lg:grid-cols-6 lg:gap-24">
+			<div class="col-span-2">
+				<FooterBrand
+					href="https://flowbite.com"
+					src="https://flowbite.com/docs/images/logo.svg"
+					alt="Flowbite Logo"
+					name="Flowbite"
+					aClass="flex mb-6"
+				/>
+				<p class="text-gray-600 dark:text-gray-400">
+					Flowbite is an ecosystem built on top of Tailwind CSS including a component library, block
+					sections, a Figma design system and other resources.
+				</p>
+			</div>
+			<div>
+				<h2 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">
+					Resources
+				</h2>
+				<FooterLinkGroup>
+					<FooterLink liClass="mb-4" href="https://flowbite.com/">Flowbite</FooterLink>
+					<FooterLink liClass="mb-4" href="https://tailwindcss.com/">Tailwind CSS</FooterLink>
+					<FooterLink liClass="mb-4" href="https://flowbite-svelte.com/">Flowbite-Svelte</FooterLink
+					>
+				</FooterLinkGroup>
+			</div>
+			<div>
+				<h2 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">
+					HELP & SUPPORT
+				</h2>
+				<FooterLinkGroup>
+					<FooterLink liClass="mb-4" href="https://discord.gg/4eeurUVvTy">Discord</FooterLink>
+					<FooterLink
+						liClass="mb-4"
+						href="https://github.com/shinokada/flowbite-svelte-blocks/issues">GitHub</FooterLink
+					>
+				</FooterLinkGroup>
+			</div>
+			<div>
+				<h2 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">
+					Follow us
+				</h2>
+				<FooterLinkGroup>
+					<FooterLink liClass="mb-4" href="https://github.com/shinokada/flowbite-svelte-blocks"
+						>Gihub</FooterLink
+					>
+					<FooterLink liClass="mb-4" href="https://discord.gg/4eeurUVvTy">Discord</FooterLink>
+				</FooterLinkGroup>
+			</div>
+			<div>
+				<h2 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">Legal</h2>
+				<FooterLinkGroup>
+					<FooterLink
+						liClass="mb-4"
+						href="https://github.com/shinokada/flowbite-svelte-blocks/LICENSE">LICENSE</FooterLink
+					>
+				</FooterLinkGroup>
+			</div>
+		</div>
+		<hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+		<div class="sm:flex sm:items-center sm:justify-between">
+			<FooterCopyright href="/" by="Flowbite™" />
+			<div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+				<FooterIcon
+					href="https://github.com/shinokada/flowbite-svelte-blocks"
+					class="text-gray-400 hover:text-gray-900"
+					icon={Github}
+				/>
+			</div>
+		</div>
+	</Footer>
 </div>
