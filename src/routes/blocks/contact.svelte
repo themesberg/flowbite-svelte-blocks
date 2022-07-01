@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { Section } from '$lib';
+	import { Section, Contact } from '$lib';
 	import { ExampleDiv, SectionHeader, EditOnGithub } from '../utils/index';
-	import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
+	import { Label, Input, Textarea, Button, Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
 	import { Home } from 'svelte-heros';
 </script>
 
@@ -35,3 +35,39 @@
 		</div>
 	</div>
 </Section>
+
+<ExampleDiv>
+	<Section name="contact">
+		<Contact>
+			<svelte:fragment slot="h2">Contact Us</svelte:fragment>
+			<svelte:fragment slot="paragraph">
+				Got a technical issue? Want to send feedback about a beta feature? Need details about our
+				Business plan? Let us know.
+			</svelte:fragment>
+			<form class="space-y-8">
+				<div>
+					<Label for="email" class="block mb-2">Your email</Label>
+					<Input id="email" name="email" placeholder="name@flowbite.com" required />
+				</div>
+				<div>
+					<Label for="subject" class="block mb-2">Subject</Label>
+					<Input
+						id="subject"
+						name="subject"
+						placeholder="Let us know how we can help you"
+						required
+					/>
+				</div>
+				<div>
+					<Textarea
+						id="subject"
+						name="subject"
+						placeholder="Leave a comment..."
+						label="Your message"
+					/>
+				</div>
+				<Button>Send message</Button>
+			</form>
+		</Contact>
+	</Section>
+</ExampleDiv>

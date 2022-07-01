@@ -8,6 +8,9 @@ export { default as ArticleWrapper } from './blog/ArticleWrapper.svelte'
 export { default as BlogHead } from './blog/BlogHead.svelte'
 export { default as BlogBodyWrapper } from './blog/BlogBodyWrapper.svelte'
 
+// contact
+export { default as Contact } from './contact/Contact.svelte'
+
 // content
 export { default as Content } from './content/Content.svelte'
 export { default as ContentWithImage } from './content/ContentWithImage.svelte'
