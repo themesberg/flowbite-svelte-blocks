@@ -10,7 +10,7 @@
 		<BreadcrumbItem href="/" icon={Home} variation="solid">Blocks</BreadcrumbItem>
 		<BreadcrumbItem>CTA Sections</BreadcrumbItem>
 	</Breadcrumb>
-	<svelte:fragment slot="h1">Tailwind CSS CTA Sections - Flowbite</svelte:fragment>
+	<svelte:fragment slot="h1">Tailwind CSS CTA Sections - Flowbite-Svelte-Blocks</svelte:fragment>
 	<svelte:fragment slot="paragraph"
 		>The CTA (call to action) website sections can be used anywhere on your website to encourage
 		your users to take any action, such as creating a new account.</svelte:fragment

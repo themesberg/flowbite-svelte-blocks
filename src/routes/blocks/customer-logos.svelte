@@ -20,7 +20,7 @@
 		<BreadcrumbItem href="/" icon={Home} variation="solid">Blocks</BreadcrumbItem>
 		<BreadcrumbItem>Customer Logos</BreadcrumbItem>
 	</Breadcrumb>
-	<svelte:fragment slot="h1">Tailwind CSS Customer Logos - Flowbite</svelte:fragment>
+	<svelte:fragment slot="h1">Tailwind CSS Customer Logos - Flowbite-Svelte-Blocks</svelte:fragment>
 	<svelte:fragment slot="paragraph"
 		>This website section can be used as a social proof incentive to convince your potential clients
 		by showcasing popular companies that you've collaborated with.</svelte:fragment

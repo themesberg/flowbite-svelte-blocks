@@ -10,7 +10,7 @@
 		<BreadcrumbItem href="/" icon={Home} variation="solid">Blocks</BreadcrumbItem>
 		<BreadcrumbItem>404 Pages</BreadcrumbItem>
 	</Breadcrumb>
-	<svelte:fragment slot="h1">Tailwind CSS 404 Page - Flowbite</svelte:fragment>
+	<svelte:fragment slot="h1">Tailwind CSS 404 Page - Flowbite-Svelte-Blocks</svelte:fragment>
 	<svelte:fragment slot="paragraph"
 		>Choose from a collection of 404 "not found" landing pages coded with Tailwind CSS to show your
 		website visitors when a page is unavailable or doesn't exist.</svelte:fragment

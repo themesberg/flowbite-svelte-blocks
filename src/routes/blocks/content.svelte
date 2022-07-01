@@ -10,7 +10,8 @@
 		<BreadcrumbItem href="/" icon={Home} variation="solid">Blocks</BreadcrumbItem>
 		<BreadcrumbItem>Content Sections</BreadcrumbItem>
 	</Breadcrumb>
-	<svelte:fragment slot="h1">Tailwind CSS Content Sections - Flowbite</svelte:fragment>
+	<svelte:fragment slot="h1">Tailwind CSS Content Sections - Flowbite-Svelte-Blocks</svelte:fragment
+	>
 	<svelte:fragment slot="paragraph"
 		>Choose one of these website sections to show extra content relative to the other sections on
 		the page such as a gallery of images, description texts, and more.</svelte:fragment

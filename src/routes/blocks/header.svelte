@@ -21,7 +21,7 @@
 		<BreadcrumbItem href="/" icon={Home} variation="solid">Blocks</BreadcrumbItem>
 		<BreadcrumbItem>Headers</BreadcrumbItem>
 	</Breadcrumb>
-	<svelte:fragment slot="h1">Tailwind CSS Header - Flowbite</svelte:fragment>
+	<svelte:fragment slot="h1">Tailwind CSS Header - Flowbite-Svelte-Blocks</svelte:fragment>
 	<svelte:fragment slot="paragraph"
 		>Get started with the header component for the navigation of a website featuring multi-level
 		dropdowns, mega-menus, search bars, language selectors, and more.</svelte:fragment

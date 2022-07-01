@@ -10,7 +10,7 @@
 		<BreadcrumbItem href="/" icon={Home} variation="solid">Blocks</BreadcrumbItem>
 		<BreadcrumbItem>Banners</BreadcrumbItem>
 	</Breadcrumb>
-	<svelte:fragment slot="h1">Tailwind CSS Banner - Flowbite</svelte:fragment>
+	<svelte:fragment slot="h1">Tailwind CSS Banner - Flowbite-Svelte-Blocks</svelte:fragment>
 	<svelte:fragment slot="paragraph"
 		>The banner component can be used to show extra information or enable interactions with the user
 		without affecting the main content area of the website.</svelte:fragment

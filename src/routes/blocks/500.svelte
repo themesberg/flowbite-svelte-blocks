@@ -10,7 +10,7 @@
 		<BreadcrumbItem href="/" icon={Home} variation="solid">Blocks</BreadcrumbItem>
 		<BreadcrumbItem>500 Pages</BreadcrumbItem>
 	</Breadcrumb>
-	<svelte:fragment slot="h1">Tailwind CSS 500 Page - Flowbite</svelte:fragment>
+	<svelte:fragment slot="h1">Tailwind CSS 500 Page - Flowbite-Svelte-Blocks</svelte:fragment>
 	<svelte:fragment slot="paragraph"
 		>Get started with a collection of 500 status code pages coded with Tailwind CSS to show when a
 		server error is being triggered.</svelte:fragment

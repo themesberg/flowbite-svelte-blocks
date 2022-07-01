@@ -18,7 +18,7 @@
 		<BreadcrumbItem href="/" icon={Home} variation="solid">Blocks</BreadcrumbItem>
 		<BreadcrumbItem>Blog Sections</BreadcrumbItem>
 	</Breadcrumb>
-	<svelte:fragment slot="h1">Tailwind CSS Blog Sections - Flowbite</svelte:fragment>
+	<svelte:fragment slot="h1">Tailwind CSS Blog Sections - Flowbite-Svelte-Blocks</svelte:fragment>
 	<svelte:fragment slot="paragraph"
 		>Get started with a collection of website sections related to the blog area of your website
 		including blog posts, article pages, comments, categories, and more.</svelte:fragment

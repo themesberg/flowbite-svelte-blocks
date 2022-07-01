@@ -10,7 +10,9 @@
 		<BreadcrumbItem href="/" icon={Home} variation="solid">Blocks</BreadcrumbItem>
 		<BreadcrumbItem>Maintenance Pages</BreadcrumbItem>
 	</Breadcrumb>
-	<svelte:fragment slot="h1">Tailwind CSS Maintenance Pages - Flowbite</svelte:fragment>
+	<svelte:fragment slot="h1"
+		>Tailwind CSS Maintenance Pages - Flowbite-Svelte-Blocks</svelte:fragment
+	>
 	<svelte:fragment slot="paragraph"
 		>Get started with maintenance pages coded with Tailwind CSS to show your users when you are
 		currently working on an update and the website is not accessible.</svelte:fragment

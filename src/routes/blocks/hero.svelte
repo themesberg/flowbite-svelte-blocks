@@ -17,7 +17,7 @@
 		<BreadcrumbItem href="/" icon={Home} variation="solid">Blocks</BreadcrumbItem>
 		<BreadcrumbItem>Hero Sections</BreadcrumbItem>
 	</Breadcrumb>
-	<svelte:fragment slot="h1">Tailwind CSS Hero Sections - Flowbite</svelte:fragment>
+	<svelte:fragment slot="h1">Tailwind CSS Hero Sections - Flowbite-Svelte-Blocks</svelte:fragment>
 	<svelte:fragment slot="paragraph"
 		>Get started with a collection of hero sections coded with Tailwind CSS to showcase the most
 		important parts of your website based on multiple styles and layouts.</svelte:fragment

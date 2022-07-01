@@ -10,7 +10,7 @@
 		<BreadcrumbItem href="/" icon={Home} variation="solid">Blocks</BreadcrumbItem>
 		<BreadcrumbItem>Testimonials</BreadcrumbItem>
 	</Breadcrumb>
-	<svelte:fragment slot="h1">Tailwind CSS Testimonials - Flowbite</svelte:fragment>
+	<svelte:fragment slot="h1">Tailwind CSS Testimonials - Flowbite-Svelte-Blocks</svelte:fragment>
 	<svelte:fragment slot="paragraph"
 		>Get started with a collection of testimonial sections built with Tailwind CSS to show a
 		statement from a customer as an endorsement to other potential clients.</svelte:fragment

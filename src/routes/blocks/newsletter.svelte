@@ -10,7 +10,7 @@
 		<BreadcrumbItem href="/" icon={Home} variation="solid">Blocks</BreadcrumbItem>
 		<BreadcrumbItem>Newsletter Sections</BreadcrumbItem>
 	</Breadcrumb>
-	<svelte:fragment slot="h1">Tailwind CSS Newsletter - Flowbite</svelte:fragment>
+	<svelte:fragment slot="h1">Tailwind CSS Newsletter - Flowbite-Svelte-Blocks</svelte:fragment>
 	<svelte:fragment slot="paragraph"
 		>The newsletter component is an important marketing method that you can use to convince website
 		visitors to sign up for additional news from your organization.</svelte:fragment

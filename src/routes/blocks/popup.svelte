@@ -10,7 +10,7 @@
 		<BreadcrumbItem href="/" icon={Home} variation="solid">Blocks</BreadcrumbItem>
 		<BreadcrumbItem>Popups</BreadcrumbItem>
 	</Breadcrumb>
-	<svelte:fragment slot="h1">Tailwind CSS Popup - Flowbite</svelte:fragment>
+	<svelte:fragment slot="h1">Tailwind CSS Popup - Flowbite-Svelte-Blocks</svelte:fragment>
 	<svelte:fragment slot="paragraph"
 		>Get started with the popup component to overlay the main website content and showcase
 		advertisement messages, cookie notices, and newsletter sign-ups.</svelte:fragment

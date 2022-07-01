@@ -10,7 +10,7 @@
 		<BreadcrumbItem href="/" icon={Home} variation="solid">Blocks</BreadcrumbItem>
 		<BreadcrumbItem>Team Sections</BreadcrumbItem>
 	</Breadcrumb>
-	<svelte:fragment slot="h1">Tailwind CSS Team Sections - Flowbite</svelte:fragment>
+	<svelte:fragment slot="h1">Tailwind CSS Team Sections - Flowbite-Svelte-Blocks</svelte:fragment>
 	<svelte:fragment slot="paragraph"
 		>Get started with a collection of team sections built with Tailwind CSS and Flowbite to showcase
 		your organization's team members based on multiple layouts.</svelte:fragment

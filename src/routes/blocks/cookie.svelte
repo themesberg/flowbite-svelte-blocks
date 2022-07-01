@@ -10,7 +10,7 @@
 		<BreadcrumbItem href="/" icon={Home} variation="solid">Blocks</BreadcrumbItem>
 		<BreadcrumbItem>Cookie Consent</BreadcrumbItem>
 	</Breadcrumb>
-	<svelte:fragment slot="h1">Tailwind CSS Cookie Consent - Flowbite</svelte:fragment>
+	<svelte:fragment slot="h1">Tailwind CSS Cookie Consent - Flowbite-Svelte-Blocks</svelte:fragment>
 	<svelte:fragment slot="paragraph"
 		>Get started with the cookie banner component to interact with the website visitor and enable
 		them to decide whether you can collect their personal data or not.</svelte:fragment

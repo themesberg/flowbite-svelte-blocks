@@ -10,7 +10,7 @@
 		<BreadcrumbItem href="/" icon={Home} variation="solid">Blocks</BreadcrumbItem>
 		<BreadcrumbItem>Contact Forms</BreadcrumbItem>
 	</Breadcrumb>
-	<svelte:fragment slot="h1">Tailwind CSS Contact Form - Flowbite</svelte:fragment>
+	<svelte:fragment slot="h1">Tailwind CSS Contact Form - Flowbite-Svelte-Blocks</svelte:fragment>
 	<svelte:fragment slot="paragraph"
 		>The contact section is an important part of your website where the user can reach out to your
 		team by interacting with the form elements and submitting the data.</svelte:fragment

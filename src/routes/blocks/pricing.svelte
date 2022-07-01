@@ -17,7 +17,7 @@
 		<BreadcrumbItem href="/" icon={Home} variation="solid">Blocks</BreadcrumbItem>
 		<BreadcrumbItem>Pricing Tables</BreadcrumbItem>
 	</Breadcrumb>
-	<svelte:fragment slot="h1">Tailwind CSS Pricing Table - Flowbite</svelte:fragment>
+	<svelte:fragment slot="h1">Tailwind CSS Pricing Table - Flowbite-Svelte-Blocks</svelte:fragment>
 	<svelte:fragment slot="paragraph"
 		>Get started with a collection of responsive pricing sections to show the pricing plan to your
 		potential customers based on multiple sizes, styles, and layouts.</svelte:fragment

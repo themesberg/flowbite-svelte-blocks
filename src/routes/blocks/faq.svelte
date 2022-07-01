@@ -10,7 +10,7 @@
 		<BreadcrumbItem href="/" icon={Home} variation="solid">Blocks</BreadcrumbItem>
 		<BreadcrumbItem>FAQ Sections</BreadcrumbItem>
 	</Breadcrumb>
-	<svelte:fragment slot="h1">Tailwind CSS FAQ Sections - Flowbite</svelte:fragment>
+	<svelte:fragment slot="h1">Tailwind CSS FAQ Sections - Flowbite-Svelte-Blocks</svelte:fragment>
 	<svelte:fragment slot="paragraph"
 		>Get started with a collection of FAQ (frequently asked questions) sections to show a list of
 		questions and answers to your website visitors and users.</svelte:fragment

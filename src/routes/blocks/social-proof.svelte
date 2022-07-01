@@ -10,7 +10,7 @@
 		<BreadcrumbItem href="/" icon={Home} variation="solid">Blocks</BreadcrumbItem>
 		<BreadcrumbItem>Social Proof</BreadcrumbItem>
 	</Breadcrumb>
-	<svelte:fragment slot="h1">Tailwind CSS Social Proof - Flowbite</svelte:fragment>
+	<svelte:fragment slot="h1">Tailwind CSS Social Proof - Flowbite-Svelte-Blocks</svelte:fragment>
 	<svelte:fragment slot="paragraph"
 		>Get started with this website section to offer social proof to your website visitors by
 		providing statistical numbers about your product's usage worldwide.</svelte:fragment

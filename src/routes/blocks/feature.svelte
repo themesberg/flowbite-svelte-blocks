@@ -18,7 +18,8 @@
 		<BreadcrumbItem href="/" icon={Home} variation="solid">Blocks</BreadcrumbItem>
 		<BreadcrumbItem>Feature Sections</BreadcrumbItem>
 	</Breadcrumb>
-	<svelte:fragment slot="h1">Tailwind CSS Feature Sections - Flowbite</svelte:fragment>
+	<svelte:fragment slot="h1">Tailwind CSS Feature Sections - Flowbite-Svelte-Blocks</svelte:fragment
+	>
 	<svelte:fragment slot="paragraph"
 		>Get started with a collection of responsive website sections built with Tailwind CSS to
 		showcase a list of features that your product or company offers.</svelte:fragment

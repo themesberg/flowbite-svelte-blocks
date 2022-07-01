@@ -67,7 +67,7 @@
 		<BreadcrumbItem href="/" icon={Home} variation="solid">Blocks</BreadcrumbItem>
 		<BreadcrumbItem>Footer Sections</BreadcrumbItem>
 	</Breadcrumb>
-	<svelte:fragment slot="h1">Tailwind CSS Footer Sections - Flowbite</svelte:fragment>
+	<svelte:fragment slot="h1">Tailwind CSS Footer Sections - Flowbite-Svelte-Blocks</svelte:fragment>
 	<svelte:fragment slot="paragraph"
 		>Get started with footer sections coded in Tailwind CSS to use at the bottom of every page of
 		your website and showcase your logo, sitemap links, and more.</svelte:fragment
