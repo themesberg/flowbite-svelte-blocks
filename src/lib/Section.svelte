@@ -18,7 +18,8 @@
 		| 'none'
 		| 'page500'
 		| 'page404'
-		| 'pricing' = 'heroDefault';
+		| 'pricing'
+		| 'team' = 'heroDefault';
 	const sectionClasses = {
 		blog: {
 			div: 'py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6'
@@ -69,6 +70,9 @@
 			div: 'py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6'
 		},
 		pricing: {
+			div: 'py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6'
+		},
+		team: {
 			div: 'py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6'
 		}
 	};
