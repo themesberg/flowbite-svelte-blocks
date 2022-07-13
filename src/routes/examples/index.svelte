@@ -15,7 +15,12 @@
 		NavUl,
 		NavLi,
 		Button,
-		SocialMediaFooter
+		Footer,
+		FooterCopyright,
+		FooterIcon,
+		FooterLinkGroup,
+		FooterLink,
+		FooterBrand
 	} from 'flowbite-svelte';
 	import {
 		ArrowRight,
@@ -34,61 +39,6 @@
 	import Microsoft from '../utils/icons/Microsoft.svelte';
 	import Spotify from '../utils/icons/Spotify.svelte';
 	import { Facebook, Github, Twitter, Instagram } from 'svelte-simples';
-	let site = {
-		href: '/',
-		name: 'Flowbite',
-		img: 'https://flowbite.com/docs/images/logo.svg'
-	};
-	let links = [
-		{
-			parent: 'RESOURCES',
-			children: [
-				{ name: 'Flowbite-Svelte', href: '/' },
-				{
-					name: 'Flowbite',
-					href: '/'
-				}
-			]
-		},
-		{
-			parent: 'FOLLOW US',
-			children: [
-				{ name: 'Github', href: '/' },
-				{
-					name: 'Flowbite',
-					href: '/'
-				}
-			]
-		},
-		{
-			parent: 'LEGAL',
-			children: [
-				{ name: 'Privacy Policy', href: '/' },
-				{
-					name: 'Terms & Conditions',
-					href: '/'
-				}
-			]
-		}
-	];
-	let socialMedia = [
-		{
-			href: '/',
-			icon: Facebook
-		},
-		{
-			href: '/',
-			icon: Github
-		},
-		{
-			href: '/',
-			icon: Twitter
-		},
-		{
-			href: '/',
-			icon: Instagram
-		}
-	];
 	let navClass = 'bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800';
 	let navDivClass = 'flex flex-wrap justify-between items-center mx-auto max-w-screen-xl';
 </script>
@@ -341,4 +291,52 @@
 		>
 	</Cta>
 </Section>
-<SocialMediaFooter {socialMedia} {links} {site} />
+<Footer footerType="socialmedia">
+	<div class="md:flex md:justify-between">
+		<div class="mb-6 md:mb-0">
+			<FooterBrand
+				href="https://flowbite.com"
+				src="https://flowbite.com/docs/images/logo.svg"
+				alt="Flowbite Logo"
+				name="Flowbite"
+			/>
+		</div>
+		<div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+			<div>
+				<h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+					Resources
+				</h2>
+				<FooterLinkGroup>
+					<FooterLink liClass="mb-4" href="/">Flowbite</FooterLink>
+					<FooterLink liClass="mb-4" href="/">Tailwind CSS</FooterLink>
+				</FooterLinkGroup>
+			</div>
+			<div>
+				<h2 class="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">
+					Follow us
+				</h2>
+				<FooterLinkGroup>
+					<FooterLink liClass="mb-4" href="/">Gihub</FooterLink>
+					<FooterLink liClass="mb-4" href="/">Discord</FooterLink>
+				</FooterLinkGroup>
+			</div>
+			<div>
+				<h2 class="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">Legal</h2>
+				<FooterLinkGroup>
+					<FooterLink liClass="mb-4" href="/">Privacy Policy</FooterLink>
+					<FooterLink liClass="mb-4" href="/">Terms & Conditions</FooterLink>
+				</FooterLinkGroup>
+			</div>
+		</div>
+	</div>
+	<hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+	<div class="sm:flex sm:items-center sm:justify-between">
+		<FooterCopyright href="/" by="Flowbite™" />
+		<div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+			<FooterIcon href="/" class="text-gray-400 hover:text-gray-900" icon={Facebook} />
+			<FooterIcon href="/" class="text-gray-400 hover:text-gray-900" icon={Instagram} />
+			<FooterIcon href="/" class="text-gray-400 hover:text-gray-900" icon={Twitter} />
+			<FooterIcon href="/" class="text-gray-400 hover:text-gray-900" icon={Github} />
+		</div>
+	</div>
+</Footer>
