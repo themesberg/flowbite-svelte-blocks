@@ -1,6 +1,5 @@
 <script>
 	import { Section } from '$lib/index';
-	import { SocialMediaFooter } from 'flowbite-svelte';
 	import { Facebook, Github, Twitter, Instagram } from 'svelte-simples';
 	import { ExampleDiv, SectionHeader, EditOnGithub } from '../utils/index';
 	import {
