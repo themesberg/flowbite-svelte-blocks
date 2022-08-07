@@ -53,6 +53,9 @@ export { default as PricingItemWrapper } from './pricing/PricingItemWrapper.svel
 export { default as PricingHead } from './pricing/PricingHead.svelte'
 export { default as PricingItem } from './pricing/PricingItem.svelte'
 
+// Social
+export { default as Social } from './social/Social.svelte'
+
 // team
 export { default as TeamBody } from './team/TeamBody.svelte'
 export { default as TeamHeader } from './team/TeamHeader.svelte'
