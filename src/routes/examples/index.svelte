@@ -38,7 +38,7 @@
 	import Mashable from '../utils/icons/Mashable.svelte';
 	import Microsoft from '../utils/icons/Microsoft.svelte';
 	import Spotify from '../utils/icons/Spotify.svelte';
-	import { Facebook, Github, Twitter, Instagram } from 'svelte-simples';
+	import { Facebook, Github, Twitter, Instagram } from '../utils/';
 	let navClass = 'bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800';
 	let navDivClass = 'flex flex-wrap justify-between items-center mx-auto max-w-screen-xl';
 </script>

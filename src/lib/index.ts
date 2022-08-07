@@ -43,6 +43,9 @@ export { default as Page404 } from './page404/Page404.svelte'
 // page500
 export { default as Page500 } from './page500/Page500.svelte'
 
+// popup
+export { default as Popup } from './popup/Popup.svelte'
+
 // pricing
 export { default as PricingCard } from './pricing/PricingCard.svelte'
 export { default as PricingBodyHead } from './pricing/PricingBodyHead.svelte'

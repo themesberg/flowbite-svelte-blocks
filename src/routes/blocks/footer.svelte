@@ -1,6 +1,6 @@
 <script>
-	import { Section } from '$lib/index';
-	import { Facebook, Github, Twitter, Instagram } from 'svelte-simples';
+	import { Section } from '$lib';
+	import { Github } from '../utils';
 	import { ExampleDiv, SectionHeader, EditOnGithub } from '../utils/index';
 	import {
 		Breadcrumb,

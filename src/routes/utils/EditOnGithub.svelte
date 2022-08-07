@@ -1,6 +1,6 @@
 <script lang="ts">
 	import classNames from 'classnames';
-	import { Github } from 'svelte-simples';
+	import { Github } from '../utils/';
 	export let href: string = '';
 	export let size: string = '20';
 	export let color: string = '';
