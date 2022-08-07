@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.5](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.2.4...v0.2.5) (2022-08-07)
+
+
+### Features
+
+* add login page ([99fae0b](https://github.com/shinokada/flowbite-svelte-blocks/commit/99fae0bd17bde0474b8ecd8c84bf9e866e355210))
+
 ### [0.2.4](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.2.3...v0.2.4) (2022-08-07)
 
 
