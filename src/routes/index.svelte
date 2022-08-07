@@ -63,7 +63,9 @@
 				</span>
 			</NavBrand>
 			<div class="flex items-center lg:order-2">
-				<a href="/" class="text-gray-500 dark:text-white"><Button color="none">Log in</Button></a>
+				<a href="/" class="text-gray-500 dark:text-white"
+					><Button color="alternative">Log in</Button></a
+				>
 				<a href="/"><Button>Get started</Button></a>
 				<DarkMode {btnClass} />
 				<NavHamburger

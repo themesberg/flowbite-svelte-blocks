@@ -56,7 +56,7 @@
 			</span>
 		</NavBrand>
 		<div class="flex items-center lg:order-2">
-			<a href="/"><Button color="none">Log in</Button></a>
+			<a href="/"><Button color="alternative">Log in</Button></a>
 			<a href="/"> <Button>Get started</Button></a>
 			<NavHamburger
 				on:click={toggle}
