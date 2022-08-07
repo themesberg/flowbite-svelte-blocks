@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.1.6...v0.2.0) (2022-08-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* add popup, remove svelte-simples, and add icons
+
+### Features
+
+* add popup, remove svelte-simples, and add icons ([2121118](https://github.com/shinokada/flowbite-svelte-blocks/commit/2121118460a08766144fdf9c0dea0270ac7f4e96))
+
+
+### Bug Fixes
+
+* footer and tests ([10de57c](https://github.com/shinokada/flowbite-svelte-blocks/commit/10de57c325bfd2b503f245a990e94a85b31de9a9))
+* update Button color none to alternative ([6396b68](https://github.com/shinokada/flowbite-svelte-blocks/commit/6396b6879d0aa70575bc2b14fb2a1a94c88224ec))
+* update dependencies, postcss.config.cjs and playwright.config.ts ([b934018](https://github.com/shinokada/flowbite-svelte-blocks/commit/b9340183859391f1146cbab5a2e0d24f8446c1dc))
+
 ### [0.1.6](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.1.5...v0.1.6) (2022-07-12)
 
 ### [0.1.5](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.1.4...v0.1.5) (2022-07-01)
