@@ -39,7 +39,7 @@
 </Section>
 
 <ExampleDiv>
-	<Section name="register">
+	<Section name="reset">
 		<Register href="/">
 			<svelte:fragment slot="top">
 				<img

@@ -13,6 +13,7 @@
 		| 'headingwithctabutton'
 		| 'heroDefault'
 		| 'heroVisual'
+		| 'login'
 		| 'logos'
 		| 'maintenance'
 		| 'none'
@@ -20,6 +21,7 @@
 		| 'page404'
 		| 'pricing'
 		| 'register'
+		| 'reset'
 		| 'social'
 		| 'team' = 'heroDefault';
 	const sectionClasses = {
@@ -56,6 +58,9 @@
 		heroVisual: {
 			div: 'grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12'
 		},
+		login: {
+			div: 'flex flex-col items-center justify-center px-6 py-8 mx-auto lg:py-0'
+		},
 		logos: {
 			div: 'py-8 lg:py-16 mx-auto max-w-screen-xl px-4'
 		},
@@ -75,7 +80,10 @@
 			div: 'py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6'
 		},
 		register: {
-			div: 'flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0'
+			div: 'flex flex-col items-center justify-center px-6 py-8 mx-auto lg:py-0'
+		},
+		reset: {
+			div: 'flex flex-col items-center justify-center px-6 py-8 mx-auto lg:py-0'
 		},
 		social: {
 			div: 'max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6'
