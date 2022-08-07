@@ -105,20 +105,6 @@
 </Section>
 
 <ExampleDiv>
-	<Section name="feature">
-		<HeroHeader
-			class="max-w-screen-md mb-8 lg:mb-16"
-			h2Class="mb-1 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"
-			pClass="text-lg text-gray-500 lg:mb-0 dark:text-gray-400 lg:max-w-2xl"
-		>
-			<svelte:fragment slot="h2">Visual</svelte:fragment>
-			<svelte:fragment slot="paragraph">
-				Use this default example with an announcement badge, heading, CTA buttons, and customer
-				logos to showcase what your website offers.
-			</svelte:fragment>
-		</HeroHeader>
-	</Section>
-
 	<Section name="heroVisual">
 		<div class="mr-auto place-self-center lg:col-span-7">
 			<HeroHeader

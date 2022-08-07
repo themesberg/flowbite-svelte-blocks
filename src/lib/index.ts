@@ -52,3 +52,14 @@ export { default as PricingBodyHead } from './pricing/PricingBodyHead.svelte'
 export { default as PricingItemWrapper } from './pricing/PricingItemWrapper.svelte'
 export { default as PricingHead } from './pricing/PricingHead.svelte'
 export { default as PricingItem } from './pricing/PricingItem.svelte'
+
+// team
+export { default as TeamBody } from './team/TeamBody.svelte'
+export { default as TeamHeader } from './team/TeamHeader.svelte'
+export { default as TeamItem } from './team/TeamItem.svelte'
+export { default as TeamWrapper } from './team/TeamWrapper.svelte'
+
+// utils
+export { default as Facebook } from './utils/Facebook.svelte'
+export { default as Github } from './utils/Github.svelte'
+export { default as Twitter } from './utils/Twitter.svelte'
