@@ -19,6 +19,7 @@
 		| 'page500'
 		| 'page404'
 		| 'pricing'
+		| 'register'
 		| 'social'
 		| 'team' = 'heroDefault';
 	const sectionClasses = {
@@ -72,6 +73,9 @@
 		},
 		pricing: {
 			div: 'py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6'
+		},
+		register: {
+			div: 'flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0'
 		},
 		social: {
 			div: 'max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6'

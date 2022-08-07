@@ -6,7 +6,6 @@
 	>
 		<div class="text-left">
 			<h2 class="text-lg font-medium text-gray-500 dark:text-gray-400">Reset Password Forms</h2>
-			<p class="text-sm text-gray-500 dark:text-gray-400">5 components</p>
 		</div>
 		<div class="text-gray-900 dark:text-white">
 			<span
