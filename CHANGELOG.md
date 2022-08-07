@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.2](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.2.1...v0.2.2) (2022-08-07)
+
+
+### Features
+
+* add Social component and social-proof page ([ac3b286](https://github.com/shinokada/flowbite-svelte-blocks/commit/ac3b28608ea12ea668888e06f3be8a58774ccc40))
+
 ### [0.2.1](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.2.0...v0.2.1) (2022-08-07)
 
 
