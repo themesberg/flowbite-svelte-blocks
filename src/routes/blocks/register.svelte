@@ -1,15 +1,7 @@
 <script lang="ts">
 	import { Section, Register } from '$lib';
 	import { ExampleDiv, SectionHeader, EditOnGithub } from '../utils/index';
-	import {
-		Breadcrumb,
-		BreadcrumbItem,
-		Button,
-		Card,
-		Checkbox,
-		Label,
-		Input
-	} from 'flowbite-svelte';
+	import { Breadcrumb, BreadcrumbItem, Button, Checkbox, Label, Input } from 'flowbite-svelte';
 	import { Home } from 'svelte-heros';
 </script>
 
