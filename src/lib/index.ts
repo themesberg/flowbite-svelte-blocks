@@ -4,6 +4,9 @@ export { default as Section } from './Section.svelte'
 export { default as ForgotPassword } from './acount-recovery/ForgotPassword.svelte'
 export { default as ForgotPasswordHeader } from './acount-recovery/ForgotPasswordHeader.svelte'
 
+// banner
+export { default as Banner } from './banner/Banner.svelte'
+
 // blog
 export { default as ArticleAuthor } from './blog/ArticleAuthor.svelte'
 export { default as ArticleBody } from './blog/ArticleBody.svelte'
@@ -21,6 +24,10 @@ export { default as ContentWithImage } from './content/ContentWithImage.svelte'
 
 // cta
 export { default as Cta } from './cta/Cta.svelte'
+
+// faq
+export { default as Faq } from './faq/Faq.svelte'
+export { default as FaqItem } from './faq/FaqItem.svelte'
 
 // feature
 export { default as FeatureDefault } from './feature/FeatureDefault.svelte'

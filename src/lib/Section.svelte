@@ -8,6 +8,7 @@
 		| 'contact'
 		| 'content'
 		| 'contentwithimg'
+		| 'faq'
 		| 'feature'
 		| 'forgotpassword'
 		| 'headingwithctabutton'
@@ -43,6 +44,7 @@
 		contentwithimg: {
 			div: 'gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6'
 		},
+		faq: { div: 'py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6' },
 		feature: {
 			div: 'py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6'
 		},

@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { Section } from '$lib';
+	import { Section, Banner } from '$lib';
 	import { ExampleDiv, SectionHeader, EditOnGithub } from '../utils/index';
-	import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
+	import { Breadcrumb, BreadcrumbItem, CloseButton } from 'flowbite-svelte';
 	import { Home } from 'svelte-heros';
 </script>
 
@@ -35,3 +35,16 @@
 		</div>
 	</div>
 </Section>
+
+<ExampleDiv>
+	<Banner>
+		<p class="text-sm font-light text-gray-500 dark:text-gray-400">
+			Supercharge your hiring by taking advantage of our <a
+				class="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline"
+				href="#">limited-time sale</a
+			> for Designer Search + Job Board. Unlimited access to over 190K top-ranked candidates and the
+			#1 design job board.
+		</p>
+		<CloseButton />
+	</Banner>
+</ExampleDiv>
