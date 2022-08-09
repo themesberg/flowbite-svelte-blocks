@@ -72,7 +72,13 @@ export { default as TeamHeader } from './team/TeamHeader.svelte'
 export { default as TeamItem } from './team/TeamItem.svelte'
 export { default as TeamWrapper } from './team/TeamWrapper.svelte'
 
+// testimonial
+export { default as Testimonial } from './testimonial/Testimonial.svelte'
+export { default as TestimonialCard } from './testimonial/TestimonialCard.svelte'
+export { default as TestimonialCardItem } from './testimonial/TestimonialCardItem.svelte'
+
 // utils
 export { default as Facebook } from './utils/Facebook.svelte'
 export { default as Github } from './utils/Github.svelte'
+export { default as Quotes } from './utils/Quotes.svelte'
 export { default as Twitter } from './utils/Twitter.svelte'
