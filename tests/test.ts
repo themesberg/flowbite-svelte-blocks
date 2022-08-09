@@ -5,8 +5,8 @@ test('index page has expected h1', async ({ page }) => {
 	expect(await page.textContent('h1')).toBe('Flowbite Blocks - Tailwind UI components');
 });
 
-test('examples page has expected h1', async ({ page }) => {
-	await page.goto('/examples');
+test('example page has expected h1', async ({ page }) => {
+	await page.goto('/example');
 	expect(await page.textContent('h1')).toBe('Payments tool for software companies');
 });
 

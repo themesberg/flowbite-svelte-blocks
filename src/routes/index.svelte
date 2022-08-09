@@ -64,7 +64,7 @@
 				ulClass="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0"
 			>
 				<NavLi href="/">Home</NavLi>
-				<NavLi href="/examples">Examples</NavLi>
+				<NavLi href="/example">Example</NavLi>
 				<NavLi href="https://github.com/shinokada/flowbite-svelte-blocks">GitHub</NavLi>
 				<NavLi href="https://flowbite-svelte.com">Flowbite-Svelte</NavLi>
 			</NavUl>
