@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { Section } from '$lib';
+	import { Section, Newsletter } from '$lib';
 	import { ExampleDiv, SectionHeader, EditOnGithub } from '../utils/index';
-	import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
-	import { Home } from 'svelte-heros';
+	import { Breadcrumb, BreadcrumbItem, Iconinput } from 'flowbite-svelte';
+	import { Home, Mail } from 'svelte-heros';
 </script>
 
 <SectionHeader>
@@ -35,3 +35,29 @@
 		</div>
 	</div>
 </Section>
+
+<ExampleDiv>
+	<Section>
+		<Newsletter>
+			<svelte:fragment slot="h2">Sign up for our newsletter</svelte:fragment>
+			<p
+				class="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl dark:text-gray-400"
+			>
+				Stay up to date with the roadmap progress, announcements and exclusive discounts feel free
+				to sign up with your email.
+			</p>
+			<form action="/">
+				<div class="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
+					<Iconinput
+						noBorder
+						id="email"
+						type="email"
+						icon={Mail}
+						iconClass="h-5 w-5 mr-2 dark:text-gray-400"
+						placeholder="Enter your email"
+					/>
+				</div>
+			</form>
+		</Newsletter>
+	</Section>
+</ExampleDiv>

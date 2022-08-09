@@ -8,6 +8,7 @@
 		| 'contact'
 		| 'content'
 		| 'contentwithimg'
+		| 'default'
 		| 'faq'
 		| 'feature'
 		| 'forgotpassword'
@@ -17,6 +18,7 @@
 		| 'login'
 		| 'logos'
 		| 'maintenance'
+		| 'newsletter'
 		| 'none'
 		| 'page500'
 		| 'page404'
@@ -25,7 +27,7 @@
 		| 'reset'
 		| 'social'
 		| 'team'
-		| 'testimonial' = 'heroDefault';
+		| 'testimonial' = 'default';
 	const sectionClasses = {
 		blog: {
 			div: 'py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6'
@@ -44,6 +46,9 @@
 		},
 		contentwithimg: {
 			div: 'gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6'
+		},
+		default: {
+			div: 'py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6'
 		},
 		faq: { div: 'py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6' },
 		feature: {
@@ -69,6 +74,9 @@
 		},
 		maintenance: {
 			div: 'py-8 px-4 mx-auto max-w-screen-md text-center lg:py-16 lg:px-12'
+		},
+		newsletter: {
+			div: 'py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6'
 		},
 		none: {
 			div: ''

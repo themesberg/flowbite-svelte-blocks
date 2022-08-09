@@ -44,6 +44,9 @@ export { default as News } from './hero/News.svelte'
 // maintenance
 export { default as Maintenance } from './maintenance/Maintenance.svelte'
 
+// newsletter
+export { default as Newsletter } from './newsletter/Newsletter.svelte'
+
 // page404
 export { default as Page404 } from './page404/Page404.svelte'
 

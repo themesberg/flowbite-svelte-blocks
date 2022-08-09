@@ -55,6 +55,10 @@
 		"flowbite",
 		"flowbite blocks"
 	],
+	"engines": {
+		"npm": ">=7.0.0",
+		"node": ">=16.0.0"
+	},
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/shinokada/flowbite-svelte-blocks"
