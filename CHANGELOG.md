@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.6](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.2.5...v0.2.6) (2022-08-09)
+
+
+### Features
+
+* add faq component and page ([34e5231](https://github.com/shinokada/flowbite-svelte-blocks/commit/34e523172abd0a2e536057328d44325c6664d83d))
+* add newsletter page and components ([e17eaf3](https://github.com/shinokada/flowbite-svelte-blocks/commit/e17eaf391d940c89c9a9e77eeaad19fe7d524045))
+* add testimonial components and page ([903e1ee](https://github.com/shinokada/flowbite-svelte-blocks/commit/903e1eec0c2e450d9ad2f046527c5aed2ccfb0d7))
+
+
+### Bug Fixes
+
+* add favicons, update package.json ([0483539](https://github.com/shinokada/flowbite-svelte-blocks/commit/0483539de5d5446042240918020e064c94698d1b))
+* pnpm-lock update ([7a33a33](https://github.com/shinokada/flowbite-svelte-blocks/commit/7a33a33a8cb4045fa48fbac99aa8c5c8fc187e57))
+
 ### [0.2.5](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.2.4...v0.2.5) (2022-08-07)
 
 
