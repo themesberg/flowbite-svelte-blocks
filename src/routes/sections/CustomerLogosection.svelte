@@ -6,6 +6,7 @@
 	>
 		<div class="text-left">
 			<h2 class="text-lg font-medium text-gray-500 dark:text-gray-400">Customer Logos</h2>
+			<p class="text-sm text-gray-500 dark:text-gray-400">1 free component</p>
 		</div>
 		<div class="text-gray-900 dark:text-white">
 			<span
