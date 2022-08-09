@@ -12,7 +12,7 @@ specifiers:
   eslint-config-prettier: ^8.5.0
   eslint-plugin-svelte3: ^4.0.0
   flowbite: ^1.5.1
-  flowbite-svelte: ^0.24.3
+  flowbite-svelte: ^0.24.4
   postcss: ^8.4.14
   postcss-load-config: ^4.0.1
   prettier: ^2.7.1
@@ -39,7 +39,7 @@ devDependencies:
   eslint-config-prettier: 8.5.0_eslint@8.21.0
   eslint-plugin-svelte3: 4.0.0_a7wk4ghvg4hia4trwaglu7p6cq
   flowbite: 1.5.1
-  flowbite-svelte: 0.24.3
+  flowbite-svelte: 0.24.4
   postcss: 8.4.16
   postcss-load-config: 4.0.1_postcss@8.4.16
   prettier: 2.7.1
@@ -1210,8 +1210,8 @@ packages:
     resolution: {integrity: sha512-0sQoMh9s0BYsm+12Huy/rkKxVu4R1+r96YX5cG44rHV0pQ6iC3Q+mkoMFaGWObMFYQxCVT+ssG1ksneA2MI9KQ==}
     dev: true
 
-  /flowbite-svelte/0.24.3:
-    resolution: {integrity: sha512-+i9CioAT5jihrXcAgdKexdJe5ZNy+jE+0Wj8gjmWIuRnKfu0Ty7o1/jXyWamFjKqPe+Zue0kcOgzn9Wf8GRE4A==}
+  /flowbite-svelte/0.24.4:
+    resolution: {integrity: sha512-HLm7m0pVH4xT4DTKrf5pdJZvSIgvweEsgs68KpqGI5duSLcOe9HD5+oYCpc+UtagfpLyvJs7EbqeKWl8bIkH7Q==}
     engines: {node: '>=16.0.0', npm: '>=7.0.0'}
     dependencies:
       '@floating-ui/dom': 0.5.4

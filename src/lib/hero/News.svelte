@@ -3,7 +3,7 @@
 	import classNames from 'classnames';
 	import { ChevronRight } from 'svelte-heros';
 	export let href: string = '/';
-	export let iconSize: number = 18;
+	export let iconSize: string = '18';
 	export let iconClass: string = '';
 	export let icon: typeof SvelteComponent = ChevronRight;
 </script>
