@@ -1,6 +1,6 @@
 <script>
 	import { Section } from '$lib';
-	import { Github } from '../utils';
+	import { Facebook, Instagram, Github, Twitter } from '../utils';
 	import { ExampleDiv, SectionHeader, EditOnGithub } from '../utils/index';
 	import {
 		Breadcrumb,
@@ -42,6 +42,54 @@
 				href="https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/blocks/footer.svelte"
 				iconClass="text-gray-500"
 			/>
+		</div>
+	</div>
+</Section>
+
+<ExampleDiv>
+	<Footer footerType="socialmedia">
+		<div class="mx-auto max-w-screen-xl text-center">
+			<FooterBrand
+				href="https://flowbite.com"
+				src="https://flowbite.com/docs/images/logo.svg"
+				alt="Flowbite Logo"
+				name="Flowbite"
+				aClass="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white"
+			/>
+			<p class="my-6 text-gray-500 dark:text-gray-400">
+				Open-source library of over 400+ web components and interactive elements built for better
+				web.
+			</p>
+			<FooterLinkGroup
+				ulClass="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white"
+			>
+				<FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="/">About</FooterLink>
+				<FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="/">Premium</FooterLink>
+				<FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="/">Campaigns</FooterLink>
+				<FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="/">Blog</FooterLink>
+				<FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="/"
+					>Affiliate Program</FooterLink
+				>
+				<FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="/">FAQs</FooterLink>
+				<FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="/">Contact</FooterLink>
+			</FooterLinkGroup>
+			<span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+				>© 2021-2022 <a href="#" class="hover:underline">Flowbite™</a>. All Rights Reserved.</span
+			>
+		</div>
+	</Footer>
+</ExampleDiv>
+
+<Section name="none" classSection="py-6 sm:py-10" classDiv="px-4 mx-auto max-w-8xl">
+	<div class="grid lg:grid-cols-2">
+		<div>
+			<h2 class="mb-1 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+				Sitemap with logo and social media
+			</h2>
+			<p class="text-lg text-gray-500 lg:mb-0 dark:text-gray-400 lg:max-w-2xl">
+				Use this footer section to show the logo of your brand, the sitemap, social media accounts,
+				and the copyright notice.
+			</p>
 		</div>
 	</div>
 </Section>
@@ -110,11 +158,10 @@
 		<div class="sm:flex sm:items-center sm:justify-between">
 			<FooterCopyright href="/" by="Flowbite™" />
 			<div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-				<FooterIcon
-					href="https://github.com/shinokada/flowbite-svelte-blocks"
-					class="text-gray-400 hover:text-gray-900"
-					icon={Github}
-				/>
+				<FooterIcon href="/" class="text-gray-400 hover:text-gray-900" icon={Facebook} />
+				<FooterIcon href="/" class="text-gray-400 hover:text-gray-900" icon={Instagram} />
+				<FooterIcon href="/" class="text-gray-400 hover:text-gray-900" icon={Twitter} />
+				<FooterIcon href="/" class="text-gray-400 hover:text-gray-900" icon={Github} />
 			</div>
 		</div>
 	</Footer>
