@@ -1,6 +1,6 @@
 {
 	"name": "flowbite-svelte-blocks",
-	"version": "0.2.10",
+	"version": "0.2.9",
 	"description": "Flowbite blocks components for Svelte",
 	"author": {
 		"name": "Shinichi Okada",
@@ -25,6 +25,7 @@
 		"@playwright/test": "^1.25.1",
 		"@sveltejs/adapter-auto": "1.0.0-next.64",
 		"@sveltejs/kit": "1.0.0-next.471",
+		"@sveltejs/package": "1.0.0-next.3",
 		"@typescript-eslint/eslint-plugin": "^5.36.2",
 		"@typescript-eslint/parser": "^5.36.2",
 		"autoprefixer": "^10.4.8",
