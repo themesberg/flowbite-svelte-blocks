@@ -10,7 +10,7 @@
 		Mashable,
 		Microsoft,
 		Spotify
-	} from '../utils/index';
+	} from '../../utils/+server';
 	import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
 	import { Home } from 'svelte-heros';
 </script>

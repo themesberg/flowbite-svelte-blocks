@@ -2,7 +2,7 @@
 	import { Section, Cta } from '$lib';
 	import { Button, Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
 	import { Home, VideoCamera } from 'svelte-heros';
-	import { ExampleDiv, SectionHeader, EditOnGithub } from '../utils/index';
+	import { ExampleDiv, SectionHeader, EditOnGithub } from '../../utils/+server';
 </script>
 
 <SectionHeader>

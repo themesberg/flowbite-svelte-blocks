@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Section, Contact } from '$lib';
-	import { ExampleDiv, SectionHeader, EditOnGithub } from '../utils/index';
+	import { ExampleDiv, SectionHeader, EditOnGithub } from '../../utils/+server';
 	import { Label, Input, Textarea, Button, Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
 	import { Home } from 'svelte-heros';
 </script>

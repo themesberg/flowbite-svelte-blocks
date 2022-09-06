@@ -1,7 +1,7 @@
 <script>
 	import { Section } from '$lib';
-	import { Facebook, Instagram, Github, Twitter } from '../utils';
-	import { ExampleDiv, SectionHeader, EditOnGithub } from '../utils/index';
+	import { Facebook, Instagram, Github, Twitter } from '../../utils';
+	import { ExampleDiv, SectionHeader, EditOnGithub } from '../../utils/+server';
 	import {
 		Breadcrumb,
 		BreadcrumbItem,

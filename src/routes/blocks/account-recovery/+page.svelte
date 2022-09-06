@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Section, ForgotPassword, ForgotPasswordHeader } from '$lib';
-	import { ExampleDiv, SectionHeader, EditOnGithub } from '../utils/index';
+	import { ExampleDiv, SectionHeader, EditOnGithub } from '../../utils/+server';
 	import { Breadcrumb, BreadcrumbItem, Label, Input, Button, Checkbox } from 'flowbite-svelte';
 	import { Home } from 'svelte-heros';
 </script>

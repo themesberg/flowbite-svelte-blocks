@@ -1,6 +1,10 @@
 <script lang="ts">
+	throw new Error(
+		'@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)'
+	);
+
 	import { Section, Banner } from '$lib';
-	import { ExampleDiv, SectionHeader, EditOnGithub } from '../utils/index';
+	import { ExampleDiv, SectionHeader, EditOnGithub } from '../../utils/+server';
 	import { Breadcrumb, BreadcrumbItem, CloseButton } from 'flowbite-svelte';
 	import { Home } from 'svelte-heros';
 	export let visible = true;

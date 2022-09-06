@@ -8,7 +8,7 @@
 		BlogHead,
 		BlogBodyWrapper
 	} from '$lib';
-	import { ExampleDiv, SectionHeader, EditOnGithub } from '../utils/index';
+	import { ExampleDiv, SectionHeader, EditOnGithub } from '../../utils/+server';
 	import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
 	import { ArrowSmRight, VideoCamera, Newspaper, Home } from 'svelte-heros';
 </script>

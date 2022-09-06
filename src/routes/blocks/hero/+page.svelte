@@ -1,5 +1,5 @@
 <script>
-	import { Section, News, HeroHeader, HeroBody } from '$lib/index';
+	import { Section, News, HeroHeader, HeroBody } from '$lib';
 	import { Button, Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
 	import { ArrowRight, VideoCamera } from 'svelte-heros';
 	import {
@@ -9,7 +9,7 @@
 		ExampleDiv,
 		SectionHeader,
 		EditOnGithub
-	} from '../utils/index';
+	} from '../../utils/+server';
 </script>
 
 <SectionHeader>
