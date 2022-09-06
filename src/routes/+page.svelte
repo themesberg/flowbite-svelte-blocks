@@ -4,6 +4,7 @@
 		AccountRecoverysection,
 		Bannersection,
 		Blogsection,
+		BlogTemplatesection,
 		ContactFormsection,
 		Contentsection,
 		CookieConsentsection,
@@ -112,6 +113,7 @@
 						<CookieConsentsection />
 						<UserOnboarding />
 						<CustomerLogosection />
+						<BlogTemplatesection />
 						<Page404section />
 						<Page500section />
 						<Maintenancesection />

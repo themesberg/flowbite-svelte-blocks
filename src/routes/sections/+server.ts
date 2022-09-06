@@ -1,6 +1,7 @@
 export { default as AccountRecoverysection } from './AccountRecoverysection/+page.svelte'
 export { default as Bannersection } from './Bannersection/+page.svelte'
 export { default as Blogsection } from './Blogsection/+page.svelte'
+export { default as BlogTemplatesection } from './BlogTemplatesection/+page.svelte'
 export { default as ContactFormsection } from './ContactFormsection/+page.svelte'
 export { default as Contentsection } from './Contentsection/+page.svelte'
 export { default as CookieConsentsection } from './CookieConsentsection/+page.svelte'
