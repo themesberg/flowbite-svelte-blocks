@@ -1,7 +1,14 @@
 <script>
 	import { Section } from '$lib';
-	import { Facebook, Instagram, Github, Twitter } from '../../utils';
-	import { ExampleDiv, SectionHeader, EditOnGithub } from '../../utils/+server';
+	import {
+		ExampleDiv,
+		SectionHeader,
+		EditOnGithub,
+		Facebook,
+		Instagram,
+		Github,
+		Twitter
+	} from '../../utils/+server';
 	import {
 		Breadcrumb,
 		BreadcrumbItem,
@@ -74,7 +81,8 @@
 				<FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="/">Contact</FooterLink>
 			</FooterLinkGroup>
 			<span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
-				>© 2021-2022 <a href="#" class="hover:underline">Flowbite™</a>. All Rights Reserved.</span
+				>© 2021-2022 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All
+				Rights Reserved.</span
 			>
 		</div>
 	</Footer>

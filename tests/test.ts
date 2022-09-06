@@ -11,77 +11,77 @@ test('example page has expected h1', async ({ page }) => {
 });
 
 test('page404 page has expected h1', async ({ page }) => {
-	await page.goto('/blocks/404');
+	await page.goto('/marketing/404');
 	expect(await page.textContent('h1')).toBe('Tailwind CSS 404 Page - Flowbite-Svelte-Blocks');
 });
 
 test('page500 page has expected h1', async ({ page }) => {
-	await page.goto('/blocks/500');
+	await page.goto('/marketing/500');
 	expect(await page.textContent('h1')).toBe('Tailwind CSS 500 Page - Flowbite-Svelte-Blocks');
 });
 
 test('account-recovery page has expected h1', async ({ page }) => {
-	await page.goto('/blocks/account-recovery');
+	await page.goto('/marketing/account-recovery');
 	expect(await page.textContent('h1')).toBe('Tailwind CSS Account Recovery Form - Flowbite-Svelte-Blocks');
 });
 
 test('banner page has expected h1', async ({ page }) => {
-	await page.goto('/blocks/banner');
+	await page.goto('/marketing/banner');
 	expect(await page.textContent('h1')).toBe('Tailwind CSS Banner - Flowbite-Svelte-Blocks');
 });
 
 test('blog page has expected h1', async ({ page }) => {
-	await page.goto('/blocks/blog');
+	await page.goto('/marketing/blog');
 	expect(await page.textContent('h1')).toBe('Tailwind CSS Blog Sections - Flowbite-Svelte-Blocks');
 });
 
 test('contact page has expected h1', async ({ page }) => {
-	await page.goto('/blocks/contact');
+	await page.goto('/marketing/contact');
 	expect(await page.textContent('h1')).toBe('Tailwind CSS Contact Form - Flowbite-Svelte-Blocks');
 });
 
 test('content page has expected h1', async ({ page }) => {
-	await page.goto('/blocks/content');
+	await page.goto('/marketing/content');
 	expect(await page.textContent('h1')).toBe('Tailwind CSS Content Sections - Flowbite-Svelte-Blocks');
 });
 
 test('cookie page has expected h1', async ({ page }) => {
-	await page.goto('/blocks/cookie');
+	await page.goto('/marketing/cookie');
 	expect(await page.textContent('h1')).toBe('Tailwind CSS Cookie Consent - Flowbite-Svelte-Blocks');
 });
 
 test('cta page has expected h1', async ({ page }) => {
-	await page.goto('/blocks/cta');
+	await page.goto('/marketing/cta');
 	expect(await page.textContent('h1')).toBe('Tailwind CSS CTA Sections - Flowbite-Svelte-Blocks');
 });
 
 test('customer-logo page has expected h1', async ({ page }) => {
-	await page.goto('/blocks/customer-logos');
+	await page.goto('/marketing/customer-logos');
 	expect(await page.textContent('h1')).toBe('Tailwind CSS Customer Logos - Flowbite-Svelte-Blocks');
 });
 
 test('faq page has expected h1', async ({ page }) => {
-	await page.goto('/blocks/faq');
+	await page.goto('/marketing/faq');
 	expect(await page.textContent('h1')).toBe('Tailwind CSS FAQ Sections - Flowbite-Svelte-Blocks');
 });
 
 test('feature page has expected h1', async ({ page }) => {
-	await page.goto('/blocks/feature');
+	await page.goto('/marketing/feature');
 	expect(await page.textContent('h1')).toBe('Tailwind CSS Feature Sections - Flowbite-Svelte-Blocks');
 });
 
 test('footer page has expected h1', async ({ page }) => {
-	await page.goto('/blocks/footer');
+	await page.goto('/marketing/footer');
 	expect(await page.textContent('h1')).toBe('Tailwind CSS Footer Sections - Flowbite-Svelte-Blocks');
 });
 
 test('header page has expected h1', async ({ page }) => {
-	await page.goto('/blocks/header');
+	await page.goto('/marketing/header');
 	expect(await page.textContent('h1')).toBe('Tailwind CSS Header - Flowbite-Svelte-Blocks');
 });
 
 test('hero page has expected h1', async ({ page }) => {
-	await page.goto('/blocks/hero');
+	await page.goto('/marketing/hero');
 	expect(await page.textContent('h1')).toBe('Tailwind CSS Hero Sections - Flowbite-Svelte-Blocks');
 });
 
@@ -89,7 +89,7 @@ test('hero page has expected h1', async ({ page }) => {
 
 
 test('maintenance page has expected h1', async ({ page }) => {
-	await page.goto('/blocks/maintenance');
+	await page.goto('/marketing/maintenance');
 	expect(await page.textContent('h1')).toBe('Tailwind CSS Maintenance Pages - Flowbite-Svelte-Blocks');
 });
 
