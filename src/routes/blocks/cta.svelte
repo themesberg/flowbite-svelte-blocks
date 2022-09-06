@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Section, Cta } from '$lib';
-	import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
-	import { Home } from 'svelte-heros';
+	import { Button, Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
+	import { Home, VideoCamera } from 'svelte-heros';
 	import { ExampleDiv, SectionHeader, EditOnGithub } from '../utils/index';
 </script>
 
@@ -45,21 +45,13 @@
 				interests. Connecting with your friends and family as well as discovering new ones is easy
 				with features like Groups, Watch and Marketplace.
 			</p>
-			<a
-				href="/"
-				class="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-			>
-				<svg
-					class="mr-2 -ml-1 w-5 h-5"
-					fill="currentColor"
-					viewBox="0 0 20 20"
-					xmlns="http://www.w3.org/2000/svg"
-					><path
-						d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"
-					/></svg
-				>
-				View more
-			</a>
+			<div class="flex flex-wrap items-center gap-4">
+				<Button href="/" color="red" size="lg">Get started</Button>
+				<Button href="/" color="light" size="lg"
+					><VideoCamera class="mr-2" size="20" variation="solid" />
+					View more
+				</Button>
+			</div>
 		</Cta>
 	</Section>
 </ExampleDiv>

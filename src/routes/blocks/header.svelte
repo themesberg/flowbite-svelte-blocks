@@ -61,8 +61,8 @@
 				</span>
 			</NavBrand>
 			<div class="flex items-center lg:order-2">
-				<a href="/"><Button color="alternative">Log in</Button></a>
-				<a href="/"> <Button>Get started</Button></a>
+				<Button href="/" color="dark">Log in</Button>
+				<Button href="/" class="ml-2" color="red">Get started</Button>
 				<NavHamburger
 					on:click={toggle}
 					btnClass="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"

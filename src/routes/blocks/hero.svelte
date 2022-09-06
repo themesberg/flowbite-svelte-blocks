@@ -1,7 +1,7 @@
 <script>
 	import { Section, News, HeroHeader, HeroBody } from '$lib/index';
 	import { Button, Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
-	import { ArrowRight, VideoCamera, Home } from 'svelte-heros';
+	import { ArrowRight, VideoCamera } from 'svelte-heros';
 	import {
 		Youtube,
 		ProductHunt,
@@ -14,7 +14,7 @@
 
 <SectionHeader>
 	<Breadcrumb navClass="flex mb-3">
-		<BreadcrumbItem href="/" icon={Home} variation="solid">Blocks</BreadcrumbItem>
+		<BreadcrumbItem href="/" home>Blocks</BreadcrumbItem>
 		<BreadcrumbItem>Hero Sections</BreadcrumbItem>
 	</Breadcrumb>
 	<svelte:fragment slot="h1">Tailwind CSS Hero Sections - Flowbite-Svelte-Blocks</svelte:fragment>
@@ -61,7 +61,7 @@
 			class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4"
 		>
 			<a href="/">
-				<Button size="lg">
+				<Button size="lg" color="red">
 					Learn more <ArrowRight size="18" class="ml-2" />
 				</Button>
 			</a>
@@ -117,7 +117,7 @@
 					simplify their payment stack.
 				</svelte:fragment>
 				<a href="/"
-					><Button size="xl" class="inline-flex items-center justify-center mr-3"
+					><Button size="xl" color="red" class="inline-flex items-center justify-center mr-3"
 						>Get started<ArrowRight size="18" class="ml-2 -mr-1" /></Button
 					>
 				</a>
