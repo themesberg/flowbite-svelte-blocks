@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.9](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.2.8...v0.2.9) (2022-09-06)
+
+
+### Features
+
+* migrate SvelteKit to 1.0.0-next.471 ([689ee39](https://github.com/shinokada/flowbite-svelte-blocks/commit/689ee39c4462376742c2b9eb1371e6f803953b9b))
+
+
+### Bug Fixes
+
+* add color to buttons ([7c7df29](https://github.com/shinokada/flowbite-svelte-blocks/commit/7c7df29527f5296e2abd0b672d9f69f4c25ce9da))
+* update account-recovery ([1779547](https://github.com/shinokada/flowbite-svelte-blocks/commit/1779547a11fc3bf1766ad98431dad6970a813066))
+
 ### [0.2.8](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.2.7...v0.2.8) (2022-08-09)
 
 ### [0.2.7](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.2.6...v0.2.7) (2022-08-09)
