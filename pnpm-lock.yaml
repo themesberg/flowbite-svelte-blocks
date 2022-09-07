@@ -1,9 +1,9 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@playwright/test': ^1.25.1
+  '@playwright/test': ^1.25.2
   '@sveltejs/adapter-auto': 1.0.0-next.64
-  '@sveltejs/kit': 1.0.0-next.471
+  '@sveltejs/kit': 1.0.0-next.476
   '@sveltejs/package': 1.0.0-next.3
   '@typescript-eslint/eslint-plugin': ^5.36.2
   '@typescript-eslint/parser': ^5.36.2
@@ -13,7 +13,7 @@ specifiers:
   eslint-config-prettier: ^8.5.0
   eslint-plugin-svelte3: ^4.0.0
   flowbite: ^1.5.3
-  flowbite-svelte: ^0.26.13
+  flowbite-svelte: ^0.26.16
   postcss: ^8.4.16
   postcss-load-config: ^4.0.1
   prettier: ^2.7.1
@@ -29,9 +29,9 @@ specifiers:
   vite: ^3.1.0
 
 devDependencies:
-  '@playwright/test': 1.25.1
+  '@playwright/test': 1.25.2
   '@sveltejs/adapter-auto': 1.0.0-next.64
-  '@sveltejs/kit': 1.0.0-next.471_svelte@3.50.0+vite@3.1.0
+  '@sveltejs/kit': 1.0.0-next.476_svelte@3.50.0+vite@3.1.0
   '@sveltejs/package': 1.0.0-next.3_25vz5gl6ox2pgh3uo5abz3kk6y
   '@typescript-eslint/eslint-plugin': 5.36.2_iurrlxgqcgk5svigzxakafpeuu
   '@typescript-eslint/parser': 5.36.2_yqf6kl63nyoq5megxukfnom5rm
@@ -41,7 +41,7 @@ devDependencies:
   eslint-config-prettier: 8.5.0_eslint@8.23.0
   eslint-plugin-svelte3: 4.0.0_sc4laremvjv7grvyfrqmp3xv5q
   flowbite: 1.5.3
-  flowbite-svelte: 0.26.13
+  flowbite-svelte: 0.26.16
   postcss: 8.4.16
   postcss-load-config: 4.0.1_postcss@8.4.16
   prettier: 2.7.1
@@ -151,8 +151,8 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
 
-  /@mapbox/node-pre-gyp/1.0.9:
-    resolution: {integrity: sha512-aDF3S3rK9Q2gey/WAttUlISduDItz5BU3306M9Eyv6/oS40aMprnopshtlKTykxRNIBEZuRMaZAnbrQ4QtKGyw==}
+  /@mapbox/node-pre-gyp/1.0.10:
+    resolution: {integrity: sha512-4ySo4CjzStuprMwk35H5pPbkymjv1SF3jGLj6rAHp/xT/RF7TL7bd9CTm1xDY49K2qF7jmR/g7k+SkLETP6opA==}
     hasBin: true
     dependencies:
       detect-libc: 2.0.1
@@ -190,13 +190,13 @@ packages:
       fastq: 1.13.0
     dev: true
 
-  /@playwright/test/1.25.1:
-    resolution: {integrity: sha512-IJ4X0yOakXtwkhbnNzKkaIgXe6df7u3H3FnuhI9Jqh+CdO0e/lYQlDLYiyI9cnXK8E7UAppAWP+VqAv6VX7HQg==}
+  /@playwright/test/1.25.2:
+    resolution: {integrity: sha512-6qPznIR4Fw02OMbqXUPMG6bFFg1hDVNEdihKy0t9K0dmRbus1DyP5Q5XFQhGwEHQkLG5hrSfBuu9CW/foqhQHQ==}
     engines: {node: '>=14'}
     hasBin: true
     dependencies:
       '@types/node': 18.7.15
-      playwright-core: 1.25.1
+      playwright-core: 1.25.2
     dev: true
 
   /@polka/url/1.0.0-next.21:
@@ -253,8 +253,8 @@ packages:
       - supports-color
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.471_svelte@3.50.0+vite@3.1.0:
-    resolution: {integrity: sha512-0uByoMKVXNPckO1MfMIsqOAvCKYAEDaGaVtUYw+6ZvRnTNA77UIGaX9x4RIL9rcc0xQOxTGNR4Xj+0SUCIqmEw==}
+  /@sveltejs/kit/1.0.0-next.476_svelte@3.50.0+vite@3.1.0:
+    resolution: {integrity: sha512-sCd51gwU5eva/bFEQCQDgRc2buNCHC3bk5tLz7uoF7PUkNFFuqJSfkLYd3hs1T3VQWrkH8oU9HK3mJsUKAWe1A==}
     engines: {node: '>=16.14'}
     hasBin: true
     requiresBuild: true
@@ -469,7 +469,7 @@ packages:
     resolution: {integrity: sha512-hFCAETfI5cG8l5iAiLhMC2bReC5K7SIybzrxGorv+eGspIbIFsVw7Vg85GovXm/LxA08pIDrAlrhR6GN36XB/Q==}
     hasBin: true
     dependencies:
-      '@mapbox/node-pre-gyp': 1.0.9
+      '@mapbox/node-pre-gyp': 1.0.10
       acorn: 8.8.0
       async-sema: 3.1.1
       bindings: 1.5.0
@@ -640,7 +640,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001390
-      electron-to-chromium: 1.4.242
+      electron-to-chromium: 1.4.243
       node-releases: 2.0.6
       update-browserslist-db: 1.0.7_browserslist@4.21.3
     dev: true
@@ -823,8 +823,8 @@ packages:
       esutils: 2.0.3
     dev: true
 
-  /electron-to-chromium/1.4.242:
-    resolution: {integrity: sha512-nPdgMWtjjWGCtreW/2adkrB2jyHjClo9PtVhR6rW+oxa4E4Wom642Tn+5LslHP3XPL5MCpkn5/UEY60EXylNeQ==}
+  /electron-to-chromium/1.4.243:
+    resolution: {integrity: sha512-BgLD2gBX43OSXwlT01oYRRD5NIB4n3okTRxkzEAC6G0SZG4TTlyrWMjbOo0fajCwqwpRtMHXQNMjtRN6qpNtfw==}
     dev: true
 
   /emoji-regex/8.0.0:
@@ -1487,8 +1487,8 @@ packages:
     resolution: {integrity: sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==}
     dev: true
 
-  /flowbite-svelte/0.26.13:
-    resolution: {integrity: sha512-6lZF4P6mrp4WyJOcLumMBgsdunOqDk+vNpiA2cErS52BTGTJNYmiSiulMCKQV9sGfl7JITcHKcbvbLVy7KNssg==}
+  /flowbite-svelte/0.26.16:
+    resolution: {integrity: sha512-QDzcKCbtpcnoyfPMDwcEFyUx6giqcviGN/AG2rteWF69tp3Gg1a9Bwd5J6RPjnWf1rUebLcDfvBKzetkGF2jcA==}
     engines: {node: '>=16.0.0', npm: '>=7.0.0'}
     dependencies:
       '@floating-ui/dom': 1.0.1
@@ -2042,8 +2042,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /playwright-core/1.25.1:
-    resolution: {integrity: sha512-lSvPCmA2n7LawD2Hw7gSCLScZ+vYRkhU8xH0AapMyzwN+ojoDqhkH/KIEUxwNu2PjPoE/fcE0wLAksdOhJ2O5g==}
+  /playwright-core/1.25.2:
+    resolution: {integrity: sha512-0yTbUE9lIddkEpLHL3u8PoCL+pWiZtj5A/j3U7YoNjcmKKDGBnCrgHJMzwd2J5vy6l28q4ki3JIuz7McLHhl1A==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
