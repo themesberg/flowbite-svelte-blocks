@@ -42,7 +42,7 @@
 			</NavUl>
 		</Navbar>
 	</header>
-	<div class="px-4 mx-auto max-w-8xl dark:bg-gray-900 pb-40">
+	<div class="px-4 mx-auto max-w-8xl dark:bg-gray-900 pb-8">
 		<slot />
 	</div>
 </div>
