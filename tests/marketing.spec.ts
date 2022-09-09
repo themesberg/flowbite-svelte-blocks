@@ -86,10 +86,62 @@ test('hero page has expected h1', async ({ page }) => {
 });
 
 
-
+test('Login Form page has expected h1', async ({ page }) => {
+	await page.goto('/marketing/login');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS Login Form - Flowbite-Svelte-Blocks');
+});
 
 test('maintenance page has expected h1', async ({ page }) => {
 	await page.goto('/marketing/maintenance');
 	expect(await page.textContent('h1')).toBe('Tailwind CSS Maintenance Pages - Flowbite-Svelte-Blocks');
 });
+
+test('Newsletter page has expected h1', async ({ page }) => {
+	await page.goto('/marketing/newsletter');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS Newsletter - Flowbite-Svelte-Blocks');
+});
+
+test('Popup page has expected h1', async ({ page }) => {
+	await page.goto('/marketing/popup');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS Popup - Flowbite-Svelte-Blocks');
+});
+
+test('Pricing page has expected h1', async ({ page }) => {
+	await page.goto('/marketing/pricing');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS Pricing Table - Flowbite-Svelte-Blocks');
+});
+
+test('Register page has expected h1', async ({ page }) => {
+	await page.goto('/marketing/register');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS Register Form - Flowbite-Svelte-Blocks');
+});
+
+test('Reset Password page has expected h1', async ({ page }) => {
+	await page.goto('/marketing/reset-password');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS Reset Password Form - Flowbite-Svelte-Blocks');
+});
+
+test('Social Proof page has expected h1', async ({ page }) => {
+	await page.goto('/marketing/social-proof');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS Social Proof - Flowbite-Svelte-Blocks');
+});
+
+test('Team page has expected h1', async ({ page }) => {
+	await page.goto('/marketing/team');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS Team Sections - Flowbite-Svelte-Blocks');
+});
+
+test('Testimonial page has expected h1', async ({ page }) => {
+	await page.goto('/marketing/testimonial');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS Testimonials - Flowbite-Svelte-Blocks');
+});
+
+test('User Onboarding page has expected h1', async ({ page }) => {
+	await page.goto('/marketing/user-onboarding');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS User Onboarding - Flowbite-Svelte-Blocks');
+});
+
+
+
+
 

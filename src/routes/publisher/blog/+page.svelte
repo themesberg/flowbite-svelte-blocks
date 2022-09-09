@@ -10,7 +10,7 @@
 		<BreadcrumbItem href="/publisher">Publisher</BreadcrumbItem>
 		<BreadcrumbItem>Blog Templates</BreadcrumbItem>
 	</Breadcrumb>
-	<svelte:fragment slot="h1">Tailwind CSS Templates - Flowbite-Svelte-Blocks</svelte:fragment>
+	<svelte:fragment slot="h1">Tailwind CSS Blog Templates - Flowbite-Svelte-Blocks</svelte:fragment>
 	<svelte:fragment slot="paragraph"
 		>Get started with a collection of Tailwind CSS blog templates, themes, and article layouts to
 		publish content crafted with built-in SEO optimization.</svelte:fragment

@@ -10,7 +10,7 @@
 		<BreadcrumbItem href="/marketing">Marketing</BreadcrumbItem>
 		<BreadcrumbItem>User Onboarding</BreadcrumbItem>
 	</Breadcrumb>
-	<svelte:fragment slot="h1">Tailwind CSS User Onboarding - Flowbite</svelte:fragment>
+	<svelte:fragment slot="h1">Tailwind CSS User Onboarding - Flowbite-Svelte-Blocks</svelte:fragment>
 	<svelte:fragment slot="paragraph"
 		>Use a collection of user onboarding pages to increase the chances of the adoption of your
 		software by improving the introduction phase of your product.</svelte:fragment
