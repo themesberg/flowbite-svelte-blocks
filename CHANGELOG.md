@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.12](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.2.11...v0.2.12) (2022-09-16)
+
+
+### Bug Fixes
+
+* remove pnpm-lock file and node_moduels and run pnpm i ([97409ae](https://github.com/shinokada/flowbite-svelte-blocks/commit/97409ae4274aa41cee7176c58adda3193d1a56e3))
+* update sveltekit ([2889f2a](https://github.com/shinokada/flowbite-svelte-blocks/commit/2889f2a7f9c3bdb893af9c38af02632821d7ee2b))
+* update tests and correct utils path ([2327c06](https://github.com/shinokada/flowbite-svelte-blocks/commit/2327c069b92ff428a44c5ef2193f42f7abbe50b0))
+
 ### [0.2.11](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.2.10...v0.2.11) (2022-09-06)
 
 ### [0.2.9](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.2.10...v0.2.9) (2022-09-06)

@@ -1,6 +1,6 @@
 {
 	"name": "flowbite-svelte-blocks",
-	"version": "0.2.11",
+	"version": "0.2.12",
 	"description": "Flowbite blocks components for Svelte",
 	"author": {
 		"name": "Shinichi Okada",
@@ -34,7 +34,7 @@
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte3": "^4.0.0",
 		"flowbite": "^1.5.3",
-		"flowbite-svelte": "^0.26.16",
+		"flowbite-svelte": "^0.26.20",
 		"postcss": "^8.4.16",
 		"postcss-load-config": "^4.0.1",
 		"prettier": "^2.7.1",
