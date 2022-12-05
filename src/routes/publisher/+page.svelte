@@ -1,8 +1,8 @@
 <script>
 	import { Section, Page500 } from '$lib';
-	import { ExampleDiv, SectionHeader, EditOnGithub } from '../utils/+server';
+	import { ExampleDiv, SectionHeader, EditOnGithub } from '../utils';
 	import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
-	import { BlogTemplatesection } from '../sections/+server';
+	import { BlogTemplatesection } from '../sections';
 </script>
 
 <SectionHeader>

@@ -32,13 +32,18 @@
 		Collection,
 		ChevronRight
 	} from 'svelte-heros';
-	import Airbnb from '../utils/icons/Airbnb/+page.svelte';
-	import Google from '../utils/icons/Google/+page.svelte';
-	import Mailchimp from '../utils/icons/Mailchimp/+page.svelte';
-	import Mashable from '../utils/icons/Mashable/+page.svelte';
-	import Microsoft from '../utils/icons/Microsoft/+page.svelte';
-	import Spotify from '../utils/icons/Spotify/+page.svelte';
-	import { Facebook, Github, Twitter, Instagram } from '../utils/+server';
+	import {
+		Airbnb,
+		Facebook,
+		Github,
+		Google,
+		Mailchimp,
+		Mashable,
+		Microsoft,
+		Spotify,
+		Twitter,
+		Instagram
+	} from '../utils';
 	let navClass = 'bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800';
 	let navDivClass = 'flex flex-wrap justify-between items-center mx-auto max-w-screen-xl';
 </script>

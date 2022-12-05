@@ -8,7 +8,7 @@
 		FooterCopyright,
 		FooterIcon
 	} from 'flowbite-svelte';
-	import { Github } from './utils/+server';
+	import { Github } from './utils';
 </script>
 
 <main>

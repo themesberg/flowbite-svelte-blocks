@@ -41,9 +41,9 @@ Use this library on top of [Flowbite-Svelte](https://github.com/themesberg/flowb
 Install SvelteKit:
 
 ```sh
-npm init svelte@next sveltekit-demo 
+npm init svelte@next sveltekit-demo
 cd sveltekit-demo
-npm install 
+npm install
 ```
 
 Install Tailwind CSS:
@@ -70,18 +70,16 @@ Update tailwind.config.cjs:
 ```js
 const config = {
   content: [
-    "./src/**/*.{html,js,svelte,ts}",
-    "./node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}",
+    './src/**/*.{html,js,svelte,ts}',
+    './node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}'
   ],
 
   theme: {
-    extend: {},
+    extend: {}
   },
 
-  plugins: [
-    require('flowbite/plugin')
-  ],
-  darkMode: 'class',
+  plugins: [require('flowbite/plugin')],
+  darkMode: 'class'
 };
 
 module.exports = config;
@@ -106,37 +104,37 @@ theme: {
     },
     fontFamily: {
       'body': [
-      'Inter', 
-      'ui-sans-serif', 
-      'system-ui', 
-      '-apple-system', 
-      'system-ui', 
-      'Segoe UI', 
-      'Roboto', 
-      'Helvetica Neue', 
-      'Arial', 
-      'Noto Sans', 
-      'sans-serif', 
-      'Apple Color Emoji', 
-      'Segoe UI Emoji', 
-      'Segoe UI Symbol', 
+      'Inter',
+      'ui-sans-serif',
+      'system-ui',
+      '-apple-system',
+      'system-ui',
+      'Segoe UI',
+      'Roboto',
+      'Helvetica Neue',
+      'Arial',
+      'Noto Sans',
+      'sans-serif',
+      'Apple Color Emoji',
+      'Segoe UI Emoji',
+      'Segoe UI Symbol',
       'Noto Color Emoji'
   ],
     'sans': [
-    'Inter', 
-    'ui-sans-serif', 
-    'system-ui', 
-    '-apple-system', 
-    'system-ui', 
-    'Segoe UI', 
-    'Roboto', 
-    'Helvetica Neue', 
-    'Arial', 
-    'Noto Sans', 
-    'sans-serif', 
-    'Apple Color Emoji', 
-    'Segoe UI Emoji', 
-    'Segoe UI Symbol', 
+    'Inter',
+    'ui-sans-serif',
+    'system-ui',
+    '-apple-system',
+    'system-ui',
+    'Segoe UI',
+    'Roboto',
+    'Helvetica Neue',
+    'Arial',
+    'Noto Sans',
+    'sans-serif',
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol',
     'Noto Color Emoji'
   ]
     }
