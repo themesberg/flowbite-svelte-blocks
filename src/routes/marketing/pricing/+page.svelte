@@ -36,7 +36,7 @@
 			</p>
 			<EditOnGithub
 				size="18"
-				href="https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/marketing/pricing.svelte"
+				href="https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/marketing/pricing/+page.svelte"
 				iconClass="text-gray-500"
 			/>
 		</div>

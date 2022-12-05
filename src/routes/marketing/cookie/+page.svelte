@@ -30,7 +30,7 @@
 			</p>
 			<EditOnGithub
 				size="18"
-				href="https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/marketing/cookie.svelte"
+				href="https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/marketing/cookie/+page.svelte"
 				iconClass="text-gray-500"
 			/>
 		</div>

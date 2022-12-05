@@ -29,7 +29,7 @@
 			</p>
 			<EditOnGithub
 				size="18"
-				href="https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/marketing/social-proof.svelte"
+				href="https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/marketing/social-proof/+page.svelte"
 				iconClass="text-gray-500"
 			/>
 		</div>
