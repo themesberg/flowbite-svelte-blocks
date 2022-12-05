@@ -3,8 +3,8 @@
   import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag } from '../utils';
   import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
   import { Home, ChevronRight } from 'svelte-heros';
-  const breadcrumb_title = 'Contetnt';
-  const title = 'Contetnt';
+  const breadcrumb_title = 'Content';
+  const title = 'Content';
   const dir = 'marketing';
   const description =
     'Choose one of these website sections to show extra content relative to the other sections on the page such as a gallery of images, description texts, and more.';
