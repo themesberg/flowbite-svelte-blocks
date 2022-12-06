@@ -7,7 +7,7 @@
   const dir = 'marketing';
   const description =
     'Get started with a collection of delete confirmation modal components based on the CRUD layout to make sure the user is ready to remove a selected item.';
-  let defaultModal = true;
+  let defaultModal = false;
 </script>
 
 <MetaTag {breadcrumb_title} {title} {dir} {description} />

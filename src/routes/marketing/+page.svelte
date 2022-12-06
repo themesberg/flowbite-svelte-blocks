@@ -1,6 +1,5 @@
 <script>
-  import { Section, Page500 } from '$lib';
-  import { ExampleDiv, SectionHeader, EditOnGithub } from '../utils';
+  import { SectionHeader, MetaTag } from '../utils';
   import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
   import {
     AccountRecoverysection,
@@ -9,6 +8,7 @@
     ContactFormsection,
     Contentsection,
     CookieConsentsection,
+    CrudDeleteConfirm,
     CustomerLogosection,
     Ctasection,
     Faqsection,
@@ -30,7 +30,14 @@
     Testimonialsection,
     UserOnboarding
   } from '../sections';
+  const title = 'Marketing UI - Flowbite Svelte Blocks';
+  const breadcrumb_title = 'Marketing UI';
+  const description =
+    'Get started with a large collection of free and premium UI components built with Tailwind CSS and the Flowbite library featuring hero sections, headers, contact forms, and more.';
+  const dir = 'marketing';
 </script>
+
+<MetaTag {breadcrumb_title} {title} {dir} {description} withoutLink={true} />
 
 <SectionHeader>
   <Breadcrumb navClass="flex mb-3">
@@ -47,32 +54,33 @@
 <section class="pb-8 bg-white dark:bg-gray-900 lg:pb-24" id="components">
   <div class="px-4 mx-auto max-w-8xl lg:px-4 lg:text-center">
     <div class="grid grid-cols-1 gap-6 mt-6 md:grid-cols-2 xl:grid-cols-3">
-      <Herosection />
-      <Featuresection />
-      <Headersection />
-      <Ctasection />
-      <Pricingsection />
-      <Contentsection />
-      <Footersection />
-      <SocialProofsection />
-      <RegisterFormsection />
-      <Popupsection />
-      <Teamsection />
-      <ResetPasswordFormsection />
-      <LoginFormsection />
-      <Faqsection />
-      <Testimonialsection />
-      <Newslettersection />
-      <Bannersection />
-      <ContactFormsection />
       <AccountRecoverysection />
+      <Bannersection />
       <Blogsection />
+      <ContactFormsection />
+      <Contentsection />
       <CookieConsentsection />
-      <UserOnboarding />
+      <CrudDeleteConfirm />
+      <Ctasection />
       <CustomerLogosection />
+      <Herosection />
+      <Faqsection />
+      <Featuresection />
+      <Footersection />
+      <Headersection />
+      <LoginFormsection />
+      <Maintenancesection />
+      <Newslettersection />
       <Page404section />
       <Page500section />
-      <Maintenancesection />
+      <Popupsection />
+      <Pricingsection />
+      <RegisterFormsection />
+      <ResetPasswordFormsection />
+      <SocialProofsection />
+      <Teamsection />
+      <Testimonialsection />
+      <UserOnboarding />
     </div>
   </div>
 </section>

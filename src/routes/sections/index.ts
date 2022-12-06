@@ -5,6 +5,7 @@ export { default as BlogTemplatesection } from './BlogTemplatesection.svelte';
 export { default as ContactFormsection } from './ContactFormsection.svelte';
 export { default as Contentsection } from './Contentsection.svelte';
 export { default as CookieConsentsection } from './CookieConsentsection.svelte';
+export { default as CrudDeleteConfirm } from './CrudDeleteConfirm.svelte';
 export { default as Ctasection } from './Ctasection.svelte';
 export { default as CustomerLogosection } from './CustomerLogosection.svelte';
 export { default as Faqsection } from './Faqsection.svelte';
