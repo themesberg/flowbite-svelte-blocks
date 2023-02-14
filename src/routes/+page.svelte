@@ -2,6 +2,10 @@
   import { Navbar, NavBrand, NavHamburger, NavUl, NavLi, Button, DarkMode } from 'flowbite-svelte';
   import { MetaTag } from './utils';
   import {
+    AdvancedTable, CrudCreateDrawer, CrudCreateForm, CrudCreateModal, CrudDeleteConfirm,
+    CrudReadDrawer, CrudReadModal, CrudReadSection, CrudSuccessMessage, CrudUpdateDrawer,
+    CrudUpdateForm, CrudUpdateModal, DashboardFooter, DashboardNavbar, DropdownFilter,
+    FacetedSearchDrawer, FacetedSearchModal, SideNavigation, TableFooter, TableHeader, UpdateDrawer,
     AccountRecoverysection,
     Bannersection,
     Blogsection,
@@ -9,7 +13,6 @@
     ContactFormsection,
     Contentsection,
     CookieConsentsection,
-    CrudDeleteConfirm,
     Ctasection,
     Faqsection,
     Featuresection,
@@ -98,21 +101,35 @@
         <div class="px-4 mx-auto max-w-8xl lg:px-4 lg:text-center">
           <div class="grid grid-cols-1 gap-6 mt-6 md:grid-cols-2 xl:grid-cols-3">
             <AccountRecoverysection />
-            <Blogsection />
+            <AdvancedTable />
             <Bannersection />
-
+            <Blogsection />
             <BlogTemplatesection />
-            <CookieConsentsection />
-            <ContactFormsection />
             <Contentsection />
+            <ContactFormsection />
+            <CookieConsentsection />
+            <CrudCreateDrawer />
+            <CrudCreateForm />
+            <CrudCreateModal />
             <CrudDeleteConfirm />
+            <CrudReadDrawer />
+            <CrudReadModal />
+            <CrudReadSection />
+            <CrudSuccessMessage />
+            <CrudUpdateDrawer />
+            <CrudUpdateForm />
+            <CrudUpdateModal />
             <Ctasection />
-
+            <DashboardFooter />
+            <DashboardNavbar />
+            <DropdownFilter />
+            <FacetedSearchDrawer />
+            <FacetedSearchModal />
             <Faqsection />
-            <Footersection />
             <Featuresection />
-            <Herosection />
+            <Footersection />
             <Headersection />
+            <Herosection />
             <LoginFormsection />
             <Maintenancesection />
             <Newslettersection />
@@ -122,10 +139,14 @@
             <Pricingsection />
             <RegisterFormsection />
             <ResetPasswordFormsection />
+            <SideNavigation />
             <SocialProofsection />
+            <TableFooter />
+            <TableHeader />
             <Teamsection />
             <Testimonialsection />
             <UserOnboarding />
+            <UpdateDrawer />
           </div>
         </div>
       </section>

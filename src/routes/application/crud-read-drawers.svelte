@@ -12,7 +12,6 @@
     P,
     A
   } from 'flowbite-svelte';
-import TableHeader from '$lib/tableheader/TableHeader.svelte';
   const breadcrumb_title = 'Table Headers';
   const title = 'Table Headers';
   const dir = 'application';
@@ -46,7 +45,7 @@ import TableHeader from '$lib/tableheader/TableHeader.svelte';
       </P>
       <EditOnGithub
         size="18"
-        href="https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/application/crud-delete-confirm.svelte"
+        href="https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/application/crud-read-drawers.svelte"
         iconClass="text-gray-500"
       />
     </div>
@@ -55,6 +54,6 @@ import TableHeader from '$lib/tableheader/TableHeader.svelte';
 
 <ExampleDiv>
   <Section name="tableheader" sectionClass='bg-gray-50 dark:bg-gray-900 h-screen flex items-center'>
-    <TableHeader />
+    
   </Section>
 </ExampleDiv>
