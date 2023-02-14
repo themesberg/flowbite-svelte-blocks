@@ -2,7 +2,10 @@
   import { SectionHeader, MetaTag } from '../utils';
   import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
   import {
-    TableHeader
+    AdvancedTable, CrudCreateDrawer, CrudCreateForm, CrudCreateModal, CrudDeleteConfirm,
+    CrudReadDrawer, CrudReadModal, CrudReadSection, CrudSuccessMessage, CrudUpdateDrawer,
+    CrudUpdateForm, CrudUpdateModal, DashboardFooter, DashboardNavbar, DropdownFilter,
+    FacetedSearchDrawer, FacetedSearchModal, SideNavigation, TableFooter, TableHeader, UpdateDrawer
   } from '../sections';
   const title = 'Application UI - Flowbite Svelte Blocks';
   const breadcrumb_title = 'Application UI';
@@ -28,7 +31,26 @@
   <div class="px-4 mx-auto max-w-8xl lg:px-4 lg:text-center">
     <div class="grid grid-cols-1 gap-6 mt-6 md:grid-cols-2 xl:grid-cols-3">
       <TableHeader />
-     
+      <AdvancedTable />
+      <CrudCreateDrawer />
+      <CrudCreateForm />
+      <CrudCreateModal />
+      <CrudDeleteConfirm />
+      <CrudReadDrawer />
+      <CrudReadModal />
+      <CrudReadSection />
+      <CrudSuccessMessage />
+      <CrudUpdateDrawer />
+      <CrudUpdateForm />
+      <CrudUpdateModal />
+      <DashboardFooter />
+      <DashboardNavbar />
+      <DropdownFilter />
+      <FacetedSearchDrawer />
+      <FacetedSearchModal />
+      <SideNavigation />
+      <TableFooter />
+      <UpdateDrawer />
     </div>
   </div>
 </section>

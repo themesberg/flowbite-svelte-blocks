@@ -10,7 +10,6 @@
     Contentsection,
     CookieConsentsection,
     CrudDeleteConfirm,
-    CustomerLogosection,
     Ctasection,
     Faqsection,
     Featuresection,
@@ -108,7 +107,7 @@
             <Contentsection />
             <CrudDeleteConfirm />
             <Ctasection />
-            <CustomerLogosection />
+
             <Faqsection />
             <Footersection />
             <Featuresection />
