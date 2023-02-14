@@ -29,7 +29,7 @@
     <BreadcrumbItem>Read Drawers (CRUD)</BreadcrumbItem>
   </Breadcrumb>
   <svelte:fragment slot="h1"
-    >Tailwind CSS Read Drawers (CRUD) - Flowbite</svelte:fragment
+    >Tailwind CSS Read Drawers (CRUD) - Flowbite-Svelte-Blocks</svelte:fragment
   >
   <svelte:fragment slot="paragraph">{description}</svelte:fragment>
 </SectionHeader>

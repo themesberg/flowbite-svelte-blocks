@@ -10,6 +10,7 @@ test('example page has expected h1', async ({ page }) => {
 	expect(await page.textContent('h1')).toBe('Payments tool for software companies');
 });
 
+// marketing
 test('Acount Recovery Form page has expected h1', async ({ page }) => {
 	await page.goto('/marketing/account-recovery');
 	expect(await page.textContent('h1')).toBe('Tailwind CSS Account Recovery Form - Flowbite-Svelte-Blocks');
@@ -25,10 +26,6 @@ test('Banners page has expected h1', async ({ page }) => {
 	expect(await page.textContent('h1')).toBe('Tailwind CSS Banner - Flowbite-Svelte-Blocks');
 });
 
-test('Blog Templates page has expected h1', async ({ page }) => {
-	await page.goto('/publisher/blog');
-	expect(await page.textContent('h1')).toBe('Tailwind CSS Blog Templates - Flowbite-Svelte-Blocks');
-});
 
 test('Cookie Consent page has expected h1', async ({ page }) => {
 	await page.goto('/marketing/cookie');
@@ -148,4 +145,116 @@ test('Testimonials has expected h1', async ({ page }) => {
 test('User Onboarding has expected h1', async ({ page }) => {
 	await page.goto('/marketing/user-onboarding');
 	expect(await page.textContent('h1')).toBe('Tailwind CSS User Onboarding - Flowbite-Svelte-Blocks');
+});
+
+// application
+test('Advanced table has expected h1', async ({ page }) => {
+	await page.goto('/application/advanced-tables');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS Advanced Tables - Flowbite-Svelte-Blocks');
+});
+
+test('Create Drawers (CRUD) has expected h1', async ({ page }) => {
+	await page.goto('/application/crud-create-drawers');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS Create Drawers (CRUD) - Flowbite-Svelte-Blocks');
+});
+
+test('Create Formss (CRUD) has expected h1', async ({ page }) => {
+	await page.goto('/application/crud-create-forms');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS Create Forms (CRUD) - Flowbite-Svelte-Blocks');
+});
+
+test('Create Modals (CRUD) has expected h1', async ({ page }) => {
+	await page.goto('/application/crud-create-modals');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS Create Modals (CRUD) - Flowbite-Svelte-Blocks');
+});
+
+test('Delte Confirm (CRUD) has expected h1', async ({ page }) => {
+	await page.goto('/application/crud-delete-confirm');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS Delete Confirm (CRUD) - Flowbite-Svelte-Blocks');
+});
+
+test('Read Drawers (CRUD) has expected h1', async ({ page }) => {
+	await page.goto('/application/crud-read-drawers');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS Read Drawers (CRUD) - Flowbite-Svelte-Blocks');
+});
+
+test('Read Modals (CRUD) has expected h1', async ({ page }) => {
+	await page.goto('/application/crud-read-modals');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS Read Modals (CRUD) - Flowbite-Svelte-Blocks');
+});
+
+test('Read Sections (CRUD)  has expected h1', async ({ page }) => {
+	await page.goto('/application/crud-read-sections');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS Read Sections (CRUD) - Flowbite-Svelte-Blocks');
+});
+
+test('Update Drawers (CRUD) has expected h1', async ({ page }) => {
+	await page.goto('/application/crud-update-drawers');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS Update Drawers (CRUD) - Flowbite-Svelte-Blocks');
+});
+
+test('Update Forms (CRUD) has expected h1', async ({ page }) => {
+	await page.goto('/application/crud-update-forms');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS Update Forms (CRUD) - Flowbite-Svelte-Blocks');
+});
+
+test('Update Modals (CRUD) has expected h1', async ({ page }) => {
+	await page.goto('/application/crud-update-modals');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS Update Modals (CRUD) - Flowbite-Svelte-Blocks');
+});
+
+test('Dashboard Footers has expected h1', async ({ page }) => {
+	await page.goto('/application/dashboard-footer');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS Dashboard Footers - Flowbite-Svelte-Blocks');
+});
+
+test('Faceted Search Drawers has expected h1', async ({ page }) => {
+	await page.goto('/application/faceted-search-drawers');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS Faceted Search Drawers - Flowbite-Svelte-Blocks');
+});
+
+test('Faceted Search Modals has expected h1', async ({ page }) => {
+	await page.goto('/application/faceted-search-modals');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS Faceted Search Modals - Flowbite-Svelte-Blocks');
+});
+
+test('Filters has expected h1', async ({ page }) => {
+	await page.goto('/application/filter');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS Filters - Flowbite-Svelte-Blocks');
+});
+
+test('Navbar has expected h1', async ({ page }) => {
+	await page.goto('/application/navbar');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS Dashboard Navbars - Flowbite-Svelte-Blocks');
+});
+
+test('Sidenav has expected h1', async ({ page }) => {
+	await page.goto('/application/sidenav');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS Sidenav - Flowbite-Svelte-Blocks');
+});
+
+test('Table Footers has expected h1', async ({ page }) => {
+	await page.goto('/application/table-footers');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS Table Footers - Flowbite-Svelte-Blocks');
+});
+
+test('Table Headers has expected h1', async ({ page }) => {
+	await page.goto('/application/table-headers');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS Table Headers - Flowbite-Svelte-Blocks');
+});
+
+// publisher
+test('Blog templates has expected h1', async ({ page }) => {
+	await page.goto('/publisher/blog-templates');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS Blog Templates - Flowbite-Svelte-Blocks');
+});
+
+test('Comments Sections has expected h1', async ({ page }) => {
+	await page.goto('/publisher/comments');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS Comments Sections - Flowbite-Svelte-Blocks');
+});
+
+test('Related Articles has expected h1', async ({ page }) => {
+	await page.goto('/publisher/related-articles');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS Related Articles - Flowbite-Svelte-Blocks');
 });

@@ -29,7 +29,7 @@
     <BreadcrumbItem>Side Navigations</BreadcrumbItem>
   </Breadcrumb>
   <svelte:fragment slot="h1"
-    >Tailwind CSS Sidenav - Flowbite</svelte:fragment
+    >Tailwind CSS Sidenav - Flowbite-Svelte-Blocks</svelte:fragment
   >
   <svelte:fragment slot="paragraph">{description}</svelte:fragment>
 </SectionHeader>

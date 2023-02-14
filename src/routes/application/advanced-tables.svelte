@@ -29,7 +29,7 @@
     <BreadcrumbItem>Advanced Tables</BreadcrumbItem>
   </Breadcrumb>
   <svelte:fragment slot="h1"
-    >Tailwind CSS Advanced Tables - Flowbite</svelte:fragment
+    >Tailwind CSS Advanced Tables - Flowbite-Svelte-Blocks</svelte:fragment
   >
   <svelte:fragment slot="paragraph">{description}</svelte:fragment>
 </SectionHeader>

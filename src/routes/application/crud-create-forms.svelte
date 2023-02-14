@@ -29,7 +29,7 @@
     <BreadcrumbItem>Create Forms (CRUD)</BreadcrumbItem>
   </Breadcrumb>
   <svelte:fragment slot="h1"
-    >Tailwind CSS Create Forms (CRUD) - Flowbite</svelte:fragment
+    >Tailwind CSS Create Forms (CRUD) - Flowbite-Svelte-Blocks</svelte:fragment
   >
   <svelte:fragment slot="paragraph">{description}</svelte:fragment>
 </SectionHeader>

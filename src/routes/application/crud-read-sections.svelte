@@ -29,7 +29,7 @@
     <BreadcrumbItem>Read Sections (CRUD)</BreadcrumbItem>
   </Breadcrumb>
   <svelte:fragment slot="h1"
-    >Tailwind CSS Read Sections (CRUD) - Flowbite</svelte:fragment
+    >Tailwind CSS Read Sections (CRUD) - Flowbite-Svelte-Blocks</svelte:fragment
   >
   <svelte:fragment slot="paragraph">{description}</svelte:fragment>
 </SectionHeader>

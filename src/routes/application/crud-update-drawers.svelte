@@ -29,7 +29,7 @@
     <BreadcrumbItem>Update Drawers (CRUD)</BreadcrumbItem>
   </Breadcrumb>
   <svelte:fragment slot="h1"
-    >Tailwind CSS Update Drawers (CRUD) - Flowbite</svelte:fragment
+    >Tailwind CSS Update Drawers (CRUD) - Flowbite-Svelte-Blocks</svelte:fragment
   >
   <svelte:fragment slot="paragraph">{description}</svelte:fragment>
 </SectionHeader>

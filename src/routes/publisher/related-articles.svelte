@@ -30,7 +30,7 @@
     <BreadcrumbItem>{title}</BreadcrumbItem>
   </Breadcrumb>
   <svelte:fragment slot="h1"
-    >Tailwind CSS {title} - Flowbite</svelte:fragment
+    >Tailwind CSS {title} - Flowbite-Svelte-Blocks</svelte:fragment
   >
   <svelte:fragment slot="paragraph">{description}</svelte:fragment>
 </SectionHeader>

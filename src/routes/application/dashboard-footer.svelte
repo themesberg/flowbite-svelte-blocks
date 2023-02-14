@@ -29,7 +29,7 @@
     <BreadcrumbItem>Dashboard Footers</BreadcrumbItem>
   </Breadcrumb>
   <svelte:fragment slot="h1"
-    >Tailwind CSS Dashboard Footers - Flowbite</svelte:fragment
+    >Tailwind CSS Dashboard Footers - Flowbite-Svelte-Blocks</svelte:fragment
   >
   <svelte:fragment slot="paragraph">{description}</svelte:fragment>
 </SectionHeader>

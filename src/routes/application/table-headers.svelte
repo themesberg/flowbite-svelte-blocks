@@ -30,7 +30,7 @@ import TableHeader from '$lib/tableheader/TableHeader.svelte';
     <BreadcrumbItem>Tabel Headers</BreadcrumbItem>
   </Breadcrumb>
   <svelte:fragment slot="h1"
-    >Tailwind CSS Table Headers  - Flowbite-Svelte-Blocks</svelte:fragment
+    >Tailwind CSS Table Headers - Flowbite-Svelte-Blocks</svelte:fragment
   >
   <svelte:fragment slot="paragraph">{description}</svelte:fragment>
 </SectionHeader>

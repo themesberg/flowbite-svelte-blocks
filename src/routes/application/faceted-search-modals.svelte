@@ -29,7 +29,7 @@
     <BreadcrumbItem>Faceted Search Modals</BreadcrumbItem>
   </Breadcrumb>
   <svelte:fragment slot="h1"
-    >Tailwind CSS Faceted Search Modals - Flowbite</svelte:fragment
+    >Tailwind CSS Faceted Search Modals - Flowbite-Svelte-Blocks</svelte:fragment
   >
   <svelte:fragment slot="paragraph">{description}</svelte:fragment>
 </SectionHeader>

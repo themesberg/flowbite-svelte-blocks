@@ -29,7 +29,7 @@
     <BreadcrumbItem>Dashboard Navbars</BreadcrumbItem>
   </Breadcrumb>
   <svelte:fragment slot="h1"
-    >Tailwind CSS Dashboard Navbars - Flowbite</svelte:fragment
+    >Tailwind CSS Dashboard Navbars - Flowbite-Svelte-Blocks</svelte:fragment
   >
   <svelte:fragment slot="paragraph">{description}</svelte:fragment>
 </SectionHeader>
