@@ -26,6 +26,7 @@
 		| 'register'
 		| 'reset'
 		| 'social'
+		| 'tableheader'
 		| 'team'
 		| 'testimonial' = 'default';
 	const sectionClasses = {
@@ -98,6 +99,9 @@
 		},
 		social: {
 			div: 'max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6'
+		},
+		tableheader: {
+      div: 'max-w-screen-xl px-4 mx-auto lg:px-12 w-full'
 		},
 		team: {
 			div: 'py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6'

@@ -23,6 +23,7 @@ export { default as Pricingsection } from './Pricingsection.svelte';
 export { default as RegisterFormsection } from './RegisterFormsection.svelte';
 export { default as ResetPasswordFormsection } from './ResetPasswordFormsection.svelte';
 export { default as SocialProofsection } from './SocialProofsection.svelte';
+export { default as TableHeader } from './TableHeader.svelte';
 export { default as Teamsection } from './Teamsection.svelte';
 export { default as Testimonialsection } from './Testimonialsection.svelte';
 export { default as UserOnboarding } from './UserOnboarding.svelte';
