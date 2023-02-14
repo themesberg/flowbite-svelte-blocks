@@ -7,7 +7,7 @@
     Cog,
     Briefcase,
     CurrencyDollar,
-    Collection
+    Bolt
   } from 'svelte-heros';
   import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag } from '../utils';
   import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
@@ -114,7 +114,7 @@
       </FeatureItem>
       <FeatureItem>
         <svelte:fragment slot="icon"
-          ><Collection
+          ><Bolt
             class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
           /></svelte:fragment
         >

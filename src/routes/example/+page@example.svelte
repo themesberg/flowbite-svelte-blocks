@@ -29,7 +29,7 @@
 		Cog,
 		Briefcase,
 		CurrencyDollar,
-		Collection,
+		Bolt,
 		ChevronRight
 	} from 'svelte-heros';
 	import {
@@ -206,7 +206,7 @@
 		</FeatureItem>
 		<FeatureItem>
 			<svelte:fragment slot="icon"
-				><Collection
+				><Bolt
 					class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
 				/></svelte:fragment
 			>

@@ -10,7 +10,7 @@
   } from '$lib';
   import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag } from '../utils';
   import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
-  import { ArrowSmRight, VideoCamera, Newspaper, Home } from 'svelte-heros';
+  import { ArrowSmallRight, VideoCamera, Newspaper, Home } from 'svelte-heros';
   const breadcrumb_title = 'Blog';
   const title = 'Blog';
   const dir = 'marketing';
@@ -97,7 +97,7 @@
             class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline"
           >
             Read more
-            <ArrowSmRight class="ml-2" />
+            <ArrowSmallRight class="ml-2" />
           </a>
         </ArticleAuthor>
       </ArticleWrapper>
@@ -136,7 +136,7 @@
             class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline"
           >
             Read more
-            <ArrowSmRight class="ml-2" />
+            <ArrowSmallRight class="ml-2" />
           </a>
         </ArticleAuthor>
       </ArticleWrapper>

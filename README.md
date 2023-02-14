@@ -1,142 +1,38 @@
-# Flowbite-Svelte-Blocks
+# create-svelte
 
-## Demo
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
-[Flowbite-Svelte-Blocks](https://flowbite-svelte-blocks.vercel.app/)
+## Creating a project
 
-## Blocks
+If you're seeing this, you've probably already done this step. Congrats!
 
-- 404
-- 500
-- Account recovery
-- Banner
-- Blog
-- Contact
-- Content
-- Cookie
-- CTA
-- Customer logos
-- FAQ
-- Feature
-- Footer
-- Header
-- Hero
-- Login
-- Maintenance
-- Newsletter
-- Popup
-- Pricing
-- Register
-- Reset password
-- Social-proof
-- Team
-- Testimoanial
+```bash
+# create a new project in the current directory
+npm create svelte@latest
 
-## Getting started
-
-Use this library on top of [Flowbite-Svelte](https://github.com/themesberg/flowbite-svelte). Flowbite-Svelte is an official Flowbite component library for Svelte.
-
-### Installing from scratch
-
-Install SvelteKit:
-
-```sh
-npm init svelte@next sveltekit-demo
-cd sveltekit-demo
-npm install
+# create a new project in my-app
+npm create svelte@latest my-app
 ```
 
-Install Tailwind CSS:
+## Developing
 
-```sh
-npx svelte-add@latest tailwindcss
-npm i
-```
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-Start a server:
-
-```sh
+```bash
 npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
 ```
 
-Install flowbite and flowbite-svelte:
+## Building
 
-```sh
-npm i -D flowbite flowbite-svelte
+To create a production version of your app:
+
+```bash
+npm run build
 ```
 
-Update tailwind.config.cjs:
+You can preview the production build with `npm run preview`.
 
-```js
-const config = {
-  content: [
-    './src/**/*.{html,js,svelte,ts}',
-    './node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}'
-  ],
-
-  theme: {
-    extend: {}
-  },
-
-  plugins: [require('flowbite/plugin')],
-  darkMode: 'class'
-};
-
-module.exports = config;
-```
-
-Install Flowbite-Svelte-Blocks
-
-```sh
-npm i -D flowbite-svelte-blocks
-```
-
-## Update tailwind.config.cjs
-
-Current `theme` config is the following. You can update `primary` color and other config.
-
-```js
-theme: {
-    extend: {
-      colors: {
-        primary: {"50":"#fff1f2","100":"#ffe4e6","200":"#fecdd3","300":"#fda4af","400":"#fb7185","500":"#f43f5e","600":"#e11d48","700":"#be123c","800":"#9f1239","900":"#881337"}
-      }
-    },
-    fontFamily: {
-      'body': [
-      'Inter',
-      'ui-sans-serif',
-      'system-ui',
-      '-apple-system',
-      'system-ui',
-      'Segoe UI',
-      'Roboto',
-      'Helvetica Neue',
-      'Arial',
-      'Noto Sans',
-      'sans-serif',
-      'Apple Color Emoji',
-      'Segoe UI Emoji',
-      'Segoe UI Symbol',
-      'Noto Color Emoji'
-  ],
-    'sans': [
-    'Inter',
-    'ui-sans-serif',
-    'system-ui',
-    '-apple-system',
-    'system-ui',
-    'Segoe UI',
-    'Roboto',
-    'Helvetica Neue',
-    'Arial',
-    'Noto Sans',
-    'sans-serif',
-    'Apple Color Emoji',
-    'Segoe UI Emoji',
-    'Segoe UI Symbol',
-    'Noto Color Emoji'
-  ]
-    }
-  },
-```
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
