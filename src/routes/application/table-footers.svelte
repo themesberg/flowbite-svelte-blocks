@@ -42,6 +42,7 @@
       >
       <P size="lg" color="text-gray-500 dark:text-gray-400" class="lg:mb-0  lg:max-w-2xl">
         Use this free example to add a footer section to a table component to show a pagination component and indicate the number of data items being showed on one page.
+      </P>
       <EditOnGithub
         size="18"
         href="https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/application/table-footers.svelte"

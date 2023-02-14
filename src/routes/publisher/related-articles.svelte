@@ -12,11 +12,12 @@
     P,
     A
   } from 'flowbite-svelte';
-  const breadcrumb_title = 'Table Headers';
-  const title = 'Table Headers';
-  const dir = 'application';
+
+  const breadcrumb_title = 'Related Articles';
+  const title = 'Related Articles';
+  const dir = 'publisher';
   const description =
-    'Get started with the side nav component to show a list of menu items, dropdowns, actions, and user profile actions for your application and dashboard.';
+    'Use these components to show a list of related and recommended blog posts and articles at the bottom of the main content area of an article or blog post page.';
 
 </script>
 
@@ -25,11 +26,11 @@
 <SectionHeader>
   <Breadcrumb navClass="flex mb-3">
     <BreadcrumbItem href="/" home>Blocks</BreadcrumbItem>
-    <BreadcrumbItem href="/application">Application</BreadcrumbItem>
-    <BreadcrumbItem>Side Navigations</BreadcrumbItem>
+    <BreadcrumbItem href="/publisher">{breadcrumb_title}</BreadcrumbItem>
+    <BreadcrumbItem>{title}</BreadcrumbItem>
   </Breadcrumb>
   <svelte:fragment slot="h1"
-    >Tailwind CSS Sidenav - Flowbite</svelte:fragment
+    >Tailwind CSS {title} - Flowbite</svelte:fragment
   >
   <svelte:fragment slot="paragraph">{description}</svelte:fragment>
 </SectionHeader>
@@ -38,14 +39,14 @@
   <div class="grid lg:grid-cols-2">
     <div>
       <Heading tag="h2" customSize="text-2xl font-semibold" class="mb-1"
-        >Default side navigation</Heading
+        >Default related articles</Heading
       >
       <P size="lg" color="text-gray-500 dark:text-gray-400" class="lg:mb-0  lg:max-w-2xl">
-        Use the default sidebar navigation to show a list of menu items with dropdown items and a list of options links at the bottom of the component.
+        Use this example to show a list of related articles after the main content of a blog post to engage users and decrease the bounce rate.
       </P>
       <EditOnGithub
         size="18"
-        href="https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/application/sidenav.svelte"
+        href="https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/publisher/blog-templates.svelte"
         iconClass="text-gray-500"
       />
     </div>
@@ -54,6 +55,6 @@
 
 <ExampleDiv>
   <Section name="tableheader" sectionClass='bg-gray-50 dark:bg-gray-900 h-screen flex items-center'>
-
+  
   </Section>
 </ExampleDiv>

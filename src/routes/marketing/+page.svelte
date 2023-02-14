@@ -45,8 +45,7 @@
   </Breadcrumb>
   <svelte:fragment slot="h1">Marketing UI</svelte:fragment>
   <svelte:fragment slot="paragraph"
-    >Get started with a large collection of free and premium UI components built with Tailwind CSS
-    and the Flowbite library featuring hero sections, headers, contact forms, and more.</svelte:fragment
+    >{description}</svelte:fragment
   >
 </SectionHeader>
 
