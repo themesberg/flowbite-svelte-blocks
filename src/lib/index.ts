@@ -69,6 +69,8 @@ export { default as Register } from './register/Register.svelte';
 // social
 export { default as Social } from './social/Social.svelte';
 
+// table header
+export { default as TableHeader } from './tableheader/TableHeader.svelte'
 // team
 export { default as TeamBody } from './team/TeamBody.svelte';
 export { default as TeamHeader } from './team/TeamHeader.svelte';
