@@ -1,6 +1,6 @@
 <!-- docs/_sidebar.md -->
 
-* [Home](/README.md)
+* [Home](./)
 * [Account Recovery](account-recovery.md "Account Recovery Form")
 * [Banner](banners.md "Banner")
 * [Blog](blog.md "Blog Sections")
