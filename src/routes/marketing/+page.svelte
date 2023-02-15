@@ -9,7 +9,7 @@
     Contentsection,
     CookieConsentsection,
     CrudDeleteConfirm,
-    Ctasection,
+    Cta,
     Faqsection,
     Featuresection,
     Footersection,
@@ -59,7 +59,7 @@
       <Contentsection />
       <CookieConsentsection />
       <CrudDeleteConfirm />
-      <Ctasection />
+      <Cta />
       <Herosection />
       <Faqsection />
       <Featuresection />
