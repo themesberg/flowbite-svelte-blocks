@@ -29,7 +29,7 @@ export { default as Blogsection } from './marketing/Blogsection.svelte';
 export { default as ContactFormsection } from './marketing/ContactFormsection.svelte';
 export { default as Contentsection } from './marketing/Contentsection.svelte';
 export { default as CookieConsentsection } from './marketing/CookieConsentsection.svelte';
-export { default as Ctasection } from './marketing/Cta.svelte';
+export { default as Cta } from './marketing/Cta.svelte';
 export { default as CustomerLogo } from './marketing/CustomerLogo.svelte';
 export { default as Faqsection } from './marketing/Faqsection.svelte';
 export { default as Featuresection } from './marketing/Feature.svelte';

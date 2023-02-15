@@ -1,5 +1,7 @@
 # Newsletter Sections
 
+[Demo](https://flowbite-svelte-blocks.vercel.app/marketing/newsletter)
+
 ## Example usage
 
 ```

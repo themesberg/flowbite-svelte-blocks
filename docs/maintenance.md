@@ -1,5 +1,7 @@
 # Maintenance Pages
 
+[Demo](https://flowbite-svelte-blocks.vercel.app/marketing/maintenance)
+
 ## Example usage
 
 ```

@@ -1,5 +1,7 @@
 # Footer Sections
 
+[Demo](https://flowbite-svelte-blocks.vercel.app/marketing/footer)
+
 ## Example usage
 
 ```

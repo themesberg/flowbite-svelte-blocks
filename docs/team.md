@@ -1,5 +1,7 @@
 # Team Sections
 
+[Demo](https://flowbite-svelte-blocks.vercel.app/marketing/team)
+
 ## Example usage
 
 ```

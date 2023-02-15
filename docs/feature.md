@@ -1,5 +1,7 @@
 # Feature Sections
 
+[Demo](https://flowbite-svelte-blocks.vercel.app/marketing/feature)
+
 ## Example usage
 
 ```

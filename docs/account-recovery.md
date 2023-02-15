@@ -1,5 +1,7 @@
 # Account Recovery Form
 
+[Demo](https://flowbite-svelte-blocks.vercel.app/marketing/account-recovery)
+
 ## Example usage
 
 ```

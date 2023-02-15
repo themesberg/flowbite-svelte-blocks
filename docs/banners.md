@@ -1,5 +1,7 @@
 # Banner
 
+[Demo](https://flowbite-svelte-blocks.vercel.app/marketing/banner)
+
 ## Example usage
 
 ```

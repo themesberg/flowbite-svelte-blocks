@@ -1,5 +1,7 @@
 # Reset Password Forms
 
+[Demo](https://flowbite-svelte-blocks.vercel.app/marketing/reset-password)
+
 ## Example usage
 
 ```

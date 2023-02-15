@@ -2,7 +2,7 @@
   import { Navbar, NavBrand, NavHamburger, NavUl, NavLi, Button, DarkMode } from 'flowbite-svelte';
   import { MetaTag } from './utils';
   import {
-    AdvancedTable, AccountRecoverysection, Bannersection, Blogsection, BlogTemplatesection, CommentSection, ContactFormsection, Contentsection, CookieConsentsection, CrudCreateDrawer, CrudCreateForm, CrudCreateModal, CrudDeleteConfirm, CrudReadDrawer, CrudReadModal, CrudReadSection, CrudSuccessMessage, CrudUpdateDrawer, CrudUpdateForm, CrudUpdateModal, DashboardFooter, DashboardNavbar, DropdownFilter, Faqsection, Featuresection, Footersection, Headersection, Herosection, LoginFormsection, Maintenancesection, Newslettersection, Page404section, Page500section, Popupsection, Pricingsection, RegisterFormsection, RelatedArticle, ResetPasswordFormsection, SideNavigation, SocialProofsection, Teamsection, Testimonialsection, TableFooter, TableHeader,  UpdateDrawer, UserOnboarding
+    AdvancedTable, AccountRecoverysection, Bannersection, Blogsection, BlogTemplatesection, CommentSection, ContactFormsection, Contentsection, CookieConsentsection, CrudCreateDrawer, CrudCreateForm, CrudCreateModal, CrudDeleteConfirm, CrudReadDrawer, CrudReadModal, CrudReadSection, CrudSuccessMessage, CrudUpdateDrawer, CrudUpdateForm, CrudUpdateModal, Cta, DashboardFooter, DashboardNavbar, DropdownFilter, Faqsection, Featuresection, Footersection, Headersection, Herosection, LoginFormsection, Maintenancesection, Newslettersection, Page404section, Page500section, Popupsection, Pricingsection, RegisterFormsection, RelatedArticle, ResetPasswordFormsection, SideNavigation, SocialProofsection, Teamsection, Testimonialsection, TableFooter, TableHeader,  UpdateDrawer, UserOnboarding
   } from './sections';
 
   let navClass = 'bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800';
@@ -71,8 +71,8 @@
       <section class="pb-8 bg-white dark:bg-gray-900 lg:pb-24" id="components">
         <div class="px-4 mx-auto max-w-8xl lg:px-4 lg:text-center">
           <div class="grid grid-cols-1 gap-6 mt-6 md:grid-cols-2 xl:grid-cols-3">
-            <AdvancedTable />
             <AccountRecoverysection />
+            <AdvancedTable />
             <Bannersection />
             <Blogsection />
             <BlogTemplatesection />
@@ -91,6 +91,7 @@
             <CrudUpdateDrawer />
             <CrudUpdateForm />
             <CrudUpdateModal />
+            <Cta />
             <DashboardFooter />
             <DashboardNavbar />
             <DropdownFilter />
@@ -115,7 +116,6 @@
             <Testimonialsection />
             <TableFooter />
             <TableHeader />
-            <Testimonialsection />
             <UpdateDrawer />
             <UserOnboarding />
           </div>

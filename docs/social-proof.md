@@ -1,5 +1,7 @@
 # Social Proof
 
+[Demo](https://flowbite-svelte-blocks.vercel.app/marketing/social-proof)
+
 ## Example usage
 
 ```

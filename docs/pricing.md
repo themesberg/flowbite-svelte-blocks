@@ -1,5 +1,7 @@
 # Pricing Tables
 
+[Demo](https://flowbite-svelte-blocks.vercel.app/marketing/pricing)
+
 ## Example usage
 
 ```
