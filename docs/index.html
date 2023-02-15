@@ -122,6 +122,42 @@
         hideOtherSidebarContent: false, // whether or not to hide other sidebar content
       },
     };
+        // PWA
+        if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register(
+        '/service-worker.js', {
+          scope: '/'
+        }
+      )
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://flowbite-svelte-blocks.codewithshin.com/"
+      },
+      "headline": "Flowbite Svelte Blocks",
+      "description": "Svelte components for Flowbite Blocks",
+      "image": "https://open-graph-vercel.vercel.app/api/flowbite-svelte-blocks",
+      "author": {
+        "@type": "Person",
+        "name": "Shinichi Okada",
+        "url": "https://github.com/shinokada"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "CODEWITHSHIN",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://raw.githubusercontent.com/shinokada/svelte-awesome-icons/main/static/codewithshin.webp"
+        }
+      },
+      "datePublished": "2023-01-01",
+      "dateModified": "2023-01-25"
+    }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
