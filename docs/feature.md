@@ -1,3 +1,5 @@
+# Feature Sections
+
 ## Example usage
 
 ```

@@ -1,3 +1,5 @@
+# Team Sections
+
 ## Example usage
 
 ```

@@ -1,3 +1,5 @@
+# Social Proof
+
 ## Example usage
 
 ```

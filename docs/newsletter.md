@@ -1,3 +1,5 @@
+# Newsletter Sections
+
 ## Example usage
 
 ```

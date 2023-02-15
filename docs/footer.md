@@ -1,3 +1,5 @@
+# Footer Sections
+
 ## Example usage
 
 ```

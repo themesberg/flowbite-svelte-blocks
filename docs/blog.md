@@ -1,3 +1,5 @@
+# Blog Sections
+
 ## Example usage
 
 ```

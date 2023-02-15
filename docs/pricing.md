@@ -1,3 +1,5 @@
+# Pricing Tables
+
 ## Example usage
 
 ```

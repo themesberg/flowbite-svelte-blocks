@@ -1,3 +1,5 @@
+# Banner
+
 ## Example usage
 
 ```

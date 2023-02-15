@@ -1,3 +1,5 @@
+# Hero Sections
+
 ## Example usage
 
 ```
