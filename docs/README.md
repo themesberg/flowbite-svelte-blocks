@@ -11,53 +11,23 @@
 
 [Flowbite-Svelte-Blocks](https://flowbite-svelte-blocks.vercel.app/)
 
-## Blocks
-
-- 404
-- 500
-- Account recovery
-- Banner
-- Blog
-- Contact
-- Content
-- Cookie
-- CTA
-- Customer logos
-- FAQ
-- Feature
-- Footer
-- Header
-- Hero
-- Login
-- Maintenance
-- Newsletter
-- Popup
-- Pricing
-- Register
-- Reset password
-- Social-proof
-- Team
-- Testimoanial
-
-## Getting started
+## Installation
 
 Use this library on top of [Flowbite-Svelte](https://github.com/themesberg/flowbite-svelte). Flowbite-Svelte is an official Flowbite component library for Svelte.
-
-### Installing from scratch
 
 Install SvelteKit:
 
 ```sh
-npm init svelte@next sveltekit-demo
-cd sveltekit-demo
-npm install
+npm create svelte@latest your-project-name
+cd your-project-name
+pnpm install
 ```
 
 Install Tailwind CSS:
 
 ```sh
 npx svelte-add@latest tailwindcss
-npm i
+pnpm i
 ```
 
 Start a server:
@@ -66,10 +36,10 @@ Start a server:
 npm run dev
 ```
 
-Install flowbite and flowbite-svelte:
+Install flowbite flowbite-svelte classnames @popperjs/core:
 
 ```sh
-npm i -D flowbite flowbite-svelte
+pnpm i -D flowbite flowbite-svelte classnames @popperjs/core
 ```
 
 Update tailwind.config.cjs:
@@ -77,16 +47,18 @@ Update tailwind.config.cjs:
 ```js
 const config = {
   content: [
-    './src/**/*.{html,js,svelte,ts}',
-    './node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}'
+    "./src/**/*.{html,js,svelte,ts}",
+    "./node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}",
   ],
 
   theme: {
-    extend: {}
+    extend: {},
   },
 
-  plugins: [require('flowbite/plugin')],
-  darkMode: 'class'
+  plugins: [
+    require('flowbite/plugin')
+  ],
+  darkMode: 'class',
 };
 
 module.exports = config;
@@ -147,3 +119,4 @@ theme: {
     }
   },
 ```
+
