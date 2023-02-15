@@ -1,5 +1,8 @@
-# Flowbite-Svelte-Blocks
+<h1 align="center">Flowbite Svelte Blocks</h1>
 
+<p align="center">
+<a href="https://flowbite-svelte-blocks.codewithshin.com/" rel="nofollow">Flowbite-Svelte-Blocks</a>
+</p>
 
 <p align="center">
 <a href="https://www.npmjs.com/package/flowbite-svelte-blocks" rel="nofollow"><img src="https://img.shields.io/npm/v/flowbite-svelte-blocks" alt="npm"></a>
