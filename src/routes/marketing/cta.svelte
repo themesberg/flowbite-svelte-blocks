@@ -18,7 +18,7 @@
     <BreadcrumbItem href="/marketing">Marketing UI</BreadcrumbItem>
     <BreadcrumbItem>CTA Sections</BreadcrumbItem>
   </Breadcrumb>
-  <svelte:fragment slot="h1">Tailwind CSS CTA Sections - Flowbite-Svelte-Blocks</svelte:fragment>
+  <svelte:fragment slot="h1">Tailwind CSS CTA Sections - Flowbite Blocks in Svelte</svelte:fragment>
   <svelte:fragment slot="paragraph">{description}</svelte:fragment>
 </SectionHeader>
 

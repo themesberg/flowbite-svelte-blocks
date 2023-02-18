@@ -17,7 +17,7 @@
     <BreadcrumbItem href="/marketing">Marketing UI</BreadcrumbItem>
     <BreadcrumbItem>500 Pages</BreadcrumbItem>
   </Breadcrumb>
-  <svelte:fragment slot="h1">Tailwind CSS 500 Page - Flowbite-Svelte-Blocks</svelte:fragment>
+  <svelte:fragment slot="h1">Tailwind CSS 500 Page - Flowbite Blocks in Svelte</svelte:fragment>
   <svelte:fragment slot="paragraph">{description}</svelte:fragment>
 </SectionHeader>
 

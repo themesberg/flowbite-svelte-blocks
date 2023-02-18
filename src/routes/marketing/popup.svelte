@@ -17,7 +17,7 @@
     <BreadcrumbItem href="/marketing">Marketing UI</BreadcrumbItem>
     <BreadcrumbItem>Popups</BreadcrumbItem>
   </Breadcrumb>
-  <svelte:fragment slot="h1">Tailwind CSS Popup - Flowbite-Svelte-Blocks</svelte:fragment>
+  <svelte:fragment slot="h1">Tailwind CSS Popup - Flowbite Blocks in Svelte</svelte:fragment>
   <svelte:fragment slot="paragraph">{description}</svelte:fragment>
 </SectionHeader>
 

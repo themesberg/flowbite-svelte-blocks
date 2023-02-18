@@ -28,7 +28,7 @@
     <BreadcrumbItem href="/marketing">Marketing UI</BreadcrumbItem>
     <BreadcrumbItem>Customer Logos</BreadcrumbItem>
   </Breadcrumb>
-  <svelte:fragment slot="h1">Tailwind CSS Customer Logos - Flowbite-Svelte-Blocks</svelte:fragment>
+  <svelte:fragment slot="h1">Tailwind CSS Customer Logos - Flowbite Blocks in Svelte</svelte:fragment>
   <svelte:fragment slot="paragraph">{description}</svelte:fragment>
 </SectionHeader>
 

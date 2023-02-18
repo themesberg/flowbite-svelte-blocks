@@ -26,7 +26,7 @@
     <BreadcrumbItem href="/marketing">Marketing UI</BreadcrumbItem>
     <BreadcrumbItem>Blog Sections</BreadcrumbItem>
   </Breadcrumb>
-  <svelte:fragment slot="h1">Tailwind CSS Blog Sections - Flowbite-Svelte-Blocks</svelte:fragment>
+  <svelte:fragment slot="h1">Tailwind CSS Blog Sections - Flowbite Blocks in Svelte</svelte:fragment>
   <svelte:fragment slot="paragraph">{description}</svelte:fragment>
 </SectionHeader>
 

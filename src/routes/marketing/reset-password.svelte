@@ -18,7 +18,7 @@
     <BreadcrumbItem>Reset Password Forms</BreadcrumbItem>
   </Breadcrumb>
   <svelte:fragment slot="h1"
-    >Tailwind CSS Reset Password Form - Flowbite-Svelte-Blocks</svelte:fragment
+    >Tailwind CSS Reset Password Form - Flowbite Blocks in Svelte</svelte:fragment
   >
   <svelte:fragment slot="paragraph">{description}</svelte:fragment>
 </SectionHeader>

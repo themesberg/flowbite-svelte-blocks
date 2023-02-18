@@ -29,7 +29,7 @@
     <BreadcrumbItem>Dropdown Filters</BreadcrumbItem>
   </Breadcrumb>
   <svelte:fragment slot="h1"
-    >Tailwind CSS Filters - Flowbite-Svelte-Blocks</svelte:fragment
+    >Tailwind CSS Filters - Flowbite Blocks in Svelte</svelte:fragment
   >
   <svelte:fragment slot="paragraph">{description}</svelte:fragment>
 </SectionHeader>

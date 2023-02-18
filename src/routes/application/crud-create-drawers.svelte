@@ -30,7 +30,7 @@
     <BreadcrumbItem>Create Drawers (CRUD)</BreadcrumbItem>
   </Breadcrumb>
   <svelte:fragment slot="h1"
-    >Tailwind CSS Create Drawers (CRUD) - Flowbite-Svelte-Blocks</svelte:fragment
+    >Tailwind CSS Create Drawers (CRUD) - Flowbite Blocks in Svelte</svelte:fragment
   >
   <svelte:fragment slot="paragraph">{description}</svelte:fragment>
 </SectionHeader>

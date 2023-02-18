@@ -29,7 +29,7 @@
     <BreadcrumbItem>Faceted Search Drawers</BreadcrumbItem>
   </Breadcrumb>
   <svelte:fragment slot="h1"
-    >Tailwind CSS Faceted Search Drawers - Flowbite-Svelte-Blocks</svelte:fragment
+    >Tailwind CSS Faceted Search Drawers - Flowbite Blocks in Svelte</svelte:fragment
   >
   <svelte:fragment slot="paragraph">{description}</svelte:fragment>
 </SectionHeader>
