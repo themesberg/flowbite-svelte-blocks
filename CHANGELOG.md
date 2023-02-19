@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.15](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.2.14...v0.2.15) (2023-02-19)
+
+
+### Bug Fixes
+
+* add @sveltejs/package and update script ([19f6d93](https://github.com/shinokada/flowbite-svelte-blocks/commit/19f6d9321036c4e5b8eb58a1df2c768222cc0907))
+
 ### [0.2.14](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.2.13...v0.2.14) (2023-02-19)
 
 
