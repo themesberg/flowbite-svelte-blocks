@@ -42,7 +42,7 @@ npm run dev
 Install flowbite flowbite-svelte classnames @popperjs/core:
 
 ```sh
-pnpm i -D flowbite flowbite-svelte classnames @popperjs/core
+pnpm i flowbite flowbite-svelte classnames @popperjs/core
 ```
 
 Update tailwind.config.cjs:
@@ -70,7 +70,7 @@ module.exports = config;
 Install Flowbite-Svelte-Blocks
 
 ```sh
-npm i -D flowbite-svelte-blocks
+npm i flowbite-svelte-blocks
 ```
 
 ## Update tailwind.config.cjs
