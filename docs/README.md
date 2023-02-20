@@ -41,10 +41,10 @@ Start a server:
 npm run dev
 ```
 
-Install flowbite flowbite-svelte classnames @popperjs/core,and flowbite-svelte-blocks:
+Install flowbite flowbite-svelte classnames @popperjs/core, svelte-heros, and flowbite-svelte-blocks:
 
 ```sh
-pnpm i flowbite flowbite-svelte classnames @popperjs/core flowbite-svelte-blocks
+pnpm i flowbite flowbite-svelte classnames @popperjs/core flowbite-svelte-blocks svelte-heros
 ```
 
 Update tailwind.config.cjs:
