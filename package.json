@@ -23,10 +23,14 @@
     "lint": "prettier --plugin-search-dir . --check . && eslint .",
     "format": "prettier --plugin-search-dir . --write .",
     "write-package-json": "node ./scripts/package-json-writer.js",
-    "package:publish": "standard-version && git push --follow-tags origin main && npm run package && npm run write-package-json"
+    "package:publish": "standard-version && git push --follow-tags origin main && npm run package && npm run write-package-json && npm publish"
   },
   "peerDependencies": {
-    "svelte": "^3.54.0"
+    "svelte": "^3.54.0",
+		"classnames": "^2.3.2",
+		"flowbite": "^1.6.3",
+    "flowbite-svelte": "^0.29.13",
+		"@popperjs/core": "^2.11.6"
   },
   "devDependencies": {
     "@playwright/test": "^1.30.0",
