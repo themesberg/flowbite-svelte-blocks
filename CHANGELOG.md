@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.2.18...v0.3.0) (2023-02-20)
+
+
+### Features
+
+* README update for warning ([6dc5580](https://github.com/shinokada/flowbite-svelte-blocks/commit/6dc55808d85e27cfc459979e91b7551e34256278))
+
+
+### Bug Fixes
+
+* add peerDependencies ([b8f061b](https://github.com/shinokada/flowbite-svelte-blocks/commit/b8f061b21faacb4baccd4cd38e6b53800c0bf837))
+
 ### [0.2.18](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.2.17...v0.2.18) (2023-02-20)
 
 ### [0.2.17](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.2.16...v0.2.17) (2023-02-20)
