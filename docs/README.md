@@ -41,10 +41,10 @@ Start a server:
 npm run dev
 ```
 
-Install flowbite flowbite-svelte classnames @popperjs/core:
+Install flowbite flowbite-svelte classnames @popperjs/core,and flowbite-svelte-blocks:
 
 ```sh
-pnpm i flowbite flowbite-svelte classnames @popperjs/core
+pnpm i flowbite flowbite-svelte classnames @popperjs/core flowbite-svelte-blocks
 ```
 
 Update tailwind.config.cjs:
@@ -69,11 +69,6 @@ const config = {
 module.exports = config;
 ```
 
-Install Flowbite-Svelte-Blocks
-
-```sh
-npm i flowbite-svelte-blocks
-```
 
 ## Update tailwind.config.cjs
 
