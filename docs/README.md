@@ -1,7 +1,7 @@
 <h1 align="center">Flowbite Svelte Blocks</h1>
 
 <p align="center">
-<a href="https://flowbite-svelte-blocks.codewithshin.com/" rel="nofollow">Flowbite-Svelte-Blocks</a>
+<a href="https://flowbite-svelte-blocks.codewithshin.com/" rel="nofollow">Flowbite Svelte Blocks</a>
 </p>
 
 <p align="center">
@@ -10,9 +10,11 @@
 <a href="https://opensource.org/licenses/MIT" rel="nofollow"><img src="https://img.shields.io/github/license/shinokada/flowbite-svelte-blocks" alt="License"></a>
 </p>
 
+**⚠️ Flowbite-Svelte-Blocks is currently in early development and APIs and packages are likely to change quite often.**
+
 ## Demo
 
-[Flowbite-Svelte-Blocks](https://flowbite-svelte-blocks.vercel.app/)
+[Flowbite Svelte Blocks](https://flowbite-svelte-blocks.vercel.app/)
 
 ## Installation
 
