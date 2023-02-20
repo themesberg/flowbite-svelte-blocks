@@ -28,8 +28,8 @@
   "peerDependencies": {
     "svelte": "^3.54.0",
     "classnames": "^2.3.2",
-    "flowbite": "^1.6.3",
-    "flowbite-svelte": "^0.29.13",
+    "flowbite": "~1.5.0",
+    "flowbite-svelte": ">=0.29.0 <1.0.0",
     "@popperjs/core": "^2.11.6",
     "svelte-heros": "^2.6.0"
   },
@@ -88,5 +88,6 @@
   "files": [
     "dist"
   ],
-  "svelte": "./dist/index.js"
+  "svelte": "./dist/index.js",
+  "types": "./dist/index.d.ts"
 }
