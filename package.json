@@ -1,6 +1,6 @@
 {
   "name": "flowbite-svelte-blocks",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Flowbite blocks components for Svelte",
   "author": {
     "name": "Shinichi Okada",
@@ -31,7 +31,7 @@
     "flowbite": "^1.6.3",
     "flowbite-svelte": "^0.29.13",
     "@popperjs/core": "^2.11.6",
-		"svelte-heros": "^2.6.0",
+    "svelte-heros": "^2.6.0"
   },
   "devDependencies": {
     "@playwright/test": "^1.30.0",

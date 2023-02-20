@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.1](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.3.0...v0.3.1) (2023-02-20)
+
+
+### Bug Fixes
+
+* add svelte-heros to peerDependencies ([90b0ca3](https://github.com/shinokada/flowbite-svelte-blocks/commit/90b0ca3db77aa218043cff58a2eda1dc29910177))
+
 ## [0.3.0](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.2.18...v0.3.0) (2023-02-20)
 
 
