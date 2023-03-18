@@ -5,22 +5,22 @@
   "start_url": ".",
   "icons": [
     {
-      "src": "public/apple-touch-icon.png",
+      "src": "images/apple-touch-icon.png",
       "sizes": "180x180",
       "type": "image/png"
     },
     {
-      "src": "public/android-chrome-192x192.png",
+      "src": "images/android-chrome-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "public/android-chrome-512x512.png",
+      "src": "images/android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     },
     {
-      "src": "public/maskable_icon_x192.png",
+      "src": "images/maskable_icon_x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"

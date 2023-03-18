@@ -1,6 +1,6 @@
 <script lang="ts">
   import { Section, Banner } from '$lib';
-  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag } from '../utils';
+  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
   import { Breadcrumb, BreadcrumbItem, CloseButton } from 'flowbite-svelte';
 
   export let visible = true;
@@ -37,6 +37,9 @@
         size="18"
         href="https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/marketing/banner.svelte"
         iconClass="text-gray-500"
+      />
+      <DocsLink 
+        page={title.toLocaleLowerCase()}
       />
     </div>
   </div>
