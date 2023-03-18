@@ -1,6 +1,6 @@
 <script lang="ts">
   import { Section, Content, ContentWithImage } from '$lib';
-  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
+  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag } from '../utils';
   import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
   import { Home, ChevronRight } from 'svelte-heros';
   const breadcrumb_title = 'Content';

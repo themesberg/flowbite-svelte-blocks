@@ -2,7 +2,7 @@
   import { Section, Cta } from '$lib';
   import { Button, Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
   import { Home, VideoCamera } from 'svelte-heros';
-  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
+  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag } from '../utils';
   const breadcrumb_title = 'CTA';
   const title = 'CTA';
   const dir = 'marketing';

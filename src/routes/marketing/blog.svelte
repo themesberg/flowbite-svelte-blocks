@@ -8,7 +8,7 @@
     BlogHead,
     BlogBodyWrapper
   } from '$lib';
-  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
+  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag } from '../utils';
   import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
   import { ArrowSmallRight, VideoCamera, Newspaper, Home } from 'svelte-heros';
   const breadcrumb_title = 'Blog';

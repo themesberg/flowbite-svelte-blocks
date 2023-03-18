@@ -1,6 +1,6 @@
 <script lang="ts">
   import { Section, Contact } from '$lib';
-  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
+  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag } from '../utils';
   import { Label, Input, Textarea, Button, Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
   const breadcrumb_title = 'Contact';
   const title = 'Contact';

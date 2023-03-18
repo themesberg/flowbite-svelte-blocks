@@ -1,6 +1,6 @@
 <script lang="ts">
   import { Section, ForgotPassword, ForgotPasswordHeader } from '$lib';
-  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
+  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag } from '../utils';
   import {
     Breadcrumb,
     BreadcrumbItem,
@@ -47,9 +47,6 @@
         size="18"
         href="https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/marketing/account-recovery.svelte"
         iconClass="text-gray-500"
-      />
-      <DocsLink 
-        page={title.toLocaleLowerCase().replace(/\s+/g, '-')}
       />
     </div>
   </div>

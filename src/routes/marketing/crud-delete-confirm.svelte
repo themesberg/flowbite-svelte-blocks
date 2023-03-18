@@ -1,6 +1,6 @@
 <script lang="ts">
   import { Section } from '$lib';
-  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
+  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag } from '../utils';
   import { Button, Modal, P, Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
   const breadcrumb_title = 'Crud delete confirm';
   const title = 'Crud delete confirm';
