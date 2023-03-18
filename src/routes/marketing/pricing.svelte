@@ -7,7 +7,7 @@
     PricingHead,
     PricingItem
   } from '$lib';
-  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag } from '../utils';
+  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
   import { Button, Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
   const breadcrumb_title = 'Pricing';
   const title = 'Pricing';

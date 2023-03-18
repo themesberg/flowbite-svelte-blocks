@@ -1,6 +1,6 @@
 <script lang="ts">
   import { Section, Register } from '$lib';
-  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag } from '../utils';
+  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
   import { Breadcrumb, BreadcrumbItem, Button, Checkbox, Label, Input } from 'flowbite-svelte';
   const breadcrumb_title = 'Login';
   const title = 'Login';

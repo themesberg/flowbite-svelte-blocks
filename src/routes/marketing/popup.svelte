@@ -1,6 +1,6 @@
 <script lang="ts">
   import { Section, Popup } from '$lib';
-  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag } from '../utils';
+  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
   import { Breadcrumb, BreadcrumbItem, Button } from 'flowbite-svelte';
   const breadcrumb_title = 'Popup';
   const title = 'Popup';

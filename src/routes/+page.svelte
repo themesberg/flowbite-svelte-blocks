@@ -47,8 +47,9 @@
       >
         <NavLi href="/">Home</NavLi>
         <NavLi href="/example">Example</NavLi>
-        <NavLi href="https://github.com/shinokada/flowbite-svelte-blocks">GitHub</NavLi>
-        <NavLi href="https://flowbite-svelte.com">Flowbite-Svelte</NavLi>
+        <NavLi href="https://flowbite-svelte-blocks.codewithshin.com/" target="_blank" >Docs</NavLi>
+        <NavLi href="https://github.com/shinokada/flowbite-svelte-blocks" target="_blank" >GitHub</NavLi>
+        <NavLi href="https://flowbite-svelte.com" target="_blank" >Flowbite-Svelte</NavLi>
       </NavUl>
     </Navbar>
   </header>

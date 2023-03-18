@@ -9,7 +9,7 @@
     Github,
     Twitter
   } from '$lib';
-  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag } from '../utils';
+  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
   import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
 
   let members = [

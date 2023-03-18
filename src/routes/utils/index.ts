@@ -1,10 +1,12 @@
 export { default as EditOnGithub } from './EditOnGithub.svelte';
+export { default as DocsLink } from './DocsLink.svelte'
 
 export { default as ExampleDiv } from './ExampleDiv.svelte';
 export { default as MetaTag } from './MetaTag.svelte';
 export { default as SectionHeader } from './SectionHeader.svelte';
 
 export { default as Airbnb } from './icons/Airbnb.svelte';
+export { default as BookOpen } from './icons/BookOpen.svelte'
 export { default as Github } from './icons/Github.svelte';
 export { default as Google } from './icons/Google.svelte';
 export { default as Facebook } from './icons/Facebook.svelte';

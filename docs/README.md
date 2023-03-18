@@ -16,6 +16,10 @@
 
 [Flowbite Svelte Blocks](https://flowbite-svelte-blocks.vercel.app/)
 
+## Docs
+
+[Docs](https://flowbite-svelte-blocks.codewithshin.com/)
+
 ## Installation
 
 Use this library on top of [Flowbite-Svelte](https://github.com/themesberg/flowbite-svelte). Flowbite-Svelte is an official Flowbite component library for Svelte.

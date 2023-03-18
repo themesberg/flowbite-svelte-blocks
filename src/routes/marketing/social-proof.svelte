@@ -1,6 +1,6 @@
 <script lang="ts">
   import { Section, Social } from '$lib';
-  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag } from '../utils';
+  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
   import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
   const breadcrumb_title = 'Social proof';
   const title = 'Social proof';
