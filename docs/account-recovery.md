@@ -7,7 +7,6 @@
 ```
 <script lang="ts">
 import { Section, ForgotPassword, ForgotPasswordHeader } from 'flowbite-svelte-blocks';
-
 </script>
 
 <Section name="forgotpassword">

@@ -8,7 +8,7 @@
     Instagram,
     Github,
     Twitter,
-    MetaTag
+    MetaTag, DocsLink
   } from '../utils';
   import {
     Breadcrumb,

@@ -10,7 +10,8 @@
     Mashable,
     Microsoft,
     Spotify,
-    MetaTag
+    MetaTag,
+    DocsLink
   } from '../utils';
   import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
   const breadcrumb_title = 'Customer Logos';
