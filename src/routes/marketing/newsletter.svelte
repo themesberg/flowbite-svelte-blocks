@@ -1,6 +1,6 @@
 <script lang="ts">
   import { Section, Newsletter } from '$lib';
-  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag } from '../utils';
+   import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
   import { Breadcrumb, BreadcrumbItem, Input, Button } from 'flowbite-svelte';
   import { Home, Envelope } from 'svelte-heros';
   const breadcrumb_title = 'Newsletter';
@@ -37,6 +37,7 @@
         href="https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/marketing/newsletter.svelte"
         iconClass="text-gray-500"
       />
+      <DocsLink page="{title.toLowerCase().replace(/\s+/g, '-')}" target="_blank"/>
     </div>
   </div>
 </Section>

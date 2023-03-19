@@ -2,7 +2,7 @@
   import { Section, Cta } from '$lib';
   import { Button, Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
   import { Home, VideoCamera } from 'svelte-heros';
-  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag } from '../utils';
+   import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
   const breadcrumb_title = 'CTA';
   const title = 'CTA';
   const dir = 'marketing';
@@ -37,6 +37,7 @@
         href="https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/marketing/cta.svelte"
         iconClass="text-gray-500"
       />
+      <DocsLink page="{title.toLowerCase().replace(/\s+/g, '-')}" target="_blank"/>
     </div>
   </div>
 </Section>

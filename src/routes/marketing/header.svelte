@@ -10,7 +10,7 @@
     Breadcrumb,
     BreadcrumbItem
   } from 'flowbite-svelte';
-  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag } from '../utils';
+   import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
 
   let navClass = 'bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800';
   let navDivClass = 'flex flex-wrap justify-between items-center mx-auto max-w-screen-xl';
@@ -48,6 +48,7 @@
         href="https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/marketing/header.svelte"
         iconClass="text-gray-500"
       />
+      <DocsLink page="{title.toLowerCase().replace(/\s+/g, '-')}" target="_blank"/>
     </div>
   </div>
 </Section>

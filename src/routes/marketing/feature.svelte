@@ -9,7 +9,7 @@
     CurrencyDollar,
     Bolt
   } from 'svelte-heros';
-  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag } from '../utils';
+   import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
   import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
   const breadcrumb_title = 'Feature';
   const title = 'Feature';
@@ -46,6 +46,7 @@
         href="https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/marketing/feature.svelte"
         iconClass="text-gray-500"
       />
+      <DocsLink page="{title.toLowerCase().replace(/\s+/g, '-')}" target="_blank"/>
     </div>
   </div>
 </Section>

@@ -1,6 +1,6 @@
 <script lang="ts">
   import { Section, ForgotPassword, ForgotPasswordHeader } from '$lib';
-  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag } from '../utils';
+   import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
   import {
     Breadcrumb,
     BreadcrumbItem,
@@ -12,8 +12,8 @@
     P,
     A
   } from 'flowbite-svelte';
-  const breadcrumb_title = 'Acount Recovery';
-  const title = 'Acount Recovery';
+  const breadcrumb_title = 'Account Recovery';
+  const title = 'Account Recovery';
   const dir = 'marketing';
   const description =
     'Get started with account recovery (aka. forgot password) pages to allow users to reset their password using an email based on multiple layouts and styles.';
@@ -48,6 +48,7 @@
         href="https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/marketing/account-recovery.svelte"
         iconClass="text-gray-500"
       />
+      <DocsLink page="{title.toLowerCase().replace(/\s+/g, '-')}" target="_blank"/>
     </div>
   </div>
 </Section>

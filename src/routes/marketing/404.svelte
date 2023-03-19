@@ -1,6 +1,6 @@
 <script>
   import { Section, Page404 } from '$lib';
-  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag } from '../utils';
+  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
   import { Button, Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
   const title = '404 Page - Flowbite Svelte Blocks';
   const breadcrumb_title = '404';
@@ -35,6 +35,7 @@
         href="https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/marketing/404.svelte"
         iconClass="text-gray-500"
       />
+      <DocsLink page="404" target="_blank"/>
     </div>
   </div>
 </Section>
