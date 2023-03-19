@@ -4,15 +4,30 @@
   import {
     Breadcrumb,
     BreadcrumbItem,
-    Label,
-    Input,
-    Button,
     Checkbox,
     Heading,
     P,
-    A
+    A,
+    Drawer, Button, CloseButton, Label, Input, Textarea, Select
   } from 'flowbite-svelte';
-
+  import { sineIn } from 'svelte/easing';
+  let hidden = true;
+  let transitionParams = {
+    x: -320,
+    duration: 200,
+    easing: sineIn
+  };
+  let selected;
+  let categories = [
+    {value:"", name: "Select category"},
+    {value:"TV", name: "TV/Monitors"},
+    {value:"PC", name: "PC"},
+    {value:"GA", name: "Gaming/Console"},
+    {value:"PH", name: "Phones"},
+  ]
+  const handleCancel = ()=>{
+    hidden  = true
+  }
   const breadcrumb_title = 'Table Headers';
   const title = 'Table Headers';
   const dir = 'application';
@@ -55,7 +70,45 @@
 </Section>
 
 <ExampleDiv>
-  <Section name="tableheader" sectionClass='bg-gray-50 dark:bg-gray-900 h-screen flex items-center'>
-  <h1 class="text-6xl dark:text-white">COMING SOON</h1>
+  <Section name="tableheader" sectionClass='bg-gray-50 dark:bg-gray-900 h-screen flex'>
+    <div class="text-center">
+      <Button on:click={() => (hidden = false)}>Create product</Button>
+    </div>
+    <Drawer transitionType="fly" {transitionParams} bind:hidden={hidden} id='sidebar4'>
+      <div class='flex items-center'>
+        <h5 id="drawer-label" class="inline-flex items-center mb-6 text-base font-semibold text-gray-500 uppercase dark:text-gray-400">New Product</h5>
+        <CloseButton on:click={() => (hidden = true)} class='mb-4 dark:text-white'/>
+      </div>
+      <form action="#" class="mb-6">
+        <div class="mb-6">
+          <Label for='name' class='block mb-2'>Name</Label>
+          <Input id='name' name='name' required placeholder="Type product name" />
+        </div>
+        <div class="mb-6">
+          <Label for='bland' class='block mb-2'>Bland</Label>
+          <Input id='bland' name='bland' required placeholder="Product brand" />
+        </div>
+        <div class="mb-6">
+          <Label for='price' class='block mb-2'>Price</Label>
+          <Input id='price' name='price' required placeholder="$2999" />
+        </div>
+        <div class="mb-6">
+        <Label>Category
+          <Select class="mt-2" items={categories} bind:value={selected} />
+        </Label>
+        </div>
+        <div class="mb-6">
+          <Label for="brand" class="mb-2">Description</Label>
+          <Textarea id="message" placeholder="Enter event description here" rows="4" name="message"/>
+        </div>
+        <div class="bottom-0 left-0 flex justify-center w-full pb-4 space-x-4 md:px-4 md:absolute">
+          <Button type="submit" class="w-full">Add product</Button>
+          <Button class="w-full" color="light" on:click={handleCancel}>
+            <svg aria-hidden="true" class="w-5 h-5 -ml-1 sm:mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            Cancel
+          </Button>
+      </div>
+      </form>
+    </Drawer>
   </Section>
 </ExampleDiv>
