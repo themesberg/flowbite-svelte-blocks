@@ -1,6 +1,6 @@
 <script lang="ts">
   import { Section, Newsletter } from '$lib';
-   import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
+  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
   import { Breadcrumb, BreadcrumbItem, Input, Button } from 'flowbite-svelte';
   import { Home, Envelope } from 'svelte-heros';
   const breadcrumb_title = 'Newsletter';

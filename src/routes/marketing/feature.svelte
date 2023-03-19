@@ -9,7 +9,7 @@
     CurrencyDollar,
     Bolt
   } from 'svelte-heros';
-   import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
+  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
   import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
   const breadcrumb_title = 'Feature';
   const title = 'Feature';

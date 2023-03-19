@@ -1,5 +1,5 @@
 // Change this to your repository name
-const GHPATH = 'https://flowbite-svelte-blocks.codewithshin.com/';
+const GHPATH = 'https://flowbite-svelte-blocks.pages.dev/';
 
 // Choose a different app prefix name
 const APP_PREFIX = 'flowbite-svelte-blocks_';

@@ -1,6 +1,6 @@
 <script lang="ts">
   import { Section, Banner } from '$lib';
-   import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
+  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
   import { Breadcrumb, BreadcrumbItem, CloseButton } from 'flowbite-svelte';
 
   export let visible = true;

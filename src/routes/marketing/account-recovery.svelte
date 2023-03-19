@@ -1,6 +1,6 @@
 <script lang="ts">
   import { Section, ForgotPassword, ForgotPasswordHeader } from '$lib';
-   import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
+  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
   import {
     Breadcrumb,
     BreadcrumbItem,

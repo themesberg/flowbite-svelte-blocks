@@ -1,7 +1,7 @@
 <h1 align="center">Flowbite Svelte Blocks</h1>
 
 <p align="center">
-<a href="https://flowbite-svelte-blocks.codewithshin.com/" rel="nofollow">Flowbite Svelte Blocks</a>
+<a href="https://flowbite-svelte-blocks.pages.dev/" rel="nofollow">Flowbite Svelte Blocks</a>
 </p>
 
 <p align="center">
@@ -18,7 +18,7 @@
 
 ## Docs
 
-[Docs](https://flowbite-svelte-blocks.codewithshin.com/)
+[Docs](https://flowbite-svelte-blocks.pages.dev/)
 
 ## Installation
 

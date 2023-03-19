@@ -37,6 +37,7 @@
 			>
 				<NavLi href="/">Home</NavLi>
 				<NavLi href="/example">Example</NavLi>
+				<NavLi href="https://flowbite-svelte-blocks.pages.dev/" target="_blank" >Docs</NavLi>
 				<NavLi href="https://github.com/shinokada/flowbite-svelte-blocks">GitHub</NavLi>
 				<NavLi href="https://flowbite-svelte.com">Flowbite-Svelte</NavLi>
 			</NavUl>

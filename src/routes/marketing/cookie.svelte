@@ -1,6 +1,6 @@
 <script lang="ts">
   import { Section } from '$lib';
-   import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
+  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
   import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
   const breadcrumb_title = 'Cookie';
   const title = 'Cookie';
@@ -41,3 +41,9 @@
     </div>
   </div>
 </Section>
+
+<ExampleDiv>
+  <Section name="tableheader" sectionClass='bg-gray-50 dark:bg-gray-900 h-screen flex items-center'>
+  <h1 class="text-6xl dark:text-white">COMING SOON</h1>
+  </Section>
+</ExampleDiv>

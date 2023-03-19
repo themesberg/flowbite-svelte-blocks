@@ -1,6 +1,6 @@
 <script lang="ts">
   import { Section, Faq, FaqItem } from '$lib';
-   import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
+  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
   import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
   const breadcrumb_title = 'FAQ';
   const title = 'FAQ';
