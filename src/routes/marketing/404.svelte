@@ -28,7 +28,7 @@
         Default example
       </h2>
       <p class="text-lg text-gray-500 lg:mb-0 dark:text-gray-400 lg:max-w-2xl">
-        {description}
+        Use this free example of a 404 "not found" page coded with Tailwind CSS and Flowbite when a user visits a page that doesn't exist with a button back to the homepage.
       </p>
       <EditOnGithub
         size="18"

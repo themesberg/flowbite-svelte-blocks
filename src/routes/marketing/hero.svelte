@@ -9,7 +9,7 @@
     ExampleDiv,
     SectionHeader,
     EditOnGithub,
-    MetaTag
+    MetaTag, DocsLink
   } from '../utils';
   const breadcrumb_title = 'Hero';
   const title = 'Hero';

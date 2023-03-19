@@ -1,6 +1,6 @@
 <script lang="ts">
   import { Section } from '$lib';
-   import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
+  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
   import {
     Breadcrumb,
     BreadcrumbItem,
@@ -12,9 +12,10 @@
     P,
     A
   } from 'flowbite-svelte';
-  const breadcrumb_title = 'Table Headers';
-  const title = 'Table Headers';
+  const breadcrumb_title = 'Side Navigations';
+  const title = 'Sidenav';
   const dir = 'application';
+  const breadcrumb_dir = 'Application UI'
   const description =
     'Get started with the side nav component to show a list of menu items, dropdowns, actions, and user profile actions for your application and dashboard.';
 
@@ -25,8 +26,8 @@
 <SectionHeader>
   <Breadcrumb navClass="flex mb-3">
     <BreadcrumbItem href="/" home>Blocks</BreadcrumbItem>
-    <BreadcrumbItem href="/application">Application</BreadcrumbItem>
-    <BreadcrumbItem>Side Navigations</BreadcrumbItem>
+    <BreadcrumbItem href="/application">{breadcrumb_dir}</BreadcrumbItem>
+    <BreadcrumbItem>{breadcrumb_title}</BreadcrumbItem>
   </Breadcrumb>
   <svelte:fragment slot="h1"
     >Tailwind CSS Sidenav - Flowbite Blocks in Svelte</svelte:fragment
@@ -55,6 +56,6 @@
 
 <ExampleDiv>
   <Section name="tableheader" sectionClass='bg-gray-50 dark:bg-gray-900 h-screen flex items-center'>
-
+  <h1 class="text-6xl">COMING SOON</h1>
   </Section>
 </ExampleDiv>
