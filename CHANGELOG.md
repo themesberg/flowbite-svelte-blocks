@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.4](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.3.3...v0.3.4) (2023-03-21)
+
+
+### Features
+
+* add crud-create-drawers ([f60926e](https://github.com/shinokada/flowbite-svelte-blocks/commit/f60926e3a75983749ac6ce7a11dc4a96bd1ea8f6))
+* add docs links ([d43f361](https://github.com/shinokada/flowbite-svelte-blocks/commit/d43f36134470f4c3510fd301e7690388609c7367))
+* add SidebarBottomNav and SidebarBottomNavItem ([2b3e472](https://github.com/shinokada/flowbite-svelte-blocks/commit/2b3e4721d4e3fff9be06721c7a1887794a6968e1))
+
+
+### Bug Fixes
+
+* add _config.yml, add DocsLink.svelte for read doc ([dcd4e03](https://github.com/shinokada/flowbite-svelte-blocks/commit/dcd4e0392fae5b6952d95a29f13dd11d3560ff1a))
+* add Coming Soon to pages ([75aabc6](https://github.com/shinokada/flowbite-svelte-blocks/commit/75aabc64e614cfe82024e2caaa6b2f093c12adb1))
+* comments link ([d507a91](https://github.com/shinokada/flowbite-svelte-blocks/commit/d507a91a72d70ac676d2a50ec0b29cd131085bb6))
+* docs link in the top menu ([4dc2f4e](https://github.com/shinokada/flowbite-svelte-blocks/commit/4dc2f4e4468dd2f0dd81c3e26239a407c3c1bac5))
+* h2 color ([4017b40](https://github.com/shinokada/flowbite-svelte-blocks/commit/4017b40d75f0e88877cab22d6d3667fa49d4437f))
+* remove DocsLink since docsify subpage direct link is not working ([1083244](https://github.com/shinokada/flowbite-svelte-blocks/commit/1083244f985f528ccd513f6a429c4f2a529c11d5))
+
 ### [0.3.3](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.3.2...v0.3.3) (2023-02-20)
 
 
