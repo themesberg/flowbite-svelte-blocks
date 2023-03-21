@@ -66,6 +66,10 @@ export { default as PricingItem } from './pricing/PricingItem.svelte';
 // register
 export { default as Register } from './register/Register.svelte';
 
+// sidebar
+export { default as SidebarBottomNav } from './sidebar/SidebarBottomNav.svelte';
+export { default as SidebarBottomNavItem } from './sidebar/SidebarBottomNavItem.svelte';
+
 // social
 export { default as Social } from './social/Social.svelte';
 
