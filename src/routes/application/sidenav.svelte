@@ -49,9 +49,9 @@
 </Section>
 
 <ExampleDiv>
-  <Section name="tableheader" sectionClass='bg-gray-50 dark:bg-gray-900 flex h-full  '>
+  <Section name="tableheader" sectionClass='bg-gray-50 dark:bg-gray-900 flex h-full py-4'>
     <Sidebar>
-      <SidebarWrapper>
+      <SidebarWrapper class='bg-white'>
         <SidebarGroup>
           <SidebarItem label="Overview">
           <svelte:fragment slot="icon">
