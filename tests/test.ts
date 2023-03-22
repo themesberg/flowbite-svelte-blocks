@@ -70,7 +70,6 @@ test('Create Drawers (CRUD) has expected h1', async ({ page }) => {
 	expect(await page.textContent('h1')).toBe('Tailwind CSS Create Drawers (CRUD) - Flowbite Blocks in Svelte');
 });
 
-
 test('Create Formss (CRUD) has expected h1', async ({ page }) => {
 	await page.goto('/application/crud-create-forms');
 	expect(await page.textContent('h1')).toBe('Tailwind CSS Create Forms (CRUD) - Flowbite Blocks in Svelte');
@@ -101,12 +100,10 @@ test('Read Sections (CRUD)  has expected h1', async ({ page }) => {
 	expect(await page.textContent('h1')).toBe('Tailwind CSS Read Sections (CRUD) - Flowbite Blocks in Svelte');
 });
 
-
 test('Crud Success Message  has expected h1', async ({ page }) => {
 	await page.goto('/application/crud-success-message');
 	expect(await page.textContent('h1')).toBe('Tailwind CSS Success Message (CRUD) - Flowbite Blocks in Svelte');
 });
-
 
 test('Update Drawers (CRUD) has expected h1', async ({ page }) => {
 	await page.goto('/application/crud-update-drawers');
@@ -123,7 +120,6 @@ test('Update Modals (CRUD) has expected h1', async ({ page }) => {
 	expect(await page.textContent('h1')).toBe('Tailwind CSS Update Modals (CRUD) - Flowbite Blocks in Svelte');
 });
 
-
 test('CTA Sections page has expected h1', async ({ page }) => {
 	await page.goto('/marketing/cta');
 	expect(await page.textContent('h1')).toBe('Tailwind CSS CTA Sections - Flowbite Blocks in Svelte');
@@ -134,13 +130,10 @@ test('Customer Logos page has expected h1', async ({ page }) => {
 	expect(await page.textContent('h1')).toBe('Tailwind CSS Customer Logos - Flowbite Blocks in Svelte');
 });
 
-
-
 test('Dashboard Footers has expected h1', async ({ page }) => {
 	await page.goto('/application/dashboard-footer');
 	expect(await page.textContent('h1')).toBe('Tailwind CSS Dashboard Footers - Flowbite Blocks in Svelte');
 });
-
 
 test('Delete Confirm (CRUD) page has expected h1', async ({ page }) => {
 	await page.goto('/marketing/event-schedule');
@@ -177,7 +170,6 @@ test('Footer Sections page has expected h1', async ({ page }) => {
 	expect(await page.textContent('h1')).toBe('Tailwind CSS Footer Sections - Flowbite Blocks in Svelte');
 });
 
-
 test('Header page has expected h1', async ({ page }) => {
 	await page.goto('/marketing/header');
 	expect(await page.textContent('h1')).toBe('Tailwind CSS Header - Flowbite Blocks in Svelte');
@@ -198,12 +190,10 @@ test('Maintenance Pages page has expected h1', async ({ page }) => {
 	expect(await page.textContent('h1')).toBe('Tailwind CSS Maintenance Pages - Flowbite Blocks in Svelte');
 });
 
-
 test('Navbar has expected h1', async ({ page }) => {
 	await page.goto('/application/navbar');
 	expect(await page.textContent('h1')).toBe('Tailwind CSS Dashboard Navbars - Flowbite Blocks in Svelte');
 });
-
 
 test('Newsletter Sections page has expected h1', async ({ page }) => {
 	await page.goto('/marketing/newsletter');
@@ -213,6 +203,11 @@ test('Newsletter Sections page has expected h1', async ({ page }) => {
 test('Popup page has expected h1', async ({ page }) => {
 	await page.goto('/marketing/popup');
 	expect(await page.textContent('h1')).toBe('Tailwind CSS Popup - Flowbite Blocks in Svelte');
+});
+
+test('Portfolio page has expected h1', async ({ page }) => {
+	await page.goto('/marketing/portfolio');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS Portfolio - Flowbite Blocks in Svelte');
 });
 
 test('Pricing Table has expected h1', async ({ page }) => {
@@ -233,6 +228,11 @@ test('Related Articles has expected h1', async ({ page }) => {
 test('Reset Password Form has expected h1', async ({ page }) => {
 	await page.goto('/marketing/reset-password');
 	expect(await page.textContent('h1')).toBe('Tailwind CSS Reset Password Form - Flowbite Blocks in Svelte');
+});
+
+test('Schedule page has expected h1', async ({ page }) => {
+	await page.goto('/marketing/event-schedule');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS Event Schedule - Flowbite Blocks in Svelte');
 });
 
 test('Sidenav has expected h1', async ({ page }) => {
