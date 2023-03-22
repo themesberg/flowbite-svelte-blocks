@@ -2,8 +2,8 @@
   import { Section, Schedule, ScheduleItem } from '$lib';
   import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
   import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
-  const breadcrumb_title = 'Schedule';
-  const title = 'Schedule';
+  const breadcrumb_title = 'Event Schedule';
+  const title = 'Event Schedule';
   const dir = 'marketing';
   const description =
     'Get started with a collection of website sections coded with Tailwind CSS to show the schedule of an event inside a timeline featuring a title, speaker, and description.';
