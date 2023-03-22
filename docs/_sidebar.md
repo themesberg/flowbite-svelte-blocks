@@ -43,7 +43,6 @@
 * [Register Forms](register.md)
 * [Related Articles](related-articles.md)
 * [Reset Password Forms](reset-password.md)
-* [Schedule](schedule.md)
 * [Sidenav](sidenav.md)
 * [Social Proof](social-proof.md)
 * [Table Footers](table-footers.md)
