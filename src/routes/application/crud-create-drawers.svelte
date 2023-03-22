@@ -28,8 +28,8 @@
   const handleCancel = ()=>{
     hidden  = true
   }
-  const breadcrumb_title = 'Table Headers';
-  const title = 'Table Headers';
+  const breadcrumb_title = 'Create Drawers (CRUD)';
+  const title = 'Create Drawers (CRUD)';
   const dir = 'application';
   const description =
     'Get started with a collection of drawer components to create new data models in your application by including form elements.';
@@ -71,7 +71,7 @@
 
 <ExampleDiv>
   <Section name="tableheader" sectionClass='bg-gray-50 dark:bg-gray-900 h-screen flex'>
-    <div class="text-center">
+    <div class="text-center pt-8">
       <Button on:click={() => (hidden = false)}>Create product</Button>
     </div>
     <Drawer transitionType="fly" {transitionParams} bind:hidden={hidden} id='sidebar4'>
