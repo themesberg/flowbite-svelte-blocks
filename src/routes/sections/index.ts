@@ -45,6 +45,7 @@ export { default as Popupsection } from './marketing/Popupsection.svelte';
 export { default as Pricingsection } from './marketing/Pricing.svelte';
 export { default as RegisterFormsection } from './marketing/RegisterFormsection.svelte';
 export { default as ResetPasswordFormsection } from './marketing/ResetPasswordFormsection.svelte';
+export { default as Schedulesection } from './marketing/Schedulesection.svelte'
 export { default as SocialProofsection } from './marketing/SocialProofsection.svelte';
 export { default as Teamsection } from './marketing/Teamsection.svelte';
 export { default as Testimonialsection } from './marketing/Testimonialsection.svelte';
