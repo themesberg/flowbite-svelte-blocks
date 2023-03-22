@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.6](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.3.5...v0.3.6) (2023-03-22)
+
+
+### Features
+
+* add portfolio page, Portfolio, PortfolioItem component ([56e936d](https://github.com/shinokada/flowbite-svelte-blocks/commit/56e936d82d312e2faf6e91b069d1cbc174adbd6e))
+* add TableHeader component and table-headers page, update routes/sections font ([18329a3](https://github.com/shinokada/flowbite-svelte-blocks/commit/18329a3644e84769302619a2f5978ef945c5398d))
+
+
+### Bug Fixes
+
+* add padding ([6e07ab0](https://github.com/shinokada/flowbite-svelte-blocks/commit/6e07ab0da05842ad2abc53479e3a12c6b85262d4))
+* docs pages ([91830c3](https://github.com/shinokada/flowbite-svelte-blocks/commit/91830c3f8e5735da4b6872c6444b24691f24294a))
+* event-schedule title ([54a0759](https://github.com/shinokada/flowbite-svelte-blocks/commit/54a075954671bca9a6f9f2ec3af376c4a2a7fd46))
+* remove incomplete from TableHeader section ([0274146](https://github.com/shinokada/flowbite-svelte-blocks/commit/0274146753fac4de1d19ba208d1079dde1d8ab37))
+
 ### [0.3.5](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.3.4...v0.3.5) (2023-03-22)
 
 
