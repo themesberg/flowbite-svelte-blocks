@@ -1,7 +1,7 @@
 <script lang="ts">
   import { Section, Schedule, ScheduleItem } from '$lib';
   import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
-  import { Breadcrumb, BreadcrumbItem, Button, Checkbox, Label, Input } from 'flowbite-svelte';
+  import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
   const breadcrumb_title = 'Schedule';
   const title = 'Schedule';
   const dir = 'marketing';
@@ -44,8 +44,6 @@
       title: 'Exploring the balance between customer acquisition and retention'
     }
   ]
-
-  
 </script>
 
 <MetaTag {breadcrumb_title} {title} {dir} {description} />
