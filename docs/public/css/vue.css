@@ -23,7 +23,7 @@ body:not(.ready) [data-cloak] {
 }
 
 div#app {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: lighter;
   margin: 40vh auto;
   text-align: center
@@ -80,7 +80,7 @@ body {
   -webkit-font-smoothing: antialiased;
   color: #34495e;
   font-family: Source Sans Pro, Helvetica Neue, Arial, sans-serif;
-  font-size: 15px;
+  font-size: 13px;
   letter-spacing: 0;
   margin: 0;
   overflow-x: hidden
@@ -141,7 +141,7 @@ li input[type=checkbox] {
 
 .app-nav a {
   color: inherit;
-  font-size: 16px;
+  font-size: 14px;
   text-decoration: none;
   transition: color .3s
 }
@@ -182,7 +182,7 @@ li input[type=checkbox] {
 
 .app-nav li ul li {
   display: block;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1rem;
   margin: 8px 14px;
   white-space: nowrap
@@ -635,7 +635,7 @@ section.cover p {
 
 section.cover h1 {
   color: inherit;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 300;
   margin: .625rem 0 2.5rem;
   position: relative;
@@ -765,26 +765,26 @@ body {
 }
 
 .markdown-section h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 0 0 1rem
 }
 
 .markdown-section h2 {
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin: 45px 0 .8rem
 }
 
 .markdown-section h3 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   margin: 40px 0 .6rem
 }
 
 .markdown-section h4 {
-  font-size: 1.5rem
+  font-size: 1.3rem
 }
 
 .markdown-section h5 {
-  font-size: 1.25rem
+  font-size: 1.2rem
 }
 
 .markdown-section h6 {

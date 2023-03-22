@@ -5,7 +5,7 @@
 		class="bg-gray-50 dark:bg-gray-700 rounded-t-md py-2.5 px-5 flex justify-between items-center border-b border-gray-200 dark:border-gray-700"
 	>
 		<div class="text-left">
-			<h2 class="text-lg font-medium text-gray-500 dark:text-gray-400">Pricing Tables</h2>
+			<h2 class="text-base font-medium text-gray-900 dark:text-white">Pricing Tables</h2>
 			<p class="text-sm text-gray-500 dark:text-gray-400">1 free component</p>
 		</div>
 		<div class="text-gray-900 dark:text-white">
