@@ -4,6 +4,8 @@
   import {
     AdvancedTable, AccountRecoverysection, Bannersection, Blogsection, BlogTemplatesection, CommentSection, ContactFormsection, Contentsection, CookieConsentsection, CrudCreateDrawer, CrudCreateForm, CrudCreateModal, CrudDeleteConfirm, CrudReadDrawer, CrudReadModal, CrudReadSection, CrudSuccessMessage, CrudUpdateDrawer, CrudUpdateForm, CrudUpdateModal, Cta, DashboardFooter, DashboardNavbar, DropdownFilter, Faqsection, Featuresection, Footersection, Headersection, Herosection, LoginFormsection, Maintenancesection, Newslettersection, Page404section, Page500section, Popupsection, Pricingsection, RegisterFormsection, RelatedArticle, ResetPasswordFormsection, SideNavigation, SocialProofsection, Teamsection, Testimonialsection, TableFooter, TableHeader,  UpdateDrawer, UserOnboarding
   } from './sections';
+    import Schedule from '$lib/schedule/Schedule.svelte';
+    import Schedulesection from './sections/marketing/Schedulesection.svelte';
 
   let navClass = 'bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800';
   let navDivClass = 'flex flex-wrap justify-between items-center mx-auto max-w-screen-xl';
@@ -111,6 +113,7 @@
             <RegisterFormsection />
             <RelatedArticle />
             <ResetPasswordFormsection />
+            <Schedulesection /> 
             <SideNavigation />
             <SocialProofsection />
             <Teamsection />

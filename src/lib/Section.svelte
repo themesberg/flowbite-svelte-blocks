@@ -25,6 +25,7 @@
 		| 'pricing'
 		| 'register'
 		| 'reset'
+		| 'schedule'
 		| 'social'
 		| 'tableheader'
 		| 'team'
@@ -96,6 +97,9 @@
 		},
 		reset: {
 			div: 'flex flex-col items-center justify-center px-6 py-8 mx-auto lg:py-0'
+		},
+		schedule: {
+      div: 'bg-white dark:bg-gray-900 antialiased'
 		},
 		social: {
 			div: 'max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6'
