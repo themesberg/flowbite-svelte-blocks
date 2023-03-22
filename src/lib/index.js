@@ -56,6 +56,10 @@ export { default as Page500 } from './page500/Page500.svelte';
 // popup
 export { default as Popup } from './popup/Popup.svelte';
 
+// portfolio
+export { default as Portfolio } from './portfolio/Portfolio.svelte'
+export { default as PortfolioItem } from './portfolio/PortfolioItem.svelte'
+
 // pricing
 export { default as PricingCard } from './pricing/PricingCard.svelte';
 export { default as PricingBodyHead } from './pricing/PricingBodyHead.svelte';

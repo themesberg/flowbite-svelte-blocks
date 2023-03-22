@@ -89,6 +89,9 @@
 		page404: {
 			div: 'py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6'
 		},
+		portfolio: {
+      div: 'bg-white dark:bg-gray-900 antialiased'
+		},
 		pricing: {
 			div: 'py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6'
 		},
