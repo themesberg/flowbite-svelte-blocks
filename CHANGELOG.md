@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.5](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.3.4...v0.3.5) (2023-03-22)
+
+
+### Features
+
+* add event-schedule page, Schedule, ScheduleItem components ([be38cc5](https://github.com/shinokada/flowbite-svelte-blocks/commit/be38cc5fcd2474ff286c655180b925654ee3493d))
+* add tailwind css theme colors, add event-schedule docs page ([a3e7be5](https://github.com/shinokada/flowbite-svelte-blocks/commit/a3e7be5de14bde562fe0a63018fed8017a5c2190))
+
+
+### Bug Fixes
+
+* btnClass for Button in sidenav page ([265dc49](https://github.com/shinokada/flowbite-svelte-blocks/commit/265dc49e49c7b092abf95f14ad480ecb656ecc8f))
+* crud-create-drawers page ([8ac731d](https://github.com/shinokada/flowbite-svelte-blocks/commit/8ac731d64e2d1dab339a47a7bec8fd26f733cd2e))
+* remove history from docs/index.html ([1e8666a](https://github.com/shinokada/flowbite-svelte-blocks/commit/1e8666a763c9754b424c5e6fc715e76a5657d70b))
+* sideba page SidebarWrapper class ([d569f4c](https://github.com/shinokada/flowbite-svelte-blocks/commit/d569f4c631b6c5dae8aeaeaabea90c988d8d469d))
+
 ### [0.3.4](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.3.3...v0.3.4) (2023-03-21)
 
 
