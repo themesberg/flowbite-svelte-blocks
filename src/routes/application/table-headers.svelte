@@ -45,7 +45,7 @@
 </Section>
 
 <ExampleDiv>
-  <Section name="tableheader" sectionClass='bg-gray-50 dark:bg-gray-900 h-80 flex'>
+  <Section name="tableheader" sectionClass='bg-gray-50 dark:bg-gray-900 h-80 flex pt-8'>
     <TableHeader>
       <Search slot='search' size='md'/>
       <Button>
