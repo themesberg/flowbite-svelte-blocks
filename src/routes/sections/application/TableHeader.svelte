@@ -8,7 +8,7 @@
       <h2 class="flex items-center text-base font-medium text-gray-900 dark:text-white">
         Table Headers
       </h2>
-      <p class="text-sm text-gray-500 dark:text-gray-400">1 free components</p>
+      <p class="text-sm text-gray-500 dark:text-gray-400">2 free components</p>
     </div>
     <div class="text-gray-900 dark:text-white">
       <span
