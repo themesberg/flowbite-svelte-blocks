@@ -22,8 +22,10 @@
     Page500section,
     Popupsection,
     Pricingsection,
+    ProjectPortfolioSection,
     RegisterFormsection,
     ResetPasswordFormsection,
+    Schedulesection,
     SocialProofsection,
     Teamsection,
     Testimonialsection,
@@ -72,8 +74,10 @@
       <Page500section />
       <Popupsection />
       <Pricingsection />
+      <ProjectPortfolioSection />
       <RegisterFormsection />
       <ResetPasswordFormsection />
+      <Schedulesection />
       <SocialProofsection />
       <Teamsection />
       <Testimonialsection />
