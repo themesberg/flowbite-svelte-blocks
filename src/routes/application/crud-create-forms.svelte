@@ -12,8 +12,8 @@
     P,
     A, Select, Textarea
   } from 'flowbite-svelte';
-  const breadcrumb_title = 'Table Headers';
-  const title = 'Table Headers';
+  const breadcrumb_title = 'Crud Create Forms';
+  const title = 'Crud Create Forms';
   const dir = 'application';
   const description =
     'Get started with a collection of forms crafted for the "create" action from the CRUD layouts featuring form elements coded in Tailwind CSS.';
