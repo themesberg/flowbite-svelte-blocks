@@ -1,7 +1,7 @@
 <script lang="ts">
   import { Section, TableHeader } from '$lib';
   import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
-  import { Breadcrumb, BreadcrumbItem, Button, Heading, P, Search, Dropdown, DropdownItem, Chevron, DropdownDivider
+  import { Breadcrumb, BreadcrumbItem, Button, Heading, P, Search, Dropdown, DropdownItem, Chevron, DropdownDivider, Checkbox
   } from 'flowbite-svelte';
   const breadcrumb_title = 'Table Headers';
   const title = 'Table Headers';
@@ -68,12 +68,22 @@
         </svg>
         <Chevron>Filter</Chevron>
       </Button>
-      <Dropdown >
-        <DropdownItem>Category</DropdownItem>
-        <DropdownItem>Apple (56)</DropdownItem>
-        <DropdownItem>Fitbit (56)</DropdownItem>
-        <DropdownItem>Dell (56)</DropdownItem>
-        <DropdownItem> Asus (97)</DropdownItem>
+      <Dropdown class="w-48 p-2 text-sm" >
+        <h6 class="mb-3 ml-1 text-sm font-medium text-gray-900 dark:text-white">
+          Category
+        </h6>
+        <li class="rounded p-1 hover:bg-gray-100 dark:hover:bg-gray-600">
+          <Checkbox>Apple (56)</Checkbox>
+        </li>
+        <li class="rounded p-1 hover:bg-gray-100 dark:hover:bg-gray-600">
+          <Checkbox>Fitbit (56)</Checkbox>
+        </li>
+        <li class="rounded p-1 hover:bg-gray-100 dark:hover:bg-gray-600">
+          <Checkbox checked>Dell (56)</Checkbox>
+        </li>
+        <li class="rounded p-1 hover:bg-gray-100 dark:hover:bg-gray-600">
+          <Checkbox>Asus (97)</Checkbox>
+        </li>
       </Dropdown>
     </TableHeader>
   </Section>

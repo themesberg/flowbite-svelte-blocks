@@ -5,7 +5,7 @@
 ```html
 <script lang='ts'>
   import { Section, TableHeader } from 'flowbite-svelte-blocks'
-  import { Search, Dropdown, DropdownItem, Chevron, DropdownDivider } from 'flowbite-svelte'
+  import { Search, Dropdown, DropdownItem, Chevron, DropdownDivider, Checkbox } from 'flowbite-svelte'
 </script>
 
 <Section name="tableheader" sectionClass='bg-gray-50 dark:bg-gray-900 h-80 flex'>
@@ -31,13 +31,23 @@
       </svg>
       <Chevron>Filter</Chevron>
     </Button>
-    <Dropdown >
-      <DropdownItem>Category</DropdownItem>
-      <DropdownItem>Apple (56)</DropdownItem>
-      <DropdownItem>Fitbit (56)</DropdownItem>
-      <DropdownItem>Dell (56)</DropdownItem>
-      <DropdownItem> Asus (97)</DropdownItem>
-    </Dropdown>
+    <Dropdown class="w-48 p-2 text-sm" >
+        <h6 class="mb-3 ml-1 text-sm font-medium text-gray-900 dark:text-white">
+          Category
+        </h6>
+        <li class="rounded p-1 hover:bg-gray-100 dark:hover:bg-gray-600">
+          <Checkbox>Apple (56)</Checkbox>
+        </li>
+        <li class="rounded p-1 hover:bg-gray-100 dark:hover:bg-gray-600">
+          <Checkbox>Fitbit (56)</Checkbox>
+        </li>
+        <li class="rounded p-1 hover:bg-gray-100 dark:hover:bg-gray-600">
+          <Checkbox checked>Dell (56)</Checkbox>
+        </li>
+        <li class="rounded p-1 hover:bg-gray-100 dark:hover:bg-gray-600">
+          <Checkbox>Asus (97)</Checkbox>
+        </li>
+      </Dropdown>
   </TableHeader>
 </Section>
 ```
