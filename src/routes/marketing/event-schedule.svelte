@@ -78,7 +78,7 @@
 </Section>
 
 <ExampleDiv>
-  <Section name="schedule">
+  <Section name="schedule" sectionClass='bg-white dark:bg-gray-900 antialiased'>
     <Schedule scheduleName='Schedule'>
       <div class="mt-4" slot='subtitle'>
         <a href="/" title=""

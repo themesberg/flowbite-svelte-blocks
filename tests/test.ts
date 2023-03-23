@@ -5,6 +5,21 @@ test('index page has expected h1', async ({ page }) => {
 	expect(await page.textContent('h1')).toBe('Flowbite Blocks in Svelte -Tailwind UI components');
 });
 
+test('Application UI page has expected h1', async ({ page }) => {
+	await page.goto('/application');
+	expect(await page.textContent('h1')).toBe('Application UI');
+});
+
+test('Marketing UI page has expected h1', async ({ page }) => {
+	await page.goto('/marketing');
+	expect(await page.textContent('h1')).toBe('Marketing UI');
+});
+
+test('Publisher UI page has expected h1', async ({ page }) => {
+	await page.goto('/publisher');
+	expect(await page.textContent('h1')).toBe('Publisher UI');
+});
+
 test('example page has expected h1', async ({ page }) => {
 	await page.goto('/example');
 	expect(await page.textContent('h1')).toBe('Payments tool for software companies');

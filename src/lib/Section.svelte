@@ -8,6 +8,8 @@
 		| 'contact'
 		| 'content'
 		| 'contentwithimg'
+		| 'crudcreatedrawer'
+    | 'crudcreateform'
 		| 'default'
 		| 'faq'
 		| 'feature'
@@ -22,6 +24,7 @@
 		| 'none'
 		| 'page500'
 		| 'page404'
+		| 'portfolio'
 		| 'pricing'
 		| 'register'
 		| 'reset'
@@ -33,6 +36,12 @@
 	const sectionClasses = {
 		blog: {
 			div: 'py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6'
+		},
+		crudcreateform: {
+      div: 'py-8 px-4 mx-auto max-w-2xl lg:py-16'
+		},
+		crudcreatedrawer: {
+      div: 'h-80'
 		},
 		cta: {
 			div: 'py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6'
@@ -90,7 +99,7 @@
 			div: 'py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6'
 		},
 		portfolio: {
-      div: 'bg-white dark:bg-gray-900 antialiased'
+      div: 'max-w-screen-xl px-4 py-8 mx-auto lg:px-6 sm:py-16 lg:py-24'
 		},
 		pricing: {
 			div: 'py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6'
@@ -102,7 +111,7 @@
 			div: 'flex flex-col items-center justify-center px-6 py-8 mx-auto lg:py-0'
 		},
 		schedule: {
-      div: 'bg-white dark:bg-gray-900 antialiased'
+      div: 'max-w-screen-xl px-4 py-8 mx-auto lg:px-6 sm:py-16 lg:py-24'
 		},
 		social: {
 			div: 'max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6'

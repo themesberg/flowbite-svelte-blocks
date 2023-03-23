@@ -14,8 +14,8 @@ export { default as CrudUpdateModal } from './application/CrudUpdateModal.svelte
 export { default as DashboardFooter } from './application/DashboardFooter.svelte';
 export { default as DashboardNavbar } from './application/DashboardNavbar.svelte';
 export { default as DropdownFilter } from './application/DropdownFilter.svelte';
-export { default as FacetedSearchDrawer } from './application/FacetedSearchDrawer.svelte';
-export { default as FacetedSearchModal } from './application/FacetedSearchModal.svelte';
+export { default as FacetedSearchDrawerSection } from './application/FacetedSearchDrawerSection.svelte';
+export { default as FacetedSearchModalSection } from './application/FacetedSearchModalSection.svelte';
 export { default as SideNavigation } from './application/SideNavigation.svelte';
 export { default as TableFooter } from './application/TableFooter.svelte';
 export { default as TableHeader } from './application/TableHeader.svelte';

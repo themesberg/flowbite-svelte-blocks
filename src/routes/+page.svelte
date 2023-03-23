@@ -2,7 +2,7 @@
   import { Navbar, NavBrand, NavHamburger, NavUl, NavLi, Button, DarkMode } from 'flowbite-svelte';
   import { MetaTag } from './utils';
   import {
-    AdvancedTable, AccountRecoverysection, Bannersection, Blogsection, BlogTemplatesection, CommentSection, ContactFormsection, Contentsection, CookieConsentsection, CrudCreateDrawer, CrudCreateForm, CrudCreateModal, CrudDeleteConfirm, CrudReadDrawer, CrudReadModal, CrudReadSection, CrudSuccessMessage, CrudUpdateDrawer, CrudUpdateForm, CrudUpdateModal, Cta, DashboardFooter, DashboardNavbar, DropdownFilter, FacetedSearchDrawer, FacetedSearchModal , Faqsection, Featuresection, Footersection, Headersection, Herosection, LoginFormsection, Maintenancesection, Newslettersection, Page404section, Page500section, Popupsection, Portfoliosection, Pricingsection, ProjectPortfolioSection, RegisterFormsection, RelatedArticle, ResetPasswordFormsection, SideNavigation, SocialProofsection, Teamsection, Testimonialsection, TableFooter, TableHeader,  UpdateDrawer, UserOnboarding
+    AdvancedTable, AccountRecoverysection, Bannersection, Blogsection, BlogTemplatesection, CommentSection, ContactFormsection, Contentsection, CookieConsentsection, CrudCreateDrawer, CrudCreateForm, CrudCreateModal, CrudDeleteConfirm, CrudReadDrawer, CrudReadModal, CrudReadSection, CrudSuccessMessage, CrudUpdateDrawer, CrudUpdateForm, CrudUpdateModal, Cta, DashboardFooter, DashboardNavbar, DropdownFilter, FacetedSearchDrawerSection, FacetedSearchModalSection , Faqsection, Featuresection, Footersection, Headersection, Herosection, LoginFormsection, Maintenancesection, Newslettersection, Page404section, Page500section, Popupsection, Portfoliosection, Pricingsection, ProjectPortfolioSection, RegisterFormsection, RelatedArticle, ResetPasswordFormsection, SideNavigation, SocialProofsection, Teamsection, Testimonialsection, TableFooter, TableHeader,  UpdateDrawer, UserOnboarding
   } from './sections';
     import Schedule from '$lib/schedule/Schedule.svelte';
     import Schedulesection from './sections/marketing/Schedulesection.svelte';
@@ -99,8 +99,8 @@
             <DashboardFooter />
             <DashboardNavbar />
             <DropdownFilter />
-            <FacetedSearchDrawer />
-            <FacetedSearchModals />
+            <FacetedSearchDrawerSection />
+            <FacetedSearchModalSection />
             <Faqsection />
             <Featuresection />
             <Footersection />

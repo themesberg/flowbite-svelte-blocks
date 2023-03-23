@@ -64,7 +64,7 @@
 </Section>
 
 <ExampleDiv>
-  <Section name="schedule">
+  <Section name="portfolio" sectionClass='bg-white dark:bg-gray-900 antialiased'>
     <Portfolio title='Our work' subtitle='Crafted with skill and care to help our clients grow their business!'>
       {#each portfolios as item}
         <PortfolioItem {item}/>

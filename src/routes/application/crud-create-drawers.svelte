@@ -70,7 +70,7 @@
 </Section>
 
 <ExampleDiv>
-  <Section name="tableheader" sectionClass='bg-gray-50 dark:bg-gray-900 h-screen flex'>
+  <Section name="crudcreatedrawer">
     <div class="text-center pt-8">
       <Button on:click={() => (hidden = false)}>Create product</Button>
     </div>

@@ -29,7 +29,7 @@
   <svelte:fragment slot="paragraph">{description}</svelte:fragment>
 </SectionHeader>
 
-<Section name="none" classSection="py-6 sm:py-10" classDiv="px-4 mx-auto max-w-8xl">
+<Section name="none">
   <div class="grid lg:grid-cols-2">
     <div>
       <Heading tag="h2" customSize="text-2xl font-semibold" class="mb-1"

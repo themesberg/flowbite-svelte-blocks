@@ -26,7 +26,7 @@
 <SectionHeader>
   <Breadcrumb navClass="flex mb-3">
     <BreadcrumbItem href="/" home>Blocks</BreadcrumbItem>
-    <BreadcrumbItem href="/publisher">{breadcrumb_title}</BreadcrumbItem>
+    <BreadcrumbItem href="/publisher">Publisher UI</BreadcrumbItem>
     <BreadcrumbItem>{title}</BreadcrumbItem>
   </Breadcrumb>
   <svelte:fragment slot="h1"

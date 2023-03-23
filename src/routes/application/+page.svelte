@@ -5,7 +5,7 @@
     AdvancedTable, CrudCreateDrawer, CrudCreateForm, CrudCreateModal, CrudDeleteConfirm,
     CrudReadDrawer, CrudReadModal, CrudReadSection, CrudSuccessMessage, CrudUpdateDrawer,
     CrudUpdateForm, CrudUpdateModal, DashboardFooter, DashboardNavbar, DropdownFilter,
-    FacetedSearchDrawer, FacetedSearchModal, SideNavigation, TableFooter, TableHeader, UpdateDrawer
+    FacetedSearchDrawerSection, FacetedSearchModalSection, SideNavigation, TableFooter, TableHeader, UpdateDrawer
   } from '../sections';
   const title = 'Application UI - Flowbite Svelte Blocks';
   const breadcrumb_title = 'Application UI';
@@ -46,8 +46,8 @@
       <DashboardFooter />
       <DashboardNavbar />
       <DropdownFilter />
-      <FacetedSearchDrawer />
-      <FacetedSearchModal />
+      <FacetedSearchDrawerSection />
+      <FacetedSearchModalSection />
       <SideNavigation />
       <TableFooter />
       <UpdateDrawer />
