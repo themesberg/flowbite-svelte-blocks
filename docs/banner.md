@@ -4,9 +4,9 @@
 
 ## Example usage
 
-```
+```html
 <script lang="ts">
-  import { Section, Banner } from 'flowbite-svelte-blocks';
+  import { Banner } from 'flowbite-svelte-blocks';
   import { CloseButton } from 'flowbite-svelte';
   export let visible = true;
 </script>

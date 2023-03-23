@@ -4,9 +4,8 @@
 
 ## Example usage
 
-```
+```html
 <script>
-  import { Section } from 'flowbite-svelte-blocks';
   import {
     Footer,
     FooterBrand,
@@ -53,9 +52,8 @@
 
 ## Example 2
 
-```
+```html
 <script>
-  import { Section } from 'flowbite-svelte-blocks';
   import {
     Footer,
     FooterBrand,

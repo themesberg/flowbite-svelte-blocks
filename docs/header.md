@@ -4,9 +4,8 @@
 
 ## Example usage
 
-```
+```html
 <script>
-  import { Section } from 'flowbite-svelte-blocks';
   import {
     Navbar,
     NavBrand,

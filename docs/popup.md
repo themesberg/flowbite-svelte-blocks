@@ -5,9 +5,9 @@
 ## Example usage
 
 
-```
+```html
 <script lang="ts">
-  import { Section, Popup } from 'flowbite-svelte-blocks';
+  import { Popup } from 'flowbite-svelte-blocks';
   import { Button } from 'flowbite-svelte';
 </script>
 

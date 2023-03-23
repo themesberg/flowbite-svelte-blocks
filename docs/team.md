@@ -4,10 +4,9 @@
 
 ## Example usage
 
-```
+```html
 <script lang="ts">
   import {
-    Section,
     TeamWrapper,
     TeamHeader,
     TeamBody,
@@ -53,29 +52,27 @@
   ];
 </script>
 
-<Section name="team">
-  <TeamWrapper>
-    <TeamHeader>
-      <svelte:fragment slot="label">Our Team</svelte:fragment>
-      <p class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">
-        Explore the whole collection of open-source web components and elements built with the
-        utility classes from Tailwind
-      </p>
-    </TeamHeader>
-    <TeamBody>
-      {#each members as { href, src, alt, name, jobTitle, description }}
-        <TeamItem {href} {src} {alt} {name} {jobTitle}>
-          <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
-            {description}
-          </p>
-          <svelte:fragment slot="social">
-            <Facebook href="/" />
-            <Github href="/" />
-            <Twitter href="/" />
-          </svelte:fragment>
-        </TeamItem>
-      {/each}
-    </TeamBody>
-  </TeamWrapper>
-</Section>
+<TeamWrapper>
+  <TeamHeader>
+    <svelte:fragment slot="label">Our Team</svelte:fragment>
+    <p class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">
+      Explore the whole collection of open-source web components and elements built with the
+      utility classes from Tailwind
+    </p>
+  </TeamHeader>
+  <TeamBody>
+    {#each members as { href, src, alt, name, jobTitle, description }}
+      <TeamItem {href} {src} {alt} {name} {jobTitle}>
+        <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
+          {description}
+        </p>
+        <svelte:fragment slot="social">
+          <Facebook href="/" />
+          <Github href="/" />
+          <Twitter href="/" />
+        </svelte:fragment>
+      </TeamItem>
+    {/each}
+  </TeamBody>
+</TeamWrapper>
 ```

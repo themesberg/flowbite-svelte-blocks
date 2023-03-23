@@ -1,5 +1,9 @@
 # Create Drawers (CRUD)
 
+[Demo](https://flowbite-svelte-blocks.vercel.app/marketing/crud-create-drawers)
+
+## Example usage
+
 ```html
 <script>
   import { Drawer, Button, CloseButton, Label, Input, Textarea, Select } from 'flowbite-svelte';

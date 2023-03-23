@@ -7,7 +7,7 @@
 
 ```html
 <script>
-  import { Section, Portfolio, PortfolioItem } from 'flowbite-svelte-blocks'
+  import { Portfolio, PortfolioItem } from 'flowbite-svelte-blocks'
   const portfolios = [
     {
       customer: 'Alphabet Inc.',
@@ -32,11 +32,11 @@
     }
   ]
 </script>  
-<Section name="schedule">
-  <Portfolio title='Our work' subtitle='Crafted with skill and care to help our clients grow their business!'>
-    {#each portfolios as item}
-      <PortfolioItem {item}/>
-    {/each}
-  </Portfolio>
-</Section>
+
+<Portfolio title='Our work' subtitle='Crafted with skill and care to help our clients grow their business!'>
+  {#each portfolios as item}
+    <PortfolioItem {item}/>
+  {/each}
+</Portfolio>
+
 ```
