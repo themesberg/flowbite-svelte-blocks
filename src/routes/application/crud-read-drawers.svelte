@@ -62,7 +62,7 @@
 <ExampleDiv>
   <Section classSection='h-96'>
     <div class="text-center">
-      <Button on:click={() => (hidden1 = false)}>Show drawer</Button>
+      <Button on:click={() => (hidden1 = false)}>Read product</Button>
     </div>
     
     <Drawer transitionType="fly" {transitionParams} bind:hidden={hidden1} id='sidebar1'>
