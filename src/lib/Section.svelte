@@ -10,6 +10,7 @@
 		| 'contentwithimg'
 		| 'crudcreatedrawer'
     | 'crudcreateform'
+		| 'crudreadsection'
 		| 'default'
 		| 'faq'
 		| 'feature'
@@ -42,6 +43,9 @@
 		},
 		crudcreatedrawer: {
       div: 'h-80'
+		},
+		crudreadsection: {
+			div: 'py-8 px-4 mx-auto max-w-2xl lg:py-16'
 		},
 		cta: {
 			div: 'py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6'
