@@ -92,7 +92,7 @@
           <Textarea id="description" placeholder="Your description here" rows="4" name="description"/>
         </div>
         <Button type='submit' class='w-32'>Add product</Button>
-    </div>
+      </div>
     </form>
   </Section>
 </ExampleDiv>
