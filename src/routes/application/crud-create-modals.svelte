@@ -63,7 +63,7 @@
 </Section>
 
 <ExampleDiv>
-  <Section>
+  <Section classSection='h-96'>
     <div class="flex justify-center m-5">
       <Button on:click={() => defaultModal = true}>Create product</Button>
     </div>
