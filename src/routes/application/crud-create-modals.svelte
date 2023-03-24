@@ -12,8 +12,8 @@
     P,
     A, Modal, Textarea, Select
   } from 'flowbite-svelte';
-  const breadcrumb_title = 'Table Headers';
-  const title = 'Table Headers';
+  const breadcrumb_title = 'Crud Create Modals';
+  const title = 'Crud Create Modals';
   const dir = 'application';
   const description =
     'Get started with a collection of modal components with form input elements to create new data models inside your dashboard based on Tailwind CSS.';

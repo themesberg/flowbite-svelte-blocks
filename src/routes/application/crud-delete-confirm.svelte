@@ -12,8 +12,8 @@
     P,
     A, Modal
   } from 'flowbite-svelte';
-  const breadcrumb_title = 'Table Headers';
-  const title = 'Table Headers';
+  const breadcrumb_title = 'Crud Delete Confirm';
+  const title = 'Crud Delete Confirm';
   const dir = 'application';
   const description =
     'Get started with a collection of delete confirmation modal components based on the CRUD layout to make sure the user is ready to remove a selected item.';
