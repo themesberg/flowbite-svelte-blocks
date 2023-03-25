@@ -8,8 +8,8 @@
     import Schedulesection from './sections/marketing/Schedulesection.svelte';
     import FacetedSearchModals from './application/faceted-search-modals.svelte';
 
-  let navClass = 'bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800';
-  let navDivClass = 'flex flex-wrap justify-between items-center mx-auto max-w-screen-xl';
+  let navClass = 'bg-white border-gray-200 px-4 py-2.5 dark:bg-gray-800';
+  let navDivClass = 'flex flex-wrap justify-between items-center mx-auto max-w-8xl lg:px-4';
   let btnClass =
     'text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2 ml-2';
   const title = '';
@@ -21,15 +21,15 @@
 <MetaTag {breadcrumb_title} {title} {description} withoutLink={true} />
 
 <div class="flex flex-col min-h-screen bg-white dark:bg-gray-900">
-  <header class="sticky top-0 z-40 flex-none mx-auto w-full bg-white dark:bg-gray-900 ">
+  <header class="sticky top-0 z-40 flex-none mx-auto w-full bg-white dark:bg-gray-900">
     <Navbar let:hidden let:toggle fluid={false} {navClass} {navDivClass}>
       <NavBrand href="/">
         <img
           src="https://flowbite.com/docs/images/logo.svg"
-          class="mr-3 h-6 sm:h-9"
+          class="h-8 mr-3"
           alt="Flowbite Logo"
         />
-        <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
           Flowbite
         </span>
       </NavBrand>
@@ -58,11 +58,11 @@
   </header>
   <div class="px-4 mx-auto max-w-8xl dark:bg-gray-900">
     <main class="grow">
-      <section class="px-4 mx-auto max-w-8xl">
+      <section class="mx-auto max-w-8xl">
         <div class="grid mt-3 mb-6 lg:gap-8 lg:mt-5 lg:mb-6 xl:grid-cols-3">
           <div class="col-span-2 mb-2 lg:mb-0">
             <h1 class="mb-2 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
-              Flowbite Blocks in Svelte -Tailwind UI components
+              Flowbite Blocks in Svelte - Tailwind UI components
             </h1>
             <p class="text-lg text-gray-500 xl:mr-64 lg:mb-0 dark:text-gray-400">
               Get started with 122 free and premium UI components built with the utility classes
@@ -73,7 +73,7 @@
         </div>
       </section>
       <section class="pb-8 bg-white dark:bg-gray-900 lg:pb-24" id="components">
-        <div class="px-4 mx-auto max-w-8xl lg:px-4 lg:text-center">
+        <div class="mx-auto max-w-8xl lg:text-center">
           <div class="grid grid-cols-1 gap-6 mt-6 md:grid-cols-2 xl:grid-cols-3">
             <AccountRecoverysection />
             <AdvancedTable />

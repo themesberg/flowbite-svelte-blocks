@@ -2,7 +2,7 @@
 	import { Navbar, NavBrand, NavHamburger, NavUl, NavLi, Button, DarkMode } from 'flowbite-svelte';
 
 	let navClass = 'bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800';
-	let navDivClass = 'flex flex-wrap justify-between items-center mx-auto max-w-screen-xl';
+	let navDivClass = 'flex flex-wrap justify-between items-center mx-auto max-w-8xl';
 	let btnClass =
 		'text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2 ml-2';
 </script>

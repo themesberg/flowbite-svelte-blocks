@@ -3,7 +3,7 @@
 </script>
 
 <section class="pt-3 md:pt-5">
-	<div class="px-4 mx-auto max-w-8xl">
+	<div class="mx-auto max-w-8xl">
 		<div
 			class="grid pb-6 border-b border-gray-200 md:pb-10 lg:gap-8 lg:grid-cols-3 dark:border-gray-800"
 		>

@@ -1,8 +1,8 @@
 <script>
 	import { Navbar, NavBrand, NavHamburger, NavUl, NavLi, Button, DarkMode } from 'flowbite-svelte';
 
-	let navClass = 'bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800';
-	let navDivClass = 'flex flex-wrap justify-between items-center mx-auto max-w-screen-xl';
+	let navClass = 'bg-white border-gray-200 px-4 py-2.5 dark:bg-gray-800';
+	let navDivClass = 'flex flex-wrap justify-between items-center mx-auto max-w-8xl lg:px-4';
 	let btnClass =
 		'text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2 ml-2';
 </script>
@@ -12,12 +12,12 @@
 		<Navbar let:hidden let:toggle fluid={false} {navClass} {navDivClass}>
 			<NavBrand href="/">
 				<img
-					src="https://flowbite.com/docs/images/logo.svg"
-					class="mr-3 h-6 sm:h-9"
-					alt="Flowbite Logo"
+				src="https://flowbite.com/docs/images/logo.svg"
+				class="h-8 mr-3"
+				alt="Flowbite Logo"
 				/>
-				<span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-					Flowbite
+				<span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+				Flowbite
 				</span>
 			</NavBrand>
 			<div class="flex items-center lg:order-2">

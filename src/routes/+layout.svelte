@@ -92,7 +92,7 @@
 	footerType="custom"
 	customClass="justify-self-end pt-16 pb-8 px-4 lg:pt-24 lg:pb-10 dark:bg-gray-900"
 >
-	<div class="grid gap-12 lg:grid-cols-6 lg:gap-24">
+	<div class="grid gap-12 lg:grid-cols-6 lg:gap-24 max-w-8xl mx-auto">
 		<div class="col-span-2">
 			<FooterBrand
 				href="https://flowbite.com"
@@ -145,7 +145,7 @@
 		</div>
 	</div>
 	<hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-	<div class="sm:flex sm:items-center sm:justify-between">
+	<div class="flex justify-center">
 		<FooterCopyright href="/" by="Flowbite™" />
 		<div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
 			<FooterIcon
