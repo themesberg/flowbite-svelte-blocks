@@ -1,7 +1,7 @@
 <script lang="ts">
-  import { Section, Banner } from '$lib';
-  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
-  import { Breadcrumb, BreadcrumbItem, CloseButton } from 'flowbite-svelte';
+  import { Banner } from '$lib';
+  import { ExampleDiv, SectionHeader, SectionBlock, MetaTag } from '../utils';
+  import { CloseButton } from 'flowbite-svelte';
 
   export let visible = true;
   const breadcrumb_title = 'Banner';
@@ -13,32 +13,17 @@
 
 <MetaTag {breadcrumb_title} {title} {dir} {description} />
 
-<SectionHeader 
-  category='marketing' 
-  title='Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte' 
+<SectionHeader
+  category="marketing"
+  title="Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte"
   {breadcrumb_title}
   {description}
 />
 
-<Section name="none" classSection="py-6 sm:py-10" classDiv="px-4 mx-auto max-w-8xl">
-  <div class="grid lg:grid-cols-2">
-    <div>
-      <h2 class="mb-1 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-        Default banner
-      </h2>
-      <p class="text-lg text-gray-500 lg:mb-0 dark:text-gray-400 lg:max-w-2xl">
-        Use this example of a dismissable banner component to show extra information relative to the
-        main content area of the page based on a sticky positition.
-      </p>
-      <EditOnGithub
-        size="18"
-        href="https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/marketing/banner.svelte"
-        iconClass="text-gray-500"
-      />
-      <DocsLink page="{title.toLowerCase().replace(/\s+/g, '-')}" target="_blank"/>
-    </div>
-  </div>
-</Section>
+<SectionBlock title="Default banner">
+  Use this example of a dismissable banner component to show extra information relative to the main
+  content area of the page based on a sticky positition.
+</SectionBlock>
 
 <ExampleDiv>
   {#if visible}

@@ -1,8 +1,8 @@
 <script lang="ts">
   import { page } from '$app/stores';
   import { Section, SidebarBottomNav, SidebarBottomNavItem } from '$lib';
-  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
-  import { Breadcrumb, BreadcrumbItem, Label, Input, Button, Checkbox, Heading, P, A, Sidebar, SidebarGroup, SidebarItem, SidebarWrapper, SidebarDropdownItem, SidebarDropdownWrapper, Dropdown, DropdownItem } from 'flowbite-svelte';
+  import { ExampleDiv, SectionHeader, SectionBlock, MetaTag } from '../utils';
+  import { Button, Sidebar, SidebarGroup, SidebarItem, SidebarWrapper, SidebarDropdownItem, SidebarDropdownWrapper, Dropdown, DropdownItem } from 'flowbite-svelte';
 
   let spanClass = 'flex-1 ml-3 whitespace-nowrap';
   $: activeUrl = $page.url.pathname
@@ -24,24 +24,9 @@
   {description}
 />
 
-<Section name="none">
-  <div class="grid lg:grid-cols-2">
-    <div>
-      <Heading tag="h2" customSize="text-2xl font-semibold" class="mb-1"
-        >Default side navigation</Heading
-      >
-      <P size="lg" color="text-gray-500 dark:text-gray-400" class="lg:mb-0  lg:max-w-2xl">
-        Use the default sidebar navigation to show a list of menu items with dropdown items and a list of options links at the bottom of the component.
-      </P>
-      <EditOnGithub
-        size="18"
-        href="https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/application/sidenav.svelte"
-        iconClass="text-gray-500"
-      />
-      <DocsLink page="{title.toLowerCase().replace(/\s+/g, '-')}" target="_blank"/>
-    </div>
-  </div>
-</Section>
+<SectionBlock title="Default side navigation">
+  Use the default sidebar navigation to show a list of menu items with dropdown items and a list of options links at the bottom of the component.
+</SectionBlock>
 
 <ExampleDiv>
   <Section name="tableheader" sectionClass='bg-gray-50 dark:bg-gray-900 flex h-full py-4'>

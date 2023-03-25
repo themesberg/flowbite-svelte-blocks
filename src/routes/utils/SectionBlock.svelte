@@ -1,9 +1,9 @@
 <script lang='ts'>
+    import { page } from '$app/stores';
     import { Section } from '$lib';
     import { EditOnGithub, DocsLink } from '.';
     export let title: string = ''
-    export let githubLink: string = ''
-    const href = `https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/${githubLink}`
+    const href = `https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes${$page.url.pathname}.svelte`
 </script>
 
 <Section name="none" classSection="py-6 sm:py-10" classDiv="px-4 mx-auto max-w-8xl">
@@ -19,6 +19,7 @@
         size="18"
         {href}
         iconClass="text-gray-500"
+        target="_blank"
       />
       <DocsLink page="{title.toLowerCase().replace(/\s+/g, '-')}" target="_blank"/>
     </div>

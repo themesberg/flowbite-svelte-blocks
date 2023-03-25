@@ -1,7 +1,6 @@
 <script lang="ts">
   import { Section, Schedule, ScheduleItem } from '$lib';
-  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
-  import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
+  import { ExampleDiv, SectionHeader, SectionBlock, MetaTag } from '../utils';
   const breadcrumb_title = 'Event Schedule';
   const title = 'Event Schedule';
   const dir = 'marketing';
@@ -55,24 +54,9 @@
   {description}
 />
 
-<Section name="none" classSection="py-6 sm:py-10" classDiv="px-4 mx-auto max-w-8xl">
-  <div class="grid lg:grid-cols-2">
-    <div>
-      <h2 class="mb-1 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-        Default event schedule
-      </h2>
-      <p class="text-lg text-gray-500 lg:mb-0 dark:text-gray-400 lg:max-w-2xl">
-        Use this free example to show a list of workshops for an event using a timeline component and featuring the time and title of the presentation.
-      </p>
-      <EditOnGithub
-        size="18"
-        href="https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/marketing/schedule.svelte"
-        iconClass="text-gray-500"
-      />
-      <DocsLink page="{title.toLowerCase().replace(/\s+/g, '-')}" target="_blank"/>
-    </div>
-  </div>
-</Section>
+<SectionBlock title="Default event schedule">
+  Use this free example to show a list of workshops for an event using a timeline component and featuring the time and title of the presentation.
+</SectionBlock>
 
 <ExampleDiv>
   <Section name="schedule" sectionClass='bg-white dark:bg-gray-900 antialiased'>

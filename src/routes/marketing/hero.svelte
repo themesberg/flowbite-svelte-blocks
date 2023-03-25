@@ -1,6 +1,6 @@
 <script>
   import { Section, News, HeroHeader, HeroBody } from '$lib';
-  import { Button, Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
+  import { Button } from 'flowbite-svelte';
   import { ArrowRight, VideoCamera } from 'svelte-heros';
   import {
     Youtube,
@@ -8,8 +8,8 @@
     Reddit,
     ExampleDiv,
     SectionHeader,
-    EditOnGithub,
-    MetaTag, DocsLink
+    SectionBlock,
+    MetaTag
   } from '../utils';
   const breadcrumb_title = 'Hero Sections';
   const title = 'Hero';
@@ -20,32 +20,17 @@
 
 <MetaTag {breadcrumb_title} {title} {dir} {description} />
 
-<SectionHeader 
-  category='marketing' 
-  title='Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte' 
+<SectionHeader
+  category="marketing"
+  title="Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte"
   {breadcrumb_title}
   {description}
 />
 
-<Section name="none" classSection="py-6 sm:py-10" classDiv="px-4 mx-auto max-w-8xl">
-  <div class="grid lg:grid-cols-2">
-    <div>
-      <h2 class="mb-1 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-        Default hero section
-      </h2>
-      <p class="text-lg text-gray-500 lg:mb-0 dark:text-gray-400 lg:max-w-2xl">
-        Use this default example with an announcement badge, heading, CTA buttons, and customer
-        logos to showcase what your website offers.
-      </p>
-      <EditOnGithub
-        size="18"
-        href="https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/marketing/hero.svelte"
-        iconClass="text-gray-500"
-      />
-      <DocsLink page="{title.toLowerCase().replace(/\s+/g, '-')}" target="_blank"/>
-    </div>
-  </div>
-</Section>
+<SectionBlock title="Default hero section">
+  Use this default example with an announcement badge, heading, CTA buttons, and customer logos to
+  showcase what your website offers.
+</SectionBlock>
 
 <ExampleDiv>
   <Section>

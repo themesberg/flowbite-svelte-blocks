@@ -1,8 +1,8 @@
 <script lang="ts">
   import { Section, Cta } from '$lib';
-  import { Button, Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
-  import { Home, VideoCamera } from 'svelte-heros';
-  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
+  import { Button } from 'flowbite-svelte';
+  import { VideoCamera } from 'svelte-heros';
+  import { ExampleDiv, SectionHeader, SectionBlock, MetaTag } from '../utils';
   const breadcrumb_title = 'CTA Sections';
   const title = 'CTA';
   const dir = 'marketing';
@@ -19,25 +19,10 @@
   {description}
 />
 
-<Section name="none" classSection="py-6 sm:py-10" classDiv="px-4 mx-auto max-w-8xl">
-  <div class="grid lg:grid-cols-2">
-    <div>
-      <h2 class="mb-1 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-        Default CTA section
-      </h2>
-      <p class="text-lg text-gray-500 lg:mb-0 dark:text-gray-400 lg:max-w-2xl">
-        Use this example to show a simple heading, paragraph, and a couple of CTA buttons to
-        encourage users to take action.
-      </p>
-      <EditOnGithub
-        size="18"
-        href="https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/marketing/cta.svelte"
-        iconClass="text-gray-500"
-      />
-      <DocsLink page="{title.toLowerCase().replace(/\s+/g, '-')}" target="_blank"/>
-    </div>
-  </div>
-</Section>
+<SectionBlock title="Default CTA section">
+  Use this example to show a simple heading, paragraph, and a couple of CTA buttons to
+  encourage users to take action.
+</SectionBlock>
 
 <ExampleDiv>
   <Section name="cta">

@@ -1,7 +1,6 @@
 <script>
   import { Section, Page500 } from '$lib';
-  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
-  import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
+  import { ExampleDiv, SectionHeader, SectionBlock, MetaTag } from '../utils';
   const breadcrumb_title = '500 Pages';
   const title = '500';
   const dir = 'marketing';
@@ -18,24 +17,9 @@
   {description}
 />
 
-<Section name="none" classSection="py-6 sm:py-10" classDiv="px-4 mx-auto max-w-8xl">
-  <div class="grid lg:grid-cols-2">
-    <div>
-      <h2 class="mb-1 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-        Default 500 page
-      </h2>
-      <p class="text-lg text-gray-500 lg:mb-0 dark:text-gray-400 lg:max-w-2xl">
-        {description}
-      </p>
-      <EditOnGithub
-        size="18"
-        href="https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/marketing/500.svelte"
-        iconClass="text-gray-500"
-      />
-      <DocsLink page="{title.toLowerCase().replace(/\s+/g, '-')}" target="_blank"/>
-    </div>
-  </div>
-</Section>
+<SectionBlock title="Default 500 page">
+  Use this example of a page to show when an internal server error has happened and a 500 status code has to be shown.
+</SectionBlock>
 
 <ExampleDiv>
   <Section name="page500">

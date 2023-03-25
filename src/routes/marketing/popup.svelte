@@ -1,7 +1,7 @@
 <script lang="ts">
-  import { Section, Popup } from '$lib';
-  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
-  import { Breadcrumb, BreadcrumbItem, Button } from 'flowbite-svelte';
+  import { Popup } from '$lib';
+  import { ExampleDiv, SectionHeader, SectionBlock, MetaTag } from '../utils';
+  import { Button } from 'flowbite-svelte';
   const breadcrumb_title = 'Popups';
   const title = 'Popup';
   const dir = 'marketing';
@@ -18,25 +18,10 @@
   {description}
 />
 
-<Section name="none" classSection="py-6 sm:py-10" classDiv="px-4 mx-auto max-w-8xl">
-  <div class="grid lg:grid-cols-2">
-    <div>
-      <h2 class="mb-1 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-        Default popup
-      </h2>
-      <p class="text-lg text-gray-500 lg:mb-0 dark:text-gray-400 lg:max-w-2xl">
-        Use this example of a popup element to show a simple yes or no type of dialog to your
+<SectionBlock title="Default popup">
+  Use this example of a popup element to show a simple yes or no type of dialog to your
         website visitor based on the Modal component from Flowbite.
-      </p>
-      <EditOnGithub
-        size="18"
-        href="https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/marketing/popup.svelte"
-        iconClass="text-gray-500"
-      />
-      <DocsLink page="{title.toLowerCase().replace(/\s+/g, '-')}" target="_blank"/>
-    </div>
-  </div>
-</Section>
+</SectionBlock>
 
 <ExampleDiv class="flex items-center justify-center">
   <Popup>

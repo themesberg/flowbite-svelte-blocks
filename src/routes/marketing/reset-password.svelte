@@ -1,7 +1,7 @@
 <script lang="ts">
   import { Section, Register } from '$lib';
-  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
-  import { Breadcrumb, BreadcrumbItem, Button, Checkbox, Label, Input } from 'flowbite-svelte';
+  import { ExampleDiv, SectionHeader, SectionBlock, MetaTag } from '../utils';
+  import { Button, Checkbox, Label, Input } from 'flowbite-svelte';
   const breadcrumb_title = 'Reset Password Forms';
   const title = 'Reset password';
   const dir = 'marketing';
@@ -18,25 +18,10 @@
   {description}
 />
 
-<Section name="none" classSection="py-6 sm:py-10" classDiv="px-4 mx-auto max-w-8xl">
-  <div class="grid lg:grid-cols-2">
-    <div>
-      <h2 class="mb-1 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-        Default reset password page
-      </h2>
-      <p class="text-lg text-gray-500 lg:mb-0 dark:text-gray-400 lg:max-w-2xl">
-        Use this example with an email input and two password input fields to let the user change
-        their password after receiving the account recovery email.
-      </p>
-      <EditOnGithub
-        size="18"
-        href="https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/marketing/reset-password.svelte"
-        iconClass="text-gray-500"
-      />
-      <DocsLink page="{title.toLowerCase().replace(/\s+/g, '-')}" target="_blank"/>
-    </div>
-  </div>
-</Section>
+<SectionBlock title="Default reset password page">
+  Use this example with an email input and two password input fields to let the user change
+  their password after receiving the account recovery email.
+</SectionBlock>
 
 <ExampleDiv>
   <Section name="reset">

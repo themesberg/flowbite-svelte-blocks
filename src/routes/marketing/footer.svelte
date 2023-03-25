@@ -3,16 +3,13 @@
   import {
     ExampleDiv,
     SectionHeader,
-    EditOnGithub,
     Facebook,
     Instagram,
     Github,
     Twitter,
-    MetaTag, DocsLink
+    MetaTag, SectionBlock
   } from '../utils';
   import {
-    Breadcrumb,
-    BreadcrumbItem,
     Footer,
     FooterBrand,
     FooterLinkGroup,
@@ -36,25 +33,10 @@
   {description}
 />
 
-<Section name="none" classSection="py-6 sm:py-10" classDiv="px-4 mx-auto max-w-8xl">
-  <div class="grid lg:grid-cols-2">
-    <div>
-      <h2 class="mb-1 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-        Default footer section
-      </h2>
-      <p class="text-lg text-gray-500 lg:mb-0 dark:text-gray-400 lg:max-w-2xl">
-        Use this example of a footer section to show the logo of your brand, a description, links,
+<SectionBlock title="Default footer section">
+  Use this example of a footer section to show the logo of your brand, a description, links,
         and the copyright notice.
-      </p>
-      <EditOnGithub
-        size="18"
-        href="https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/marketing/footer.svelte"
-        iconClass="text-gray-500"
-      />
-      <DocsLink page="{title.toLowerCase().replace(/\s+/g, '-')}" target="_blank"/>
-    </div>
-  </div>
-</Section>
+</SectionBlock>
 
 <ExampleDiv>
   <Footer footerType="socialmedia">

@@ -1,17 +1,7 @@
 <script lang="ts">
   import { Section, ForgotPassword, ForgotPasswordHeader } from '$lib';
-  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
-  import {
-    Breadcrumb,
-    BreadcrumbItem,
-    Label,
-    Input,
-    Button,
-    Checkbox,
-    Heading,
-    P,
-    A
-  } from 'flowbite-svelte';
+  import { ExampleDiv, SectionHeader, SectionBlock, MetaTag } from '../utils';
+  import { Label, Input, Button, Checkbox } from 'flowbite-svelte';
   const breadcrumb_title = 'Account Recovery Form';
   const title = 'Account Recovery';
   const dir = 'marketing';
@@ -21,32 +11,17 @@
 
 <MetaTag {breadcrumb_title} {title} {dir} {description} />
 
-<SectionHeader 
-  category='marketing' 
-  title='Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte' 
+<SectionHeader
+  category="marketing"
+  title="Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte"
   {breadcrumb_title}
   {description}
 />
 
-<Section name="none" classSection="py-6 sm:py-10" classDiv="px-4 mx-auto max-w-8xl">
-  <div class="grid lg:grid-cols-2">
-    <div>
-      <Heading tag="h2" customSize="text-2xl font-semibold" class="mb-1"
-        >Default forgot password page</Heading
-      >
-      <P size="lg" color="text-gray-500 dark:text-gray-400" class="lg:mb-0  lg:max-w-2xl">
-        Use this example for users who forgot their password and send a recovery email to their
-        address featuring the logo, email input, and submit button.
-      </P>
-      <EditOnGithub
-        size="18"
-        href="https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/marketing/account-recovery.svelte"
-        iconClass="text-gray-500"
-      />
-      <DocsLink page="{title.toLowerCase().replace(/\s+/g, '-')}" target="_blank"/>
-    </div>
-  </div>
-</Section>
+<SectionBlock title="Default forgot password page">
+  Use this example for users who forgot their password and send a recovery email to their address
+  featuring the logo, email input, and submit button.
+</SectionBlock>
 
 <ExampleDiv>
   <Section name="forgotpassword">

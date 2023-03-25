@@ -1,7 +1,6 @@
 <script lang="ts">
   import { Section, HeroHeader, FeatureDefault, FeatureItem } from '$lib';
   import {
-    Home,
     PresentationChartLine,
     AcademicCap,
     Cog,
@@ -9,8 +8,7 @@
     CurrencyDollar,
     Bolt
   } from 'svelte-heros';
-  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
-  import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
+  import { ExampleDiv, SectionHeader, SectionBlock, MetaTag } from '../utils';
   const breadcrumb_title = 'Feature Sections';
   const title = 'Feature';
   const dir = 'marketing';
@@ -20,32 +18,17 @@
 
 <MetaTag {breadcrumb_title} {title} {dir} {description} />
 
-<SectionHeader 
-  category='marketing' 
-  title='Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte' 
+<SectionHeader
+  category="marketing"
+  title="Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte"
   {breadcrumb_title}
   {description}
 />
 
-<Section name="none" classSection="py-6 sm:py-10" classDiv="px-4 mx-auto max-w-8xl">
-  <div class="grid lg:grid-cols-2">
-    <div>
-      <h2 class="mb-1 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-        Default feature list
-      </h2>
-      <p class="text-lg text-gray-500 lg:mb-0 dark:text-gray-400 lg:max-w-2xl">
-        Get started with this default example of feature items based on a grid layout where you can
-        show up to three items on a row featuring an icon, title and description.
-      </p>
-      <EditOnGithub
-        size="18"
-        href="https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/marketing/feature.svelte"
-        iconClass="text-gray-500"
-      />
-      <DocsLink page="{title.toLowerCase().replace(/\s+/g, '-')}" target="_blank"/>
-    </div>
-  </div>
-</Section>
+<SectionBlock title="Default feature list">
+  Get started with this default example of feature items based on a grid layout where you can show
+  up to three items on a row featuring an icon, title and description.
+</SectionBlock>
 
 <ExampleDiv>
   <Section name="feature">
