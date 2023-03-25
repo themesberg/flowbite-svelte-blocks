@@ -48,15 +48,12 @@
 
 <MetaTag {breadcrumb_title} {title} {dir} {description} />
 
-<SectionHeader>
-  <Breadcrumb navClass="flex mb-3">
-    <BreadcrumbItem href="/" home>Blocks</BreadcrumbItem>
-    <BreadcrumbItem href="/marketing">Marketing UI</BreadcrumbItem>
-    <BreadcrumbItem>{breadcrumb_title}</BreadcrumbItem>
-  </Breadcrumb>
-  <svelte:fragment slot="h1">Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte</svelte:fragment>
-  <svelte:fragment slot="paragraph">{description}</svelte:fragment>
-</SectionHeader>
+<SectionHeader 
+  category='marketing' 
+  title='Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte' 
+  {breadcrumb_title}
+  {description}
+/>
 
 <Section name="none" classSection="py-6 sm:py-10" classDiv="px-4 mx-auto max-w-8xl">
   <div class="grid lg:grid-cols-2">

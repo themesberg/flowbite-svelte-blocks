@@ -5,8 +5,7 @@
     AdvancedTable, CrudCreateDrawer, CrudCreateForm, CrudCreateModal, CrudDeleteConfirm,
     CrudReadDrawer, CrudReadModal, CrudReadSection, CrudSuccessMessage, CrudUpdateDrawer,
     CrudUpdateForm, CrudUpdateModal, DashboardFooter, DashboardNavbar, DropdownFilter,
-    FacetedSearchDrawerSection, FacetedSearchModalSection, SideNavigation, TableFooter, TableHeader, UpdateDrawer
-  } from '../sections';
+    FacetedSearchDrawerSection, FacetedSearchModalSection, SideNavigation, TableFooter, TableHeader } from '../sections';
   const title = 'Application UI - Flowbite Svelte Blocks';
   const breadcrumb_title = 'Application UI';
   const description =
@@ -16,16 +15,12 @@
 
 <MetaTag {breadcrumb_title} {title} {dir} {description} withoutLink={true} />
 
-<SectionHeader>
-  <Breadcrumb navClass="flex mb-3">
-    <BreadcrumbItem href="/" home>Blocks</BreadcrumbItem>
-    <BreadcrumbItem>Application UI</BreadcrumbItem>
-  </Breadcrumb>
-  <svelte:fragment slot="h1">Application UI</svelte:fragment>
-  <svelte:fragment slot="paragraph"
-    >{description}</svelte:fragment
-  >
-</SectionHeader>
+<SectionHeader 
+  category='application' 
+  title='Application UI' 
+  {breadcrumb_title}
+  {description}
+/>
 
 <section class="pb-8 bg-white dark:bg-gray-900 lg:pb-24" id="components">
   <div class="px-4 mx-auto max-w-8xl lg:px-4 lg:text-center">
@@ -50,7 +45,6 @@
       <FacetedSearchModalSection />
       <SideNavigation />
       <TableFooter />
-      <UpdateDrawer />
     </div>
   </div>
 </section>

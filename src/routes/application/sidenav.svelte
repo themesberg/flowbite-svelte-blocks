@@ -17,17 +17,12 @@
 
 <MetaTag {breadcrumb_title} {title} {dir} {description} />
 
-<SectionHeader>
-  <Breadcrumb navClass="flex mb-3">
-    <BreadcrumbItem href="/" home>Blocks</BreadcrumbItem>
-    <BreadcrumbItem href="/application">{breadcrumb_dir}</BreadcrumbItem>
-    <BreadcrumbItem>{breadcrumb_title}</BreadcrumbItem>
-  </Breadcrumb>
-  <svelte:fragment slot="h1"
-    >Tailwind CSS {title} - Flowbite Blocks in Svelte</svelte:fragment
-  >
-  <svelte:fragment slot="paragraph">{description}</svelte:fragment>
-</SectionHeader>
+<SectionHeader 
+  category='application' 
+  title='Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte' 
+  {breadcrumb_title}
+  {description}
+/>
 
 <Section name="none">
   <div class="grid lg:grid-cols-2">

@@ -252,7 +252,7 @@ test('Schedule page has expected h1', async ({ page }) => {
 
 test('Sidenav has expected h1', async ({ page }) => {
 	await page.goto('/application/sidenav');
-	expect(await page.textContent('h1')).toBe('Tailwind CSS Sidenav - Flowbite Blocks in Svelte');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS Side Navigations - Flowbite Blocks in Svelte');
 });
 
 test('Social Proof Form has expected h1', async ({ page }) => {

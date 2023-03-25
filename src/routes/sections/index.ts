@@ -19,8 +19,6 @@ export { default as FacetedSearchModalSection } from './application/FacetedSearc
 export { default as SideNavigation } from './application/SideNavigation.svelte';
 export { default as TableFooter } from './application/TableFooter.svelte';
 export { default as TableHeader } from './application/TableHeader.svelte';
-export { default as UpdateDrawer } from './application/UpdateDrawer.svelte';
-
 
 // marketing-ui
 export { default as AccountRecoverysection } from './marketing/AccountRecoverysection.svelte';
