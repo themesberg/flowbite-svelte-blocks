@@ -27,15 +27,15 @@ test('example page has expected h1', async ({ page }) => {
 
 test('404 Page page has expected h1', async ({ page }) => {
 	await page.goto('/marketing/404');
-	expect(await page.textContent('h1')).toBe('Tailwind CSS 404 Page - Flowbite Blocks in Svelte');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS 404 Pages - Flowbite Blocks in Svelte');
 });
 
 test('500 Page page has expected h1', async ({ page }) => {
 	await page.goto('/marketing/500');
-	expect(await page.textContent('h1')).toBe('Tailwind CSS 500 Page - Flowbite Blocks in Svelte');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS 500 Pages - Flowbite Blocks in Svelte');
 });
 
-test('Acount Recovery Form page has expected h1', async ({ page }) => {
+test('Account Recovery Form page has expected h1', async ({ page }) => {
 	await page.goto('/marketing/account-recovery');
 	expect(await page.textContent('h1')).toBe('Tailwind CSS Account Recovery Form - Flowbite Blocks in Svelte');
 });
@@ -177,7 +177,7 @@ test('Feature Sections page has expected h1', async ({ page }) => {
 
 test('Filters has expected h1', async ({ page }) => {
 	await page.goto('/application/filter');
-	expect(await page.textContent('h1')).toBe('Tailwind CSS Filters - Flowbite Blocks in Svelte');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS Dropdown Filters - Flowbite Blocks in Svelte');
 });
 
 test('Footer Sections page has expected h1', async ({ page }) => {
@@ -187,7 +187,7 @@ test('Footer Sections page has expected h1', async ({ page }) => {
 
 test('Header page has expected h1', async ({ page }) => {
 	await page.goto('/marketing/header');
-	expect(await page.textContent('h1')).toBe('Tailwind CSS Header - Flowbite Blocks in Svelte');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS Headers - Flowbite Blocks in Svelte');
 });
 
 test('Hero Sections page has expected h1', async ({ page }) => {
@@ -197,7 +197,7 @@ test('Hero Sections page has expected h1', async ({ page }) => {
 
 test('Login Forms page has expected h1', async ({ page }) => {
 	await page.goto('/marketing/login');
-	expect(await page.textContent('h1')).toBe('Tailwind CSS Login Form - Flowbite Blocks in Svelte');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS Login Forms - Flowbite Blocks in Svelte');
 });
 
 test('Maintenance Pages page has expected h1', async ({ page }) => {
@@ -212,12 +212,12 @@ test('Navbar has expected h1', async ({ page }) => {
 
 test('Newsletter Sections page has expected h1', async ({ page }) => {
 	await page.goto('/marketing/newsletter');
-	expect(await page.textContent('h1')).toBe('Tailwind CSS Newsletter - Flowbite Blocks in Svelte');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS Newsletter Sections - Flowbite Blocks in Svelte');
 });
 
 test('Popup page has expected h1', async ({ page }) => {
 	await page.goto('/marketing/popup');
-	expect(await page.textContent('h1')).toBe('Tailwind CSS Popup - Flowbite Blocks in Svelte');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS Popups - Flowbite Blocks in Svelte');
 });
 
 test('Portfolio page has expected h1', async ({ page }) => {
@@ -227,12 +227,12 @@ test('Portfolio page has expected h1', async ({ page }) => {
 
 test('Pricing Table has expected h1', async ({ page }) => {
 	await page.goto('/marketing/pricing');
-	expect(await page.textContent('h1')).toBe('Tailwind CSS Pricing Table - Flowbite Blocks in Svelte');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS Pricing Tables - Flowbite Blocks in Svelte');
 });
 
 test('Register Forms has expected h1', async ({ page }) => {
 	await page.goto('/marketing/register');
-	expect(await page.textContent('h1')).toBe('Tailwind CSS Register Form - Flowbite Blocks in Svelte');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS Register Forms - Flowbite Blocks in Svelte');
 });
 
 test('Related Articles has expected h1', async ({ page }) => {
@@ -242,7 +242,7 @@ test('Related Articles has expected h1', async ({ page }) => {
 
 test('Reset Password Form has expected h1', async ({ page }) => {
 	await page.goto('/marketing/reset-password');
-	expect(await page.textContent('h1')).toBe('Tailwind CSS Reset Password Form - Flowbite Blocks in Svelte');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS Reset Password Forms - Flowbite Blocks in Svelte');
 });
 
 test('Schedule page has expected h1', async ({ page }) => {
@@ -275,9 +275,9 @@ test('Team Sections Form has expected h1', async ({ page }) => {
 	expect(await page.textContent('h1')).toBe('Tailwind CSS Team Sections - Flowbite Blocks in Svelte');
 });
 
-test('Testimonials has expected h1', async ({ page }) => {
+test('Testimonial has expected h1', async ({ page }) => {
 	await page.goto('/marketing/testimonial');
-	expect(await page.textContent('h1')).toBe('Tailwind CSS Testimonials - Flowbite Blocks in Svelte');
+	expect(await page.textContent('h1')).toBe('Tailwind CSS Testimonial - Flowbite Blocks in Svelte');
 });
 
 test('User Onboarding has expected h1', async ({ page }) => {

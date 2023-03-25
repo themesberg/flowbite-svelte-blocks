@@ -2,8 +2,8 @@
   import { Section } from '$lib';
   import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
   import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
-  const breadcrumb_title = 'User onboarding';
-  const title = 'User onboarding';
+  const breadcrumb_title = 'User Onboarding';
+  const title = 'User Onboarding';
   const dir = 'marketing';
   const description =
     'Use a collection of user onboarding pages to increase the chances of the adoption of your software by improving the introduction phase of your product.';
@@ -15,9 +15,9 @@
   <Breadcrumb navClass="flex mb-3">
     <BreadcrumbItem href="/" home>Blocks</BreadcrumbItem>
     <BreadcrumbItem href="/marketing">Marketing UI</BreadcrumbItem>
-    <BreadcrumbItem>User Onboarding</BreadcrumbItem>
+    <BreadcrumbItem>{breadcrumb_title}</BreadcrumbItem>
   </Breadcrumb>
-  <svelte:fragment slot="h1">Tailwind CSS User Onboarding - Flowbite Blocks in Svelte</svelte:fragment>
+  <svelte:fragment slot="h1">Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte</svelte:fragment>
   <svelte:fragment slot="paragraph">{description}</svelte:fragment>
 </SectionHeader>
 

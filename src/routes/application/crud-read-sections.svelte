@@ -12,8 +12,8 @@
     P,
     A
   } from 'flowbite-svelte';
-  const breadcrumb_title = 'Table Headers';
-  const title = 'Table Headers';
+  const breadcrumb_title = 'Read Sections (CRUD)';
+  const title = 'Crud Read Sections';
   const dir = 'application';
   const description =
     'Get started with a collection of responsive website sections to show details about data entries from your database based on the CRUD layouts.';
@@ -26,10 +26,10 @@
   <Breadcrumb navClass="flex mb-3">
     <BreadcrumbItem href="/" home>Blocks</BreadcrumbItem>
     <BreadcrumbItem href="/application">Application</BreadcrumbItem>
-    <BreadcrumbItem>Read Sections (CRUD)</BreadcrumbItem>
+    <BreadcrumbItem>{breadcrumb_title}</BreadcrumbItem>
   </Breadcrumb>
   <svelte:fragment slot="h1"
-    >Tailwind CSS Read Sections (CRUD) - Flowbite Blocks in Svelte</svelte:fragment
+    >Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte</svelte:fragment
   >
   <svelte:fragment slot="paragraph">{description}</svelte:fragment>
 </SectionHeader>

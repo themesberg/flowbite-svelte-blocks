@@ -9,7 +9,7 @@
   } from '$lib';
   import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
   import { Button, Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
-  const breadcrumb_title = 'Pricing';
+  const breadcrumb_title = 'Pricing Tables';
   const title = 'Pricing';
   const dir = 'marketing';
   const description =
@@ -22,9 +22,9 @@
   <Breadcrumb navClass="flex mb-3">
     <BreadcrumbItem href="/" home>Blocks</BreadcrumbItem>
     <BreadcrumbItem href="/marketing">Marketing UI</BreadcrumbItem>
-    <BreadcrumbItem>Pricing Tables</BreadcrumbItem>
+    <BreadcrumbItem>{breadcrumb_title}</BreadcrumbItem>
   </Breadcrumb>
-  <svelte:fragment slot="h1">Tailwind CSS Pricing Table - Flowbite Blocks in Svelte</svelte:fragment>
+  <svelte:fragment slot="h1">Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte</svelte:fragment>
   <svelte:fragment slot="paragraph">{description}</svelte:fragment>
 </SectionHeader>
 

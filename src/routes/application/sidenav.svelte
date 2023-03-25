@@ -24,7 +24,7 @@
     <BreadcrumbItem>{breadcrumb_title}</BreadcrumbItem>
   </Breadcrumb>
   <svelte:fragment slot="h1"
-    >Tailwind CSS Sidenav - Flowbite Blocks in Svelte</svelte:fragment
+    >Tailwind CSS {title} - Flowbite Blocks in Svelte</svelte:fragment
   >
   <svelte:fragment slot="paragraph">{description}</svelte:fragment>
 </SectionHeader>

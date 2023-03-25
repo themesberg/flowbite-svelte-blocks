@@ -2,8 +2,8 @@
   import { Section } from '$lib';
   import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
   import { Button, Modal, P, Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
-  const breadcrumb_title = 'Crud delete confirm';
-  const title = 'Crud delete confirm';
+  const breadcrumb_title = 'Delete Confirm (CRUD)';
+  const title = 'Crud Delete Confirm';
   const dir = 'marketing';
   const description =
     'Get started with a collection of delete confirmation modal components based on the CRUD layout to make sure the user is ready to remove a selected item.';
@@ -16,10 +16,10 @@
   <Breadcrumb navClass="flex mb-3">
     <BreadcrumbItem href="/" home>Blocks</BreadcrumbItem>
     <BreadcrumbItem href="/marketing">Marketing UI</BreadcrumbItem>
-    <BreadcrumbItem>Delete Confirm (CRUD)</BreadcrumbItem>
+    <BreadcrumbItem>{breadcrumb_title}</BreadcrumbItem>
   </Breadcrumb>
   <svelte:fragment slot="h1"
-    >Tailwind CSS Delete Confirm (CRUD) - Flowbite Blocks in Svelte</svelte:fragment
+    >Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte</svelte:fragment
   >
   <svelte:fragment slot="paragraph">{description}</svelte:fragment>
 </SectionHeader>

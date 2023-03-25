@@ -12,8 +12,8 @@
     P,
     A, Drawer, CloseButton
   } from 'flowbite-svelte';
-  const breadcrumb_title = 'Table Headers';
-  const title = 'Table Headers';
+  const breadcrumb_title = 'Read Drawers (CRUD)';
+  const title = 'Crud Read Drawers';
   const dir = 'application';
   const description =
     'Use this collection of drawer components coded with Tailwind CSS to show details about an existing data entry from your database inside your web application.';
@@ -32,10 +32,10 @@
   <Breadcrumb navClass="flex mb-3">
     <BreadcrumbItem href="/" home>Blocks</BreadcrumbItem>
     <BreadcrumbItem href="/application">Application</BreadcrumbItem>
-    <BreadcrumbItem>Read Drawers (CRUD)</BreadcrumbItem>
+    <BreadcrumbItem>{breadcrumb_title}</BreadcrumbItem>
   </Breadcrumb>
   <svelte:fragment slot="h1"
-    >Tailwind CSS Read Drawers (CRUD) - Flowbite Blocks in Svelte</svelte:fragment
+    >Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte</svelte:fragment
   >
   <svelte:fragment slot="paragraph">{description}</svelte:fragment>
 </SectionHeader>

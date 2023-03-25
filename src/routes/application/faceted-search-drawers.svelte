@@ -12,8 +12,8 @@
     P,
     A
   } from 'flowbite-svelte';
-  const breadcrumb_title = 'Table Headers';
-  const title = 'Table Headers';
+  const breadcrumb_title = 'Faceted Search Drawers';
+  const title = 'Faceted Search Drawers';
   const dir = 'application';
   const description =
     'Get started with a collection of drawer components using a faceted search interface to use multiple filters options to search for results in your application.';
@@ -26,10 +26,10 @@
   <Breadcrumb navClass="flex mb-3">
     <BreadcrumbItem href="/" home>Blocks</BreadcrumbItem>
     <BreadcrumbItem href="/application">Application</BreadcrumbItem>
-    <BreadcrumbItem>Faceted Search Drawers</BreadcrumbItem>
+    <BreadcrumbItem>{breadcrumb_title}</BreadcrumbItem>
   </Breadcrumb>
   <svelte:fragment slot="h1"
-    >Tailwind CSS Faceted Search Drawers - Flowbite Blocks in Svelte</svelte:fragment
+    >Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte</svelte:fragment
   >
   <svelte:fragment slot="paragraph">{description}</svelte:fragment>
 </SectionHeader>

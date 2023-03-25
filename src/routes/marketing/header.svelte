@@ -14,7 +14,7 @@
 
   let navClass = 'bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800';
   let navDivClass = 'flex flex-wrap justify-between items-center mx-auto max-w-screen-xl';
-  const breadcrumb_title = 'Header';
+  const breadcrumb_title = 'Headers';
   const title = 'Header';
   const dir = 'marketing';
   const description =
@@ -27,9 +27,9 @@
   <Breadcrumb navClass="flex mb-3">
     <BreadcrumbItem href="/" home>Blocks</BreadcrumbItem>
     <BreadcrumbItem href="/marketing">Marketing UI</BreadcrumbItem>
-    <BreadcrumbItem>Headers</BreadcrumbItem>
+    <BreadcrumbItem>{breadcrumb_title}</BreadcrumbItem>
   </Breadcrumb>
-  <svelte:fragment slot="h1">Tailwind CSS Header - Flowbite Blocks in Svelte</svelte:fragment>
+  <svelte:fragment slot="h1">Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte</svelte:fragment>
   <svelte:fragment slot="paragraph">{description}</svelte:fragment>
 </SectionHeader>
 

@@ -12,8 +12,8 @@
     P,
     A, Modal
   } from 'flowbite-svelte';
-  const breadcrumb_title = 'Table Headers';
-  const title = 'Table Headers';
+  const breadcrumb_title = 'Read Modals (CRUD)';
+  const title = 'Crud Read Modals';
   const dir = 'application';
   const description =
     'Use this collection of CRUD modal components to show information about a data entry from your database and show a list of actions based.';
@@ -26,10 +26,10 @@
   <Breadcrumb navClass="flex mb-3">
     <BreadcrumbItem href="/" home>Blocks</BreadcrumbItem>
     <BreadcrumbItem href="/application">Application</BreadcrumbItem>
-    <BreadcrumbItem>Read Modals (CRUD)</BreadcrumbItem>
+    <BreadcrumbItem>{breadcrumb_title}</BreadcrumbItem>
   </Breadcrumb>
   <svelte:fragment slot="h1"
-    >Tailwind CSS Read Modals (CRUD) - Flowbite Blocks in Svelte</svelte:fragment
+    >Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte</svelte:fragment
   >
   <svelte:fragment slot="paragraph">{description}</svelte:fragment>
 </SectionHeader>

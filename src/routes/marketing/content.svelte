@@ -3,7 +3,7 @@
   import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
   import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
   import { Home, ChevronRight } from 'svelte-heros';
-  const breadcrumb_title = 'Content';
+  const breadcrumb_title = 'Content Sections';
   const title = 'Content';
   const dir = 'marketing';
   const description =
@@ -16,9 +16,9 @@
   <Breadcrumb navClass="flex mb-3">
     <BreadcrumbItem href="/" home>Blocks</BreadcrumbItem>
     <BreadcrumbItem href="/marketing">Marketing UI</BreadcrumbItem>
-    <BreadcrumbItem>Content Sections</BreadcrumbItem>
+    <BreadcrumbItem>{breadcrumb_title}</BreadcrumbItem>
   </Breadcrumb>
-  <svelte:fragment slot="h1">Tailwind CSS Content Sections - Flowbite Blocks in Svelte</svelte:fragment
+  <svelte:fragment slot="h1">Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte</svelte:fragment
   >
   <svelte:fragment slot="paragraph">{description}</svelte:fragment>
 </SectionHeader>

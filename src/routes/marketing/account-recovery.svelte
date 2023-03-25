@@ -12,7 +12,7 @@
     P,
     A
   } from 'flowbite-svelte';
-  const breadcrumb_title = 'Account Recovery';
+  const breadcrumb_title = 'Account Recovery Form';
   const title = 'Account Recovery';
   const dir = 'marketing';
   const description =
@@ -25,10 +25,10 @@
   <Breadcrumb navClass="flex mb-3">
     <BreadcrumbItem href="/" home>Blocks</BreadcrumbItem>
     <BreadcrumbItem href="/marketing">Marketing UI</BreadcrumbItem>
-    <BreadcrumbItem>Acount Recovery Form</BreadcrumbItem>
+    <BreadcrumbItem>{breadcrumb_title}</BreadcrumbItem>
   </Breadcrumb>
   <svelte:fragment slot="h1"
-    >Tailwind CSS Account Recovery Form - Flowbite Blocks in Svelte</svelte:fragment
+    >Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte</svelte:fragment
   >
   <svelte:fragment slot="paragraph">{description}</svelte:fragment>
 </SectionHeader>

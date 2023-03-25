@@ -12,7 +12,7 @@
     P,
     A, Modal, Textarea, Select
   } from 'flowbite-svelte';
-  const breadcrumb_title = 'Crud Create Modals';
+  const breadcrumb_title = 'Create Modals (CRUD)';
   const title = 'Crud Create Modals';
   const dir = 'application';
   const description =
@@ -35,10 +35,10 @@
   <Breadcrumb navClass="flex mb-3">
     <BreadcrumbItem href="/" home>Blocks</BreadcrumbItem>
     <BreadcrumbItem href="/application">Application</BreadcrumbItem>
-    <BreadcrumbItem>Create Modals (CRUD)</BreadcrumbItem>
+    <BreadcrumbItem>{breadcrumb_title}</BreadcrumbItem>
   </Breadcrumb>
   <svelte:fragment slot="h1"
-    >Tailwind CSS Create Modals (CRUD) - Flowbite Blocks in Svelte</svelte:fragment
+    >Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte</svelte:fragment
   >
   <svelte:fragment slot="paragraph">{description}</svelte:fragment>
 </SectionHeader>

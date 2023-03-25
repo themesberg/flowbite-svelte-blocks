@@ -46,7 +46,7 @@
       description: 'Lana drives the technical strategy of the flowbite platform and brand.'
     }
   ];
-  const breadcrumb_title = 'Team';
+  const breadcrumb_title = 'Team Sections';
   const title = 'Team';
   const dir = 'marketing';
   const description =
@@ -59,9 +59,9 @@
   <Breadcrumb navClass="flex mb-3">
     <BreadcrumbItem href="/" home>Blocks</BreadcrumbItem>
     <BreadcrumbItem href="/marketing">Marketing UI</BreadcrumbItem>
-    <BreadcrumbItem>Team Sections</BreadcrumbItem>
+    <BreadcrumbItem>{breadcrumb_title}</BreadcrumbItem>
   </Breadcrumb>
-  <svelte:fragment slot="h1">Tailwind CSS Team Sections - Flowbite Blocks in Svelte</svelte:fragment>
+  <svelte:fragment slot="h1">Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte</svelte:fragment>
   <svelte:fragment slot="paragraph">{description}</svelte:fragment>
 </SectionHeader>
 

@@ -12,7 +12,7 @@
     P,
     A, Modal
   } from 'flowbite-svelte';
-  const breadcrumb_title = 'Crud Delete Confirm';
+  const breadcrumb_title = 'Delete Confirm (CRUD)';
   const title = 'Crud Delete Confirm';
   const dir = 'application';
   const description =
@@ -32,10 +32,10 @@
   <Breadcrumb navClass="flex mb-3">
     <BreadcrumbItem href="/" home>Blocks</BreadcrumbItem>
     <BreadcrumbItem href="/application">Application</BreadcrumbItem>
-    <BreadcrumbItem>Delete Confirm (CRUD)</BreadcrumbItem>
+    <BreadcrumbItem>{breadcrumb_title}</BreadcrumbItem>
   </Breadcrumb>
   <svelte:fragment slot="h1"
-    >Tailwind CSS Delete Confirm (CRUD) - Flowbite Blocks in Svelte</svelte:fragment
+    >Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte</svelte:fragment
   >
   <svelte:fragment slot="paragraph">{description}</svelte:fragment>
 </SectionHeader>

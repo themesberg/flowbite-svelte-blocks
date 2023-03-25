@@ -12,7 +12,7 @@
     P,
     A, Select, Textarea
   } from 'flowbite-svelte';
-  const breadcrumb_title = 'Crud Create Forms';
+  const breadcrumb_title = 'Create Forms (CRUD)';
   const title = 'Crud Create Forms';
   const dir = 'application';
   const description =
@@ -34,10 +34,10 @@
   <Breadcrumb navClass="flex mb-3">
     <BreadcrumbItem href="/" home>Blocks</BreadcrumbItem>
     <BreadcrumbItem href="/application">Application</BreadcrumbItem>
-    <BreadcrumbItem>Create Forms (CRUD)</BreadcrumbItem>
+    <BreadcrumbItem>{breadcrumb_title}</BreadcrumbItem>
   </Breadcrumb>
   <svelte:fragment slot="h1"
-    >Tailwind CSS Create Forms (CRUD) - Flowbite Blocks in Svelte</svelte:fragment
+    >Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte</svelte:fragment
   >
   <svelte:fragment slot="paragraph">{description}</svelte:fragment>
 </SectionHeader>

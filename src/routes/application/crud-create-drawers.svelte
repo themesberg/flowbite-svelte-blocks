@@ -29,7 +29,7 @@
     hidden  = true
   }
   const breadcrumb_title = 'Create Drawers (CRUD)';
-  const title = 'Create Drawers (CRUD)';
+  const title = 'Crud Create Drawers';
   const dir = 'application';
   const description =
     'Get started with a collection of drawer components to create new data models in your application by including form elements.';
@@ -42,10 +42,10 @@
   <Breadcrumb navClass="flex mb-3">
     <BreadcrumbItem href="/" home>Blocks</BreadcrumbItem>
     <BreadcrumbItem href="/application">Application</BreadcrumbItem>
-    <BreadcrumbItem>Create Drawers (CRUD)</BreadcrumbItem>
+    <BreadcrumbItem>{breadcrumb_title}</BreadcrumbItem>
   </Breadcrumb>
   <svelte:fragment slot="h1"
-    >Tailwind CSS Create Drawers (CRUD) - Flowbite Blocks in Svelte</svelte:fragment
+    >Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte</svelte:fragment
   >
   <svelte:fragment slot="paragraph">{description}</svelte:fragment>
 </SectionHeader>

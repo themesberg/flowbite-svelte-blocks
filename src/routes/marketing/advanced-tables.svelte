@@ -2,7 +2,7 @@
   import { Section } from '$lib';
   import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
   import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
-  const breadcrumb_title = 'Advanced Tables - Flowbite Svelte Blocks';
+  const breadcrumb_title = 'Advanced Tables';
   const title = 'Advanced Tables';
   const dir = 'application';
   const description =
@@ -15,9 +15,9 @@
   <Breadcrumb navClass="flex mb-3">
     <BreadcrumbItem href="/" home>Blocks</BreadcrumbItem>
     <BreadcrumbItem href="/marketing">Application UI</BreadcrumbItem>
-    <BreadcrumbItem>{title}</BreadcrumbItem>
+    <BreadcrumbItem>{breadcrumb_title}</BreadcrumbItem>
   </Breadcrumb>
-  <svelte:fragment slot="h1">Tailwind CSS {title} - Flowbite Blocks in Svelte</svelte:fragment>
+  <svelte:fragment slot="h1">Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte</svelte:fragment>
   <svelte:fragment slot="paragraph">{description}</svelte:fragment>
 </SectionHeader>
 
@@ -30,7 +30,7 @@
       <p class="text-lg text-gray-500 lg:mb-0 dark:text-gray-400 lg:max-w-2xl">
         Use this free example of a table component with a search bar, filter dropdown, and a dataset of rows and columns to show complex data in your application.
       </p>
-      <DocsLink page="500" target="_blank"/>
+      <DocsLink page="{title.toLowerCase().replace(/\s+/g, '-')}" target="_blank"/>
     </div>
   </div>
 </Section>

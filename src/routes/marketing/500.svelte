@@ -2,7 +2,7 @@
   import { Section, Page500 } from '$lib';
   import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
   import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
-  const breadcrumb_title = '500 Page - Flowbite Svelte Blocks';
+  const breadcrumb_title = '500 Pages';
   const title = '500';
   const dir = 'marketing';
   const description =
@@ -15,9 +15,9 @@
   <Breadcrumb navClass="flex mb-3">
     <BreadcrumbItem href="/" home>Blocks</BreadcrumbItem>
     <BreadcrumbItem href="/marketing">Marketing UI</BreadcrumbItem>
-    <BreadcrumbItem>500 Pages</BreadcrumbItem>
+    <BreadcrumbItem>{breadcrumb_title}</BreadcrumbItem>
   </Breadcrumb>
-  <svelte:fragment slot="h1">Tailwind CSS 500 Page - Flowbite Blocks in Svelte</svelte:fragment>
+  <svelte:fragment slot="h1">Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte</svelte:fragment>
   <svelte:fragment slot="paragraph">{description}</svelte:fragment>
 </SectionHeader>
 
@@ -35,7 +35,7 @@
         href="https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/marketing/500.svelte"
         iconClass="text-gray-500"
       />
-      <DocsLink page="500" target="_blank"/>
+      <DocsLink page="{title.toLowerCase().replace(/\s+/g, '-')}" target="_blank"/>
     </div>
   </div>
 </Section>

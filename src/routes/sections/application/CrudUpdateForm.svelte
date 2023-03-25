@@ -5,11 +5,8 @@
     class="bg-gray-50 dark:bg-gray-700 rounded-t-md py-2.5 px-5 flex justify-between items-center border-b border-gray-200 dark:border-gray-700"
   >
     <div class="text-left">
-      <h2 class="text-base font-medium text-gray-900 dark:text-white">Update Forms (CRUD)<span
-        class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 rounded-lg dark:bg-gray-600 dark:text-blue-400 border border-blue-400 ml-2"
-        >Incomplete</span
-      ></h2>
-      <p class="text-sm text-gray-500 dark:text-gray-400">0 components</p>
+      <h2 class="text-base font-medium text-gray-900 dark:text-white">Update Forms (CRUD)</h2>
+      <p class="text-sm text-gray-500 dark:text-gray-400">1 free component</p>
     </div>
     <div class="text-gray-900 dark:text-white">
       <span

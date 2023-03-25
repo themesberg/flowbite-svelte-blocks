@@ -2,8 +2,8 @@
   import { Section, Page404 } from '$lib';
   import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
   import { Button, Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
-  const title = '404 Page - Flowbite Svelte Blocks';
-  const breadcrumb_title = '404';
+  const title = '404';
+  const breadcrumb_title = '404 Pages';
   const description =
     "Choose from a collection of 404 'not found' landing pages coded with Tailwind CSS to show your website visitors when a page is unavailable or doesn't exist.";
   const dir = 'marketing';
@@ -15,9 +15,9 @@
   <Breadcrumb navClass="flex mb-3">
     <BreadcrumbItem href="/" home>Blocks</BreadcrumbItem>
     <BreadcrumbItem href="/marketing">Marketing UI</BreadcrumbItem>
-    <BreadcrumbItem>404 Pages</BreadcrumbItem>
+    <BreadcrumbItem>{breadcrumb_title}</BreadcrumbItem>
   </Breadcrumb>
-  <svelte:fragment slot="h1">Tailwind CSS 404 Page - Flowbite Blocks in Svelte</svelte:fragment>
+  <svelte:fragment slot="h1">Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte</svelte:fragment>
   <svelte:fragment slot="paragraph">{description}</svelte:fragment>
 </SectionHeader>
 
@@ -35,7 +35,7 @@
         href="https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/marketing/404.svelte"
         iconClass="text-gray-500"
       />
-      <DocsLink page="404" target="_blank"/>
+      <DocsLink page="{title.toLowerCase().replace(/\s+/g, '-')}" target="_blank"/>
     </div>
   </div>
 </Section>

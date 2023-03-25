@@ -13,7 +13,7 @@
     A
   } from 'flowbite-svelte';
   const breadcrumb_title = 'Success Message (CRUD)';
-  const title = 'Success Message (CRUD)';
+  const title = 'Crud Success Message';
   const dir = 'application';
   const description =
     'Use a collection of success message components based on Tailwind CSS to share feedback with your users based on their actions inside your application.';
@@ -26,10 +26,10 @@
   <Breadcrumb navClass="flex mb-3">
     <BreadcrumbItem href="/" home>Blocks</BreadcrumbItem>
     <BreadcrumbItem href="/application">Application UI</BreadcrumbItem>
-    <BreadcrumbItem>{title}</BreadcrumbItem>
+    <BreadcrumbItem>{breadcrumb_title}</BreadcrumbItem>
   </Breadcrumb>
   <svelte:fragment slot="h1"
-    >Tailwind CSS {title} - Flowbite Blocks in Svelte</svelte:fragment
+    >Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte</svelte:fragment
   >
   <svelte:fragment slot="paragraph">{description}</svelte:fragment>
 </SectionHeader>

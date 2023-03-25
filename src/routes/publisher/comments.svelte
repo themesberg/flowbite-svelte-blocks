@@ -14,7 +14,7 @@
   } from 'flowbite-svelte';
 
   const breadcrumb_title = 'Comments Sections';
-  const title = 'Comments Sections';
+  const title = 'Comments';
   const dir = 'publisher';
   const description =
     'Get started with a collection of comments sections coded with Tailwind CSS to show a list of comments for blog posts with features like a reply, like, and more.';
@@ -27,10 +27,10 @@
   <Breadcrumb navClass="flex mb-3">
     <BreadcrumbItem href="/" home>Blocks</BreadcrumbItem>
     <BreadcrumbItem href="/publisher">Publisher UI</BreadcrumbItem>
-    <BreadcrumbItem>{title}</BreadcrumbItem>
+    <BreadcrumbItem>{breadcrumb_title}</BreadcrumbItem>
   </Breadcrumb>
   <svelte:fragment slot="h1"
-    >Tailwind CSS {title} - Flowbite Blocks in Svelte</svelte:fragment
+    >Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte</svelte:fragment
   >
   <svelte:fragment slot="paragraph">{description}</svelte:fragment>
 </SectionHeader>
