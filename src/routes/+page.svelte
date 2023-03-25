@@ -2,7 +2,7 @@
   import { Navbar, NavBrand, NavHamburger, NavUl, NavLi, Button, DarkMode } from 'flowbite-svelte';
   import { MetaTag } from './utils';
   import {
-    AdvancedTable, AccountRecoverysection, Bannersection, Blogsection, BlogTemplatesection, CommentSection, ContactFormsection, Contentsection, CookieConsentsection, CrudCreateDrawer, CrudCreateForm, CrudCreateModal, CrudDeleteConfirm, CrudReadDrawer, CrudReadModal, CrudReadSection, CrudSuccessMessage, CrudUpdateDrawer, CrudUpdateForm, CrudUpdateModal, Cta, DashboardFooter, DashboardNavbar, DropdownFilter, FacetedSearchDrawerSection, FacetedSearchModalSection , Faqsection, Featuresection, Footersection, Headersection, Herosection, LoginFormsection, Maintenancesection, Newslettersection, Page404section, Page500section, Popupsection, Portfoliosection, Pricingsection, ProjectPortfolioSection, RegisterFormsection, RelatedArticle, ResetPasswordFormsection, SideNavigation, SocialProofsection, Teamsection, Testimonialsection, TableFooter, TableHeader,  UpdateDrawer, UserOnboarding
+    AdvancedTable, AccountRecoverysection, Bannersection, Blogsection, BlogTemplatesection, CommentSection, ContactFormsection, Contentsection, CookieConsentsection, CrudCreateDrawer, CrudCreateForm, CrudCreateModal, CrudDeleteConfirm, CrudReadDrawer, CrudReadModal, CrudReadSection, CrudSuccessMessage, CrudUpdateDrawer, CrudUpdateForm, CrudUpdateModal, Cta, DashboardFooter, DashboardNavbar, DropdownFilter, FacetedSearchDrawerSection, FacetedSearchModalSection , Faqsection, Featuresection, Footersection, Headersection, Herosection, LoginFormsection, Maintenancesection, Newslettersection, Page404section, Page500section, Popupsection, Portfoliosection, Pricingsection, ProjectPortfolioSection, RegisterFormsection, RelatedArticle, ResetPasswordFormsection, SideNavigation, SocialProofsection, Teamsection, Testimonialsection, TableFooter, TableHeader, UserOnboarding
   } from './sections';
     import Schedule from '$lib/schedule/Schedule.svelte';
     import Schedulesection from './sections/marketing/Schedulesection.svelte';
@@ -34,7 +34,7 @@
         </span>
       </NavBrand>
       <div class="flex items-center lg:order-2">
-        <a href="https://github.com/shinokada/flowbite-svelte-blocks"
+        <a href="https://flowbite-svelte-blocks.codewithshin.com"
           ><Button>Get started</Button></a
         >
         <DarkMode {btnClass} />
@@ -125,7 +125,6 @@
             <Testimonialsection />
             <TableFooter />
             <TableHeader />
-            <UpdateDrawer />
             <UserOnboarding />
           </div>
         </div>

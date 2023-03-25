@@ -40,16 +40,12 @@
 
 <MetaTag {breadcrumb_title} {title} {dir} {description} withoutLink={true} />
 
-<SectionHeader>
-  <Breadcrumb navClass="flex mb-3">
-    <BreadcrumbItem href="/" home>Blocks</BreadcrumbItem>
-    <BreadcrumbItem>Marketing UI</BreadcrumbItem>
-  </Breadcrumb>
-  <svelte:fragment slot="h1">Marketing UI</svelte:fragment>
-  <svelte:fragment slot="paragraph"
-    >{description}</svelte:fragment
-  >
-</SectionHeader>
+<SectionHeader 
+  category='marketing' 
+  title='Marketing UI' 
+  {breadcrumb_title}
+  {description}
+/>
 
 <section class="pb-8 bg-white dark:bg-gray-900 lg:pb-24" id="components">
   <div class="px-4 mx-auto max-w-8xl lg:px-4 lg:text-center">
