@@ -2,11 +2,8 @@
   import { Navbar, NavBrand, NavHamburger, NavUl, NavLi, Button, DarkMode } from 'flowbite-svelte';
   import { MetaTag } from './utils';
   import {
-    AdvancedTable, AccountRecoverysection, Bannersection, Blogsection, BlogTemplatesection, CommentSection, ContactFormsection, Contentsection, CookieConsentsection, CrudCreateDrawer, CrudCreateForm, CrudCreateModal, CrudDeleteConfirm, CrudReadDrawer, CrudReadModal, CrudReadSection, CrudSuccessMessage, CrudUpdateDrawer, CrudUpdateForm, CrudUpdateModal, Cta, DashboardFooter, DashboardNavbar, DropdownFilter, FacetedSearchDrawerSection, FacetedSearchModalSection , Faqsection, Featuresection, Footersection, Headersection, Herosection, LoginFormsection, Maintenancesection, Newslettersection, Page404section, Page500section, Popupsection, Portfoliosection, Pricingsection, ProjectPortfolioSection, RegisterFormsection, RelatedArticle, ResetPasswordFormsection, SideNavigation, SocialProofsection, Teamsection, Testimonialsection, TableFooter, TableHeader, UserOnboarding
+    AdvancedTable, AccountRecoverysection, Bannersection, Blogsection, BlogTemplatesection, CommentSection, ContactFormsection, Contentsection, CookieConsentsection, CrudCreateDrawer, CrudCreateForm, CrudCreateModal, CrudDeleteConfirm, CrudReadDrawer, CrudReadModal, CrudReadSection, CrudSuccessMessage, CrudUpdateDrawer, CrudUpdateForm, CrudUpdateModal, Cta, DashboardFooter, DashboardNavbar, DropdownFilter, FacetedSearchDrawerSection, FacetedSearchModalSection , Faqsection, Featuresection, Footersection, Headersection, Herosection, LoginFormsection, Maintenancesection, Newslettersection, Page404section, Page500section, Popupsection, Portfoliosection, Pricingsection, ProjectPortfolioSection, RegisterFormsection, RelatedArticle, ResetPasswordFormsection, Schedulesection, SideNavigation, SocialProofsection, Teamsection, Testimonialsection, TableFooter, TableHeader, UserOnboarding
   } from './sections';
-    import Schedule from '$lib/schedule/Schedule.svelte';
-    import Schedulesection from './sections/marketing/Schedulesection.svelte';
-    import FacetedSearchModals from './application/faceted-search-modals.svelte';
 
   let navClass = 'bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800';
   let navDivClass = 'flex flex-wrap justify-between items-center mx-auto max-w-screen-xl';
@@ -21,41 +18,6 @@
 <MetaTag {breadcrumb_title} {title} {description} withoutLink={true} />
 
 <div class="flex flex-col min-h-screen bg-white dark:bg-gray-900">
-  <header class="sticky top-0 z-40 flex-none mx-auto w-full bg-white dark:bg-gray-900 ">
-    <Navbar let:hidden let:toggle fluid={false} {navClass} {navDivClass}>
-      <NavBrand href="/">
-        <img
-          src="https://flowbite.com/docs/images/logo.svg"
-          class="mr-3 h-6 sm:h-9"
-          alt="Flowbite Logo"
-        />
-        <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-          Flowbite
-        </span>
-      </NavBrand>
-      <div class="flex items-center lg:order-2">
-        <a href="https://flowbite-svelte-blocks.codewithshin.com"
-          ><Button>Get started</Button></a
-        >
-        <DarkMode {btnClass} />
-        <NavHamburger
-          on:click={toggle}
-          btnClass="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-        />
-      </div>
-      <NavUl
-        {hidden}
-        divClass="justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
-        ulClass="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0"
-      >
-        <NavLi href="/">Home</NavLi>
-        <NavLi href="/example">Example</NavLi>
-        <NavLi href="https://flowbite-svelte-blocks.pages.dev/" target="_blank" >Docs</NavLi>
-        <NavLi href="https://github.com/shinokada/flowbite-svelte-blocks" target="_blank" >GitHub</NavLi>
-        <NavLi href="https://flowbite-svelte.com" target="_blank" >Flowbite-Svelte</NavLi>
-      </NavUl>
-    </Navbar>
-  </header>
   <div class="px-4 mx-auto max-w-8xl dark:bg-gray-900">
     <main class="grow">
       <section class="px-4 mx-auto max-w-8xl">
