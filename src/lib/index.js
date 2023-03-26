@@ -57,8 +57,8 @@ export { default as Page500 } from './page500/Page500.svelte';
 export { default as Popup } from './popup/Popup.svelte';
 
 // portfolio
-export { default as Portfolio } from './portfolio/Portfolio.svelte'
-export { default as PortfolioItem } from './portfolio/PortfolioItem.svelte'
+export { default as Portfolio } from './portfolio/Portfolio.svelte';
+export { default as PortfolioItem } from './portfolio/PortfolioItem.svelte';
 
 // pricing
 export { default as PricingCard } from './pricing/PricingCard.svelte';
@@ -72,7 +72,7 @@ export { default as Register } from './register/Register.svelte';
 
 // schedule
 export { default as Schedule } from './schedule/Schedule.svelte';
-export { default as ScheduleItem } from './schedule/ScheduleItem.svelte'
+export { default as ScheduleItem } from './schedule/ScheduleItem.svelte';
 
 // sidebar
 export { default as SidebarBottomNav } from './sidebar/SidebarBottomNav.svelte';
@@ -82,7 +82,7 @@ export { default as SidebarBottomNavItem } from './sidebar/SidebarBottomNavItem.
 export { default as Social } from './social/Social.svelte';
 
 // table header
-export { default as TableHeader } from './tableheader/TableHeader.svelte'
+export { default as TableHeader } from './tableheader/TableHeader.svelte';
 // team
 export { default as TeamBody } from './team/TeamBody.svelte';
 export { default as TeamHeader } from './team/TeamHeader.svelte';

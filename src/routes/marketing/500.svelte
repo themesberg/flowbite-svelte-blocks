@@ -10,15 +10,16 @@
 
 <MetaTag {breadcrumb_title} {title} {dir} {description} />
 
-<SectionHeader 
-  category='marketing' 
-  title='Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte' 
+<SectionHeader
+  category="marketing"
+  title="Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte"
   {breadcrumb_title}
   {description}
 />
 
 <SectionBlock title="Default 500 page">
-  Use this example of a page to show when an internal server error has happened and a 500 status code has to be shown.
+  Use this example of a page to show when an internal server error has happened and a 500 status
+  code has to be shown.
 </SectionBlock>
 
 <ExampleDiv>

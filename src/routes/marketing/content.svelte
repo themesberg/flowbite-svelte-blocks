@@ -11,16 +11,16 @@
 
 <MetaTag {breadcrumb_title} {title} {dir} {description} />
 
-<SectionHeader 
-  category='marketing' 
-  title='Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte' 
+<SectionHeader
+  category="marketing"
+  title="Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte"
   {breadcrumb_title}
   {description}
 />
 
 <SectionBlock title="Heading with description">
-  Use this example to show a heading with a paragraph and a CTA link anywhere on your page
-        relative to other sections.
+  Use this example to show a heading with a paragraph and a CTA link anywhere on your page relative
+  to other sections.
 </SectionBlock>
 
 <ExampleDiv>

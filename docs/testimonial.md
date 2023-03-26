@@ -6,14 +6,19 @@
 
 ```html
 <script lang="ts">
-  import { Quotes, Testimonial, TestimonialCard, TestimonialCardItem } from 'flowbite-svelte-blocks';
+  import {
+    Quotes,
+    Testimonial,
+    TestimonialCard,
+    TestimonialCardItem
+  } from 'flowbite-svelte-blocks';
 </script>
 
-<Testimonial icon={Quotes}>
+<Testimonial icon="{Quotes}">
   <blockquote>
     <p class="text-2xl font-medium text-gray-900 dark:text-white">
-      "Flowbite is just awesome. It contains tons of predesigned components and pages starting
-      from login screen to complex dashboard. Perfect choice for your next SaaS application."
+      "Flowbite is just awesome. It contains tons of predesigned components and pages starting from
+      login screen to complex dashboard. Perfect choice for your next SaaS application."
     </p>
   </blockquote>
   <svelte:fragment slot="footer">
@@ -39,8 +44,8 @@
       Testimonials
     </h2>
     <p class="mb-8 font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">
-      Explore the whole collection of open-source web components and elements built with the
-      utility classes from Tailwind
+      Explore the whole collection of open-source web components and elements built with the utility
+      classes from Tailwind
     </p>
   </svelte:fragment>
 </TestimonialCard>
@@ -48,13 +53,13 @@
   <TestimonialCardItem>
     <svelte:fragment slot="h3">Speechless with how easy this was to integrate</svelte:fragment>
     <p class="my-4">
-      "I recently got my hands on Flowbite Pro, and holy crap, I'm speechless with how easy this
-      was to integrate within my application. Most templates are a pain, code is scattered, and
-      near impossible to theme.
+      "I recently got my hands on Flowbite Pro, and holy crap, I'm speechless with how easy this was
+      to integrate within my application. Most templates are a pain, code is scattered, and near
+      impossible to theme.
     </p>
     <p class="my-4">
-      Flowbite has code in one place and I'm not joking when I say it took me a matter of
-      minutes to copy the code, customise it and integrate within a Laravel + Vue application.
+      Flowbite has code in one place and I'm not joking when I say it took me a matter of minutes to
+      copy the code, customise it and integrate within a Laravel + Vue application.
     </p>
     <p class="my-4">If you care for your time, I hands down would go with this."</p>
     <svelte:fragment slot="caption">
@@ -65,19 +70,17 @@
       />
       <div class="space-y-0.5 font-medium dark:text-white text-left">
         <div>Bonnie Green</div>
-        <div class="text-sm font-light text-gray-500 dark:text-gray-400">
-          Developer at Open AI
-        </div>
+        <div class="text-sm font-light text-gray-500 dark:text-gray-400">Developer at Open AI</div>
       </div>
     </svelte:fragment>
   </TestimonialCardItem>
   <TestimonialCardItem>
     <svelte:fragment slot="h3">Solid foundation for any project</svelte:fragment>
     <p class="my-4">
-      "FlowBite provides a robust set of design tokens and components based on the popular
-      Tailwind CSS framework. From the most used UI components like forms and navigation bars to
-      the whole app screens designed both for desktop and mobile, this UI kit provides a solid
-      foundation for any project.
+      "FlowBite provides a robust set of design tokens and components based on the popular Tailwind
+      CSS framework. From the most used UI components like forms and navigation bars to the whole
+      app screens designed both for desktop and mobile, this UI kit provides a solid foundation for
+      any project.
     </p>
     <p class="my-4">
       Designing with Figma components that can be easily translated to the utility classes of
@@ -100,16 +103,16 @@
   <TestimonialCardItem>
     <svelte:fragment slot="h3">Mindblowing workflow and variants</svelte:fragment>
     <p class="my-4">
-      "As someone who mainly designs in the browser, I've been a casual user of Figma, but as
-      soon as I saw and started playing with FlowBite my mind was 🤯.
+      "As someone who mainly designs in the browser, I've been a casual user of Figma, but as soon
+      as I saw and started playing with FlowBite my mind was 🤯.
     </p>
     <p class="my-4">
-      Everything is so well structured and simple to use (I've learnt so much about Figma by
-      just using the toolkit).
+      Everything is so well structured and simple to use (I've learnt so much about Figma by just
+      using the toolkit).
     </p>
     <p class="my-4">
-      Aesthetically, the well designed components are beautiful and will undoubtedly level up
-      your next application."
+      Aesthetically, the well designed components are beautiful and will undoubtedly level up your
+      next application."
     </p>
     <svelte:fragment slot="caption">
       <img
@@ -128,8 +131,8 @@
   <TestimonialCardItem>
     <svelte:fragment slot="h3">Efficient Collaborating</svelte:fragment>
     <p class="my-4">
-      "This is a very complex and beautiful set of elements. Under the hood it comes with the
-      best things from 2 different worlds: Figma and Tailwind.
+      "This is a very complex and beautiful set of elements. Under the hood it comes with the best
+      things from 2 different worlds: Figma and Tailwind.
     </p>
     <p class="my-4">
       You have many examples that can be used to create a fast prototype for your team."

@@ -56,24 +56,21 @@ Update tailwind.config.cjs:
 ```js
 const config = {
   content: [
-    "./src/**/*.{html,js,svelte,ts}",
-    "./node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}",
-    "./node_modules/flowbite-svelte-blocks/**/*.{html,js,svelte,ts}",
+    './src/**/*.{html,js,svelte,ts}',
+    './node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}',
+    './node_modules/flowbite-svelte-blocks/**/*.{html,js,svelte,ts}'
   ],
 
   theme: {
-    extend: {},
+    extend: {}
   },
 
-  plugins: [
-    require('flowbite/plugin')
-  ],
-  darkMode: 'class',
+  plugins: [require('flowbite/plugin')],
+  darkMode: 'class'
 };
 
 module.exports = config;
 ```
-
 
 ## Update tailwind.config.cjs
 

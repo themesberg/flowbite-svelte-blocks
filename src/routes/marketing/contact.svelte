@@ -11,16 +11,16 @@
 
 <MetaTag {breadcrumb_title} {title} {dir} {description} />
 
-<SectionHeader 
-  category='marketing' 
-  title='Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte' 
+<SectionHeader
+  category="marketing"
+  title="Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte"
   {breadcrumb_title}
   {description}
 />
 
 <SectionBlock title="Default contact form">
   Use this example of a contact form coded with Tailwind CSS including the email, subject, and
-        message that can be delivered by clicking on the form submission button.
+  message that can be delivered by clicking on the form submission button.
 </SectionBlock>
 
 <ExampleDiv>

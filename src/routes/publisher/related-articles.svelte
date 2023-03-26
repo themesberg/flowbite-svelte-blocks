@@ -10,19 +10,20 @@
 
 <MetaTag {breadcrumb_title} {title} {dir} {description} />
 
-<SectionHeader 
-  category='publisher' 
-  title='Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte' 
+<SectionHeader
+  category="publisher"
+  title="Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte"
   {breadcrumb_title}
   {description}
 />
 
 <SectionBlock title="Default related articles">
-  Use this example to show a list of related articles after the main content of a blog post to engage users and decrease the bounce rate.
+  Use this example to show a list of related articles after the main content of a blog post to
+  engage users and decrease the bounce rate.
 </SectionBlock>
 
 <ExampleDiv>
-  <Section name="tableheader" sectionClass='bg-gray-50 dark:bg-gray-900 h-40 flex items-center'>
-  <h1 class="text-3xl dark:text-white">COMING SOON</h1>
+  <Section name="tableheader" sectionClass="bg-gray-50 dark:bg-gray-900 h-40 flex items-center">
+    <h1 class="text-3xl dark:text-white">COMING SOON</h1>
   </Section>
 </ExampleDiv>

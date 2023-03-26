@@ -10,16 +10,16 @@
 
 <MetaTag {breadcrumb_title} {title} {dir} {description} />
 
-<SectionHeader 
-  category='marketing' 
-  title='Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte' 
+<SectionHeader
+  category="marketing"
+  title="Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte"
   {breadcrumb_title}
   {description}
 />
 
 <SectionBlock title="Default maintenance page">
   Use this example to let your users know that you are working on an important update and the
-        website is down for a couple of hours.
+  website is down for a couple of hours.
 </SectionBlock>
 
 <ExampleDiv>

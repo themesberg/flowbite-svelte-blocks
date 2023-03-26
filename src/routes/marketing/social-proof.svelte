@@ -10,16 +10,16 @@
 
 <MetaTag {breadcrumb_title} {title} {dir} {description} />
 
-<SectionHeader 
-  category='marketing' 
-  title='Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte' 
+<SectionHeader
+  category="marketing"
+  title="Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte"
   {breadcrumb_title}
   {description}
 />
 
 <SectionBlock title="Default example">
-  Use this example of statistical numbers that you can use to showcase the adoption rate of
-  your product by the community.
+  Use this example of statistical numbers that you can use to showcase the adoption rate of your
+  product by the community.
 </SectionBlock>
 
 <ExampleDiv>

@@ -25,9 +25,7 @@
   {description}
 />
 
-<SectionBlock
-  title="Default delete confirmation modal"
->
+<SectionBlock title="Default delete confirmation modal">
   Use this free example of a modal component coded with Tailwind CSS to confirm with the user before
   deleting an item from the database.
 </SectionBlock>

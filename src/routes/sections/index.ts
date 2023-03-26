@@ -42,15 +42,14 @@ export { default as Page500section } from './marketing/Page500section.svelte';
 export { default as Popupsection } from './marketing/Popupsection.svelte';
 export { default as Portfoliosection } from './marketing/Portfoliosection.svelte';
 export { default as Pricingsection } from './marketing/Pricing.svelte';
-export { default as ProjectPortfolioSection } from './marketing/ProjectPortfolioSection.svelte'
+export { default as ProjectPortfolioSection } from './marketing/ProjectPortfolioSection.svelte';
 export { default as RegisterFormsection } from './marketing/RegisterFormsection.svelte';
 export { default as ResetPasswordFormsection } from './marketing/ResetPasswordFormsection.svelte';
-export { default as Schedulesection } from './marketing/Schedulesection.svelte'
+export { default as Schedulesection } from './marketing/Schedulesection.svelte';
 export { default as SocialProofsection } from './marketing/SocialProofsection.svelte';
 export { default as Teamsection } from './marketing/Teamsection.svelte';
 export { default as Testimonialsection } from './marketing/Testimonialsection.svelte';
 export { default as UserOnboarding } from './marketing/UserOnboarding.svelte';
-
 
 // publisher
 export { default as BlogTemplatesection } from './publisher/BlogTemplatesection.svelte';

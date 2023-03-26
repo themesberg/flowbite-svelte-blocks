@@ -21,8 +21,8 @@
   <svelte:fragment slot="h2">Our Blog</svelte:fragment>
   <svelte:fragment slot="paragraph">
     <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">
-      We use an agile approach to test assumptions and connect with the needs of your audience
-      early and often.
+      We use an agile approach to test assumptions and connect with the needs of your audience early
+      and often.
     </p>
   </svelte:fragment>
 </BlogHead>
@@ -43,9 +43,9 @@
       >
       <svelte:fragment slot="paragraph">
         <p class="mb-5 font-light text-gray-500 dark:text-gray-400">
-          Static websites are now used to bootstrap lots of websites and are becoming the basis
-          for a variety of tools that even influence both web designers and developers influence
-          both web designers and developers.
+          Static websites are now used to bootstrap lots of websites and are becoming the basis for
+          a variety of tools that even influence both web designers and developers influence both
+          web designers and developers.
         </p>
       </svelte:fragment>
     </ArticleBody>
@@ -82,9 +82,9 @@
       <svelte:fragment slot="h2"><a href="/">Our first project with React</a></svelte:fragment>
       <svelte:fragment slot="paragraph">
         <p class="mb-5 font-light text-gray-500 dark:text-gray-400">
-          Static websites are now used to bootstrap lots of websites and are becoming the basis
-          for a variety of tools that even influence both web designers and developers influence
-          both web designers and developers.
+          Static websites are now used to bootstrap lots of websites and are becoming the basis for
+          a variety of tools that even influence both web designers and developers influence both
+          web designers and developers.
         </p>
       </svelte:fragment>
     </ArticleBody>

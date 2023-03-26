@@ -10,19 +10,20 @@
 
 <MetaTag {breadcrumb_title} {title} {dir} {description} />
 
-<SectionHeader 
-  category='application' 
-  title='Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte' 
+<SectionHeader
+  category="application"
+  title="Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte"
   {breadcrumb_title}
   {description}
 />
 
 <SectionBlock title="Default table footer with pagination">
-  Use this free example to add a footer section to a table component to show a pagination component and indicate the number of data items being showed on one page.
+  Use this free example to add a footer section to a table component to show a pagination component
+  and indicate the number of data items being showed on one page.
 </SectionBlock>
 
 <ExampleDiv>
-  <Section name="tableheader" sectionClass='bg-gray-50 dark:bg-gray-900 h-40 flex items-center'>
-  <h1 class="text-3xl dark:text-white">COMING SOON</h1>
+  <Section name="tableheader" sectionClass="bg-gray-50 dark:bg-gray-900 h-40 flex items-center">
+    <h1 class="text-3xl dark:text-white">COMING SOON</h1>
   </Section>
 </ExampleDiv>

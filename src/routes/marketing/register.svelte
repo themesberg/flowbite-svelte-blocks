@@ -11,17 +11,16 @@
 
 <MetaTag {breadcrumb_title} {title} {dir} {description} />
 
-<SectionHeader 
-  category='marketing' 
-  title='Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte' 
+<SectionHeader
+  category="marketing"
+  title="Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte"
   {breadcrumb_title}
   {description}
 />
 
 <SectionBlock title="Default register page">
-  This example can be used to allow users to create an account on your website using their
-  email address and password and also a checkbox with the terms and conditions as a
-  requirement.
+  This example can be used to allow users to create an account on your website using their email
+  address and password and also a checkbox with the terms and conditions as a requirement.
 </SectionBlock>
 
 <ExampleDiv>

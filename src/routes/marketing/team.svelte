@@ -54,16 +54,16 @@
 
 <MetaTag {breadcrumb_title} {title} {dir} {description} />
 
-<SectionHeader 
-  category='marketing' 
-  title='Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte' 
+<SectionHeader
+  category="marketing"
+  title="Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte"
   {breadcrumb_title}
   {description}
 />
 
 <SectionBlock title="Team member cards">
   Use this example to show information about your team members such as the name, occupation,
-        picture, and social media accounts inside a card component.
+  picture, and social media accounts inside a card component.
 </SectionBlock>
 
 <ExampleDiv>

@@ -4,87 +4,76 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [0.3.6](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.3.5...v0.3.6) (2023-03-22)
 
-
 ### Features
 
-* add portfolio page, Portfolio, PortfolioItem component ([56e936d](https://github.com/shinokada/flowbite-svelte-blocks/commit/56e936d82d312e2faf6e91b069d1cbc174adbd6e))
-* add TableHeader component and table-headers page, update routes/sections font ([18329a3](https://github.com/shinokada/flowbite-svelte-blocks/commit/18329a3644e84769302619a2f5978ef945c5398d))
-
+- add portfolio page, Portfolio, PortfolioItem component ([56e936d](https://github.com/shinokada/flowbite-svelte-blocks/commit/56e936d82d312e2faf6e91b069d1cbc174adbd6e))
+- add TableHeader component and table-headers page, update routes/sections font ([18329a3](https://github.com/shinokada/flowbite-svelte-blocks/commit/18329a3644e84769302619a2f5978ef945c5398d))
 
 ### Bug Fixes
 
-* add padding ([6e07ab0](https://github.com/shinokada/flowbite-svelte-blocks/commit/6e07ab0da05842ad2abc53479e3a12c6b85262d4))
-* docs pages ([91830c3](https://github.com/shinokada/flowbite-svelte-blocks/commit/91830c3f8e5735da4b6872c6444b24691f24294a))
-* event-schedule title ([54a0759](https://github.com/shinokada/flowbite-svelte-blocks/commit/54a075954671bca9a6f9f2ec3af376c4a2a7fd46))
-* remove incomplete from TableHeader section ([0274146](https://github.com/shinokada/flowbite-svelte-blocks/commit/0274146753fac4de1d19ba208d1079dde1d8ab37))
+- add padding ([6e07ab0](https://github.com/shinokada/flowbite-svelte-blocks/commit/6e07ab0da05842ad2abc53479e3a12c6b85262d4))
+- docs pages ([91830c3](https://github.com/shinokada/flowbite-svelte-blocks/commit/91830c3f8e5735da4b6872c6444b24691f24294a))
+- event-schedule title ([54a0759](https://github.com/shinokada/flowbite-svelte-blocks/commit/54a075954671bca9a6f9f2ec3af376c4a2a7fd46))
+- remove incomplete from TableHeader section ([0274146](https://github.com/shinokada/flowbite-svelte-blocks/commit/0274146753fac4de1d19ba208d1079dde1d8ab37))
 
 ### [0.3.5](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.3.4...v0.3.5) (2023-03-22)
 
-
 ### Features
 
-* add event-schedule page, Schedule, ScheduleItem components ([be38cc5](https://github.com/shinokada/flowbite-svelte-blocks/commit/be38cc5fcd2474ff286c655180b925654ee3493d))
-* add tailwind css theme colors, add event-schedule docs page ([a3e7be5](https://github.com/shinokada/flowbite-svelte-blocks/commit/a3e7be5de14bde562fe0a63018fed8017a5c2190))
-
+- add event-schedule page, Schedule, ScheduleItem components ([be38cc5](https://github.com/shinokada/flowbite-svelte-blocks/commit/be38cc5fcd2474ff286c655180b925654ee3493d))
+- add tailwind css theme colors, add event-schedule docs page ([a3e7be5](https://github.com/shinokada/flowbite-svelte-blocks/commit/a3e7be5de14bde562fe0a63018fed8017a5c2190))
 
 ### Bug Fixes
 
-* btnClass for Button in sidenav page ([265dc49](https://github.com/shinokada/flowbite-svelte-blocks/commit/265dc49e49c7b092abf95f14ad480ecb656ecc8f))
-* crud-create-drawers page ([8ac731d](https://github.com/shinokada/flowbite-svelte-blocks/commit/8ac731d64e2d1dab339a47a7bec8fd26f733cd2e))
-* remove history from docs/index.html ([1e8666a](https://github.com/shinokada/flowbite-svelte-blocks/commit/1e8666a763c9754b424c5e6fc715e76a5657d70b))
-* sideba page SidebarWrapper class ([d569f4c](https://github.com/shinokada/flowbite-svelte-blocks/commit/d569f4c631b6c5dae8aeaeaabea90c988d8d469d))
+- btnClass for Button in sidenav page ([265dc49](https://github.com/shinokada/flowbite-svelte-blocks/commit/265dc49e49c7b092abf95f14ad480ecb656ecc8f))
+- crud-create-drawers page ([8ac731d](https://github.com/shinokada/flowbite-svelte-blocks/commit/8ac731d64e2d1dab339a47a7bec8fd26f733cd2e))
+- remove history from docs/index.html ([1e8666a](https://github.com/shinokada/flowbite-svelte-blocks/commit/1e8666a763c9754b424c5e6fc715e76a5657d70b))
+- sideba page SidebarWrapper class ([d569f4c](https://github.com/shinokada/flowbite-svelte-blocks/commit/d569f4c631b6c5dae8aeaeaabea90c988d8d469d))
 
 ### [0.3.4](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.3.3...v0.3.4) (2023-03-21)
 
-
 ### Features
 
-* add crud-create-drawers ([f60926e](https://github.com/shinokada/flowbite-svelte-blocks/commit/f60926e3a75983749ac6ce7a11dc4a96bd1ea8f6))
-* add docs links ([d43f361](https://github.com/shinokada/flowbite-svelte-blocks/commit/d43f36134470f4c3510fd301e7690388609c7367))
-* add SidebarBottomNav and SidebarBottomNavItem ([2b3e472](https://github.com/shinokada/flowbite-svelte-blocks/commit/2b3e4721d4e3fff9be06721c7a1887794a6968e1))
-
+- add crud-create-drawers ([f60926e](https://github.com/shinokada/flowbite-svelte-blocks/commit/f60926e3a75983749ac6ce7a11dc4a96bd1ea8f6))
+- add docs links ([d43f361](https://github.com/shinokada/flowbite-svelte-blocks/commit/d43f36134470f4c3510fd301e7690388609c7367))
+- add SidebarBottomNav and SidebarBottomNavItem ([2b3e472](https://github.com/shinokada/flowbite-svelte-blocks/commit/2b3e4721d4e3fff9be06721c7a1887794a6968e1))
 
 ### Bug Fixes
 
-* add _config.yml, add DocsLink.svelte for read doc ([dcd4e03](https://github.com/shinokada/flowbite-svelte-blocks/commit/dcd4e0392fae5b6952d95a29f13dd11d3560ff1a))
-* add Coming Soon to pages ([75aabc6](https://github.com/shinokada/flowbite-svelte-blocks/commit/75aabc64e614cfe82024e2caaa6b2f093c12adb1))
-* comments link ([d507a91](https://github.com/shinokada/flowbite-svelte-blocks/commit/d507a91a72d70ac676d2a50ec0b29cd131085bb6))
-* docs link in the top menu ([4dc2f4e](https://github.com/shinokada/flowbite-svelte-blocks/commit/4dc2f4e4468dd2f0dd81c3e26239a407c3c1bac5))
-* h2 color ([4017b40](https://github.com/shinokada/flowbite-svelte-blocks/commit/4017b40d75f0e88877cab22d6d3667fa49d4437f))
-* remove DocsLink since docsify subpage direct link is not working ([1083244](https://github.com/shinokada/flowbite-svelte-blocks/commit/1083244f985f528ccd513f6a429c4f2a529c11d5))
+- add \_config.yml, add DocsLink.svelte for read doc ([dcd4e03](https://github.com/shinokada/flowbite-svelte-blocks/commit/dcd4e0392fae5b6952d95a29f13dd11d3560ff1a))
+- add Coming Soon to pages ([75aabc6](https://github.com/shinokada/flowbite-svelte-blocks/commit/75aabc64e614cfe82024e2caaa6b2f093c12adb1))
+- comments link ([d507a91](https://github.com/shinokada/flowbite-svelte-blocks/commit/d507a91a72d70ac676d2a50ec0b29cd131085bb6))
+- docs link in the top menu ([4dc2f4e](https://github.com/shinokada/flowbite-svelte-blocks/commit/4dc2f4e4468dd2f0dd81c3e26239a407c3c1bac5))
+- h2 color ([4017b40](https://github.com/shinokada/flowbite-svelte-blocks/commit/4017b40d75f0e88877cab22d6d3667fa49d4437f))
+- remove DocsLink since docsify subpage direct link is not working ([1083244](https://github.com/shinokada/flowbite-svelte-blocks/commit/1083244f985f528ccd513f6a429c4f2a529c11d5))
 
 ### [0.3.3](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.3.2...v0.3.3) (2023-02-20)
 
-
 ### Bug Fixes
 
-* peerDependencies version fix ([1343197](https://github.com/shinokada/flowbite-svelte-blocks/commit/13431973767492ae640255404fb1a40caf4f9547))
+- peerDependencies version fix ([1343197](https://github.com/shinokada/flowbite-svelte-blocks/commit/13431973767492ae640255404fb1a40caf4f9547))
 
 ### [0.3.2](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.3.1...v0.3.2) (2023-02-20)
 
-
 ### Bug Fixes
 
-* add types ./dist/index.d.ts to package.json and update peerDependencies version ([6e48403](https://github.com/shinokada/flowbite-svelte-blocks/commit/6e48403ec91a34d020b18fcb923cbecc32a153ed))
+- add types ./dist/index.d.ts to package.json and update peerDependencies version ([6e48403](https://github.com/shinokada/flowbite-svelte-blocks/commit/6e48403ec91a34d020b18fcb923cbecc32a153ed))
 
 ### [0.3.1](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.3.0...v0.3.1) (2023-02-20)
 
-
 ### Bug Fixes
 
-* add svelte-heros to peerDependencies ([90b0ca3](https://github.com/shinokada/flowbite-svelte-blocks/commit/90b0ca3db77aa218043cff58a2eda1dc29910177))
+- add svelte-heros to peerDependencies ([90b0ca3](https://github.com/shinokada/flowbite-svelte-blocks/commit/90b0ca3db77aa218043cff58a2eda1dc29910177))
 
 ## [0.3.0](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.2.18...v0.3.0) (2023-02-20)
 
-
 ### Features
 
-* README update for warning ([6dc5580](https://github.com/shinokada/flowbite-svelte-blocks/commit/6dc55808d85e27cfc459979e91b7551e34256278))
-
+- README update for warning ([6dc5580](https://github.com/shinokada/flowbite-svelte-blocks/commit/6dc55808d85e27cfc459979e91b7551e34256278))
 
 ### Bug Fixes
 
-* add peerDependencies ([b8f061b](https://github.com/shinokada/flowbite-svelte-blocks/commit/b8f061b21faacb4baccd4cd38e6b53800c0bf837))
+- add peerDependencies ([b8f061b](https://github.com/shinokada/flowbite-svelte-blocks/commit/b8f061b21faacb4baccd4cd38e6b53800c0bf837))
 
 ### [0.2.18](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.2.17...v0.2.18) (2023-02-20)
 
@@ -92,94 +81,90 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [0.2.16](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.2.13...v0.2.16) (2023-02-20)
 
-
 ### Features
 
-* add application pages ([e694b2e](https://github.com/shinokada/flowbite-svelte-blocks/commit/e694b2ecb3e78e1513ad559b9f65772c5e30b67a))
-* add crud-delete-confirm ([50e67e7](https://github.com/shinokada/flowbite-svelte-blocks/commit/50e67e7d1f21b6e72afe170c145cf36eabdb0fb8))
-* add docs dir ([74a6385](https://github.com/shinokada/flowbite-svelte-blocks/commit/74a6385f0645c668edc16cb6cbbeb377a3efe39a))
-* add meta details ([d2dfcee](https://github.com/shinokada/flowbite-svelte-blocks/commit/d2dfcee4b2f9585c2a74b1c68ba349ed7a45c120))
-* add meta to +page files ([8f0d08d](https://github.com/shinokada/flowbite-svelte-blocks/commit/8f0d08d85405e82edb3d964d05a437360982c7de))
-* add more docs ([8541f39](https://github.com/shinokada/flowbite-svelte-blocks/commit/8541f39eb9854403cf6a2d7708d095127b796141))
-* add publisher section ([1bc176a](https://github.com/shinokada/flowbite-svelte-blocks/commit/1bc176a7345be88ad7977e477b86b2dff932f749))
-* start table-headers ([2e74281](https://github.com/shinokada/flowbite-svelte-blocks/commit/2e74281f9f93a46f8dc688662ffad7cac751e9e5))
-* sveltekit update to 1.5.6 ([55d860e](https://github.com/shinokada/flowbite-svelte-blocks/commit/55d860eacf3d8de707816a4d91f5f5caf3de6fac))
-* update index ([52ffcf7](https://github.com/shinokada/flowbite-svelte-blocks/commit/52ffcf7890518904db2d30c39926730610c697b8))
-
+- add application pages ([e694b2e](https://github.com/shinokada/flowbite-svelte-blocks/commit/e694b2ecb3e78e1513ad559b9f65772c5e30b67a))
+- add crud-delete-confirm ([50e67e7](https://github.com/shinokada/flowbite-svelte-blocks/commit/50e67e7d1f21b6e72afe170c145cf36eabdb0fb8))
+- add docs dir ([74a6385](https://github.com/shinokada/flowbite-svelte-blocks/commit/74a6385f0645c668edc16cb6cbbeb377a3efe39a))
+- add meta details ([d2dfcee](https://github.com/shinokada/flowbite-svelte-blocks/commit/d2dfcee4b2f9585c2a74b1c68ba349ed7a45c120))
+- add meta to +page files ([8f0d08d](https://github.com/shinokada/flowbite-svelte-blocks/commit/8f0d08d85405e82edb3d964d05a437360982c7de))
+- add more docs ([8541f39](https://github.com/shinokada/flowbite-svelte-blocks/commit/8541f39eb9854403cf6a2d7708d095127b796141))
+- add publisher section ([1bc176a](https://github.com/shinokada/flowbite-svelte-blocks/commit/1bc176a7345be88ad7977e477b86b2dff932f749))
+- start table-headers ([2e74281](https://github.com/shinokada/flowbite-svelte-blocks/commit/2e74281f9f93a46f8dc688662ffad7cac751e9e5))
+- sveltekit update to 1.5.6 ([55d860e](https://github.com/shinokada/flowbite-svelte-blocks/commit/55d860eacf3d8de707816a4d91f5f5caf3de6fac))
+- update index ([52ffcf7](https://github.com/shinokada/flowbite-svelte-blocks/commit/52ffcf7890518904db2d30c39926730610c697b8))
 
 ### Bug Fixes
 
-* _sidbar.md ([64cf4ed](https://github.com/shinokada/flowbite-svelte-blocks/commit/64cf4ed5ef24a0be322ea985c9686ddf75364d0f))
-* add ./ to home ([5b40d28](https://github.com/shinokada/flowbite-svelte-blocks/commit/5b40d282ab7f5bd0f7ad4dff801e839e40253118))
-* add basePath ([4d2dea8](https://github.com/shinokada/flowbite-svelte-blocks/commit/4d2dea887c6c3a890396dab5212adb273a38877b))
-* add links to demo pages ([f9774fd](https://github.com/shinokada/flowbite-svelte-blocks/commit/f9774fd95e1c0e76e90d9ab8c240ca9a8e264391))
-* add maskable icon ([be05bc0](https://github.com/shinokada/flowbite-svelte-blocks/commit/be05bc0b0c51bf183fdf7e26691994a90896ec6d))
-* add md file to search in index.html ([84772c1](https://github.com/shinokada/flowbite-svelte-blocks/commit/84772c1a5fc0d31feb07adc3cdfddfabb3ff7ebd))
-* add README.md to Home ([6f8fac4](https://github.com/shinokada/flowbite-svelte-blocks/commit/6f8fac4e72a6177ca949fb4146c0d86e98b8a1c8))
-* add title to doc pages ([bce916c](https://github.com/shinokada/flowbite-svelte-blocks/commit/bce916c913756ea6f92240bb9093613b91a18b31))
-* change back cta-sections to cta ([dd35293](https://github.com/shinokada/flowbite-svelte-blocks/commit/dd35293f2a82af870519597432004674ea27ef3c))
-* change cta to cta-section and later change it back ([463ca84](https://github.com/shinokada/flowbite-svelte-blocks/commit/463ca84ff3730659ff573bbaf7479f4512cdb5b6))
-* change manifest.webmanifest and service-worker.js dir and update ([9d15142](https://github.com/shinokada/flowbite-svelte-blocks/commit/9d151429d9ffa653386e53d576df2c56103c791f))
-* change static to public ([eb24ef8](https://github.com/shinokada/flowbite-svelte-blocks/commit/eb24ef800f54e59537c1764f83690d43609edd96))
-* component name update from catsection to cat ([68c3167](https://github.com/shinokada/flowbite-svelte-blocks/commit/68c3167245b288bd4b0d0deaa13a7ddbc8e511d3))
-* Edit on Github links ([8f59bdd](https://github.com/shinokada/flowbite-svelte-blocks/commit/8f59bdd5f3bfc66d46390e645a5e419bb0e5cbf7))
-* Edit on Github links ([72c0243](https://github.com/shinokada/flowbite-svelte-blocks/commit/72c024304cd982aed463940cdc245d4f00a353b9))
-* home page ([dc10686](https://github.com/shinokada/flowbite-svelte-blocks/commit/dc1068661939ac9f584813c07ee8b47f57c1935c))
-* package.json ([fc8e65e](https://github.com/shinokada/flowbite-svelte-blocks/commit/fc8e65e047cc236cd2f00e486b220fb7c517bdff))
-* package.json ([381060b](https://github.com/shinokada/flowbite-svelte-blocks/commit/381060b0757acf95a19995f0f635073db715bb64))
-* remove basePath add relativePath: true, ([5ae02a5](https://github.com/shinokada/flowbite-svelte-blocks/commit/5ae02a5fbba73b2e43a327e039fe46f68058ae8c))
-* remove CustomerLogosection ([2d48775](https://github.com/shinokada/flowbite-svelte-blocks/commit/2d487758308826a0da0aa4f77341a92d4ba68c18))
-* svelte-preprocess update ([705f75a](https://github.com/shinokada/flowbite-svelte-blocks/commit/705f75a017152833ba1276bd2539928f88a57a06))
-* title update ([62028c7](https://github.com/shinokada/flowbite-svelte-blocks/commit/62028c70fcf46694bc83fd9e2444a03e4fbe9a5e))
-* typo ([fb06295](https://github.com/shinokada/flowbite-svelte-blocks/commit/fb06295df239fb8a159c5f9f78051ed4bd46898b))
-* update index.html ([18ca743](https://github.com/shinokada/flowbite-svelte-blocks/commit/18ca7437dba7e97f599baeefd4926074358b36ce))
-* update service-worker version ([722c039](https://github.com/shinokada/flowbite-svelte-blocks/commit/722c0396b115d0fc2f6b8d9d25df56a9957fd456))
-* version ([6264bf8](https://github.com/shinokada/flowbite-svelte-blocks/commit/6264bf84905ba37464638d3839a10e368db4c428))
+- \_sidbar.md ([64cf4ed](https://github.com/shinokada/flowbite-svelte-blocks/commit/64cf4ed5ef24a0be322ea985c9686ddf75364d0f))
+- add ./ to home ([5b40d28](https://github.com/shinokada/flowbite-svelte-blocks/commit/5b40d282ab7f5bd0f7ad4dff801e839e40253118))
+- add basePath ([4d2dea8](https://github.com/shinokada/flowbite-svelte-blocks/commit/4d2dea887c6c3a890396dab5212adb273a38877b))
+- add links to demo pages ([f9774fd](https://github.com/shinokada/flowbite-svelte-blocks/commit/f9774fd95e1c0e76e90d9ab8c240ca9a8e264391))
+- add maskable icon ([be05bc0](https://github.com/shinokada/flowbite-svelte-blocks/commit/be05bc0b0c51bf183fdf7e26691994a90896ec6d))
+- add md file to search in index.html ([84772c1](https://github.com/shinokada/flowbite-svelte-blocks/commit/84772c1a5fc0d31feb07adc3cdfddfabb3ff7ebd))
+- add README.md to Home ([6f8fac4](https://github.com/shinokada/flowbite-svelte-blocks/commit/6f8fac4e72a6177ca949fb4146c0d86e98b8a1c8))
+- add title to doc pages ([bce916c](https://github.com/shinokada/flowbite-svelte-blocks/commit/bce916c913756ea6f92240bb9093613b91a18b31))
+- change back cta-sections to cta ([dd35293](https://github.com/shinokada/flowbite-svelte-blocks/commit/dd35293f2a82af870519597432004674ea27ef3c))
+- change cta to cta-section and later change it back ([463ca84](https://github.com/shinokada/flowbite-svelte-blocks/commit/463ca84ff3730659ff573bbaf7479f4512cdb5b6))
+- change manifest.webmanifest and service-worker.js dir and update ([9d15142](https://github.com/shinokada/flowbite-svelte-blocks/commit/9d151429d9ffa653386e53d576df2c56103c791f))
+- change static to public ([eb24ef8](https://github.com/shinokada/flowbite-svelte-blocks/commit/eb24ef800f54e59537c1764f83690d43609edd96))
+- component name update from catsection to cat ([68c3167](https://github.com/shinokada/flowbite-svelte-blocks/commit/68c3167245b288bd4b0d0deaa13a7ddbc8e511d3))
+- Edit on Github links ([8f59bdd](https://github.com/shinokada/flowbite-svelte-blocks/commit/8f59bdd5f3bfc66d46390e645a5e419bb0e5cbf7))
+- Edit on Github links ([72c0243](https://github.com/shinokada/flowbite-svelte-blocks/commit/72c024304cd982aed463940cdc245d4f00a353b9))
+- home page ([dc10686](https://github.com/shinokada/flowbite-svelte-blocks/commit/dc1068661939ac9f584813c07ee8b47f57c1935c))
+- package.json ([fc8e65e](https://github.com/shinokada/flowbite-svelte-blocks/commit/fc8e65e047cc236cd2f00e486b220fb7c517bdff))
+- package.json ([381060b](https://github.com/shinokada/flowbite-svelte-blocks/commit/381060b0757acf95a19995f0f635073db715bb64))
+- remove basePath add relativePath: true, ([5ae02a5](https://github.com/shinokada/flowbite-svelte-blocks/commit/5ae02a5fbba73b2e43a327e039fe46f68058ae8c))
+- remove CustomerLogosection ([2d48775](https://github.com/shinokada/flowbite-svelte-blocks/commit/2d487758308826a0da0aa4f77341a92d4ba68c18))
+- svelte-preprocess update ([705f75a](https://github.com/shinokada/flowbite-svelte-blocks/commit/705f75a017152833ba1276bd2539928f88a57a06))
+- title update ([62028c7](https://github.com/shinokada/flowbite-svelte-blocks/commit/62028c70fcf46694bc83fd9e2444a03e4fbe9a5e))
+- typo ([fb06295](https://github.com/shinokada/flowbite-svelte-blocks/commit/fb06295df239fb8a159c5f9f78051ed4bd46898b))
+- update index.html ([18ca743](https://github.com/shinokada/flowbite-svelte-blocks/commit/18ca7437dba7e97f599baeefd4926074358b36ce))
+- update service-worker version ([722c039](https://github.com/shinokada/flowbite-svelte-blocks/commit/722c0396b115d0fc2f6b8d9d25df56a9957fd456))
+- version ([6264bf8](https://github.com/shinokada/flowbite-svelte-blocks/commit/6264bf84905ba37464638d3839a10e368db4c428))
 
 ### [0.2.14](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.2.13...v0.2.14) (2023-02-20)
 
-
 ### Features
 
-* add application pages ([e694b2e](https://github.com/shinokada/flowbite-svelte-blocks/commit/e694b2ecb3e78e1513ad559b9f65772c5e30b67a))
-* add crud-delete-confirm ([50e67e7](https://github.com/shinokada/flowbite-svelte-blocks/commit/50e67e7d1f21b6e72afe170c145cf36eabdb0fb8))
-* add docs dir ([74a6385](https://github.com/shinokada/flowbite-svelte-blocks/commit/74a6385f0645c668edc16cb6cbbeb377a3efe39a))
-* add meta details ([d2dfcee](https://github.com/shinokada/flowbite-svelte-blocks/commit/d2dfcee4b2f9585c2a74b1c68ba349ed7a45c120))
-* add meta to +page files ([8f0d08d](https://github.com/shinokada/flowbite-svelte-blocks/commit/8f0d08d85405e82edb3d964d05a437360982c7de))
-* add more docs ([8541f39](https://github.com/shinokada/flowbite-svelte-blocks/commit/8541f39eb9854403cf6a2d7708d095127b796141))
-* add publisher section ([1bc176a](https://github.com/shinokada/flowbite-svelte-blocks/commit/1bc176a7345be88ad7977e477b86b2dff932f749))
-* start table-headers ([2e74281](https://github.com/shinokada/flowbite-svelte-blocks/commit/2e74281f9f93a46f8dc688662ffad7cac751e9e5))
-* sveltekit update to 1.5.6 ([55d860e](https://github.com/shinokada/flowbite-svelte-blocks/commit/55d860eacf3d8de707816a4d91f5f5caf3de6fac))
-* update index ([52ffcf7](https://github.com/shinokada/flowbite-svelte-blocks/commit/52ffcf7890518904db2d30c39926730610c697b8))
-
+- add application pages ([e694b2e](https://github.com/shinokada/flowbite-svelte-blocks/commit/e694b2ecb3e78e1513ad559b9f65772c5e30b67a))
+- add crud-delete-confirm ([50e67e7](https://github.com/shinokada/flowbite-svelte-blocks/commit/50e67e7d1f21b6e72afe170c145cf36eabdb0fb8))
+- add docs dir ([74a6385](https://github.com/shinokada/flowbite-svelte-blocks/commit/74a6385f0645c668edc16cb6cbbeb377a3efe39a))
+- add meta details ([d2dfcee](https://github.com/shinokada/flowbite-svelte-blocks/commit/d2dfcee4b2f9585c2a74b1c68ba349ed7a45c120))
+- add meta to +page files ([8f0d08d](https://github.com/shinokada/flowbite-svelte-blocks/commit/8f0d08d85405e82edb3d964d05a437360982c7de))
+- add more docs ([8541f39](https://github.com/shinokada/flowbite-svelte-blocks/commit/8541f39eb9854403cf6a2d7708d095127b796141))
+- add publisher section ([1bc176a](https://github.com/shinokada/flowbite-svelte-blocks/commit/1bc176a7345be88ad7977e477b86b2dff932f749))
+- start table-headers ([2e74281](https://github.com/shinokada/flowbite-svelte-blocks/commit/2e74281f9f93a46f8dc688662ffad7cac751e9e5))
+- sveltekit update to 1.5.6 ([55d860e](https://github.com/shinokada/flowbite-svelte-blocks/commit/55d860eacf3d8de707816a4d91f5f5caf3de6fac))
+- update index ([52ffcf7](https://github.com/shinokada/flowbite-svelte-blocks/commit/52ffcf7890518904db2d30c39926730610c697b8))
 
 ### Bug Fixes
 
-* _sidbar.md ([64cf4ed](https://github.com/shinokada/flowbite-svelte-blocks/commit/64cf4ed5ef24a0be322ea985c9686ddf75364d0f))
-* add ./ to home ([5b40d28](https://github.com/shinokada/flowbite-svelte-blocks/commit/5b40d282ab7f5bd0f7ad4dff801e839e40253118))
-* add basePath ([4d2dea8](https://github.com/shinokada/flowbite-svelte-blocks/commit/4d2dea887c6c3a890396dab5212adb273a38877b))
-* add links to demo pages ([f9774fd](https://github.com/shinokada/flowbite-svelte-blocks/commit/f9774fd95e1c0e76e90d9ab8c240ca9a8e264391))
-* add maskable icon ([be05bc0](https://github.com/shinokada/flowbite-svelte-blocks/commit/be05bc0b0c51bf183fdf7e26691994a90896ec6d))
-* add md file to search in index.html ([84772c1](https://github.com/shinokada/flowbite-svelte-blocks/commit/84772c1a5fc0d31feb07adc3cdfddfabb3ff7ebd))
-* add README.md to Home ([6f8fac4](https://github.com/shinokada/flowbite-svelte-blocks/commit/6f8fac4e72a6177ca949fb4146c0d86e98b8a1c8))
-* add title to doc pages ([bce916c](https://github.com/shinokada/flowbite-svelte-blocks/commit/bce916c913756ea6f92240bb9093613b91a18b31))
-* change back cta-sections to cta ([dd35293](https://github.com/shinokada/flowbite-svelte-blocks/commit/dd35293f2a82af870519597432004674ea27ef3c))
-* change cta to cta-section and later change it back ([463ca84](https://github.com/shinokada/flowbite-svelte-blocks/commit/463ca84ff3730659ff573bbaf7479f4512cdb5b6))
-* change manifest.webmanifest and service-worker.js dir and update ([9d15142](https://github.com/shinokada/flowbite-svelte-blocks/commit/9d151429d9ffa653386e53d576df2c56103c791f))
-* change static to public ([eb24ef8](https://github.com/shinokada/flowbite-svelte-blocks/commit/eb24ef800f54e59537c1764f83690d43609edd96))
-* component name update from catsection to cat ([68c3167](https://github.com/shinokada/flowbite-svelte-blocks/commit/68c3167245b288bd4b0d0deaa13a7ddbc8e511d3))
-* Edit on Github links ([8f59bdd](https://github.com/shinokada/flowbite-svelte-blocks/commit/8f59bdd5f3bfc66d46390e645a5e419bb0e5cbf7))
-* Edit on Github links ([72c0243](https://github.com/shinokada/flowbite-svelte-blocks/commit/72c024304cd982aed463940cdc245d4f00a353b9))
-* home page ([dc10686](https://github.com/shinokada/flowbite-svelte-blocks/commit/dc1068661939ac9f584813c07ee8b47f57c1935c))
-* package.json ([fc8e65e](https://github.com/shinokada/flowbite-svelte-blocks/commit/fc8e65e047cc236cd2f00e486b220fb7c517bdff))
-* package.json ([381060b](https://github.com/shinokada/flowbite-svelte-blocks/commit/381060b0757acf95a19995f0f635073db715bb64))
-* remove basePath add relativePath: true, ([5ae02a5](https://github.com/shinokada/flowbite-svelte-blocks/commit/5ae02a5fbba73b2e43a327e039fe46f68058ae8c))
-* remove CustomerLogosection ([2d48775](https://github.com/shinokada/flowbite-svelte-blocks/commit/2d487758308826a0da0aa4f77341a92d4ba68c18))
-* svelte-preprocess update ([705f75a](https://github.com/shinokada/flowbite-svelte-blocks/commit/705f75a017152833ba1276bd2539928f88a57a06))
-* title update ([62028c7](https://github.com/shinokada/flowbite-svelte-blocks/commit/62028c70fcf46694bc83fd9e2444a03e4fbe9a5e))
-* typo ([fb06295](https://github.com/shinokada/flowbite-svelte-blocks/commit/fb06295df239fb8a159c5f9f78051ed4bd46898b))
-* update index.html ([18ca743](https://github.com/shinokada/flowbite-svelte-blocks/commit/18ca7437dba7e97f599baeefd4926074358b36ce))
-* update service-worker version ([722c039](https://github.com/shinokada/flowbite-svelte-blocks/commit/722c0396b115d0fc2f6b8d9d25df56a9957fd456))
+- \_sidbar.md ([64cf4ed](https://github.com/shinokada/flowbite-svelte-blocks/commit/64cf4ed5ef24a0be322ea985c9686ddf75364d0f))
+- add ./ to home ([5b40d28](https://github.com/shinokada/flowbite-svelte-blocks/commit/5b40d282ab7f5bd0f7ad4dff801e839e40253118))
+- add basePath ([4d2dea8](https://github.com/shinokada/flowbite-svelte-blocks/commit/4d2dea887c6c3a890396dab5212adb273a38877b))
+- add links to demo pages ([f9774fd](https://github.com/shinokada/flowbite-svelte-blocks/commit/f9774fd95e1c0e76e90d9ab8c240ca9a8e264391))
+- add maskable icon ([be05bc0](https://github.com/shinokada/flowbite-svelte-blocks/commit/be05bc0b0c51bf183fdf7e26691994a90896ec6d))
+- add md file to search in index.html ([84772c1](https://github.com/shinokada/flowbite-svelte-blocks/commit/84772c1a5fc0d31feb07adc3cdfddfabb3ff7ebd))
+- add README.md to Home ([6f8fac4](https://github.com/shinokada/flowbite-svelte-blocks/commit/6f8fac4e72a6177ca949fb4146c0d86e98b8a1c8))
+- add title to doc pages ([bce916c](https://github.com/shinokada/flowbite-svelte-blocks/commit/bce916c913756ea6f92240bb9093613b91a18b31))
+- change back cta-sections to cta ([dd35293](https://github.com/shinokada/flowbite-svelte-blocks/commit/dd35293f2a82af870519597432004674ea27ef3c))
+- change cta to cta-section and later change it back ([463ca84](https://github.com/shinokada/flowbite-svelte-blocks/commit/463ca84ff3730659ff573bbaf7479f4512cdb5b6))
+- change manifest.webmanifest and service-worker.js dir and update ([9d15142](https://github.com/shinokada/flowbite-svelte-blocks/commit/9d151429d9ffa653386e53d576df2c56103c791f))
+- change static to public ([eb24ef8](https://github.com/shinokada/flowbite-svelte-blocks/commit/eb24ef800f54e59537c1764f83690d43609edd96))
+- component name update from catsection to cat ([68c3167](https://github.com/shinokada/flowbite-svelte-blocks/commit/68c3167245b288bd4b0d0deaa13a7ddbc8e511d3))
+- Edit on Github links ([8f59bdd](https://github.com/shinokada/flowbite-svelte-blocks/commit/8f59bdd5f3bfc66d46390e645a5e419bb0e5cbf7))
+- Edit on Github links ([72c0243](https://github.com/shinokada/flowbite-svelte-blocks/commit/72c024304cd982aed463940cdc245d4f00a353b9))
+- home page ([dc10686](https://github.com/shinokada/flowbite-svelte-blocks/commit/dc1068661939ac9f584813c07ee8b47f57c1935c))
+- package.json ([fc8e65e](https://github.com/shinokada/flowbite-svelte-blocks/commit/fc8e65e047cc236cd2f00e486b220fb7c517bdff))
+- package.json ([381060b](https://github.com/shinokada/flowbite-svelte-blocks/commit/381060b0757acf95a19995f0f635073db715bb64))
+- remove basePath add relativePath: true, ([5ae02a5](https://github.com/shinokada/flowbite-svelte-blocks/commit/5ae02a5fbba73b2e43a327e039fe46f68058ae8c))
+- remove CustomerLogosection ([2d48775](https://github.com/shinokada/flowbite-svelte-blocks/commit/2d487758308826a0da0aa4f77341a92d4ba68c18))
+- svelte-preprocess update ([705f75a](https://github.com/shinokada/flowbite-svelte-blocks/commit/705f75a017152833ba1276bd2539928f88a57a06))
+- title update ([62028c7](https://github.com/shinokada/flowbite-svelte-blocks/commit/62028c70fcf46694bc83fd9e2444a03e4fbe9a5e))
+- typo ([fb06295](https://github.com/shinokada/flowbite-svelte-blocks/commit/fb06295df239fb8a159c5f9f78051ed4bd46898b))
+- update index.html ([18ca743](https://github.com/shinokada/flowbite-svelte-blocks/commit/18ca7437dba7e97f599baeefd4926074358b36ce))
+- update service-worker version ([722c039](https://github.com/shinokada/flowbite-svelte-blocks/commit/722c0396b115d0fc2f6b8d9d25df56a9957fd456))
 
 ### [0.2.13](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.2.12...v0.2.13) (2022-09-16)
 
