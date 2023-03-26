@@ -11,16 +11,16 @@
 
 <MetaTag {breadcrumb_title} {title} {dir} {description} />
 
-<SectionHeader 
-  category='marketing' 
-  title='Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte' 
+<SectionHeader
+  category="marketing"
+  title="Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte"
   {breadcrumb_title}
   {description}
 />
 
 <SectionBlock title="Default login page">
-  This example includes a form with an email and password input accompanied by the logo and
-        other helper texts and links to other authentication pages.
+  This example includes a form with an email and password input accompanied by the logo and other
+  helper texts and links to other authentication pages.
 </SectionBlock>
 
 <ExampleDiv>

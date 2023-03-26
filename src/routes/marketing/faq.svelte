@@ -10,16 +10,16 @@
 
 <MetaTag {breadcrumb_title} {title} {dir} {description} />
 
-<SectionHeader 
-  category='marketing' 
-  title='Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte' 
+<SectionHeader
+  category="marketing"
+  title="Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte"
   {breadcrumb_title}
   {description}
 />
 
 <SectionBlock title="Default example">
-  Use this simple example of a FAQ section to show a list of questions and answers based on
-        two columns and a question mark icon.
+  Use this simple example of a FAQ section to show a list of questions and answers based on two
+  columns and a question mark icon.
 </SectionBlock>
 
 <ExampleDiv>

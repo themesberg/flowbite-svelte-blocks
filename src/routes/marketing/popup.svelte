@@ -11,16 +11,16 @@
 
 <MetaTag {breadcrumb_title} {title} {dir} {description} />
 
-<SectionHeader 
-  category='marketing' 
-  title='Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte' 
+<SectionHeader
+  category="marketing"
+  title="Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte"
   {breadcrumb_title}
   {description}
 />
 
 <SectionBlock title="Default popup">
-  Use this example of a popup element to show a simple yes or no type of dialog to your
-        website visitor based on the Modal component from Flowbite.
+  Use this example of a popup element to show a simple yes or no type of dialog to your website
+  visitor based on the Modal component from Flowbite.
 </SectionBlock>
 
 <ExampleDiv class="flex items-center justify-center">

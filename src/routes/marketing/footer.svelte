@@ -7,7 +7,8 @@
     Instagram,
     Github,
     Twitter,
-    MetaTag, SectionBlock
+    MetaTag,
+    SectionBlock
   } from '../utils';
   import {
     Footer,
@@ -26,16 +27,16 @@
 
 <MetaTag {breadcrumb_title} {title} {dir} {description} />
 
-<SectionHeader 
-  category='marketing' 
-  title='Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte' 
+<SectionHeader
+  category="marketing"
+  title="Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte"
   {breadcrumb_title}
   {description}
 />
 
 <SectionBlock title="Default footer section">
-  Use this example of a footer section to show the logo of your brand, a description, links,
-        and the copyright notice.
+  Use this example of a footer section to show the logo of your brand, a description, links, and the
+  copyright notice.
 </SectionBlock>
 
 <ExampleDiv>

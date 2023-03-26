@@ -27,15 +27,13 @@
   class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4"
 >
   <a href="/">
-    <Button size="lg" color="red">
-      Learn more <ArrowRight size="18" class="ml-2" />
-    </Button>
+    <button size="lg" color="red">Learn more <ArrowRight size="18" class="ml-2" /></button>
   </a>
   <a href="/">
-    <Button size="lg" color="light">
+    <button size="lg" color="light">
       <VideoCamera variation="solid" size="28" class="pt-1" />
       Watch video
-    </Button>
+    </button>
   </a>
 </div>
 <HeroBody>
@@ -75,14 +73,14 @@
       simplify their payment stack.
     </svelte:fragment>
     <a href="/"
-      ><Button size="xl" color="red" class="inline-flex items-center justify-center mr-3"
-        >Get started<ArrowRight size="18" class="ml-2 -mr-1" /></Button
-      >
+      ><button size="xl" color="red" class="inline-flex items-center justify-center mr-3">
+        Get started<ArrowRight size="18" class="ml-2 -mr-1" />
+      </button>
     </a>
     <a href="/"
-      ><Button color="light" size="xl" class="inline-flex items-center justify-center"
-        >Speak to Sales</Button
-      >
+      ><button color="light" size="xl" class="inline-flex items-center justify-center">
+        Speak to Sales
+      </button>
     </a>
   </HeroHeader>
 </div>

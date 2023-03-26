@@ -11,16 +11,16 @@
 
 <MetaTag {breadcrumb_title} {title} {dir} {description} />
 
-<SectionHeader 
-  category='marketing' 
-  title='Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte' 
+<SectionHeader
+  category="marketing"
+  title="Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte"
   {breadcrumb_title}
   {description}
 />
 
 <SectionBlock title="Default reset password page">
-  Use this example with an email input and two password input fields to let the user change
-  their password after receiving the account recovery email.
+  Use this example with an email input and two password input fields to let the user change their
+  password after receiving the account recovery email.
 </SectionBlock>
 
 <ExampleDiv>

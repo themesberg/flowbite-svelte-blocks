@@ -10,16 +10,16 @@
 
 <MetaTag {breadcrumb_title} {title} {dir} {description} />
 
-<SectionHeader 
-  category='marketing' 
-  title='Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte' 
+<SectionHeader
+  category="marketing"
+  title="Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte"
   {breadcrumb_title}
   {description}
 />
 
 <SectionBlock title="Blockquote example">
-  Use this simple example of a testimonial based on a blockquote element and show the text,
-  customer avatar, name, and occupation.
+  Use this simple example of a testimonial based on a blockquote element and show the text, customer
+  avatar, name, and occupation.
 </SectionBlock>
 
 <ExampleDiv>

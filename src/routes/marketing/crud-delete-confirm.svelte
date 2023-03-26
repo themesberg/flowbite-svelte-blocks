@@ -11,16 +11,16 @@
 
 <MetaTag {breadcrumb_title} {title} {dir} {description} />
 
-<SectionHeader 
-  category='marketing' 
-  title='Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte' 
+<SectionHeader
+  category="marketing"
+  title="Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte"
   {breadcrumb_title}
   {description}
 />
 
 <SectionBlock title="Default delete confirmation modal">
-  Use this free example of a modal component coded with Tailwind CSS to confirm with the user
-  before deleting an item from the database.
+  Use this free example of a modal component coded with Tailwind CSS to confirm with the user before
+  deleting an item from the database.
 </SectionBlock>
 
 <ExampleDiv>

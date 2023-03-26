@@ -12,16 +12,16 @@
 
 <MetaTag {breadcrumb_title} {title} {dir} {description} />
 
-<SectionHeader 
-  category='marketing' 
-  title='Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte' 
+<SectionHeader
+  category="marketing"
+  title="Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte"
   {breadcrumb_title}
   {description}
 />
 
 <SectionBlock title="Default CTA section">
-  Use this example to show a simple heading, paragraph, and a couple of CTA buttons to
-  encourage users to take action.
+  Use this example to show a simple heading, paragraph, and a couple of CTA buttons to encourage
+  users to take action.
 </SectionBlock>
 
 <ExampleDiv>

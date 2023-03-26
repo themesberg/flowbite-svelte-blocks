@@ -6,9 +6,8 @@
 
 ```html
 <script lang="ts">
-import { ForgotPassword, ForgotPasswordHeader } from 'flowbite-svelte-blocks';
+  import { ForgotPassword, ForgotPasswordHeader } from 'flowbite-svelte-blocks';
 </script>
-
 
 <ForgotPasswordHeader
   src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo.svg"
@@ -28,22 +27,22 @@ import { ForgotPassword, ForgotPasswordHeader } from 'flowbite-svelte-blocks';
   </p>
   <form class="mt-4 space-y-4 lg:mt-5 md:space-y-5">
     <div>
-      <Label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-        >Your email</Label
+      <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+        >Your email</label
       >
-      <Input type="email" name="email" id="email" placeholder="name@company.com" required />
+      <input type="email" name="email" id="email" placeholder="name@company.com" required />
     </div>
     <div class="flex items-start">
       <div class="flex items-center h-5">
         <Checkbox id="terms" aria-describedby="terms" required
-          >I accept the <a
-            class="font-medium text-primary-600 hover:underline dark:text-primary-500"
-            href="/">Terms and Conditions</a
+          >I accept the
+          <a class="font-medium text-primary-600 hover:underline dark:text-primary-500" href="/"
+            >Terms and Conditions</a
           ></Checkbox
         >
       </div>
     </div>
-    <Button type="submit" color="red">Reset password</Button>
+    <button type="submit" color="red">Reset password</button>
   </form>
 </ForgotPassword>
 ```

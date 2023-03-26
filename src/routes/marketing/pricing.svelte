@@ -18,16 +18,16 @@
 
 <MetaTag {breadcrumb_title} {title} {dir} {description} />
 
-<SectionHeader 
-  category='marketing' 
-  title='Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte' 
+<SectionHeader
+  category="marketing"
+  title="Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte"
   {breadcrumb_title}
   {description}
 />
 
 <SectionBlock title="Default pricing table">
-  Use this example of three pricing cards showcasing the pricing plan title, description,
-        feature list, and CTA button.
+  Use this example of three pricing cards showcasing the pricing plan title, description, feature
+  list, and CTA button.
 </SectionBlock>
 
 <ExampleDiv>

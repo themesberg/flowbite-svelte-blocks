@@ -21,7 +21,7 @@
 </script>
 
 <header>
-  <Navbar let:hidden let:toggle fluid={false} {navClass} {navDivClass}>
+  <Navbar let:hidden let:toggle fluid="{false}" {navClass} {navDivClass}>
     <NavBrand href="/">
       <img
         src="https://flowbite.com/docs/images/logo.svg"
@@ -33,10 +33,10 @@
       </span>
     </NavBrand>
     <div class="flex items-center lg:order-2">
-      <Button href="/" color="dark">Log in</Button>
-      <Button href="/" class="ml-2" color="red">Get started</Button>
+      <button href="/" color="dark">Log in</button>
+      <button href="/" class="ml-2" color="red">Get started</button>
       <NavHamburger
-        on:click={toggle}
+        on:click="{toggle}"
         btnClass="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
       />
     </div>
@@ -45,7 +45,7 @@
       divClass="justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
       ulClass="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0"
     >
-      <NavLi href="/" active={true}>Home</NavLi>
+      <NavLi href="/" active="{true}">Home</NavLi>
       <NavLi href="/">Company</NavLi>
       <NavLi href="/">Marketplace</NavLi>
       <NavLi href="/">Features</NavLi>

@@ -11,15 +11,16 @@
 
 <MetaTag {breadcrumb_title} {title} {dir} {description} />
 
-<SectionHeader 
-  category='marketing' 
-  title='Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte' 
+<SectionHeader
+  category="marketing"
+  title="Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte"
   {breadcrumb_title}
   {description}
 />
 
 <SectionBlock title="Default 404 page">
-  Use this free example of a 404 "not found" page coded with Tailwind CSS and Flowbite when a user visits a page that doesn't exist with a button back to the homepage.
+  Use this free example of a 404 "not found" page coded with Tailwind CSS and Flowbite when a user
+  visits a page that doesn't exist with a button back to the homepage.
 </SectionBlock>
 
 <ExampleDiv>

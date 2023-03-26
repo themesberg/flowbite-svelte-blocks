@@ -2,7 +2,57 @@
   import { Navbar, NavBrand, NavHamburger, NavUl, NavLi, Button, DarkMode } from 'flowbite-svelte';
   import { MetaTag } from './utils';
   import {
-    AdvancedTable, AccountRecoverysection, Bannersection, Blogsection, BlogTemplatesection, CommentSection, ContactFormsection, Contentsection, CookieConsentsection, CrudCreateDrawer, CrudCreateForm, CrudCreateModal, CrudDeleteConfirm, CrudReadDrawer, CrudReadModal, CrudReadSection, CrudSuccessMessage, CrudUpdateDrawer, CrudUpdateForm, CrudUpdateModal, Cta, DashboardFooter, DashboardNavbar, DropdownFilter, FacetedSearchDrawerSection, FacetedSearchModalSection , Faqsection, Featuresection, Footersection, Headersection, Herosection, LoginFormsection, Maintenancesection, Newslettersection, Page404section, Page500section, Popupsection, Portfoliosection, Pricingsection, ProjectPortfolioSection, RegisterFormsection, RelatedArticle, ResetPasswordFormsection, Schedulesection, SideNavigation, SocialProofsection, Teamsection, Testimonialsection, TableFooter, TableHeader, UserOnboarding
+    AdvancedTable,
+    AccountRecoverysection,
+    Bannersection,
+    Blogsection,
+    BlogTemplatesection,
+    CommentSection,
+    ContactFormsection,
+    Contentsection,
+    CookieConsentsection,
+    CrudCreateDrawer,
+    CrudCreateForm,
+    CrudCreateModal,
+    CrudDeleteConfirm,
+    CrudReadDrawer,
+    CrudReadModal,
+    CrudReadSection,
+    CrudSuccessMessage,
+    CrudUpdateDrawer,
+    CrudUpdateForm,
+    CrudUpdateModal,
+    Cta,
+    DashboardFooter,
+    DashboardNavbar,
+    DropdownFilter,
+    FacetedSearchDrawerSection,
+    FacetedSearchModalSection,
+    Faqsection,
+    Featuresection,
+    Footersection,
+    Headersection,
+    Herosection,
+    LoginFormsection,
+    Maintenancesection,
+    Newslettersection,
+    Page404section,
+    Page500section,
+    Popupsection,
+    Portfoliosection,
+    Pricingsection,
+    ProjectPortfolioSection,
+    RegisterFormsection,
+    RelatedArticle,
+    ResetPasswordFormsection,
+    Schedulesection,
+    SideNavigation,
+    SocialProofsection,
+    Teamsection,
+    Testimonialsection,
+    TableFooter,
+    TableHeader,
+    UserOnboarding
   } from './sections';
 
   let navClass = 'bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800';
@@ -80,7 +130,7 @@
             <RegisterFormsection />
             <RelatedArticle />
             <ResetPasswordFormsection />
-            <Schedulesection /> 
+            <Schedulesection />
             <SideNavigation />
             <SocialProofsection />
             <Teamsection />

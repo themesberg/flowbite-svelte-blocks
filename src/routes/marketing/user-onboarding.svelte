@@ -10,20 +10,20 @@
 
 <MetaTag {breadcrumb_title} {title} {dir} {description} />
 
-<SectionHeader 
-  category='marketing' 
-  title='Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte' 
+<SectionHeader
+  category="marketing"
+  title="Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte"
   {breadcrumb_title}
   {description}
 />
 
 <SectionBlock title="Choose account type">
-  Use this example as the first step of the user onboarding process to ask what type of
-        account would your user like to create (ie. business or individual).
+  Use this example as the first step of the user onboarding process to ask what type of account
+  would your user like to create (ie. business or individual).
 </SectionBlock>
 
 <ExampleDiv>
-  <Section name="tableheader" sectionClass='bg-gray-50 dark:bg-gray-900 h-40 flex items-center'>
-  <h1 class="text-3xl dark:text-white">COMING SOON</h1>
+  <Section name="tableheader" sectionClass="bg-gray-50 dark:bg-gray-900 h-40 flex items-center">
+    <h1 class="text-3xl dark:text-white">COMING SOON</h1>
   </Section>
 </ExampleDiv>

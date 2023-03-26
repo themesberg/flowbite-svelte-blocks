@@ -1,4 +1,4 @@
- # Content Sections
+# Content Sections
 
 [Demo](https://flowbite-svelte-blocks.vercel.app/marketing/content)
 
@@ -13,14 +13,14 @@
 <ContentWithImage>
   <svelte:fragment slot="h2">We didn't reinvent the wheel</svelte:fragment>
   <p class="mb-4">
-    We are strategists, designers and developers. Innovators and problem solvers. Small enough
-    to be simple and quick, but big enough to deliver the scope you want at the pace you need.
-    Small enough to be simple and quick, but big enough to deliver the scope you want at the
-    pace you need.
+    We are strategists, designers and developers. Innovators and problem solvers. Small enough to be
+    simple and quick, but big enough to deliver the scope you want at the pace you need. Small
+    enough to be simple and quick, but big enough to deliver the scope you want at the pace you
+    need.
   </p>
   <p>
-    We are strategists, designers and developers. Innovators and problem solvers. Small enough
-    to be simple and quick.
+    We are strategists, designers and developers. Innovators and problem solvers. Small enough to be
+    simple and quick.
   </p>
 
   <svelte:fragment slot="image">
