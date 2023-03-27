@@ -1,60 +1,95 @@
 <script lang="ts">
   import { Section } from '$lib';
-  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
-  import {
-    Breadcrumb,
-    BreadcrumbItem,
-    Label,
-    Input,
-    Button,
-    Checkbox,
-    Heading,
-    P,
-    A
-  } from 'flowbite-svelte';
+  import { ExampleDiv, SectionHeader, SectionBlock, MetaTag } from '../utils';
+  import { Modal, Button, Input, Label, Select, Textarea } from 'flowbite-svelte'
   const breadcrumb_title = 'Update Modals (CRUD)';
   const title = 'Crud Success Message';
   const dir = 'application';
   const description =
     'Get started with a collection of modal components based on the CRUD layout to update an existing set of data from the database built with Tailwind CSS.';
-
+  let defaultModal = false;
+  const handleUpdate = () => {
+    alert('Clicked update.');
+  };
+  const handleDelete = () => {
+    alert ('Clicked delete.')
+  }
+  let selected = 'phone'
+  let items = [
+    { value: 'tv', name: 'TV/Monitors' },
+    { value: 'pc', name: 'PC' },
+    { value: 'phone', name: 'Phones' }
+  ];
+  const productData = {
+    name: 'iPad Air Gen 5th Wi-Fi',
+    brand: 'Google',
+    price: '$399',
+    category: 'phone',
+    description: 'Standard glass, 3.8GHz 8-core 10th-generation Intel Core i7 processor, Turbo Boost up to 5.0GHz, 16GB 2666MHz DDR4 memory, Radeon Pro 5500 XT with 8GB of GDDR6 memory, 256GB SSD storage, Gigabit Ethernet, Magic Mouse 2, Magic Keyboard - US'
+  }
 </script>
 
 <MetaTag {breadcrumb_title} {title} {dir} {description} />
 
-<SectionHeader>
-  <Breadcrumb navClass="flex mb-3">
-    <BreadcrumbItem href="/" home>Blocks</BreadcrumbItem>
-    <BreadcrumbItem href="/application">Application</BreadcrumbItem>
-    <BreadcrumbItem>{breadcrumb_title}</BreadcrumbItem>
-  </Breadcrumb>
-  <svelte:fragment slot="h1"
-    >Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte</svelte:fragment
-  >
-  <svelte:fragment slot="paragraph">{description}</svelte:fragment>
-</SectionHeader>
+<SectionHeader
+  category="application"
+  title="Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte"
+  {breadcrumb_title}
+  {description}
+/>
 
-<Section name="none" classSection="py-6 sm:py-10" classDiv="px-4 mx-auto max-w-8xl">
-  <div class="grid lg:grid-cols-2">
-    <div>
-      <Heading tag="h2" customSize="text-2xl font-semibold" class="mb-1"
-        >Default modal</Heading
-      >
-      <P size="lg" color="text-gray-500 dark:text-gray-400" class="lg:mb-0  lg:max-w-2xl">
-        Use this free example of a modal component to update an existing data entry inside the database featuring text field inputs, selects, and a textarea.
-      </P>
-      <EditOnGithub
-        size="18"
-        href="https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/application/crud-update-modals.svelte"
-        iconClass="text-gray-500"
-      />
-      <DocsLink page="{title.toLowerCase().replace(/\s+/g, '-')}" target="_blank"/>
-    </div>
-  </div>
-</Section>
+<SectionBlock title="Default modal">
+  Use this free example of a modal component to update an existing data entry inside the database
+  featuring text field inputs, selects, and a textarea.
+</SectionBlock>
+
 
 <ExampleDiv>
-  <Section name="tableheader" sectionClass='bg-gray-50 dark:bg-gray-900 h-screen flex items-center'>
-  <h1 class="text-6xl dark:text-white">COMING SOON</h1>
+  <Section classSection="h-96">
+    <div class="flex justify-center m-5">
+      <Button on:click={() => (defaultModal = true)}>Update Product</Button>
+    </div>
+    <Modal title="Add Product" bind:open={defaultModal} autoclose class="min-w-full">
+      <form>
+        <div class="grid gap-4 mb-4 sm:grid-cols-2">
+          <div>
+            <Label for="name" class="mb-2">Name</Label>
+            <Input type="text" id="name" placeholder="" value='{productData.name}' required />
+          </div>
+          <div>
+            <Label for="brand" class="mb-2">Brand</Label>
+            <Input type="text" id="brand" placeholder="" value='{productData.brand}' required />
+          </div>
+          <div>
+            <Label for="price" class="mb-2">Price</Label>
+            <Input type="text" id="price" placeholder="" value='{productData.price}' required />
+          </div>
+          <div>
+            <Label
+              >Category
+              <Select class="mt-2" items={items} bind:value={selected}  required />
+            </Label>
+          </div>
+          <div class="sm:col-span-2">
+            <Label for="description" class="mb-2">Description</Label>
+            <Textarea
+              id="description"
+              placeholder="Your description here"
+              rows="4"
+              name="description"
+              required 
+              value='{description}'/>
+          </div>
+          <div class="flex items-center space-x-4">
+            <Button type="submit" class="w-64" on:click={handleUpdate}>
+              Update product
+            </Button>
+            <Button type="submit" class="w-52" outline color='red' on:click={handleDelete}>
+              Delete
+            </Button>
+          </div>
+        </div>
+      </form>
+    </Modal>
   </Section>
 </ExampleDiv>

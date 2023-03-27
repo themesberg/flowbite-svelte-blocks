@@ -53,7 +53,7 @@
       </PricingItem>
 
       <svelte:fragment slot="btn">
-        <Button color="red">Get started</Button>
+        <button color="red">Get started</button>
       </svelte:fragment>
     </PricingItemWrapper>
   </PricingCard>
@@ -87,7 +87,7 @@
       </PricingItem>
 
       <svelte:fragment slot="btn">
-        <Button color="red">Get started</Button>
+        <button color="red">Get started</button>
       </svelte:fragment>
     </PricingItemWrapper>
   </PricingCard>
@@ -121,7 +121,7 @@
       </PricingItem>
 
       <svelte:fragment slot="btn">
-        <Button color="red">Get started</Button>
+        <button color="red">Get started</button>
       </svelte:fragment>
     </PricingItemWrapper>
   </PricingCard>

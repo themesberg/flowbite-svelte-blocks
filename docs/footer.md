@@ -16,7 +16,7 @@
   } from 'flowbite-svelte';
 </script>
 
-<Footer footerType="socialmedia">
+<footer footerType="socialmedia">
   <div class="mx-auto max-w-screen-xl text-center">
     <FooterBrand
       href="https://flowbite.com"
@@ -26,8 +26,7 @@
       aClass="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white"
     />
     <p class="my-6 text-gray-500 dark:text-gray-400">
-      Open-source library of over 400+ web components and interactive elements built for better
-      web.
+      Open-source library of over 400+ web components and interactive elements built for better web.
     </p>
     <FooterLinkGroup
       ulClass="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white"
@@ -43,11 +42,11 @@
       <FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="/">Contact</FooterLink>
     </FooterLinkGroup>
     <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
-      >© 2021-2022 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All
-      Rights Reserved.</span
+      >© 2021-2022 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights
+      Reserved.</span
     >
   </div>
-</Footer>
+</footer>
 ```
 
 ## Example 2
@@ -64,7 +63,7 @@
   } from 'flowbite-svelte';
 </script>
 
-<Footer footerType="socialmedia">
+<footer footerType="socialmedia">
   <div class="grid gap-12 lg:grid-cols-6 lg:gap-24">
     <div class="col-span-2">
       <FooterBrand
@@ -80,14 +79,11 @@
       </p>
     </div>
     <div>
-      <h2 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">
-        Resources
-      </h2>
+      <h2 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">Resources</h2>
       <FooterLinkGroup>
         <FooterLink liClass="mb-4" href="https://flowbite.com/">Flowbite</FooterLink>
         <FooterLink liClass="mb-4" href="https://tailwindcss.com/">Tailwind CSS</FooterLink>
-        <FooterLink liClass="mb-4" href="https://flowbite-svelte.com/">Flowbite-Svelte</FooterLink
-        >
+        <FooterLink liClass="mb-4" href="https://flowbite-svelte.com/">Flowbite-Svelte</FooterLink>
       </FooterLinkGroup>
     </div>
     <div>
@@ -96,16 +92,13 @@
       </h2>
       <FooterLinkGroup>
         <FooterLink liClass="mb-4" href="https://discord.gg/4eeurUVvTy">Discord</FooterLink>
-        <FooterLink
-          liClass="mb-4"
-          href="https://github.com/shinokada/flowbite-svelte-blocks/issues">GitHub</FooterLink
+        <FooterLink liClass="mb-4" href="https://github.com/shinokada/flowbite-svelte-blocks/issues"
+          >GitHub</FooterLink
         >
       </FooterLinkGroup>
     </div>
     <div>
-      <h2 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">
-        Follow us
-      </h2>
+      <h2 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">Follow us</h2>
       <FooterLinkGroup>
         <FooterLink liClass="mb-4" href="https://github.com/shinokada/flowbite-svelte-blocks"
           >Gihub</FooterLink
@@ -118,7 +111,8 @@
       <FooterLinkGroup>
         <FooterLink
           liClass="mb-4"
-          href="https://github.com/shinokada/flowbite-svelte-blocks/LICENSE">LICENSE</FooterLink
+          href="https://github.com/shinokada/flowbite-svelte-blocks/LICENSE"
+          >LICENSE</FooterLink
         >
       </FooterLinkGroup>
     </div>
@@ -127,11 +121,11 @@
   <div class="sm:flex sm:items-center sm:justify-between">
     <FooterCopyright href="/" by="Flowbite™" />
     <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-      <FooterIcon href="/" class="text-gray-400 hover:text-gray-900" icon={Facebook} />
-      <FooterIcon href="/" class="text-gray-400 hover:text-gray-900" icon={Instagram} />
-      <FooterIcon href="/" class="text-gray-400 hover:text-gray-900" icon={Twitter} />
-      <FooterIcon href="/" class="text-gray-400 hover:text-gray-900" icon={Github} />
+      <FooterIcon href="/" class="text-gray-400 hover:text-gray-900" icon="{Facebook}" />
+      <FooterIcon href="/" class="text-gray-400 hover:text-gray-900" icon="{Instagram}" />
+      <FooterIcon href="/" class="text-gray-400 hover:text-gray-900" icon="{Twitter}" />
+      <FooterIcon href="/" class="text-gray-400 hover:text-gray-900" icon="{Github}" />
     </div>
   </div>
-</Footer>
+</footer>
 ```

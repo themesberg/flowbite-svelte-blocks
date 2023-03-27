@@ -1,7 +1,6 @@
 <script lang="ts">
-  import { Section } from '$lib';
-  import { ExampleDiv, SectionHeader, EditOnGithub, MetaTag, DocsLink } from '../utils';
-  import { Button, Modal, P, Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
+  import { ExampleDiv, SectionHeader, SectionBlock, MetaTag } from '../utils';
+  import { Button, Modal, P } from 'flowbite-svelte';
   const breadcrumb_title = 'Delete Confirm (CRUD)';
   const title = 'Crud Delete Confirm';
   const dir = 'marketing';
@@ -12,37 +11,17 @@
 
 <MetaTag {breadcrumb_title} {title} {dir} {description} />
 
-<SectionHeader>
-  <Breadcrumb navClass="flex mb-3">
-    <BreadcrumbItem href="/" home>Blocks</BreadcrumbItem>
-    <BreadcrumbItem href="/marketing">Marketing UI</BreadcrumbItem>
-    <BreadcrumbItem>{breadcrumb_title}</BreadcrumbItem>
-  </Breadcrumb>
-  <svelte:fragment slot="h1"
-    >Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte</svelte:fragment
-  >
-  <svelte:fragment slot="paragraph">{description}</svelte:fragment>
-</SectionHeader>
+<SectionHeader
+  category="marketing"
+  title="Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte"
+  {breadcrumb_title}
+  {description}
+/>
 
-<Section name="none" classSection="py-6 sm:py-10" classDiv="px-4 mx-auto max-w-8xl">
-  <div class="grid lg:grid-cols-2">
-    <div>
-      <h2 class="mb-1 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-        Default delete confirmation modal
-      </h2>
-      <p class="text-lg text-gray-500 lg:mb-0 dark:text-gray-400 lg:max-w-2xl">
-        Use this free example of a modal component coded with Tailwind CSS to confirm with the user
-        before deleting an item from the database.
-      </p>
-      <EditOnGithub
-        size="18"
-        href="https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/marketing/crud-delete-confirm.svelte"
-        iconClass="text-gray-500"
-      />
-      <DocsLink page="{title.toLowerCase().replace(/\s+/g, '-')}" target="_blank"/>
-    </div>
-  </div>
-</Section>
+<SectionBlock title="Default delete confirmation modal">
+  Use this free example of a modal component coded with Tailwind CSS to confirm with the user before
+  deleting an item from the database.
+</SectionBlock>
 
 <ExampleDiv>
   <div class="flex justify-center m-5">

@@ -1,12 +1,8 @@
 <script>
   import { SectionHeader, MetaTag } from '../utils';
   import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
-  import {
-    BlogTemplatesection,
-    CommentSection,
-    RelatedArticle
-  } from '../sections';
-    import RelatedArticles from './related-articles.svelte';
+  import { BlogTemplatesection, CommentSection, RelatedArticle } from '../sections';
+  import RelatedArticles from './related-articles.svelte';
   const title = 'Publisher UI - Flowbite Svelte Blocks';
   const breadcrumb_title = 'Publisher UI';
   const description =
@@ -16,16 +12,7 @@
 
 <MetaTag {breadcrumb_title} {title} {dir} {description} withoutLink={true} />
 
-<SectionHeader>
-  <Breadcrumb navClass="flex mb-3">
-    <BreadcrumbItem href="/" home>Blocks</BreadcrumbItem>
-    <BreadcrumbItem>Publisher UI</BreadcrumbItem>
-  </Breadcrumb>
-  <svelte:fragment slot="h1">Publisher UI</svelte:fragment>
-  <svelte:fragment slot="paragraph"
-    >{description}</svelte:fragment
-  >
-</SectionHeader>
+<SectionHeader category="publisher" title="Publisher UI" {breadcrumb_title} {description} />
 
 <section class="pb-8 bg-white dark:bg-gray-900 lg:pb-24" id="components">
   <div class="px-4 mx-auto max-w-8xl lg:px-4 lg:text-center">

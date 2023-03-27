@@ -1,4 +1,4 @@
- # Contact Form
+# Contact Form
 
 [Demo](https://flowbite-svelte-blocks.vercel.app/marketing/contact)
 
@@ -18,27 +18,17 @@
   </svelte:fragment>
   <form class="space-y-8">
     <div>
-      <Label for="email" class="block mb-2">Your email</Label>
-      <Input id="email" name="email" placeholder="name@flowbite.com" required />
+      <label for="email" class="block mb-2">Your email</label>
+      <input id="email" name="email" placeholder="name@flowbite.com" required />
     </div>
     <div>
-      <Label for="subject" class="block mb-2">Subject</Label>
-      <Input
-        id="subject"
-        name="subject"
-        placeholder="Let us know how we can help you"
-        required
-      />
+      <label for="subject" class="block mb-2">Subject</label>
+      <input id="subject" name="subject" placeholder="Let us know how we can help you" required />
     </div>
     <div>
-      <Textarea
-        id="subject"
-        name="subject"
-        placeholder="Leave a comment..."
-        label="Your message"
-      />
+      <textarea id="subject" name="subject" placeholder="Leave a comment..." label="Your message" />
     </div>
-    <Button>Send message</Button>
+    <button>Send message</button>
   </form>
 </Contact>
 ```
