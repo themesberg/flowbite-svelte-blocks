@@ -74,7 +74,7 @@
         <div class="grid mt-3 mb-6 lg:gap-8 lg:mt-5 lg:mb-6 xl:grid-cols-3">
           <div class="col-span-2 mb-2 lg:mb-0">
             <h1 class="mb-2 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
-              Flowbite Blocks in Svelte - Tailwind UI components
+              Flowbite Blocks in Svelte
             </h1>
             <p class="text-lg text-gray-500 xl:mr-64 lg:mb-0 dark:text-gray-400">
               Get started with 122 free and premium UI components built with the utility classes
