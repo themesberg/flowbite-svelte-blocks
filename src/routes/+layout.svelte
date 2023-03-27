@@ -16,8 +16,8 @@
     DarkMode
   } from 'flowbite-svelte';
   import { Github } from './utils';
-  let navClass = 'bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800';
-  let navDivClass = 'flex flex-wrap justify-between items-center mx-auto max-w-screen-xl';
+  let navClass = 'bg-white border-gray-200 py-2.5 dark:bg-gray-800';
+  let navDivClass = 'flex flex-wrap justify-between items-center mx-auto max-w-8xl px-4';
   let btnClass =
     'text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2 ml-2';
 </script>
@@ -29,10 +29,10 @@
         <NavBrand href="/">
           <img
             src="https://flowbite.com/docs/images/logo.svg"
-            class="mr-3 h-6 sm:h-9"
+            class="h-8 mr-3"
             alt="Flowbite Logo"
           />
-          <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
+          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
             Flowbite
           </span>
         </NavBrand>
@@ -59,7 +59,7 @@
         </NavUl>
       </Navbar>
     </header>
-    <div class="px-4 mx-auto max-w-8xl dark:bg-gray-900 pb-8">
+    <div class="mx-auto max-w-8xl dark:bg-gray-900 pb-8">
       <slot />
     </div>
   </div>
@@ -142,7 +142,7 @@
   footerType="custom"
   customClass="justify-self-end pt-16 pb-8 px-4 lg:pt-24 lg:pb-10 dark:bg-gray-900"
 >
-  <div class="grid gap-12 lg:grid-cols-6 lg:gap-24">
+  <div class="grid gap-12 lg:grid-cols-6 lg:gap-24 max-w-8xl mx-auto">
     <div class="col-span-2">
       <FooterBrand
         href="https://flowbite.com"
@@ -195,7 +195,7 @@
     </div>
   </div>
   <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-  <div class="sm:flex sm:items-center sm:justify-between">
+  <div class="flex items-center justify-center">
     <FooterCopyright href="/" by="Flowbite™" />
     <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
       <FooterIcon
