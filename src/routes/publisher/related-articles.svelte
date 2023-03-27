@@ -12,7 +12,7 @@
 
 <SectionHeader
   category="publisher"
-  title="Tailwind CSS {breadcrumb_title} - Flowbite Blocks in Svelte"
+  title="Svelte {breadcrumb_title} - Flowbite"
   {breadcrumb_title}
   {description}
 />
