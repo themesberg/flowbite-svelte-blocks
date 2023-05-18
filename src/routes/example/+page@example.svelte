@@ -259,7 +259,7 @@
     <div class="mb-6 md:mb-0">
       <FooterBrand
         href="https://flowbite.com"
-        src="https://flowbite.com/docs/images/logo.svg"
+        src="/images/logo.svg"
         alt="Flowbite Logo"
         name="Flowbite"
       />

@@ -26,7 +26,7 @@
 <ExampleDiv>
   <Section name="forgotpassword">
     <ForgotPasswordHeader
-      src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo.svg"
+      src="/images/logo.svg"
       alt="logo"
       href="/"
     >
