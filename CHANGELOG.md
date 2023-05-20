@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.8](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.3.7...v0.3.8) (2023-05-20)
+
+
+### Bug Fixes
+
+* remove peerDependencies ([593df04](https://github.com/shinokada/flowbite-svelte-blocks/commit/593df04e11c8d2fdf2d0ae61f5e760d4547a3b7b))
+
 ### [0.3.7](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.3.6...v0.3.7) (2023-05-20)
 
 
