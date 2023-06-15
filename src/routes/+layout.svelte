@@ -24,14 +24,10 @@
 
 <main>
   <div class="flex flex-col min-h-screen bg-white dark:bg-gray-900">
-    <header class="sticky top-0 z-40 flex-none mx-auto w-full bg-white dark:bg-gray-900 ">
+    <header class="sticky top-0 z-40 flex-none mx-auto w-full bg-white dark:bg-gray-900">
       <Navbar let:hidden let:toggle fluid={false} {navClass} {navDivClass}>
         <NavBrand href="/">
-          <img
-            src="/images/logo.svg"
-            class="h-8 mr-3"
-            alt="Flowbite Logo"
-          />
+          <img src="/images/logo.svg" class="h-8 mr-3" alt="Flowbite Logo" />
           <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
             Flowbite
           </span>
@@ -138,10 +134,7 @@
   </div>
 </aside>
 
-<Footer
-  footerType="custom"
-  customClass="justify-self-end pt-16 pb-8 px-4 lg:pt-24 lg:pb-10 dark:bg-gray-900"
->
+<Footer footerType="socialmedia">
   <div class="grid gap-12 lg:grid-cols-6 lg:gap-24 max-w-8xl mx-auto">
     <div class="col-span-2">
       <FooterBrand

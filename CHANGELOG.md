@@ -4,46 +4,43 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [0.3.8](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.3.7...v0.3.8) (2023-05-20)
 
-
 ### Bug Fixes
 
-* remove peerDependencies ([593df04](https://github.com/shinokada/flowbite-svelte-blocks/commit/593df04e11c8d2fdf2d0ae61f5e760d4547a3b7b))
+- remove peerDependencies ([593df04](https://github.com/shinokada/flowbite-svelte-blocks/commit/593df04e11c8d2fdf2d0ae61f5e760d4547a3b7b))
 
 ### [0.3.7](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.3.6...v0.3.7) (2023-05-20)
 
-
 ### Features
 
-* add crud-delete-confirm page, docs, and section ([d45b753](https://github.com/shinokada/flowbite-svelte-blocks/commit/d45b7538521cc4532c74ad40287c9acbce62aed5))
-* add crud-read-drawers page and docs ([44cba7e](https://github.com/shinokada/flowbite-svelte-blocks/commit/44cba7e8655ea18074d6d1bc866a9bf192620657))
-* add crud-read-modals page and docs ([84ceb2f](https://github.com/shinokada/flowbite-svelte-blocks/commit/84ceb2fec0eb682b898f733a5137f1961c06fe94))
-* add crud-read-secions page and docs ([825b03e](https://github.com/shinokada/flowbite-svelte-blocks/commit/825b03e6be25a08035e72edb537140c6fd4f8e35))
-* add crud-update-drawers page and docs ([ba2d192](https://github.com/shinokada/flowbite-svelte-blocks/commit/ba2d19264165fe78fc4cbb2f8a492338b060eaf9))
-* add crud-update-modals page and docs ([57d4e28](https://github.com/shinokada/flowbite-svelte-blocks/commit/57d4e28b3cafef84ed0340ad72e6ca279b726d91))
-
+- add crud-delete-confirm page, docs, and section ([d45b753](https://github.com/shinokada/flowbite-svelte-blocks/commit/d45b7538521cc4532c74ad40287c9acbce62aed5))
+- add crud-read-drawers page and docs ([44cba7e](https://github.com/shinokada/flowbite-svelte-blocks/commit/44cba7e8655ea18074d6d1bc866a9bf192620657))
+- add crud-read-modals page and docs ([84ceb2f](https://github.com/shinokada/flowbite-svelte-blocks/commit/84ceb2fec0eb682b898f733a5137f1961c06fe94))
+- add crud-read-secions page and docs ([825b03e](https://github.com/shinokada/flowbite-svelte-blocks/commit/825b03e6be25a08035e72edb537140c6fd4f8e35))
+- add crud-update-drawers page and docs ([ba2d192](https://github.com/shinokada/flowbite-svelte-blocks/commit/ba2d19264165fe78fc4cbb2f8a492338b060eaf9))
+- add crud-update-modals page and docs ([57d4e28](https://github.com/shinokada/flowbite-svelte-blocks/commit/57d4e28b3cafef84ed0340ad72e6ca279b726d91))
 
 ### Bug Fixes
 
-* add new sections ([06481b2](https://github.com/shinokada/flowbite-svelte-blocks/commit/06481b22631b4c7140323a486d99b0b1c9106f08))
-* add SectionBlock ([1e4bf6a](https://github.com/shinokada/flowbite-svelte-blocks/commit/1e4bf6aba9ee5b021cadfd509f483fe3f660d6e6))
-* breadcrumbs and test ([02b2700](https://github.com/shinokada/flowbite-svelte-blocks/commit/02b27006295bfd5bdbb58d2d2be4ffbb99b5bbe2))
-* change blue to orange ([bd4035f](https://github.com/shinokada/flowbite-svelte-blocks/commit/bd4035f835f822557f8866bf10b42093c55554f7))
-* crud-read-sections ([4cfa23a](https://github.com/shinokada/flowbite-svelte-blocks/commit/4cfa23ac5858de9a97a7e95023f74f35c92a4df5))
-* CrudCreateDrawer, crud-create-modals page ([daed4cb](https://github.com/shinokada/flowbite-svelte-blocks/commit/daed4cbb704d7ef1152c04e2197aac5afaa0b1d9))
-* CrudCreateForm section update ([84317ba](https://github.com/shinokada/flowbite-svelte-blocks/commit/84317ba1758fc3316ed63cbd4f78ad9fda26914a))
-* CrudCreateModal section ([515c3e9](https://github.com/shinokada/flowbite-svelte-blocks/commit/515c3e93d79dc572c10b7a1f40f2240ee22fab49))
-* flowbite image to flowbite-svelte image and color updates ([3774235](https://github.com/shinokada/flowbite-svelte-blocks/commit/37742354be65dd17a6794dbdd345e17cd96bb3b0))
-* format ([a6bd545](https://github.com/shinokada/flowbite-svelte-blocks/commit/a6bd545342a288008774de78402cbe4be806d28c))
-* remove Section from docs pages ([a2bed71](https://github.com/shinokada/flowbite-svelte-blocks/commit/a2bed719a66703e232e7c9a5f80b7dcd2b9cdf78))
-* SecitonHeader update ([1dde6c6](https://github.com/shinokada/flowbite-svelte-blocks/commit/1dde6c63310c486c58ea9726c67444b376a7514c))
-* table-header page and docs ([962fbcd](https://github.com/shinokada/flowbite-svelte-blocks/commit/962fbcd6c69a983df1e20664fb516e454a1c31f0))
-* TableHeader add headerType ([1a2db8d](https://github.com/shinokada/flowbite-svelte-blocks/commit/1a2db8d8899a3c4fa3eb2bd754014e8522686df0))
-* TableHeader section update ([0314028](https://github.com/shinokada/flowbite-svelte-blocks/commit/031402854127e032688f1c42d63223781361b7f3))
-* title and breadcrumb_title ([75f2b57](https://github.com/shinokada/flowbite-svelte-blocks/commit/75f2b5735b7b4f1af56ffc0cafb9f91968bd5e26))
-* title in crud-create-forms page ([b515871](https://github.com/shinokada/flowbite-svelte-blocks/commit/b515871fb3cc50c6c3e273c122ed68fc51db729d))
-* update CrudReadDrawer section ([22b2699](https://github.com/shinokada/flowbite-svelte-blocks/commit/22b2699696569ab36313c64118b95c982b413c80))
-* update peerDependencies in package.json ([06db1d8](https://github.com/shinokada/flowbite-svelte-blocks/commit/06db1d890ce49e635e5447c2df1b0895dc0ec398))
-* use one layout for all category ([3f2eb34](https://github.com/shinokada/flowbite-svelte-blocks/commit/3f2eb34b529aad0b0d0dcba878588fb401c2f2b2))
+- add new sections ([06481b2](https://github.com/shinokada/flowbite-svelte-blocks/commit/06481b22631b4c7140323a486d99b0b1c9106f08))
+- add SectionBlock ([1e4bf6a](https://github.com/shinokada/flowbite-svelte-blocks/commit/1e4bf6aba9ee5b021cadfd509f483fe3f660d6e6))
+- breadcrumbs and test ([02b2700](https://github.com/shinokada/flowbite-svelte-blocks/commit/02b27006295bfd5bdbb58d2d2be4ffbb99b5bbe2))
+- change blue to orange ([bd4035f](https://github.com/shinokada/flowbite-svelte-blocks/commit/bd4035f835f822557f8866bf10b42093c55554f7))
+- crud-read-sections ([4cfa23a](https://github.com/shinokada/flowbite-svelte-blocks/commit/4cfa23ac5858de9a97a7e95023f74f35c92a4df5))
+- CrudCreateDrawer, crud-create-modals page ([daed4cb](https://github.com/shinokada/flowbite-svelte-blocks/commit/daed4cbb704d7ef1152c04e2197aac5afaa0b1d9))
+- CrudCreateForm section update ([84317ba](https://github.com/shinokada/flowbite-svelte-blocks/commit/84317ba1758fc3316ed63cbd4f78ad9fda26914a))
+- CrudCreateModal section ([515c3e9](https://github.com/shinokada/flowbite-svelte-blocks/commit/515c3e93d79dc572c10b7a1f40f2240ee22fab49))
+- flowbite image to flowbite-svelte image and color updates ([3774235](https://github.com/shinokada/flowbite-svelte-blocks/commit/37742354be65dd17a6794dbdd345e17cd96bb3b0))
+- format ([a6bd545](https://github.com/shinokada/flowbite-svelte-blocks/commit/a6bd545342a288008774de78402cbe4be806d28c))
+- remove Section from docs pages ([a2bed71](https://github.com/shinokada/flowbite-svelte-blocks/commit/a2bed719a66703e232e7c9a5f80b7dcd2b9cdf78))
+- SecitonHeader update ([1dde6c6](https://github.com/shinokada/flowbite-svelte-blocks/commit/1dde6c63310c486c58ea9726c67444b376a7514c))
+- table-header page and docs ([962fbcd](https://github.com/shinokada/flowbite-svelte-blocks/commit/962fbcd6c69a983df1e20664fb516e454a1c31f0))
+- TableHeader add headerType ([1a2db8d](https://github.com/shinokada/flowbite-svelte-blocks/commit/1a2db8d8899a3c4fa3eb2bd754014e8522686df0))
+- TableHeader section update ([0314028](https://github.com/shinokada/flowbite-svelte-blocks/commit/031402854127e032688f1c42d63223781361b7f3))
+- title and breadcrumb_title ([75f2b57](https://github.com/shinokada/flowbite-svelte-blocks/commit/75f2b5735b7b4f1af56ffc0cafb9f91968bd5e26))
+- title in crud-create-forms page ([b515871](https://github.com/shinokada/flowbite-svelte-blocks/commit/b515871fb3cc50c6c3e273c122ed68fc51db729d))
+- update CrudReadDrawer section ([22b2699](https://github.com/shinokada/flowbite-svelte-blocks/commit/22b2699696569ab36313c64118b95c982b413c80))
+- update peerDependencies in package.json ([06db1d8](https://github.com/shinokada/flowbite-svelte-blocks/commit/06db1d890ce49e635e5447c2df1b0895dc0ec398))
+- use one layout for all category ([3f2eb34](https://github.com/shinokada/flowbite-svelte-blocks/commit/3f2eb34b529aad0b0d0dcba878588fb401c2f2b2))
 
 ### [0.3.6](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.3.5...v0.3.6) (2023-03-22)
 

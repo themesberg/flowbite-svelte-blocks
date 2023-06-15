@@ -32,7 +32,7 @@
     <Modal title="" bind:open={defaultModal} autoclose size="sm">
       <div class="flex justify-between mb-4 rounded-t sm:mb-5">
         <div class="text-lg text-gray-900 md:text-xl dark:text-white">
-          <h3 class="font-semibold ">Apple iMac 27”</h3>
+          <h3 class="font-semibold">Apple iMac 27”</h3>
           <p class="font-bold">$2999</p>
         </div>
       </div>

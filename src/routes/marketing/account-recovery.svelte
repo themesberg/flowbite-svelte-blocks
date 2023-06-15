@@ -25,13 +25,7 @@
 
 <ExampleDiv>
   <Section name="forgotpassword">
-    <ForgotPasswordHeader
-      src="/images/logo.svg"
-      alt="logo"
-      href="/"
-    >
-      Flowbite
-    </ForgotPasswordHeader>
+    <ForgotPasswordHeader src="/images/logo.svg" alt="logo" href="/">Flowbite</ForgotPasswordHeader>
     <ForgotPassword>
       <h1
         class="mb-1 text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white"
