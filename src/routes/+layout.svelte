@@ -76,7 +76,7 @@
     </p>
     <div id="revue-embed" class="mb-4">
       <form
-        action="https://www.getrevue.co/profile/flowbite/add_subscriber"
+        action="https://app.convertkit.com/forms/4692392/subscriptions"
         method="post"
         id="revue-form"
         name="revue-form"
