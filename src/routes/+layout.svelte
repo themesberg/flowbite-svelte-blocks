@@ -24,14 +24,10 @@
 
 <main>
   <div class="flex flex-col min-h-screen bg-white dark:bg-gray-900">
-    <header class="sticky top-0 z-40 flex-none mx-auto w-full bg-white dark:bg-gray-900 ">
+    <header class="sticky top-0 z-40 flex-none mx-auto w-full bg-white dark:bg-gray-900">
       <Navbar let:hidden let:toggle fluid={false} {navClass} {navDivClass}>
         <NavBrand href="/">
-          <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            class="h-8 mr-3"
-            alt="Flowbite Logo"
-          />
+          <img src="/images/logo.svg" class="h-8 mr-3" alt="Flowbite Logo" />
           <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
             Flowbite
           </span>
@@ -80,7 +76,7 @@
     </p>
     <div id="revue-embed" class="mb-4">
       <form
-        action="https://www.getrevue.co/profile/flowbite/add_subscriber"
+        action="https://app.convertkit.com/forms/4692392/subscriptions"
         method="post"
         id="revue-form"
         name="revue-form"
@@ -116,7 +112,7 @@
             type="submit"
             name="member[subscribe]"
             id="member_submit"
-            class="w-full px-4 py-4 text-base font-semibold text-center text-white bg-blue-600 border border-blue-600 cursor-pointer rounded-r-xl formkit-submit hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600"
+            class="w-full px-4 py-4 text-base font-semibold text-center text-white bg-primary-600 border border-primary-600 cursor-pointer rounded-r-xl formkit-submit hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-600 focus:border-primary-600"
             value="Subscribe"
           />
         </div>
@@ -125,7 +121,7 @@
     <p class="text-sm text-gray-500 md:text-center dark:text-gray-400">
       By subscribing, you agree with Revue’s <a
         rel="nofollow noopener noreferrer"
-        class="text-blue-600 dark-text-blue-400 hover:underline"
+        class="text-primary-600 dark-text-primary-400 hover:underline"
         href="https://www.getrevue.co/terms">Terms of Service</a
       >
       and
@@ -138,15 +134,12 @@
   </div>
 </aside>
 
-<Footer
-  footerType="custom"
-  customClass="justify-self-end pt-16 pb-8 px-4 lg:pt-24 lg:pb-10 dark:bg-gray-900"
->
+<Footer footerType="socialmedia">
   <div class="grid gap-12 lg:grid-cols-6 lg:gap-24 max-w-8xl mx-auto">
     <div class="col-span-2">
       <FooterBrand
         href="https://flowbite.com"
-        src="https://flowbite.com/docs/images/logo.svg"
+        src="/images/logo.svg"
         alt="Flowbite Logo"
         name="Flowbite"
         aClass="flex mb-6"

@@ -60,7 +60,7 @@
           placeholder="Your description here"
           rows="4"
           name="description"
-          required 
+          required
           value='{description}'/>
       </div>
       <div class="flex items-center space-x-4">

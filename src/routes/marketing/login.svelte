@@ -27,11 +27,7 @@
   <Section name="login">
     <Register href="/">
       <svelte:fragment slot="top">
-        <img
-          class="w-8 h-8 mr-2"
-          src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo.svg"
-          alt="logo"
-        />
+        <img class="w-8 h-8 mr-2" src="/images/logo.svg" alt="logo" />
         Flowbite
       </svelte:fragment>
       <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
