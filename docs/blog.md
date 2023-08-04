@@ -14,11 +14,11 @@
     BlogHead,
     BlogBodyWrapper
   } from 'flowbite-svelte-blocks';
-  import { ArrowSmallRight, VideoCamera, Newspaper, Home } from 'svelte-heros';
+  import { Icon } from 'flowbite-svelte-icons';
 </script>
 
 <BlogHead>
-  <svelte:fragment slot="h2">Our Blog</svelte:fragment>
+  <svelte:fragment slot="h2">Our Blogs</svelte:fragment>
   <svelte:fragment slot="paragraph">
     <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">
       We use an agile approach to test assumptions and connect with the needs of your audience early
@@ -32,8 +32,8 @@
       <span
         class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800"
       >
-        <VideoCamera variation="solid" size="14" />
-        Tutorial
+        
+        <Icon name="video-solid" size="xs" class="mr-1" />Tutorials
       </span>
       <span class="text-sm">14 days ago</span>
     </ArticleHead>
@@ -63,7 +63,7 @@
         class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline"
       >
         Read more
-        <ArrowSmallRight class="ml-2" />
+        <Icon name="arrow-right-solid" size="xs" class="mr-1" />
       </a>
     </ArticleAuthor>
   </ArticleWrapper>
@@ -73,7 +73,7 @@
       <span
         class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800"
       >
-        <Newspaper variation="solid" size="14" />
+        <Icon name="newspaper-solid" size="sm" class="" />
         Tutorial
       </span>
       <span class="text-sm">14 days ago</span>
@@ -102,7 +102,7 @@
         class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline"
       >
         Read more
-        <ArrowSmallRight class="ml-2" />
+        <Icon name="arrow-right-solid" size="sm" class="ml-2" />
       </a>
     </ArticleAuthor>
   </ArticleWrapper>

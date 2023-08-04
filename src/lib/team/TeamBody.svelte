@@ -1,8 +1,8 @@
 <script lang="ts">
-  import classNames from 'classnames';
+  import { twMerge } from "tailwind-merge";
   export let divClass: string = 'grid gap-8 mb-6 lg:mb-16 md:grid-cols-2';
 </script>
 
-<div class={classNames(divClass, $$props.class)}>
+<div class={twMerge(divClass, $$props.class)}>
   <slot />
 </div>

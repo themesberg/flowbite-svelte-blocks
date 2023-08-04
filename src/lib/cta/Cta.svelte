@@ -1,5 +1,5 @@
 <script lang="ts">
-  import classNames from 'classnames';
+  import { twMerge } from "tailwind-merge";
   export let ctatype: 'default' | 'image' | 'heading' | 'none' = 'default';
   const ctaClasses = {
     default: {
@@ -25,9 +25,9 @@
 {#if $$slots.img}
   <slot name="img" />
 {/if}
-<div class={classNames(ctaClasses[ctatype]['divClass'], $$props.classDiv)}>
+<div class={twMerge(ctaClasses[ctatype]['divClass'], $$props.class)}>
   {#if $$slots.h2}
-    <h2 class={classNames(ctaClasses[ctatype]['h2Class'], $$props.classH2)}><slot name="h2" /></h2>
+    <h2 class={twMerge(ctaClasses[ctatype]['h2Class'], $$props.classH2)}><slot name="h2" /></h2>
   {/if}
   <slot />
 </div>

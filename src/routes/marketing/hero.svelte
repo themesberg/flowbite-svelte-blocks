@@ -1,7 +1,7 @@
 <script>
   import { Section, News, HeroHeader, HeroBody } from '$lib';
   import { Button } from 'flowbite-svelte';
-  import { ArrowRight, VideoCamera } from 'svelte-heros';
+  import { Icon } from 'flowbite-svelte-icons';
   import {
     Youtube,
     ProductHunt,
@@ -33,7 +33,7 @@
 </SectionBlock>
 
 <ExampleDiv>
-  <Section>
+  <Section name="heroDefault">
     <News>
       <span class="text-xs bg-primary-600 rounded-full text-white px-4 py-1.5 mr-3">New</span>
       <span class="text-sm font-medium">Flowbite is out! See what's new</span>
@@ -51,12 +51,12 @@
     >
       <a href="/">
         <Button size="lg" color="red">
-          Learn more <ArrowRight size="18" class="ml-2" />
+          Learn more <Icon name="arrow-right-solid" size="md" class="ml-2 -mr-1" />
         </Button>
       </a>
       <a href="/">
         <Button size="lg" color="light">
-          <VideoCamera variation="solid" size="28" class="pt-1" />
+          <Icon name="video-solid" size="xs" class="mr-2 -ml-1" />
           Watch video
         </Button>
       </a>
@@ -107,7 +107,7 @@
         </svelte:fragment>
         <a href="/"
           ><Button size="xl" color="red" class="inline-flex items-center justify-center mr-3"
-            >Get started<ArrowRight size="18" class="ml-2 -mr-1" /></Button
+            >Get started<Icon name="arrow-right-solid" size="md" class="ml-2 -mr-1" /></Button
           >
         </a>
         <a href="/"

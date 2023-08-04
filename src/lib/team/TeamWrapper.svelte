@@ -1,8 +1,8 @@
 <script lang="ts">
-  import classNames from 'classnames';
+  import { twMerge } from "tailwind-merge";
   export let divClass: string = 'py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6';
 </script>
 
-<div class={classNames(divClass, $$props.class)}>
+<div class={twMerge(divClass, $$props.class)}>
   <slot />
 </div>

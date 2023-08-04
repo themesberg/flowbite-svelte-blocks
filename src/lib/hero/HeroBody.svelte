@@ -1,5 +1,5 @@
 <script lang="ts">
-  import classNames from 'classnames';
+  import { twMerge } from "tailwind-merge";
   export let hero: 'default' | 'visual' = 'default';
   const divClasses = {
     default: 'px-4 mx-auto text-center md:max-w-screen-md lg:max-w-screen-lg lg:px-36',
@@ -9,7 +9,7 @@
 
 <div
   {...$$restProps}
-  class={classNames(divClasses[hero], $$props.class)}
+  class={twMerge(divClasses[hero], $$props.class)}
   class:has-head={$$slots.head}
 >
   {#if $$slots.head}

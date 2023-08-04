@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { SvelteComponent } from 'svelte';
-  import classNames from 'classnames';
+  import { twMerge } from 'tailwind-merge';
   import ToolsIcon from './ToolsIcon.svelte';
   export let Icon: typeof SvelteComponent = ToolsIcon;
   export let h1Class: string =
@@ -11,8 +11,8 @@
 <svelte:component this={Icon} />
 
 {#if $$slots.h1}
-  <h1 class={classNames(h1Class, $$props.classH1)}><slot name="h1" /></h1>
+  <h1 class={twMerge(h1Class, $$props.classH1)}><slot name="h1" /></h1>
 {/if}
 {#if $$slots.paragraph}
-  <p class={classNames(pClass, $$props.classP)}><slot name="paragraph" /></p>
+  <p class={twMerge(pClass, $$props.classP)}><slot name="paragraph" /></p>
 {/if}

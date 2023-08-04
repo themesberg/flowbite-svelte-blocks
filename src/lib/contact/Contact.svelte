@@ -1,5 +1,5 @@
 <script lang="ts">
-  import classNames from 'classnames';
+  import { twMerge } from "tailwind-merge";
   export let h2Class: string =
     'mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white';
   export let pClass: string =
@@ -7,12 +7,12 @@
 </script>
 
 {#if $$slots.h2}
-  <h2 class={classNames(h2Class, $$props.classH2)}>
+  <h2 class={twMerge(h2Class, $$props.class)}>
     <slot name="h2" />
   </h2>
 {/if}
 {#if $$slots.paragraph}
-  <p class={classNames(pClass, $$props.classP)}>
+  <p class={twMerge(pClass, $$props.classP)}>
     <slot name="paragraph" />
   </p>
 {/if}

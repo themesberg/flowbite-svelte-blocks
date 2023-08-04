@@ -1,14 +1,10 @@
 <script lang="ts">
-  import type { SvelteComponent } from 'svelte';
-  import classNames from 'classnames';
+  import {twMerge} from 'tailwind-merge';
   export let liClass: string = 'flex items-center space-x-3';
-  import { Check } from 'svelte-heros';
-  export let Icon: typeof SvelteComponent = Check;
-  export let iconSize = 14;
-  export let iconClass: string = '';
+  import { Icon } from 'flowbite-svelte-icons';
 </script>
 
-<li class={classNames(liClass, $$props.class)}>
-  <svelte:component this={Icon} size={iconSize} class={classNames('ml-2', iconClass)} />
+<li class={liClass}>
+  <svelte:component this={Icon} name="check-solid" size="sm" class={twMerge('ml-2', $$props.class)} />
   <slot />
 </li>

@@ -9,7 +9,7 @@
     BlogBodyWrapper
   } from '$lib';
   import { ExampleDiv, SectionHeader, SectionBlock, MetaTag } from '../utils';
-  import { ArrowSmallRight, VideoCamera, Newspaper, Home } from 'svelte-heros';
+  import { Icon } from 'flowbite-svelte-icons';
   const breadcrumb_title = 'Blog Sections';
   const title = 'Blog';
   const dir = 'marketing';
@@ -48,7 +48,7 @@
           <span
             class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800"
           >
-            <VideoCamera variation="solid" size="14" />
+            <Icon name="video-solid" size="xs" class="mr-1"/>
             Tutorial
           </span>
           <span class="text-sm">14 days ago</span>
@@ -79,7 +79,7 @@
             class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline"
           >
             Read more
-            <ArrowSmallRight class="ml-2" />
+            <Icon name="arrow-right-outline" size="sm" class="ml-2" />
           </a>
         </ArticleAuthor>
       </ArticleWrapper>
@@ -89,8 +89,8 @@
           <span
             class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800"
           >
-            <Newspaper variation="solid" size="14" />
-            Tutorial
+            <Icon name="newspaper-solid" size="xs" class="mr-1" />
+            Article
           </span>
           <span class="text-sm">14 days ago</span>
         </ArticleHead>
@@ -118,7 +118,7 @@
             class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline"
           >
             Read more
-            <ArrowSmallRight class="ml-2" />
+            <Icon name="arrow-right-outline" size="sm" class="ml-2" />
           </a>
         </ArticleAuthor>
       </ArticleWrapper>

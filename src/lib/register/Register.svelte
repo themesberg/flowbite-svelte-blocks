@@ -1,5 +1,5 @@
 <script lang="ts">
-  import classNames from 'classnames';
+  import { twMerge } from "tailwind-merge";
   export let href: string = '';
   export let aClass: string =
     'flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white';
@@ -8,10 +8,10 @@
 </script>
 
 {#if $$slots.top}
-  <a {href} class={classNames(aClass, $$props.class)}>
+  <a {href} class={twMerge(aClass, $$props.class)}>
     <slot name="top" />
   </a>
 {/if}
-<div class={classNames(divClass, $$props.classDiv)}>
+<div class={twMerge(divClass, $$props.classDiv)}>
   <slot />
 </div>

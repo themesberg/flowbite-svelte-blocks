@@ -8,6 +8,7 @@
     CurrencyDollar,
     Bolt
   } from 'svelte-heros';
+  import { Icon } from 'flowbite-svelte-icons';
   import { ExampleDiv, SectionHeader, SectionBlock, MetaTag } from '../utils';
   const breadcrumb_title = 'Feature Sections';
   const title = 'Feature';

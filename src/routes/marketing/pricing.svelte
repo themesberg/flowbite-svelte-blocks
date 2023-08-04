@@ -52,19 +52,19 @@
           </svelte:fragment>
         </PricingBodyHead>
         <PricingItemWrapper>
-          <PricingItem>
+          <PricingItem class="text-green-500 dark:text-green-400">
             <span>Individual configuration</span>
           </PricingItem>
-          <PricingItem>
+          <PricingItem class="text-green-500 dark:text-green-400">
             <span>No setup, or hidden fees</span>
           </PricingItem>
-          <PricingItem>
+          <PricingItem class="text-green-500 dark:text-green-400">
             <span>Team size: <span class="font-semibold">1 developer</span></span>
           </PricingItem>
-          <PricingItem>
+          <PricingItem class="text-green-500 dark:text-green-400">
             <span>Premium support: <span class="font-semibold">6 months</span></span>
           </PricingItem>
-          <PricingItem>
+          <PricingItem class="text-green-500 dark:text-green-400">
             <span>Free updates: <span class="font-semibold">6 months</span></span>
           </PricingItem>
 
@@ -86,19 +86,19 @@
           </svelte:fragment>
         </PricingBodyHead>
         <PricingItemWrapper>
-          <PricingItem>
+          <PricingItem class="text-green-500 dark:text-green-400">
             <span>Individual configuration</span>
           </PricingItem>
-          <PricingItem>
+          <PricingItem class="text-green-500 dark:text-green-400">
             <span>No setup, or hidden fees</span>
           </PricingItem>
-          <PricingItem>
+          <PricingItem class="text-green-500 dark:text-green-400">
             <span>Team size: <span class="font-semibold">10 developer</span></span>
           </PricingItem>
-          <PricingItem>
+          <PricingItem class="text-green-500 dark:text-green-400">
             <span>Premium support: <span class="font-semibold">24 months</span></span>
           </PricingItem>
-          <PricingItem>
+          <PricingItem class="text-green-500 dark:text-green-400">
             <span>Free updates: <span class="font-semibold">24 months</span></span>
           </PricingItem>
 
@@ -120,19 +120,19 @@
           </svelte:fragment>
         </PricingBodyHead>
         <PricingItemWrapper>
-          <PricingItem>
+          <PricingItem class="text-green-500 dark:text-green-400">
             <span>Individual configuration</span>
           </PricingItem>
-          <PricingItem>
+          <PricingItem class="text-green-500 dark:text-green-400">
             <span>No setup, or hidden fees</span>
           </PricingItem>
-          <PricingItem>
+          <PricingItem class="text-green-500 dark:text-green-400">
             <span>Team size: <span class="font-semibold">100+ developer</span></span>
           </PricingItem>
-          <PricingItem>
+          <PricingItem class="text-green-500 dark:text-green-400">
             <span>Premium support: <span class="font-semibold">36 months</span></span>
           </PricingItem>
-          <PricingItem>
+          <PricingItem class="text-green-500 dark:text-green-400">
             <span>Free updates: <span class="font-semibold">36 months</span></span>
           </PricingItem>
 
