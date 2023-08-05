@@ -24,6 +24,6 @@
 
 <ExampleDiv>
   <Section name="tableheader" sectionClass="bg-gray-50 dark:bg-gray-900 h-40 flex items-center">
-    <h1 class="text-3xl dark:text-white">COMING SOON</h1>
+    <h1 class="text-2xl dark:text-white">COMING SOON</h1>
   </Section>
 </ExampleDiv>

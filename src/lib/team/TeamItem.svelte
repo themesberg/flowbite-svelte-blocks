@@ -1,5 +1,5 @@
 <script lang="ts">
-  import classNames from 'classnames';
+  import { twMerge } from "tailwind-merge";
   export let divClass: string =
     'items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700';
   export let imgClass: string = 'w-full rounded-lg sm:rounded-none sm:rounded-l-lg';
@@ -13,15 +13,15 @@
   export let jobTitle: string = '';
 </script>
 
-<div class={classNames(divClass, $$props.class)}>
+<div class={twMerge(divClass, $$props.class)}>
   <a {href}>
-    <img class={classNames(imgClass, $$props.classImg)} {src} {alt} />
+    <img class={twMerge(imgClass, $$props.classImg)} {src} {alt} />
   </a>
   <div class="p-5">
-    <h3 class={classNames(h3Class, $$props.classH3)}>
+    <h3 class={twMerge(h3Class, $$props.classH3)}>
       <a {href}>{name}</a>
     </h3>
-    <span class={classNames(spanClass, $$props.classSpan)}>{jobTitle}</span>
+    <span class={twMerge(spanClass, $$props.classSpan)}>{jobTitle}</span>
     <slot />
     <ul class="flex space-x-4 sm:mt-0">
       <slot name="social" />

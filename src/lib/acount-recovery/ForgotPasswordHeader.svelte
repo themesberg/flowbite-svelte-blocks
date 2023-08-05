@@ -1,5 +1,5 @@
 <script lang="ts">
-  import classNames from 'classnames';
+  import { twMerge } from 'tailwind-merge';
   export let aClass: string =
     'flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white';
   export let imgClass: string = 'w-8 h-8 mr-2';
@@ -8,7 +8,7 @@
   export let alt: string = '';
 </script>
 
-<a {href} class={classNames(aClass, $$props.classA)}>
-  <img class={classNames(imgClass, $$props.classImg)} {src} {alt} />
+<a {href} class={twMerge(aClass, $$props.class)}>
+  <img class={twMerge(imgClass, $$props.classImg)} {src} {alt} />
   <slot />
 </a>

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import classNames from 'classnames';
+  import { twMerge } from 'tailwind-merge';
   export let sectionClass: string = 'bg-white dark:bg-gray-900';
   export let name:
     | 'blog'
@@ -132,8 +132,8 @@
   };
 </script>
 
-<section class={classNames(sectionClass, $$props.classSection)}>
-  <div class={classNames(sectionClasses[name]['div'], $$props.classDiv)}>
+<section class={twMerge(sectionClass, $$props.classSection)}>
+  <div class={twMerge(sectionClasses[name]['div'], $$props.classDiv)}>
     <slot />
   </div>
 </section>

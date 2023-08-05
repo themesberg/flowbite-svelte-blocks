@@ -1,13 +1,6 @@
 <script lang="ts">
   import { Section, HeroHeader, FeatureDefault, FeatureItem } from '$lib';
-  import {
-    PresentationChartLine,
-    AcademicCap,
-    Cog,
-    Briefcase,
-    CurrencyDollar,
-    Bolt
-  } from 'svelte-heros';
+  import { Icon } from 'flowbite-svelte-icons';
   import { ExampleDiv, SectionHeader, SectionBlock, MetaTag } from '../utils';
   const breadcrumb_title = 'Feature Sections';
   const title = 'Feature';
@@ -46,8 +39,8 @@
     <FeatureDefault>
       <FeatureItem>
         <svelte:fragment slot="icon"
-          ><PresentationChartLine
-            class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
+          ><Icon name="chart-solid"
+            class="text-primary-600 dark:text-primary-300"
           /></svelte:fragment
         >
         <svelte:fragment slot="h3">Marketing</svelte:fragment>
@@ -58,8 +51,8 @@
       </FeatureItem>
       <FeatureItem>
         <svelte:fragment slot="icon"
-          ><AcademicCap
-            class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
+          ><Icon name="landmark-solid"
+            class="text-primary-600 dark:text-primary-300"
           /></svelte:fragment
         >
         <svelte:fragment slot="h3">Legal</svelte:fragment>
@@ -70,8 +63,8 @@
       </FeatureItem>
       <FeatureItem>
         <svelte:fragment slot="icon"
-          ><Briefcase
-            class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
+          ><Icon name="briefcase-solid"
+            class="text-primary-600 dark:text-primary-300"
           /></svelte:fragment
         >
         <svelte:fragment slot="h3">Business Automation</svelte:fragment>
@@ -82,8 +75,8 @@
       </FeatureItem>
       <FeatureItem>
         <svelte:fragment slot="icon"
-          ><CurrencyDollar
-            class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
+          ><Icon name="dollar-solid"
+            class="text-primary-600 dark:text-primary-300"
           /></svelte:fragment
         >
         <svelte:fragment slot="h3">Finance</svelte:fragment>
@@ -94,8 +87,8 @@
       </FeatureItem>
       <FeatureItem>
         <svelte:fragment slot="icon"
-          ><Bolt
-            class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
+          ><Icon name="rocket-solid"
+            class="text-primary-600 dark:text-primary-300"
           /></svelte:fragment
         >
         <svelte:fragment slot="h3">Enterprise Design</svelte:fragment>
@@ -106,8 +99,8 @@
       </FeatureItem>
       <FeatureItem>
         <svelte:fragment slot="icon"
-          ><Cog
-            class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
+          ><Icon name="cog-outline"
+            class="text-primary-600 dark:text-primary-300"
           /></svelte:fragment
         >
         <svelte:fragment slot="h3">Operations</svelte:fragment>

@@ -1,6 +1,4 @@
 <script lang="ts">
-  // https://github.com/shinokada/svelte-heros-v2
-  // heroicons v2.0.10
   export let size = '24';
   export let strokeWidth = '1.5';
   export let color = 'currentColor';

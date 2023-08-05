@@ -1,7 +1,7 @@
 <script lang="ts">
   import { Section, Cta } from '$lib';
   import { Button } from 'flowbite-svelte';
-  import { VideoCamera } from 'svelte-heros';
+  import { Icon } from 'flowbite-svelte-icons';
   import { ExampleDiv, SectionHeader, SectionBlock, MetaTag } from '../utils';
   const breadcrumb_title = 'CTA Sections';
   const title = 'CTA';
@@ -36,7 +36,7 @@
       <div class="flex flex-wrap items-center gap-4">
         <Button href="/" color="red" size="lg">Get started</Button>
         <Button href="/" color="light" size="lg"
-          ><VideoCamera class="mr-2" size="20" variation="solid" />
+          ><Icon name="video-solid" class="mr-2 -ml-1" size="sm" />
           View more
         </Button>
       </div>
@@ -86,17 +86,7 @@
         class="inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900"
       >
         Get started
-        <svg
-          class="ml-2 -mr-1 w-5 h-5"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          ><path
-            fill-rule="evenodd"
-            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          /></svg
-        >
+        <Icon name="arrow-right-solid" size="md" class="ml-2 -mr-1" />
       </a>
     </Cta>
   </Section>

@@ -9,6 +9,7 @@
   import { Cta } from 'flowbite-svelte-blocks';
   import { Button } from 'flowbite-svelte';
   import { Home, VideoCamera } from 'svelte-heros';
+  import { Icon } from 'flowbite-svelte-icons';
 </script>
 
 <Cta ctatype="image">

@@ -1,7 +1,7 @@
 <script lang="ts">
   import { Section, Content, ContentWithImage } from '$lib';
   import { ExampleDiv, SectionHeader, SectionBlock, MetaTag } from '../utils';
-  import { ChevronRight } from 'svelte-heros';
+  import { Icon } from 'flowbite-svelte-icons';
   const breadcrumb_title = 'Content Sections';
   const title = 'Content';
   const dir = 'marketing';
@@ -45,7 +45,7 @@
         class="inline-flex items-center font-medium text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700"
       >
         Learn more
-        <ChevronRight class="ml-1 w-6 h-6" />
+        <Icon name="chevron-right-solid" class="ml-2" size="xs" />
       </a>
     </Content>
   </Section>

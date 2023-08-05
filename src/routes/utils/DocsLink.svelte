@@ -1,11 +1,11 @@
 <script lang="ts">
-  import classNames from 'classnames';
+  import { twMerge } from 'tailwind-merge';
   import BookOpen from './icons/BookOpen.svelte';
   export let page: string = '';
   const href = `https://flowbite-svelte-blocks.pages.dev/${page}`;
 </script>
 
-<div class={classNames('flex justify-between items-center my-2', $$props.class)}>
+<div class={twMerge('flex justify-between items-center my-2', $$props.class)}>
   <a
     {href}
     {...$$restProps}

@@ -1,11 +1,11 @@
 <script lang="ts">
-  import classNames from 'classnames';
+  import { twMerge } from 'tailwind-merge';
   export let authorDiv: string = 'flex justify-between items-center';
   export let authorImgDiv: string = 'flex items-center space-x-4';
 </script>
 
-<div class={classNames(authorDiv, $$props.classAuthorDiv)}>
-  <div class={classNames(authorImgDiv, $$props.classAuthorImgDiv)}>
+<div class={twMerge(authorDiv, $$props.class)}>
+  <div class={twMerge(authorImgDiv, $$props.classAuthorImgDiv)}>
     <slot name="author" />
   </div>
   <slot />
