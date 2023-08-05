@@ -9,24 +9,9 @@
     Cta
   } from '$lib';
   import {
-    Button,
-    Footer,
-    FooterCopyright,
-    FooterIcon,
-    FooterLinkGroup,
-    FooterLink,
-    FooterBrand
+    Button
   } from 'flowbite-svelte';
-  import {
-    ArrowRight,
-    PresentationChartLine,
-    AcademicCap,
-    Cog,
-    Briefcase,
-    CurrencyDollar,
-    Bolt,
-    ChevronRight
-  } from 'svelte-heros';
+  import { Icon } from 'flowbite-svelte-icons';
   import {
     Airbnb,
     Facebook,
@@ -54,7 +39,7 @@
       </svelte:fragment>
       <a href="/"
         ><Button size="xl" class="inline-flex items-center justify-center mr-3"
-          >Get started<ArrowRight size="18" class="ml-2 -mr-1" /></Button
+          >Get started<Icon name="arrow-right-solid" class="ml-2 -mr-1" /></Button
         >
       </a>
       <a href="/"
@@ -116,8 +101,8 @@
   <FeatureDefault>
     <FeatureItem>
       <svelte:fragment slot="icon"
-        ><PresentationChartLine
-          class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
+        ><Icon name="chart-solid"
+          class="text-primary-600 dark:text-primary-300"
         /></svelte:fragment
       >
       <svelte:fragment slot="h3">Marketing</svelte:fragment>
@@ -128,8 +113,8 @@
     </FeatureItem>
     <FeatureItem>
       <svelte:fragment slot="icon"
-        ><AcademicCap
-          class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
+        ><Icon name="landmark-solid"
+          class="text-primary-600 dark:text-primary-300"
         /></svelte:fragment
       >
       <svelte:fragment slot="h3">Legal</svelte:fragment>
@@ -140,8 +125,8 @@
     </FeatureItem>
     <FeatureItem>
       <svelte:fragment slot="icon"
-        ><Briefcase
-          class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
+        ><Icon name="briefcase-solid"
+          class="text-primary-600 dark:text-primary-300"
         /></svelte:fragment
       >
       <svelte:fragment slot="h3">Business Automation</svelte:fragment>
@@ -152,8 +137,8 @@
     </FeatureItem>
     <FeatureItem>
       <svelte:fragment slot="icon"
-        ><CurrencyDollar
-          class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
+        ><Icon name="dollar-solid"
+          class="text-primary-600 dark:text-primary-300"
         /></svelte:fragment
       >
       <svelte:fragment slot="h3">Finance</svelte:fragment>
@@ -164,8 +149,8 @@
     </FeatureItem>
     <FeatureItem>
       <svelte:fragment slot="icon"
-        ><Bolt
-          class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
+        ><Icon name="rocket-solid"
+          class="text-primary-600 dark:text-primary-300"
         /></svelte:fragment
       >
       <svelte:fragment slot="h3">Enterprise Design</svelte:fragment>
@@ -176,14 +161,14 @@
     </FeatureItem>
     <FeatureItem>
       <svelte:fragment slot="icon"
-        ><Cog
-          class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
+        ><Icon name="cog-outline"
+          class="text-primary-600 dark:text-primary-300"
         /></svelte:fragment
       >
       <svelte:fragment slot="h3">Operations</svelte:fragment>
       <svelte:fragment slot="paragraph"
-        >Keep your company’s lights on with customizable, iterative, and structured workflows built
-        for all efficient teams and individual.</svelte:fragment
+        >Keep your company’s lights on with customizable, iterative, and structured workflows
+        built for all efficient teams and individual.</svelte:fragment
       >
     </FeatureItem>
   </FeatureDefault>
@@ -236,7 +221,7 @@
       class="inline-flex items-center font-medium text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700"
     >
       Learn more
-      <ChevronRight class="ml-1 w-6 h-6" />
+      <Icon name="chevron-right-outline" class="ml-1" size="sm" />
     </a>
   </Content>
 </Section>
