@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.1](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.3.9...v0.4.1) (2023-08-09)
+
+
+### Bug Fixes
+
+* newsletter action url ([317d17e](https://github.com/shinokada/flowbite-svelte-blocks/commit/317d17e4ab44abfc5d644faa9771e8910833dab2))
+* remove footer from example page ([045dd69](https://github.com/shinokada/flowbite-svelte-blocks/commit/045dd69355daa88a90fd07043f09b77b6288c991))
+
 ### [0.3.9](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.3.8...v0.3.9) (2023-06-15)
 
 
