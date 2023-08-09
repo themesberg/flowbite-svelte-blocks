@@ -1,52 +1,42 @@
-/*
-This script reads the files in the dist directory and creates a new exports object in the package.json file with the appropriate svelte and types paths for each Svelte component file found in the dist directory, except for index.js and index.d.ts.
+import fs from 'fs';
+import path from 'path';
 
-The resulting exports object is structured as follows:
-"exports": {
-  ".": {
-    "types": "./dist/index.d.ts",
-    "svelte": "./dist/index.js"
-  },
-  "./<component-name>.svelte": {
-    "types": "./dist/<component-name>.svelte.d.ts",
-    "svelte": "./dist/<component-name>.svelte"
-  },
-  ...
+const distDir = './dist';
+const packageJsonPath = './package.json';
+
+const componentNames = fs.readdirSync(distDir);
+const componentExports = {};
+
+for (const componentName of componentNames) {
+  const componentDir = path.join(distDir, componentName);
+  if (!fs.existsSync(componentDir) || !fs.lstatSync(componentDir).isDirectory()) {
+    continue;
+  }
+  const componentFiles = fs.readdirSync(componentDir);
+
+  const svelteFiles = componentFiles.filter((file) => file.endsWith('.svelte'));
+
+  for (const svelteFile of svelteFiles) {
+    const dtsFile = `${svelteFile}.d.ts`;
+    const exportKey = `./${svelteFile}`;
+
+    componentExports[exportKey] = {
+      types: `./dist/${componentName}/${dtsFile}`,
+      svelte: `./dist/${componentName}/${svelteFile}`
+    };
+  }
 }
 
-where <component-name> represents the name of each Svelte component file found in the dist directory.
-*/
-
-// Import the 'fs' module to access the file system
-import fs from 'fs';
-
-// Read the list of files in the "./dist" directory and filter out non-.svelte files.
-const files = fs.readdirSync('./dist').filter((file) => file.endsWith('.svelte'));
-
-// Create the initial "exports" object with an entry for "./dist/index.*".
-const exports = {
-  '.': {
+const indexDtsPath = path.join(distDir, 'index.d.ts');
+if (fs.existsSync(indexDtsPath) && fs.lstatSync(indexDtsPath).isFile()) {
+  componentExports['.'] = {
     types: './dist/index.d.ts',
     svelte: './dist/index.js'
-  }
-};
+  };
+}
 
-// Iterate over each ".svelte" file in the "./dist" directory.
-// For each file, add an entry to the "exports" object with the svelte and types paths updated.
-files.forEach((file) => {
-  if (file !== 'index.svelte') {
-    const name = file.replace('.svelte', '');
-    exports[`./${name}.svelte`] = {
-      types: `./dist/${name}.svelte.d.ts`,
-      svelte: `./dist/${name}.svelte`
-    };
-  } else {
-    exports[`./${file}`] = `./dist/${file}`;
-  }
-});
+const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf-8'));
 
-// Read the package.json file, update the "exports" field, and write the file back out.
-const packageJson = JSON.parse(fs.readFileSync('./package.json', 'utf-8'));
-packageJson.exports = exports;
+packageJson.exports = componentExports;
 
-fs.writeFileSync('./package.json', JSON.stringify(packageJson, null, 2));
+fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2));

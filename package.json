@@ -79,6 +79,10 @@
     ".": {
       "types": "./dist/index.d.ts",
       "svelte": "./dist/index.js"
+    },
+    "./Section.svelte": {
+      "types": "./dist/Section.svelte.d.ts",
+      "svelte": "./dist/Section.svelte"
     }
   },
   "files": [
