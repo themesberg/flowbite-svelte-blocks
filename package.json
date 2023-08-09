@@ -41,6 +41,8 @@
     "flowbite": "^1.8.1",
     "flowbite-svelte": "0.38.2",
     "flowbite-svelte-icons": "^0.3.5",
+    "mdsvex": "^0.11.0",
+    "mdsvexamples": "^0.4.1",
     "postcss": "^8.4.27",
     "postcss-load-config": "^4.0.1",
     "prettier": "^2.8.8",

@@ -1,6 +1,6 @@
 <script lang="ts">
   import { twMerge } from 'tailwind-merge';
-  export let sectionClass: string = 'bg-white dark:bg-gray-900';
+  export let sectionClass: string = 'relative py-6 sm:py-10';
   export let name:
     | 'blog'
     | 'cta'

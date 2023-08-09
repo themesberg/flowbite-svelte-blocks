@@ -1,12 +1,19 @@
+---
+layout: componentLayout
+title: Contact
+breadcrumb_title: Contact Form
+dir: marketing
+description: The contact section is an important part of your website where the user can reach out to your team by interacting with the form elements and submitting the data.
+---
+
 <script lang="ts">
   import { Section, Contact } from '$lib';
   import { ExampleDiv, SectionHeader, SectionBlock, MetaTag } from '../utils';
   import { Label, Input, Textarea, Button } from 'flowbite-svelte';
-  const breadcrumb_title = 'Contact Form';
-  const title = 'Contact';
-  const dir = 'marketing';
-  const description =
-    'The contact section is an important part of your website where the user can reach out to your team by interacting with the form elements and submitting the data.';
+  // const breadcrumb_title = 'Contact Form';
+  // const title = 'Contact';
+  // const dir = 'marketing';
+  // const description = 'The contact section is an important part of your website where the user can reach out to your team by interacting with the form elements and submitting the data.';
 </script>
 
 <MetaTag {breadcrumb_title} {title} {dir} {description} />

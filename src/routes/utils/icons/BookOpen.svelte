@@ -40,6 +40,7 @@
   on:mouseout
   on:blur
   on:focus
+  role="img"
 >
   {@html svgpath}
 </svg>

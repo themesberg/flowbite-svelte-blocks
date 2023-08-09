@@ -1,6 +1,24 @@
+---
+layout: componentLayout
+title: Crud Create Drawers
+breadcrumb_title: Create Drawers (CRUD)
+dir: application
+description: Get started with a collection of drawer components to create new data models in your application by including form elements.
+---
+
 <script lang="ts">
-  import { Section } from '$lib';
-  import { ExampleDiv, SectionHeader, SectionBlock, MetaTag } from '../utils';
+  import { ExampleDiv, SectionBlock } from '../utils';
+</script>
+
+## Default drawer
+
+Use this free example of a drawer component to show a list of input field items to create a data
+entry inside your dashboard application.
+
+
+```svelte example
+<script lang="ts">
+  import { Section } from 'flowbite-svelte-blocks';
   import { Drawer, Button, CloseButton, Label, Input, Textarea, Select } from 'flowbite-svelte';
   import { sineIn } from 'svelte/easing';
   let hidden = true;
@@ -20,29 +38,9 @@
   const handleCancel = () => {
     hidden = true;
   };
-  const breadcrumb_title = 'Create Drawers (CRUD)';
-  const title = 'Crud Create Drawers';
-  const dir = 'application';
-  const description =
-    'Get started with a collection of drawer components to create new data models in your application by including form elements.';
 </script>
 
-<MetaTag {breadcrumb_title} {title} {dir} {description} />
-
-<SectionHeader
-  category="application"
-  title="Svelte {breadcrumb_title} - Flowbite"
-  {breadcrumb_title}
-  {description}
-/>
-
-<SectionBlock title="Default drawer">
-  Use this free example of a drawer component to show a list of input field items to create a data
-  entry inside your dashboard application.
-</SectionBlock>
-
-<ExampleDiv>
-  <Section name="crudcreatedrawer">
+<Section name="crudcreatedrawer">
     <div class="text-center pt-8">
       <Button on:click={() => (hidden = false)}>Create product</Button>
     </div>
@@ -107,4 +105,4 @@
       </form>
     </Drawer>
   </Section>
-</ExampleDiv>
+```

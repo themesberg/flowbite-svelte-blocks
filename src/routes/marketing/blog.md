@@ -1,3 +1,11 @@
+---
+layout: componentLayout
+title: Blog
+breadcrumb_title: Blog Sections
+dir: marketing
+description: Get started with a collection of website sections related to the blog area of your website including blog posts, article pages, comments, categories, and more.
+---
+
 <script>
   import {
     Section,
@@ -10,11 +18,10 @@
   } from '$lib';
   import { ExampleDiv, SectionHeader, SectionBlock, MetaTag } from '../utils';
   import { Icon } from 'flowbite-svelte-icons';
-  const breadcrumb_title = 'Blog Sections';
-  const title = 'Blog';
-  const dir = 'marketing';
-  const description =
-    'Get started with a collection of website sections related to the blog area of your website including blog posts, article pages, comments, categories, and more.';
+  // const breadcrumb_title = 'Blog Sections';
+  // const title = 'Blog';
+  // const dir = 'marketing';
+  // const description = 'Get started with a collection of website sections related to the blog area of your website including blog posts, article pages, comments, categories, and more.';
 </script>
 
 <MetaTag {breadcrumb_title} {title} {dir} {description} />

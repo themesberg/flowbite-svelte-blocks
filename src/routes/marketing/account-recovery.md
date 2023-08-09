@@ -1,12 +1,19 @@
+---
+layout: componentLayout
+title: Account Recovery
+breadcrumb_title: Account Recovery Form
+dir: marketing
+description: Get started with account recovery (aka. forgot password) pages to allow users to reset their password using an email based on multiple layouts and styles.
+---
+
 <script lang="ts">
   import { Section, ForgotPassword, ForgotPasswordHeader } from '$lib';
   import { ExampleDiv, SectionHeader, SectionBlock, MetaTag } from '../utils';
   import { Label, Input, Button, Checkbox } from 'flowbite-svelte';
-  const breadcrumb_title = 'Account Recovery Form';
-  const title = 'Account Recovery';
-  const dir = 'marketing';
-  const description =
-    'Get started with account recovery (aka. forgot password) pages to allow users to reset their password using an email based on multiple layouts and styles.';
+  // const breadcrumb_title = 'Account Recovery Form';
+  // const title = 'Account Recovery';
+  // const dir = 'marketing';
+  // const description = 'Get started with account recovery (aka. forgot password) pages to allow users to reset their password using an email based on multiple layouts and styles.';
 </script>
 
 <MetaTag {breadcrumb_title} {title} {dir} {description} />

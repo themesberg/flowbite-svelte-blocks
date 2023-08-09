@@ -4,7 +4,8 @@
 </script>
 
 <svg
-  role="img"
+role="img"
+aria-label="instagram"
   viewBox="0 0 24 24"
   width={size}
   height={size}

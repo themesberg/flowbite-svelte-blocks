@@ -1,3 +1,11 @@
+---
+layout: componentLayout
+title: Marketing UI - Flowbite Svelte Blocks
+breadcrumb_title: Marketing UI
+dir: marketing
+description: Get started with a large collection of free and premium UI components built with Tailwind CSS and the Flowbite library featuring hero sections, headers, contact forms, and more.
+---
+
 <script>
   import { SectionHeader, MetaTag } from '../utils';
   import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
@@ -31,11 +39,10 @@
     Testimonialsection,
     UserOnboarding
   } from '../sections';
-  const title = 'Marketing UI - Flowbite Svelte Blocks';
-  const breadcrumb_title = 'Marketing UI';
-  const description =
-    'Get started with a large collection of free and premium UI components built with Tailwind CSS and the Flowbite library featuring hero sections, headers, contact forms, and more.';
-  const dir = 'marketing';
+  // const title = 'Marketing UI - Flowbite Svelte Blocks';
+  // const breadcrumb_title = 'Marketing UI';
+  // const description = 'Get started with a large collection of free and premium UI components built with Tailwind CSS and the Flowbite library featuring hero sections, headers, contact forms, and more.';
+  // const dir = 'marketing';
 </script>
 
 <MetaTag {breadcrumb_title} {title} {dir} {description} withoutLink={true} />

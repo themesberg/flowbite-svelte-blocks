@@ -1,7 +1,7 @@
 <script lang="ts">
   import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
   export let home: string = 'Blocks';
-  export let category: 'application' | 'marketing' | 'publisher' = 'application';
+  export let category: string = 'application';
   export let title: string = '';
   export let description: string = '';
   export let breadcrumb_title: string = '';

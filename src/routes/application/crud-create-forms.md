@@ -1,12 +1,20 @@
+---
+layout: componentLayout
+title: Crud Create Forms
+breadcrumb_title: Create Forms (CRUD)
+dir: application
+description: Get started with a collection of forms crafted for the "create" action from the CRUD layouts featuring form elements coded in Tailwind CSS.
+---
+
 <script lang="ts">
   import { Section } from '$lib';
   import { ExampleDiv, SectionHeader, SectionBlock, MetaTag } from '../utils';
   import { Label, Input, Button, Select, Textarea } from 'flowbite-svelte';
-  const breadcrumb_title = 'Create Forms (CRUD)';
-  const title = 'Crud Create Forms';
-  const dir = 'application';
-  const description =
-    'Get started with a collection of forms crafted for the "create" action from the CRUD layouts featuring form elements coded in Tailwind CSS.';
+  // const breadcrumb_title = 'Create Forms (CRUD)';
+  // const title = 'Crud Create Forms';
+  // const dir = 'application';
+  // const description =
+  //   'Get started with a collection of forms crafted for the "create" action from the CRUD layouts featuring form elements coded in Tailwind CSS.';
   const handleSubmit = () => {
     alert('Form submited.');
   };

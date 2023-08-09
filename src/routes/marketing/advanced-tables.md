@@ -1,11 +1,18 @@
+---
+layout: componentLayout
+title: Advanced Tables
+breadcrumb_title: Advanced Tables
+dir: marketing
+description: Get started with a collection of advanced table components based on multiple layouts and styles to show a complex set of data using rows and columns built with Tailwind CSS.
+---
+
 <script>
   import { Section } from '$lib';
   import { ExampleDiv, SectionHeader, SectionBlock, MetaTag } from '../utils';
-  const breadcrumb_title = 'Advanced Tables';
-  const title = 'Advanced Tables';
-  const dir = 'application';
-  const description =
-    'Get started with a collection of advanced table components based on multiple layouts and styles to show a complex set of data using rows and columns built with Tailwind CSS.';
+  // const breadcrumb_title = 'Advanced Tables';
+  // const title = 'Advanced Tables';
+  // const dir = 'application';
+  // const description = 'Get started with a collection of advanced table components based on multiple layouts and styles to show a complex set of data using rows and columns built with Tailwind CSS.';
 </script>
 
 <MetaTag {breadcrumb_title} {title} {dir} {description} />

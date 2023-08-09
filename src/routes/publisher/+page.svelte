@@ -2,7 +2,7 @@
   import { SectionHeader, MetaTag } from '../utils';
   import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
   import { BlogTemplatesection, CommentSection, RelatedArticle } from '../sections';
-  import RelatedArticles from './related-articles.svelte';
+  import RelatedArticles from './related-articles.md';
   const title = 'Publisher UI - Flowbite Svelte Blocks';
   const breadcrumb_title = 'Publisher UI';
   const description =

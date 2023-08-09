@@ -1,14 +1,21 @@
+---
+layout: componentLayout
+title: Banner
+breadcrumb_title: Banner
+dir: marketing
+description: The banner component can be used to show extra information or enable interactions with the user without affecting the main content area of the website.
+---
+
 <script lang="ts">
   import { Banner } from '$lib';
   import { ExampleDiv, SectionHeader, SectionBlock, MetaTag } from '../utils';
   import { CloseButton } from 'flowbite-svelte';
 
   export let visible = true;
-  const breadcrumb_title = 'Banner';
-  const title = 'Banner';
-  const dir = 'marketing';
-  const description =
-    'The banner component can be used to show extra information or enable interactions with the user without affecting the main content area of the website.';
+  // const breadcrumb_title = 'Banner';
+  // const title = 'Banner';
+  // const dir = 'marketing';
+  // const description = 'The banner component can be used to show extra information or enable interactions with the user without affecting the main content area of the website.';
 </script>
 
 <MetaTag {breadcrumb_title} {title} {dir} {description} />
