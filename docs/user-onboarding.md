@@ -1,3 +1,0 @@
-# User Onboarding
-
-Coming soon

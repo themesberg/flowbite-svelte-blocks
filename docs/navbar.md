@@ -1,3 +1,0 @@
-# Dashboard Navbar
-
-Coming soon

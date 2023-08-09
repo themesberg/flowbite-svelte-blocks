@@ -1,3 +1,0 @@
-# Blog Templates
-
-Coming soon
