@@ -7,7 +7,7 @@
     ContentWithImage,
     Content,
     Cta
-  } from '$lib';
+  } from 'flowbite-svelte-blocks';
   import {
     Button
   } from 'flowbite-svelte';

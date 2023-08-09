@@ -6,14 +6,8 @@
 </script>
 
 <script>
-  import Footer from '../utils/Footer.svelte';
   import MetaTag from '../utils/MetaTag.svelte';
-  import Newsletter from '../utils/Newsletter.svelte';
-  import PageHeadSection from '../utils/PageHeadSection.svelte';
   import SectionHeader from '../utils/SectionHeader.svelte';
-  import Paging from '../utils/Paging.svelte';
-  import Toc from '../utils/Toc.svelte';
-  import { extract } from './Anchor.svelte';
 
   export let /** @type {string} */ title;
   export let /** @type {string} */ breadcrumb_title;

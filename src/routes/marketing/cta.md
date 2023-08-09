@@ -1,64 +1,52 @@
+---
+layout: componentLayout
+title: Svelte CTA Sections - Flowbite Svelte Blocks
+breadcrumb_title: CTA Sections
+dir: marketing
+description: The CTA (call to action) website sections can be used anywhere on your website to encourage your users to take any action, such as creating a new account.
+---
+
+## Default CTA section
+Use this example to show a simple heading, paragraph, and a couple of CTA buttons to encourage
+users to take action.
+
+
+```svelte example
 <script lang="ts">
-  import { Section, Cta } from '$lib';
+  import { Section, Cta } from 'flowbite-svelte-blocks';
   import { Button } from 'flowbite-svelte';
   import { Icon } from 'flowbite-svelte-icons';
-  import { ExampleDiv, SectionHeader, SectionBlock, MetaTag } from '../utils';
-  const breadcrumb_title = 'CTA Sections';
-  const title = 'CTA';
-  const dir = 'marketing';
-  const description =
-    'The CTA (call to action) website sections can be used anywhere on your website to encourage your users to take any action, such as creating a new account.';
 </script>
 
-<MetaTag {breadcrumb_title} {title} {dir} {description} />
-
-<SectionHeader
-  category="marketing"
-  title="Svelte {breadcrumb_title} - Flowbite"
-  {breadcrumb_title}
-  {description}
-/>
-
-<SectionBlock title="Default CTA section">
-  Use this example to show a simple heading, paragraph, and a couple of CTA buttons to encourage
-  users to take action.
-</SectionBlock>
-
-<ExampleDiv>
-  <Section name="cta">
-    <Cta>
-      <svelte:fragment slot="h2">Let's find more that brings us together.</svelte:fragment>
-      <p class="mb-6 font-light text-gray-500 dark:text-gray-400 md:text-lg">
-        Flowbite helps you connect with friends, family and communities of people who share your
-        interests. Connecting with your friends and family as well as discovering new ones is easy
-        with features like Groups, Watch and Marketplace.
-      </p>
-      <div class="flex flex-wrap items-center gap-4">
-        <Button href="/" color="red" size="lg">Get started</Button>
-        <Button href="/" color="light" size="lg"
-          ><Icon name="video-solid" class="mr-2 -ml-1" size="sm" />
-          View more
-        </Button>
-      </div>
-    </Cta>
-  </Section>
-</ExampleDiv>
-
-<Section name="none" classSection="py-6 sm:py-10" classDiv="px-4 mx-auto max-w-8xl">
-  <div class="grid lg:grid-cols-2">
-    <div>
-      <h2 class="mb-1 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-        Image with CTA button
-      </h2>
-      <p class="text-lg text-gray-500 lg:mb-0 dark:text-gray-400 lg:max-w-2xl">
-        Use this example to show an image or app screenshot next to the CTA button to provide
-        additional visual impact.
-      </p>
+<Section name="cta">
+  <Cta>
+    <svelte:fragment slot="h2">Let's find more that brings us together.</svelte:fragment>
+    <p class="mb-6 font-light text-gray-500 dark:text-gray-400 md:text-lg">
+      Flowbite helps you connect with friends, family and communities of people who share your
+      interests. Connecting with your friends and family as well as discovering new ones is easy
+      with features like Groups, Watch and Marketplace.
+    </p>
+    <div class="flex flex-wrap items-center gap-4">
+      <Button href="/" color="red" size="lg">Get started</Button>
+      <Button href="/" color="light" size="lg"
+        ><Icon name="video-solid" class="mr-2 -ml-1" size="sm" />
+        View more
+      </Button>
     </div>
-  </div>
+  </Cta>
 </Section>
+```
 
-<ExampleDiv>
+## Image with CTA button
+Use this example to show an image or app screenshot next to the CTA button to provide
+additional visual impact.
+
+```svelte example
+<script lang="ts">
+  import { Section, Cta } from 'flowbite-svelte-blocks';
+  import { Icon } from 'flowbite-svelte-icons';
+</script>
+
   <Section name="ctawithimg">
     <Cta ctatype="image">
       <svelte:fragment slot="img">
@@ -90,34 +78,28 @@
       </a>
     </Cta>
   </Section>
-</ExampleDiv>
+```
 
-<Section name="none" classSection="py-6 sm:py-10" classDiv="px-4 mx-auto max-w-8xl">
-  <div class="grid lg:grid-cols-2">
-    <div>
-      <h2 class="mb-1 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-        Heading with CTA button
-      </h2>
-      <p class="text-lg text-gray-500 lg:mb-0 dark:text-gray-400 lg:max-w-2xl">
-        Use this simple yet effective CTA section with a heading, short paragraph, and a button to
-        encourage users to start a free trial.
-      </p>
-    </div>
-  </div>
+## Heading with CTA button
+Use this simple yet effective CTA section with a heading, short paragraph, and a button to
+encourage users to start a free trial.
+
+```svelte example
+<script lang="ts">
+  import { Section, Cta } from 'flowbite-svelte-blocks';
+</script>
+
+<Section name="cta">
+  <Cta ctatype="heading">
+    <svelte:fragment slot="h2">Start your free trial today</svelte:fragment>
+    <p class="mb-6 font-light text-gray-500 dark:text-gray-400 md:text-lg">
+      Try Flowbite Platform for 30 days. No credit card required.
+    </p>
+    <a
+      href="/"
+      class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
+      >Free trial for 30 days</a
+    >
+  </Cta>
 </Section>
-
-<ExampleDiv>
-  <Section name="cta">
-    <Cta ctatype="heading">
-      <svelte:fragment slot="h2">Start your free trial today</svelte:fragment>
-      <p class="mb-6 font-light text-gray-500 dark:text-gray-400 md:text-lg">
-        Try Flowbite Platform for 30 days. No credit card required.
-      </p>
-      <a
-        href="/"
-        class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
-        >Free trial for 30 days</a
-      >
-    </Cta>
-  </Section>
-</ExampleDiv>
+```

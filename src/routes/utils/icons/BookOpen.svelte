@@ -33,13 +33,6 @@
   fill="none"
   {viewBox}
   stroke-width={strokeWidth}
-  on:click
-  on:mouseenter
-  on:mouseleave
-  on:mouseover
-  on:mouseout
-  on:blur
-  on:focus
   role="img"
 >
   {@html svgpath}

@@ -1,5 +1,4 @@
 <script>
-  import { Navbar, NavBrand, NavHamburger, NavUl, NavLi, Button, DarkMode } from 'flowbite-svelte';
   import { MetaTag } from './utils';
   import {
     AdvancedTable,
@@ -55,10 +54,6 @@
     UserOnboarding
   } from './sections';
 
-  let navClass = 'bg-white border-gray-200 px-4 py-2.5 dark:bg-gray-800';
-  let navDivClass = 'flex flex-wrap justify-between items-center mx-auto max-w-8xl lg:px-4';
-  let btnClass =
-    'text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2 ml-2';
   const title = '';
   const breadcrumb_title = 'Flowbite Svelte Blocks';
   const description =
@@ -76,7 +71,7 @@
             <h1 class="mb-2 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
               Flowbite Blocks in Svelte
             </h1>
-            <p class="text-lg text-gray-500 xl:mr-64 lg:mb-0 dark:text-gray-400">
+            <p class="text-lg text-gray-500 lg:mb-0 dark:text-gray-400">
               Get started with 122 free and premium UI components built with the utility classes
               from Tailwind CSS to upgrade your web development stack and customize the colors,
               fonts, and dark mode using the configurator.

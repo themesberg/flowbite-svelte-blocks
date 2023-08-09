@@ -1,14 +1,10 @@
 ---
 layout: componentLayout
-title: Crud Create Drawers
+title: Svelte Create Drawers (CRUD) - Flowbite Svelte Blocks
 breadcrumb_title: Create Drawers (CRUD)
 dir: application
 description: Get started with a collection of drawer components to create new data models in your application by including form elements.
 ---
-
-<script lang="ts">
-  import { ExampleDiv, SectionBlock } from '../utils';
-</script>
 
 ## Default drawer
 

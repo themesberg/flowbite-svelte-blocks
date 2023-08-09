@@ -25,7 +25,7 @@
         >
           {title}
         </h1>
-        <p class="text-lg text-gray-500 xl:mr-64 lg:mb-0 dark:text-gray-400">
+        <p class="text-lg text-gray-500 lg:mb-0 dark:text-gray-400">
           {description}
         </p>
       </div>

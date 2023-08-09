@@ -1,5 +1,6 @@
-<script>
+<script lang="ts">
   import '../app.css';
+  import { page } from '$app/stores';
   import {
     Footer,
     FooterBrand,
@@ -12,45 +13,83 @@
     NavHamburger,
     NavUl,
     NavLi,
-    Button,
-    DarkMode
+    DarkMode,
+    Tooltip
   } from 'flowbite-svelte';
-  import { Github } from './utils';
-  let navClass = 'bg-white border-gray-200 py-2.5 dark:bg-gray-800';
-  let navDivClass = 'flex flex-wrap justify-between items-center mx-auto max-w-8xl px-4';
+  import GitHubHome from './utils/icons/GitHubHome.svelte';
+  import DocBadge from './utils/DocBadge.svelte';
+  import Discord from './utils/icons/Discord.svelte';
+  import YoutubeHome from './utils/icons/YoutubeHome.svelte';
+  import ToolbarLink from './utils/ToolbarLink.svelte';
+
+  $: activeUrl = $page.url.pathname;
+  let isHomePage: boolean;
+  $: isHomePage = $page.route.id === '/';
+  let version = import.meta.env.VITE_APP_VERSION;
+
+  let divClass = 'w-full ml-auto lg:block lg:w-auto order-1 lg:order-none';
+  let ulClass =
+    'flex flex-col py-3 my-4 lg:flex-row lg:my-0 text-sm font-medium text-gray-900 dark:text-gray-300 gap-4';
   let btnClass =
     'text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2 ml-2';
 </script>
 
 <div class="flex flex-col min-h-screen bg-white dark:bg-gray-900">
-  <header class="sticky top-0 z-40 flex-none mx-auto w-full bg-white dark:bg-gray-900">
-    <Navbar let:hidden let:toggle fluid={false} {navClass} {navDivClass}>
+  <header   class="sticky top-0 z-40 flex-none w-full mx-auto bg-white border-b border-gray-200 dark:border-gray-600 dark:bg-gray-800">
+    <Navbar
+    color="default"
+    fluid
+    navClass="flex items-center justify-between w-full mx-auto py-1.5 px-4 {isHomePage
+      ? 'max-w-8xl lg:px-20 px-4'
+      : ''}"
+    let:hidden
+    let:toggle>
       <NavBrand href="/">
         <img src="/images/logo.svg" class="h-8 mr-3" alt="Flowbite Logo" />
         <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
           Flowbite Svelte Blocks
         </span>
       </NavBrand>
-      <div class="flex items-center lg:order-2">
-        <a href="https://github.com/shinokada/flowbite-svelte-blocks"
-          ><Button>Get started</Button></a
-        >
-        <DarkMode {btnClass} />
-        <NavHamburger
-          on:click={toggle}
-          btnClass="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-        />
-      </div>
       <NavUl
-        {hidden}
-        divClass="justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
-        ulClass="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0"
-      >
-        <NavLi href="/">Home</NavLi>
+      {hidden}
+      {divClass}
+      {ulClass}
+      on:click={() => setTimeout(toggle, 1)}
+      nonActiveClass="md:!pl-3 md:!py-2 lg:!pl-0 text-gray-700 hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 dark:text-gray-400 lg:dark:text-white lg:dark:hover:text-primary-700 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent"
+      activeClass="md:!pl-3 md:!py-2 lg:!pl-0 text-white bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:dark:text-primary-700 dark:bg-primary-600 lg:dark:bg-transparent cursor-default">
+      <NavLi class="lg:px-2 lg:mb-0" active={activeUrl === '/'} href="/">Home</NavLi>
         <NavLi href="/example">Example</NavLi>
-        <NavLi href="https://github.com/shinokada/flowbite-svelte-blocks">GitHub</NavLi>
+        <NavLi href="https://github.com/themesberg/flowbite-svelte-blocks">GitHub</NavLi>
         <NavLi href="https://flowbite-svelte.com">Flowbite-Svelte</NavLi>
       </NavUl>
+      <div class="flex items-center ml-auto">
+        <ToolbarLink
+          class="hidden sm:inline-block dark:hover:text-white hover:text-gray-900"
+          name="View on GitHub"
+          href="https://github.com/themesberg/flowbite-svelte-blocks">
+          <GitHubHome /></ToolbarLink>
+        <ToolbarLink
+          class="hidden xl:inline-block dark:hover:text-white hover:text-gray-900"
+          name="Join community on Discord"
+          href="https://discord.gg/4eeurUVvTy"><Discord /></ToolbarLink>
+        <ToolbarLink
+          class="hidden xl:inline-block dark:hover:text-white hover:text-gray-900"
+          name="Subscribe to YouTube channel"
+          href="https://www.youtube.com/channel/UC_Ms4V2kYDsh7F_CSsHyQ6A">
+          <YoutubeHome />
+        </ToolbarLink>
+        <DarkMode size="lg" class="inline-block dark:hover:text-white hover:text-gray-900" />
+        <Tooltip class="dark:bg-gray-900" placement="bottom-end">Toggle dark mode</Tooltip>
+      </div>
+      <a href="https://www.npmjs.com/package/flowbite-svelte" class="hidden sm:block">
+        <DocBadge
+          large
+          class="ml-2 xl:ml-6 hover:bg-primary-600 hover:text-white dark:hover:bg-primary-800 dark:hover:text-white">
+          v{version}
+        </DocBadge>
+      </a>
+  
+      <NavHamburger on:click={toggle} btnClass="ml-3 m-0 lg:hidden {isHomePage ? '' : 'hidden'}" />
     </Navbar>
   </header>
   <main class="grow">
@@ -153,6 +192,7 @@
         <FooterLink liClass="mb-4" href="https://flowbite.com/">Flowbite</FooterLink>
         <FooterLink liClass="mb-4" href="https://tailwindcss.com/">Tailwind CSS</FooterLink>
         <FooterLink liClass="mb-4" href="https://flowbite-svelte.com/">Flowbite-Svelte</FooterLink>
+        <FooterLink liClass="mb-4" href="https://flowbite-svelte-icons.com/">Flowbite-Svelte-Icons</FooterLink>
       </FooterLinkGroup>
     </div>
     <div>
@@ -161,7 +201,7 @@
       </h2>
       <FooterLinkGroup>
         <FooterLink liClass="mb-4" href="https://discord.gg/4eeurUVvTy">Discord</FooterLink>
-        <FooterLink liClass="mb-4" href="https://github.com/shinokada/flowbite-svelte-blocks/issues"
+        <FooterLink liClass="mb-4" href="https://github.com/themesberg/flowbite-svelte-blocks/issues"
           >GitHub</FooterLink
         >
       </FooterLinkGroup>
@@ -169,8 +209,8 @@
     <div>
       <h2 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">Follow us</h2>
       <FooterLinkGroup>
-        <FooterLink liClass="mb-4" href="https://github.com/shinokada/flowbite-svelte-blocks"
-          >Gihub</FooterLink
+        <FooterLink liClass="mb-4" href="https://github.com/themesberg/flowbite-svelte-blocks"
+          >Github</FooterLink
         >
         <FooterLink liClass="mb-4" href="https://discord.gg/4eeurUVvTy">Discord</FooterLink>
       </FooterLinkGroup>
@@ -180,7 +220,7 @@
       <FooterLinkGroup>
         <FooterLink
           liClass="mb-4"
-          href="https://github.com/shinokada/flowbite-svelte-blocks/LICENSE">LICENSE</FooterLink
+          href="https://github.com/themesberg/flowbite-svelte-blocks/LICENSE">LICENSE</FooterLink
         >
       </FooterLinkGroup>
     </div>
@@ -190,9 +230,9 @@
     <FooterCopyright href="/" by="Flowbite™" />
     <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
       <FooterIcon
-        href="https://github.com/shinokada/flowbite-svelte-blocks"
+        href="https://github.com/themesberg/flowbite-svelte-blocks"
         class="text-gray-400 hover:text-gray-900"
-        icon={Github}
+        icon={GitHubHome}
       />
     </div>
   </div>

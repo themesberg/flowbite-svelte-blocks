@@ -18,9 +18,9 @@
 
   let data: PageData = $page.data;
 
-  // https://github.com/themesberg/flowbite-svelte/blob/main/src/routes/docs/components/accordion.md#always-open
-  // const gitHub = new URL('https://github.com/themesberg/flowbite-svelte-blocks/blob/main/src/routes/');
-  const gitHub = new URL('https://github.com/shinokada/flowbite-svelte-blocks/blob/example-block/src/routes/');
+  // change this later
+  const gitHub = new URL('https://github.com/themesberg/flowbite-svelte-blocks/blob/main/src/routes/');
+  // const gitHub = new URL('https://github.com/shinokada/flowbite-svelte-blocks/blob/example-block/src/routes/');
 
   let path: URL;
 
@@ -44,7 +44,7 @@
         .filter((x) => x.top < node.offsetTop)
         .slice(-1)
         .shift();
-console.log('section: ',section)
+
       if (section) {
         const pathname = new URL(node.baseURI).pathname;
         path = new URL(pathname.slice(1) + '.md', gitHub);
@@ -80,7 +80,7 @@ console.log('section: ',section)
 
   let copy_text = 'Copy';
 </script>
-{path}
+
 <div class="mt-8 code-example" bind:this={node} use:init>
   {#if !meta.hideOutput}
     <div
