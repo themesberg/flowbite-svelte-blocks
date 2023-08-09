@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.4](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.4.3...v0.4.4) (2023-08-09)
+
+
+### Bug Fixes
+
+* add-exports-to-package-json ([0adf29c](https://github.com/shinokada/flowbite-svelte-blocks/commit/0adf29c808e6daf897e8ff7c9fc1276a6000642d))
+
 ### [0.4.3](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.4.2...v0.4.3) (2023-08-09)
 
 ### [0.4.2](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.4.1...v0.4.2) (2023-08-09)
