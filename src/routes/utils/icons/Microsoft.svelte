@@ -3,6 +3,8 @@
   viewBox="0 0 151 34"
   fill="currentColor"
   xmlns="http://www.w3.org/2000/svg"
+  role="img" 
+  aria-label="microsoft"
 >
   <g clip-path="url(#clip0_3753_27919)"
     ><path

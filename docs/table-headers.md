@@ -11,10 +11,10 @@
     Search,
     Dropdown,
     DropdownItem,
-    Chevron,
     DropdownDivider,
     Checkbox
   } from 'flowbite-svelte';
+  import { Icon } from 'flowbite-svelte-icons';
 </script>
 
 <TableHeader>
@@ -36,7 +36,7 @@
     Add product
   </button>
   <button color="light">
-    <Chevron>Actions</Chevron>
+    <Icon name="chevron-down-outline" />Actions
   </button>
   <Dropdown>
     <DropdownItem>Mass Edit</DropdownItem>
@@ -57,7 +57,7 @@
         clip-rule="evenodd"
       />
     </svg>
-    <Chevron>Filter</Chevron>
+    <Icon name="chevron-down-outline">Filter
   </button>
   <Dropdown class="w-48 p-2 text-sm">
     <h6 class="mb-3 ml-1 text-sm font-medium text-gray-900 dark:text-white">Category</h6>

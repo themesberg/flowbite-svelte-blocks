@@ -66,7 +66,7 @@
       </svelte:fragment>
       <svelte:fragment slot="price">
         <span class="mr-2 text-5xl font-extrabold">$99</span>
-        <span class="text-gray-500 dark:text-gray-400" dark:text-gray-400>/month</span>
+        <span class="text-gray-500 dark:text-gray-400">/month</span>
       </svelte:fragment>
     </PricingBodyHead>
     <PricingItemWrapper>

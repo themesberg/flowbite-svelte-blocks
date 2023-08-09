@@ -7,7 +7,6 @@
 ```html
 <script lang="ts">
   import { Content, ContentWithImage } from 'flowbite-svelte-blocks';
-  import { Home, ChevronRight } from 'svelte-heros';
 </script>
 
 <ContentWithImage>

@@ -3,6 +3,8 @@
   viewBox="0 0 125 35"
   fill="currentColor"
   xmlns="http://www.w3.org/2000/svg"
+  role="img" 
+  aria-label="airbnb"
 >
   <path
     fill-rule="evenodd"
