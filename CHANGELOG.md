@@ -2,6 +2,32 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.5](https://github.com/themesberg/flowbite-svelte-blocks/compare/v0.4.4...v0.4.5) (2023-08-10)
+
+
+### Bug Fixes
+
+* typo ([165610f](https://github.com/themesberg/flowbite-svelte-blocks/commit/165610f91af921757ca7275f5879b7b397c7c5cb))
+
+### [0.4.4](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.4.3...v0.4.4) (2023-08-09)
+
+
+### Bug Fixes
+
+* add-exports-to-package-json ([0adf29c](https://github.com/shinokada/flowbite-svelte-blocks/commit/0adf29c808e6daf897e8ff7c9fc1276a6000642d))
+
+### [0.4.3](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.4.2...v0.4.3) (2023-08-09)
+
+### [0.4.2](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.4.1...v0.4.2) (2023-08-09)
+
+### [0.4.1](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.3.9...v0.4.1) (2023-08-09)
+
+
+### Bug Fixes
+
+* newsletter action url ([317d17e](https://github.com/shinokada/flowbite-svelte-blocks/commit/317d17e4ab44abfc5d644faa9771e8910833dab2))
+* remove footer from example page ([045dd69](https://github.com/shinokada/flowbite-svelte-blocks/commit/045dd69355daa88a90fd07043f09b77b6288c991))
+
 ### [0.3.9](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.3.8...v0.3.9) (2023-06-15)
 
 

@@ -1,3 +1,0 @@
-# Customer Logos
-
-Coming soon

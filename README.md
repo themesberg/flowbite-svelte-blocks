@@ -1,13 +1,13 @@
 <h1 align="center">Flowbite Svelte Blocks</h1>
 
 <p align="center">
-<a href="https://flowbite-svelte-blocks.pages.dev/" rel="nofollow">Flowbite Svelte Blocks</a>
+<a href="https://flowbite-svelte-blocks.vercel.app/" rel="nofollow">Flowbite Svelte Blocks</a>
 </p>
 
 <p align="center">
 <a href="https://www.npmjs.com/package/flowbite-svelte-blocks" rel="nofollow"><img src="https://img.shields.io/npm/v/flowbite-svelte-blocks" alt="npm"></a>
 <a href="https://twitter.com/shinokada" rel="nofollow"><img src="https://img.shields.io/badge/created%20by-@shinokada-4BBAAB.svg" alt="Created by Shin Okada"></a>
-<a href="https://opensource.org/licenses/MIT" rel="nofollow"><img src="https://img.shields.io/github/license/shinokada/flowbite-svelte-blocks" alt="License"></a>
+<a href="https://opensource.org/licenses/MIT" rel="nofollow"><img src="https://img.shields.io/github/license/themesberg/flowbite-svelte-blocks" alt="License"></a>
 </p>
 
 **⚠️ Flowbite-Svelte-Blocks is currently in early development and APIs and packages are likely to change quite often.**
@@ -16,13 +16,9 @@
 
 [Flowbite Svelte Blocks](https://flowbite-svelte-blocks.vercel.app/)
 
-## Docs
-
-[Docs](https://flowbite-svelte-blocks.pages.dev/)
-
 ## Installation
 
-Use this library on top of [Flowbite-Svelte](https://github.com/themesberg/flowbite-svelte). Flowbite-Svelte is an official Flowbite component library for Svelte.
+Use this library on top of [Flowbite-Svelte](https://github.com/themesberg/flowbite-svelte) and [Flowbite-Svelte-Icons](https://flowbite-svelte-icons.vercel.app/). Flowbite-Svelte is an official Flowbite component library for Svelte.
 
 Install SvelteKit:
 
@@ -42,13 +38,13 @@ pnpm i
 Start a server:
 
 ```sh
-npm run dev
+pnpm run dev
 ```
 
 Install flowbite flowbite-svelte classnames @popperjs/core, svelte-heros, and flowbite-svelte-blocks:
 
 ```sh
-pnpm i flowbite flowbite-svelte classnames @popperjs/core flowbite-svelte-blocks svelte-heros
+pnpm i flowbite flowbite-svelte tailwind-merge @floating-ui/dom flowbite-svelte-icons
 ```
 
 Update tailwind.config.cjs:

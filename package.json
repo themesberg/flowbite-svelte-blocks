@@ -1,14 +1,14 @@
 {
   "name": "flowbite-svelte-blocks",
-  "version": "0.3.9",
+  "version": "0.4.5",
   "description": "Flowbite blocks components for Svelte",
   "author": {
     "name": "Shinichi Okada",
     "email": "connect@codewithshin.com",
     "url": "https://blog.codewithshin.com"
   },
-  "bugs": "https://github.com/shinokada/flowbite-svelte-blocks/issues",
-  "homepage": "https://github.com/shinokada/flowbite-svelte-blocks",
+  "bugs": "https://github.com/themesberg/flowbite-svelte-blocks/issues",
+  "homepage": "https://flowbite-svelte-blocks.vercel.app/",
   "license": "MIT",
   "scripts": {
     "dev": "vite dev",
@@ -24,7 +24,8 @@
     "test:integration": "playwright test",
     "test:unit": "vitest",
     "write-package-json": "node ./scripts/package-json-writer.js",
-    "package:publish": "standard-version && git push --follow-tags origin main && npm run package && npm run write-package-json && npm publish"
+    "add-exports": "node ./scripts/add-exports-to-package-json.js",
+    "package:publish": "standard-version && git push --follow-tags origin main && npm run package && npm run add-exports && npm run write-package-json && npm publish"
   },
   "devDependencies": {
     "@playwright/test": "^1.36.2",
@@ -72,9 +73,217 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/shinokada/flowbite-svelte-blocks"
+    "url": "https://github.com/themesberg/flowbite-svelte-blocks/"
   },
   "exports": {
+    "./ForgotPassword.svelte": {
+      "types": "./dist/acount-recovery/ForgotPassword.svelte.d.ts",
+      "svelte": "./dist/acount-recovery/ForgotPassword.svelte"
+    },
+    "./ForgotPasswordHeader.svelte": {
+      "types": "./dist/acount-recovery/ForgotPasswordHeader.svelte.d.ts",
+      "svelte": "./dist/acount-recovery/ForgotPasswordHeader.svelte"
+    },
+    "./Banner.svelte": {
+      "types": "./dist/banner/Banner.svelte.d.ts",
+      "svelte": "./dist/banner/Banner.svelte"
+    },
+    "./ArticleAuthor.svelte": {
+      "types": "./dist/blog/ArticleAuthor.svelte.d.ts",
+      "svelte": "./dist/blog/ArticleAuthor.svelte"
+    },
+    "./ArticleBody.svelte": {
+      "types": "./dist/blog/ArticleBody.svelte.d.ts",
+      "svelte": "./dist/blog/ArticleBody.svelte"
+    },
+    "./ArticleHead.svelte": {
+      "types": "./dist/blog/ArticleHead.svelte.d.ts",
+      "svelte": "./dist/blog/ArticleHead.svelte"
+    },
+    "./ArticleWrapper.svelte": {
+      "types": "./dist/blog/ArticleWrapper.svelte.d.ts",
+      "svelte": "./dist/blog/ArticleWrapper.svelte"
+    },
+    "./BlogBodyWrapper.svelte": {
+      "types": "./dist/blog/BlogBodyWrapper.svelte.d.ts",
+      "svelte": "./dist/blog/BlogBodyWrapper.svelte"
+    },
+    "./BlogHead.svelte": {
+      "types": "./dist/blog/BlogHead.svelte.d.ts",
+      "svelte": "./dist/blog/BlogHead.svelte"
+    },
+    "./Contact.svelte": {
+      "types": "./dist/contact/Contact.svelte.d.ts",
+      "svelte": "./dist/contact/Contact.svelte"
+    },
+    "./Content.svelte": {
+      "types": "./dist/content/Content.svelte.d.ts",
+      "svelte": "./dist/content/Content.svelte"
+    },
+    "./ContentWithImage.svelte": {
+      "types": "./dist/content/ContentWithImage.svelte.d.ts",
+      "svelte": "./dist/content/ContentWithImage.svelte"
+    },
+    "./Cta.svelte": {
+      "types": "./dist/cta/Cta.svelte.d.ts",
+      "svelte": "./dist/cta/Cta.svelte"
+    },
+    "./Faq.svelte": {
+      "types": "./dist/faq/Faq.svelte.d.ts",
+      "svelte": "./dist/faq/Faq.svelte"
+    },
+    "./FaqItem.svelte": {
+      "types": "./dist/faq/FaqItem.svelte.d.ts",
+      "svelte": "./dist/faq/FaqItem.svelte"
+    },
+    "./FeatureDefault.svelte": {
+      "types": "./dist/feature/FeatureDefault.svelte.d.ts",
+      "svelte": "./dist/feature/FeatureDefault.svelte"
+    },
+    "./FeatureItem.svelte": {
+      "types": "./dist/feature/FeatureItem.svelte.d.ts",
+      "svelte": "./dist/feature/FeatureItem.svelte"
+    },
+    "./Navigation.svelte": {
+      "types": "./dist/header/Navigation.svelte.d.ts",
+      "svelte": "./dist/header/Navigation.svelte"
+    },
+    "./HeroBody.svelte": {
+      "types": "./dist/hero/HeroBody.svelte.d.ts",
+      "svelte": "./dist/hero/HeroBody.svelte"
+    },
+    "./HeroHeader.svelte": {
+      "types": "./dist/hero/HeroHeader.svelte.d.ts",
+      "svelte": "./dist/hero/HeroHeader.svelte"
+    },
+    "./News.svelte": {
+      "types": "./dist/hero/News.svelte.d.ts",
+      "svelte": "./dist/hero/News.svelte"
+    },
+    "./Maintenance.svelte": {
+      "types": "./dist/maintenance/Maintenance.svelte.d.ts",
+      "svelte": "./dist/maintenance/Maintenance.svelte"
+    },
+    "./ToolsIcon.svelte": {
+      "types": "./dist/maintenance/ToolsIcon.svelte.d.ts",
+      "svelte": "./dist/maintenance/ToolsIcon.svelte"
+    },
+    "./Newsletter.svelte": {
+      "types": "./dist/newsletter/Newsletter.svelte.d.ts",
+      "svelte": "./dist/newsletter/Newsletter.svelte"
+    },
+    "./Page404.svelte": {
+      "types": "./dist/page404/Page404.svelte.d.ts",
+      "svelte": "./dist/page404/Page404.svelte"
+    },
+    "./Page500.svelte": {
+      "types": "./dist/page500/Page500.svelte.d.ts",
+      "svelte": "./dist/page500/Page500.svelte"
+    },
+    "./Popup.svelte": {
+      "types": "./dist/popup/Popup.svelte.d.ts",
+      "svelte": "./dist/popup/Popup.svelte"
+    },
+    "./Portfolio.svelte": {
+      "types": "./dist/portfolio/Portfolio.svelte.d.ts",
+      "svelte": "./dist/portfolio/Portfolio.svelte"
+    },
+    "./PortfolioItem.svelte": {
+      "types": "./dist/portfolio/PortfolioItem.svelte.d.ts",
+      "svelte": "./dist/portfolio/PortfolioItem.svelte"
+    },
+    "./PricingBodyHead.svelte": {
+      "types": "./dist/pricing/PricingBodyHead.svelte.d.ts",
+      "svelte": "./dist/pricing/PricingBodyHead.svelte"
+    },
+    "./PricingCard.svelte": {
+      "types": "./dist/pricing/PricingCard.svelte.d.ts",
+      "svelte": "./dist/pricing/PricingCard.svelte"
+    },
+    "./PricingHead.svelte": {
+      "types": "./dist/pricing/PricingHead.svelte.d.ts",
+      "svelte": "./dist/pricing/PricingHead.svelte"
+    },
+    "./PricingItem.svelte": {
+      "types": "./dist/pricing/PricingItem.svelte.d.ts",
+      "svelte": "./dist/pricing/PricingItem.svelte"
+    },
+    "./PricingItemWrapper.svelte": {
+      "types": "./dist/pricing/PricingItemWrapper.svelte.d.ts",
+      "svelte": "./dist/pricing/PricingItemWrapper.svelte"
+    },
+    "./Register.svelte": {
+      "types": "./dist/register/Register.svelte.d.ts",
+      "svelte": "./dist/register/Register.svelte"
+    },
+    "./Schedule.svelte": {
+      "types": "./dist/schedule/Schedule.svelte.d.ts",
+      "svelte": "./dist/schedule/Schedule.svelte"
+    },
+    "./ScheduleItem.svelte": {
+      "types": "./dist/schedule/ScheduleItem.svelte.d.ts",
+      "svelte": "./dist/schedule/ScheduleItem.svelte"
+    },
+    "./SidebarBottomNav.svelte": {
+      "types": "./dist/sidebar/SidebarBottomNav.svelte.d.ts",
+      "svelte": "./dist/sidebar/SidebarBottomNav.svelte"
+    },
+    "./SidebarBottomNavItem.svelte": {
+      "types": "./dist/sidebar/SidebarBottomNavItem.svelte.d.ts",
+      "svelte": "./dist/sidebar/SidebarBottomNavItem.svelte"
+    },
+    "./Social.svelte": {
+      "types": "./dist/social/Social.svelte.d.ts",
+      "svelte": "./dist/social/Social.svelte"
+    },
+    "./TableHeader.svelte": {
+      "types": "./dist/tableheader/TableHeader.svelte.d.ts",
+      "svelte": "./dist/tableheader/TableHeader.svelte"
+    },
+    "./TeamBody.svelte": {
+      "types": "./dist/team/TeamBody.svelte.d.ts",
+      "svelte": "./dist/team/TeamBody.svelte"
+    },
+    "./TeamHeader.svelte": {
+      "types": "./dist/team/TeamHeader.svelte.d.ts",
+      "svelte": "./dist/team/TeamHeader.svelte"
+    },
+    "./TeamItem.svelte": {
+      "types": "./dist/team/TeamItem.svelte.d.ts",
+      "svelte": "./dist/team/TeamItem.svelte"
+    },
+    "./TeamWrapper.svelte": {
+      "types": "./dist/team/TeamWrapper.svelte.d.ts",
+      "svelte": "./dist/team/TeamWrapper.svelte"
+    },
+    "./Testimonial.svelte": {
+      "types": "./dist/testimonial/Testimonial.svelte.d.ts",
+      "svelte": "./dist/testimonial/Testimonial.svelte"
+    },
+    "./TestimonialCard.svelte": {
+      "types": "./dist/testimonial/TestimonialCard.svelte.d.ts",
+      "svelte": "./dist/testimonial/TestimonialCard.svelte"
+    },
+    "./TestimonialCardItem.svelte": {
+      "types": "./dist/testimonial/TestimonialCardItem.svelte.d.ts",
+      "svelte": "./dist/testimonial/TestimonialCardItem.svelte"
+    },
+    "./Facebook.svelte": {
+      "types": "./dist/utils/Facebook.svelte.d.ts",
+      "svelte": "./dist/utils/Facebook.svelte"
+    },
+    "./Github.svelte": {
+      "types": "./dist/utils/Github.svelte.d.ts",
+      "svelte": "./dist/utils/Github.svelte"
+    },
+    "./Quotes.svelte": {
+      "types": "./dist/utils/Quotes.svelte.d.ts",
+      "svelte": "./dist/utils/Quotes.svelte"
+    },
+    "./Twitter.svelte": {
+      "types": "./dist/utils/Twitter.svelte.d.ts",
+      "svelte": "./dist/utils/Twitter.svelte"
+    },
     ".": {
       "types": "./dist/index.d.ts",
       "svelte": "./dist/index.js"

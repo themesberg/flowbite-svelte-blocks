@@ -1,3 +1,0 @@
-# Table Footers
-
-Coming soon

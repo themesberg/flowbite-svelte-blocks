@@ -1,6 +1,7 @@
 <script lang="ts">
   import '../app.css';
   import { page } from '$app/stores';
+  import { afterNavigate } from '$app/navigation';
   import {
     Footer,
     FooterBrand,
@@ -26,6 +27,11 @@
   let isHomePage: boolean;
   $: isHomePage = $page.route.id === '/';
   let version = import.meta.env.VITE_APP_VERSION;
+
+  // to fix scrolling problem
+  afterNavigate((navigation) => {
+    document.getElementById('svelte')?.scrollTo({ top: 0 });
+  });
 
   let divClass = 'w-full ml-auto lg:block lg:w-auto order-1 lg:order-none';
   let ulClass =
@@ -81,7 +87,7 @@
         <DarkMode size="lg" class="inline-block dark:hover:text-white hover:text-gray-900" />
         <Tooltip class="dark:bg-gray-900" placement="bottom-end">Toggle dark mode</Tooltip>
       </div>
-      <a href="https://www.npmjs.com/package/flowbite-svelte" class="hidden sm:block">
+      <a href="https://www.npmjs.com/package/flowbite-svelte-blocks" class="hidden sm:block">
         <DocBadge
           large
           class="ml-2 xl:ml-6 hover:bg-primary-600 hover:text-white dark:hover:bg-primary-800 dark:hover:text-white">

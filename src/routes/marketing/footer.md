@@ -122,7 +122,7 @@ Use this footer section to show the logo of your brand, the sitemap, social medi
         <FooterLink liClass="mb-4" href="https://discord.gg/4eeurUVvTy">Discord</FooterLink>
         <FooterLink
           liClass="mb-4"
-          href="https://github.com/shinokada/flowbite-svelte-blocks/issues">GitHub</FooterLink
+          href="https://github.com/themesberg/flowbite-svelte-blocks">GitHub</FooterLink
         >
       </FooterLinkGroup>
     </div>
@@ -142,7 +142,7 @@ Use this footer section to show the logo of your brand, the sitemap, social medi
       <FooterLinkGroup>
         <FooterLink
           liClass="mb-4"
-          href="https://github.com/shinokada/flowbite-svelte-blocks/LICENSE">LICENSE</FooterLink
+          href="https://github.com/themesberg/flowbite-svelte-blocks/blob/main/License">LICENSE</FooterLink
         >
       </FooterLinkGroup>
     </div>
