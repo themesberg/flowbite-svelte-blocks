@@ -1,6 +1,7 @@
 <script lang="ts">
   import '../app.css';
   import { page } from '$app/stores';
+  import { afterNavigate } from '$app/navigation';
   import {
     Footer,
     FooterBrand,
@@ -26,6 +27,11 @@
   let isHomePage: boolean;
   $: isHomePage = $page.route.id === '/';
   let version = import.meta.env.VITE_APP_VERSION;
+
+  // to fix scrolling problem
+  afterNavigate((navigation) => {
+    document.getElementById('svelte')?.scrollTo({ top: 0 });
+  });
 
   let divClass = 'w-full ml-auto lg:block lg:w-auto order-1 lg:order-none';
   let ulClass =
