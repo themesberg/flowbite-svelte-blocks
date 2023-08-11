@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.6](https://github.com/themesberg/flowbite-svelte-blocks/compare/v0.4.5...v0.4.6) (2023-08-11)
+
+
+### Bug Fixes
+
+* scrolling problem in layout by using afterNavigate() ([673354b](https://github.com/themesberg/flowbite-svelte-blocks/commit/673354b67b17e9ecd3eb0b5b0e0ff67aea4d46a4))
+
 ### [0.4.5](https://github.com/themesberg/flowbite-svelte-blocks/compare/v0.4.4...v0.4.5) (2023-08-10)
 
 
