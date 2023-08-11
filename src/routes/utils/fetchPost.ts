@@ -19,7 +19,7 @@ const sortByList = (order: string[]) => (a: [string, any], b: [string, any]) =>
 
 export const fetchMarkdownPosts = async () => {
   const applicationFiles = import.meta.glob<Mdsvex>('/src/routes/application/*.md');
-  const exampleFiles = import.meta.glob<Mdsvex>('/src/routes/examples/*.md');
+  const exampleFiles = import.meta.glob<Mdsvex>('/src/routes/example/*.md');
   const marketingFiles = import.meta.glob<Mdsvex>('/src/routes/marketing/*.md');
   const publisherFiles = import.meta.glob<Mdsvex>('/src/routes/publisher/*.md');
 

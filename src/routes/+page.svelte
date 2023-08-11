@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { MetaTag } from './utils';
   import {
     AdvancedTable,
@@ -23,8 +23,8 @@
     CrudUpdateModal,
     Cta,
     DashboardFooter,
-    DashboardNavbar,
-    DropdownFilter,
+    Navbar,
+    Filter,
     FacetedSearchDrawerSection,
     FacetedSearchModalSection,
     Faqsection,
@@ -40,11 +40,9 @@
     Popupsection,
     Portfoliosection,
     Pricingsection,
-    ProjectPortfolioSection,
     RegisterFormsection,
     RelatedArticle,
     ResetPasswordFormsection,
-    Schedulesection,
     SideNavigation,
     SocialProofsection,
     Teamsection,
@@ -104,8 +102,8 @@
             <CrudUpdateModal />
             <Cta />
             <DashboardFooter />
-            <DashboardNavbar />
-            <DropdownFilter />
+            <Navbar />
+            <Filter />
             <FacetedSearchDrawerSection />
             <FacetedSearchModalSection />
             <Faqsection />
@@ -121,11 +119,9 @@
             <Popupsection />
             <Portfoliosection />
             <Pricingsection />
-            <ProjectPortfolioSection />
             <RegisterFormsection />
             <RelatedArticle />
             <ResetPasswordFormsection />
-            <Schedulesection />
             <SideNavigation />
             <SocialProofsection />
             <Teamsection />

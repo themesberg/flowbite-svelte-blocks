@@ -10,16 +10,20 @@
     url,
     params: { slug }
   } = $page;
-
-  console.log(data.posts)
-
+  // two kinds of data. One from src/routes/+layout.js with posts
+  // one from src/routes/applications(marketing, examples, publisher)/[slug]/+page.js content, title, dir
+  // console.log('data.dir: ',data.dir)
+  // console.log('data: ',data)
+  
   const components = Object.values(data.posts)
     .flatMap(identity)
     // .filter((x) => x.meta.dir === data.dir)
     .filter((x) => x.meta && x.meta.dir === data.dir)
-    .map(({ path, meta }) => ({ path, name: meta.component_title }));
+    .map(({ path, meta }) => ({ path, name: meta.breadcrumb_title }));
+  // console.log('components: ', components )
 
   const index = components.findIndex((x) => x.path === '/' + slug);
+  // console.log('index: ', index)
 
   function sibling(next: boolean) {
     const i = next ? index + 1 : index - 1,
@@ -47,6 +51,7 @@
       </div>
       {#if index < components.length - 1}
         {@const { name, href } = sibling(true)}
+    
         <PaginationItem {href} class="flex items-center gap-2.5 hover:text-primary-700 dark: dark:hover:text-primary-700">
           {name}
           <ArrowRight />
