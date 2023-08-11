@@ -33,12 +33,6 @@
     document.getElementById('svelte')?.scrollTo({ top: 0 });
   });
 
-  const {
-    data,
-    url,
-    params: { slug }
-  } = $page;
-
   let divClass = 'w-full ml-auto lg:block lg:w-auto order-1 lg:order-none';
   let ulClass =
     'flex flex-col py-3 my-4 lg:flex-row lg:my-0 text-sm font-medium text-gray-900 dark:text-gray-300 gap-4';
