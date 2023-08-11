@@ -8,6 +8,7 @@
 <script>
   import MetaTag from '../utils/MetaTag.svelte';
   import SectionHeader from '../utils/SectionHeader.svelte';
+  import Paging from '../utils/Paging.svelte';
 
   export let /** @type {string} */ title;
   export let /** @type {string} */ breadcrumb_title;
@@ -26,6 +27,7 @@
 <SectionHeader category={dir} {breadcrumb_title} {title} {description} />
 <div id="mainContent" class="px-4 mx-auto max-w-8xl py-10">
   <slot />
+  <Paging />
 </div>
 
 

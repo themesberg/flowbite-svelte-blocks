@@ -21,10 +21,10 @@ description: Get started with a collection of free and premium Tailwind CSS UI c
     CrudUpdateForm,
     CrudUpdateModal,
     DashboardFooter,
-    DashboardNavbar,
-    DropdownFilter,
     FacetedSearchDrawerSection,
     FacetedSearchModalSection,
+    Filter,
+    Navbar,
     SideNavigation,
     TableFooter,
     TableHeader
@@ -34,7 +34,6 @@ description: Get started with a collection of free and premium Tailwind CSS UI c
 <section class="pb-8 bg-white dark:bg-gray-900 lg:pb-24" id="components">
   <div class="px-4 mx-auto max-w-8xl lg:text-center">
     <div class="grid grid-cols-1 gap-6 mt-6 md:grid-cols-2 xl:grid-cols-3">
-      <TableHeader />
       <AdvancedTable />
       <CrudCreateDrawer />
       <CrudCreateForm />
@@ -48,12 +47,13 @@ description: Get started with a collection of free and premium Tailwind CSS UI c
       <CrudUpdateForm />
       <CrudUpdateModal />
       <DashboardFooter />
-      <DashboardNavbar />
-      <DropdownFilter />
+      <Navbar />
+      <Filter />
       <FacetedSearchDrawerSection />
       <FacetedSearchModalSection />
       <SideNavigation />
       <TableFooter />
+      <TableHeader />
     </div>
   </div>
 </section>
