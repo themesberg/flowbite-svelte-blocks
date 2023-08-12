@@ -1,5 +1,7 @@
 <script lang="ts">
   import { MetaTag } from './utils';
+  import type { PageData } from './$types';
+  import TableSearch from 'flowbite-svelte/TableSearch.svelte';
   import {
     AdvancedTable,
     AccountRecoverysection,
@@ -52,10 +54,21 @@
     UserOnboarding
   } from './sections';
 
+  export let data: PageData;
+
   const title = '';
   const breadcrumb_title = 'Flowbite Svelte Blocks';
   const description =
     'Get started with 250 free and premium UI components built with the utility classes from Tailwind CSS to upgrade your web development stack and customize the colors, fonts, and dark mode using the configurator.';
+
+  let searchTerm = 'recovery';
+  const flattened_posts = Object.values(data.posts).flat()
+  $: filteredArray = flattened_posts.filter(obj => obj.meta && obj.meta.breadcrumb_title === "Advanced Tables");
+
+  console.log(filteredArray);
+
+  // console.log('flattend_arr', JSON.stringify(flattened_posts))
+  // console.log('filteredPostNames', filteredPostNames)
 </script>
 
 <MetaTag {breadcrumb_title} {title} {description} withoutLink={true} />

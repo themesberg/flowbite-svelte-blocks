@@ -18,14 +18,14 @@
   <div class="relative flex items-center justify-center h-[calc(100%_-_4rem)]">
     <div class="relative hidden w-full h-auto text-center dark:block">
       <img
-        src="https://flowbite.s3.amazonaws.com/block-thumbnails/application/read-modal-dark.svg"
+        src="/images/application/read-modal-dark.svg"
         alt="Read Modals (CRUD) thumbnail dark mode"
         class="max-w-full mx-auto h-44 md:h-52"
       />
     </div>
     <div class="relative w-full h-auto text-center dark:hidden">
       <img
-        src="https://flowbite.s3.amazonaws.com/block-thumbnails/application/read-modal.svg"
+        src="/images/application/read-modal.svg"
         alt="Read Modals (CRUD) thumbnail dark mode"
         class="max-w-full mx-auto h-44 md:h-52"
       />
