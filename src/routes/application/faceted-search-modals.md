@@ -11,7 +11,7 @@ Use this free example to show a list of checkbox components inside a modal to fi
 categories inside your application.
 
 
-```svelte example class="flex justify-center items-start h-[32rem]"
+```svelte example class="flex justify-center items-start h-64"
 <script>
   import { Button, Modal, Label, Input, Checkbox } from 'flowbite-svelte';
   let formModal = false;
