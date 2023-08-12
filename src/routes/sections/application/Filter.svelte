@@ -6,12 +6,9 @@
   >
     <div class="text-left">
       <h2 class="text-base font-medium text-gray-900 dark:text-white">
-        Dropdown Filters<span
-          class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 rounded-lg dark:bg-gray-600 dark:text-blue-400 border border-blue-400 ml-2"
-          >Incomplete</span
-        >
+        Dropdown Filters
       </h2>
-      <p class="text-sm text-gray-500 dark:text-gray-400">0 components</p>
+      <p class="text-sm text-gray-500 dark:text-gray-400">1 free components</p>
     </div>
     <div class="text-gray-900 dark:text-white">
       <span
