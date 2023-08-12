@@ -9,6 +9,7 @@ export const load = async ({ fetch }) => {
   }
 };
 
+
 // export const componentSections = [
 //   {
 //     category: 'application',
@@ -68,3 +69,4 @@ export const load = async ({ fetch }) => {
   
 
 // ]
+
