@@ -11,7 +11,7 @@ Use this example of a popup element to show a simple yes or no type of dialog to
 visitor based on the Modal component from Flowbite.
 
 
-```svelte example
+```svelte example class="flex justify-center items-start h-80"
 <script lang="ts">
   import { Popup } from 'flowbite-svelte-blocks';
   import { Button } from 'flowbite-svelte';

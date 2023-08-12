@@ -39,7 +39,7 @@
 </script>
 
 <div class="flex flex-col min-h-screen bg-white dark:bg-gray-900">
-  <header   class="sticky top-0 z-40 flex-none w-full mx-auto bg-white border-b border-gray-200 dark:border-gray-600 dark:bg-gray-800">
+  <header class="sticky top-0 z-40 flex-none w-full mx-auto bg-white border-b border-gray-200 dark:border-gray-600 dark:bg-gray-800">
     <Navbar
     color="default"
     fluid

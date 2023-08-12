@@ -12,7 +12,7 @@
 <line x1="94" y1="46.5" x2="442" y2="46.5" stroke="#D1D5DB"/>
 <path d="M94 47H442V98C442 102.418 438.418 106 434 106H102C97.5817 106 94 102.418 94 98V47Z" fill="white"/>
 <rect x="93.5" y="21.5" width="349" height="85" rx="8.5" stroke="#D1D5DB"/>
-<rect x="94" y="114" width="73" height="17" rx="4" fill="#DB6B1A"/>
+<rect x="94" y="114" width="73" height="17" rx="4" fill="#1A56DB"/>
 <rect x="102" y="121" width="57" height="3" rx="1" fill="white"/>
 <rect x="96" y="143.5" width="344" height="83" rx="7.5" fill="#FAFAFA"/>
 <circle cx="117" cy="164.5" r="7.5" fill="#D1D5DB"/>

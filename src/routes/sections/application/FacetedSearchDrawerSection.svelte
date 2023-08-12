@@ -6,12 +6,9 @@
   >
     <div class="text-left">
       <h2 class="text-base font-medium text-gray-900 dark:text-white">
-        Faceted Search Drawers<span
-          class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 rounded-lg dark:bg-gray-600 dark:text-blue-400 border border-blue-400 ml-2"
-          >Incomplete</span
-        >
+        Faceted Search Drawers
       </h2>
-      <p class="text-sm text-gray-500 dark:text-gray-400">0 components</p>
+      <p class="text-sm text-gray-500 dark:text-gray-400">1 free component</p>
     </div>
     <div class="text-gray-900 dark:text-white">
       <span
@@ -23,14 +20,14 @@
   <div class="relative flex items-center justify-center h-[calc(100%_-_4rem)]">
     <div class="relative hidden w-full h-auto text-center dark:block">
       <img
-        src="/images/filter-drawer-dark.svg"
+        src="/images/application/filter-drawer-dark.svg"
         alt="Faceted Search Drawers thumbnail dark mode"
         class="max-w-full mx-auto h-44 md:h-52"
       />
     </div>
     <div class="relative w-full h-auto text-center dark:hidden">
       <img
-        src="/images/filter-drawer.svg"
+        src="/images/application/filter-drawer.svg"
         alt="Faceted Search Drawers thumbnail dark mode"
         class="max-w-full mx-auto h-44 md:h-52"
       />
