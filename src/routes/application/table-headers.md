@@ -2,6 +2,7 @@
 layout: componentLayout
 title: Svelte Table Headers - Flowbite Svelte Blocks
 breadcrumb_title: Table Headers
+no_of_components: 2 free components
 dir: application
 description: Use the table header component to append options and controls on top of a table component to indicate titles, filters, sorting elements, and other settings.
 ---

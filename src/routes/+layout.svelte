@@ -14,6 +14,8 @@
     NavHamburger,
     NavUl,
     NavLi,
+    Dropdown, 
+    DropdownItem,
     DarkMode,
     Tooltip
   } from 'flowbite-svelte';
@@ -22,16 +24,22 @@
   import Discord from './utils/icons/Discord.svelte';
   import YoutubeHome from './utils/icons/YoutubeHome.svelte';
   import ToolbarLink from './utils/ToolbarLink.svelte';
+  import { Icon } from 'flowbite-svelte-icons';
 
   $: activeUrl = $page.url.pathname;
-  let isHomePage: boolean;
-  $: isHomePage = $page.route.id === '/';
   let version = import.meta.env.VITE_APP_VERSION;
 
   // to fix scrolling problem
   afterNavigate((navigation) => {
     document.getElementById('svelte')?.scrollTo({ top: 0 });
   });
+
+  const currentPath = $page.url.pathname;
+  const activeUrls = ['/application', '/publisher', '/marketing'];
+  // Check if the current path matches any of the active URLs
+  const isActive = activeUrls.includes(currentPath);
+  const active = isActive ? true : false;
+  // console.log('isActive', isActive)
 
   let divClass = 'w-full ml-auto lg:block lg:w-auto order-1 lg:order-none';
   let ulClass =
@@ -43,9 +51,7 @@
     <Navbar
     color="default"
     fluid
-    navClass="flex items-center justify-between w-full mx-auto py-1.5 px-4 {isHomePage
-      ? 'max-w-8xl lg:px-20 px-4'
-      : ''}"
+    navClass="flex items-center justify-between w-full mx-auto py-1.5 px-4"
     let:hidden
     let:toggle>
       <NavBrand href="/">
@@ -58,13 +64,21 @@
       {hidden}
       {divClass}
       {ulClass}
-      on:click={() => setTimeout(toggle, 1)}
       nonActiveClass="md:!pl-3 md:!py-2 lg:!pl-0 text-gray-700 hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 dark:text-gray-400 lg:dark:text-white lg:dark:hover:text-primary-700 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent"
       activeClass="md:!pl-3 md:!py-2 lg:!pl-0 text-white bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:dark:text-primary-700 dark:bg-primary-600 lg:dark:bg-transparent cursor-default">
       <NavLi class="lg:px-2 lg:mb-0" active={activeUrl === '/'} href="/">Home</NavLi>
         <NavLi href="/example">Example</NavLi>
+        <NavLi id="nav-menu1" active={active} class="cursor-pointer">
+          Categories<Icon name="chevron-down-outline" class="w-3 h-3 ml-2 text-primary-800 dark:text-white inline" />
+        </NavLi>
         <NavLi href="https://github.com/themesberg/flowbite-svelte-blocks">GitHub</NavLi>
         <NavLi href="https://flowbite-svelte.com">Flowbite-Svelte</NavLi>
+        <Dropdown triggeredBy="#nav-menu1" placement="bottom-start" class="w-44 z-20">
+          <DropdownItem href="/application">Application</DropdownItem>
+          <DropdownItem href="/marketing">Marketing</DropdownItem>
+          <DropdownItem href="/publisher">Publisher</DropdownItem>
+          <DropdownItem href="/example">Example</DropdownItem>
+        </Dropdown>
       </NavUl>
       <div class="flex items-center ml-auto">
         <ToolbarLink
@@ -93,7 +107,7 @@
         </DocBadge>
       </a>
   
-      <NavHamburger on:click={toggle} btnClass="ml-3 m-0 lg:hidden {isHomePage ? '' : 'hidden'}" />
+      <NavHamburger on:click={toggle} btnClass="ml-3 m-0 lg:hidden" />
     </Navbar>
   </header>
   <main class="grow">

@@ -59,20 +59,20 @@ export const fetchMarkdownPosts = async () => {
     })
   );
 
-  const allExamples = await Promise.all(
-    iterableExampleFiles.map(async ([path, resolver]) => {
-      const { metadata } = await resolver();
-      return {
-        meta: metadata,
-        path: filePath(path)
-      };
-    })
-  );
+  // const allExamples = await Promise.all(
+  //   iterableExampleFiles.map(async ([path, resolver]) => {
+  //     const { metadata } = await resolver();
+  //     return {
+  //       meta: metadata,
+  //       path: filePath(path)
+  //     };
+  //   })
+  // );
   
 
   return {
     application: allApplications,
-    example: allExamples,
+    // example: allExamples,
     marketing: allMarketings,
     publisher: allPublishers
   };

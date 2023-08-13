@@ -2,6 +2,7 @@
 layout: componentLayout
 title: Svelte Dashboard Footers - Flowbite Svelte Blocks
 breadcrumb_title: Dashboard Footers
+no_of_components: 1 free component
 dir: application
 description: Get started with a collection of responsive footer components specially crafted for admin dashboard layouts and applications based on Tailwind CSS.
 ---

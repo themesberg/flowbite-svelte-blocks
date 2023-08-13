@@ -2,6 +2,7 @@
 layout: componentLayout
 title: Svelte Headers - Flowbite Svelte Blocks
 breadcrumb_title: Headers
+no_of_components: 1 free component
 dir: marketing
 description: Get started with the header component for the navigation of a website featuring multi-level dropdowns, mega-menus, search bars, language selectors, and more.
 ---

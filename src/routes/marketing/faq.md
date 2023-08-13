@@ -2,6 +2,7 @@
 layout: componentLayout
 title: Svelte FAQ Sections - Flowbite Svelte Blocks
 breadcrumb_title: FAQ Sections
+no_of_components: 1 free component
 dir: marketing
 description: Get started with a collection of FAQ (frequently asked questions) sections to show a list of questions and answers to your website visitors and users.
 ---

@@ -2,6 +2,7 @@
 layout: componentLayout
 title: Svelte Side Navigations - Flowbite Svelte Blocks
 breadcrumb_title: Side Navigations
+no_of_components: 1 free component
 dir: application
 description: Get started with the side nav component to show a list of menu items, dropdowns, actions, and user profile actions for your application and dashboard.
 ---

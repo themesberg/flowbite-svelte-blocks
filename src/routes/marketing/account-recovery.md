@@ -1,7 +1,8 @@
 ---
 layout: componentLayout
 title: Svelte Account Recovery Form - Flowbite Svelte Blocks
-breadcrumb_title: Account Recovery Form
+breadcrumb_title: Account Recovery Forms
+no_of_components: 1 free component
 dir: marketing
 description: Get started with account recovery (aka. forgot password) pages to allow users to reset their password using an email based on multiple layouts and styles.
 ---

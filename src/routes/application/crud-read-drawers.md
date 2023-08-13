@@ -1,7 +1,8 @@
 ---
 layout: componentLayout
 title: Svelte Read Drawers (CRUD) - Flowbite Svelte Blocks
-breadcrumb_title: Read Drawers (CRUD)
+breadcrumb_title: CRUD Read Drawers
+no_of_components: 1 free component
 dir: application
 description: Use this collection of drawer components coded with Tailwind CSS to show details about an existing data entry from your database inside your web application.
 ---
