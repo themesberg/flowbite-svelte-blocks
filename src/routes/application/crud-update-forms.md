@@ -1,7 +1,8 @@
 ---
 layout: componentLayout
 title: Svelte Update Forms (CRUD) - Flowbite Svelte Blocks
-breadcrumb_title: Update Forms (CRUD)
+breadcrumb_title: CRUD Update Forms
+no_of_components: 1 free component
 dir: application
 description: Get started with a collection of CRUD layouts based on the "update" action featuring form elements like input text fields, date pickers, file upload, and more.
 ---

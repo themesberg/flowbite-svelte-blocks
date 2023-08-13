@@ -18,7 +18,9 @@
         <Breadcrumb navClass="flex mb-3">
           <BreadcrumbItem href="/" home>{home}</BreadcrumbItem>
           <BreadcrumbItem href="/{category}">{capitalized} UI</BreadcrumbItem>
+          {#if !breadcrumb_title.includes('UI')}
           <BreadcrumbItem>{breadcrumb_title}</BreadcrumbItem>
+          {/if}
         </Breadcrumb>
         <h1
           class="inline-block mb-2 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white"

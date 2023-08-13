@@ -2,6 +2,7 @@
 layout: componentLayout
 title: Svelte Popups - Flowbite Svelte Blocks
 breadcrumb_title: Popups
+no_of_components: 1 free component
 dir: marketing
 description: Get started with the popup component to overlay the main website content and showcase advertisement messages, cookie notices, and newsletter sign-ups.
 ---

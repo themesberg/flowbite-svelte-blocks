@@ -1,7 +1,8 @@
 ---
 layout: componentLayout
 title: Svelte Success Message (CRUD) - Flowbite Svelte Blocks
-breadcrumb_title: Success Message (CRUD)
+breadcrumb_title: CRUD Success Message
+no_of_components: 1 free component
 dir: application
 description: Use a collection of success message components based on Tailwind CSS to share feedback with your users based on their actions inside your application.
 ---

@@ -1,7 +1,8 @@
 ---
 layout: componentLayout
 title: Svelte Read Modals (CRUD) - Flowbite Svelte Blocks
-breadcrumb_title: Read Modals (CRUD)
+breadcrumb_title: CRUD Read Modals
+no_of_components: 1 free component
 dir: application
 description: Use this collection of CRUD modal components to show information about a data entry from your database and show a list of actions based.
 ---

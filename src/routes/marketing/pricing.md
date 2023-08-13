@@ -2,6 +2,7 @@
 layout: componentLayout
 title: Svelte Pricing Tables - Flowbite Svelte Blocks
 breadcrumb_title: Pricing Tables
+no_of_components: 1 free component
 dir: marketing
 description: Get started with a collection of responsive pricing sections to show the pricing plan to your potential customers based on multiple sizes, styles, and layouts.
 ---

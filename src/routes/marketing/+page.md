@@ -2,74 +2,15 @@
 layout: componentLayout
 title: Marketing UI - Flowbite Svelte Blocks
 breadcrumb_title: Marketing UI
+no_of_components: 0
 dir: marketing
 description: Get started with a large collection of free and premium UI components built with Tailwind CSS and the Flowbite library featuring hero sections, headers, contact forms, and more.
 ---
 
-<script>
-  import {
-    AccountRecoverysection,
-    Bannersection,
-    Blogsection,
-    ContactFormsection,
-    Contentsection,
-    CookieConsentsection,
-    Cta,
-    CustomerLogos,
-    EventSchedule,
-    Faqsection,
-    Featuresection,
-    Footersection,
-    Headersection,
-    Herosection,
-    LoginFormsection,
-    Maintenancesection,
-    Newslettersection,
-    Page404section,
-    Page500section,
-    Popupsection,
-    Portfoliosection,
-    Pricingsection,
-    RegisterFormsection,
-    ResetPasswordFormsection,
-    SocialProofsection,
-    Teamsection,
-    Testimonialsection,
-    UserOnboarding
-  } from '../sections';
+<script lang="ts">
+  import type { PageData } from './$types';
+  import SectionCompo from '../utils/Sectioncompo.svelte';
+  export let data: PageData;
 </script>
 
-<section class="pb-8 bg-white dark:bg-gray-900 lg:pb-24" id="components">
-  <div class="px-4 mx-auto max-w-8xl lg:px-4 lg:text-center">
-    <div class="grid grid-cols-1 gap-6 mt-6 md:grid-cols-2 xl:grid-cols-3">
-      <Page404section />
-      <Page500section />
-      <AccountRecoverysection />
-      <Bannersection />
-      <Blogsection />
-      <ContactFormsection />
-      <Contentsection />
-      <CookieConsentsection />
-      <Cta />
-      <CustomerLogos />
-      <EventSchedule />
-      <Faqsection />
-      <Featuresection />
-      <Footersection />
-      <Headersection />
-      <Herosection />
-      <LoginFormsection />
-      <Maintenancesection />
-      <Newslettersection />
-      <Popupsection />
-      <Portfoliosection />
-      <Pricingsection />
-      <RegisterFormsection />
-      <ResetPasswordFormsection />
-      <SocialProofsection />
-      <Teamsection />
-      <Testimonialsection />
-      <UserOnboarding />
-    </div>
-  </div>
-</section>
+<SectionCompo {data} section="marketing"/>

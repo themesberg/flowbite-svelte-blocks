@@ -2,6 +2,7 @@
 layout: componentLayout
 title: Svelte Cookie Consent - Flowbite Svelte Blocks
 breadcrumb_title: Cookie Consent
+no_of_components: 0 component
 dir: marketing
 description: Get started with the cookie banner component to interact with the website visitor and enable them to decide whether you can collect their personal data or not.
 ---

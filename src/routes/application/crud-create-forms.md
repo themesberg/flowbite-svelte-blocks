@@ -1,7 +1,8 @@
 ---
 layout: componentLayout
 title: Svelte Create Forms (CRUD) - Flowbite Svelte Blocks
-breadcrumb_title: Create Forms (CRUD)
+breadcrumb_title: CRUD Create Forms
+no_of_components: 1 free component
 dir: application
 description: Get started with a collection of forms crafted for the "create" action from the CRUD layouts featuring form elements coded in Tailwind CSS.
 ---

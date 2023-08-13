@@ -2,6 +2,7 @@
 layout: componentLayout
 title: Svelte Event Schedule - Flowbite Svelte Blocks
 breadcrumb_title: Event Schedule
+no_of_components: 1 free component
 dir: marketing
 description: Get started with a collection of website sections coded with Tailwind CSS to show the schedule of an event inside a timeline featuring a title, speaker, and description.
 ---

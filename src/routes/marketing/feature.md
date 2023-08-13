@@ -2,6 +2,7 @@
 layout: componentLayout
 title: Svelte Feature Sections - Flowbite Svelte Blocks
 breadcrumb_title: Feature Sections
+no_of_components: 1 free component
 dir: marketing
 description: Get started with a collection of responsive website sections built with Tailwind CSS to showcase a list of features that your product or company offers.
 ---

@@ -2,6 +2,7 @@
 layout: componentLayout
 title: Svelte Social Proof - Flowbite Svelte Blocks
 breadcrumb_title: Social Proof
+no_of_components: 1 free component
 dir: marketing
 description: Get started with this website section to offer social proof to your website visitors by providing statistical numbers about your product's usage worldwide.
 ---

@@ -2,6 +2,7 @@
 layout: componentLayout
 title: Svelte Reset Password Forms - Flowbite Svelte Blocks
 breadcrumb_title: Reset Password Forms
+no_of_components: 1 free component
 dir: marketing
 description: Use a collection of reset password forms based on multiple layouts to let your users change their password after going through the account recovery email.
 ---

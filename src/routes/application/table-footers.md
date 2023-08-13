@@ -2,6 +2,7 @@
 layout: componentLayout
 title: Svelte Table Footers - Flowbite Svelte Blocks
 breadcrumb_title: Table Footers
+no_of_components: 0 component
 dir: application
 description: Get started with a collection of footer components that you can append to the end of a table element to indicate pagination, table actions, information and more.
 ---

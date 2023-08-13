@@ -2,6 +2,7 @@
 layout: componentLayout
 title: Svelte Portfolio - Flowbite Svelte Blocks
 breadcrumb_title: Portfolio
+no_of_components: 1 free component
 dir: marketing
 description: Get started with the project portfolio UI components coded with Tailwind CSS to showcase your personal or company client's project specifications and results.
 ---
