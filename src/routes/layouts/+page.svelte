@@ -24,8 +24,9 @@
 
 <MetaTag {breadcrumb_title} {title} {dir} {description} />
 
-<SectionHeader category={dir} {breadcrumb_title} {title} {description} />
-<div id="mainContent" class="px-4 mx-auto max-w-8xl py-10">
+
+<div id="mainContent" class="mx-auto max-w-8xl px-4 lg:px-20 py-8 mx-auto max-w-8xl">
+  <SectionHeader category={dir} {breadcrumb_title} {title} {description} />
   <slot />
   <Paging />
 </div>
