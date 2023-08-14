@@ -12,7 +12,6 @@
 
   export let /** @type {string} */ title;
   export let /** @type {string} */ breadcrumb_title;
-  export let /** @type {string} */ no_of_components = '';
   export let /** @type {string} */ dir;
   export let /** @type {string} */ description;
   export let /** @type {string} */ layout = '';
