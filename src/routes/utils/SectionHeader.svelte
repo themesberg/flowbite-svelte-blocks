@@ -1,24 +1,24 @@
 <script lang="ts">
   import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
   export let home: string = 'Blocks';
-  export let category: string = 'application';
+  export let category: string = '';
   export let title: string = '';
   export let description: string = '';
   export let breadcrumb_title: string = '';
+  // export let divClass = category ? '' : 'mx-auto max-w-8xl pt-8 px-4 lg:px-20 mx-auto max-w-8xl';
+  export let headerClass = breadcrumb_title ? '' : 'mx-auto max-w-8xl pt-8 px-4 lg:px-20 mx-auto max-w-8xl col-span-2 mb-2 lg:mb-0';
   const [first, ...rest] = category;
   const capitalized = `${first.toUpperCase()}${rest.join('')}`;
 </script>
 
-<section class="pt-3 md:pt-5">
-  <div class="px-4 mx-auto max-w-8xl">
-    <div
-      class="grid pb-6 border-b border-gray-200 md:pb-10 lg:gap-8 lg:grid-cols-3 dark:border-gray-800"
-    >
-      <div class="col-span-2 mb-2 lg:mb-0">
+<section>
+ 
+   
+      <div class="{headerClass}">
         <Breadcrumb navClass="flex mb-3">
           <BreadcrumbItem href="/" home>{home}</BreadcrumbItem>
           <BreadcrumbItem href="/{category}">{capitalized} UI</BreadcrumbItem>
-          {#if !breadcrumb_title.includes('UI')}
+          {#if breadcrumb_title}
           <BreadcrumbItem>{breadcrumb_title}</BreadcrumbItem>
           {/if}
         </Breadcrumb>
@@ -31,6 +31,6 @@
           {description}
         </p>
       </div>
-    </div>
-  </div>
+
+
 </section>

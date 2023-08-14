@@ -12,20 +12,21 @@
 
   export let /** @type {string} */ title;
   export let /** @type {string} */ breadcrumb_title;
-  export let /** @type {string} */ component_title = '';
+  export let /** @type {string} */ no_of_components = '';
   export let /** @type {string} */ dir;
   export let /** @type {string} */ description;
   export let /** @type {string} */ layout = '';
+  export let /** @type {boolean} */ category;
 
+  let divClass = category ? '' : 'mx-auto max-w-8xl lg:px-20 py-8 mx-auto max-w-8xl';
   // calm down `unused export property` warrning
   layout;
-  component_title;
 </script>
 
 <MetaTag {breadcrumb_title} {title} {dir} {description} />
 
 
-<div id="mainContent" class="mx-auto max-w-8xl px-4 lg:px-20 py-8 mx-auto max-w-8xl">
+<div id="mainContent" class="{divClass}">
   <SectionHeader category={dir} {breadcrumb_title} {title} {description} />
   <slot />
   <Paging />
