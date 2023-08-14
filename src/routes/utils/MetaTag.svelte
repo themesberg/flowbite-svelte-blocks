@@ -10,7 +10,8 @@
   )}`;
   let url: string = 'https://flowbite-svelte-blocks.vercel.app/';
   export let dir: string = '';
-  let breadcrumb = breadcrumb_title.toLowerCase().replaceAll(' ', '-');
+  let breadcrumb = breadcrumb_title ? breadcrumb_title.toLowerCase().replaceAll(' ', '-') : ''
+  // let breadcrumb = breadcrumb_title.toLowerCase().replaceAll(' ', '-');
   let urlLink = withoutLink ? '' : breadcrumb;
   if (dir) {
     let dirstring = dir.toLowerCase() + '/';
