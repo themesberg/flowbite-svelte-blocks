@@ -1,6 +1,6 @@
 {
   "name": "flowbite-svelte-blocks",
-  "version": "0.4.8",
+  "version": "0.4.10",
   "description": "Flowbite blocks components for Svelte",
   "author": {
     "name": "Shinichi Okada",
@@ -23,12 +23,15 @@
     "format": "prettier --plugin-search-dir . --write .",
     "test:integration": "playwright test",
     "test:unit": "vitest",
-    "write-package-json": "node ./scripts/package-json-writer.js",
-    "add-exports": "node ./scripts/add-exports-to-package-json.js",
-    "package:publish": "standard-version && git push --follow-tags origin main && npm run package && npm run add-exports && npm run write-package-json && npm publish"
+    "add-exports": "svelte-lib-helpers exports",
+    "add-docs": "svelte-lib-helpers docs",
+    "gen-props": "svelte-lib-helpers props",
+    "copy-package": "svelte-lib-helpers package",
+    "lib-helpers": "npm run add-docs && npm run gen-props && npm run package && npm run add-exports && npm run copy-package",
+    "package:publish": "npm run lib-helpers && standard-version && git push --follow-tags origin main && npm publish"
   },
   "devDependencies": {
-    "@playwright/test": "^1.37.1",
+    "@playwright/test": "^1.37.0",
     "@popperjs/core": "^2.11.8",
     "@sveltejs/adapter-auto": "^2.1.0",
     "@sveltejs/kit": "^1.22.6",
@@ -44,21 +47,22 @@
     "flowbite-svelte-icons": "^0.3.6",
     "mdsvex": "^0.11.0",
     "mdsvexamples": "^0.4.1",
-    "postcss": "^8.4.28",
+    "postcss": "^8.4.27",
     "postcss-load-config": "^4.0.1",
     "prettier": "^2.8.8",
     "prettier-plugin-svelte": "^2.10.1",
-    "publint": "^0.2.1",
+    "publint": "^0.2.0",
     "svelte": "^4.2.0",
     "svelte-check": "^3.5.0",
+    "svelte-lib-helpers": "^0.2.6",
     "svelte-meta-tags": "^2.8.0",
     "svelte-preprocess": "^5.0.4",
     "tailwind-merge": "^1.14.0",
     "tailwindcss": "^3.3.3",
-    "tslib": "^2.6.2",
+    "tslib": "^2.6.1",
     "typescript": "^5.1.6",
     "vite": "^4.4.9",
-    "vitest": "^0.34.2"
+    "vitest": "^0.34.1"
   },
   "type": "module",
   "keywords": [
@@ -74,15 +78,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/themesberg/flowbite-svelte-blocks/"
-  },
-  "dependencies": {
-    "svelte": "^3.55.1 || >=4.0.0",
-    "@floating-ui/dom": "^1.5.1",
-    "apexcharts": "^3.41.1",
-    "flowbite": ">=1.8.1",
-    "flowbite-svelte": ">=0.43.0",
-    "flowbite-svelte-icons": ">=0.3.6",
-    "tailwind-merge": "^1.14.0"
   },
   "exports": {
     "./ForgotPassword.svelte": {

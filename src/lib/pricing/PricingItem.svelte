@@ -8,3 +8,10 @@
   <svelte:component this={Icon} name="check-solid" size="sm" class={twMerge('ml-2', $$props.class)} />
   <slot />
 </li>
+
+<!--
+@component
+[Go to Popover](https://flowbite-svelte-blocks.vercel.app/)
+## Props
+@prop export let liClass: string = 'flex items-center space-x-3';
+-->

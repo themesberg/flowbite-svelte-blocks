@@ -22,3 +22,14 @@
     </figcaption>
   {/if}
 </figure>
+
+<!--
+@component
+[Go to Popover](https://flowbite-svelte-blocks.vercel.app/)
+## Props
+@prop export let figureClass: string =
+    'flex flex-col justify-center items-center p-8 text-center bg-gray-50 border-b border-gray-200 md:p-12 lg:border-r dark:bg-gray-800 dark:border-gray-700';
+@prop export let blockQuoteClass: string = 'mx-auto mb-8 max-w-2xl text-gray-500 dark:text-gray-400';
+@prop export let h3Class: string = 'text-lg font-semibold text-gray-900 dark:text-white';
+@prop export let footerBlockQuoteClass: string = 'flex justify-center items-center space-x-3';
+-->

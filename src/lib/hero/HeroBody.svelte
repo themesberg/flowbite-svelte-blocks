@@ -18,3 +18,10 @@
 
   <slot />
 </div>
+
+<!--
+@component
+[Go to Popover](https://flowbite-svelte-blocks.vercel.app/)
+## Props
+@prop export let hero: 'default' | 'visual' = 'default';
+-->

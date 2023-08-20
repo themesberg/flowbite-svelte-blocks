@@ -17,3 +17,11 @@
   <slot />
   <svelte:component this={Icon} name="chevron-right-solid" size="xs" class={twMerge('ml-2', $$props.class)} />
 </a>
+
+<!--
+@component
+[Go to Popover](https://flowbite-svelte-blocks.vercel.app/)
+## Props
+@prop export let href: string = '/';
+@prop export let classA: string ='';
+-->

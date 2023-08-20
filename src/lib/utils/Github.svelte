@@ -11,3 +11,10 @@
     /></svg
   >
 </a>
+
+<!--
+@component
+[Go to Popover](https://flowbite-svelte-blocks.vercel.app/)
+## Props
+@prop export let href: string = '';
+-->

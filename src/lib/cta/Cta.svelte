@@ -31,3 +31,10 @@
   {/if}
   <slot />
 </div>
+
+<!--
+@component
+[Go to Popover](https://flowbite-svelte-blocks.vercel.app/)
+## Props
+@prop export let ctatype: 'default' | 'image' | 'heading' | 'none' = 'default';
+-->

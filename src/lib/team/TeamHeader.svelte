@@ -9,3 +9,10 @@
   </h2>
   <slot />
 </div>
+
+<!--
+@component
+[Go to Popover](https://flowbite-svelte-blocks.vercel.app/)
+## Props
+@prop export let divClass: string = 'mx-auto max-w-screen-sm text-center mb-8 lg:mb-16';
+-->
