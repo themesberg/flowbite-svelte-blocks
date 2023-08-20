@@ -1,6 +1,6 @@
 <script lang="ts">
   import { page } from '$app/stores';
-  import {PaginationItem} from 'flowbite-svelte';
+  import { PaginationItem } from 'flowbite-svelte';
   import { identity } from 'svelte/internal';
   import ArrowLeft from './icons/ArrowLeft.svelte';
   import ArrowRight from './icons/ArrowRight.svelte';
@@ -14,7 +14,7 @@
   // one from src/routes/applications(marketing, examples, publisher)/[slug]/+page.js content, title, dir
   // console.log('data.dir: ',data.dir)
   // console.log('data: ',data)
-  
+
   const components = Object.values(data.posts)
     .flatMap(identity)
     // .filter((x) => x.meta.dir === data.dir)
@@ -51,7 +51,7 @@
       </div>
       {#if index < components.length - 1}
         {@const { name, href } = sibling(true)}
-    
+
         <PaginationItem {href} class="flex items-center gap-2.5 hover:text-primary-700 dark: dark:hover:text-primary-700">
           {name}
           <ArrowRight />

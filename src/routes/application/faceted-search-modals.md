@@ -8,9 +8,8 @@ description: Use the faceted search component to allow users to narrow down sear
 ---
 
 ## Default faceted search modal
-Use this free example to show a list of checkbox components inside a modal to filter results by
-categories inside your application.
 
+Use this free example to show a list of checkbox components inside a modal to filter results by categories inside your application.
 
 ```svelte example class="flex justify-center items-start h-64"
 <script>
@@ -77,8 +76,8 @@ categories inside your application.
       </div>
     </div>
     <div class="flex items-center space-x-4 rounded-b dark:border-gray-600">
-    <Button>Apply</Button>
-    <Button color="light">Reset</Button>
+      <Button>Apply</Button>
+      <Button color="light">Reset</Button>
     </div>
   </form>
 </Modal>

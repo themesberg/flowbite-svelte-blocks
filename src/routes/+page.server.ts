@@ -10,7 +10,7 @@ export const load = async ({ fetch }) => {
     const today = new Date().toISOString().slice(0, 10);
     const npm = await fetch(`https://api.npmjs.org/downloads/point/2020-01-01:${today}/flowbite-svelte-blocks`).then(json);
     const discord = await fetch('https://discord.com/api/v9/invites/4eeurUVvTy?with_counts=true&with_expiration=true').then(json);
-    
+
     // console.log('from page.server: ', posts)
     return { posts, github, npm, discord };
   } catch (error) {

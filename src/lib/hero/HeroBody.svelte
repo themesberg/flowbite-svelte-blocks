@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { twMerge } from "tailwind-merge";
+  import { twMerge } from 'tailwind-merge';
   export let hero: 'default' | 'visual' = 'default';
   const divClasses = {
     default: 'px-4 mx-auto text-center md:max-w-screen-md lg:max-w-screen-lg lg:px-36',
@@ -7,11 +7,7 @@
   };
 </script>
 
-<div
-  {...$$restProps}
-  class={twMerge(divClasses[hero], $$props.class)}
-  class:has-head={$$slots.head}
->
+<div {...$$restProps} class={twMerge(divClasses[hero], $$props.class)} class:has-head={$$slots.head}>
   {#if $$slots.head}
     <span class="font-semibold text-gray-400 uppercase"><slot name="head" /></span>
   {/if}
@@ -21,7 +17,7 @@
 
 <!--
 @component
-[Go to Popover](https://flowbite-svelte-blocks.vercel.app/)
+[Go to Popover](https://flowbite-svelte.com/)
 ## Props
 @prop export let hero: 'default' | 'visual' = 'default';
 -->

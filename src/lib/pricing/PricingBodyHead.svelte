@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { twMerge } from "tailwind-merge";
+  import { twMerge } from 'tailwind-merge';
   export let h3Class: string = 'mb-4 text-2xl font-semibold';
   export let pClass: string = 'font-light text-gray-500 sm:text-lg dark:text-gray-400';
   export let priceClass: string = 'flex justify-center items-baseline my-8';
@@ -21,7 +21,7 @@
 
 <!--
 @component
-[Go to Popover](https://flowbite-svelte-blocks.vercel.app/)
+[Go to Popover](https://flowbite-svelte.com/)
 ## Props
 @prop export let h3Class: string = 'mb-4 text-2xl font-semibold';
 @prop export let pClass: string = 'font-light text-gray-500 sm:text-lg dark:text-gray-400';

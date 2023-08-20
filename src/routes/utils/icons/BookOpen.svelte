@@ -23,17 +23,6 @@
   export let ariaLabel = 'book open';
 </script>
 
-<svg
-  xmlns="http://www.w3.org/2000/svg"
-  width={size}
-  height={size}
-  class={$$props.class}
-  {...$$restProps}
-  aria-label={ariaLabel}
-  fill="none"
-  {viewBox}
-  stroke-width={strokeWidth}
-  role="img"
->
+<svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} class={$$props.class} {...$$restProps} aria-label={ariaLabel} fill="none" {viewBox} stroke-width={strokeWidth} role="img">
   {@html svgpath}
 </svg>

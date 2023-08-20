@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { twMerge } from "tailwind-merge";
+  import { twMerge } from 'tailwind-merge';
   export let ulClass: string = 'mb-8 space-y-4 text-left';
 </script>
 
@@ -12,7 +12,7 @@
 
 <!--
 @component
-[Go to Popover](https://flowbite-svelte-blocks.vercel.app/)
+[Go to Popover](https://flowbite-svelte.com/)
 ## Props
 @prop export let ulClass: string = 'mb-8 space-y-4 text-left';
 -->

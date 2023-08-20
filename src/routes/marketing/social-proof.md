@@ -7,10 +7,15 @@ dir: marketing
 description: Get started with this website section to offer social proof to your website visitors by providing statistical numbers about your product's usage worldwide.
 ---
 
-## Default example
-Use this example of statistical numbers that you can use to showcase the adoption rate of your
-product by the community.
+<script>
+  import { TableProp, TableDefaultRow } from '../utils'
+  import { props as item1} from '../props/Social.json'
+  import { props as item2} from '../props/Section.json'
+</script>
 
+## Default example
+
+Use this example of statistical numbers that you can use to showcase the adoption rate of your product by the community.
 
 ```svelte example
 <script lang="ts">
@@ -34,3 +39,17 @@ product by the community.
   </Social>
 </Section>
 ```
+
+## Props
+
+### Social
+
+<TableProp>
+<TableDefaultRow items={item1} rowState='hover' />
+</TableProp>
+
+### Section
+
+<TableProp>
+<TableDefaultRow items={item2} rowState='hover' />
+</TableProp>

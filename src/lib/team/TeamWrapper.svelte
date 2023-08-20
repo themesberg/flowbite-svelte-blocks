@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { twMerge } from "tailwind-merge";
+  import { twMerge } from 'tailwind-merge';
   export let divClass: string = 'py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6';
 </script>
 
@@ -9,7 +9,7 @@
 
 <!--
 @component
-[Go to Popover](https://flowbite-svelte-blocks.vercel.app/)
+[Go to Popover](https://flowbite-svelte.com/)
 ## Props
 @prop export let divClass: string = 'py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6';
 -->

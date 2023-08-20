@@ -7,10 +7,15 @@ dir: marketing
 description: Use a collection of reset password forms based on multiple layouts to let your users change their password after going through the account recovery email.
 ---
 
-## Default reset password page
-Use this example with an email input and two password input fields to let the user change their
-password after receiving the account recovery email.
+<script>
+  import { TableProp, TableDefaultRow } from '../utils'
+  import { props as item1} from '../props/Register.json'
+  import { props as item2} from '../props/Section.json'
+</script>
 
+## Default reset password page
+
+Use this example with an email input and two password input fields to let the user change their password after receiving the account recovery email.
 
 ```svelte example
 <script lang="ts">
@@ -40,14 +45,7 @@ password after receiving the account recovery email.
           <Input type="password" name="confirm-password" placeholder="•••••" required />
         </Label>
         <div class="flex items-start">
-          <Checkbox
-            >I accept the <a
-              class="font-medium text-primary-600 hover:underline dark:text-primary-500"
-              href="/"
-            >
-              Terms and Conditions</a
-            ></Checkbox
-          >
+          <Checkbox>I accept the <a class="font-medium text-primary-600 hover:underline dark:text-primary-500" href="/"> Terms and Conditions</a></Checkbox>
         </div>
         <Button type="submit" class="w-full1">Reset passwod</Button>
       </form>
@@ -55,3 +53,17 @@ password after receiving the account recovery email.
   </Register>
 </Section>
 ```
+
+## Props
+
+### Register
+
+<TableProp>
+<TableDefaultRow items={item1} rowState='hover' />
+</TableProp>
+
+### Section
+
+<TableProp>
+<TableDefaultRow items={item2} rowState='hover' />
+</TableProp>

@@ -82,8 +82,7 @@
       <a href="/" class="flex justify-center items-center">
         <Mashable />
       </a>
-    </div></HeroHeader
-  >
+    </div></HeroHeader>
 </Section>
 
 <Section name="feature">
@@ -200,6 +199,7 @@
         alt="office content 2"
       />
     </svelte:fragment>
+
   </ContentWithImage>
 </Section>
 

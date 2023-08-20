@@ -8,9 +8,8 @@ description: Get started with a premium collection of responsive navigation bars
 ---
 
 ## Default navbar
-Use this navigation bar inside a dashboard interface to show a side nav toggle, logo, search bar,
-button CTA, notifications, app center, and user avatar dropdown.
 
+Use this navigation bar inside a dashboard interface to show a side nav toggle, logo, search bar, button CTA, notifications, app center, and user avatar dropdown.
 
 ```svelte example hideOutput
 COMING SOON

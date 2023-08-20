@@ -8,9 +8,8 @@ description: Get started with a collection of comments sections coded with Tailw
 ---
 
 ## Default comments list
-  Use this example of a free comments box to show a submission form and a list of comments with the
-  settings and reply feature.
 
+Use this example of a free comments box to show a submission form and a list of comments with the settings and reply feature.
 
 ```svelte example hideOutput
 COMING SOON

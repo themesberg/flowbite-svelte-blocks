@@ -4,92 +4,84 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [0.4.11](https://github.com/themesberg/flowbite-svelte-blocks/compare/v0.4.7...v0.4.11) (2023-08-20)
 
-
 ### Features
 
-* update package dependencies ([#38](https://github.com/themesberg/flowbite-svelte-blocks/issues/38)) ([349ee52](https://github.com/themesberg/flowbite-svelte-blocks/commit/349ee528df3ce7e8c4f46b7b84a5ea86c2a950af))
+- update package dependencies ([#38](https://github.com/themesberg/flowbite-svelte-blocks/issues/38)) ([349ee52](https://github.com/themesberg/flowbite-svelte-blocks/commit/349ee528df3ce7e8c4f46b7b84a5ea86c2a950af))
 
 ### [0.4.8](https://github.com/themesberg/flowbite-svelte-blocks/compare/v0.3.9...v0.4.8) (2023-08-20)
 
-
 ### Features
 
-* add categories to top nav ([#34](https://github.com/themesberg/flowbite-svelte-blocks/issues/34)) ([1d43d24](https://github.com/themesberg/flowbite-svelte-blocks/commit/1d43d249ffb57d5aa1ff4ceb3ba013e6df5e89ff))
-* add new pages ([#33](https://github.com/themesberg/flowbite-svelte-blocks/issues/33)) ([9882b6b](https://github.com/themesberg/flowbite-svelte-blocks/commit/9882b6bf80aedfe62d766a44fbc7d865ba295c52))
-* update package dependencies ([d8e6202](https://github.com/themesberg/flowbite-svelte-blocks/commit/d8e62021d56fee891e473ccc9454dce4cc8de916))
-
+- add categories to top nav ([#34](https://github.com/themesberg/flowbite-svelte-blocks/issues/34)) ([1d43d24](https://github.com/themesberg/flowbite-svelte-blocks/commit/1d43d249ffb57d5aa1ff4ceb3ba013e6df5e89ff))
+- add new pages ([#33](https://github.com/themesberg/flowbite-svelte-blocks/issues/33)) ([9882b6b](https://github.com/themesberg/flowbite-svelte-blocks/commit/9882b6bf80aedfe62d766a44fbc7d865ba295c52))
+- update package dependencies ([d8e6202](https://github.com/themesberg/flowbite-svelte-blocks/commit/d8e62021d56fee891e473ccc9454dce4cc8de916))
 
 ### Bug Fixes
 
-* newsletter action url ([317d17e](https://github.com/themesberg/flowbite-svelte-blocks/commit/317d17e4ab44abfc5d644faa9771e8910833dab2))
-* remove footer from example page ([045dd69](https://github.com/themesberg/flowbite-svelte-blocks/commit/045dd69355daa88a90fd07043f09b77b6288c991))
-* scrolling problem and typo ([#29](https://github.com/themesberg/flowbite-svelte-blocks/issues/29)) ([5227f4b](https://github.com/themesberg/flowbite-svelte-blocks/commit/5227f4b331ee9dcbf4a7f5744c6754edeaef2c39))
-* top nav active ([#36](https://github.com/themesberg/flowbite-svelte-blocks/issues/36)) ([5cf7b72](https://github.com/themesberg/flowbite-svelte-blocks/commit/5cf7b72aa1bac71fc7cca5ed33273437cdc3c07c))
+- newsletter action url ([317d17e](https://github.com/themesberg/flowbite-svelte-blocks/commit/317d17e4ab44abfc5d644faa9771e8910833dab2))
+- remove footer from example page ([045dd69](https://github.com/themesberg/flowbite-svelte-blocks/commit/045dd69355daa88a90fd07043f09b77b6288c991))
+- scrolling problem and typo ([#29](https://github.com/themesberg/flowbite-svelte-blocks/issues/29)) ([5227f4b](https://github.com/themesberg/flowbite-svelte-blocks/commit/5227f4b331ee9dcbf4a7f5744c6754edeaef2c39))
+- top nav active ([#36](https://github.com/themesberg/flowbite-svelte-blocks/issues/36)) ([5cf7b72](https://github.com/themesberg/flowbite-svelte-blocks/commit/5cf7b72aa1bac71fc7cca5ed33273437cdc3c07c))
 
 ### [0.4.7](https://github.com/themesberg/flowbite-svelte-blocks/compare/v0.3.6...v0.4.7) (2023-08-14)
 
-
 ### Features
 
-* add categories to top nav ([#34](https://github.com/themesberg/flowbite-svelte-blocks/issues/34)) ([1d43d24](https://github.com/themesberg/flowbite-svelte-blocks/commit/1d43d249ffb57d5aa1ff4ceb3ba013e6df5e89ff))
-* add crud-delete-confirm page, docs, and section ([d45b753](https://github.com/themesberg/flowbite-svelte-blocks/commit/d45b7538521cc4532c74ad40287c9acbce62aed5))
-* add crud-read-drawers page and docs ([44cba7e](https://github.com/themesberg/flowbite-svelte-blocks/commit/44cba7e8655ea18074d6d1bc866a9bf192620657))
-* add crud-read-modals page and docs ([84ceb2f](https://github.com/themesberg/flowbite-svelte-blocks/commit/84ceb2fec0eb682b898f733a5137f1961c06fe94))
-* add crud-read-secions page and docs ([825b03e](https://github.com/themesberg/flowbite-svelte-blocks/commit/825b03e6be25a08035e72edb537140c6fd4f8e35))
-* add crud-update-drawers page and docs ([ba2d192](https://github.com/themesberg/flowbite-svelte-blocks/commit/ba2d19264165fe78fc4cbb2f8a492338b060eaf9))
-* add crud-update-modals page and docs ([57d4e28](https://github.com/themesberg/flowbite-svelte-blocks/commit/57d4e28b3cafef84ed0340ad72e6ca279b726d91))
-* add new pages ([#33](https://github.com/themesberg/flowbite-svelte-blocks/issues/33)) ([9882b6b](https://github.com/themesberg/flowbite-svelte-blocks/commit/9882b6bf80aedfe62d766a44fbc7d865ba295c52))
-
+- add categories to top nav ([#34](https://github.com/themesberg/flowbite-svelte-blocks/issues/34)) ([1d43d24](https://github.com/themesberg/flowbite-svelte-blocks/commit/1d43d249ffb57d5aa1ff4ceb3ba013e6df5e89ff))
+- add crud-delete-confirm page, docs, and section ([d45b753](https://github.com/themesberg/flowbite-svelte-blocks/commit/d45b7538521cc4532c74ad40287c9acbce62aed5))
+- add crud-read-drawers page and docs ([44cba7e](https://github.com/themesberg/flowbite-svelte-blocks/commit/44cba7e8655ea18074d6d1bc866a9bf192620657))
+- add crud-read-modals page and docs ([84ceb2f](https://github.com/themesberg/flowbite-svelte-blocks/commit/84ceb2fec0eb682b898f733a5137f1961c06fe94))
+- add crud-read-secions page and docs ([825b03e](https://github.com/themesberg/flowbite-svelte-blocks/commit/825b03e6be25a08035e72edb537140c6fd4f8e35))
+- add crud-update-drawers page and docs ([ba2d192](https://github.com/themesberg/flowbite-svelte-blocks/commit/ba2d19264165fe78fc4cbb2f8a492338b060eaf9))
+- add crud-update-modals page and docs ([57d4e28](https://github.com/themesberg/flowbite-svelte-blocks/commit/57d4e28b3cafef84ed0340ad72e6ca279b726d91))
+- add new pages ([#33](https://github.com/themesberg/flowbite-svelte-blocks/issues/33)) ([9882b6b](https://github.com/themesberg/flowbite-svelte-blocks/commit/9882b6bf80aedfe62d766a44fbc7d865ba295c52))
 
 ### Bug Fixes
 
-* add new sections ([06481b2](https://github.com/themesberg/flowbite-svelte-blocks/commit/06481b22631b4c7140323a486d99b0b1c9106f08))
-* add SectionBlock ([1e4bf6a](https://github.com/themesberg/flowbite-svelte-blocks/commit/1e4bf6aba9ee5b021cadfd509f483fe3f660d6e6))
-* breadcrumbs and test ([02b2700](https://github.com/themesberg/flowbite-svelte-blocks/commit/02b27006295bfd5bdbb58d2d2be4ffbb99b5bbe2))
-* change blue to orange ([bd4035f](https://github.com/themesberg/flowbite-svelte-blocks/commit/bd4035f835f822557f8866bf10b42093c55554f7))
-* crud-read-sections ([4cfa23a](https://github.com/themesberg/flowbite-svelte-blocks/commit/4cfa23ac5858de9a97a7e95023f74f35c92a4df5))
-* CrudCreateDrawer, crud-create-modals page ([daed4cb](https://github.com/themesberg/flowbite-svelte-blocks/commit/daed4cbb704d7ef1152c04e2197aac5afaa0b1d9))
-* CrudCreateForm section update ([84317ba](https://github.com/themesberg/flowbite-svelte-blocks/commit/84317ba1758fc3316ed63cbd4f78ad9fda26914a))
-* CrudCreateModal section ([515c3e9](https://github.com/themesberg/flowbite-svelte-blocks/commit/515c3e93d79dc572c10b7a1f40f2240ee22fab49))
-* flowbite image to flowbite-svelte image and color updates ([3774235](https://github.com/themesberg/flowbite-svelte-blocks/commit/37742354be65dd17a6794dbdd345e17cd96bb3b0))
-* format ([a6bd545](https://github.com/themesberg/flowbite-svelte-blocks/commit/a6bd545342a288008774de78402cbe4be806d28c))
-* newsletter action url ([317d17e](https://github.com/themesberg/flowbite-svelte-blocks/commit/317d17e4ab44abfc5d644faa9771e8910833dab2))
-* remove footer from example page ([045dd69](https://github.com/themesberg/flowbite-svelte-blocks/commit/045dd69355daa88a90fd07043f09b77b6288c991))
-* remove peerDependencies ([593df04](https://github.com/themesberg/flowbite-svelte-blocks/commit/593df04e11c8d2fdf2d0ae61f5e760d4547a3b7b))
-* remove Section from docs pages ([a2bed71](https://github.com/themesberg/flowbite-svelte-blocks/commit/a2bed719a66703e232e7c9a5f80b7dcd2b9cdf78))
-* scrolling problem and typo ([#29](https://github.com/themesberg/flowbite-svelte-blocks/issues/29)) ([5227f4b](https://github.com/themesberg/flowbite-svelte-blocks/commit/5227f4b331ee9dcbf4a7f5744c6754edeaef2c39))
-* SecitonHeader update ([1dde6c6](https://github.com/themesberg/flowbite-svelte-blocks/commit/1dde6c63310c486c58ea9726c67444b376a7514c))
-* table-header page and docs ([962fbcd](https://github.com/themesberg/flowbite-svelte-blocks/commit/962fbcd6c69a983df1e20664fb516e454a1c31f0))
-* TableHeader add headerType ([1a2db8d](https://github.com/themesberg/flowbite-svelte-blocks/commit/1a2db8d8899a3c4fa3eb2bd754014e8522686df0))
-* TableHeader section update ([0314028](https://github.com/themesberg/flowbite-svelte-blocks/commit/031402854127e032688f1c42d63223781361b7f3))
-* title and breadcrumb_title ([75f2b57](https://github.com/themesberg/flowbite-svelte-blocks/commit/75f2b5735b7b4f1af56ffc0cafb9f91968bd5e26))
-* title in crud-create-forms page ([b515871](https://github.com/themesberg/flowbite-svelte-blocks/commit/b515871fb3cc50c6c3e273c122ed68fc51db729d))
-* top nav active ([#36](https://github.com/themesberg/flowbite-svelte-blocks/issues/36)) ([5cf7b72](https://github.com/themesberg/flowbite-svelte-blocks/commit/5cf7b72aa1bac71fc7cca5ed33273437cdc3c07c))
-* update CrudReadDrawer section ([22b2699](https://github.com/themesberg/flowbite-svelte-blocks/commit/22b2699696569ab36313c64118b95c982b413c80))
-* update dependencies ([8a96902](https://github.com/themesberg/flowbite-svelte-blocks/commit/8a96902886871505a131aa21000af4643de7d327))
-* update peerDependencies in package.json ([06db1d8](https://github.com/themesberg/flowbite-svelte-blocks/commit/06db1d890ce49e635e5447c2df1b0895dc0ec398))
-* use one layout for all category ([3f2eb34](https://github.com/themesberg/flowbite-svelte-blocks/commit/3f2eb34b529aad0b0d0dcba878588fb401c2f2b2))
+- add new sections ([06481b2](https://github.com/themesberg/flowbite-svelte-blocks/commit/06481b22631b4c7140323a486d99b0b1c9106f08))
+- add SectionBlock ([1e4bf6a](https://github.com/themesberg/flowbite-svelte-blocks/commit/1e4bf6aba9ee5b021cadfd509f483fe3f660d6e6))
+- breadcrumbs and test ([02b2700](https://github.com/themesberg/flowbite-svelte-blocks/commit/02b27006295bfd5bdbb58d2d2be4ffbb99b5bbe2))
+- change blue to orange ([bd4035f](https://github.com/themesberg/flowbite-svelte-blocks/commit/bd4035f835f822557f8866bf10b42093c55554f7))
+- crud-read-sections ([4cfa23a](https://github.com/themesberg/flowbite-svelte-blocks/commit/4cfa23ac5858de9a97a7e95023f74f35c92a4df5))
+- CrudCreateDrawer, crud-create-modals page ([daed4cb](https://github.com/themesberg/flowbite-svelte-blocks/commit/daed4cbb704d7ef1152c04e2197aac5afaa0b1d9))
+- CrudCreateForm section update ([84317ba](https://github.com/themesberg/flowbite-svelte-blocks/commit/84317ba1758fc3316ed63cbd4f78ad9fda26914a))
+- CrudCreateModal section ([515c3e9](https://github.com/themesberg/flowbite-svelte-blocks/commit/515c3e93d79dc572c10b7a1f40f2240ee22fab49))
+- flowbite image to flowbite-svelte image and color updates ([3774235](https://github.com/themesberg/flowbite-svelte-blocks/commit/37742354be65dd17a6794dbdd345e17cd96bb3b0))
+- format ([a6bd545](https://github.com/themesberg/flowbite-svelte-blocks/commit/a6bd545342a288008774de78402cbe4be806d28c))
+- newsletter action url ([317d17e](https://github.com/themesberg/flowbite-svelte-blocks/commit/317d17e4ab44abfc5d644faa9771e8910833dab2))
+- remove footer from example page ([045dd69](https://github.com/themesberg/flowbite-svelte-blocks/commit/045dd69355daa88a90fd07043f09b77b6288c991))
+- remove peerDependencies ([593df04](https://github.com/themesberg/flowbite-svelte-blocks/commit/593df04e11c8d2fdf2d0ae61f5e760d4547a3b7b))
+- remove Section from docs pages ([a2bed71](https://github.com/themesberg/flowbite-svelte-blocks/commit/a2bed719a66703e232e7c9a5f80b7dcd2b9cdf78))
+- scrolling problem and typo ([#29](https://github.com/themesberg/flowbite-svelte-blocks/issues/29)) ([5227f4b](https://github.com/themesberg/flowbite-svelte-blocks/commit/5227f4b331ee9dcbf4a7f5744c6754edeaef2c39))
+- SecitonHeader update ([1dde6c6](https://github.com/themesberg/flowbite-svelte-blocks/commit/1dde6c63310c486c58ea9726c67444b376a7514c))
+- table-header page and docs ([962fbcd](https://github.com/themesberg/flowbite-svelte-blocks/commit/962fbcd6c69a983df1e20664fb516e454a1c31f0))
+- TableHeader add headerType ([1a2db8d](https://github.com/themesberg/flowbite-svelte-blocks/commit/1a2db8d8899a3c4fa3eb2bd754014e8522686df0))
+- TableHeader section update ([0314028](https://github.com/themesberg/flowbite-svelte-blocks/commit/031402854127e032688f1c42d63223781361b7f3))
+- title and breadcrumb_title ([75f2b57](https://github.com/themesberg/flowbite-svelte-blocks/commit/75f2b5735b7b4f1af56ffc0cafb9f91968bd5e26))
+- title in crud-create-forms page ([b515871](https://github.com/themesberg/flowbite-svelte-blocks/commit/b515871fb3cc50c6c3e273c122ed68fc51db729d))
+- top nav active ([#36](https://github.com/themesberg/flowbite-svelte-blocks/issues/36)) ([5cf7b72](https://github.com/themesberg/flowbite-svelte-blocks/commit/5cf7b72aa1bac71fc7cca5ed33273437cdc3c07c))
+- update CrudReadDrawer section ([22b2699](https://github.com/themesberg/flowbite-svelte-blocks/commit/22b2699696569ab36313c64118b95c982b413c80))
+- update dependencies ([8a96902](https://github.com/themesberg/flowbite-svelte-blocks/commit/8a96902886871505a131aa21000af4643de7d327))
+- update peerDependencies in package.json ([06db1d8](https://github.com/themesberg/flowbite-svelte-blocks/commit/06db1d890ce49e635e5447c2df1b0895dc0ec398))
+- use one layout for all category ([3f2eb34](https://github.com/themesberg/flowbite-svelte-blocks/commit/3f2eb34b529aad0b0d0dcba878588fb401c2f2b2))
 
 ### [0.4.6](https://github.com/themesberg/flowbite-svelte-blocks/compare/v0.4.5...v0.4.6) (2023-08-11)
 
-
 ### Bug Fixes
 
-* scrolling problem in layout by using afterNavigate() ([673354b](https://github.com/themesberg/flowbite-svelte-blocks/commit/673354b67b17e9ecd3eb0b5b0e0ff67aea4d46a4))
+- scrolling problem in layout by using afterNavigate() ([673354b](https://github.com/themesberg/flowbite-svelte-blocks/commit/673354b67b17e9ecd3eb0b5b0e0ff67aea4d46a4))
 
 ### [0.4.5](https://github.com/themesberg/flowbite-svelte-blocks/compare/v0.4.4...v0.4.5) (2023-08-10)
 
-
 ### Bug Fixes
 
-* typo ([165610f](https://github.com/themesberg/flowbite-svelte-blocks/commit/165610f91af921757ca7275f5879b7b397c7c5cb))
+- typo ([165610f](https://github.com/themesberg/flowbite-svelte-blocks/commit/165610f91af921757ca7275f5879b7b397c7c5cb))
 
 ### [0.4.4](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.4.3...v0.4.4) (2023-08-09)
 
-
 ### Bug Fixes
 
-* add-exports-to-package-json ([0adf29c](https://github.com/shinokada/flowbite-svelte-blocks/commit/0adf29c808e6daf897e8ff7c9fc1276a6000642d))
+- add-exports-to-package-json ([0adf29c](https://github.com/shinokada/flowbite-svelte-blocks/commit/0adf29c808e6daf897e8ff7c9fc1276a6000642d))
 
 ### [0.4.3](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.4.2...v0.4.3) (2023-08-09)
 
@@ -97,18 +89,16 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [0.4.1](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.3.9...v0.4.1) (2023-08-09)
 
-
 ### Bug Fixes
 
-* newsletter action url ([317d17e](https://github.com/shinokada/flowbite-svelte-blocks/commit/317d17e4ab44abfc5d644faa9771e8910833dab2))
-* remove footer from example page ([045dd69](https://github.com/shinokada/flowbite-svelte-blocks/commit/045dd69355daa88a90fd07043f09b77b6288c991))
+- newsletter action url ([317d17e](https://github.com/shinokada/flowbite-svelte-blocks/commit/317d17e4ab44abfc5d644faa9771e8910833dab2))
+- remove footer from example page ([045dd69](https://github.com/shinokada/flowbite-svelte-blocks/commit/045dd69355daa88a90fd07043f09b77b6288c991))
 
 ### [0.3.9](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.3.8...v0.3.9) (2023-06-15)
 
-
 ### Bug Fixes
 
-* update dependencies ([8a96902](https://github.com/shinokada/flowbite-svelte-blocks/commit/8a96902886871505a131aa21000af4643de7d327))
+- update dependencies ([8a96902](https://github.com/shinokada/flowbite-svelte-blocks/commit/8a96902886871505a131aa21000af4643de7d327))
 
 ### [0.3.8](https://github.com/shinokada/flowbite-svelte-blocks/compare/v0.3.7...v0.3.8) (2023-05-20)
 

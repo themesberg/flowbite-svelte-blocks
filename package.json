@@ -27,7 +27,7 @@
     "add-docs": "svelte-lib-helpers docs",
     "gen-props": "svelte-lib-helpers props",
     "copy-package": "svelte-lib-helpers package",
-    "lib-helpers": "npm run add-docs && npm run gen-props && npm run package && npm run add-exports && npm run copy-package",
+    "lib-helpers": "npm run format && npm run add-docs && npm run gen-props && npm run package && npm run add-exports && npm run copy-package",
     "package:publish": "npm run lib-helpers && standard-version && git push --follow-tags origin main && npm publish"
   },
   "devDependencies": {

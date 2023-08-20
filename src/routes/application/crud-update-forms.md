@@ -8,9 +8,8 @@ description: Get started with a collection of CRUD layouts based on the "update"
 ---
 
 ## Default form
-Use this free example of a CRUD form layout to update existing data sets featuring text fields
-inputs, select boxes, and more.
 
+Use this free example of a CRUD form layout to update existing data sets featuring text fields inputs, select boxes, and more.
 
 ```svelte example hideOutput
 COMING SOON

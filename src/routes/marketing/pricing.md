@@ -7,39 +7,36 @@ dir: marketing
 description: Get started with a collection of responsive pricing sections to show the pricing plan to your potential customers based on multiple sizes, styles, and layouts.
 ---
 
-## Default pricing table
-Use this example of three pricing cards showcasing the pricing plan title, description, feature
-list, and CTA button.
+<script>
+  import { TableProp, TableDefaultRow } from '../utils'
+  import { props as item1} from '../props/PricingBodyHead.json'
+  import { props as item2} from '../props/PricingCard.json'
+  import { props as item3} from '../props/PricingItemWrapper.json'
+  import { props as item4} from '../props/PricingHead.json'
+  import { props as item5} from '../props/PricingItem.json'
+  import { props as item6} from '../props/Section.json'
+</script>
 
+## Default pricing table
+
+Use this example of three pricing cards showcasing the pricing plan title, description, feature list, and CTA button.
 
 ```svelte example
 <script lang="ts">
-  import {
-    Section,
-    PricingBodyHead,
-    PricingCard,
-    PricingItemWrapper,
-    PricingHead,
-    PricingItem
-  } from 'flowbite-svelte-blocks';
+  import { Section, PricingBodyHead, PricingCard, PricingItemWrapper, PricingHead, PricingItem } from 'flowbite-svelte-blocks';
   import { Button } from 'flowbite-svelte';
 </script>
 
 <Section name="pricing">
   <PricingHead>
     <svelte:fragment slot="h2">Designed for business teams like yours</svelte:fragment>
-    <svelte:fragment slot="paragraph"
-      >Here at Flowbite we focus on markets where technology, innovation, and capital can unlock
-      long-term value and drive economic growth.</svelte:fragment
-    >
+    <svelte:fragment slot="paragraph">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</svelte:fragment>
   </PricingHead>
   <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
     <PricingCard>
       <PricingBodyHead>
         <svelte:fragment slot="h3">Starter</svelte:fragment>
-        <svelte:fragment slot="paragraph">
-          Best option for personal use & for your next project.
-        </svelte:fragment>
+        <svelte:fragment slot="paragraph">Best option for personal use & for your next project.</svelte:fragment>
         <svelte:fragment slot="price">
           <span class="mr-2 text-5xl font-extrabold">$29</span>
           <span class="text-gray-500 dark:text-gray-400">/month</span>
@@ -71,9 +68,7 @@ list, and CTA button.
     <PricingCard>
       <PricingBodyHead>
         <svelte:fragment slot="h3">Company</svelte:fragment>
-        <svelte:fragment slot="paragraph">
-          Relevant for multiple users, extended & premium support.
-        </svelte:fragment>
+        <svelte:fragment slot="paragraph">Relevant for multiple users, extended & premium support.</svelte:fragment>
         <svelte:fragment slot="price">
           <span class="mr-2 text-5xl font-extrabold">$99</span>
           <span class="text-gray-500 dark:text-gray-400">/month</span>
@@ -105,9 +100,7 @@ list, and CTA button.
     <PricingCard>
       <PricingBodyHead>
         <svelte:fragment slot="h3">Enterprise</svelte:fragment>
-        <svelte:fragment slot="paragraph">
-          Best for large scale uses and extended redistribution rights.
-        </svelte:fragment>
+        <svelte:fragment slot="paragraph">Best for large scale uses and extended redistribution rights.</svelte:fragment>
         <svelte:fragment slot="price">
           <span class="mr-2 text-5xl font-extrabold">$499</span>
           <span class="text-gray-500 dark:text-gray-400">/month</span>
@@ -138,3 +131,43 @@ list, and CTA button.
   </div>
 </Section>
 ```
+
+
+## Props
+
+### PricingBodyHead
+
+<TableProp>
+<TableDefaultRow items={item1} rowState='hover' />
+</TableProp>
+
+### PricingCard
+
+<TableProp>
+<TableDefaultRow items={item2} rowState='hover' />
+</TableProp>
+
+### PricingItemWrapper
+
+<TableProp>
+<TableDefaultRow items={item3} rowState='hover' />
+</TableProp>
+
+### PricingHead
+
+<TableProp>
+<TableDefaultRow items={item4} rowState='hover' />
+</TableProp>
+
+### PricingItem
+
+<TableProp>
+<TableDefaultRow items={item5} rowState='hover' />
+</TableProp>
+
+### Section
+
+<TableProp>
+<TableDefaultRow items={item6} rowState='hover' />
+</TableProp>
+

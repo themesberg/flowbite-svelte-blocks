@@ -8,9 +8,8 @@ description: Get started with a collection of footer components that you can app
 ---
 
 ## Default table footer with pagination
-Use this free example to add a footer section to a table component to show a pagination component
-and indicate the number of data items being showed on one page.
 
+Use this free example to add a footer section to a table component to show a pagination component and indicate the number of data items being showed on one page.
 
 ```svelte example hideOutput
 COMING SOON

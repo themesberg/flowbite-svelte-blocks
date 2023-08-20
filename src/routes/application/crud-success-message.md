@@ -8,9 +8,8 @@ description: Use a collection of success message components based on Tailwind CS
 ---
 
 ## Default success message
-Use this free example of a success message component inside a modal to share feedback with your
-user when an action has been completed.
 
+Use this free example of a success message component inside a modal to share feedback with your user when an action has been completed.
 
 ```svelte example hideOutput
 COMING SOON

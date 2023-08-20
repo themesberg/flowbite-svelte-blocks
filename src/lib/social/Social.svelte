@@ -1,8 +1,7 @@
 <script lang="ts">
-  import { twMerge } from "tailwind-merge";
+  import { twMerge } from 'tailwind-merge';
   export let divClass: string = 'max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6';
-  export let dlClass: string =
-    'grid max-w-screen-md gap-8 mx-auto text-gray-900 sm:grid-cols-3 dark:text-white';
+  export let dlClass: string = 'grid max-w-screen-md gap-8 mx-auto text-gray-900 sm:grid-cols-3 dark:text-white';
 </script>
 
 <div class={twMerge(divClass, $$props.class)}>
@@ -13,9 +12,8 @@
 
 <!--
 @component
-[Go to Popover](https://flowbite-svelte-blocks.vercel.app/)
+[Go to Popover](https://flowbite-svelte.com/)
 ## Props
 @prop export let divClass: string = 'max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6';
-@prop export let dlClass: string =
-    'grid max-w-screen-md gap-8 mx-auto text-gray-900 sm:grid-cols-3 dark:text-white';
+@prop export let dlClass: string = 'grid max-w-screen-md gap-8 mx-auto text-gray-900 sm:grid-cols-3 dark:text-white';
 -->

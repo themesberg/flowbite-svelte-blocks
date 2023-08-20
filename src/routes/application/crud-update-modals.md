@@ -7,10 +7,14 @@ dir: application
 description: Get started with a collection of modal components based on the CRUD layout to update an existing set of data from the database built with Tailwind CSS.
 ---
 
-## Default modal
-Use this free example of a modal component to update an existing data entry inside the database
-featuring text field inputs, selects, and a textarea.
+<script>
+  import { TableProp, TableDefaultRow } from '../utils'
+  import { props as item2} from '../props/Section.json'
+</script>
 
+## Default modal
+
+Use this free example of a modal component to update an existing data entry inside the database featuring text field inputs, selects, and a textarea.
 
 ```svelte example
 <script lang="ts">
@@ -35,8 +39,7 @@ featuring text field inputs, selects, and a textarea.
     brand: 'Google',
     price: '$399',
     category: 'phone',
-    description:
-      'Standard glass, 3.8GHz 8-core 10th-generation Intel Core i7 processor, Turbo Boost up to 5.0GHz, 16GB 2666MHz DDR4 memory, Radeon Pro 5500 XT with 8GB of GDDR6 memory, 256GB SSD storage, Gigabit Ethernet, Magic Mouse 2, Magic Keyboard - US'
+    description: 'Standard glass, 3.8GHz 8-core 10th-generation Intel Core i7 processor, Turbo Boost up to 5.0GHz, 16GB 2666MHz DDR4 memory, Radeon Pro 5500 XT with 8GB of GDDR6 memory, 256GB SSD storage, Gigabit Ethernet, Magic Mouse 2, Magic Keyboard - US'
   };
 </script>
 
@@ -67,23 +70,20 @@ featuring text field inputs, selects, and a textarea.
         </div>
         <div class="sm:col-span-2">
           <Label for="description" class="mb-2">Description</Label>
-          <Textarea
-            id="description"
-            placeholder="Your description here"
-            rows="4"
-            name="description"
-            required
-            value={productData.description}
-          />
+          <Textarea id="description" placeholder="Your description here" rows="4" name="description" required value={productData.description} />
         </div>
         <div class="flex items-center space-x-4">
           <Button type="submit" class="w-64" on:click={handleUpdate}>Update product</Button>
-          <Button type="submit" class="w-52" outline color="red" on:click={handleDelete}>
-            Delete
-          </Button>
+          <Button type="submit" class="w-52" outline color="red" on:click={handleDelete}>Delete</Button>
         </div>
       </div>
     </form>
   </Modal>
 </Section>
 ```
+
+## Props
+
+<TableProp>
+<TableDefaultRow items={item2} rowState='hover' />
+</TableProp>

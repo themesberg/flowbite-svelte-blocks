@@ -8,9 +8,8 @@ description: Get started with a collection of drawer components using a faceted 
 ---
 
 ## Default faceted search drawer
-Use this free example of a drawer component to show a list of checkbox, radio and input field
-elements to filter search results.
 
+Use this free example of a drawer component to show a list of checkbox, radio and input field elements to filter search results.
 
 ```svelte example class="flex justify-center items-start h-64"
 <script>
@@ -32,18 +31,14 @@ elements to filter search results.
 </div>
 <Drawer transitionType="fly" {transitionParams} bind:hidden={hidden4} id="sidebar4">
   <div class="flex items-center">
-    <Heading tag="h5" id="drawer-label" class="inline-flex items-center mb-6 text-base font-semibold text-gray-500 uppercase dark:text-gray-400">
-      APPLY FILTERS
-    </Heading>
+    <Heading tag="h5" id="drawer-label" class="inline-flex items-center mb-6 text-base font-semibold text-gray-500 uppercase dark:text-gray-400">APPLY FILTERS</Heading>
     <CloseButton on:click={() => (hidden4 = true)} class="mb-4 dark:text-white" />
   </div>
   <form action="#">
     <div class="space-y-6">
       <!-- Categories -->
       <div class="space-y-2">
-        <Heading tag="h6" class="text-base font-medium text-black dark:text-white">
-          Categories
-        </Heading>
+        <Heading tag="h6" class="text-base font-medium text-black dark:text-white">Categories</Heading>
         <div class="flex items-center">
           <Checkbox>TV, Audio-Video</Checkbox>
         </div>
@@ -78,10 +73,8 @@ elements to filter search results.
       </div>
       <!-- Prices -->
       <div class="space-y-2">
-        <Heading tag="h6" class="text-base font-medium text-black dark:text-white">
-          Prices
-        </Heading>
-         <div class="flex items-center justify-between col-span-2 space-x-3">
+        <Heading tag="h6" class="text-base font-medium text-black dark:text-white">Prices</Heading>
+        <div class="flex items-center justify-between col-span-2 space-x-3">
           <div class="w-full">
             <Label for="last_name" class="mb-2">From</Label>
             <Input type="text" id="last_name" placeholder="300" required />
@@ -95,9 +88,7 @@ elements to filter search results.
 
       <!-- Rating -->
       <div class="space-y-2">
-        <Heading tag="h6" class="text-base font-medium text-black dark:text-white">
-            Rating
-        </Heading>
+        <Heading tag="h6" class="text-base font-medium text-black dark:text-white">Rating</Heading>
         <div class="flex items-center">
           <Radio bind:group={myRating} value="5"><Rating total={5} rating={5} /></Radio>
         </div>
@@ -113,10 +104,8 @@ elements to filter search results.
         <div class="flex items-center">
           <Radio bind:group={myRating} value="1"><Rating total={5} rating={1} /></Radio>
         </div>
-       
       </div>
     </div>
-
   </form>
 </Drawer>
 ```

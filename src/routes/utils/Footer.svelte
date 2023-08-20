@@ -1,6 +1,6 @@
 <script lang="ts">
   import { page } from '$app/stores';
-  import {Footer, FooterBrand, FooterCopyright, FooterIcon, FooterLink, FooterLinkGroup} from 'flowbite-svelte';
+  import { Footer, FooterBrand, FooterCopyright, FooterIcon, FooterLink, FooterLinkGroup } from 'flowbite-svelte';
   let logo = '/images/flowbite-svelte-icon-logo.svg';
 
   let isHomePage: boolean;

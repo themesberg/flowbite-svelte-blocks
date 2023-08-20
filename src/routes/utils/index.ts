@@ -14,3 +14,6 @@ export { default as Reddit } from './icons/Reddit.svelte';
 export { default as Spotify } from './icons/Spotify.svelte';
 export { default as Twitter } from './icons/Twitter.svelte';
 export { default as Youtube } from './icons/Youtube.svelte';
+
+export { default as TableDefaultRow } from './TableDefaultRow.svelte';
+export { default as TableProp } from './TableProp.svelte';

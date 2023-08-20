@@ -12,25 +12,19 @@
 </script>
 
 <section>
- 
-   
-      <div class="{headerClass}">
-        <Breadcrumb navClass="flex mb-3">
-          <BreadcrumbItem href="/" home>{home}</BreadcrumbItem>
-          <BreadcrumbItem href="/{category}">{capitalized} UI</BreadcrumbItem>
-          {#if breadcrumb_title}
-          <BreadcrumbItem>{breadcrumb_title}</BreadcrumbItem>
-          {/if}
-        </Breadcrumb>
-        <h1
-          class="inline-block mb-2 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white"
-        >
-          {title}
-        </h1>
-        <p class="text-lg text-gray-500 lg:mb-0 dark:text-gray-400">
-          {description}
-        </p>
-      </div>
-
-
+  <div class={headerClass}>
+    <Breadcrumb navClass="flex mb-3">
+      <BreadcrumbItem href="/" home>{home}</BreadcrumbItem>
+      <BreadcrumbItem href="/{category}">{capitalized} UI</BreadcrumbItem>
+      {#if breadcrumb_title}
+        <BreadcrumbItem>{breadcrumb_title}</BreadcrumbItem>
+      {/if}
+    </Breadcrumb>
+    <h1 class="inline-block mb-2 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+      {title}
+    </h1>
+    <p class="text-lg text-gray-500 lg:mb-0 dark:text-gray-400">
+      {description}
+    </p>
+  </div>
 </section>

@@ -7,10 +7,14 @@ dir: application
 description: Get started with a collection of forms crafted for the "create" action from the CRUD layouts featuring form elements coded in Tailwind CSS.
 ---
 
-## Default form
-Use this free example of a form based on the CRUD layouts where you can create a new data entry
-inside your dashboard.
+<script>
+  import { TableProp, TableDefaultRow } from '../utils'
+  import { props as item2} from '../props/Section.json'
+</script>
 
+## Default form
+
+Use this free example of a form based on the CRUD layouts where you can create a new data entry inside your dashboard.
 
 ```svelte example
 <script lang="ts">
@@ -55,17 +59,16 @@ inside your dashboard.
       </div>
       <div class="sm:col-span-2">
         <Label for="description" class="mb-2">Description</Label>
-        <Textarea
-          id="description"
-          placeholder="Your description here"
-          rows="4"
-          name="description"
-          required
-        />
+        <Textarea id="description" placeholder="Your description here" rows="4" name="description" required />
       </div>
       <Button type="submit" class="w-32">Add product</Button>
     </div>
   </form>
 </Section>
 ```
-  
+
+## Props
+
+<TableProp>
+<TableDefaultRow items={item2} rowState='hover' />
+</TableProp>
