@@ -1,7 +1,6 @@
 <script lang="ts">
   import { twMerge } from 'tailwind-merge';
-  export let h2Class: string =
-    'mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white';
+  export let h2Class: string = 'mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white';
 </script>
 
 {#if $$slots.h2}
@@ -13,8 +12,7 @@
 
 <!--
 @component
-[Go to Popover](https://flowbite-svelte-blocks.vercel.app/)
+[Go to Popover](https://flowbite-svelte.com/)
 ## Props
-@prop export let h2Class: string =
-    'mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white';
+@prop export let h2Class: string = 'mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white';
 -->

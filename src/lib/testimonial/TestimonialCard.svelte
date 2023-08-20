@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { twMerge } from "tailwind-merge";
+  import { twMerge } from 'tailwind-merge';
   export let headerClass: string = 'mx-auto max-w-screen-sm';
   export let divClass: string = 'grid mb-8 lg:mb-12 lg:grid-cols-2';
 </script>
@@ -15,7 +15,7 @@
 
 <!--
 @component
-[Go to Popover](https://flowbite-svelte-blocks.vercel.app/)
+[Go to Popover](https://flowbite-svelte.com/)
 ## Props
 @prop export let headerClass: string = 'mx-auto max-w-screen-sm';
 @prop export let divClass: string = 'grid mb-8 lg:mb-12 lg:grid-cols-2';

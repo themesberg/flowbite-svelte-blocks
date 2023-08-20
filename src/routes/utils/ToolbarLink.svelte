@@ -1,5 +1,5 @@
 <script>
-  import {ToolbarButton, Tooltip} from 'flowbite-svelte';
+  import { ToolbarButton, Tooltip } from 'flowbite-svelte';
   /** @type {string} */
   export let name;
 </script>

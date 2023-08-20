@@ -7,10 +7,15 @@ dir: marketing
 description: Use a collection of register pages to let your users create an account on your website based on multiple layouts, social media authentication, and more.
 ---
 
-## Default register page
-This example can be used to allow users to create an account on your website using their email
-address and password and also a checkbox with the terms and conditions as a requirement.
+<script>
+  import { TableProp, TableDefaultRow } from '../utils'
+  import { props as item1} from '../props/Register.json'
+  import { props as item2} from '../props/Section.json'
+</script>
 
+## Default register page
+
+This example can be used to allow users to create an account on your website using their email address and password and also a checkbox with the terms and conditions as a requirement.
 
 ```svelte example
 <script lang="ts">
@@ -40,25 +45,28 @@ address and password and also a checkbox with the terms and conditions as a requ
           <Input type="password" name="confirm-password" placeholder="•••••" required />
         </Label>
         <div class="flex items-start">
-          <Checkbox
-            >I accept the <a
-              class="font-medium text-primary-600 hover:underline dark:text-primary-500"
-              href="/"
-            >
-              Terms and Conditions</a
-            ></Checkbox
-          >
+          <Checkbox>I accept the <a class="font-medium text-primary-600 hover:underline dark:text-primary-500" href="/"> Terms and Conditions</a></Checkbox>
         </div>
         <Button type="submit" class="w-full1">Create an account</Button>
         <div class="text-sm font-medium text-gray-500 dark:text-gray-300">
-          Already have an account? <a
-            href="/"
-            class="font-medium text-primary-600 hover:underline dark:text-primary-500"
-            >Login here</a
-          >
+          Already have an account? <a href="/" class="font-medium text-primary-600 hover:underline dark:text-primary-500">Login here</a>
         </div>
       </form>
     </div>
   </Register>
 </Section>
 ```
+
+## Props
+
+### Register
+
+<TableProp>
+<TableDefaultRow items={item1} rowState='hover' />
+</TableProp>
+
+### Section
+
+<TableProp>
+<TableDefaultRow items={item2} rowState='hover' />
+</TableProp>

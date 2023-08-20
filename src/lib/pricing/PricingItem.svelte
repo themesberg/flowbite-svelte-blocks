@@ -1,5 +1,5 @@
 <script lang="ts">
-  import {twMerge} from 'tailwind-merge';
+  import { twMerge } from 'tailwind-merge';
   export let liClass: string = 'flex items-center space-x-3';
   import { Icon } from 'flowbite-svelte-icons';
 </script>
@@ -11,7 +11,7 @@
 
 <!--
 @component
-[Go to Popover](https://flowbite-svelte-blocks.vercel.app/)
+[Go to Popover](https://flowbite-svelte.com/)
 ## Props
 @prop export let liClass: string = 'flex items-center space-x-3';
 -->

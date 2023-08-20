@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { twMerge } from "tailwind-merge";
+  import { twMerge } from 'tailwind-merge';
   export let ctatype: 'default' | 'image' | 'heading' | 'none' = 'default';
   const ctaClasses = {
     default: {
@@ -12,8 +12,7 @@
     },
     heading: {
       divClass: 'mx-auto max-w-screen-sm text-center',
-      h2Class:
-        'mb-4 text-4xl tracking-tight font-extrabold leading-tight text-gray-900 dark:text-white'
+      h2Class: 'mb-4 text-4xl tracking-tight font-extrabold leading-tight text-gray-900 dark:text-white'
     },
     none: {
       divClass: '',
@@ -34,7 +33,7 @@
 
 <!--
 @component
-[Go to Popover](https://flowbite-svelte-blocks.vercel.app/)
+[Go to Popover](https://flowbite-svelte.com/)
 ## Props
 @prop export let ctatype: 'default' | 'image' | 'heading' | 'none' = 'default';
 -->

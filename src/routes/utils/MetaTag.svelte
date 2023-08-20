@@ -5,12 +5,10 @@
   export let description: string = '';
   export let title: string = '';
   // title = title.replaceAll(' ', '-');
-  let imgsrc = `https://open-graph-vercel.vercel.app/api/flowbite-svelte-blocks?title=${encodeURIComponent(
-    breadcrumb_title
-  )}`;
+  let imgsrc = `https://open-graph-vercel.vercel.app/api/flowbite-svelte-blocks?title=${encodeURIComponent(breadcrumb_title)}`;
   let url: string = 'https://flowbite-svelte-blocks.vercel.app/';
   export let dir: string = '';
-  let breadcrumb = breadcrumb_title ? breadcrumb_title.toLowerCase().replaceAll(' ', '-') : ''
+  let breadcrumb = breadcrumb_title ? breadcrumb_title.toLowerCase().replaceAll(' ', '-') : '';
   // let breadcrumb = breadcrumb_title.toLowerCase().replaceAll(' ', '-');
   let urlLink = withoutLink ? '' : breadcrumb;
   if (dir) {
@@ -48,5 +46,4 @@
     description: `${description}`,
     image: imgsrc,
     imageAlt: `${title}`
-  }}
-/>
+  }} />

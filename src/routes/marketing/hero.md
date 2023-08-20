@@ -7,10 +7,17 @@ dir: marketing
 description: Get started with a collection of hero sections coded with Tailwind CSS to showcase the most important parts of your website based on multiple styles and layouts.
 ---
 
-## Default hero section
-Use this default example with an announcement badge, heading, CTA buttons, and customer logos to
-showcase what your website offers.
+<script>
+  import { TableProp, TableDefaultRow } from '../utils'
+  import { props as item1} from '../props/News.json'
+  import { props as item2} from '../props/HeroHeader.json'
+  import { props as item3} from '../props/HeroBody.json'
+  import { props as item4} from '../props/Section.json'
+</script>
 
+## Default hero section
+
+Use this default example with an announcement badge, heading, CTA buttons, and customer logos to showcase what your website offers.
 
 ```svelte example
 <script>
@@ -27,15 +34,10 @@ showcase what your website offers.
   </News>
   <HeroHeader>
     <svelte:fragment slot="h1">We invest in the world’s potential</svelte:fragment>
-    <svelte:fragment slot="paragraph">
-      Here at Flowbite we focus on markets where technology, innovation, and capital can unlock
-      long-term value and drive economic growth.
-    </svelte:fragment>
+    <svelte:fragment slot="paragraph">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</svelte:fragment>
   </HeroHeader>
 
-  <div
-    class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4"
-  >
+  <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
     <a href="/">
       <Button size="lg" color="red">
         Learn more <Icon name="arrow-right-solid" size="md" class="ml-2 -mr-1" />
@@ -66,10 +68,9 @@ showcase what your website offers.
 </Section>
 ```
 
-
 ## Visual image with heading
-Use this example to show an image next to the heading and CTA buttons to improve the visual
-impact of the website's first visit.
+
+Use this example to show an image next to the heading and CTA buttons to improve the visual impact of the website's first visit.
 
 ```svelte example
 <script>
@@ -78,34 +79,43 @@ impact of the website's first visit.
   import { Icon } from 'flowbite-svelte-icons';
 </script>
 
-  <Section name="heroVisual">
-    <div class="mr-auto place-self-center lg:col-span-7">
-      <HeroHeader
-        h1Class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white"
-        pClass="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
-      >
-        <svelte:fragment slot="h1">Payments tool for software companies</svelte:fragment>
-        <svelte:fragment slot="paragraph">
-          From checkout to global sales tax compliance, companies around the world use Flowbite to
-          simplify their payment stack.
-        </svelte:fragment>
-        <a href="/"
-          ><Button size="xl" color="red" class="inline-flex items-center justify-center mr-3"
-            >Get started<Icon name="arrow-right-solid" size="md" class="ml-2 -mr-1" /></Button
-          >
-        </a>
-        <a href="/"
-          ><Button color="light" size="xl" class="inline-flex items-center justify-center"
-            >Speak to Sales</Button
-          >
-        </a>
-      </HeroHeader>
-    </div>
-    <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-      <img
-        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png"
-        alt="mockup"
-      />
-    </div>
-  </Section>
+<Section name="heroVisual">
+  <div class="mr-auto place-self-center lg:col-span-7">
+    <HeroHeader h1Class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white" pClass="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+      <svelte:fragment slot="h1">Payments tool for software companies</svelte:fragment>
+      <svelte:fragment slot="paragraph">From checkout to global sales tax compliance, companies around the world use Flowbite to simplify their payment stack.</svelte:fragment>
+      <a href="/"><Button size="xl" color="red" class="inline-flex items-center justify-center mr-3">Get started<Icon name="arrow-right-solid" size="md" class="ml-2 -mr-1" /></Button> </a>
+      <a href="/"><Button color="light" size="xl" class="inline-flex items-center justify-center">Speak to Sales</Button> </a>
+    </HeroHeader>
+  </div>
+  <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+    <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png" alt="mockup" />
+  </div>
+</Section>
 ```
+
+## Props
+
+### News
+
+<TableProp>
+<TableDefaultRow items={item1} rowState='hover' />
+</TableProp>
+
+### HeroHeader
+
+<TableProp>
+<TableDefaultRow items={item2} rowState='hover' />
+</TableProp>
+
+### HeroBody
+
+<TableProp>
+<TableDefaultRow items={item3} rowState='hover' />
+</TableProp>
+
+### Section
+
+<TableProp>
+<TableDefaultRow items={item4} rowState='hover' />
+</TableProp>

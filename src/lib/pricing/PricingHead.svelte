@@ -1,8 +1,7 @@
 <script lang="ts">
-  import { twMerge } from "tailwind-merge";
+  import { twMerge } from 'tailwind-merge';
   export let divClass: string = 'mx-auto max-w-screen-md text-center mb-8 lg:mb-12';
-  export let h2Class: string =
-    'mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white';
+  export let h2Class: string = 'mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white';
   export let pClass: string = 'mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400';
 </script>
 
@@ -21,10 +20,9 @@
 
 <!--
 @component
-[Go to Popover](https://flowbite-svelte-blocks.vercel.app/)
+[Go to Popover](https://flowbite-svelte.com/)
 ## Props
 @prop export let divClass: string = 'mx-auto max-w-screen-md text-center mb-8 lg:mb-12';
-@prop export let h2Class: string =
-    'mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white';
+@prop export let h2Class: string = 'mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white';
 @prop export let pClass: string = 'mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400';
 -->

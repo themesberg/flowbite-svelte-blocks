@@ -1,6 +1,6 @@
 <script>
   import { browser } from '$app/environment';
-  import {ButtonGroup, Button, Input} from 'flowbite-svelte';
+  import { ButtonGroup, Button, Input } from 'flowbite-svelte';
   import Mail from '../utils/icons/Mail.svelte';
   import data from './data.json';
 </script>

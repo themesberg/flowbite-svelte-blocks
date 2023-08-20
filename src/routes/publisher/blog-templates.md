@@ -8,9 +8,8 @@ description: Get started with a collection of Tailwind CSS blog templates, theme
 ---
 
 ## Default blog template
-  Use this free blog template to show the content of an article using the Flowbite Typography plugin
-  including the author, post date, and a comments section.
 
+Use this free blog template to show the content of an article using the Flowbite Typography plugin including the author, post date, and a comments section.
 
 ```svelte example hideOutput
 COMING SOON

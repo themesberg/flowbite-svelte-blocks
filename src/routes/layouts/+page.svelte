@@ -24,12 +24,8 @@
 
 <MetaTag {breadcrumb_title} {title} {dir} {description} />
 
-
-<div id="mainContent" class="{divClass}">
+<div id="mainContent" class={divClass}>
   <SectionHeader category={dir} {breadcrumb_title} {title} {description} />
   <slot />
   <Paging />
 </div>
-
-
-

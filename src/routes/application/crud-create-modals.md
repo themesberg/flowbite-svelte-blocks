@@ -7,9 +7,14 @@ dir: application
 description: Get started with a collection of modal components with form input elements to create new data models inside your dashboard based on Tailwind CSS.;
 ---
 
+<script>
+  import { TableProp, TableDefaultRow } from '../utils'
+  import { props as item2} from '../props/Section.json'
+</script>
+
 ## Default modal
-Use this free example to show a modal component with a form inside when creating a new instance of
-a product inside your application.
+
+Use this free example to show a modal component with a form inside when creating a new instance of a product inside your application.
 
 ```svelte example
 <script lang="ts">
@@ -55,26 +60,10 @@ a product inside your application.
         </div>
         <div class="sm:col-span-2">
           <Label for="description" class="mb-2">Description</Label>
-          <Textarea
-            id="description"
-            placeholder="Your description here"
-            rows="4"
-            name="description"
-            required
-          />
+          <Textarea id="description" placeholder="Your description here" rows="4" name="description" required />
         </div>
         <Button type="submit" class="w-52">
-          <svg
-            class="mr-1 -ml-1 w-6 h-6"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-            ><path
-              fill-rule="evenodd"
-              d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
-              clip-rule="evenodd"
-            /></svg
-          >
+          <svg class="mr-1 -ml-1 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd" /></svg>
           Add new product
         </Button>
       </div>
@@ -83,3 +72,8 @@ a product inside your application.
 </Section>
 ```
 
+## Props
+
+<TableProp>
+<TableDefaultRow items={item2} rowState='hover' />
+</TableProp>

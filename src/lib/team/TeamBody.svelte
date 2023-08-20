@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { twMerge } from "tailwind-merge";
+  import { twMerge } from 'tailwind-merge';
   export let divClass: string = 'grid gap-8 mb-6 lg:mb-16 md:grid-cols-2';
 </script>
 
@@ -9,7 +9,7 @@
 
 <!--
 @component
-[Go to Popover](https://flowbite-svelte-blocks.vercel.app/)
+[Go to Popover](https://flowbite-svelte.com/)
 ## Props
 @prop export let divClass: string = 'grid gap-8 mb-6 lg:mb-16 md:grid-cols-2';
 -->

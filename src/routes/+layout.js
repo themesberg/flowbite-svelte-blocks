@@ -65,7 +65,5 @@ export const load = async ({ fetch }) => {
 //     name: ''
 //     section: 'AdvancedTable'
 //   },
-  
 
 // ]
-

@@ -8,9 +8,8 @@ description: Use these components to show a list of related and recommended blog
 ---
 
 ## Default related articles
-  Use this example to show a list of related articles after the main content of a blog post to
-  engage users and decrease the bounce rate.
 
+Use this example to show a list of related articles after the main content of a blog post to engage users and decrease the bounce rate.
 
 ```svelte example hideOutput
 COMING SOON

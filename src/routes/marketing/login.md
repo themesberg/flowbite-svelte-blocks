@@ -7,9 +7,15 @@ dir: marketing
 description: The login page can be used to allow users to authenticate inside your application based on a collection of templates from Flowbite and coded with Tailwind CSS.
 ---
 
-## Default login page
-This example includes a form with an email and password input accompanied by the logo and other helper texts and links to other authentication pages.
+<script>
+  import { TableProp, TableDefaultRow } from '../utils'
+  import { props as item1} from '../props/Register.json'
+  import { props as item2} from '../props/Section.json'
+</script>
 
+## Default login page
+
+This example includes a form with an email and password input accompanied by the logo and other helper texts and links to other authentication pages.
 
 ```svelte example
 <script lang="ts">
@@ -36,19 +42,28 @@ This example includes a form with an email and password input accompanied by the
         </Label>
         <div class="flex items-start">
           <Checkbox>Remember me</Checkbox>
-          <a href="/" class="ml-auto text-sm text-blue-700 hover:underline dark:text-blue-500"
-            >Forgot password?</a
-          >
+          <a href="/" class="ml-auto text-sm text-blue-700 hover:underline dark:text-blue-500">Forgot password?</a>
         </div>
         <Button type="submit" class="w-full1">Sign in</Button>
         <p class="text-sm font-light text-gray-500 dark:text-gray-400">
-          Don’t have an account yet? <a
-            href="/"
-            class="font-medium text-primary-600 hover:underline dark:text-primary-500">Sign up</a
-          >
+          Don’t have an account yet? <a href="/" class="font-medium text-primary-600 hover:underline dark:text-primary-500">Sign up</a>
         </p>
       </form>
     </div>
   </Register>
 </Section>
 ```
+
+## Props
+
+### Register
+
+<TableProp>
+<TableDefaultRow items={item1} rowState='hover' />
+</TableProp>
+
+### Section
+
+<TableProp>
+<TableDefaultRow items={item2} rowState='hover' />
+</TableProp>

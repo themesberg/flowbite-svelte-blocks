@@ -1,7 +1,6 @@
 <script lang="ts">
-  import { twMerge } from "tailwind-merge";
-  export let divClass: string =
-    'w-full p-6 bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md dark:bg-gray-800 dark:border-gray-700 sm:p-8';
+  import { twMerge } from 'tailwind-merge';
+  export let divClass: string = 'w-full p-6 bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md dark:bg-gray-800 dark:border-gray-700 sm:p-8';
 </script>
 
 <div class={twMerge(divClass, $$props.class)}>
@@ -10,8 +9,7 @@
 
 <!--
 @component
-[Go to Popover](https://flowbite-svelte-blocks.vercel.app/)
+[Go to Popover](https://flowbite-svelte.com/)
 ## Props
-@prop export let divClass: string =
-    'w-full p-6 bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md dark:bg-gray-800 dark:border-gray-700 sm:p-8';
+@prop export let divClass: string = 'w-full p-6 bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md dark:bg-gray-800 dark:border-gray-700 sm:p-8';
 -->

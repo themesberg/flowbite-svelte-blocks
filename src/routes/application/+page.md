@@ -7,6 +7,7 @@ dir: application
 description: Get started with a collection of free and premium Tailwind CSS UI components for admin dashboard layouts, sidebars, charts, widgets, kanban boards, and more.
 category: true
 ---
+
 <script lang="ts">
   import type { PageData } from './$types';
   import SectionCompo from '../utils/Sectioncompo.svelte';

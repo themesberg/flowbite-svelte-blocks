@@ -7,10 +7,15 @@ dir: marketing
 description: The contact section is an important part of your website where the user can reach out to your team by interacting with the form elements and submitting the data.
 ---
 
-## Default contact form
-  Use this example of a contact form coded with Tailwind CSS including the email, subject, and
-  message that can be delivered by clicking on the form submission button.
+<script>
+  import { TableProp, TableDefaultRow } from '../utils'
+  import { props as item1} from '../props/Contact.json'
+  import { props as item2} from '../props/Section.json'
+</script>
 
+## Default contact form
+
+Use this example of a contact form coded with Tailwind CSS including the email, subject, and message that can be delivered by clicking on the form submission button.
 
 ```svelte example
 <script lang="ts">
@@ -21,10 +26,7 @@ description: The contact section is an important part of your website where the 
 <Section name="contact">
   <Contact>
     <svelte:fragment slot="h2">Contact Us</svelte:fragment>
-    <svelte:fragment slot="paragraph">
-      Got a technical issue? Want to send feedback about a beta feature? Need details about our
-      Business plan? Let us know.
-    </svelte:fragment>
+    <svelte:fragment slot="paragraph">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</svelte:fragment>
     <form class="space-y-8">
       <div>
         <Label for="email" class="block mb-2">Your email</Label>
@@ -32,23 +34,28 @@ description: The contact section is an important part of your website where the 
       </div>
       <div>
         <Label for="subject" class="block mb-2">Subject</Label>
-        <Input
-          id="subject"
-          name="subject"
-          placeholder="Let us know how we can help you"
-          required
-        />
+        <Input id="subject" name="subject" placeholder="Let us know how we can help you" required />
       </div>
       <div>
-        <Textarea
-          id="subject"
-          name="subject"
-          placeholder="Leave a comment..."
-          label="Your message"
-        />
+        <Textarea id="subject" name="subject" placeholder="Leave a comment..." label="Your message" />
       </div>
       <Button>Send message</Button>
     </form>
   </Contact>
 </Section>
 ```
+
+
+## Props
+
+### Contact
+
+<TableProp>
+<TableDefaultRow items={item1} rowState='hover' />
+</TableProp>
+
+### Section
+
+<TableProp>
+<TableDefaultRow items={item2} rowState='hover' />
+</TableProp>

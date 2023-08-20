@@ -8,9 +8,8 @@ description: Use a collection of user onboarding pages to increase the chances o
 ---
 
 ## Choose account type
-  Use this example as the first step of the user onboarding process to ask what type of account
-  would your user like to create (ie. business or individual).
 
+Use this example as the first step of the user onboarding process to ask what type of account would your user like to create (ie. business or individual).
 
 ```svelte example hideOutput
 COMING SOON

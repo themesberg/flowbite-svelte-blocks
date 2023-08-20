@@ -8,9 +8,9 @@ description: Get started with a collection of advanced table components based on
 ---
 
 ## Default table
+
 Use this free example of a table component with a search bar, filter dropdown, and a dataset of rows and columns to show complex data in your application.
 
-
 ```svelte example hideOutput
- COMING SOON
+COMING SOON
 ```

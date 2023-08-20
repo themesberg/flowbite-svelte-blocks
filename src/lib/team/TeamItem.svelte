@@ -1,7 +1,6 @@
 <script lang="ts">
-  import { twMerge } from "tailwind-merge";
-  export let divClass: string =
-    'items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700';
+  import { twMerge } from 'tailwind-merge';
+  export let divClass: string = 'items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700';
   export let imgClass: string = 'w-full rounded-lg sm:rounded-none sm:rounded-l-lg';
   export let h3Class: string = 'text-xl font-bold tracking-tight text-gray-900 dark:text-white';
   export let spanClass: string = 'text-gray-500 dark:text-gray-400';
@@ -31,10 +30,9 @@
 
 <!--
 @component
-[Go to Popover](https://flowbite-svelte-blocks.vercel.app/)
+[Go to Popover](https://flowbite-svelte.com/)
 ## Props
-@prop export let divClass: string =
-    'items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700';
+@prop export let divClass: string = 'items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700';
 @prop export let imgClass: string = 'w-full rounded-lg sm:rounded-none sm:rounded-l-lg';
 @prop export let h3Class: string = 'text-xl font-bold tracking-tight text-gray-900 dark:text-white';
 @prop export let spanClass: string = 'text-gray-500 dark:text-gray-400';
