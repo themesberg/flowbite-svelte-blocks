@@ -10,3 +10,11 @@
 {#if $$slots.paragraph}
   <slot name="paragraph" />
 {/if}
+
+<!--
+@component
+[Go to Popover](https://flowbite-svelte.com/)
+## Props
+@prop export let h2Class: string =
+    'mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white';
+-->

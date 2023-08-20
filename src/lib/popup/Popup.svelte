@@ -13,3 +13,13 @@
     </div>
   </div>
 </div>
+
+<!--
+@component
+[Go to Popover](https://flowbite-svelte.com/)
+## Props
+@prop export let outerDivClass: string = 'overflow-y-auto overflow-x-hidden z-50 md:inset-0 md:h-full';
+@prop export let innerDivClass: string = 'relative p-4 w-full max-w-lg h-full md:h-auto';
+@prop export let contentDivClass: string =
+    'relative p-4 bg-white rounded-lg shadow dark:bg-gray-800 md:p-8';
+-->

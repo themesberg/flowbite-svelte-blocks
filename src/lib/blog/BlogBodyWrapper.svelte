@@ -6,3 +6,10 @@
 <div class={twMerge(divClass, $$props.class)}>
   <slot />
 </div>
+
+<!--
+@component
+[Go to Popover](https://flowbite-svelte.com/)
+## Props
+@prop export let divClass: string = 'grid gap-8 lg:grid-cols-2';
+-->

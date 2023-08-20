@@ -14,3 +14,10 @@
     <slot />
   </div>
 </div>
+
+<!--
+@component
+[Go to Popover](https://flowbite-svelte.com/)
+## Props
+@prop export let scheduleName: string = '';
+-->

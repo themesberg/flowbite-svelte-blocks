@@ -6,3 +6,10 @@
 <div class={twMerge(divClass, $$props.class)}>
   <slot />
 </div>
+
+<!--
+@component
+[Go to Popover](https://flowbite-svelte.com/)
+## Props
+@prop export let divClass: string = 'py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6';
+-->

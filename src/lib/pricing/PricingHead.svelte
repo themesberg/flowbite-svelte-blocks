@@ -18,3 +18,13 @@
     </p>
   {/if}
 </div>
+
+<!--
+@component
+[Go to Popover](https://flowbite-svelte.com/)
+## Props
+@prop export let divClass: string = 'mx-auto max-w-screen-md text-center mb-8 lg:mb-12';
+@prop export let h2Class: string =
+    'mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white';
+@prop export let pClass: string = 'mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400';
+-->

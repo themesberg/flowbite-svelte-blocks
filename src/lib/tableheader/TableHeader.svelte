@@ -26,3 +26,13 @@
     </div>
   {/if}
 </div>
+
+<!--
+@component
+[Go to Popover](https://flowbite-svelte.com/)
+## Props
+@prop export let divOuterClass: string = 'relative bg-white shadow-md dark:bg-gray-800 sm:rounded-lg';
+@prop export let headerType: 'search' | 'textbtn' | 'custom' = 'search';
+@prop export let divSlotClass: string =
+    'flex flex-col items-stretch justify-end flex-shrink-0 w-full space-y-2 md:w-auto md:flex-row md:space-y-0 md:items-center md:space-x-3';
+-->

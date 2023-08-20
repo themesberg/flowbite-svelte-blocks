@@ -31,3 +31,10 @@
   {/if}
   <slot />
 </div>
+
+<!--
+@component
+[Go to Popover](https://flowbite-svelte.com/)
+## Props
+@prop export let ctatype: 'default' | 'image' | 'heading' | 'none' = 'default';
+-->

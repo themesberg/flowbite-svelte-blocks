@@ -9,3 +9,10 @@
 {#if $$slots.btn}
   <slot name="btn" />
 {/if}
+
+<!--
+@component
+[Go to Popover](https://flowbite-svelte.com/)
+## Props
+@prop export let ulClass: string = 'mb-8 space-y-4 text-left';
+-->
