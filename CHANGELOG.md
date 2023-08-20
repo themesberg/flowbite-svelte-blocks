@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.8](https://github.com/themesberg/flowbite-svelte-blocks/compare/v0.3.9...v0.4.8) (2023-08-20)
+
+
+### Features
+
+* add categories to top nav ([#34](https://github.com/themesberg/flowbite-svelte-blocks/issues/34)) ([1d43d24](https://github.com/themesberg/flowbite-svelte-blocks/commit/1d43d249ffb57d5aa1ff4ceb3ba013e6df5e89ff))
+* add new pages ([#33](https://github.com/themesberg/flowbite-svelte-blocks/issues/33)) ([9882b6b](https://github.com/themesberg/flowbite-svelte-blocks/commit/9882b6bf80aedfe62d766a44fbc7d865ba295c52))
+* update package dependencies ([d8e6202](https://github.com/themesberg/flowbite-svelte-blocks/commit/d8e62021d56fee891e473ccc9454dce4cc8de916))
+
+
+### Bug Fixes
+
+* newsletter action url ([317d17e](https://github.com/themesberg/flowbite-svelte-blocks/commit/317d17e4ab44abfc5d644faa9771e8910833dab2))
+* remove footer from example page ([045dd69](https://github.com/themesberg/flowbite-svelte-blocks/commit/045dd69355daa88a90fd07043f09b77b6288c991))
+* scrolling problem and typo ([#29](https://github.com/themesberg/flowbite-svelte-blocks/issues/29)) ([5227f4b](https://github.com/themesberg/flowbite-svelte-blocks/commit/5227f4b331ee9dcbf4a7f5744c6754edeaef2c39))
+* top nav active ([#36](https://github.com/themesberg/flowbite-svelte-blocks/issues/36)) ([5cf7b72](https://github.com/themesberg/flowbite-svelte-blocks/commit/5cf7b72aa1bac71fc7cca5ed33273437cdc3c07c))
+
 ### [0.4.7](https://github.com/themesberg/flowbite-svelte-blocks/compare/v0.3.6...v0.4.7) (2023-08-14)
 
 

@@ -44,7 +44,7 @@ pnpm run dev
 Install flowbite flowbite-svelte classnames @popperjs/core, svelte-heros, and flowbite-svelte-blocks:
 
 ```sh
-pnpm i flowbite flowbite-svelte tailwind-merge @floating-ui/dom flowbite-svelte-icons
+pnpm i flowbite-svelte-blocks
 ```
 
 Update tailwind.config.cjs:
