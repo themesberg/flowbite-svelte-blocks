@@ -282,3 +282,10 @@ test('Related Articles has expected h1', async ({ page }) => {
   await page.goto('/publisher/related-articles');
   expect(await page.textContent('h1')).toBe('Svelte Related Articles - Flowbite Svelte Blocks');
 });
+
+// Pages
+test('Quickstart has expected h1', async ({ page }) => {
+  await page.goto('/pages/quickstart');
+  expect(await page.textContent('h1')).toBe('Quickstart - Flowbite Svelte Blocks');
+});
+

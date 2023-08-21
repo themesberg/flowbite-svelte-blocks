@@ -46,7 +46,7 @@
         </NavLi>
         <NavLi href="/pages/quickstart">Quickstart</NavLi>
         <NavLi href="https://flowbite-svelte.com">Flowbite-Svelte</NavLi>
-        <NavLi href="https://flowbite-svelte-icons.vercel.app">Flowbite-Svelte-Icons</NavLi>
+        <NavLi href="https://flowbite-svelte-icons.vercel.app">Icons</NavLi>
         <Dropdown triggeredBy="#nav-menu1" placement="bottom-start" class="w-44 z-20">
           <DropdownItem href="/application">Application</DropdownItem>
           <DropdownItem href="/marketing">Marketing</DropdownItem>
