@@ -13,7 +13,7 @@
 
 <!--
 @component
-[Go to Popover](https://flowbite-svelte.com/)
+[Go to docs](https://flowbite-svelte-blocks.vercel.app/)
 ## Props
 @prop export let authorDiv: string = 'flex justify-between items-center';
 @prop export let authorImgDiv: string = 'flex items-center space-x-4';

@@ -27,7 +27,7 @@
 
 <!--
 @component
-[Go to Popover](https://flowbite-svelte.com/)
+[Go to docs](https://flowbite-svelte-blocks.vercel.app/)
 ## Props
 @prop export let divClass: string = 'flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center';
 @prop export let pClass: string = 'w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0';

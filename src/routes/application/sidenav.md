@@ -15,7 +15,6 @@ description: Get started with the side nav component to show a list of menu item
   import { props as item3} from '../props/Section.json'
 </script>
 
-
 ## Default side navigation
 
 Use the default sidebar navigation to show a list of menu items with dropdown items and a list of options links at the bottom of the component.

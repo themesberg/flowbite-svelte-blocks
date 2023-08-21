@@ -15,7 +15,7 @@
 
 <!--
 @component
-[Go to Popover](https://flowbite-svelte.com/)
+[Go to docs](https://flowbite-svelte-blocks.vercel.app/)
 ## Props
 @prop export let divClass: string = 'mx-auto max-w-screen-md sm:text-center';
 @prop export let h2Class: string = 'mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl dark:text-white';

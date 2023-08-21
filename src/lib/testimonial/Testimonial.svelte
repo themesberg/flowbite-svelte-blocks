@@ -21,7 +21,7 @@
 
 <!--
 @component
-[Go to Popover](https://flowbite-svelte.com/)
+[Go to docs](https://flowbite-svelte-blocks.vercel.app/)
 ## Props
 @prop export let icon: typeof SvelteComponent | null = null;
 @prop export let figureClass: string = 'max-w-screen-md mx-auto';

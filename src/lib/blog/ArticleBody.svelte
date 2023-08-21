@@ -12,7 +12,7 @@
 
 <!--
 @component
-[Go to Popover](https://flowbite-svelte.com/)
+[Go to docs](https://flowbite-svelte-blocks.vercel.app/)
 ## Props
 @prop export let h2Class: string = 'mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white';
 -->

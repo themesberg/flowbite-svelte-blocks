@@ -21,7 +21,7 @@
 
 <!--
 @component
-[Go to Popover](https://flowbite-svelte.com/)
+[Go to docs](https://flowbite-svelte-blocks.vercel.app/)
 ## Props
 @prop export let h3Class: string = 'mb-4 text-2xl font-semibold';
 @prop export let pClass: string = 'font-light text-gray-500 sm:text-lg dark:text-gray-400';

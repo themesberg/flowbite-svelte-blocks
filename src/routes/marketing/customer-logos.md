@@ -50,7 +50,6 @@ Use this example to show a list of logos of the companies that have used your pr
 </Section>
 ```
 
-
 ## Props
 
 ### HeroHeader

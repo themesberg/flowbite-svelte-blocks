@@ -108,7 +108,7 @@
 
 <!--
 @component
-[Go to Popover](https://flowbite-svelte.com/)
+[Go to docs](https://flowbite-svelte-blocks.vercel.app/)
 ## Props
 @prop export let sectionClass: string = 'relative py-6 sm:py-10';
 @prop export let name: 'blog' | 'cta' | 'ctawithimg' | 'contact' | 'content' | 'contentwithimg' | 'crudcreatedrawer' | 'crudcreateform' | 'crudreadsection' | 'default' | 'faq' | 'feature' | 'forgotpassword' | 'headingwithctabutton' | 'heroDefault' | 'heroVisual' | 'login' | 'logos' | 'maintenance' | 'newsletter' | 'none' | 'page500' | 'page404' | 'portfolio' | 'pricing' | 'register' | 'reset' | 'schedule' | 'social' | 'tableheader' | 'team' | 'testimonial' = 'default';

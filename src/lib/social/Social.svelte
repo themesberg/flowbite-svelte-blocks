@@ -12,7 +12,7 @@
 
 <!--
 @component
-[Go to Popover](https://flowbite-svelte.com/)
+[Go to docs](https://flowbite-svelte-blocks.vercel.app/)
 ## Props
 @prop export let divClass: string = 'max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6';
 @prop export let dlClass: string = 'grid max-w-screen-md gap-8 mx-auto text-gray-900 sm:grid-cols-3 dark:text-white';
