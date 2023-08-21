@@ -11,23 +11,13 @@ description: Learn how to get started with the free and open-source Flowbite Sve
 
 Learn how to get started with Flowbite Svelte Blocks by following the quickstart guide and start leveraging the interactive Svelte components coupled with Flowbite and Tailwind CSS.
 
-### Using SvelteKit
+### Install SvelteKit
 
 You can install SvelteKit or Svelte to start your app. For SvelteKit:
 
 ```bash example
 npm create svelte@latest my-app
 cd my-app
-npm install
-```
-
-### Using Svelte
-
-If you want to get started with Svelte:
-
-```bash
-npm create vite@latest myapp -- --template svelte
-cd myapp
 npm install
 ```
 
@@ -48,7 +38,7 @@ npm run dev
 
 ### Install Flowbite Svelte Blocks
 
-Run the following command to install all Flowbite dependencies and libraries:
+Run the following command to install all Flowbite Svelte Blocks dependencies and libraries:
 
 ```sh
 npm i -D flowbite-svelte-blocks
@@ -100,7 +90,7 @@ Now you should be able to work with the Flowbite Svelte Blocks library and impor
 
 <div class="h-8" />
 
-Now you are ready to go! Add the following to `src/routes/+page.svelte` and if you see the following image, then your setting is complete.
+Add the following to `src/routes/+page.svelte` and if you see the following image, then your setting is complete.
 
 ```svelte example
 <script>

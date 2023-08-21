@@ -18,7 +18,7 @@
 
 ## Installation
 
-Use this library on top of [Flowbite-Svelte](https://github.com/themesberg/flowbite-svelte) and [Flowbite-Svelte-Icons](https://flowbite-svelte-icons.vercel.app/). Flowbite-Svelte is an official Flowbite component library for Svelte.
+This library is built on top of [Flowbite-Svelte](https://github.com/themesberg/flowbite-svelte) and [Flowbite-Svelte-Icons](https://flowbite-svelte-icons.vercel.app/). Flowbite-Svelte is an official Flowbite component library for Svelte.
 
 Install SvelteKit:
 
@@ -41,7 +41,7 @@ Start a server:
 pnpm run dev
 ```
 
-Install flowbite flowbite-svelte classnames @popperjs/core, svelte-heros, and flowbite-svelte-blocks:
+Install flowbite-svelte-blocks:
 
 ```sh
 pnpm i flowbite-svelte-blocks
@@ -51,7 +51,11 @@ Update tailwind.config.cjs:
 
 ```js
 const config = {
-  content: ['./src/**/*.{html,js,svelte,ts}', './node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}', './node_modules/flowbite-svelte-blocks/**/*.{html,js,svelte,ts}'],
+  content: [
+    './src/**/*.{html,js,svelte,ts}', 
+    './node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}', 
+    './node_modules/flowbite-svelte-blocks/**/*.{html,js,svelte,ts}'
+  ],
 
   theme: {
     extend: {}
