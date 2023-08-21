@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.12](https://github.com/themesberg/flowbite-svelte-blocks/compare/v0.4.11...v0.4.12) (2023-08-21)
+
+
+### Features
+
+* add props section ([#39](https://github.com/themesberg/flowbite-svelte-blocks/issues/39)) ([fa8425e](https://github.com/themesberg/flowbite-svelte-blocks/commit/fa8425e070febccc27dbf80752081c147a70ca03))
+* update svelte-lib-helpers ([#40](https://github.com/themesberg/flowbite-svelte-blocks/issues/40)) ([05a7f81](https://github.com/themesberg/flowbite-svelte-blocks/commit/05a7f81c680e1fbd6a2805baa462b46fa461d694))
+
 ### [0.4.11](https://github.com/themesberg/flowbite-svelte-blocks/compare/v0.4.7...v0.4.11) (2023-08-20)
 
 ### Features
