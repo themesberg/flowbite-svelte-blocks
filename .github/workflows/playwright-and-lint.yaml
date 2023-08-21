@@ -31,6 +31,10 @@ jobs:
             ${{ runner.os }}-pnpm-store-
           options: |
             --no-restore
+      - name: Update Lockfile
+        run: pnpm install --no-frozen-lockfile
+      - name: Clear Cache
+        run: pnpm store prune
       - name: Install dependencies
         run: pnpm i
       - name: Run playwright tests
