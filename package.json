@@ -65,7 +65,8 @@
     "vitest": "^0.34.2"
   },
   "dependencies": {
-    "flowbite-svelte": "^0.44.2"
+    "flowbite-svelte": "^0.44.2",
+    "flowbite-svelte-icons": "^0.3.6"
   },
   "type": "module",
   "keywords": [
