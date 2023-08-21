@@ -60,7 +60,6 @@ Use this example to show a couple of images next to a heading and paragraph to p
 </Section>
 ```
 
-
 ## Props
 
 ### Content

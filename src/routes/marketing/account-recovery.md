@@ -45,7 +45,6 @@ Use this example for users who forgot their password and send a recovery email t
 </Section>
 ```
 
-
 ## Props
 
 ### ForgotPassword
@@ -65,4 +64,3 @@ Use this example for users who forgot their password and send a recovery email t
 <TableProp>
 <TableDefaultRow items={item3} rowState='hover' />
 </TableProp>
-

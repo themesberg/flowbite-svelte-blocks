@@ -45,7 +45,6 @@ Use this example of a contact form coded with Tailwind CSS including the email, 
 </Section>
 ```
 
-
 ## Props
 
 ### Contact

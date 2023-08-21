@@ -9,7 +9,7 @@
 
 <!--
 @component
-[Go to Popover](https://flowbite-svelte.com/)
+[Go to docs](https://flowbite-svelte-blocks.vercel.app/)
 ## Props
 @prop export let divClass: string = 'flex justify-between items-center mb-5 text-gray-500';
 -->

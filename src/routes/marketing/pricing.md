@@ -132,7 +132,6 @@ Use this example of three pricing cards showcasing the pricing plan title, descr
 </Section>
 ```
 
-
 ## Props
 
 ### PricingBodyHead
@@ -170,4 +169,3 @@ Use this example of three pricing cards showcasing the pricing plan title, descr
 <TableProp>
 <TableDefaultRow items={item6} rowState='hover' />
 </TableProp>
-
