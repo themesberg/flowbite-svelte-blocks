@@ -41,7 +41,7 @@ npm run dev
 Run the following command to install all Flowbite Svelte Blocks dependencies and libraries:
 
 ```sh
-npm i -D flowbite-svelte-blocks
+npm i -D flowbite-svelte flowbite-svelte-blocks flowbite-svelte-icons
 ```
 
 ### Configuration
