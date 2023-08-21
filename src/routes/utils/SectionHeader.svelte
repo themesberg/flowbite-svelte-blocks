@@ -9,13 +9,16 @@
   export let headerClass = breadcrumb_title ? '' : 'mx-auto max-w-8xl pt-8 px-4 lg:px-20 mx-auto max-w-8xl col-span-2 mb-2 lg:mb-0';
   const [first, ...rest] = category;
   const capitalized = `${first.toUpperCase()}${rest.join('')}`;
+  const allowedDirs = ['application', 'marketing', 'publisher'];
 </script>
 
 <section>
   <div class={headerClass}>
     <Breadcrumb navClass="flex mb-3">
       <BreadcrumbItem href="/" home>{home}</BreadcrumbItem>
+      {#if allowedDirs.includes(category)}
       <BreadcrumbItem href="/{category}">{capitalized} UI</BreadcrumbItem>
+      {/if}
       {#if breadcrumb_title}
         <BreadcrumbItem>{breadcrumb_title}</BreadcrumbItem>
       {/if}

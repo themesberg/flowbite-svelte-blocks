@@ -44,8 +44,9 @@
         <NavLi id="nav-menu1" active={activeCategory} class="cursor-pointer">
           Categories<Icon name="chevron-down-outline" class="w-3 h-3 ml-2 text-gray-500 dark:text-white inline" />
         </NavLi>
-        <NavLi href="https://github.com/themesberg/flowbite-svelte-blocks">GitHub</NavLi>
+        <NavLi href="/pages/quickstart">Quickstart</NavLi>
         <NavLi href="https://flowbite-svelte.com">Flowbite-Svelte</NavLi>
+        <NavLi href="https://flowbite-svelte-icons.vercel.app">Icons</NavLi>
         <Dropdown triggeredBy="#nav-menu1" placement="bottom-start" class="w-44 z-20">
           <DropdownItem href="/application">Application</DropdownItem>
           <DropdownItem href="/marketing">Marketing</DropdownItem>
