@@ -44,7 +44,7 @@ pnpm run dev
 Install flowbite-svelte-blocks:
 
 ```sh
-pnpm i flowbite-svelte-blocks
+pnpm i flowbite-svelte flowbite-svelte-blocks flowbite-svelte-icons
 ```
 
 Update tailwind.config.cjs:
