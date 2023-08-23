@@ -10,6 +10,6 @@
 <!--
 @component
 [Go to docs](https://flowbite-svelte-blocks.vercel.app/)
-## Props
+## Component data
 @prop export let divClass: string = 'flex justify-between items-center mb-5 text-gray-500';
 -->

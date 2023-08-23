@@ -8,11 +8,11 @@ description: Get started with a collection of responsive website sections built 
 ---
 
 <script>
-  import { TableProp, TableDefaultRow } from '../utils'
-  import { props as item1} from '../props/HeroHeader.json'
-  import { props as item2} from '../props/FeatureDefault.json'
-  import { props as item3} from '../props/FeatureItem.json'
-  import { props as item4} from '../props/Section.json'
+  import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
+  import componentData1 from '../component-data/HeroHeader.json'
+  import componentData2 from '../component-data/FeatureDefault.json'
+  import componentData3 from '../component-data/FeatureItem.json'
+  import componentData4 from '../component-data/Section.json'
 </script>
 
 ## Default feature list
@@ -65,28 +65,20 @@ Get started with this default example of feature items based on a grid layout wh
 </Section>
 ```
 
-## Props
+## Component data
 
 ### HeroHeader
 
-<TableProp>
-<TableDefaultRow items={item1} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData1}/>
 
 ### FeatureDefault
 
-<TableProp>
-<TableDefaultRow items={item2} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData2}/>
 
 ### FeatureItem
 
-<TableProp>
-<TableDefaultRow items={item3} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData3}/>
 
-### Section
+### Section component
 
-<TableProp>
-<TableDefaultRow items={item4} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData4}/>

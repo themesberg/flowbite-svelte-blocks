@@ -8,8 +8,8 @@ description: Get started with footer sections coded in Tailwind CSS to use at th
 ---
 
 <script>
-  import { TableProp, TableDefaultRow } from '../utils'
-  import { props as item1} from '../props/Section.json'
+  import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
+  import componentData1 from '../component-data/Section.json'
 </script>
 
 ## Default footer section
@@ -100,8 +100,6 @@ Use this footer section to show the logo of your brand, the sitemap, social medi
 </Footer>
 ```
 
-## Props
+## Component data
 
-<TableProp>
-<TableDefaultRow items={item1} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData1}/>

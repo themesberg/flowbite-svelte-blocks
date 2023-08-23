@@ -42,7 +42,7 @@
 <!--
 @component
 [Go to docs](https://flowbite-svelte-blocks.vercel.app/)
-## Props
+## Component data
 @prop export let divClass: string = 'space-y-4';
 @prop export let customerClass: string = 'bg-gray-100 text-gray-900 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300';
 @prop export let titleClass: string = 'text-2xl font-bold leading-tight text-gray-900 dark:text-white';

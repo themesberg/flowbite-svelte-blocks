@@ -8,10 +8,10 @@ description: Get started with account recovery (aka. forgot password) pages to a
 ---
 
 <script>
-  import { TableProp, TableDefaultRow } from '../utils'
-  import { props as item1} from '../props/ForgotPassword.json'
-  import { props as item2} from '../props/ForgotPasswordHeader.json'
-  import { props as item3} from '../props/Section.json'
+  import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
+  import componentData1 from '../component-data/ForgotPassword.json'
+  import componentData2 from '../component-data/ForgotPasswordHeader.json'
+  import componentData3 from '../component-data/Section.json'
 </script>
 
 ## Default forgot password page
@@ -45,22 +45,16 @@ Use this example for users who forgot their password and send a recovery email t
 </Section>
 ```
 
-## Props
+## Component data
 
 ### ForgotPassword
 
-<TableProp>
-<TableDefaultRow items={item1} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData1}/>
 
-### ForgotPasswordHeader
+### ForgotPasswordHeader component
 
-<TableProp>
-<TableDefaultRow items={item2} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData1}/>
 
-### Section
+### Section component
 
-<TableProp>
-<TableDefaultRow items={item3} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData2}/>

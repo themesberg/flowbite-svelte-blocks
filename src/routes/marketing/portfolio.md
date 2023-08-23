@@ -8,10 +8,10 @@ description: Get started with the project portfolio UI components coded with Tai
 ---
 
 <script>
-  import { TableProp, TableDefaultRow } from '../utils'
-  import { props as item1} from '../props/Portfolio.json'
-  import { props as item2} from '../props/PortfolioItem.json'
-  import { props as item3} from '../props/Section.json'
+  import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
+  import componentData1 from '../component-data/Portfolio.json'
+  import componentData2 from '../component-data/PortfolioItem.json'
+  import componentData3 from '../component-data/Section.json'
 </script>
 
 ## Default event schedule
@@ -56,22 +56,16 @@ Use this example to show a list of company clients and case study previews insid
 </Section>
 ```
 
-## Props
+## Component data
 
 ### Portfolio
 
-<TableProp>
-<TableDefaultRow items={item1} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData1}/>
 
 ### PortfolioItem
 
-<TableProp>
-<TableDefaultRow items={item2} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData2}/>
 
-### Section
+### Section component
 
-<TableProp>
-<TableDefaultRow items={item3} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData3}/>

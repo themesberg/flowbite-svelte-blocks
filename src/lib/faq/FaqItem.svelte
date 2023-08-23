@@ -16,7 +16,7 @@
 <!--
 @component
 [Go to docs](https://flowbite-svelte-blocks.vercel.app/)
-## Props
+## Component data
 @prop export let divClass: string = 'mb-10';
 @prop export let h3Class: string = 'flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white';
 -->

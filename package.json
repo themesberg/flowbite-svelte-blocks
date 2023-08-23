@@ -23,11 +23,11 @@
     "format": "prettier --plugin-search-dir . --write .",
     "test:integration": "playwright test",
     "test:unit": "vitest",
-    "add-exports": "svelte-lib-helpers exports",
-    "add-docs": "svelte-lib-helpers docs https://flowbite-svelte-blocks.vercel.app/",
-    "gen-props": "svelte-lib-helpers props",
-    "copy-package": "svelte-lib-helpers package",
-    "lib-helpers": "npm run add-docs && npm run gen-props && npm run package && npm run add-exports && npm run copy-package",
+    "gen:exports": "svelte-lib-helpers exports",
+    "gen:docs": "svelte-lib-helpers docs",
+    "gen:compo-data": "svelte-lib-helpers compo-data",
+    "copy:package": "svelte-lib-helpers package",
+    "lib-helpers": "npm run gen:docs && npm run gen:compo-data && npm run build && npm run gen:exports && npm run copy:package",
     "package:publish": "npm run lib-helpers && npm run format && standard-version && git push --follow-tags origin main && npm publish"
   },
   "devDependencies": {
@@ -42,9 +42,6 @@
     "eslint": "^8.47.0",
     "eslint-config-prettier": "^8.10.0",
     "eslint-plugin-svelte": "^2.32.4",
-    "flowbite": "^1.8.1",
-    "flowbite-svelte": "^0.44.4",
-    "flowbite-svelte-icons": "^0.3.6",
     "mdsvex": "^0.11.0",
     "mdsvexamples": "^0.4.1",
     "postcss": "^8.4.28",
@@ -54,10 +51,9 @@
     "publint": "^0.2.1",
     "svelte": "^4.2.0",
     "svelte-check": "^3.5.0",
-    "svelte-lib-helpers": "^0.2.8",
+    "svelte-lib-helpers": "^0.3.4",
     "svelte-meta-tags": "^2.8.0",
     "svelte-preprocess": "^5.0.4",
-    "tailwind-merge": "^1.14.0",
     "tailwindcss": "^3.3.3",
     "tslib": "^2.6.2",
     "typescript": "^5.1.6",
@@ -68,7 +64,10 @@
     "svelte": "^4.0.0"
   },
   "dependencies": {
-    "flowbite-svelte-icons": "^0.3.6"
+    "flowbite": "^1.8.1",
+    "flowbite-svelte": "^0.44.4",
+    "flowbite-svelte-icons": "^0.3.6",
+    "tailwind-merge": "^1.14.0"
   },
   "type": "module",
   "keywords": [

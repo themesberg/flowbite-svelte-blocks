@@ -8,13 +8,13 @@ description: Get started with a collection of responsive pricing sections to sho
 ---
 
 <script>
-  import { TableProp, TableDefaultRow } from '../utils'
-  import { props as item1} from '../props/PricingBodyHead.json'
-  import { props as item2} from '../props/PricingCard.json'
-  import { props as item3} from '../props/PricingItemWrapper.json'
-  import { props as item4} from '../props/PricingHead.json'
-  import { props as item5} from '../props/PricingItem.json'
-  import { props as item6} from '../props/Section.json'
+  import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
+  import componentData1 from '../component-data/PricingBodyHead.json'
+  import componentData2 from '../component-data/PricingCard.json'
+  import componentData3 from '../component-data/PricingItemWrapper.json'
+  import componentData4 from '../component-data/PricingHead.json'
+  import componentData5 from '../component-data/PricingItem.json'
+  import componentData6 from '../component-data/Section.json'
 </script>
 
 ## Default pricing table
@@ -132,40 +132,28 @@ Use this example of three pricing cards showcasing the pricing plan title, descr
 </Section>
 ```
 
-## Props
+## Component data
 
 ### PricingBodyHead
 
-<TableProp>
-<TableDefaultRow items={item1} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData1}/>
 
 ### PricingCard
 
-<TableProp>
-<TableDefaultRow items={item2} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData2}/>
 
 ### PricingItemWrapper
 
-<TableProp>
-<TableDefaultRow items={item3} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData3}/>
 
 ### PricingHead
 
-<TableProp>
-<TableDefaultRow items={item4} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData4}/>
 
 ### PricingItem
 
-<TableProp>
-<TableDefaultRow items={item5} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData5}/>
 
-### Section
+### Section component
 
-<TableProp>
-<TableDefaultRow items={item6} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData6}/>

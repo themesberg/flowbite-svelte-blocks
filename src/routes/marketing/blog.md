@@ -8,14 +8,14 @@ description: Get started with a collection of website sections related to the bl
 ---
 
 <script>
-  import { TableProp, TableDefaultRow } from '../utils'
-  import { props as item1} from '../props/ArticleAuthor.json'
-  import { props as item2} from '../props/ArticleBody.json'
-  import { props as item3} from '../props/ArticleHead.json'
-  import { props as item4} from '../props/ArticleWrapper.json'
-  import { props as item5} from '../props/BlogHead.json'
-  import { props as item6} from '../props/BlogBodyWrapper.json'
-  import { props as item7} from '../props/Section.json'
+  import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
+  import componentData1 from '../component-data/ArticleAuthor.json'
+  import componentData2 from '../component-data/ArticleBody.json'
+  import componentData3 from '../component-data/ArticleHead.json'
+  import componentData4 from '../component-data/ArticleWrapper.json'
+  import componentData5 from '../component-data/BlogHead.json'
+  import componentData6 from '../component-data/BlogBodyWrapper.json'
+  import componentData7 from '../component-data/Section.json'
 </script>
 
 ## Default blog card
@@ -92,46 +92,32 @@ Use this example to show a preview of a blog post including the title, descripti
 </Section>
 ```
 
-## Props
+## Component data
 
 ### ArticleAuthor
 
-<TableProp>
-<TableDefaultRow items={item1} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData1}/>
 
 ### ArticleBody
 
-<TableProp>
-<TableDefaultRow items={item2} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData2}/>
 
 ### ArticleHead
 
-<TableProp>
-<TableDefaultRow items={item3} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData3}/>
 
 ### ArticleWrapper
 
-<TableProp>
-<TableDefaultRow items={item4} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData4}/>
 
 ### BlogHead
 
-<TableProp>
-<TableDefaultRow items={item5} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData5}/>
 
 ### BlogBodyWrapper
 
-<TableProp>
-<TableDefaultRow items={item6} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData6}/>
 
-### Section
+### Section component
 
-<TableProp>
-<TableDefaultRow items={item7} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData7}/>

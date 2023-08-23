@@ -16,7 +16,7 @@
 <!--
 @component
 [Go to docs](https://flowbite-svelte-blocks.vercel.app/)
-## Props
+## Component data
 @prop export let divClass: string = 'mx-auto max-w-screen-sm text-center lg:mb-16 mb-8';
 @prop export let h2Class: string = 'mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white';
 -->

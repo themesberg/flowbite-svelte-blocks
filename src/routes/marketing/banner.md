@@ -8,8 +8,8 @@ description: The banner component can be used to show extra information or enabl
 ---
 
 <script>
-  import { TableProp, TableDefaultRow } from '../utils'
-  import { props as item1} from '../props/Banner.json'
+  import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
+  import componentData1 from '../component-data/Banner.json'
 </script>
 
 ## Default banner
@@ -34,8 +34,6 @@ Use this example of a dismissable banner component to show extra information rel
 {/if}
 ```
 
-## Props
+## Component data
 
-<TableProp>
-<TableDefaultRow items={item1} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData1}/>

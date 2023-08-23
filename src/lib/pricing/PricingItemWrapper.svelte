@@ -13,6 +13,6 @@
 <!--
 @component
 [Go to docs](https://flowbite-svelte-blocks.vercel.app/)
-## Props
+## Component data
 @prop export let ulClass: string = 'mb-8 space-y-4 text-left';
 -->
