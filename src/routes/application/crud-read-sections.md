@@ -8,8 +8,8 @@ description: Get started with a collection of responsive website sections to sho
 ---
 
 <script>
-  import { TableProp, TableDefaultRow } from '../utils'
-  import { props as item2} from '../props/Section.json'
+  import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
+  import componentData2 from '../component-data/Section.json'
 </script>
 
 ## Default read section
@@ -52,8 +52,6 @@ Use this free example of a "read" CRUD layout section to show details of an exis
 </Section>
 ```
 
-## Props
+## Component data
 
-<TableProp>
-<TableDefaultRow items={item2} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData2}/>

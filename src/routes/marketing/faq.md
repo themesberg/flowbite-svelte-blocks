@@ -8,10 +8,10 @@ description: Get started with a collection of FAQ (frequently asked questions) s
 ---
 
 <script>
-  import { TableProp, TableDefaultRow } from '../utils'
-  import { props as item1} from '../props/Faq.json'
-  import { props as item2} from '../props/FaqItem.json'
-  import { props as item3} from '../props/Section.json'
+  import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
+  import componentData1 from '../component-data/Faq.json'
+  import componentData2 from '../component-data/FaqItem.json'
+  import componentData3 from '../component-data/Section.json'
 </script>
 
 ## Default example
@@ -82,22 +82,16 @@ Use this simple example of a FAQ section to show a list of questions and answers
 </Section>
 ```
 
-## Props
+## Component data
 
 ### Faq
 
-<TableProp>
-<TableDefaultRow items={item1} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData1}/>
 
 ### FaqItem
 
-<TableProp>
-<TableDefaultRow items={item2} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData2}/>
 
-### Section
+### Section component
 
-<TableProp>
-<TableDefaultRow items={item3} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData3}/>

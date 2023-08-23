@@ -8,11 +8,11 @@ description: Get started with the side nav component to show a list of menu item
 ---
 
 <script>
-  import { TableProp, TableDefaultRow } from '../utils'
+  import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
  
-  import { props as item1} from '../props/SidebarBottomNav.json'
-  import { props as item2} from '../props/SidebarBottomNavItem.json'
-  import { props as item3} from '../props/Section.json'
+  import componentData1 from '../component-data/SidebarBottomNav.json'
+  import componentData2 from '../component-data/SidebarBottomNavItem.json'
+  import componentData3 from '../component-data/Section.json'
 </script>
 
 ## Default side navigation
@@ -164,22 +164,16 @@ Use the default sidebar navigation to show a list of menu items with dropdown it
 </Section>
 ```
 
-## Props
+## Component data
 
 ### SidebarBottomNav
 
-<TableProp>
-<TableDefaultRow items={item1} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData1}/>
 
 ### SidebarBottomNavItem
 
-<TableProp>
-<TableDefaultRow items={item2} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData2}/>
 
-### Section
+### Section component
 
-<TableProp>
-<TableDefaultRow items={item3} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData3}/>

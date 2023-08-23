@@ -8,11 +8,11 @@ description: Get started with a collection of testimonial sections built with Ta
 ---
 
 <script>
-  import { TableProp, TableDefaultRow } from '../utils'
-  import { props as item2} from '../props/Testimonial.json'
-  import { props as item3} from '../props/TestimonialCard.json'
-  import { props as item4} from '../props/TestimonialCardItem.json'
-  import { props as item5} from '../props/Section.json'
+  import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
+  import componentData2 from '../component-data/Testimonial.json'
+  import componentData3 from '../component-data/TestimonialCard.json'
+  import componentData4 from '../component-data/TestimonialCardItem.json'
+  import componentData5 from '../component-data/Section.json'
 </script>
 
 ## Blockquote example
@@ -114,28 +114,20 @@ You can use this example of testimonial cards up to two items on a row and show 
 </Section>
 ```
 
-## Props
+## Component data
 
 ### Testimonial
 
-<TableProp>
-<TableDefaultRow items={item2} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData2}/>
 
 ### TestimonialCard
 
-<TableProp>
-<TableDefaultRow items={item3} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData3}/>
 
 ### TestimonialCardItem
 
-<TableProp>
-<TableDefaultRow items={item4} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData4}/>
 
-### Section
+### Section component
 
-<TableProp>
-<TableDefaultRow items={item5} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData5}/>

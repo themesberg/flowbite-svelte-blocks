@@ -8,8 +8,8 @@ description: Use this collection of drawer components coded with Tailwind CSS to
 ---
 
 <script>
-  import { TableProp, TableDefaultRow } from '../utils'
-  import { props as item2} from '../props/Section.json'
+  import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
+  import componentData2 from '../component-data/Section.json'
 </script>
 
 ## Default drawer
@@ -62,8 +62,6 @@ Use this free drawer component to show details of a basic data entry from your d
 </Section>
 ```
 
-## Props
+## Component data
 
-<TableProp>
-<TableDefaultRow items={item2} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData2}/>

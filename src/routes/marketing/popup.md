@@ -8,8 +8,8 @@ description: Get started with the popup component to overlay the main website co
 ---
 
 <script>
-  import { TableProp, TableDefaultRow } from '../utils'
-  import { props as item1} from '../props/Popup.json'
+  import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
+  import componentData1 from '../component-data/Popup.json'
 </script>
 
 ## Default popup
@@ -37,8 +37,6 @@ Use this example of a popup element to show a simple yes or no type of dialog to
 </Popup>
 ```
 
-## Props
+## Component data
 
-<TableProp>
-<TableDefaultRow items={item1} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData1}/>

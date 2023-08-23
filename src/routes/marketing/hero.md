@@ -8,11 +8,11 @@ description: Get started with a collection of hero sections coded with Tailwind 
 ---
 
 <script>
-  import { TableProp, TableDefaultRow } from '../utils'
-  import { props as item1} from '../props/News.json'
-  import { props as item2} from '../props/HeroHeader.json'
-  import { props as item3} from '../props/HeroBody.json'
-  import { props as item4} from '../props/Section.json'
+  import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
+  import componentData1 from '../component-data/News.json'
+  import componentData2 from '../component-data/HeroHeader.json'
+  import componentData3 from '../component-data/HeroBody.json'
+  import componentData4 from '../component-data/Section.json'
 </script>
 
 ## Default hero section
@@ -94,28 +94,20 @@ Use this example to show an image next to the heading and CTA buttons to improve
 </Section>
 ```
 
-## Props
+## Component data
 
 ### News
 
-<TableProp>
-<TableDefaultRow items={item1} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData1}/>
 
 ### HeroHeader
 
-<TableProp>
-<TableDefaultRow items={item2} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData2}/>
 
 ### HeroBody
 
-<TableProp>
-<TableDefaultRow items={item3} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData3}/>
 
-### Section
+### Section component
 
-<TableProp>
-<TableDefaultRow items={item4} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData4}/>

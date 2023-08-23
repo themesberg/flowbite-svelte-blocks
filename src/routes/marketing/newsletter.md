@@ -8,9 +8,9 @@ description: The newsletter component is an important marketing method that you 
 ---
 
 <script>
-  import { TableProp, TableDefaultRow } from '../utils'
-  import { props as item1} from '../props/Newsletter.json'
-  import { props as item2} from '../props/Section.json'
+  import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
+  import componentData1 from '../component-data/Newsletter.json'
+  import componentData2 from '../component-data/Section.json'
 </script>
 
 ## Default newsletter
@@ -47,16 +47,12 @@ Use this example as a website section to allow website visitors to sign up for y
 </Section>
 ```
 
-## Props
+## Component data
 
 ### Newsletter
 
-<TableProp>
-<TableDefaultRow items={item1} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData1}/>
 
-### Section
+### Section component
 
-<TableProp>
-<TableDefaultRow items={item2} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData2}/>

@@ -8,9 +8,9 @@ description: The contact section is an important part of your website where the 
 ---
 
 <script>
-  import { TableProp, TableDefaultRow } from '../utils'
-  import { props as item1} from '../props/Contact.json'
-  import { props as item2} from '../props/Section.json'
+  import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
+  import componentData1 from '../component-data/Contact.json'
+  import componentData2 from '../component-data/Section.json'
 </script>
 
 ## Default contact form
@@ -45,16 +45,12 @@ Use this example of a contact form coded with Tailwind CSS including the email, 
 </Section>
 ```
 
-## Props
+## Component data
 
 ### Contact
 
-<TableProp>
-<TableDefaultRow items={item1} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData1}/>
 
-### Section
+### Section component
 
-<TableProp>
-<TableDefaultRow items={item2} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData2}/>

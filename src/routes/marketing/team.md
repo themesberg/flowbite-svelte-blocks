@@ -8,15 +8,15 @@ description: Get started with a collection of team sections built with Tailwind 
 ---
 
 <script>
-  import { TableProp, TableDefaultRow } from '../utils'
-  import { props as item1} from '../props/TeamWrapper.json'
-  import { props as item2} from '../props/TeamHeader.json'
-  import { props as item3} from '../props/TeamBody.json'
-  import { props as item4} from '../props/TeamItem.json'
-  import { props as item5} from '../props/Facebook.json'
-  import { props as item6} from '../props/Github.json'
-  import { props as item7} from '../props/Twitter.json'
-  import { props as item8} from '../props/Section.json'
+  import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
+  import componentData1 from '../component-data/TeamWrapper.json'
+  import componentData2 from '../component-data/TeamHeader.json'
+  import componentData3 from '../component-data/TeamBody.json'
+  import componentData4 from '../component-data/TeamItem.json'
+  import componentData5 from '../component-data/Facebook.json'
+  import componentData6 from '../component-data/Github.json'
+  import componentData7 from '../component-data/Twitter.json'
+  import componentData8 from '../component-data/Section.json'
 </script>
 
 ## Team member cards
@@ -87,52 +87,36 @@ Use this example to show information about your team members such as the name, o
 </Section>
 ```
 
-## Props
+## Component data
 
 ### TeamWrapper
 
-<TableProp>
-<TableDefaultRow items={item1} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData1}/>
 
 ### TeamHeader
 
-<TableProp>
-<TableDefaultRow items={item2} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData2}/>
 
 ### TeamBody
 
-<TableProp>
-<TableDefaultRow items={item3} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData3}/>
 
 ### TeamItem
 
-<TableProp>
-<TableDefaultRow items={item4} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData4}/>
 
 ### Facebook
 
-<TableProp>
-<TableDefaultRow items={item5} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData5}/>
 
 ### Github
 
-<TableProp>
-<TableDefaultRow items={item6} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData6}/>
 
 ### Twitter
 
-<TableProp>
-<TableDefaultRow items={item7} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData7}/>
 
-### Section
+### Section component
 
-<TableProp>
-<TableDefaultRow items={item8} rowState='hover' />
-</TableProp>
+<CompoAttributesViewer componentData={componentData8}/>
