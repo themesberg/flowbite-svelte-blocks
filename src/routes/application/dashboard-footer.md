@@ -9,7 +9,7 @@ description: Get started with a collection of responsive footer components speci
 
 <script>
   import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
-  import componentData2 from '../component-data/Section.json'
+  const components = 'Section'
 </script>
 
 ## Default dashboard footer
@@ -56,6 +56,4 @@ This free example can be used to show a copyright notice text with social media 
 </Section>
 ```
 
-## Component data
-
-<CompoAttributesViewer componentData={componentData2}/>
+<CompoAttributesViewer {components}/>

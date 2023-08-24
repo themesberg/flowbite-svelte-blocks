@@ -9,9 +9,7 @@ description: Get started with account recovery (aka. forgot password) pages to a
 
 <script>
   import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
-  import componentData1 from '../component-data/ForgotPassword.json'
-  import componentData2 from '../component-data/ForgotPasswordHeader.json'
-  import componentData3 from '../component-data/Section.json'
+  const components = 'ForgotPassword, ForgotPasswordHeader, Section'
 </script>
 
 ## Default forgot password page
@@ -45,16 +43,4 @@ Use this example for users who forgot their password and send a recovery email t
 </Section>
 ```
 
-## Component data
-
-### ForgotPassword
-
-<CompoAttributesViewer componentData={componentData1}/>
-
-### ForgotPasswordHeader component
-
-<CompoAttributesViewer componentData={componentData1}/>
-
-### Section component
-
-<CompoAttributesViewer componentData={componentData2}/>
+<CompoAttributesViewer {components}/>

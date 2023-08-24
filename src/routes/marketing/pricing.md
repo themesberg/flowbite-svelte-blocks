@@ -9,12 +9,7 @@ description: Get started with a collection of responsive pricing sections to sho
 
 <script>
   import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
-  import componentData1 from '../component-data/PricingBodyHead.json'
-  import componentData2 from '../component-data/PricingCard.json'
-  import componentData3 from '../component-data/PricingItemWrapper.json'
-  import componentData4 from '../component-data/PricingHead.json'
-  import componentData5 from '../component-data/PricingItem.json'
-  import componentData6 from '../component-data/Section.json'
+  const components = 'PricingBodyHead, PricingCard, PricingItemWrapper, PricingHead, PricingItem, Section'
 </script>
 
 ## Default pricing table
@@ -132,28 +127,4 @@ Use this example of three pricing cards showcasing the pricing plan title, descr
 </Section>
 ```
 
-## Component data
-
-### PricingBodyHead
-
-<CompoAttributesViewer componentData={componentData1}/>
-
-### PricingCard
-
-<CompoAttributesViewer componentData={componentData2}/>
-
-### PricingItemWrapper
-
-<CompoAttributesViewer componentData={componentData3}/>
-
-### PricingHead
-
-<CompoAttributesViewer componentData={componentData4}/>
-
-### PricingItem
-
-<CompoAttributesViewer componentData={componentData5}/>
-
-### Section component
-
-<CompoAttributesViewer componentData={componentData6}/>
+<CompoAttributesViewer {components}/>

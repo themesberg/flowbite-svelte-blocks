@@ -9,9 +9,7 @@ description: Use the table header component to append options and controls on to
 
 <script>
   import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
- 
-  import componentData1 from '../component-data/TableHeader.json'
-  import componentData2 from '../component-data/Section.json'
+  const components = 'TableHeader, Section'
 </script>
 
 ## Default table header
@@ -91,12 +89,4 @@ This free example can be used to show a title, description, and CTA button for c
 </Section>
 ```
 
-## Component data
-
-### TableHeader
-
-<CompoAttributesViewer componentData={componentData1}/>
-
-### Section component
-
-<CompoAttributesViewer componentData={componentData2}/>
+<CompoAttributesViewer {components}/>

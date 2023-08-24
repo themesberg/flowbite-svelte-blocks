@@ -10,6 +10,7 @@ description: The banner component can be used to show extra information or enabl
 <script>
   import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
   import componentData1 from '../component-data/Banner.json'
+  const components = 'Banner'
 </script>
 
 ## Default banner
@@ -34,6 +35,4 @@ Use this example of a dismissable banner component to show extra information rel
 {/if}
 ```
 
-## Component data
-
-<CompoAttributesViewer componentData={componentData1}/>
+<CompoAttributesViewer {components}/>

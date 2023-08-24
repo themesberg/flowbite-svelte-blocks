@@ -26,7 +26,7 @@ export const fetchMarkdownPosts = async () => {
   const iterableApplicationFiles = Object.entries(applicationFiles);
   const iterableMarketingFiles = Object.entries(marketingFiles);
   const iterablePublisherFiles = Object.entries(publisherFiles);
-  const iterableExampleFiles = Object.entries(exampleFiles);
+  // const iterableExampleFiles = Object.entries(exampleFiles);
 
   const allApplications = await Promise.all(
     iterableApplicationFiles.map(async ([path, resolver]) => {
@@ -73,5 +73,25 @@ export const fetchMarkdownPosts = async () => {
     // example: allExamples,
     marketing: allMarketings,
     publisher: allPublishers
+  };
+};
+
+export const fetchComponentData = async () => {
+  const josonFiles = import.meta.glob('/src/routes/component-data/*.json');
+    // const iterableJsonFiles = Object.entries(josonFiles);
+
+    // const allJsonFiles = await Promise.all(
+    //   iterableJsonFiles.map(async ([path, resolver]) => {
+    //     const { metadata } = await resolver();
+    //     return {
+    //       meta: metadata,
+    //       path: filePath(path)
+    //     };
+    //   })
+    // );
+  console.log('josonFiles', josonFiles)
+
+  return {
+    jsonfiles: josonFiles,
   };
 };

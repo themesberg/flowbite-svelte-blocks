@@ -9,9 +9,7 @@ description: Get started with a collection of website sections coded with Tailwi
 
 <script>
   import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
-  import componentData1 from '../component-data/Schedule.json'
-  import componentData2 from '../component-data/ScheduleItem.json'
-  import componentData3 from '../component-data/Section.json'
+  const components = 'Schedule, ScheduleItem, Section'
 </script>
 
 ## Default event schedule
@@ -77,16 +75,4 @@ Use this free example to show a list of workshops for an event using a timeline 
 </Section>
 ```
 
-## Component data
-
-### Schedule
-
-<CompoAttributesViewer componentData={componentData1}/>
-
-### ScheduleItem
-
-<CompoAttributesViewer componentData={componentData2}/>
-
-### Section component
-
-<CompoAttributesViewer componentData={componentData3}/>
+<CompoAttributesViewer {components}/>

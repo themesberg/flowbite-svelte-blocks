@@ -9,7 +9,7 @@ description: Get started with a collection of responsive website sections to sho
 
 <script>
   import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
-  import componentData2 from '../component-data/Section.json'
+  const components = 'Section'
 </script>
 
 ## Default read section
@@ -52,6 +52,4 @@ Use this free example of a "read" CRUD layout section to show details of an exis
 </Section>
 ```
 
-## Component data
-
-<CompoAttributesViewer componentData={componentData2}/>
+<CompoAttributesViewer {components}/>

@@ -9,7 +9,7 @@ description: Get started with a collection of drawer components that you can use
 
 <script>
   import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
-  import componentData2 from '../component-data/Section.json'
+  const components = 'Section'
 </script>
 
 ## Default drawer
@@ -72,6 +72,4 @@ Use this free and responsive example of a drawer component to update an existing
 </Section>
 ```
 
-## Component data
-
-<CompoAttributesViewer componentData={componentData2}/>
+<CompoAttributesViewer {components}/>

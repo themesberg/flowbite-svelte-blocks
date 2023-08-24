@@ -9,8 +9,7 @@ description: Use a collection of register pages to let your users create an acco
 
 <script>
   import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
-  import componentData1 from '../component-data/Register.json'
-  import componentData2 from '../component-data/Section.json'
+  const components = 'Register, Section'
 </script>
 
 ## Default register page
@@ -57,12 +56,4 @@ This example can be used to allow users to create an account on your website usi
 </Section>
 ```
 
-## Component data
-
-### Register
-
-<CompoAttributesViewer componentData={componentData1}/>
-
-### Section component
-
-<CompoAttributesViewer componentData={componentData2}/>
+<CompoAttributesViewer {components}/>

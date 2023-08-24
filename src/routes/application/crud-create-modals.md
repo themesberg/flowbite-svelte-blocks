@@ -9,7 +9,7 @@ description: Get started with a collection of modal components with form input e
 
 <script>
   import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
-  import componentData2 from '../component-data/Section.json'
+  const components = 'Section'
 </script>
 
 ## Default modal
@@ -72,6 +72,4 @@ Use this free example to show a modal component with a form inside when creating
 </Section>
 ```
 
-## Component data
-
-<CompoAttributesViewer componentData={componentData2}/>
+<CompoAttributesViewer {components}/>

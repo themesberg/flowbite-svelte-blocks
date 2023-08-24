@@ -9,8 +9,7 @@ description: Get started with this website section to offer social proof to your
 
 <script>
   import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
-  import componentData1 from '../component-data/Social.json'
-  import componentData2 from '../component-data/Section.json'
+  const components = 'Social, Section'
 </script>
 
 ## Default example
@@ -40,12 +39,4 @@ Use this example of statistical numbers that you can use to showcase the adoptio
 </Section>
 ```
 
-## Component data
-
-### Social
-
-<CompoAttributesViewer componentData={componentData1}/>
-
-### Section component
-
-<CompoAttributesViewer componentData={componentData2}/>
+<CompoAttributesViewer {components}/>

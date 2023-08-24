@@ -9,9 +9,7 @@ description: Get started with a collection of FAQ (frequently asked questions) s
 
 <script>
   import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
-  import componentData1 from '../component-data/Faq.json'
-  import componentData2 from '../component-data/FaqItem.json'
-  import componentData3 from '../component-data/Section.json'
+  const components = 'Faq, FaqItem, Section'
 </script>
 
 ## Default example
@@ -82,16 +80,4 @@ Use this simple example of a FAQ section to show a list of questions and answers
 </Section>
 ```
 
-## Component data
-
-### Faq
-
-<CompoAttributesViewer componentData={componentData1}/>
-
-### FaqItem
-
-<CompoAttributesViewer componentData={componentData2}/>
-
-### Section component
-
-<CompoAttributesViewer componentData={componentData3}/>
+<CompoAttributesViewer {components}/>

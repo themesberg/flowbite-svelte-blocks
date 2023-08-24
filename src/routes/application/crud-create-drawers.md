@@ -9,7 +9,7 @@ description: Get started with a collection of drawer components to create new da
 
 <script>
   import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
-  import componentData2 from '../component-data/Section.json'
+  const components = 'Section'
 </script>
 
 ## Default drawer
@@ -84,6 +84,4 @@ Use this free example of a drawer component to show a list of input field items 
 </Section>
 ```
 
-## Component data
-
-<CompoAttributesViewer componentData={componentData2}/>
+<CompoAttributesViewer {components}/>

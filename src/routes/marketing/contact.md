@@ -9,8 +9,7 @@ description: The contact section is an important part of your website where the 
 
 <script>
   import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
-  import componentData1 from '../component-data/Contact.json'
-  import componentData2 from '../component-data/Section.json'
+  const components = 'Contact, Section'
 </script>
 
 ## Default contact form
@@ -45,12 +44,4 @@ Use this example of a contact form coded with Tailwind CSS including the email, 
 </Section>
 ```
 
-## Component data
-
-### Contact
-
-<CompoAttributesViewer componentData={componentData1}/>
-
-### Section component
-
-<CompoAttributesViewer componentData={componentData2}/>
+<CompoAttributesViewer {components}/>
