@@ -9,7 +9,7 @@ description: Use this collection of drawer components coded with Tailwind CSS to
 
 <script>
   import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
-  import componentData2 from '../component-data/Section.json'
+  const components = 'Section'
 </script>
 
 ## Default drawer
@@ -62,6 +62,4 @@ Use this free drawer component to show details of a basic data entry from your d
 </Section>
 ```
 
-## Component data
-
-<CompoAttributesViewer componentData={componentData2}/>
+<CompoAttributesViewer {components}/>

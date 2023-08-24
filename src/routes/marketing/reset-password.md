@@ -9,8 +9,7 @@ description: Use a collection of reset password forms based on multiple layouts 
 
 <script>
   import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
-  import componentData1 from '../component-data/Register.json'
-  import componentData2 from '../component-data/Section.json'
+  const components = 'Register, Section'
 </script>
 
 ## Default reset password page
@@ -54,12 +53,4 @@ Use this example with an email input and two password input fields to let the us
 </Section>
 ```
 
-## Component data
-
-### Register
-
-<CompoAttributesViewer componentData={componentData1}/>
-
-### Section component
-
-<CompoAttributesViewer componentData={componentData2}/>
+<CompoAttributesViewer {components}/>

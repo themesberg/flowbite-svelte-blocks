@@ -9,10 +9,7 @@ description: Get started with a collection of hero sections coded with Tailwind 
 
 <script>
   import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
-  import componentData1 from '../component-data/News.json'
-  import componentData2 from '../component-data/HeroHeader.json'
-  import componentData3 from '../component-data/HeroBody.json'
-  import componentData4 from '../component-data/Section.json'
+  const components = 'News, HeroHeader, HeroBody, Section'
 </script>
 
 ## Default hero section
@@ -94,20 +91,4 @@ Use this example to show an image next to the heading and CTA buttons to improve
 </Section>
 ```
 
-## Component data
-
-### News
-
-<CompoAttributesViewer componentData={componentData1}/>
-
-### HeroHeader
-
-<CompoAttributesViewer componentData={componentData2}/>
-
-### HeroBody
-
-<CompoAttributesViewer componentData={componentData3}/>
-
-### Section component
-
-<CompoAttributesViewer componentData={componentData4}/>
+<CompoAttributesViewer {components}/>

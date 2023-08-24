@@ -9,7 +9,7 @@ description: Get started with a collection of delete confirmation modal componen
 
 <script>
   import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
-  import componentData2 from '../component-data/Section.json'
+  const components = 'Section'
 </script>
 
 ## Default delete confirmation modal
@@ -44,6 +44,4 @@ Use this free example of a modal component coded with Tailwind CSS to confirm wi
 </Section>
 ```
 
-## Component data
-
-<CompoAttributesViewer componentData={componentData2}/>
+<CompoAttributesViewer {components}/>

@@ -9,7 +9,7 @@ description: Get started with the popup component to overlay the main website co
 
 <script>
   import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
-  import componentData1 from '../component-data/Popup.json'
+  const components = 'Popup'
 </script>
 
 ## Default popup
@@ -37,6 +37,4 @@ Use this example of a popup element to show a simple yes or no type of dialog to
 </Popup>
 ```
 
-## Component data
-
-<CompoAttributesViewer componentData={componentData1}/>
+<CompoAttributesViewer {components}/>

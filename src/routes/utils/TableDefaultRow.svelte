@@ -71,11 +71,9 @@
 {:else}
 {#each items as tagName}
 <tr class={trClass}>
- 
   <td class="px-6 py-4">
       {tagName}
-</td>
- 
+  </td>
 </tr>
 {/each}
 {/if}

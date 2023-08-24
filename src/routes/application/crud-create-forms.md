@@ -9,7 +9,7 @@ description: Get started with a collection of forms crafted for the "create" act
 
 <script>
   import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
-  import componentData2 from '../component-data/Section.json'
+  const components = 'Section'
 </script>
 
 ## Default form
@@ -67,6 +67,4 @@ Use this free example of a form based on the CRUD layouts where you can create a
 </Section>
 ```
 
-## Component data
-
-<CompoAttributesViewer componentData={componentData2}/>
+<CompoAttributesViewer {components}/>

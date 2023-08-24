@@ -9,10 +9,7 @@ description: Get started with a collection of testimonial sections built with Ta
 
 <script>
   import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
-  import componentData2 from '../component-data/Testimonial.json'
-  import componentData3 from '../component-data/TestimonialCard.json'
-  import componentData4 from '../component-data/TestimonialCardItem.json'
-  import componentData5 from '../component-data/Section.json'
+  const components = 'Testimonial, TestimonialCard, TestimonialCardItem, Section'
 </script>
 
 ## Blockquote example
@@ -114,20 +111,4 @@ You can use this example of testimonial cards up to two items on a row and show 
 </Section>
 ```
 
-## Component data
-
-### Testimonial
-
-<CompoAttributesViewer componentData={componentData2}/>
-
-### TestimonialCard
-
-<CompoAttributesViewer componentData={componentData3}/>
-
-### TestimonialCardItem
-
-<CompoAttributesViewer componentData={componentData4}/>
-
-### Section component
-
-<CompoAttributesViewer componentData={componentData5}/>
+<CompoAttributesViewer {components}/>

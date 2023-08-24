@@ -13,6 +13,7 @@ description: Get started with a collection of responsive website sections built 
   import componentData2 from '../component-data/FeatureDefault.json'
   import componentData3 from '../component-data/FeatureItem.json'
   import componentData4 from '../component-data/Section.json'
+  const components = 'HeroHeader, FeatureDefault, FeatureItem, Section'
 </script>
 
 ## Default feature list
@@ -65,20 +66,4 @@ Get started with this default example of feature items based on a grid layout wh
 </Section>
 ```
 
-## Component data
-
-### HeroHeader
-
-<CompoAttributesViewer componentData={componentData1}/>
-
-### FeatureDefault
-
-<CompoAttributesViewer componentData={componentData2}/>
-
-### FeatureItem
-
-<CompoAttributesViewer componentData={componentData3}/>
-
-### Section component
-
-<CompoAttributesViewer componentData={componentData4}/>
+<CompoAttributesViewer {components}/>

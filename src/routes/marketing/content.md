@@ -9,9 +9,7 @@ description: Choose one of these website sections to show extra content relative
 
 <script>
   import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
-  import componentData1 from '../component-data/Content.json'
-  import componentData2 from '../component-data/ContentWithImage.json'
-  import componentData3 from '../component-data/Section.json'
+  const components = 'Content, ContentWithImage, Section'
 </script>
 
 ## Heading with description
@@ -60,16 +58,4 @@ Use this example to show a couple of images next to a heading and paragraph to p
 </Section>
 ```
 
-## Component data
-
-### Content
-
-<CompoAttributesViewer componentData={componentData1}/>
-
-### ContentWithImage
-
-<CompoAttributesViewer componentData={componentData2}/>
-
-### Section component
-
-<CompoAttributesViewer componentData={componentData3}/>
+<CompoAttributesViewer {components}/>

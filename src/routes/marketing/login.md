@@ -9,8 +9,7 @@ description: The login page can be used to allow users to authenticate inside yo
 
 <script>
   import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
-  import componentData1 from '../component-data/Register.json'
-  import componentData2 from '../component-data/Section.json'
+  const components = 'Register, Section'
 </script>
 
 ## Default login page
@@ -54,12 +53,4 @@ This example includes a form with an email and password input accompanied by the
 </Section>
 ```
 
-## Component data
-
-### Register
-
-<CompoAttributesViewer componentData={componentData1}/>
-
-### Section component
-
-<CompoAttributesViewer componentData={componentData2}/>
+<CompoAttributesViewer {components}/>

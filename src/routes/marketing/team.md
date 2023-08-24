@@ -9,14 +9,7 @@ description: Get started with a collection of team sections built with Tailwind 
 
 <script>
   import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
-  import componentData1 from '../component-data/TeamWrapper.json'
-  import componentData2 from '../component-data/TeamHeader.json'
-  import componentData3 from '../component-data/TeamBody.json'
-  import componentData4 from '../component-data/TeamItem.json'
-  import componentData5 from '../component-data/Facebook.json'
-  import componentData6 from '../component-data/Github.json'
-  import componentData7 from '../component-data/Twitter.json'
-  import componentData8 from '../component-data/Section.json'
+  const components = 'TeamWrapper, TeamHeader, TeamBody, TeamItem, Facebook, Github, Twitter, Section'
 </script>
 
 ## Team member cards
@@ -87,36 +80,4 @@ Use this example to show information about your team members such as the name, o
 </Section>
 ```
 
-## Component data
-
-### TeamWrapper
-
-<CompoAttributesViewer componentData={componentData1}/>
-
-### TeamHeader
-
-<CompoAttributesViewer componentData={componentData2}/>
-
-### TeamBody
-
-<CompoAttributesViewer componentData={componentData3}/>
-
-### TeamItem
-
-<CompoAttributesViewer componentData={componentData4}/>
-
-### Facebook
-
-<CompoAttributesViewer componentData={componentData5}/>
-
-### Github
-
-<CompoAttributesViewer componentData={componentData6}/>
-
-### Twitter
-
-<CompoAttributesViewer componentData={componentData7}/>
-
-### Section component
-
-<CompoAttributesViewer componentData={componentData8}/>
+<CompoAttributesViewer {components}/>

@@ -9,13 +9,7 @@ description: Get started with a collection of website sections related to the bl
 
 <script>
   import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
-  import componentData1 from '../component-data/ArticleAuthor.json'
-  import componentData2 from '../component-data/ArticleBody.json'
-  import componentData3 from '../component-data/ArticleHead.json'
-  import componentData4 from '../component-data/ArticleWrapper.json'
-  import componentData5 from '../component-data/BlogHead.json'
-  import componentData6 from '../component-data/BlogBodyWrapper.json'
-  import componentData7 from '../component-data/Section.json'
+  const components = 'ArticleAuthor, ArticleBody, ArticleHead, ArticleWrapper, BlogHead, BlogBodyWrapper, Section'
 </script>
 
 ## Default blog card
@@ -92,32 +86,4 @@ Use this example to show a preview of a blog post including the title, descripti
 </Section>
 ```
 
-## Component data
-
-### ArticleAuthor
-
-<CompoAttributesViewer componentData={componentData1}/>
-
-### ArticleBody
-
-<CompoAttributesViewer componentData={componentData2}/>
-
-### ArticleHead
-
-<CompoAttributesViewer componentData={componentData3}/>
-
-### ArticleWrapper
-
-<CompoAttributesViewer componentData={componentData4}/>
-
-### BlogHead
-
-<CompoAttributesViewer componentData={componentData5}/>
-
-### BlogBodyWrapper
-
-<CompoAttributesViewer componentData={componentData6}/>
-
-### Section component
-
-<CompoAttributesViewer componentData={componentData7}/>
+<CompoAttributesViewer {components}/>
