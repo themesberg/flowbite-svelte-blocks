@@ -1,7 +1,7 @@
 ---
 layout: componentLayout
 title: Quickstart - Flowbite Svelte Blocks
-breadcrumb_title: Quickstart 
+breadcrumb_title: Quickstart
 no_of_components: 0 free component
 dir: pages
 description: Learn how to get started with the free and open-source Flowbite Svelte Blocks component library
@@ -52,11 +52,7 @@ In the provided code below, you can customize the primary color by modifying the
 
 ```js
 const config = {
-  content: [
-  './src/**/*.{html,js,svelte,ts}', 
-  './node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}',
-  './node_modules/flowbite-svelte-blocks/**/*.{html,js,svelte,ts}'
-  ],
+  content: ['./src/**/*.{html,js,svelte,ts}', './node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}', './node_modules/flowbite-svelte-blocks/**/*.{html,js,svelte,ts}'],
 
   plugins: [require('flowbite/plugin')],
 
@@ -109,4 +105,3 @@ Add the following to `src/routes/+page.svelte` and if you see the following imag
   </Page404>
 </Section>
 ```
-

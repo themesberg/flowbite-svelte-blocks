@@ -1,1 +1,7 @@
-{"props":[["icon","typeof SvelteComponent | null","null"],["figureClass","string","'max-w-screen-md mx-auto'"],["figureFooterClass","string","'flex items-center justify-center mt-6 space-x-3'"]]}
+{
+  "props": [
+    ["icon", "typeof SvelteComponent | null", "null"],
+    ["figureClass", "string", "'max-w-screen-md mx-auto'"],
+    ["figureFooterClass", "string", "'flex items-center justify-center mt-6 space-x-3'"]
+  ]
+}

@@ -1,1 +1,6 @@
-{"props":[["href","string","'/'"],["classA","string","''"]]}
+{
+  "props": [
+    ["href", "string", "'/'"],
+    ["classA", "string", "''"]
+  ]
+}

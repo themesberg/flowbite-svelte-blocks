@@ -1,1 +1,7 @@
-{"props":[["h3Class","string","'mb-4 text-2xl font-semibold'"],["pClass","string","'font-light text-gray-500 sm:text-lg dark:text-gray-400'"],["priceClass","string","'flex justify-center items-baseline my-8'"]]}
+{
+  "props": [
+    ["h3Class", "string", "'mb-4 text-2xl font-semibold'"],
+    ["pClass", "string", "'font-light text-gray-500 sm:text-lg dark:text-gray-400'"],
+    ["priceClass", "string", "'flex justify-center items-baseline my-8'"]
+  ]
+}

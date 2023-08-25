@@ -1,1 +1,6 @@
-{"props":[["divClass","string","'mb-10'"],["h3Class","string","'flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white'"]]}
+{
+  "props": [
+    ["divClass", "string", "'mb-10'"],
+    ["h3Class", "string", "'flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white'"]
+  ]
+}
