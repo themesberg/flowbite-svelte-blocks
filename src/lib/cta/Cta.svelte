@@ -34,6 +34,6 @@
 <!--
 @component
 [Go to docs](https://flowbite-svelte-blocks.vercel.app/)
-## Component data
+## Props
 @prop export let ctatype: 'default' | 'image' | 'heading' | 'none' = 'default';
 -->

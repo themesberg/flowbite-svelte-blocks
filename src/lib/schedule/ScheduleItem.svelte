@@ -28,7 +28,7 @@
 <!--
 @component
 [Go to docs](https://flowbite-svelte-blocks.vercel.app/)
-## Component data
+## Props
 @prop export let divClass: string = 'flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center';
 @prop export let pClass: string = 'w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0';
 @prop export let h3Class: string = 'text-lg font-semibold text-gray-900 dark:text-white';

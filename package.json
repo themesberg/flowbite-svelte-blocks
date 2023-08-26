@@ -42,6 +42,7 @@
     "eslint": "^8.47.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-svelte": "^2.33.0",
+    "flowbite-typography": "^1.0.3",
     "mdsvex": "^0.11.0",
     "mdsvexamples": "^0.4.1",
     "postcss": "^8.4.28",
@@ -84,6 +85,11 @@
     "type": "git",
     "url": "https://github.com/themesberg/flowbite-svelte-blocks/"
   },
+  "files": [
+    "dist"
+  ],
+  "svelte": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     "./ForgotPassword.svelte": {
       "types": "./dist/acount-recovery/ForgotPassword.svelte.d.ts",
@@ -120,6 +126,18 @@
     "./BlogHead.svelte": {
       "types": "./dist/blog/BlogHead.svelte.d.ts",
       "svelte": "./dist/blog/BlogHead.svelte"
+    },
+    "./BlogTemplate.svelte": {
+      "types": "./dist/blog-template/BlogTemplate.svelte.d.ts",
+      "svelte": "./dist/blog-template/BlogTemplate.svelte"
+    },
+    "./Comment.svelte": {
+      "types": "./dist/comment/Comment.svelte.d.ts",
+      "svelte": "./dist/comment/Comment.svelte"
+    },
+    "./CommentItem.svelte": {
+      "types": "./dist/comment/CommentItem.svelte.d.ts",
+      "svelte": "./dist/comment/CommentItem.svelte"
     },
     "./Contact.svelte": {
       "types": "./dist/contact/Contact.svelte.d.ts",
@@ -297,10 +315,5 @@
       "types": "./dist/index.d.ts",
       "svelte": "./dist/index.js"
     }
-  },
-  "files": [
-    "dist"
-  ],
-  "svelte": "./dist/index.js",
-  "types": "./dist/index.d.ts"
+  }
 }

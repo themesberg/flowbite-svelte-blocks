@@ -41,7 +41,7 @@ pnpm dev
 Run the following command to install all Flowbite Svelte Blocks dependencies and libraries:
 
 ```sh
-pnpm i -D flowbite-svelte flowbite-svelte-blocks flowbite-svelte-icons
+pnpm i -D flowbite-svelte flowbite-svelte-blocks flowbite-svelte-icons flowbite-typography
 ```
 
 ### Configuration
@@ -58,7 +58,10 @@ const config = {
   './node_modules/flowbite-svelte-blocks/**/*.{html,js,svelte,ts}'
   ],
 
-  plugins: [require('flowbite/plugin')],
+  plugins: [
+    require('flowbite/plugin'),
+    require('flowbite-typography')
+  ],
 
   darkMode: 'class',
 

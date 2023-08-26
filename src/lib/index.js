@@ -15,6 +15,13 @@ export { default as ArticleWrapper } from './blog/ArticleWrapper.svelte';
 export { default as BlogHead } from './blog/BlogHead.svelte';
 export { default as BlogBodyWrapper } from './blog/BlogBodyWrapper.svelte';
 
+// blog-template
+export { default as BlogTemplate } from './blog-template/BlogTemplate.svelte';
+
+// comment
+export { default as Comment } from './comment/Comment.svelte';
+export { default as CommentItem } from './comment/CommentItem.svelte';
+
 // contact
 export { default as Contact } from './contact/Contact.svelte';
 

@@ -22,7 +22,7 @@
 <!--
 @component
 [Go to docs](https://flowbite-svelte-blocks.vercel.app/)
-## Component data
+## Props
 @prop export let icon: typeof SvelteComponent | null = null;
 @prop export let figureClass: string = 'max-w-screen-md mx-auto';
 @prop export let figureFooterClass: string = 'flex items-center justify-center mt-6 space-x-3';
