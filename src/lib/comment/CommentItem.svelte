@@ -1,22 +1,10 @@
-
-
 <script lang="ts">
   import { twMerge } from 'tailwind-merge';
+  import type { Comment } from '../types';
   import CommentItem from './CommentItem.svelte';
   import { Icon } from 'flowbite-svelte-icons';
 
   export let replyButton: boolean = true;
-  type Comment = {
-    id: string;
-    commenter: {
-      name: string;
-      profilePicture?: string;
-    };
-    date?: string;
-    isoDate?: string;
-    content: string;
-    replies?: Comment[];
-  };
   export let comment: Comment;
   const articleCls: string = twMerge('p-6 mb-6 text-base bg-white rounded-lg dark:bg-gray-900', $$props.articleClass);
   const footerCls: string = twMerge('flex justify-between items-center mb-2', $$props.footerClass);
