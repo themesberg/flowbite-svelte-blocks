@@ -2,19 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-### [0.4.13](https://github.com/themesberg/flowbite-svelte-blocks/compare/v0.4.12...v0.4.13) (2023-08-25)
+### [0.4.14](https://github.com/themesberg/flowbite-svelte-blocks/compare/v0.4.13...v0.4.14) (2023-08-26)
 
+### [0.4.13](https://github.com/themesberg/flowbite-svelte-blocks/compare/v0.4.12...v0.4.13) (2023-08-25)
 
 ### Features
 
-* update component data rendering ([#44](https://github.com/themesberg/flowbite-svelte-blocks/issues/44)) ([c8241ef](https://github.com/themesberg/flowbite-svelte-blocks/commit/c8241ef549af9543f999252c9f4150ebba77057f))
-
+- update component data rendering ([#44](https://github.com/themesberg/flowbite-svelte-blocks/issues/44)) ([c8241ef](https://github.com/themesberg/flowbite-svelte-blocks/commit/c8241ef549af9543f999252c9f4150ebba77057f))
 
 ### Bug Fixes
 
-* install devDependencies ([e0d26bd](https://github.com/themesberg/flowbite-svelte-blocks/commit/e0d26bdf1e13371c012c9cbdcd7f21c77022165d))
-* playwright ([9611d95](https://github.com/themesberg/flowbite-svelte-blocks/commit/9611d95c7af19fcd35cf964a5967d0ab4767d189))
-* playwright and pnpm-lock file ([25e53d2](https://github.com/themesberg/flowbite-svelte-blocks/commit/25e53d2431f97fdbbdaacd7bdc780a46ea9e53d1))
+- install devDependencies ([e0d26bd](https://github.com/themesberg/flowbite-svelte-blocks/commit/e0d26bdf1e13371c012c9cbdcd7f21c77022165d))
+- playwright ([9611d95](https://github.com/themesberg/flowbite-svelte-blocks/commit/9611d95c7af19fcd35cf964a5967d0ab4767d189))
+- playwright and pnpm-lock file ([25e53d2](https://github.com/themesberg/flowbite-svelte-blocks/commit/25e53d2431f97fdbbdaacd7bdc780a46ea9e53d1))
 
 ### [0.4.12](https://github.com/themesberg/flowbite-svelte-blocks/compare/v0.4.11...v0.4.12) (2023-08-21)
 
