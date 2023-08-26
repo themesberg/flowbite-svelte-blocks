@@ -1,10 +1,22 @@
 <script lang="ts">
   import { twMerge } from 'tailwind-merge';
   export let sectionClass: string = 'relative py-6 sm:py-10';
-  export let name: 'blog' | 'cta' | 'ctawithimg' | 'contact' | 'content' | 'contentwithimg' | 'crudcreatedrawer' | 'crudcreateform' | 'crudreadsection' | 'default' | 'faq' | 'feature' | 'forgotpassword' | 'headingwithctabutton' | 'heroDefault' | 'heroVisual' | 'login' | 'logos' | 'maintenance' | 'newsletter' | 'none' | 'page500' | 'page404' | 'portfolio' | 'pricing' | 'register' | 'reset' | 'schedule' | 'social' | 'tableheader' | 'team' | 'testimonial' = 'default';
+  export let name: 'blog' | 'comment' |'cta' | 'ctawithimg' | 'contact' | 'content' | 'contentwithimg' | 'crudcreatedrawer' | 'crudcreateform' | 'crudreadsection' | 'default' | 'faq' | 'feature' | 'forgotpassword' | 'headingwithctabutton' | 'heroDefault' | 'heroVisual' | 'login' | 'logos' | 'maintenance' | 'newsletter' | 'none' | 'page500' | 'page404' | 'portfolio' | 'pricing' | 'register' | 'reset' | 'schedule' | 'social' | 'tableheader' | 'team' | 'testimonial' = 'default';
   const sectionClasses = {
     blog: {
       div: 'py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6'
+    },
+    comment: {
+      div: 'max-w-2xl mx-auto px-4'
+    },
+    contact: {
+      div: 'py-8 lg:py-16 px-4 mx-auto max-w-screen-md'
+    },
+    content: {
+      div: 'py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6'
+    },
+    contentwithimg: {
+      div: 'gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6'
     },
     crudcreateform: {
       div: 'py-8 px-4 mx-auto max-w-2xl lg:py-16'
@@ -20,15 +32,6 @@
     },
     ctawithimg: {
       div: 'gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6'
-    },
-    contact: {
-      div: 'py-8 lg:py-16 px-4 mx-auto max-w-screen-md'
-    },
-    content: {
-      div: 'py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6'
-    },
-    contentwithimg: {
-      div: 'gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6'
     },
     default: {
       div: 'py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6'
