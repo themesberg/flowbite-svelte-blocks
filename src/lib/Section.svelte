@@ -6,6 +6,9 @@
     blog: {
       div: 'py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6'
     },
+    blogTemplate: {
+      div:'flex justify-between px-4 mx-auto max-w-screen-xl'
+    }, 
     comment: {
       div: 'max-w-2xl mx-auto px-4'
     },

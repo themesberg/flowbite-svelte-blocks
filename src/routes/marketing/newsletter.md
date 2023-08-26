@@ -19,7 +19,7 @@ Use this example as a website section to allow website visitors to sign up for y
 ```svelte example
 <script lang="ts">
   import { Section, Newsletter } from 'flowbite-svelte-blocks';
-  import { Input, Button } from 'flowbite-svelte';
+  import { Input, Button, Label } from 'flowbite-svelte';
   import { Icon } from 'flowbite-svelte-icons';
 </script>
 
@@ -30,12 +30,13 @@ Use this example as a website section to allow website visitors to sign up for y
     <form action="/">
       <div class="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
         <div class="relative w-full">
-          <Input id="email" type="email" placeholder="Enter your email" size="lg">
+          <Label class="hidden">Email address</Label>
+          <Input id="email" type="email" placeholder="Enter your email" size="md" class="block p-3 pl-10 w-full text-sm rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
             <Icon name="envelope-solid" slot="left" size="sm" class="text-gray-500 dark:text-gray-400 ml-2" />
           </Input>
         </div>
         <div>
-          <Button type="submit" btnClass="py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg border cursor-pointer bg-primary-700 border-primary-600 sm:rounded-none sm:rounded-r-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Subscribe</Button>
+          <Button type="submit" class="py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg border cursor-pointer border-primary-600 sm:rounded-none sm:rounded-r-lg focus:ring-4  dark:focus:ring-primary-800">Subscribe</Button>
         </div>
       </div>
       <div class="mx-auto max-w-screen-sm text-sm text-left text-gray-500 newsletter-form-footer dark:text-gray-300">
