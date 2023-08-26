@@ -31,7 +31,7 @@
 <!--
 @component
 [Go to docs](https://flowbite-svelte-blocks.vercel.app/)
-## Component data
+## Props
 @prop export let divClass: string = 'items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700';
 @prop export let imgClass: string = 'w-full rounded-lg sm:rounded-none sm:rounded-l-lg';
 @prop export let h3Class: string = 'text-xl font-bold tracking-tight text-gray-900 dark:text-white';

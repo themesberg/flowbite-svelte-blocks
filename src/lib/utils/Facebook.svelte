@@ -9,6 +9,6 @@
 <!--
 @component
 [Go to docs](https://flowbite-svelte-blocks.vercel.app/)
-## Component data
+## Props
 @prop export let href: string = '';
 -->

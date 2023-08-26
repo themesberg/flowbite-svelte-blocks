@@ -12,6 +12,6 @@
 <!--
 @component
 [Go to docs](https://flowbite-svelte-blocks.vercel.app/)
-## Component data
+## Props
 @prop export let liClass: string = 'flex items-center space-x-3';
 -->

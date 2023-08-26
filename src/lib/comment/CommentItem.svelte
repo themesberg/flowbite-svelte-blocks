@@ -62,3 +62,11 @@
   <CommentItem comment={reply} articleClass="ml-6 lg:ml-12"/>
 {/each}
 {/if}
+
+<!--
+@component
+[Go to docs](https://flowbite-svelte-blocks.vercel.app/)
+## Props
+@prop export let replyButton: boolean = true;
+@prop export let comment: Comment;
+-->

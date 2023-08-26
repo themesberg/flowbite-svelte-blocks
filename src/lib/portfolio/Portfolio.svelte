@@ -25,7 +25,7 @@
 <!--
 @component
 [Go to docs](https://flowbite-svelte-blocks.vercel.app/)
-## Component data
+## Props
 @prop export let title: string = '';
 @prop export let subtitle: string = '';
 @prop export let headerDivClass: string = 'max-w-2xl mx-auto text-center';

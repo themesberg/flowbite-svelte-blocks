@@ -59,3 +59,10 @@
   {@html blog.content}
   <slot />
 </article>
+
+<!--
+@component
+[Go to docs](https://flowbite-svelte-blocks.vercel.app/)
+## Props
+@prop export let blog: Blog;
+-->
