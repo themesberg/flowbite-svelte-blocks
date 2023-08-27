@@ -74,7 +74,7 @@ Use this example of a free comments box to show a submission form and a list of 
       </Button>
     </form>
     {#each comments as comment, i}
-      <CommentItem {comment} articleClass ={ i !== 0 ? 'border-t':''}>
+      <CommentItem {comment} articleClass ={ i !== 0 ? 'border-t border-gray-200 dark:border-gray-700 rounded-none':''}>
         <svelte:fragment slot="dropdownMenu">
       <Icon name="dots-horizontal-outline" class="dots-menu dark:text-white" />
       <Dropdown triggeredBy=".dots-menu">
