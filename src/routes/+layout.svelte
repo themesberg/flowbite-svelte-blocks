@@ -8,7 +8,7 @@
   import Discord from './utils/icons/Discord.svelte';
   import YoutubeHome from './utils/icons/YoutubeHome.svelte';
   import ToolbarLink from './utils/ToolbarLink.svelte';
-  import { Icon } from 'flowbite-svelte-icons';
+  import { ChevronDownOutline } from 'flowbite-svelte-icons';
 
   let version = import.meta.env.VITE_APP_VERSION;
 
@@ -42,7 +42,7 @@
       <NavUl {hidden} {divClass} {ulClass} nonActiveClass="md:!pl-3 md:!py-2 lg:!pl-0 text-gray-700 hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 dark:text-gray-400 lg:dark:text-white lg:dark:hover:text-primary-700 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent" activeClass="md:!pl-3 md:!py-2 lg:!pl-0 text-white bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:dark:text-primary-700 dark:bg-primary-600 lg:dark:bg-transparent cursor-default">
         <NavLi class="lg:px-2 lg:mb-0" active={activeUrl === '/'} href="/">Home</NavLi>
         <NavLi id="nav-menu1" active={activeCategory} class="cursor-pointer">
-          Categories<Icon name="chevron-down-outline" class="w-3 h-3 ml-2 text-gray-500 dark:text-white inline" />
+          Categories<ChevronDownOutline class="w-3 h-3 ml-2 text-gray-500 dark:text-white inline" />
         </NavLi>
         <NavLi href="/pages/quickstart">Quickstart</NavLi>
         <NavLi href="https://flowbite-svelte.com">Flowbite-Svelte</NavLi>

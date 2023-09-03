@@ -14,7 +14,6 @@ Use this free example of a drawer component to show a list of checkbox, radio an
 ```svelte example class="flex justify-center items-start h-64"
 <script>
   import { Drawer, Button, CloseButton, Label, Input, Textarea, Checkbox, A, Heading, Rating, Radio } from 'flowbite-svelte';
-  import { Icon } from 'flowbite-svelte-icons';
   import { sineIn } from 'svelte/easing';
 
   let hidden4 = true;

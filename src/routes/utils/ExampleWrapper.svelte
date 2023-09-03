@@ -2,7 +2,7 @@
   import { twJoin } from 'tailwind-merge';
   import { Button, Tooltip } from 'flowbite-svelte';
   import ExampleDarkMode from './ExampleDarkMode.svelte';
-  import { Icon } from 'flowbite-svelte-icons';
+  import { GithubSolid } from 'flowbite-svelte-icons';
   import { page } from '$app/stores';
   import type { PageData } from '../$types';
   export let divClass = 'w-full mx-auto bg-gradient-to-r bg-white dark:bg-gray-900 p-2 sm:p-6';
@@ -87,7 +87,7 @@
       <div class="grid grid-cols-2">
         {#if path}
           <Button size="xs" color="alternative" class="dark:!bg-gray-900 w-fit hover:text-primary-600 gap-2" href={'' + path} target="_blank" rel="noreferrer">
-            <Icon name="github-solid" size="sm" />Edit on GitHub
+            <GithubSolid size="sm" />Edit on GitHub
           </Button>
           <div class="ml-auto">
             <ExampleDarkMode on:click={() => (dark = !dark)} {dark} />

@@ -11,7 +11,7 @@
   import {
     Button
   } from 'flowbite-svelte';
-  import { Icon } from 'flowbite-svelte-icons';
+  import { ArrowRightSolid, ChartSolid, LandmarkSolid, BriefcaseSolid, DollarSolid, RocketSolid, CogOutline, ChevronRightOutline } from 'flowbite-svelte-icons';
   import {
     Airbnb,
     Facebook,
@@ -39,7 +39,7 @@
       </svelte:fragment>
       <a href="/"
         ><Button size="xl" class="inline-flex items-center justify-center mr-3"
-          >Get started<Icon name="arrow-right-solid" class="ml-2 -mr-1" /></Button
+          >Get started<ArrowRightSolid class="ml-2 -mr-1" /></Button
         >
       </a>
       <a href="/"
@@ -72,7 +72,6 @@
       <a href="/" class="flex justify-center items-center">
         <Microsoft />
       </a>
-
       <a href="/" class="flex justify-center items-center">
         <Spotify />
       </a>
@@ -82,8 +81,8 @@
       <a href="/" class="flex justify-center items-center">
         <Mashable />
       </a>
-    </div></HeroHeader>
-
+    </div>
+  </HeroHeader>
 </Section>
 
 <Section name="feature">
@@ -101,7 +100,7 @@
   <FeatureDefault>
     <FeatureItem>
       <svelte:fragment slot="icon"
-        ><Icon name="chart-solid"
+        ><ChartSolid
           class="text-primary-600 dark:text-primary-300"
         /></svelte:fragment
       >
@@ -113,7 +112,7 @@
     </FeatureItem>
     <FeatureItem>
       <svelte:fragment slot="icon"
-        ><Icon name="landmark-solid"
+        ><LandmarkSolid
           class="text-primary-600 dark:text-primary-300"
         /></svelte:fragment
       >
@@ -125,7 +124,7 @@
     </FeatureItem>
     <FeatureItem>
       <svelte:fragment slot="icon"
-        ><Icon name="briefcase-solid"
+        ><BriefcaseSolid
           class="text-primary-600 dark:text-primary-300"
         /></svelte:fragment
       >
@@ -137,7 +136,7 @@
     </FeatureItem>
     <FeatureItem>
       <svelte:fragment slot="icon"
-        ><Icon name="dollar-solid"
+        ><DollarSolid
           class="text-primary-600 dark:text-primary-300"
         /></svelte:fragment
       >
@@ -149,7 +148,7 @@
     </FeatureItem>
     <FeatureItem>
       <svelte:fragment slot="icon"
-        ><Icon name="rocket-solid"
+        ><RocketSolid
           class="text-primary-600 dark:text-primary-300"
         /></svelte:fragment
       >
@@ -161,7 +160,7 @@
     </FeatureItem>
     <FeatureItem>
       <svelte:fragment slot="icon"
-        ><Icon name="cog-outline"
+        ><CogOutline
           class="text-primary-600 dark:text-primary-300"
         /></svelte:fragment
       >
@@ -222,7 +221,7 @@
       class="inline-flex items-center font-medium text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700"
     >
       Learn more
-      <Icon name="chevron-right-outline" class="ml-1" size="sm" />
+      <ChevronRightOutline class="ml-1" size="sm" />
     </a>
   </Content>
 </Section>

@@ -15,7 +15,7 @@ Use this free blog template to show the content of an article using the Flowbite
 <script>
   import { Section, BlogTemplate, Comment, CommentItem } from 'flowbite-svelte-blocks';
   import { Button, Textarea, Label, Dropdown, DropdownItem } from 'flowbite-svelte';
-  import { Icon } from 'flowbite-svelte-icons';
+  import { DotsHorizontalOutline } from 'flowbite-svelte-icons';
   import blog from './blog-example.json';
   const comments = [
     {
@@ -81,7 +81,7 @@ Use this free blog template to show the content of an article using the Flowbite
         {#each comments as comment, i}
           <CommentItem {comment} articleClass ={ i !== 0 ? 'border-t':''}>
             <svelte:fragment slot="dropdownMenu">
-          <Icon name="dots-horizontal-outline" class="dots-menu dark:text-white" />
+          <DotsHorizontalOutline class="dots-menu dark:text-white" />
           <Dropdown triggeredBy=".dots-menu">
             <DropdownItem>Edit</DropdownItem>
             <DropdownItem>Remove</DropdownItem>
