@@ -1,6 +1,6 @@
 {
   "name": "flowbite-svelte-blocks",
-  "version": "0.4.14",
+  "version": "0.5.1",
   "description": "Flowbite blocks components for Svelte",
   "author": {
     "name": "Shinichi Okada",
@@ -27,7 +27,7 @@
     "gen:docs": "svelte-lib-helpers docs",
     "gen:compo-data": "svelte-lib-helpers compo-data",
     "copy:package": "svelte-lib-helpers package",
-    "lib-helpers": "npm run gen:docs && npm run gen:compo-data && npm run build && npm run gen:exports && npm run copy:package",
+    "lib-helpers": "npm run format && npm run gen:docs && npm run build && npm run gen:exports && npm run copy:package",
     "package:publish": "npm run lib-helpers && npm run format && standard-version && git push --follow-tags origin main && npm publish"
   },
   "devDependencies": {
@@ -91,229 +91,233 @@
   "svelte": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
-    "./ForgotPassword.svelte": {
-      "types": "./dist/acount-recovery/ForgotPassword.svelte.d.ts",
-      "svelte": "./dist/acount-recovery/ForgotPassword.svelte"
-    },
-    "./ForgotPasswordHeader.svelte": {
-      "types": "./dist/acount-recovery/ForgotPasswordHeader.svelte.d.ts",
-      "svelte": "./dist/acount-recovery/ForgotPasswordHeader.svelte"
-    },
-    "./Banner.svelte": {
-      "types": "./dist/banner/Banner.svelte.d.ts",
-      "svelte": "./dist/banner/Banner.svelte"
-    },
-    "./ArticleAuthor.svelte": {
-      "types": "./dist/blog/ArticleAuthor.svelte.d.ts",
-      "svelte": "./dist/blog/ArticleAuthor.svelte"
-    },
-    "./ArticleBody.svelte": {
-      "types": "./dist/blog/ArticleBody.svelte.d.ts",
-      "svelte": "./dist/blog/ArticleBody.svelte"
-    },
-    "./ArticleHead.svelte": {
-      "types": "./dist/blog/ArticleHead.svelte.d.ts",
-      "svelte": "./dist/blog/ArticleHead.svelte"
-    },
-    "./ArticleWrapper.svelte": {
-      "types": "./dist/blog/ArticleWrapper.svelte.d.ts",
-      "svelte": "./dist/blog/ArticleWrapper.svelte"
-    },
-    "./BlogBodyWrapper.svelte": {
-      "types": "./dist/blog/BlogBodyWrapper.svelte.d.ts",
-      "svelte": "./dist/blog/BlogBodyWrapper.svelte"
-    },
-    "./BlogHead.svelte": {
-      "types": "./dist/blog/BlogHead.svelte.d.ts",
-      "svelte": "./dist/blog/BlogHead.svelte"
-    },
-    "./BlogTemplate.svelte": {
-      "types": "./dist/blog-template/BlogTemplate.svelte.d.ts",
-      "svelte": "./dist/blog-template/BlogTemplate.svelte"
-    },
-    "./Comment.svelte": {
-      "types": "./dist/comment/Comment.svelte.d.ts",
-      "svelte": "./dist/comment/Comment.svelte"
-    },
-    "./CommentItem.svelte": {
-      "types": "./dist/comment/CommentItem.svelte.d.ts",
-      "svelte": "./dist/comment/CommentItem.svelte"
-    },
-    "./Contact.svelte": {
-      "types": "./dist/contact/Contact.svelte.d.ts",
-      "svelte": "./dist/contact/Contact.svelte"
-    },
-    "./Content.svelte": {
-      "types": "./dist/content/Content.svelte.d.ts",
-      "svelte": "./dist/content/Content.svelte"
-    },
-    "./ContentWithImage.svelte": {
-      "types": "./dist/content/ContentWithImage.svelte.d.ts",
-      "svelte": "./dist/content/ContentWithImage.svelte"
-    },
-    "./Cta.svelte": {
-      "types": "./dist/cta/Cta.svelte.d.ts",
-      "svelte": "./dist/cta/Cta.svelte"
-    },
-    "./Faq.svelte": {
-      "types": "./dist/faq/Faq.svelte.d.ts",
-      "svelte": "./dist/faq/Faq.svelte"
-    },
-    "./FaqItem.svelte": {
-      "types": "./dist/faq/FaqItem.svelte.d.ts",
-      "svelte": "./dist/faq/FaqItem.svelte"
-    },
-    "./FeatureDefault.svelte": {
-      "types": "./dist/feature/FeatureDefault.svelte.d.ts",
-      "svelte": "./dist/feature/FeatureDefault.svelte"
-    },
-    "./FeatureItem.svelte": {
-      "types": "./dist/feature/FeatureItem.svelte.d.ts",
-      "svelte": "./dist/feature/FeatureItem.svelte"
-    },
-    "./Navigation.svelte": {
-      "types": "./dist/header/Navigation.svelte.d.ts",
-      "svelte": "./dist/header/Navigation.svelte"
-    },
-    "./HeroBody.svelte": {
-      "types": "./dist/hero/HeroBody.svelte.d.ts",
-      "svelte": "./dist/hero/HeroBody.svelte"
-    },
-    "./HeroHeader.svelte": {
-      "types": "./dist/hero/HeroHeader.svelte.d.ts",
-      "svelte": "./dist/hero/HeroHeader.svelte"
-    },
-    "./News.svelte": {
-      "types": "./dist/hero/News.svelte.d.ts",
-      "svelte": "./dist/hero/News.svelte"
-    },
-    "./Maintenance.svelte": {
-      "types": "./dist/maintenance/Maintenance.svelte.d.ts",
-      "svelte": "./dist/maintenance/Maintenance.svelte"
-    },
-    "./ToolsIcon.svelte": {
-      "types": "./dist/maintenance/ToolsIcon.svelte.d.ts",
-      "svelte": "./dist/maintenance/ToolsIcon.svelte"
-    },
-    "./Newsletter.svelte": {
-      "types": "./dist/newsletter/Newsletter.svelte.d.ts",
-      "svelte": "./dist/newsletter/Newsletter.svelte"
-    },
-    "./Page404.svelte": {
-      "types": "./dist/page404/Page404.svelte.d.ts",
-      "svelte": "./dist/page404/Page404.svelte"
-    },
-    "./Page500.svelte": {
-      "types": "./dist/page500/Page500.svelte.d.ts",
-      "svelte": "./dist/page500/Page500.svelte"
-    },
-    "./Popup.svelte": {
-      "types": "./dist/popup/Popup.svelte.d.ts",
-      "svelte": "./dist/popup/Popup.svelte"
-    },
-    "./Portfolio.svelte": {
-      "types": "./dist/portfolio/Portfolio.svelte.d.ts",
-      "svelte": "./dist/portfolio/Portfolio.svelte"
-    },
-    "./PortfolioItem.svelte": {
-      "types": "./dist/portfolio/PortfolioItem.svelte.d.ts",
-      "svelte": "./dist/portfolio/PortfolioItem.svelte"
-    },
-    "./PricingBodyHead.svelte": {
-      "types": "./dist/pricing/PricingBodyHead.svelte.d.ts",
-      "svelte": "./dist/pricing/PricingBodyHead.svelte"
-    },
-    "./PricingCard.svelte": {
-      "types": "./dist/pricing/PricingCard.svelte.d.ts",
-      "svelte": "./dist/pricing/PricingCard.svelte"
-    },
-    "./PricingHead.svelte": {
-      "types": "./dist/pricing/PricingHead.svelte.d.ts",
-      "svelte": "./dist/pricing/PricingHead.svelte"
-    },
-    "./PricingItem.svelte": {
-      "types": "./dist/pricing/PricingItem.svelte.d.ts",
-      "svelte": "./dist/pricing/PricingItem.svelte"
-    },
-    "./PricingItemWrapper.svelte": {
-      "types": "./dist/pricing/PricingItemWrapper.svelte.d.ts",
-      "svelte": "./dist/pricing/PricingItemWrapper.svelte"
-    },
-    "./Register.svelte": {
-      "types": "./dist/register/Register.svelte.d.ts",
-      "svelte": "./dist/register/Register.svelte"
-    },
-    "./Schedule.svelte": {
-      "types": "./dist/schedule/Schedule.svelte.d.ts",
-      "svelte": "./dist/schedule/Schedule.svelte"
-    },
-    "./ScheduleItem.svelte": {
-      "types": "./dist/schedule/ScheduleItem.svelte.d.ts",
-      "svelte": "./dist/schedule/ScheduleItem.svelte"
-    },
-    "./SidebarBottomNav.svelte": {
-      "types": "./dist/sidebar/SidebarBottomNav.svelte.d.ts",
-      "svelte": "./dist/sidebar/SidebarBottomNav.svelte"
-    },
-    "./SidebarBottomNavItem.svelte": {
-      "types": "./dist/sidebar/SidebarBottomNavItem.svelte.d.ts",
-      "svelte": "./dist/sidebar/SidebarBottomNavItem.svelte"
-    },
-    "./Social.svelte": {
-      "types": "./dist/social/Social.svelte.d.ts",
-      "svelte": "./dist/social/Social.svelte"
-    },
-    "./TableHeader.svelte": {
-      "types": "./dist/tableheader/TableHeader.svelte.d.ts",
-      "svelte": "./dist/tableheader/TableHeader.svelte"
-    },
-    "./TeamBody.svelte": {
-      "types": "./dist/team/TeamBody.svelte.d.ts",
-      "svelte": "./dist/team/TeamBody.svelte"
-    },
-    "./TeamHeader.svelte": {
-      "types": "./dist/team/TeamHeader.svelte.d.ts",
-      "svelte": "./dist/team/TeamHeader.svelte"
-    },
-    "./TeamItem.svelte": {
-      "types": "./dist/team/TeamItem.svelte.d.ts",
-      "svelte": "./dist/team/TeamItem.svelte"
-    },
-    "./TeamWrapper.svelte": {
-      "types": "./dist/team/TeamWrapper.svelte.d.ts",
-      "svelte": "./dist/team/TeamWrapper.svelte"
-    },
-    "./Testimonial.svelte": {
-      "types": "./dist/testimonial/Testimonial.svelte.d.ts",
-      "svelte": "./dist/testimonial/Testimonial.svelte"
-    },
-    "./TestimonialCard.svelte": {
-      "types": "./dist/testimonial/TestimonialCard.svelte.d.ts",
-      "svelte": "./dist/testimonial/TestimonialCard.svelte"
-    },
-    "./TestimonialCardItem.svelte": {
-      "types": "./dist/testimonial/TestimonialCardItem.svelte.d.ts",
-      "svelte": "./dist/testimonial/TestimonialCardItem.svelte"
-    },
-    "./Facebook.svelte": {
-      "types": "./dist/utils/Facebook.svelte.d.ts",
-      "svelte": "./dist/utils/Facebook.svelte"
-    },
-    "./Github.svelte": {
-      "types": "./dist/utils/Github.svelte.d.ts",
-      "svelte": "./dist/utils/Github.svelte"
-    },
-    "./Quotes.svelte": {
-      "types": "./dist/utils/Quotes.svelte.d.ts",
-      "svelte": "./dist/utils/Quotes.svelte"
-    },
-    "./Twitter.svelte": {
-      "types": "./dist/utils/Twitter.svelte.d.ts",
-      "svelte": "./dist/utils/Twitter.svelte"
-    },
     ".": {
       "types": "./dist/index.d.ts",
       "svelte": "./dist/index.js"
+    },
+    "./Section.svelte": {
+      "types": "./dist/Section.svelte.d.ts",
+      "svelte": "./dist/Section.svelte"
+    },
+    "./acount-recovery/ForgotPassword.svelte": {
+      "types": "./dist/acount-recovery/ForgotPassword.svelte.d.ts",
+      "svelte": "./dist/acount-recovery/ForgotPassword.svelte"
+    },
+    "./acount-recovery/ForgotPasswordHeader.svelte": {
+      "types": "./dist/acount-recovery/ForgotPasswordHeader.svelte.d.ts",
+      "svelte": "./dist/acount-recovery/ForgotPasswordHeader.svelte"
+    },
+    "./banner/Banner.svelte": {
+      "types": "./dist/banner/Banner.svelte.d.ts",
+      "svelte": "./dist/banner/Banner.svelte"
+    },
+    "./blog/ArticleAuthor.svelte": {
+      "types": "./dist/blog/ArticleAuthor.svelte.d.ts",
+      "svelte": "./dist/blog/ArticleAuthor.svelte"
+    },
+    "./blog/ArticleBody.svelte": {
+      "types": "./dist/blog/ArticleBody.svelte.d.ts",
+      "svelte": "./dist/blog/ArticleBody.svelte"
+    },
+    "./blog/ArticleHead.svelte": {
+      "types": "./dist/blog/ArticleHead.svelte.d.ts",
+      "svelte": "./dist/blog/ArticleHead.svelte"
+    },
+    "./blog/ArticleWrapper.svelte": {
+      "types": "./dist/blog/ArticleWrapper.svelte.d.ts",
+      "svelte": "./dist/blog/ArticleWrapper.svelte"
+    },
+    "./blog/BlogBodyWrapper.svelte": {
+      "types": "./dist/blog/BlogBodyWrapper.svelte.d.ts",
+      "svelte": "./dist/blog/BlogBodyWrapper.svelte"
+    },
+    "./blog/BlogHead.svelte": {
+      "types": "./dist/blog/BlogHead.svelte.d.ts",
+      "svelte": "./dist/blog/BlogHead.svelte"
+    },
+    "./blog-template/BlogTemplate.svelte": {
+      "types": "./dist/blog-template/BlogTemplate.svelte.d.ts",
+      "svelte": "./dist/blog-template/BlogTemplate.svelte"
+    },
+    "./comment/Comment.svelte": {
+      "types": "./dist/comment/Comment.svelte.d.ts",
+      "svelte": "./dist/comment/Comment.svelte"
+    },
+    "./comment/CommentItem.svelte": {
+      "types": "./dist/comment/CommentItem.svelte.d.ts",
+      "svelte": "./dist/comment/CommentItem.svelte"
+    },
+    "./contact/Contact.svelte": {
+      "types": "./dist/contact/Contact.svelte.d.ts",
+      "svelte": "./dist/contact/Contact.svelte"
+    },
+    "./content/Content.svelte": {
+      "types": "./dist/content/Content.svelte.d.ts",
+      "svelte": "./dist/content/Content.svelte"
+    },
+    "./content/ContentWithImage.svelte": {
+      "types": "./dist/content/ContentWithImage.svelte.d.ts",
+      "svelte": "./dist/content/ContentWithImage.svelte"
+    },
+    "./cta/Cta.svelte": {
+      "types": "./dist/cta/Cta.svelte.d.ts",
+      "svelte": "./dist/cta/Cta.svelte"
+    },
+    "./faq/Faq.svelte": {
+      "types": "./dist/faq/Faq.svelte.d.ts",
+      "svelte": "./dist/faq/Faq.svelte"
+    },
+    "./faq/FaqItem.svelte": {
+      "types": "./dist/faq/FaqItem.svelte.d.ts",
+      "svelte": "./dist/faq/FaqItem.svelte"
+    },
+    "./feature/FeatureDefault.svelte": {
+      "types": "./dist/feature/FeatureDefault.svelte.d.ts",
+      "svelte": "./dist/feature/FeatureDefault.svelte"
+    },
+    "./feature/FeatureItem.svelte": {
+      "types": "./dist/feature/FeatureItem.svelte.d.ts",
+      "svelte": "./dist/feature/FeatureItem.svelte"
+    },
+    "./header/Navigation.svelte": {
+      "types": "./dist/header/Navigation.svelte.d.ts",
+      "svelte": "./dist/header/Navigation.svelte"
+    },
+    "./hero/HeroBody.svelte": {
+      "types": "./dist/hero/HeroBody.svelte.d.ts",
+      "svelte": "./dist/hero/HeroBody.svelte"
+    },
+    "./hero/HeroHeader.svelte": {
+      "types": "./dist/hero/HeroHeader.svelte.d.ts",
+      "svelte": "./dist/hero/HeroHeader.svelte"
+    },
+    "./hero/News.svelte": {
+      "types": "./dist/hero/News.svelte.d.ts",
+      "svelte": "./dist/hero/News.svelte"
+    },
+    "./maintenance/Maintenance.svelte": {
+      "types": "./dist/maintenance/Maintenance.svelte.d.ts",
+      "svelte": "./dist/maintenance/Maintenance.svelte"
+    },
+    "./maintenance/ToolsIcon.svelte": {
+      "types": "./dist/maintenance/ToolsIcon.svelte.d.ts",
+      "svelte": "./dist/maintenance/ToolsIcon.svelte"
+    },
+    "./newsletter/Newsletter.svelte": {
+      "types": "./dist/newsletter/Newsletter.svelte.d.ts",
+      "svelte": "./dist/newsletter/Newsletter.svelte"
+    },
+    "./page404/Page404.svelte": {
+      "types": "./dist/page404/Page404.svelte.d.ts",
+      "svelte": "./dist/page404/Page404.svelte"
+    },
+    "./page500/Page500.svelte": {
+      "types": "./dist/page500/Page500.svelte.d.ts",
+      "svelte": "./dist/page500/Page500.svelte"
+    },
+    "./popup/Popup.svelte": {
+      "types": "./dist/popup/Popup.svelte.d.ts",
+      "svelte": "./dist/popup/Popup.svelte"
+    },
+    "./portfolio/Portfolio.svelte": {
+      "types": "./dist/portfolio/Portfolio.svelte.d.ts",
+      "svelte": "./dist/portfolio/Portfolio.svelte"
+    },
+    "./portfolio/PortfolioItem.svelte": {
+      "types": "./dist/portfolio/PortfolioItem.svelte.d.ts",
+      "svelte": "./dist/portfolio/PortfolioItem.svelte"
+    },
+    "./pricing/PricingBodyHead.svelte": {
+      "types": "./dist/pricing/PricingBodyHead.svelte.d.ts",
+      "svelte": "./dist/pricing/PricingBodyHead.svelte"
+    },
+    "./pricing/PricingCard.svelte": {
+      "types": "./dist/pricing/PricingCard.svelte.d.ts",
+      "svelte": "./dist/pricing/PricingCard.svelte"
+    },
+    "./pricing/PricingHead.svelte": {
+      "types": "./dist/pricing/PricingHead.svelte.d.ts",
+      "svelte": "./dist/pricing/PricingHead.svelte"
+    },
+    "./pricing/PricingItem.svelte": {
+      "types": "./dist/pricing/PricingItem.svelte.d.ts",
+      "svelte": "./dist/pricing/PricingItem.svelte"
+    },
+    "./pricing/PricingItemWrapper.svelte": {
+      "types": "./dist/pricing/PricingItemWrapper.svelte.d.ts",
+      "svelte": "./dist/pricing/PricingItemWrapper.svelte"
+    },
+    "./register/Register.svelte": {
+      "types": "./dist/register/Register.svelte.d.ts",
+      "svelte": "./dist/register/Register.svelte"
+    },
+    "./schedule/Schedule.svelte": {
+      "types": "./dist/schedule/Schedule.svelte.d.ts",
+      "svelte": "./dist/schedule/Schedule.svelte"
+    },
+    "./schedule/ScheduleItem.svelte": {
+      "types": "./dist/schedule/ScheduleItem.svelte.d.ts",
+      "svelte": "./dist/schedule/ScheduleItem.svelte"
+    },
+    "./sidebar/SidebarBottomNav.svelte": {
+      "types": "./dist/sidebar/SidebarBottomNav.svelte.d.ts",
+      "svelte": "./dist/sidebar/SidebarBottomNav.svelte"
+    },
+    "./sidebar/SidebarBottomNavItem.svelte": {
+      "types": "./dist/sidebar/SidebarBottomNavItem.svelte.d.ts",
+      "svelte": "./dist/sidebar/SidebarBottomNavItem.svelte"
+    },
+    "./social/Social.svelte": {
+      "types": "./dist/social/Social.svelte.d.ts",
+      "svelte": "./dist/social/Social.svelte"
+    },
+    "./tableheader/TableHeader.svelte": {
+      "types": "./dist/tableheader/TableHeader.svelte.d.ts",
+      "svelte": "./dist/tableheader/TableHeader.svelte"
+    },
+    "./team/TeamBody.svelte": {
+      "types": "./dist/team/TeamBody.svelte.d.ts",
+      "svelte": "./dist/team/TeamBody.svelte"
+    },
+    "./team/TeamHeader.svelte": {
+      "types": "./dist/team/TeamHeader.svelte.d.ts",
+      "svelte": "./dist/team/TeamHeader.svelte"
+    },
+    "./team/TeamItem.svelte": {
+      "types": "./dist/team/TeamItem.svelte.d.ts",
+      "svelte": "./dist/team/TeamItem.svelte"
+    },
+    "./team/TeamWrapper.svelte": {
+      "types": "./dist/team/TeamWrapper.svelte.d.ts",
+      "svelte": "./dist/team/TeamWrapper.svelte"
+    },
+    "./testimonial/Testimonial.svelte": {
+      "types": "./dist/testimonial/Testimonial.svelte.d.ts",
+      "svelte": "./dist/testimonial/Testimonial.svelte"
+    },
+    "./testimonial/TestimonialCard.svelte": {
+      "types": "./dist/testimonial/TestimonialCard.svelte.d.ts",
+      "svelte": "./dist/testimonial/TestimonialCard.svelte"
+    },
+    "./testimonial/TestimonialCardItem.svelte": {
+      "types": "./dist/testimonial/TestimonialCardItem.svelte.d.ts",
+      "svelte": "./dist/testimonial/TestimonialCardItem.svelte"
+    },
+    "./utils/Facebook.svelte": {
+      "types": "./dist/utils/Facebook.svelte.d.ts",
+      "svelte": "./dist/utils/Facebook.svelte"
+    },
+    "./utils/Github.svelte": {
+      "types": "./dist/utils/Github.svelte.d.ts",
+      "svelte": "./dist/utils/Github.svelte"
+    },
+    "./utils/Quotes.svelte": {
+      "types": "./dist/utils/Quotes.svelte.d.ts",
+      "svelte": "./dist/utils/Quotes.svelte"
+    },
+    "./utils/Twitter.svelte": {
+      "types": "./dist/utils/Twitter.svelte.d.ts",
+      "svelte": "./dist/utils/Twitter.svelte"
     }
   }
 }
