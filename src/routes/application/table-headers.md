@@ -20,7 +20,7 @@ Use this free example of a header component that you can position on top of a he
 <script lang="ts">
   import { Section, TableHeader } from 'flowbite-svelte-blocks';
   import { Button, Heading, P, Search, Dropdown, DropdownItem, DropdownDivider, Checkbox } from 'flowbite-svelte';
-  import { Icon } from 'flowbite-svelte-icons';
+  import { ChevronDownOutline } from 'flowbite-svelte-icons';
 </script>
 
 <Section name="tableheader" sectionClass="bg-gray-50 dark:bg-gray-900 h-80 flex pt-8">
@@ -33,7 +33,7 @@ Use this free example of a header component that you can position on top of a he
       Add product
     </Button>
     <Button color="light">
-      Actions<Icon name="chevron-down-outline" />
+      Actions<ChevronDownOutline />
     </Button>
     <Dropdown>
       <DropdownItem>Mass Edit</DropdownItem>
@@ -44,7 +44,7 @@ Use this free example of a header component that you can position on top of a he
       <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="w-4 h-4 mr-2 text-gray-400" viewbox="0 0 20 20" fill="currentColor">
         <path fill-rule="evenodd" d="M3 3a1 1 0 011-1h12a1 1 0 011 1v3a1 1 0 01-.293.707L12 11.414V15a1 1 0 01-.293.707l-2 2A1 1 0 018 17v-5.586L3.293 6.707A1 1 0 013 6V3z" clip-rule="evenodd" />
       </svg>
-      Filter<Icon name="chevron-down-outline" />
+      Filter<ChevronDownOutline />
     </Button>
     <Dropdown class="w-48 p-2 text-sm">
       <h6 class="mb-3 ml-1 text-sm font-medium text-gray-900 dark:text-white">Category</h6>

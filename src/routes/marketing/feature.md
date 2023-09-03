@@ -23,7 +23,7 @@ Get started with this default example of feature items based on a grid layout wh
 ```svelte example
 <script lang="ts">
   import { Section, HeroHeader, FeatureDefault, FeatureItem } from 'flowbite-svelte-blocks';
-  import { Icon } from 'flowbite-svelte-icons';
+  import { ChartSolid, LandmarkSolid, BriefcaseSolid, DollarSolid, RocketSolid, CogOutline } from 'flowbite-svelte-icons';
 </script>
 
 <Section name="feature">
@@ -33,32 +33,32 @@ Get started with this default example of feature items based on a grid layout wh
   </HeroHeader>
   <FeatureDefault>
     <FeatureItem>
-      <svelte:fragment slot="icon"><Icon name="chart-solid" class="text-primary-600 dark:text-primary-300" /></svelte:fragment>
+      <svelte:fragment slot="icon"><ChartSolid class="text-primary-600 dark:text-primary-300" /></svelte:fragment>
       <svelte:fragment slot="h3">Marketing</svelte:fragment>
       <svelte:fragment slot="paragraph">Plan it, create it, launch it. Collaborate seamlessly with all the organization and hit your marketing goals every month with our marketing plan.</svelte:fragment>
     </FeatureItem>
     <FeatureItem>
-      <svelte:fragment slot="icon"><Icon name="landmark-solid" class="text-primary-600 dark:text-primary-300" /></svelte:fragment>
+      <svelte:fragment slot="icon"><LandmarkSolid class="text-primary-600 dark:text-primary-300" /></svelte:fragment>
       <svelte:fragment slot="h3">Legal</svelte:fragment>
       <svelte:fragment slot="paragraph">Protect your organization, devices and stay compliant with our structured workflows and custom permissions made for you.</svelte:fragment>
     </FeatureItem>
     <FeatureItem>
-      <svelte:fragment slot="icon"><Icon name="briefcase-solid" class="text-primary-600 dark:text-primary-300" /></svelte:fragment>
+      <svelte:fragment slot="icon"><BriefcaseSolid class="text-primary-600 dark:text-primary-300" /></svelte:fragment>
       <svelte:fragment slot="h3">Business Automation</svelte:fragment>
       <svelte:fragment slot="paragraph">Auto-assign tasks, send Slack messages, and much more. Now power up with hundreds of new templates to help you get started.</svelte:fragment>
     </FeatureItem>
     <FeatureItem>
-      <svelte:fragment slot="icon"><Icon name="dollar-solid" class="text-primary-600 dark:text-primary-300" /></svelte:fragment>
+      <svelte:fragment slot="icon"><DollarSolid class="text-primary-600 dark:text-primary-300" /></svelte:fragment>
       <svelte:fragment slot="h3">Finance</svelte:fragment>
       <svelte:fragment slot="paragraph">Audit-proof software built for critical financial operations like month-end close and quarterly budgeting.</svelte:fragment>
     </FeatureItem>
     <FeatureItem>
-      <svelte:fragment slot="icon"><Icon name="rocket-solid" class="text-primary-600 dark:text-primary-300" /></svelte:fragment>
+      <svelte:fragment slot="icon"><RocketSolid class="text-primary-600 dark:text-primary-300" /></svelte:fragment>
       <svelte:fragment slot="h3">Enterprise Design</svelte:fragment>
       <svelte:fragment slot="paragraph">Craft beautiful, delightful experiences for both marketing and product with real cross-company collaboration.</svelte:fragment>
     </FeatureItem>
     <FeatureItem>
-      <svelte:fragment slot="icon"><Icon name="cog-outline" class="text-primary-600 dark:text-primary-300" /></svelte:fragment>
+      <svelte:fragment slot="icon"><CogOutline class="text-primary-600 dark:text-primary-300" /></svelte:fragment>
       <svelte:fragment slot="h3">Operations</svelte:fragment>
       <svelte:fragment slot="paragraph">Keep your company’s lights on with customizable, iterative, and structured workflows built for all efficient teams and individual.</svelte:fragment>
     </FeatureItem>

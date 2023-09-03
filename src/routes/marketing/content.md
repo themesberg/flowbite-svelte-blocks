@@ -19,7 +19,7 @@ Use this example to show a heading with a paragraph and a CTA link anywhere on y
 ```svelte example
 <script lang="ts">
   import { Section, Content, ContentWithImage } from 'flowbite-svelte-blocks';
-  import { Icon } from 'flowbite-svelte-icons';
+  import { ChevronRightSolid } from 'flowbite-svelte-icons';
 </script>
 
 <Section name="content">
@@ -29,7 +29,7 @@ Use this example to show a heading with a paragraph and a CTA link anywhere on y
     <p class="mb-4 font-medium">Deliver great service experiences fast - without the complexity of traditional ITSM solutions.Accelerate critical development work, eliminate toil, and deploy changes with ease.</p>
     <a href="/" class="inline-flex items-center font-medium text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700">
       Learn more
-      <Icon name="chevron-right-solid" class="ml-2" size="xs" />
+      <ChevronRightSolid class="ml-2" size="xs" />
     </a>
   </Content>
 </Section>

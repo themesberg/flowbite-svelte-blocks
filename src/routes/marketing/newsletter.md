@@ -20,7 +20,7 @@ Use this example as a website section to allow website visitors to sign up for y
 <script lang="ts">
   import { Section, Newsletter } from 'flowbite-svelte-blocks';
   import { Input, Button, Label } from 'flowbite-svelte';
-  import { Icon } from 'flowbite-svelte-icons';
+  import { EnvelopeSolid } from 'flowbite-svelte-icons';
 </script>
 
 <Section>
@@ -32,7 +32,7 @@ Use this example as a website section to allow website visitors to sign up for y
         <div class="relative w-full">
           <Label class="hidden">Email address</Label>
           <Input id="email" type="email" placeholder="Enter your email" size="md" class="block p-3 pl-10 w-full text-sm rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
-            <Icon name="envelope-solid" slot="left" size="sm" class="text-gray-500 dark:text-gray-400 ml-2" />
+            <EnvelopeSolid slot="left" size="sm" class="text-gray-500 dark:text-gray-400 ml-2" />
           </Input>
         </div>
         <div>

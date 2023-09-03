@@ -15,7 +15,7 @@ Use this example of a free comments box to show a submission form and a list of 
 <script>
   import { Section, Comment, CommentItem } from 'flowbite-svelte-blocks';
   import { Button, Textarea, Label, Dropdown, DropdownItem } from 'flowbite-svelte';
-  import { Icon } from 'flowbite-svelte-icons';
+  import { DotsHorizontalOutline } from 'flowbite-svelte-icons';
   const comments = [
     {
       id: "comment1",
@@ -76,7 +76,7 @@ Use this example of a free comments box to show a submission form and a list of 
     {#each comments as comment, i}
       <CommentItem {comment} articleClass ={ i !== 0 ? 'border-t border-gray-200 dark:border-gray-700 rounded-none':''}>
         <svelte:fragment slot="dropdownMenu">
-      <Icon name="dots-horizontal-outline" class="dots-menu dark:text-white" />
+      <DotsHorizontalOutline class="dots-menu dark:text-white" />
       <Dropdown triggeredBy=".dots-menu">
         <DropdownItem>Edit</DropdownItem>
         <DropdownItem>Remove</DropdownItem>

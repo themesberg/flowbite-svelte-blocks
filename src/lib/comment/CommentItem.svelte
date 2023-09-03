@@ -2,7 +2,7 @@
   import { twMerge } from 'tailwind-merge';
   import type { Comment } from '../types';
   import CommentItem from './CommentItem.svelte';
-  import { Icon } from 'flowbite-svelte-icons';
+  import { MessageDotsOutline } from 'flowbite-svelte-icons';
 
   export let replyButton: boolean = true;
   export let comment: Comment;
@@ -38,7 +38,7 @@
     <div class="flex items-center mt-4 space-x-4">
       <button type="button"
           class="flex items-center text-sm text-gray-500 hover:underline dark:text-gray-400">
-          <Icon name='message-dots-outline' class="mr-1 w-4 h-4" />
+          <MessageDotsOutline class="mr-1 w-4 h-4" />
           Reply
       </button>
     </div>

@@ -19,8 +19,7 @@ Use this example to show a preview of a blog post including the title, descripti
 ```svelte example
 <script>
   import { Section, ArticleAuthor, ArticleBody, ArticleHead, ArticleWrapper, BlogHead, BlogBodyWrapper } from 'flowbite-svelte-blocks';
-
-  import { Icon } from 'flowbite-svelte-icons';
+  import { VideoSolid, ArrowRightOutline, NewspaperSolid } from 'flowbite-svelte-icons';
 </script>
 
 <Section name="blog">
@@ -34,7 +33,7 @@ Use this example to show a preview of a blog post including the title, descripti
     <ArticleWrapper>
       <ArticleHead>
         <span class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
-          <Icon name="video-solid" size="xs" class="mr-1" />
+          <VideoSolid size="xs" class="mr-1" />
           Tutorial
         </span>
         <span class="text-sm">14 days ago</span>
@@ -52,7 +51,7 @@ Use this example to show a preview of a blog post including the title, descripti
         </svelte:fragment>
         <a href="/" class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
           Read more
-          <Icon name="arrow-right-outline" size="sm" class="ml-2" />
+          <ArrowRightOutline size="sm" class="ml-2" />
         </a>
       </ArticleAuthor>
     </ArticleWrapper>
@@ -60,7 +59,7 @@ Use this example to show a preview of a blog post including the title, descripti
     <ArticleWrapper>
       <ArticleHead>
         <span class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
-          <Icon name="newspaper-solid" size="xs" class="mr-1" />
+          <NewspaperSolid size="xs" class="mr-1" />
           Article
         </span>
         <span class="text-sm">14 days ago</span>
@@ -78,7 +77,7 @@ Use this example to show a preview of a blog post including the title, descripti
         </svelte:fragment>
         <a href="/" class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
           Read more
-          <Icon name="arrow-right-outline" size="sm" class="ml-2" />
+          <ArrowRightOutline size="sm" class="ml-2" />
         </a>
       </ArticleAuthor>
     </ArticleWrapper>
