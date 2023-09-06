@@ -78,20 +78,20 @@ export const fetchMarkdownPosts = async () => {
 
 export const fetchComponentData = async () => {
   const josonFiles = import.meta.glob('/src/routes/component-data/*.json');
-    // const iterableJsonFiles = Object.entries(josonFiles);
+  // const iterableJsonFiles = Object.entries(josonFiles);
 
-    // const allJsonFiles = await Promise.all(
-    //   iterableJsonFiles.map(async ([path, resolver]) => {
-    //     const { metadata } = await resolver();
-    //     return {
-    //       meta: metadata,
-    //       path: filePath(path)
-    //     };
-    //   })
-    // );
-  console.log('josonFiles', josonFiles)
+  // const allJsonFiles = await Promise.all(
+  //   iterableJsonFiles.map(async ([path, resolver]) => {
+  //     const { metadata } = await resolver();
+  //     return {
+  //       meta: metadata,
+  //       path: filePath(path)
+  //     };
+  //   })
+  // );
+  console.log('josonFiles', josonFiles);
 
   return {
-    jsonfiles: josonFiles,
+    jsonfiles: josonFiles
   };
 };

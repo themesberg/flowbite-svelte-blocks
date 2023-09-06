@@ -2,7 +2,6 @@
   import { MetaTag } from './utils';
   import type { PageData } from './$types';
   import Sectioncompo from './utils/Sectioncompo.svelte';
-  import TableSearch from 'flowbite-svelte/TableSearch.svelte';
 
   export let data: PageData;
 
