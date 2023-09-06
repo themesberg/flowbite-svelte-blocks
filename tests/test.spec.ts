@@ -288,4 +288,3 @@ test('Quickstart has expected h1', async ({ page }) => {
   await page.goto('/pages/quickstart');
   expect(await page.textContent('h1')).toBe('Quickstart - Flowbite Svelte Blocks');
 });
-

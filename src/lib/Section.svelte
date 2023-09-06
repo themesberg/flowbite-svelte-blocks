@@ -1,8 +1,11 @@
 <script lang="ts">
   import { twMerge } from 'tailwind-merge';
   export let sectionClass: string = 'relative py-6 sm:py-10';
-  export let name: 'blog' | 'comment' |'cta' | 'ctawithimg' | 'contact' | 'content' | 'contentwithimg' | 'crudcreatedrawer' | 'crudcreateform' | 'crudreadsection' | 'default' | 'faq' | 'feature' | 'forgotpassword' | 'headingwithctabutton' | 'heroDefault' | 'heroVisual' | 'login' | 'logos' | 'maintenance' | 'newsletter' | 'none' | 'page500' | 'page404' | 'portfolio' | 'pricing' | 'register' | 'reset' | 'schedule' | 'social' | 'tableheader' | 'team' | 'testimonial' = 'default';
+  export let name: 'advancedTable'|'blog' | 'comment' |'cta' | 'ctawithimg' | 'contact' | 'content' | 'contentwithimg' | 'crudcreatedrawer' | 'crudcreateform' | 'crudreadsection' | 'default' | 'faq' | 'feature' | 'forgotpassword' | 'headingwithctabutton' | 'heroDefault' | 'heroVisual' | 'login' | 'logos' | 'maintenance' | 'newsletter' | 'none' | 'page500' | 'page404' | 'portfolio' | 'pricing' | 'register' | 'reset' | 'schedule' | 'social' | 'tableheader' | 'team' | 'testimonial' = 'default';
   const sectionClasses = {
+    advancedTable:{
+      div: 'mx-auto max-w-screen-xl px-4 lg:px-12'
+    },
     blog: {
       div: 'py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6'
     },
@@ -117,5 +120,5 @@
 [Go to docs](https://flowbite-svelte-blocks.vercel.app/)
 ## Props
 @prop export let sectionClass: string = 'relative py-6 sm:py-10';
-@prop export let name: 'blog' | 'comment' |'cta' | 'ctawithimg' | 'contact' | 'content' | 'contentwithimg' | 'crudcreatedrawer' | 'crudcreateform' | 'crudreadsection' | 'default' | 'faq' | 'feature' | 'forgotpassword' | 'headingwithctabutton' | 'heroDefault' | 'heroVisual' | 'login' | 'logos' | 'maintenance' | 'newsletter' | 'none' | 'page500' | 'page404' | 'portfolio' | 'pricing' | 'register' | 'reset' | 'schedule' | 'social' | 'tableheader' | 'team' | 'testimonial' = 'default';
+@prop export let name: 'advancedTable'|'blog' | 'comment' |'cta' | 'ctawithimg' | 'contact' | 'content' | 'contentwithimg' | 'crudcreatedrawer' | 'crudcreateform' | 'crudreadsection' | 'default' | 'faq' | 'feature' | 'forgotpassword' | 'headingwithctabutton' | 'heroDefault' | 'heroVisual' | 'login' | 'logos' | 'maintenance' | 'newsletter' | 'none' | 'page500' | 'page404' | 'portfolio' | 'pricing' | 'register' | 'reset' | 'schedule' | 'social' | 'tableheader' | 'team' | 'testimonial' = 'default';
 -->

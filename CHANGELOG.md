@@ -4,15 +4,13 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [0.5.1](https://github.com/themesberg/flowbite-svelte-blocks/compare/v0.4.14...v0.5.1) (2023-09-03)
 
-
 ### Features
 
-* update Flowbite-Svelte-Icons and docs ([#49](https://github.com/themesberg/flowbite-svelte-blocks/issues/49)) ([948c530](https://github.com/themesberg/flowbite-svelte-blocks/commit/948c53016c44ccba5a52576538421843f3094eb5))
-
+- update Flowbite-Svelte-Icons and docs ([#49](https://github.com/themesberg/flowbite-svelte-blocks/issues/49)) ([948c530](https://github.com/themesberg/flowbite-svelte-blocks/commit/948c53016c44ccba5a52576538421843f3094eb5))
 
 ### Bug Fixes
 
-* border ([#48](https://github.com/themesberg/flowbite-svelte-blocks/issues/48)) ([717b351](https://github.com/themesberg/flowbite-svelte-blocks/commit/717b35154048baaea29a4e696ffeb56fc8a6b2f1))
+- border ([#48](https://github.com/themesberg/flowbite-svelte-blocks/issues/48)) ([717b351](https://github.com/themesberg/flowbite-svelte-blocks/commit/717b35154048baaea29a4e696ffeb56fc8a6b2f1))
 
 ### [0.4.14](https://github.com/themesberg/flowbite-svelte-blocks/compare/v0.4.13...v0.4.14) (2023-08-26)
 
