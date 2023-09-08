@@ -57,11 +57,11 @@ Use this free example of a table component with a search bar, filter dropdown, a
   const renderPagination = (totalItems) => {
     totalPages = Math.ceil(paginationData.length / itemsPerPage);
     const currentPage = Math.ceil((currentPosition + 1) / itemsPerPage);
-    
+
     startPage = currentPage - Math.floor(showPage / 2);
     startPage = Math.max(1, startPage);
     endPage = Math.min(startPage + showPage - 1, totalPages);
-    
+
     pagesToShow = Array.from({ length: endPage - startPage + 1 }, (_, i) => startPage + i);
   }
 
@@ -72,7 +72,7 @@ Use this free example of a table component with a search bar, filter dropdown, a
 
   $: startRange = currentPosition + 1;
   $: endRange = Math.min(currentPosition + itemsPerPage, totalItems);
-  
+
   onMount(() => {
     // Call renderPagination when the component initially mounts
     renderPagination(paginationData.length);
@@ -84,7 +84,7 @@ Use this free example of a table component with a search bar, filter dropdown, a
 
 <Section name="advancedTable" classSection='bg-gray-50 dark:bg-gray-900 p-3 sm:p-5'>
     <TableSearch placeholder="Search" hoverable={true} bind:inputValue={searchTerm} {divClass} {innerDivClass} {searchClass} {classInput} >
- 
+
     <div slot="header" class="w-full md:w-auto flex flex-col md:flex-row space-y-2 md:space-y-0 items-stretch md:items-center justify-end md:space-x-3 flex-shrink-0">
       <Button>
         <PlusSolid class="h-3.5 w-3.5 mr-2" />Add product
