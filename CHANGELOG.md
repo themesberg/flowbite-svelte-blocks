@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/themesberg/flowbite-svelte-blocks/compare/v0.5.1...v1.1.0) (2024-01-12)
+
+
+### Features
+
+* sveltekit 2 and dependencies update ([bbd776c](https://github.com/themesberg/flowbite-svelte-blocks/commit/bbd776c0846e531abb7a01e278a189a2bf5ec0ff))
+* verion 1 ([8402ef8](https://github.com/themesberg/flowbite-svelte-blocks/commit/8402ef81ce0de2f78da667f89fd7ae92b1ce9f63))
+
+
+### Bug Fixes
+
+* package.json scripts ([1aa0b8d](https://github.com/themesberg/flowbite-svelte-blocks/commit/1aa0b8d74c2b7590656eaac6976d21ed2f33c7e2))
+
 ### [0.5.1](https://github.com/themesberg/flowbite-svelte-blocks/compare/v0.4.14...v0.5.1) (2023-09-03)
 
 ### Features
