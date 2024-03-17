@@ -26,7 +26,7 @@
 
 <!--
 @component
-[Go to docs](https://flowbite-svelte-blocks.vercel.app/)
+[Go to docs](https://flowbite-svelte-blocks.codewithshin.com/)
 ## Props
 @prop export let divOuterClass: string = 'relative bg-white shadow-md dark:bg-gray-800 sm:rounded-lg';
 @prop export let headerType: 'search' | 'textbtn' | 'custom' = 'search';

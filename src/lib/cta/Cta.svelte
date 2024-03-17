@@ -33,7 +33,7 @@
 
 <!--
 @component
-[Go to docs](https://flowbite-svelte-blocks.vercel.app/)
+[Go to docs](https://flowbite-svelte-blocks.codewithshin.com/)
 ## Props
 @prop export let ctatype: 'default' | 'image' | 'heading' | 'none' = 'default';
 -->

@@ -21,7 +21,7 @@
 
 <!--
 @component
-[Go to docs](https://flowbite-svelte-blocks.vercel.app/)
+[Go to docs](https://flowbite-svelte-blocks.codewithshin.com/)
 ## Props
 @prop export let divClass: string = 'flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900';
 @prop export let h3Class: string = 'mb-2 text-xl font-bold dark:text-white';

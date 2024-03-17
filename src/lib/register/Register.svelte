@@ -16,7 +16,7 @@
 
 <!--
 @component
-[Go to docs](https://flowbite-svelte-blocks.vercel.app/)
+[Go to docs](https://flowbite-svelte-blocks.codewithshin.com/)
 ## Props
 @prop export let href: string = '';
 @prop export let aClass: string = 'flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white';

@@ -2,13 +2,15 @@
   "name": "flowbite-svelte-blocks",
   "version": "1.1.0",
   "description": "Flowbite blocks components for Svelte",
+  "main": "dist/index.js",
+  "packageManager": "pnpm@8.15.4",
   "author": {
     "name": "Shinichi Okada",
     "email": "connect@codewithshin.com",
     "url": "https://blog.codewithshin.com"
   },
   "bugs": "https://github.com/themesberg/flowbite-svelte-blocks/issues",
-  "homepage": "https://flowbite-svelte-blocks.vercel.app/",
+  "homepage": "https://flowbite-svelte-blocks.codewithshin.com/",
   "license": "MIT",
   "scripts": {
     "dev": "vite dev",

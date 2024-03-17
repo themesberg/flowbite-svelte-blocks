@@ -12,7 +12,7 @@
 
 <!--
 @component
-[Go to docs](https://flowbite-svelte-blocks.vercel.app/)
+[Go to docs](https://flowbite-svelte-blocks.codewithshin.com/)
 ## Props
 @prop export let ulClass: string = 'mb-8 space-y-4 text-left';
 -->

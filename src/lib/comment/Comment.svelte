@@ -17,7 +17,7 @@
 
 <!--
 @component
-[Go to docs](https://flowbite-svelte-blocks.vercel.app/)
+[Go to docs](https://flowbite-svelte-blocks.codewithshin.com/)
 ## Props
 @prop export let title: string = '';
 @prop export let titleDiv: string = 'flex justify-between items-center mb-6';

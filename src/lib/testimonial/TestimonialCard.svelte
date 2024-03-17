@@ -15,7 +15,7 @@
 
 <!--
 @component
-[Go to docs](https://flowbite-svelte-blocks.vercel.app/)
+[Go to docs](https://flowbite-svelte-blocks.codewithshin.com/)
 ## Props
 @prop export let headerClass: string = 'mx-auto max-w-screen-sm';
 @prop export let divClass: string = 'grid mb-8 lg:mb-12 lg:grid-cols-2';

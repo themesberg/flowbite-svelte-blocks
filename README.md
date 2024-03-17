@@ -1,7 +1,7 @@
 <h1 align="center">Flowbite Svelte Blocks</h1>
 
 <p align="center">
-<a href="https://flowbite-svelte-blocks.vercel.app/" rel="nofollow">Flowbite Svelte Blocks</a>
+<a href="https://flowbite-svelte-blocks.codewithshin.com/" rel="nofollow">Flowbite Svelte Blocks</a>
 </p>
 
 <p align="center">
@@ -14,11 +14,11 @@
 
 ## Demo
 
-[Flowbite Svelte Blocks](https://flowbite-svelte-blocks.vercel.app/)
+[Flowbite Svelte Blocks](https://flowbite-svelte-blocks.codewithshin.com/)
 
 ## Installation
 
-This library is built on top of [Flowbite-Svelte](https://github.com/themesberg/flowbite-svelte) and [Flowbite-Svelte-Icons](https://flowbite-svelte-icons.vercel.app/). Flowbite-Svelte is an official Flowbite component library for Svelte.
+This library is built on top of [Flowbite-Svelte](https://github.com/themesberg/flowbite-svelte) and [Flowbite-Svelte-Icons](https://flowbite-svelte-icons.codewithshin.com/). Flowbite-Svelte is an official Flowbite component library for Svelte.
 
 Install SvelteKit:
 

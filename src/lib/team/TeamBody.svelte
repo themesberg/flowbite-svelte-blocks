@@ -9,7 +9,7 @@
 
 <!--
 @component
-[Go to docs](https://flowbite-svelte-blocks.vercel.app/)
+[Go to docs](https://flowbite-svelte-blocks.codewithshin.com/)
 ## Props
 @prop export let divClass: string = 'grid gap-8 mb-6 lg:mb-16 md:grid-cols-2';
 -->

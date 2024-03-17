@@ -15,7 +15,7 @@
 
 <!--
 @component
-[Go to docs](https://flowbite-svelte-blocks.vercel.app/)
+[Go to docs](https://flowbite-svelte-blocks.codewithshin.com/)
 ## Props
 @prop export let outerDivClass: string = 'overflow-y-auto overflow-x-hidden z-50 md:inset-0 md:h-full';
 @prop export let innerDivClass: string = 'relative p-4 w-full max-w-lg h-full md:h-auto';
