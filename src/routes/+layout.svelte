@@ -9,6 +9,8 @@
   import YoutubeHome from './utils/icons/YoutubeHome.svelte';
   import ToolbarLink from './utils/ToolbarLink.svelte';
   import { ChevronDownOutline } from 'flowbite-svelte-icons';
+  import { inject } from '@vercel/analytics';
+  inject();
 
   let version = import.meta.env.VITE_APP_VERSION;
 
