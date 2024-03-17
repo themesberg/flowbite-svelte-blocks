@@ -20,7 +20,7 @@ Use this default example with an announcement badge, heading, CTA buttons, and c
 <script>
   import { Section, News, HeroHeader, HeroBody } from 'flowbite-svelte-blocks';
   import { Button } from 'flowbite-svelte';
-  import { ArrowRightSolid, VideoSolid } from 'flowbite-svelte-icons';
+  import { ArrowRightOutline, VideoCameraSolid } from 'flowbite-svelte-icons';
   import { Youtube, ProductHunt, Reddit } from '../utils';
 </script>
 
@@ -37,12 +37,12 @@ Use this default example with an announcement badge, heading, CTA buttons, and c
   <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
     <a href="/">
       <Button size="lg" color="red">
-        Learn more <ArrowRightSolid size="md" class="ml-2 -mr-1" />
+        Learn more <ArrowRightOutline size="md" class="ml-2 -mr-1" />
       </Button>
     </a>
     <a href="/">
       <Button size="lg" color="light">
-        <VideoSolid size="xs" class="mr-2 -ml-1" />
+        <VideoCameraSolid size="xs" class="mr-2 -ml-1" />
         Watch video
       </Button>
     </a>
@@ -73,7 +73,7 @@ Use this example to show an image next to the heading and CTA buttons to improve
 <script>
   import { Section, News, HeroHeader, HeroBody } from 'flowbite-svelte-blocks';
   import { Button } from 'flowbite-svelte';
-  import { ArrowRightSolid } from 'flowbite-svelte-icons';
+  import { ArrowRightOutline } from 'flowbite-svelte-icons';
 </script>
 
 <Section name="heroVisual">
@@ -81,7 +81,7 @@ Use this example to show an image next to the heading and CTA buttons to improve
     <HeroHeader h1Class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white" pClass="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
       <svelte:fragment slot="h1">Payments tool for software companies</svelte:fragment>
       <svelte:fragment slot="paragraph">From checkout to global sales tax compliance, companies around the world use Flowbite to simplify their payment stack.</svelte:fragment>
-      <a href="/"><Button size="xl" color="red" class="inline-flex items-center justify-center mr-3">Get started<ArrowRightSolid size="md" class="ml-2 -mr-1" /></Button> </a>
+      <a href="/"><Button size="xl" color="red" class="inline-flex items-center justify-center mr-3">Get started<ArrowRightOutline size="md" class="ml-2 -mr-1" /></Button> </a>
       <a href="/"><Button color="light" size="xl" class="inline-flex items-center justify-center">Speak to Sales</Button> </a>
     </HeroHeader>
   </div>

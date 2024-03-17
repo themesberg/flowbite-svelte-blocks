@@ -11,7 +11,7 @@
   import {
     Button
   } from 'flowbite-svelte';
-  import { ArrowRightSolid, ChartSolid, LandmarkSolid, BriefcaseSolid, DollarSolid, RocketSolid, CogOutline, ChevronRightOutline } from 'flowbite-svelte-icons';
+  import { ArrowRightOutline, ChartPieSolid, LandmarkSolid, BriefcaseSolid, DollarOutline, RocketSolid, CogOutline, ChevronRightOutline } from 'flowbite-svelte-icons';
   import {
     Airbnb,
     Facebook,
@@ -39,7 +39,7 @@
       </svelte:fragment>
       <a href="/"
         ><Button size="xl" class="inline-flex items-center justify-center mr-3"
-          >Get started<ArrowRightSolid class="ml-2 -mr-1" /></Button
+          >Get started<ArrowRightOutline class="ml-2 -mr-1" /></Button
         >
       </a>
       <a href="/"
@@ -100,7 +100,7 @@
   <FeatureDefault>
     <FeatureItem>
       <svelte:fragment slot="icon"
-        ><ChartSolid
+        ><ChartPieSolid
           class="text-primary-600 dark:text-primary-300"
         /></svelte:fragment
       >
@@ -136,7 +136,7 @@
     </FeatureItem>
     <FeatureItem>
       <svelte:fragment slot="icon"
-        ><DollarSolid
+        ><DollarOutline
           class="text-primary-600 dark:text-primary-300"
         /></svelte:fragment
       >

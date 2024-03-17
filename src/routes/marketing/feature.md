@@ -23,7 +23,7 @@ Get started with this default example of feature items based on a grid layout wh
 ```svelte example
 <script lang="ts">
   import { Section, HeroHeader, FeatureDefault, FeatureItem } from 'flowbite-svelte-blocks';
-  import { ChartSolid, LandmarkSolid, BriefcaseSolid, DollarSolid, RocketSolid, CogOutline } from 'flowbite-svelte-icons';
+  import { ChartPieSolid, LandmarkSolid, BriefcaseSolid, DollarOutline, RocketSolid, CogOutline } from 'flowbite-svelte-icons';
 </script>
 
 <Section name="feature">
@@ -33,7 +33,7 @@ Get started with this default example of feature items based on a grid layout wh
   </HeroHeader>
   <FeatureDefault>
     <FeatureItem>
-      <svelte:fragment slot="icon"><ChartSolid class="text-primary-600 dark:text-primary-300" /></svelte:fragment>
+      <svelte:fragment slot="icon"><ChartPieSolid class="text-primary-600 dark:text-primary-300" /></svelte:fragment>
       <svelte:fragment slot="h3">Marketing</svelte:fragment>
       <svelte:fragment slot="paragraph">Plan it, create it, launch it. Collaborate seamlessly with all the organization and hit your marketing goals every month with our marketing plan.</svelte:fragment>
     </FeatureItem>
@@ -48,7 +48,7 @@ Get started with this default example of feature items based on a grid layout wh
       <svelte:fragment slot="paragraph">Auto-assign tasks, send Slack messages, and much more. Now power up with hundreds of new templates to help you get started.</svelte:fragment>
     </FeatureItem>
     <FeatureItem>
-      <svelte:fragment slot="icon"><DollarSolid class="text-primary-600 dark:text-primary-300" /></svelte:fragment>
+      <svelte:fragment slot="icon"><DollarOutline class="text-primary-600 dark:text-primary-300" /></svelte:fragment>
       <svelte:fragment slot="h3">Finance</svelte:fragment>
       <svelte:fragment slot="paragraph">Audit-proof software built for critical financial operations like month-end close and quarterly budgeting.</svelte:fragment>
     </FeatureItem>

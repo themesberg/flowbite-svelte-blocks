@@ -17,7 +17,7 @@ Use this free example of a table component with a search bar, filter dropdown, a
   import { Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell, TableSearch, Button, Dropdown, DropdownItem, Checkbox, ButtonGroup } from 'flowbite-svelte';
   import { Section } from 'flowbite-svelte-blocks';
   import paginationData from '../utils/advancedTable.json'
-  import { PlusSolid, ChevronDownSolid, FilterSolid, ChevronRightOutline, ChevronLeftOutline } from 'flowbite-svelte-icons';
+  import { PlusOutline, ChevronDownOutline, FilterSolid, ChevronRightOutline, ChevronLeftOutline } from 'flowbite-svelte-icons';
 
   let divClass='bg-white dark:bg-gray-800 relative shadow-md sm:rounded-lg overflow-hidden';
   let innerDivClass='flex flex-col md:flex-row items-center justify-between space-y-3 md:space-y-0 md:space-x-4 p-4';
@@ -87,9 +87,9 @@ Use this free example of a table component with a search bar, filter dropdown, a
 
     <div slot="header" class="w-full md:w-auto flex flex-col md:flex-row space-y-2 md:space-y-0 items-stretch md:items-center justify-end md:space-x-3 flex-shrink-0">
       <Button>
-        <PlusSolid class="h-3.5 w-3.5 mr-2" />Add product
+        <PlusOutline class="h-3.5 w-3.5 mr-2" />Add product
       </Button>
-      <Button color='alternative'>Actions<ChevronDownSolid class="w-3 h-3 ml-2 " /></Button>
+      <Button color='alternative'>Actions<ChevronDownOutline class="w-3 h-3 ml-2 " /></Button>
         <Dropdown class="w-44 divide-y divide-gray-100">
           <DropdownItem>Mass Edit</DropdownItem>
           <DropdownItem>Delete all</DropdownItem>

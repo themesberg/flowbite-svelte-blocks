@@ -14,10 +14,10 @@ Use this free example of a filter component to allow your users to select which 
 ```svelte example class="flex justify-center items-start h-[32rem]"
 <script>
   import { Button, Dropdown, DropdownItem, Checkbox } from 'flowbite-svelte';
-  import { ChevronDownSolid } from 'flowbite-svelte-icons';
+  import { ChevronDownOutline } from 'flowbite-svelte-icons';
 </script>
 
-<Button>Filter by category<ChevronDownSolid class="w-3 h-3 ml-2 text-white dark:text-white" /></Button>
+<Button>Filter by category<ChevronDownOutline class="w-3 h-3 ml-2 text-white dark:text-white" /></Button>
 <Dropdown class="w-44 p-3 space-y-3 text-sm">
   <li>
     <Checkbox>Apple (56)</Checkbox>

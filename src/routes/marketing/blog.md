@@ -19,7 +19,7 @@ Use this example to show a preview of a blog post including the title, descripti
 ```svelte example
 <script>
   import { Section, ArticleAuthor, ArticleBody, ArticleHead, ArticleWrapper, BlogHead, BlogBodyWrapper } from 'flowbite-svelte-blocks';
-  import { VideoSolid, ArrowRightOutline, NewspaperSolid } from 'flowbite-svelte-icons';
+  import { VideoCameraSolid, ArrowRightOutline, NewspaperSolid } from 'flowbite-svelte-icons';
 </script>
 
 <Section name="blog">
@@ -33,7 +33,7 @@ Use this example to show a preview of a blog post including the title, descripti
     <ArticleWrapper>
       <ArticleHead>
         <span class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
-          <VideoSolid size="xs" class="mr-1" />
+          <VideoCameraSolid size="xs" class="mr-1" />
           Tutorial
         </span>
         <span class="text-sm">14 days ago</span>
