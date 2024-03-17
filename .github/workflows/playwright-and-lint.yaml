@@ -13,29 +13,17 @@ jobs:
     name: 'Playwright and Lint'
     runs-on: ubuntu-latest
     container:
-      image: mcr.microsoft.com/playwright:v1.40.1-focal
+      image: mcr.microsoft.com/playwright:v1.42.1-focal
     steps:
-      - uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v2
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v3
+      - uses: actions/setup-node@v4
         with:
-          version: 'latest'
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-      - name: Cache pnpm store
-        uses: actions/cache@v2
-        with:
-          path: ~/.pnpm-store
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store-
-          options: |
-            --no-restore
-      - name: Update Lockfile
-        run: pnpm install --no-frozen-lockfile
-      - name: Clear Cache
-        run: pnpm store prune
+          node-version: '20'
+          cache: 'pnpm'
       - name: Install dependencies
         run: pnpm i
       - name: Run playwright tests
+        env:
+          NODE_OPTIONS: '--max_old_space_size=4096'
         run: pnpm test:integration
