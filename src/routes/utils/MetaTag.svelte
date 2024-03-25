@@ -3,12 +3,16 @@
   export let breadcrumb_title: string = '';
   export let description: string = '';
   export let title: string = '';
+
   // title = title.replaceAll(' ', '-');
   let imgsrc = `https://open-graph-vercel.vercel.app/api/flowbite-svelte-blocks?title=${encodeURIComponent(breadcrumb_title)}`;
   let url: string = 'https://flowbite-svelte-blocks.codewithshin.com/';
   export let dir: string = '';
   let dirstring = dir.toLowerCase();
   let breadcrumb = breadcrumb_title.toLowerCase().replaceAll(' ', '-');
+  if (breadcrumb_title === '') {
+    breadcrumb_title = title.split('-')[0];
+  }
 </script>
 
 <MetaTags

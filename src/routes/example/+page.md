@@ -1,3 +1,11 @@
+---
+title: Example Homepage - Flowbite Svelte Blocks
+breadcrumb_title: Example Homepage
+no_of_components: 0 component
+dir: application
+description: Flowbite Svelte Blocks example website homepage.
+---
+
 <script>
   import {
     Section,
@@ -22,9 +30,12 @@
     Microsoft,
     Spotify,
     Twitter,
-    Instagram
+    Instagram,
+    MetaTag
   } from '../utils';
 </script>
+
+<MetaTag {breadcrumb_title} {title} {dir} {description} />
 
 <Section name="heroVisual">
   <div class="mr-auto place-self-center lg:col-span-7">
