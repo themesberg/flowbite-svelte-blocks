@@ -1,6 +1,6 @@
 {
   "name": "flowbite-svelte-blocks",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Flowbite blocks components for Svelte",
   "main": "dist/index.js",
   "packageManager": "pnpm@8.15.4",
@@ -29,7 +29,7 @@
     "gen:docs": "svelte-lib-helpers docs",
     "gen:compo-data": "svelte-lib-helpers compo-data",
     "copy:package": "svelte-lib-helpers package",
-    "lib-helpers": "npm run gen:docs && npm run build && npm run gen:exports && npm run copy:package && npm run format",
+    "lib-helpers": "npm run gen:docs && npm run package && npm run gen:exports && npm run copy:package",
     "package:publish": "npm run lib-helpers && standard-version && git push --follow-tags origin main && npm publish"
   },
   "devDependencies": {
@@ -323,6 +323,7 @@
     "./Twitter.svelte": {
       "types": "./dist/utils/Twitter.svelte.d.ts",
       "svelte": "./dist/utils/Twitter.svelte"
-    }
+    },
+    "./package.json": "./package.json"
   }
 }
