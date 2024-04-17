@@ -1,8 +1,8 @@
 <script lang="ts">
   import { twMerge } from 'tailwind-merge';
+  import type { ComponentType, SvelteComponent } from 'svelte';
 
-  import type { SvelteComponent } from 'svelte';
-  export let icon: typeof SvelteComponent | null = null;
+  export let icon: ComponentType;
   export let figureClass: string = 'max-w-screen-md mx-auto';
   export let figureFooterClass: string = 'flex items-center justify-center mt-6 space-x-3';
 </script>
