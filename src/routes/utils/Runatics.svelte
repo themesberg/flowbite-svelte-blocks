@@ -1,7 +1,8 @@
 <script lang="ts">
-  export let analyticsId:string;
+  import { onMount } from 'svelte';
+  export let analyticsId:string ='';
 
-  $: {
+  onMount(async () => {
     const script = document.createElement('script');
     script.innerHTML = `
       window.dataLayer = window.dataLayer || [];
@@ -10,7 +11,7 @@
       gtag('config', '${analyticsId}');
       `;
     document.head.appendChild(script);
-  };
+  });
 </script>
 
 <svelte:head>
