@@ -26,5 +26,5 @@ jobs:
       - name: Run playwright tests
         env:
           NODE_OPTIONS: '--max_old_space_size=4096'
-          ANALYTICS_ID: 'G-12345ABCDE'
+          ANALYTICS_ID_FLOWBITE: 'G-12345ABCDE'
         run: pnpm test:integration

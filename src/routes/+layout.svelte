@@ -11,7 +11,7 @@
   import { ChevronDownOutline } from 'flowbite-svelte-icons';
   import Runatics from './utils/Runatics.svelte';
   export let data;
-  const analyticsId = data.ANALYTICS_ID
+  const analyticsId = data.ANALYTICS_ID_FLOWBITE
 
   let version = import.meta.env.VITE_APP_VERSION;
 

@@ -1,4 +1,4 @@
-import { ANALYTICS_ID } from '$env/static/private';
+import { ANALYTICS_ID_FLOWBITE } from '$env/static/private';
 /** @type {import('./$types').LayoutServerLoad} \*/
 export async function load ({ fetch }) {
   try {
@@ -6,7 +6,7 @@ export async function load ({ fetch }) {
 
     return {
       posts: await response.json(),
-      ANALYTICS_ID
+      ANALYTICS_ID_FLOWBITE
     };
   } catch (error) {
     console.error(`Error in load function for /: ${error}`);
