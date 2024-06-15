@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.2
+
+### Patch Changes
+
+- fix: SidebarBottomNavItem and dependencies update ([`13947b626a816711097716db1b376eb47713c2d4`](https://github.com/themesberg/flowbite-svelte-blocks/commit/13947b626a816711097716db1b376eb47713c2d4))
+
 ## 1.1.1
 
 ### Patch Changes
