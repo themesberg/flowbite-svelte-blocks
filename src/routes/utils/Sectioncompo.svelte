@@ -4,18 +4,31 @@
   import CompoCard from './CompoCard.svelte';
   import Section from './Section.svelte';
   import {TableSearch} from 'flowbite-svelte';
+  import type { SvelteComponent } from 'svelte';
+  interface Post {
+    meta: {
+      layout: string;
+      title: string;
+      breadcrumb_title?: string; // Optional property with string type (might not exist in all posts)
+      no_of_components: string;
+      dir: string;
+      // ... other properties in the meta object (add more if known)
+    };
+    path: string;
+  }
 
   export let data: PageData;
+  
   export let section;
 
   const sectionPosts = section !== undefined ? data.posts[section] : Object.values(data.posts).flat();
-
+  console.log('section.posts: ', sectionPosts);
   let searchTerm = '';
   // const flattened_posts = Object.values(data.posts).flat()
-  let components;
+  let components: SvelteComponent;
   $: {
     const searchTermLower = searchTerm.toLowerCase();
-    components = sectionPosts.filter((obj) => {
+    components = sectionPosts.filter((obj: Post) => {
       if (obj.meta && obj.meta.breadcrumb_title) {
         const breadcrumbTitleLower = obj.meta.breadcrumb_title.toLowerCase();
         const pathDoesNotIncludePage = obj.path.indexOf('/+page') === -1;

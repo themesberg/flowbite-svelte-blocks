@@ -5,6 +5,18 @@
   import ArrowLeft from './icons/ArrowLeft.svelte';
   import ArrowRight from './icons/ArrowRight.svelte';
 
+  interface Post {
+    meta: {
+      layout: string;
+      title: string;
+      breadcrumb_title?: string; // Optional property with string type (might not exist in all posts)
+      no_of_components: string;
+      dir: string;
+      // ... other properties in the meta object (add more if known)
+    };
+    path: string;
+  }
+  
   const {
     data,
     url,
