@@ -18,5 +18,5 @@ package-lock.json
 yarn.lock
 
 src/routes/testdir/*
-/tests
+/test-results
 
