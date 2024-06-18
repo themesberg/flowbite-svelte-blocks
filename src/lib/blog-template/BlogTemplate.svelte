@@ -23,6 +23,7 @@
   const authorCls: string= twMerge('text-xl font-bold text-gray-900 dark:text-white', $$props.classAuthor );
   const imgCls: string = twMerge('mr-2 w-6 h-6 rounded-full',  $$props.classImg);
   const pCls: string = twMerge('text-base font-light text-gray-500 dark:text-gray-400', $$props.classP)
+  
 </script>
 
 <article class="{articleCls}">
