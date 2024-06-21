@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.3
+
+### Patch Changes
+
+- fix: Self-closing tag ([`ef82de1ccc3e60c733f60a15769e6bb8001f89f1`](https://github.com/themesberg/flowbite-svelte-blocks/commit/ef82de1ccc3e60c733f60a15769e6bb8001f89f1))
+
 ## 1.1.2
 
 ### Patch Changes
