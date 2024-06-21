@@ -1,7 +1,6 @@
 <script lang="ts">
   import { page } from '$app/stores';
   import { PaginationItem } from 'flowbite-svelte';
-  import { identity } from 'svelte/internal';
   import ArrowLeft from './icons/ArrowLeft.svelte';
   import ArrowRight from './icons/ArrowRight.svelte';
 
@@ -27,8 +26,8 @@
   // console.log('data.dir: ',data.dir)
   // console.log('data: ',data)
 
-  const components = Object.values(data.posts)
-    .flatMap(identity)
+  const components = Object.values(data.posts as Post[])
+    .flat()
     // .filter((x) => x.meta.dir === data.dir)
     .filter((x) => x.meta && x.meta.dir === data.dir)
     .map(({ path, meta }) => ({ path, name: meta.breadcrumb_title }));

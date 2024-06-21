@@ -37,7 +37,7 @@
 <Runatics {analyticsId} />
 <div class="flex flex-col min-h-screen bg-white dark:bg-gray-900">
   <header class="sticky top-0 z-40 flex-none w-full mx-auto bg-white border-b border-gray-200 dark:border-gray-600 dark:bg-gray-800">
-    <Navbar color="default" fluid navClass="flex items-center justify-between w-full mx-auto py-1.5 px-4" let:hidden let:toggle>
+    <Navbar color="default" fluid class="flex items-center justify-between w-full mx-auto py-1.5 px-4" let:hidden let:toggle>
       <NavBrand href="/">
         <img src="/images/logo.svg" class="h-8 mr-3" alt="Flowbite Logo" />
         <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"> Flowbite Svelte Blocks </span>

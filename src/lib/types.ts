@@ -9,3 +9,10 @@ export type Comment = {
   content: string;
   replies?: Comment[];
 };
+
+export interface LinkType {
+  name: string;
+  href?: string;
+  rel?: string;
+  active?: boolean;
+}

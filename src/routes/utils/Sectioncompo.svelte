@@ -22,7 +22,7 @@
   export let section;
 
   const sectionPosts = section !== undefined ? data.posts[section] : Object.values(data.posts).flat();
-  console.log('section.posts: ', sectionPosts);
+  // console.log('section.posts: ', sectionPosts);
   let searchTerm = '';
   // const flattened_posts = Object.values(data.posts).flat()
   let components: SvelteComponent;
