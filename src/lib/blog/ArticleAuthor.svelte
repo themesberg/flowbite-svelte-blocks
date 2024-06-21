@@ -6,9 +6,9 @@
 
 <div class={twMerge(authorDiv, $$props.class)}>
   <div class={twMerge(authorImgDiv, $$props.classAuthorImgDiv)}>
-    <slot name="author" />
+    <slot name="author"></slot>
   </div>
-  <slot />
+  <slot></slot>
 </div>
 
 <!--

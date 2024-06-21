@@ -11,7 +11,7 @@
   {#if icon}
     <svelte:component this={icon} />
   {/if}
-  <slot />
+  <slot></slot>
   {#if $$slots.footer}
     <figcaption class={twMerge(figureFooterClass, $$props.classFigureFooter)}>
       <slot name="footer" />

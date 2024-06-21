@@ -5,6 +5,6 @@
 </script>
 
 <ToolbarButton {name} size="lg" target="_blank" rel="noreferrer" {...$$restProps}>
-  <slot />
+  <slot></slot>
 </ToolbarButton>
 <Tooltip class="dark:bg-gray-900" placement="bottom">{name}</Tooltip>

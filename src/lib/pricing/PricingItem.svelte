@@ -6,7 +6,7 @@
 
 <li class={liClass}>
   <svelte:component this={CheckCircleSolid} size="sm" class={twMerge('ml-2', $$props.class)} />
-  <slot />
+  <slot></slot>
 </li>
 
 <!--

@@ -12,14 +12,14 @@
 <div class={divOuterClass}>
   {#if headerType === 'search'}
     <div class={divInnerClasses[headerType]}>
-      <slot name="search" />
+      <slot name="search"></slot>
       <div class={divSlotClass}>
-        <slot />
+        <slot></slot>
       </div>
     </div>
   {:else}
     <div class={divInnerClasses[headerType]}>
-      <slot />
+      <slot></slot>
     </div>
   {/if}
 </div>

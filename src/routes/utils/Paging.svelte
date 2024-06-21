@@ -56,10 +56,10 @@
           {name}
         </PaginationItem>
       {:else}
-        <div />
+        <div></div>
       {/if}
       <div class="hidden sm:block">
-        <slot />
+        <slot></slot>
       </div>
       {#if index < components.length - 1}
         {@const { name, href } = sibling(true)}
@@ -69,11 +69,11 @@
           <ArrowRight />
         </PaginationItem>
       {:else}
-        <div />
+        <div></div>
       {/if}
     </div>
   {/if}
   <div class="sm:hidden">
-    <slot />
+    <slot></slot>
   </div>
 </div>

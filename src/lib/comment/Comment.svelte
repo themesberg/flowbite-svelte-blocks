@@ -13,7 +13,7 @@
   <h2 class="{h2Cls}">{title}</h2>
 </div>
 
-<slot />
+<slot></slot>
 
 <!--
 @component

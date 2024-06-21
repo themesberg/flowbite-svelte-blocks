@@ -21,9 +21,9 @@
       <a {href}>{name}</a>
     </h3>
     <span class={twMerge(spanClass, $$props.classSpan)}>{jobTitle}</span>
-    <slot />
+    <slot></slot>
     <ul class="flex space-x-4 sm:mt-0">
-      <slot name="social" />
+      <slot name="social"></slot>
     </ul>
   </div>
 </div>

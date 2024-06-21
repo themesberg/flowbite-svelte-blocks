@@ -47,7 +47,7 @@
 
 <Section class="mx-auto max-w-8xl">
   <TableSearch placeholder="Search by name" hoverable={true} bind:inputValue={searchTerm} divClass="relative overflow-x-auto mx-auto max-w-8xl">
-    <slot name="header" />
+    <slot name="header"></slot>
     <div class="grid grid-cols-1 gap-6 mt-6 md:grid-cols-2 xl:grid-cols-3">
       {#each components.slice(0, INIT_COUNT) as { path, meta: { dir, breadcrumb_title, no_of_components } } (dir + path)}
         <CompoCard name={breadcrumb_title} {no_of_components} {dir} {path} />

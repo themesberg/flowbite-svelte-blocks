@@ -7,11 +7,11 @@
 
 {#if $$slots.top}
   <a {href} class={twMerge(aClass, $$props.class)}>
-    <slot name="top" />
+    <slot name="top"></slot>
   </a>
 {/if}
 <div class={twMerge(divClass, $$props.classDiv)}>
-  <slot />
+  <slot></slot>
 </div>
 
 <!--

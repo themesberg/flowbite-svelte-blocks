@@ -6,11 +6,11 @@
 
 {#if $$slots.header}
   <div class={twMerge(headerClass, $$props.class)}>
-    <slot name="header" />
+    <slot name="header"></slot>
   </div>
 {/if}
 <div class={twMerge(divClass, $$props.classDiv)}>
-  <slot />
+  <slot></slot>
 </div>
 
 <!--

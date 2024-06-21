@@ -77,7 +77,7 @@
     </Navbar>
   </header>
   <main class="grow">
-    <slot />
+    <slot></slot>
   </main>
 </div>
 

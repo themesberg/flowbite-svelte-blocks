@@ -6,7 +6,7 @@
 
 <div class={twMerge(divClass, $$props.class)}>
   <dl class={twMerge(dlClass, $$props.classDl)}>
-    <slot />
+    <slot></slot>
   </dl>
 </div>
 

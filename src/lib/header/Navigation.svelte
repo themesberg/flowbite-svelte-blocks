@@ -7,7 +7,7 @@
 <header>
   <nav {...$$restProps} class={twMerge(navClass, $$props.class)}>
     <div class={twMerge(divClass, $$props.divClass)}>
-      <slot />
+      <slot></slot>
     </div>
   </nav>
 </header>

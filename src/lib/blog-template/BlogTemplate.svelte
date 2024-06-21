@@ -58,7 +58,7 @@
   <p class="lead">{blog.lead}</p>
   {/if}
   {@html blog.content}
-  <slot />
+  <slot></slot>
 </article>
 
 <!--

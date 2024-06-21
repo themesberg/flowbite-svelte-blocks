@@ -19,7 +19,7 @@
 </div>
 
 <div class={bodyDivClasss}>
-  <slot />
+  <slot></slot>
 </div>
 
 <!--

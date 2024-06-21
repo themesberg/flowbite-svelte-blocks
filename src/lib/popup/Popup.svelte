@@ -8,7 +8,7 @@
 <div id="info-popup" tabindex="-1" class={twMerge(outerDivClass, $$props.class)}>
   <div class={innerDivClass}>
     <div class={contentDivClass}>
-      <slot />
+      <slot></slot>
     </div>
   </div>
 </div>

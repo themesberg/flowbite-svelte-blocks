@@ -9,7 +9,7 @@
 
 <a {href} class={twMerge(aClass, $$props.class)}>
   <img class={twMerge(imgClass, $$props.classImg)} {src} {alt} />
-  <slot />
+  <slot></slot>
 </a>
 
 <!--

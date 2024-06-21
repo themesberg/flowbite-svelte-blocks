@@ -3,7 +3,7 @@
 </script>
 
 <div class={divClass}>
-  <slot />
+  <slot></slot>
 </div>
 
 <!--

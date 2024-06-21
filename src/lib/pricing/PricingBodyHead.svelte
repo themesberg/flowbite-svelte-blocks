@@ -6,16 +6,16 @@
 </script>
 
 {#if $$slots.h3}
-  <h3 class={twMerge(h3Class, $$props.class)}><slot name="h3" /></h3>
+  <h3 class={twMerge(h3Class, $$props.class)}><slot name="h3"></slot></h3>
 {/if}
 {#if $$slots.paragraph}
   <p class={twMerge(pClass, $$props.classP)}>
-    <slot name="paragraph" />
+    <slot name="paragraph"></slot>
   </p>
 {/if}
 {#if $$slots.price}
   <div class={twMerge(priceClass, $$props.classPrice)}>
-    <slot name="price" />
+    <slot name="price"></slot>
   </div>
 {/if}
 

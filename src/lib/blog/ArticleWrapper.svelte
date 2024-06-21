@@ -4,7 +4,7 @@
 </script>
 
 <article class={twMerge(articleClass, $$props.class)}>
-  <slot />
+  <slot></slot>
 </article>
 
 <!--

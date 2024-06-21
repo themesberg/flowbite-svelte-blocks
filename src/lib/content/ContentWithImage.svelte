@@ -7,13 +7,13 @@
 
 <div class={twMerge(divClass, $$props.class)}>
   {#if $$slots.h2}
-    <h2 class={twMerge(h2Class, $$props.classH2)}><slot name="h2" /></h2>
+    <h2 class={twMerge(h2Class, $$props.classH2)}><slot name="h2"></slot></h2>
   {/if}
-  <slot />
+  <slot></slot>
 </div>
 {#if $$slots.image}
   <div class={twMerge(imgDivClass, $$props.classImgDiv)}>
-    <slot name="image" />
+    <slot name="image"></slot>
   </div>
 {/if}
 

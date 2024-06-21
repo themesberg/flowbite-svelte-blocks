@@ -12,7 +12,7 @@
     <span class="font-semibold text-gray-400 uppercase"><slot name="head" /></span>
   {/if}
 
-  <slot />
+  <slot></slot>
 </div>
 
 <!--

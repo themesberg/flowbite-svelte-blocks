@@ -1,17 +1,17 @@
 <script lang="ts">
   import { twMerge } from 'tailwind-merge';
   export let sectionClass: string = 'relative py-6 sm:py-10';
-  export let name: 'advancedTable'|'blog' | 'comment' |'cta' | 'ctawithimg' | 'contact' | 'content' | 'contentwithimg' | 'crudcreatedrawer' | 'crudcreateform' | 'crudreadsection' | 'default' | 'faq' | 'feature' | 'forgotpassword' | 'headingwithctabutton' | 'heroDefault' | 'heroVisual' | 'login' | 'logos' | 'maintenance' | 'newsletter' | 'none' | 'page500' | 'page404' | 'portfolio' | 'pricing' | 'register' | 'reset' | 'schedule' | 'social' | 'tableheader' | 'team' | 'testimonial' = 'default';
+  export let name: 'advancedTable' | 'blog' | 'comment' | 'cta' | 'ctawithimg' | 'contact' | 'content' | 'contentwithimg' | 'crudcreatedrawer' | 'crudcreateform' | 'crudreadsection' | 'default' | 'faq' | 'feature' | 'forgotpassword' | 'headingwithctabutton' | 'heroDefault' | 'heroVisual' | 'login' | 'logos' | 'maintenance' | 'newsletter' | 'none' | 'page500' | 'page404' | 'portfolio' | 'pricing' | 'register' | 'reset' | 'schedule' | 'social' | 'tableheader' | 'team' | 'testimonial' = 'default';
   const sectionClasses = {
-    advancedTable:{
+    advancedTable: {
       div: 'mx-auto max-w-screen-xl px-4 lg:px-12'
     },
     blog: {
       div: 'py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6'
     },
     blogTemplate: {
-      div:'flex justify-between px-4 mx-auto max-w-screen-xl'
-    }, 
+      div: 'flex justify-between px-4 mx-auto max-w-screen-xl'
+    },
     comment: {
       div: 'max-w-2xl mx-auto px-4'
     },
@@ -111,7 +111,7 @@
 
 <section class={twMerge(sectionClass, $$props.classSection)}>
   <div class={twMerge(sectionClasses[name]['div'], $$props.classDiv)}>
-    <slot />
+    <slot></slot>
   </div>
 </section>
 

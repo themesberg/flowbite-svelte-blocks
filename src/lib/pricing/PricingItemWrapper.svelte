@@ -4,10 +4,10 @@
 </script>
 
 <ul class={twMerge(ulClass, $$props.class)}>
-  <slot />
+  <slot></slot>
 </ul>
 {#if $$slots.btn}
-  <slot name="btn" />
+  <slot name="btn"></slot>
 {/if}
 
 <!--

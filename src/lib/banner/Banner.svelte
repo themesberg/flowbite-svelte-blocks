@@ -5,7 +5,7 @@
 </script>
 
 <div {id} tabindex="-1" class={twMerge(divClass, $$props.class)}>
-  <slot />
+  <slot></slot>
 </div>
 
 <!--

@@ -6,7 +6,7 @@
 </script>
 
 <a {href} class={aClass}>
-  <slot />
+  <slot></slot>
 </a>
 {#if tooltip}
   <Tooltip arrow={false}>{tooltip}</Tooltip>

@@ -6,10 +6,10 @@
 
 <div class={twMerge(divClass, $$props.class)}>
   {#if $$slots.h1}
-    <h1 class={twMerge(h1Class, $$props.classH1)}><slot name="h1" /></h1>
+    <h1 class={twMerge(h1Class, $$props.classH1)}><slot name="h1"></slot></h1>
   {/if}
   {#if $$slots.paragraph}
-    <slot name="paragraph" />
+    <slot name="paragraph"></slot>
   {/if}
 </div>
 

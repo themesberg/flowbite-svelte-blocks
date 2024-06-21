@@ -100,7 +100,7 @@
       <div class="flex p-0 bg-white border-gray-200 bg-gradient-to-r code-preview dark:bg-gray-900 border-x dark:border-gray-600" class:dark>
         <div class="w-full code-responsive-wrapper">
           <div class={twJoin(divClass, meta.class)}>
-            <slot name="example" />
+            <slot name="example"></slot>
           </div>
         </div>
       </div>
@@ -128,7 +128,7 @@
       <div class="relative">
         <div class="overflow-hidden" class:max-h-72={!expand} tabindex="-1" use:checkOverflow>
           <div class="highlight">
-            <pre bind:this={code} class="language-svelte !-mt-2 !rounded-none"><slot name="code" /></pre>
+            <pre bind:this={code} class="language-svelte !-mt-2 !rounded-none"><slot name="code"></slot></pre>
           </div>
         </div>
         {#if showExpandButton && !expand}

@@ -10,14 +10,14 @@
   <blockquote class={twMerge(blockQuoteClass, $$props.classBlockQuote)}>
     {#if $$slots.h3}
       <h3 class={twMerge(h3Class, $$props.classH3)}>
-        <slot name="h3" />
+        <slot name="h3"></slot>
       </h3>
     {/if}
-    <slot />
+    <slot></slot>
   </blockquote>
   {#if $$slots.caption}
     <figcaption class={twMerge(footerBlockQuoteClass, $$props.classFooterBlockQuote)}>
-      <slot name="caption" />
+      <slot name="caption"></slot>
     </figcaption>
   {/if}
 </figure>

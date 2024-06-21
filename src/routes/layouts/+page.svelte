@@ -26,6 +26,6 @@
 
 <div id="mainContent" class={divClass}>
   <SectionHeader category={dir} {breadcrumb_title} {title} {description} />
-  <slot />
+  <slot></slot>
   <Paging />
 </div>

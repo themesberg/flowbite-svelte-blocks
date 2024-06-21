@@ -10,7 +10,7 @@
     <QuestionCircleSolid size="sm" class="mr-2" />
     <slot name="h3" />
   </h3>
-  <slot />
+  <slot></slot>
 </div>
 
 <!--

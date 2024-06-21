@@ -4,10 +4,10 @@
 </script>
 
 {#if $$slots.h2}
-  <h2 class={twMerge(h2Class, $$props.class)}><slot name="h2" /></h2>
+  <h2 class={twMerge(h2Class, $$props.class)}><slot name="h2"></slot></h2>
 {/if}
 {#if $$slots.paragraph}
-  <slot name="paragraph" />
+  <slot name="paragraph"></slot>
 {/if}
 
 <!--
