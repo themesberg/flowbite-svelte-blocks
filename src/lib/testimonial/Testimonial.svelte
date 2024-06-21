@@ -14,7 +14,7 @@
   <slot></slot>
   {#if $$slots.footer}
     <figcaption class={twMerge(figureFooterClass, $$props.classFigureFooter)}>
-      <slot name="footer" />
+      <slot name="footer"></slot>
     </figcaption>
   {/if}
 </figure>
