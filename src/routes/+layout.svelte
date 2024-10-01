@@ -43,8 +43,8 @@
         <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"> Flowbite Svelte Blocks </span>
       </NavBrand>
       <NavUl {hidden} {divClass} {ulClass} nonActiveClass="md:!pl-3 md:!py-2 lg:!pl-0 text-gray-700 hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 dark:text-gray-400 lg:dark:text-white lg:dark:hover:text-primary-700 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent" activeClass="md:!pl-3 md:!py-2 lg:!pl-0 text-white bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:dark:text-primary-700 dark:bg-primary-600 lg:dark:bg-transparent cursor-default">
-        <NavLi class="lg:px-2 lg:mb-0" active={activeUrl === '/'} href="/">Home</NavLi>
-        <NavLi id="nav-menu1" active={activeCategory} class="cursor-pointer">
+        <NavLi class="lg:px-2 lg:mb-0" href="/">Home</NavLi>
+        <NavLi id="nav-menu1" class="cursor-pointer">
           Categories<ChevronDownOutline class="w-3 h-3 ml-2 text-gray-500 dark:text-white inline" />
         </NavLi>
         <NavLi href="/pages/quickstart">Quickstart</NavLi>
@@ -73,7 +73,7 @@
         </DocBadge>
       </a>
 
-      <NavHamburger on:click={toggle} btnClass="ml-3 m-0 lg:hidden" />
+      <NavHamburger on:click={toggle} class="ml-3 m-0 lg:hidden" />
     </Navbar>
   </header>
   <main class="grow">
@@ -149,7 +149,9 @@
   <div class="flex items-center justify-center">
     <FooterCopyright href="/" by="Flowbite™" />
     <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-      <FooterIcon href="https://github.com/themesberg/flowbite-svelte-blocks" class="text-gray-400 hover:text-gray-900" icon={GitHubHome} />
+      <FooterIcon href="https://github.com/themesberg/flowbite-svelte-blocks" class="text-gray-400 hover:text-gray-900" >
+        <GitHubHome />
+      </FooterIcon>
     </div>
   </div>
 </Footer>
