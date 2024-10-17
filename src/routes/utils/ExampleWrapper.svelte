@@ -8,9 +8,11 @@
   export let divClass = 'w-full mx-auto bg-gradient-to-r bg-white dark:bg-gray-900 p-2 sm:p-6';
 
   // the source of the example, if you want it
+  /* eslint-disable  @typescript-eslint/no-explicit-any */
   export let src: any = undefined;
 
   // all meta tags of the code block
+  /* eslint-disable  @typescript-eslint/no-explicit-any */
   export let meta: any = undefined;
 
   let browserSupport: boolean = false;
@@ -25,6 +27,7 @@
   let path: URL;
 
   // suppress vite-plugin-svelte warning about unused props
+  /* eslint-disable  @typescript-eslint/no-unused-expressions */
   $: src, meta;
 
   let showExpandButton: boolean = false;

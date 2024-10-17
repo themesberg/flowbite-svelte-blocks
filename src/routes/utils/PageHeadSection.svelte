@@ -7,6 +7,7 @@
   export let title: string;
   export let description: string;
 
+  /* eslint-disable  @typescript-eslint/no-unused-expressions */
   dir;
   breadcrumb_title;
 </script>

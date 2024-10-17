@@ -14,6 +14,7 @@
 
   let headings: LinkType[] = [];
 
+  /* eslint-disable  @typescript-eslint/no-explicit-any */
   function init(_: any) {
     const observer: MutationObserver = new MutationObserver(toc);
     observer.observe(document.body, { childList: true, subtree: true });
