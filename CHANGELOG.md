@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.4
+
+### Patch Changes
+
+- types: update and lint fix ([`95b5781`](https://github.com/themesberg/flowbite-svelte-blocks/commit/95b57819464cfa8cb18d3c613330d11a61133224))
+
 ## 1.1.3
 
 ### Patch Changes
