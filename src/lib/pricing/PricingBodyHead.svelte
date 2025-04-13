@@ -1,21 +1,33 @@
 <script lang="ts">
   import { twMerge } from 'tailwind-merge';
-  export let h3Class: string = 'mb-4 text-2xl font-semibold';
-  export let pClass: string = 'font-light text-gray-500 sm:text-lg dark:text-gray-400';
-  export let priceClass: string = 'flex justify-center items-baseline my-8';
+  import type { Snippet } from 'svelte';
+  interface Props{
+    h3?: Snippet;
+    paragraph?: Snippet;
+    price?: Snippet;
+    h3Class?: string;
+    pClass?: string;
+    priceClass?: string;
+  }
+  let { h3, paragraph, price, h3Class, pClass, priceClass }: Props = $props();
+  let h3Cls: string = twMerge('mb-4 text-2xl font-semibold', h3Class);
+  let pCls: string = twMerge('font-light text-gray-500 sm:text-lg dark:text-gray-400', pClass);
+  let priceCls: string = twMerge('flex justify-center items-baseline my-8', priceClass);
 </script>
 
-{#if $$slots.h3}
-  <h3 class={twMerge(h3Class, $$props.class)}><slot name="h3"></slot></h3>
+{#if h3}
+  <h3 class={h3Cls}>
+    {@render h3()}
+  </h3>
 {/if}
-{#if $$slots.paragraph}
-  <p class={twMerge(pClass, $$props.classP)}>
-    <slot name="paragraph"></slot>
+{#if paragraph}
+  <p class={pCls}>
+    {@render paragraph()}
   </p>
 {/if}
-{#if $$slots.price}
-  <div class={twMerge(priceClass, $$props.classPrice)}>
-    <slot name="price"></slot>
+{#if price}
+  <div class={priceCls}>
+    {@render price()}
   </div>
 {/if}
 
@@ -23,7 +35,7 @@
 @component
 [Go to docs](https://flowbite-svelte-blocks.codewithshin.com/)
 ## Props
-@prop export let h3Class: string = 'mb-4 text-2xl font-semibold';
-@prop export let pClass: string = 'font-light text-gray-500 sm:text-lg dark:text-gray-400';
-@prop export let priceClass: string = 'flex justify-center items-baseline my-8';
+@prop let h3Class: string = 'mb-4 text-2xl font-semibold';
+@prop let pClass: string = 'font-light text-gray-500 sm:text-lg dark:text-gray-400';
+@prop let priceClass: string = 'flex justify-center items-baseline my-8';
 -->

@@ -1,14 +1,25 @@
 <script lang="ts">
   import { twMerge } from 'tailwind-merge';
-  export let authorDiv: string = 'flex justify-between items-center';
-  export let authorImgDiv: string = 'flex items-center space-x-4';
+  import type { Snippet } from 'svelte';
+  interface Props {
+    children: Snippet;
+    author?: Snippet;
+    authorDiv?: string;
+    authorImgDiv?: string;
+    class?: string;
+  }
+  let { children, author, authorDiv = 'flex justify-between items-center', authorImgDiv = 'flex items-center space-x-4', class: className }: Props = $props()
+  // export let authorDiv: string = 'flex justify-between items-center';
+  // export let authorImgDiv: string = 'flex items-center space-x-4';
 </script>
 
-<div class={twMerge(authorDiv, $$props.class)}>
-  <div class={twMerge(authorImgDiv, $$props.classAuthorImgDiv)}>
-    <slot name="author"></slot>
+<div class={twMerge(authorDiv, className)}>
+  <div class={authorImgDiv}>
+    {#if author}
+      {@render author()}
+    {/if}
   </div>
-  <slot></slot>
+  {@render children()}
 </div>
 
 <!--

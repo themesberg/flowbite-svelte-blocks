@@ -1,6 +1,16 @@
 <script lang="ts">
   import { twMerge } from 'tailwind-merge';
-  export let ctatype: 'default' | 'image' | 'heading' | 'none' = 'default';
+  import type { Snippet } from 'svelte';
+  interface Props {
+    children: Snippet;
+    h2?: Snippet;
+    image?: Snippet;
+    ctatype?: 'default' | 'image' | 'heading' | 'none';
+    h2Class?: string;
+    class?: string;
+  }
+  let { children, h2, image, ctatype = 'default', h2Class, class:className }: Props = $props()
+  // export let ctatype: 'default' | 'image' | 'heading' | 'none' = 'default';
   const ctaClasses = {
     default: {
       divClass: 'max-w-screen-md',
@@ -21,14 +31,16 @@
   };
 </script>
 
-{#if $$slots.img}
-  <slot name="img" />
+{#if image}
+  {@render image()}
 {/if}
-<div class={twMerge(ctaClasses[ctatype]['divClass'], $$props.class)}>
-  {#if $$slots.h2}
-    <h2 class={twMerge(ctaClasses[ctatype]['h2Class'], $$props.classH2)}><slot name="h2"></slot></h2>
+<div class={twMerge(ctaClasses[ctatype]['divClass'], className)}>
+  {#if h2}
+    <h2 class={twMerge(ctaClasses[ctatype]['h2Class'], h2Class)}>
+      {@render h2()}
+    </h2>
   {/if}
-  <slot></slot>
+  {@render children()}
 </div>
 
 <!--

@@ -1,17 +1,33 @@
 <script lang="ts">
-  export let scheduleName: string = '';
-</script>
+  import { twMerge } from 'tailwind-merge';
+  import type { Snippet } from 'svelte';
+  interface Props{
+    children: Snippet;
+    subtitle: Snippet;
+    scheduleName?: string;
+    scheduleClass?: string;
+    h2Class?: string;
+    bodyOuterClass?: string;
+    bodyInnerClass?: string;
+  }
+  let { children, subtitle, scheduleName, scheduleClass, h2Class, bodyOuterClass, bodyInnerClass }: Props = $props();
+  //  let scheduleName: string = '';
+  let divCls: string = twMerge("max-w-3xl mx-auto text-center", scheduleClass)
+  let h2Cls: string= twMerge("text-4xl font-extrabold leading-tight tracking-tight text-gray-900 dark:text-white", h2Class)
+  let bodyOuterCls: string= twMerge("flow-root max-w-3xl mx-auto mt-8 sm:mt-12 lg:mt-16", bodyOuterClass);
+  let bodyInnerCls: string = twMerge("-my-4 divide-y divide-gray-200 dark:divide-gray-700", bodyInnerClass);
+;</script>
 
-<div class="max-w-3xl mx-auto text-center">
-  <h2 class="text-4xl font-extrabold leading-tight tracking-tight text-gray-900 dark:text-white">
+<div class={divCls}>
+  <h2 class={h2Cls}>
     {scheduleName}
   </h2>
-  <slot name="subtitle"></slot>
+  {@render subtitle()}
 </div>
 
-<div class="flow-root max-w-3xl mx-auto mt-8 sm:mt-12 lg:mt-16">
-  <div class="-my-4 divide-y divide-gray-200 dark:divide-gray-700">
-    <slot></slot>
+<div class={bodyOuterCls}>
+  <div class={bodyInnerCls}>
+    {@render children()}
   </div>
 </div>
 

@@ -23,7 +23,6 @@ description: Flowbite Svelte Blocks example website homepage.
   import {
     Airbnb,
     Facebook,
-    Github,
     Google,
     Mailchimp,
     Mashable,

@@ -1,15 +1,25 @@
 <script lang="ts">
   import { twMerge } from 'tailwind-merge';
-  export let divClass: string = 'mx-auto max-w-screen-sm text-center';
-  export let h1Class: string = 'mb-4 text-7xl tracking-tight font-extrabold lg:text-9xl text-primary-600 dark:text-primary-500';
+  import type { Snippet } from 'svelte';
+  interface Props{
+    h1?:Snippet;
+    paragraph?: Snippet;
+    divClass?: string;
+    h1Class?: string;
+  }
+  let {h1, paragraph, divClass, h1Class}: Props = $props();
+   let divCls: string = twMerge('mx-auto max-w-screen-sm text-center', divClass);
+   let h1Cls: string = twMerge('mb-4 text-7xl tracking-tight font-extrabold lg:text-9xl text-primary-600 dark:text-primary-500', h1Class);
 </script>
 
-<div class={twMerge(divClass, $$props.class)}>
-  {#if $$slots.h1}
-    <h1 class={twMerge(h1Class, $$props.classH1)}><slot name="h1"></slot></h1>
+<div class={divCls}>
+  {#if h1}
+    <h1 class={h1Cls}>
+      {@render h1()}
+    </h1>
   {/if}
-  {#if $$slots.paragraph}
-    <slot name="paragraph"></slot>
+  {#if paragraph}
+    {@render paragraph()}
   {/if}
 </div>
 

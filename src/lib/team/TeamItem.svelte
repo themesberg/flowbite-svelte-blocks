@@ -1,29 +1,44 @@
 <script lang="ts">
   import { twMerge } from 'tailwind-merge';
-  export let divClass: string = 'items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700';
-  export let imgClass: string = 'w-full rounded-lg sm:rounded-none sm:rounded-l-lg';
-  export let h3Class: string = 'text-xl font-bold tracking-tight text-gray-900 dark:text-white';
-  export let spanClass: string = 'text-gray-500 dark:text-gray-400';
-
-  export let href: string = '';
-  export let src: string = '';
-  export let alt: string = '';
-  export let name: string = '';
-  export let jobTitle: string = '';
+  import type { Snippet } from 'svelte';
+  interface Props{
+    children: Snippet;
+    social: Snippet;
+    class?: string;
+    imgClass?: string;
+    h3Class?: string;
+    spanClass?: string;
+    href?: string;
+    src?: string;
+    alt?: string;
+    name?: string;
+    jobTitle?: string;
+  }
+  let { children, social, class:className, imgClass, h3Class, spanClass, href, src, alt, name, jobTitle }: Props = $props();
+  let divCls: string = twMerge('items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700', className);
+  let imgCls: string = twMerge('w-full rounded-lg sm:rounded-none sm:rounded-l-lg', imgClass);
+  let h3Cls: string = twMerge('text-xl font-bold tracking-tight text-gray-900 dark:text-white', h3Class);
+  let spanCls: string = twMerge('text-gray-500 dark:text-gray-400', spanClass);
 </script>
 
-<div class={twMerge(divClass, $$props.class)}>
+<div class={divCls}>
+  {#if href && src}
   <a {href}>
-    <img class={twMerge(imgClass, $$props.classImg)} {src} {alt} />
+    <img class={imgCls} {src} {alt} />
   </a>
+  {/if}
   <div class="p-5">
-    <h3 class={twMerge(h3Class, $$props.classH3)}>
+    {#if href && name}
+    <h3 class={h3Cls}>
       <a {href}>{name}</a>
     </h3>
-    <span class={twMerge(spanClass, $$props.classSpan)}>{jobTitle}</span>
-    <slot></slot>
+    {/if}
+    {#if jobTitle}
+    <span class={spanCls}>{jobTitle}</span>
+    {/if}
+    {@render children()}
     <ul class="flex space-x-4 sm:mt-0">
-      <slot name="social"></slot>
+      {@render social()}
     </ul>
   </div>
 </div>
@@ -32,13 +47,13 @@
 @component
 [Go to docs](https://flowbite-svelte-blocks.codewithshin.com/)
 ## Props
-@prop export let divClass: string = 'items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700';
-@prop export let imgClass: string = 'w-full rounded-lg sm:rounded-none sm:rounded-l-lg';
-@prop export let h3Class: string = 'text-xl font-bold tracking-tight text-gray-900 dark:text-white';
-@prop export let spanClass: string = 'text-gray-500 dark:text-gray-400';
-@prop export let href: string = '';
-@prop export let src: string = '';
-@prop export let alt: string = '';
-@prop export let name: string = '';
-@prop export let jobTitle: string = '';
+@prop let divClass: string = 'items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700';
+@prop let imgClass: string = 'w-full rounded-lg sm:rounded-none sm:rounded-l-lg';
+@prop let h3Class: string = 'text-xl font-bold tracking-tight text-gray-900 dark:text-white';
+@prop let spanClass: string = 'text-gray-500 dark:text-gray-400';
+@prop let href: string = '';
+@prop let src: string = '';
+@prop let alt: string = '';
+@prop let name: string = '';
+@prop let jobTitle: string = '';
 -->

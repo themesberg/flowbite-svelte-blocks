@@ -1,6 +1,6 @@
 <script lang="ts">
   import '../app.css';
-  import { page } from '$app/stores';
+  import { page } from '$app/state';
   import { afterNavigate } from '$app/navigation';
   import { Footer, FooterBrand, FooterLinkGroup, FooterLink, FooterCopyright, FooterIcon, Navbar, NavBrand, NavHamburger, NavUl, NavLi, Dropdown, DropdownItem, DarkMode, Tooltip } from 'flowbite-svelte';
   import GitHubHome from './utils/icons/GitHubHome.svelte';
@@ -24,7 +24,7 @@
   let activeCategory: boolean;
 
   $: {
-    activeUrl = $page.url.pathname;
+    activeUrl = page.url.pathname;
     const keywords = ['marketing', 'application', 'publisher'];
     const isActive = keywords.some((keyword) => activeUrl.includes(keyword));
     activeCategory = isActive ? true : false;
@@ -37,12 +37,12 @@
 <Runatics {analyticsId} />
 <div class="flex flex-col min-h-screen bg-white dark:bg-gray-900">
   <header class="sticky top-0 z-40 flex-none w-full mx-auto bg-white border-b border-gray-200 dark:border-gray-600 dark:bg-gray-800">
-    <Navbar color="default" fluid class="flex items-center justify-between w-full mx-auto py-1.5 px-4" let:hidden let:toggle>
+    <Navbar color="default" fluid class="flex items-center justify-between w-full mx-auto py-1.5 px-4">
       <NavBrand href="/">
         <img src="/images/logo.svg" class="h-8 mr-3" alt="Flowbite Logo" />
         <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"> Flowbite Svelte Blocks </span>
       </NavBrand>
-      <NavUl {hidden} {divClass} {ulClass} nonActiveClass="md:!pl-3 md:!py-2 lg:!pl-0 text-gray-700 hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 dark:text-gray-400 lg:dark:text-white lg:dark:hover:text-primary-700 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent" activeClass="md:!pl-3 md:!py-2 lg:!pl-0 text-white bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:dark:text-primary-700 dark:bg-primary-600 lg:dark:bg-transparent cursor-default">
+      <NavUl class={divClass} {ulClass} nonActiveClass="md:!pl-3 md:!py-2 lg:!pl-0 text-gray-700 hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 dark:text-gray-400 lg:dark:text-white lg:dark:hover:text-primary-700 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent" activeClass="md:!pl-3 md:!py-2 lg:!pl-0 text-white bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:dark:text-primary-700 dark:bg-primary-600 lg:dark:bg-transparent cursor-default">
         <NavLi class="lg:px-2 lg:mb-0" href="/">Home</NavLi>
         <NavLi id="nav-menu1" class="cursor-pointer">
           Categories<ChevronDownOutline class="w-3 h-3 ml-2 text-gray-500 dark:text-white inline" />
@@ -73,7 +73,7 @@
         </DocBadge>
       </a>
 
-      <NavHamburger on:click={toggle} class="ml-3 m-0 lg:hidden" />
+      <NavHamburger class="ml-3 m-0 lg:hidden" />
     </Navbar>
   </header>
   <main class="grow">

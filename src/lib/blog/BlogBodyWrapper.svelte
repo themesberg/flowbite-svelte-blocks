@@ -1,10 +1,18 @@
 <script lang="ts">
   import { twMerge } from 'tailwind-merge';
-  export let divClass: string = 'grid gap-8 lg:grid-cols-2';
+  import type { Snippet } from 'svelte';
+  interface Props {
+    children: Snippet;
+    divClass?: string;
+    class?: string;
+  }
+  let { children, divClass = 'grid gap-8 lg:grid-cols-2', class: className }: Props = $props()
+;
+  // export let divClass: string = 'grid gap-8 lg:grid-cols-2';
 </script>
 
-<div class={twMerge(divClass, $$props.class)}>
-  <slot></slot>
+<div class={twMerge(divClass, className)}>
+  {@render children()}
 </div>
 
 <!--

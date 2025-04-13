@@ -1,14 +1,25 @@
 <script lang="ts">
   import { twMerge } from 'tailwind-merge';
+  import type { Snippet } from 'svelte';
   import type { Comment } from '../types';
   import CommentItem from './CommentItem.svelte';
   import { MessageDotsOutline } from 'flowbite-svelte-icons';
+  interface Props {
+    menuSlot?: Snippet;
+    replySlot?: Snippet;
+    replyButton?: boolean;
+    comment: Comment;
+    articleClass?: string;
+    footerClass?: string;
+    pClass?: string;
+  }
+  let { menuSlot, replySlot, replyButton, comment, articleClass, footerClass, pClass }: Props = $props();
 
-  export let replyButton: boolean = true;
-  export let comment: Comment;
-  const articleCls: string = twMerge('p-6 mb-6 text-base bg-white rounded-lg dark:bg-gray-900', $$props.articleClass);
-  const footerCls: string = twMerge('flex justify-between items-center mb-2', $$props.footerClass);
-  const pCls: string = twMerge('text-sm text-gray-600 dark:text-gray-400', $$props.classP)
+  // export let replyButton: boolean = true;
+  // export let comment: Comment;
+  const articleCls: string = twMerge('p-6 mb-6 text-base bg-white rounded-lg dark:bg-gray-900', articleClass);
+  const footerCls: string = twMerge('flex justify-between items-center mb-2', footerClass);
+  const pCls: string = twMerge('text-sm text-gray-600 dark:text-gray-400', pClass)
 </script>
 
 <article class="{articleCls}" id={comment.id}>
@@ -28,13 +39,17 @@
       </p>
       {/if}
     </div>
-    <slot name='dropdownMenu'/>
+    {#if menuSlot}
+      {@render menuSlot()}
+    {/if}
   </footer>
   <p class="text-gray-500 dark:text-gray-400">
     {comment.content}
   </p>
   {#if replyButton}
-    <slot name="reply">
+    {#if replySlot}
+      {@render replySlot()}
+    {/if}
     <div class="flex items-center mt-4 space-x-4">
       <button type="button"
           class="flex items-center text-sm text-gray-500 hover:underline dark:text-gray-400">
@@ -42,7 +57,6 @@
           Reply
       </button>
     </div>
-    </slot>
   {/if}
 </article>
 {#if comment.replies}

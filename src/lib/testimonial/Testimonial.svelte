@@ -1,20 +1,28 @@
 <script lang="ts">
   import { twMerge } from 'tailwind-merge';
-  import type { ComponentType, SvelteComponent } from 'svelte';
-
-  export let icon: ComponentType;
-  export let figureClass: string = 'max-w-screen-md mx-auto';
-  export let figureFooterClass: string = 'flex items-center justify-center mt-6 space-x-3';
+  import type { Component } from 'svelte';
+  import type { Snippet } from 'svelte';
+  interface Props{
+    children: Snippet;
+    footer?: Snippet;
+    Icon?: Component;
+    class: string;
+    figureFooterClass: string;
+  }
+  let { children, footer, Icon, class:className, figureFooterClass }: Props = $props();
+  // let icon: Component;
+  let figureCls: string = twMerge('max-w-screen-md mx-auto', className);
+  let figureFooterCls: string = twMerge('flex items-center justify-center mt-6 space-x-3', figureFooterClass);
 </script>
 
-<figure class={twMerge(figureClass, $$props.classFigure)}>
-  {#if icon}
-    <svelte:component this={icon} />
+<figure class={figureCls}>
+  {#if Icon}
+    <Icon />
   {/if}
-  <slot></slot>
-  {#if $$slots.footer}
-    <figcaption class={twMerge(figureFooterClass, $$props.classFigureFooter)}>
-      <slot name="footer"></slot>
+  {@render children()}
+  {#if footer}
+    <figcaption class={figureFooterCls}>
+      {@render footer()}
     </figcaption>
   {/if}
 </figure>
@@ -23,7 +31,7 @@
 @component
 [Go to docs](https://flowbite-svelte-blocks.codewithshin.com/)
 ## Props
-@prop export let icon: ComponentType;
-@prop export let figureClass: string = 'max-w-screen-md mx-auto';
-@prop export let figureFooterClass: string = 'flex items-center justify-center mt-6 space-x-3';
+@prop let icon: ComponentType;
+@prop let figureClass: string = 'max-w-screen-md mx-auto';
+@prop let figureFooterClass: string = 'flex items-center justify-center mt-6 space-x-3';
 -->

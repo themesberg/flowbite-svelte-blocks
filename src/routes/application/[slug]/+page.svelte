@@ -1,7 +1,8 @@
 <script lang="ts">
-  import type { PageData } from './$types';
-  export let data: PageData;
-  // console.log('products: ', data)
+  import type { PageProps } from "./$types";
+
+  let { data }: PageProps = $props();
+  let Content = $derived(data.content);
 </script>
 
-<svelte:component this={data.content} />
+<Content />

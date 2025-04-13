@@ -1,10 +1,16 @@
 <script lang="ts">
   import { twMerge } from 'tailwind-merge';
-  export let divClass: string = 'grid pt-8 text-left border-t border-gray-200 md:gap-16 dark:border-gray-700 md:grid-cols-2';
+  import type { Snippet } from 'svelte';
+  interface Props {
+    children: Snippet;
+    class?: string;
+  }
+  let { children, class:className }: Props = $props()
+  // export let divClass: string = 'grid pt-8 text-left border-t border-gray-200 md:gap-16 dark:border-gray-700 md:grid-cols-2';
 </script>
 
-<div class={twMerge(divClass, $$props.class)}>
-  <slot></slot>
+<div class={twMerge('grid pt-8 text-left border-t border-gray-200 md:gap-16 dark:border-gray-700 md:grid-cols-2', className)}>
+  {@render children()}
 </div>
 
 <!--

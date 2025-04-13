@@ -1,16 +1,24 @@
 <script lang="ts">
   import { twMerge } from 'tailwind-merge';
   import { QuestionCircleSolid } from 'flowbite-svelte-icons';
-  export let divClass: string = 'mb-10';
-  export let h3Class: string = 'flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white';
+  import type { Snippet } from 'svelte';
+  interface Props {
+    children: Snippet;
+    h3: Snippet;
+    divClass?: string;
+    h3Class?: string;
+  }
+  let { children, h3, divClass, h3Class }: Props = $props();
+  let divCls: string = twMerge('mb-10', divClass);
+  let h3Cls: string = twMerge('flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white', h3Class);
 </script>
 
-<div class={twMerge(divClass, $$props.class)}>
-  <h3 class={twMerge(h3Class, $$props.classH3)}>
+<div class={divCls}>
+  <h3 class={h3Cls}>
     <QuestionCircleSolid size="sm" class="mr-2" />
-    <slot name="h3" />
+    {@render h3()}
   </h3>
-  <slot></slot>
+  {@render children()}
 </div>
 
 <!--

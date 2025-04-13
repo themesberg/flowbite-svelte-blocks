@@ -1,7 +1,15 @@
 <script lang="ts">
   import { twMerge } from 'tailwind-merge';
-  export let sectionClass: string = 'relative py-6 sm:py-10';
-  export let name: 'advancedTable' | 'blog' | 'comment' | 'cta' | 'ctawithimg' | 'contact' | 'content' | 'contentwithimg' | 'crudcreatedrawer' | 'crudcreateform' | 'crudreadsection' | 'default' | 'faq' | 'feature' | 'forgotpassword' | 'headingwithctabutton' | 'heroDefault' | 'heroVisual' | 'login' | 'logos' | 'maintenance' | 'newsletter' | 'none' | 'page500' | 'page404' | 'portfolio' | 'pricing' | 'register' | 'reset' | 'schedule' | 'social' | 'tableheader' | 'team' | 'testimonial' = 'default';
+  import type { Snippet } from 'svelte';
+  interface Props {
+    children: Snippet;
+    sectionClass: string;
+    divClass: string;
+    name: 'advancedTable' | 'blog' | 'comment' | 'cta' | 'ctawithimg' | 'contact' | 'content' | 'contentwithimg' | 'crudcreatedrawer' | 'crudcreateform' | 'crudreadsection' | 'default' | 'faq' | 'feature' | 'forgotpassword' | 'headingwithctabutton' | 'heroDefault' | 'heroVisual' | 'login' | 'logos' | 'maintenance' | 'newsletter' | 'none' | 'page500' | 'page404' | 'portfolio' | 'pricing' | 'register' | 'reset' | 'schedule' | 'social' | 'tableheader' | 'team' | 'testimonial';
+    class: string;
+  }
+  let { children, sectionClass = 'relative py-6 sm:py-10', divClass, name = 'default', class:className }: Props = $props();
+
   const sectionClasses = {
     advancedTable: {
       div: 'mx-auto max-w-screen-xl px-4 lg:px-12'
@@ -109,9 +117,9 @@
   };
 </script>
 
-<section class={twMerge(sectionClass, $$props.classSection)}>
-  <div class={twMerge(sectionClasses[name]['div'], $$props.classDiv)}>
-    <slot></slot>
+<section class={twMerge(sectionClass, className)}>
+  <div class={twMerge(sectionClasses[name]['div'], divClass)}>
+    {@render children()}
   </div>
 </section>
 

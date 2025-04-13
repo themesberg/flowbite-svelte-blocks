@@ -1,115 +1,58 @@
-<h1 align="center">Flowbite Svelte Blocks</h1>
+# Svelte library
 
-<p align="center">
-<a href="https://flowbite-svelte-blocks.codewithshin.com/" rel="nofollow">Flowbite Svelte Blocks</a>
-</p>
+Everything you need to build a Svelte library, powered by [`sv`](https://npmjs.com/package/sv).
 
-<p align="center">
-<a href="https://www.npmjs.com/package/flowbite-svelte-blocks" rel="nofollow"><img src="https://img.shields.io/npm/v/flowbite-svelte-blocks" alt="npm"></a>
-<a href="https://twitter.com/shinokada" rel="nofollow"><img src="https://img.shields.io/badge/created%20by-@shinokada-4BBAAB.svg" alt="Created by Shin Okada"></a>
-<a href="https://opensource.org/licenses/MIT" rel="nofollow"><img src="https://img.shields.io/github/license/themesberg/flowbite-svelte-blocks" alt="License"></a>
-</p>
+Read more about creating a library [in the docs](https://svelte.dev/docs/kit/packaging).
 
-**⚠️ Flowbite-Svelte-Blocks is currently in early development and APIs and packages are likely to change quite often.**
+## Creating a project
 
-## Demo
+If you're seeing this, you've probably already done this step. Congrats!
 
-[Flowbite Svelte Blocks](https://flowbite-svelte-blocks.codewithshin.com/)
+```bash
+# create a new project in the current directory
+npx sv create
 
-## Installation
-
-This library is built on top of [Flowbite-Svelte](https://github.com/themesberg/flowbite-svelte) and [Flowbite-Svelte-Icons](https://flowbite-svelte-icons.codewithshin.com/). Flowbite-Svelte is an official Flowbite component library for Svelte.
-
-Install SvelteKit:
-
-```sh
-npm create svelte@latest your-project-name
-cd your-project-name
-pnpm install
+# create a new project in my-app
+npx sv create my-app
 ```
 
-Install Tailwind CSS:
+## Developing
 
-```sh
-npx svelte-add@latest tailwindcss
-pnpm i
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+
+```bash
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
 ```
 
-Start a server:
+Everything inside `src/lib` is part of your library, everything inside `src/routes` can be used as a showcase or preview app.
 
-```sh
-pnpm run dev
+## Building
+
+To build your library:
+
+```bash
+npm run package
 ```
 
-Install flowbite-svelte-blocks:
+To create a production version of your showcase app:
 
-```sh
-pnpm i flowbite-svelte flowbite-svelte-blocks flowbite-svelte-icons
+```bash
+npm run build
 ```
 
-Update tailwind.config.cjs:
+You can preview the production build with `npm run preview`.
 
-```js
-const config = {
-  content: ['./src/**/*.{html,js,svelte,ts}', './node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}', './node_modules/flowbite-svelte-blocks/**/*.{html,js,svelte,ts}'],
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
 
-  theme: {
-    extend: {}
-  },
+## Publishing
 
-  plugins: [require('flowbite/plugin')],
-  darkMode: 'class'
-};
+Go into the `package.json` and give your package the desired name through the `"name"` option. Also consider adding a `"license"` field and point it to a `LICENSE` file which you can create from a template (one popular option is the [MIT license](https://opensource.org/license/mit/)).
 
-module.exports = config;
-```
+To publish your library to [npm](https://www.npmjs.com):
 
-## Update tailwind.config.cjs
-
-Current `theme` config is the following. You can update `primary` color and other config.
-
-```js
-theme: {
-    extend: {
-      colors: {
-        primary: {"50":"#fff1f2","100":"#ffe4e6","200":"#fecdd3","300":"#fda4af","400":"#fb7185","500":"#f43f5e","600":"#e11d48","700":"#be123c","800":"#9f1239","900":"#881337"}
-      }
-    },
-    fontFamily: {
-      'body': [
-      'Inter',
-      'ui-sans-serif',
-      'system-ui',
-      '-apple-system',
-      'system-ui',
-      'Segoe UI',
-      'Roboto',
-      'Helvetica Neue',
-      'Arial',
-      'Noto Sans',
-      'sans-serif',
-      'Apple Color Emoji',
-      'Segoe UI Emoji',
-      'Segoe UI Symbol',
-      'Noto Color Emoji'
-  ],
-    'sans': [
-    'Inter',
-    'ui-sans-serif',
-    'system-ui',
-    '-apple-system',
-    'system-ui',
-    'Segoe UI',
-    'Roboto',
-    'Helvetica Neue',
-    'Arial',
-    'Noto Sans',
-    'sans-serif',
-    'Apple Color Emoji',
-    'Segoe UI Emoji',
-    'Segoe UI Symbol',
-    'Noto Color Emoji'
-  ]
-    }
-  },
+```bash
+npm publish
 ```

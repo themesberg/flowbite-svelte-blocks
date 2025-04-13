@@ -1,8 +1,7 @@
 export { default as MetaTag } from './MetaTag.svelte';
 
 export { default as Airbnb } from './icons/Airbnb.svelte';
-export { default as BookOpen } from './icons/BookOpen.svelte';
-export { default as Github } from './icons/Github.svelte';
+// export { default as Github } from './icons/Github.svelte';
 export { default as Google } from './icons/Google.svelte';
 export { default as Facebook } from './icons/Facebook.svelte';
 export { default as Instagram } from './icons/Instagram.svelte';

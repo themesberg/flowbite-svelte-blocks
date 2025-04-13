@@ -1,18 +1,25 @@
 <script lang="ts">
   import { twMerge } from 'tailwind-merge';
-  export let ulClass: string = 'mb-8 space-y-4 text-left';
+  import type { Snippet } from 'svelte';
+  interface Props{
+    children: Snippet;
+    btn: Snippet;
+    ulClass?: string;
+  }
+  let { children, btn, ulClass }: Props = $props();
+  let ulCls: string = twMerge('mb-8 space-y-4 text-left', ulClass);
 </script>
 
-<ul class={twMerge(ulClass, $$props.class)}>
-  <slot></slot>
+<ul class={ulCls}>
+  {@render children()}
 </ul>
-{#if $$slots.btn}
-  <slot name="btn"></slot>
+{#if btn}
+  {@render btn()}
 {/if}
 
 <!--
 @component
 [Go to docs](https://flowbite-svelte-blocks.codewithshin.com/)
 ## Props
-@prop export let ulClass: string = 'mb-8 space-y-4 text-left';
+@prop let ulClass: string = 'mb-8 space-y-4 text-left';
 -->

@@ -1,18 +1,28 @@
 <script lang="ts">
   import { twMerge } from 'tailwind-merge';
-  export let hero: 'default' | 'visual' = 'default';
+  import type { Snippet } from 'svelte';
+  import type { HTMLAttributes } from 'svelte/elements'
+  interface Props extends HTMLAttributes<HTMLDivElement>{
+    children: Snippet;
+    head?: Snippet;
+    hero?: 'default' | 'visual';
+    class?: string;
+  }
+  let { children, head, hero = 'default', class:className, ...restProps }: Props = $props();
+  // export let hero: 'default' | 'visual' = 'default';
   const divClasses = {
     default: 'px-4 mx-auto text-center md:max-w-screen-md lg:max-w-screen-lg lg:px-36',
     visual: ''
   };
 </script>
 
-<div {...$$restProps} class={twMerge(divClasses[hero], $$props.class)} class:has-head={$$slots.head}>
-  {#if $$slots.head}
-    <span class="font-semibold text-gray-400 uppercase"><slot name="head" /></span>
+<div {...restProps} class={twMerge(divClasses[hero], className)} class:has-head={head}>
+  {#if head}
+    <span class="font-semibold text-gray-400 uppercase">
+      {@render head()}
+    </span>
   {/if}
-
-  <slot></slot>
+  {@render children()}
 </div>
 
 <!--

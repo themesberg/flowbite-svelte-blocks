@@ -1,11 +1,20 @@
 <script lang="ts">
   import { twMerge } from 'tailwind-merge';
-  export let title: string = '';
-  export let titleDiv: string = 'flex justify-between items-center mb-6';
-  export let h2Class: string = 'text-lg lg:text-2xl font-bold text-gray-900 dark:text-white';
+  import type { Snippet } from 'svelte';
+  interface Props {
+    children: Snippet;
+    title?: string;
+    titleClass?: string;
+    h2Class?: string;
+    class?: string;
+  }
+  let { children, title, titleClass, h2Class, class:className }: Props = $props();
+  //   export let title: string = '';
+  const classTitle: string = 'flex justify-between items-center mb-6';
+  const classH2: string = 'text-lg lg:text-2xl font-bold text-gray-900 dark:text-white';
 
-  const titleDivCls: string = twMerge(titleDiv, $$props.classTitle)
-  const h2Cls: string = twMerge(h2Class, $$props.classH2)
+  const titleDivCls: string = twMerge(classTitle, titleClass)
+  const h2Cls: string = twMerge(classH2, h2Class)
 </script>
 
 
@@ -13,7 +22,7 @@
   <h2 class="{h2Cls}">{title}</h2>
 </div>
 
-<slot></slot>
+{@render children()}
 
 <!--
 @component

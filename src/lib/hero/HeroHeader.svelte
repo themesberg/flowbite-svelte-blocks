@@ -1,25 +1,41 @@
 <script lang="ts">
   import { twMerge } from 'tailwind-merge';
-  export let h1Class: string = 'mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white';
-  export let h2Class: string = 'mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl';
-  export let pClass: string = 'mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400';
+  import type { Snippet } from 'svelte';
+  import type { HTMLAttributes } from 'svelte/elements';
+  interface Props extends HTMLAttributes<HTMLDivElement>{
+    children: Snippet;
+    h1?: Snippet;
+    h2?: Snippet;
+    paragraph?: Snippet;
+    class?: string;
+    h1Class?: string;
+    h2Class?: string;
+    pClass?: string;
+  }
+  let { children, h1, h2, paragraph, class:className, h1Class, h2Class, pClass, ...restProps }: Props = $props();
+
+   let h1Cls: string = twMerge('mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white', h1Class);
+   let h2Cls: string = twMerge('mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl', h2Class);
+   let pCls: string = twMerge('mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400', pClass);
 </script>
 
-<div class={$$props.class}>
-  {#if $$slots.h1}
-    <h1 class={twMerge(h1Class, $$props.classH1)} {...$$restProps}>
-      <slot name="h1" />
+<div class={className}  {...restProps}>
+  {#if h1}
+    <h1 class={h1Cls}>
+      {@render h1()}
     </h1>
   {/if}
-  {#if $$slots.h2}
-    <h2 class={twMerge(h2Class, $$props.classH2)}><slot name="h2"></slot></h2>
+  {#if h2}
+    <h2 class={h2Cls}>
+      {@render h2()}
+    </h2>
   {/if}
-  {#if $$slots.paragraph}
-    <p class={twMerge(pClass, $$props.classP)}>
-      <slot name="paragraph" />
+  {#if paragraph}
+    <p class={pCls}>
+      {@render paragraph()}
     </p>
   {/if}
-  <slot></slot>
+  {@render children()}
 </div>
 
 <!--
