@@ -1,10 +1,9 @@
 <script lang="ts">
-  import { page } from '$app/stores';
+  import { page } from '$app/state';
   import { Footer, FooterBrand, FooterCopyright, FooterIcon, FooterLink, FooterLinkGroup } from 'flowbite-svelte';
   let logo = '/images/flowbite-svelte-icon-logo.svg';
 
-  let isHomePage: boolean;
-  $: isHomePage = $page.route.id === '/';
+  let isHomePage: boolean = $derived( page.route.id === '/' );
 
   const footer_links = {
     Resources: {

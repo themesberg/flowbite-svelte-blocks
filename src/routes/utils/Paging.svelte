@@ -1,8 +1,15 @@
 <script lang="ts">
-  import { page } from '$app/stores';
+  import { page } from '$app/state';
   import { PaginationItem } from 'flowbite-svelte';
   import ArrowLeft from './icons/ArrowLeft.svelte';
   import ArrowRight from './icons/ArrowRight.svelte';
+  import type { Snippet } from 'svelte';
+
+  interface Props {
+    children?: Snippet;
+  }
+
+  let { children }: Props = $props();
 
   interface Post {
     meta: {
@@ -20,7 +27,7 @@
     data,
     url,
     params: { slug }
-  } = $page;
+  } = page;
   // two kinds of data. One from src/routes/+layout.js with posts
   // one from src/routes/applications(marketing, examples, publisher)/[slug]/+page.js content, title, dir
   // console.log('data.dir: ',data.dir)
@@ -57,9 +64,11 @@
       {:else}
         <div></div>
       {/if}
+      {#if children}
       <div class="hidden sm:block">
-        <slot></slot>
+        {@render children()}
       </div>
+      {/if}
       {#if index < components.length - 1}
         {@const { name, href } = sibling(true)}
 
@@ -72,7 +81,9 @@
       {/if}
     </div>
   {/if}
+  {#if children}
   <div class="sm:hidden">
-    <slot></slot>
+    {@render children()}
   </div>
+  {/if}
 </div>

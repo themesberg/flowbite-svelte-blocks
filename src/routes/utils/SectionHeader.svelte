@@ -1,22 +1,29 @@
 <script lang="ts">
   import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
-  export let home: string = 'Blocks';
-  export let category: string = '';
-  export let title: string = '';
-  export let description: string = '';
-  export let breadcrumb_title: string = '';
-  // export let divClass = category ? '' : 'mx-auto max-w-8xl pt-8 px-4 lg:px-20 mx-auto max-w-8xl';
-  export let headerClass = breadcrumb_title ? '' : 'mx-auto max-w-8xl pt-8 px-4 lg:px-20 mx-auto max-w-8xl col-span-2 mb-2 lg:mb-0';
-  const [first, ...rest] = category;
-  const capitalized = `${first.toUpperCase()}${rest.join('')}`;
+  interface Props{
+    home?: string;
+    category?: 'application'| 'marketing' | 'publisher' | undefined;
+    title?: string;
+    description?: string;
+    breadcrumb_title?: string;
+    headerClass?: string;
+  }
+  let { home = 'Blocks', category, title, description, breadcrumb_title, ...restProps }:Props = $props();
+  
+  let headerCls = breadcrumb_title ? '' : 'mx-auto max-w-8xl pt-8 px-4 lg:px-20 mx-auto max-w-8xl col-span-2 mb-2 lg:mb-0';
+  const capitalized = $derived(() => {
+    if (!category) return '';
+    const [first, ...rest] = category;
+    return `${first.toUpperCase()}${rest.join('')}`;
+  });
   const allowedDirs = ['application', 'marketing', 'publisher'];
 </script>
 
 <section>
-  <div class={headerClass}>
-    <Breadcrumb navClass="flex mb-3">
+  <div class={headerCls}>
+    <Breadcrumb class="flex mb-3">
       <BreadcrumbItem href="/" home>{home}</BreadcrumbItem>
-      {#if allowedDirs.includes(category)}
+      {#if category && allowedDirs.includes(category)}
       <BreadcrumbItem href="/{category}">{capitalized} UI</BreadcrumbItem>
       {/if}
       {#if breadcrumb_title}

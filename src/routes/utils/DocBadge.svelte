@@ -8,6 +8,6 @@
   let { children, class:className }: Props = $props();
 </script>
 
-<Badge color="red" class="bg-primary-100 text-primary-700 dark:bg-gray-700 dark:text-primary-700 border-primary-700 dark:border-primary-700 {className}">
+<Badge class="bg-primary-100 text-primary-700 dark:bg-gray-700 dark:text-primary-700 border-primary-700 dark:border-primary-700 {className}">
   {@render children()}
 </Badge>

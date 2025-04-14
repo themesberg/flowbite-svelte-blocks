@@ -4,7 +4,9 @@
   import type { PageData } from './$types';
   import Sectioncompo from './utils/Sectioncompo.svelte';
 
-  export let data: PageData;
+	import type { PageProps } from './$types';
+
+	let { data }: PageProps = $props();
 
   let title = 'Flowbite Svelte Blocks - UI Component Library';
   const description = 'Get started with 250 free and premium UI components built with the utility classes from Tailwind CSS to upgrade your web development stack and customize the colors, fonts, and dark mode using the configurator.';
@@ -25,7 +27,7 @@
     siteName: 'Flowbite Svelte Blocks'
   }}
   twitter={{
-    handle: '@shinokada',
+    creator: '@shinokada',
     cardType: 'summary_large_image',
     title: `${title}`,
     description: `${description}`,
@@ -33,10 +35,11 @@
     imageAlt: `${title} logo`
   }} />
 
-<div class="mx-auto max-w-8xl pt-8 px-4 lg:px-20 mx-auto max-w-8xl">
+<div class="mx-auto max-w-8xl pt-8 px-4 lg:px-20 max-w-8xl">
   <div class="col-span-2 mb-2 lg:mb-0">
     <h1 class="mb-2 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">Flowbite Blocks in Svelte</h1>
     <p class="text-lg text-gray-500 lg:mb-0 dark:text-gray-400">Get started with 122 free and premium UI components built with the utility classes from Tailwind CSS to upgrade your web development stack and customize the colors, fonts, and dark mode using the configurator.</p>
   </div>
 </div>
+
 <Sectioncompo {data} section={undefined} />

@@ -1,6 +1,6 @@
 <script lang="ts">
   interface Props{
-    href: string;
+    href?: string;
   }
   let { href }:Props = $props();
 </script>

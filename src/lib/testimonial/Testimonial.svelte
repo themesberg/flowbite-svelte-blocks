@@ -6,8 +6,8 @@
     children: Snippet;
     footer?: Snippet;
     Icon?: Component;
-    class: string;
-    figureFooterClass: string;
+    class?: string;
+    figureFooterClass?: string;
   }
   let { children, footer, Icon, class:className, figureFooterClass }: Props = $props();
   // let icon: Component;

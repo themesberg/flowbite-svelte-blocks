@@ -1,6 +1,7 @@
 import { ANALYTICS_ID_FLOWBITE } from '$env/static/private';
-/** @type {import('./$types').LayoutServerLoad} \*/
-export async function load({ fetch }) {
+import type { LayoutServerLoad } from './$types';
+
+export const load: LayoutServerLoad = async ({ fetch }) => {
   try {
     const response = await fetch('/api');
 

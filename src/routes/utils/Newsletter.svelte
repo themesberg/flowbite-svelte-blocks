@@ -18,7 +18,7 @@
       {/if}
       <form action="https://app.convertkit.com/forms/4692392/subscriptions" class="seva-form formkit-form self-stretch" method="post" data-sv-form="4692392" data-uid="344e3b5c48" data-format="inline" data-version="5" data-options={JSON.stringify(data)}>
         <div data-style="clean" class="flex items-end mb-3">
-          <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert" />
+          <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert" ></ul>
           <div data-element="fields" data-stacked="false" class="flex items-center w-full max-w-md seva-fields formkit-fields">
             <label for="member_email" class="sr-only">Email address</label>
             <div class="relative formkit-field">

@@ -1,7 +1,7 @@
 const json = (r: Response) => r.json();
+import type { PageServerLoad } from './$types';
 
-/** @type {import('./$types').PageServerLoad} */
-export const load = async ({ fetch }) => {
+export const load: PageServerLoad = async ({ fetch }) => {
   try {
     const githubAPI = 'https://api.github.com/repos/themesberg/flowbite-svelte-blocks';
     const posts = await fetch('/api').then(json);

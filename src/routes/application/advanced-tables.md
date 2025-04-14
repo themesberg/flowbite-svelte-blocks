@@ -1,11 +1,11 @@
-<script lang="ts">
-// layout: componentLayout
-// title: Svelte Advanced Tables - Flowbite Svelte Blocks
-// breadcrumb_title: Advanced Tables
-// no_of_components: 1 free components
-// dir: application
-// description: Get started with a collection of advanced table components based on multiple layouts and styles to show a complex set of data using rows and columns built with Tailwind CSS.
-</script>
+---
+layout: componentLayout
+title: Svelte Advanced Tables - Flowbite Svelte Blocks
+breadcrumb_title: Advanced Tables
+no_of_components: 1 free components
+dir: application
+description: Get started with a collection of advanced table components based on multiple layouts and styles to show a complex set of data using rows and columns built with Tailwind CSS.
+---
 
 ## Default table
 

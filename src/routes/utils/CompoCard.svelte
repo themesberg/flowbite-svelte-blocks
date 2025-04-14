@@ -1,13 +1,13 @@
 <script lang="ts">
   import {Card} from "flowbite-svelte";
 
-  let { name, dir, path, thumnailSize, ...restProps }: { name: string; dir: string; path: string; thumnailSize: string } = $props();
+  let { name, dir, path, thumnailSize, ...restProps }: { name: string; dir: string; path: string; thumnailSize?: string } = $props();
 
   path = path.toLowerCase();
   dir = dir.toLowerCase();
 </script>
 
-<Card href="/docs/{dir}{path}/" padding="none" {...restProps} class="dark:hover:shadow-lg-light max-w-none! shadow-none hover:shadow-lg dark:hover:bg-gray-900">
+<Card href="/{dir}{path}/" padding="none" {...restProps} class="dark:hover:shadow-lg-light max-w-none! shadow-none hover:shadow-lg dark:hover:bg-gray-900">
   <div class="flex items-center justify-between rounded-t-md border-b border-gray-200 bg-gray-50 px-5 py-2.5 dark:border-gray-700 dark:bg-gray-700">
     <span class="text-base font-medium text-gray-900 dark:text-white">{name}</span>
     <span class="text-gray-500 dark:text-gray-400">

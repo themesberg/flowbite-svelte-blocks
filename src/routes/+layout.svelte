@@ -9,8 +9,10 @@
   import YoutubeHome from './utils/icons/YoutubeHome.svelte';
   import ToolbarLink from './utils/ToolbarLink.svelte';
   import { ChevronDownOutline } from 'flowbite-svelte-icons';
-  import Runatics from './utils/Runatics.svelte';
-  export let data;
+  import {Runatics} from 'Runatics';
+  import type { LayoutProps } from './$types';
+
+  let { data, children }: LayoutProps = $props();
   const analyticsId = data.ANALYTICS_ID_FLOWBITE
 
   let version = import.meta.env.VITE_APP_VERSION;
@@ -20,16 +22,15 @@
     document.getElementById('svelte')?.scrollTo({ top: 0 });
   });
 
-  let activeUrl: string;
-  let activeCategory: boolean;
+  let activeUrl: string = $state('');
+  let activeCategory: boolean = $state(false);
 
-  $: {
+  $effect(()=>{
     activeUrl = page.url.pathname;
     const keywords = ['marketing', 'application', 'publisher'];
     const isActive = keywords.some((keyword) => activeUrl.includes(keyword));
     activeCategory = isActive ? true : false;
-    // console.log(isActive); // Output: true or false
-  }
+  }) 
 
   let divClass = 'w-full ml-auto lg:block lg:w-auto order-1 lg:order-none';
   let ulClass = 'flex flex-col py-3 my-4 lg:flex-row lg:my-0 text-sm font-medium text-gray-900 dark:text-gray-300 gap-4';
@@ -68,7 +69,7 @@
         <Tooltip class="dark:bg-gray-900" placement="bottom-end">Toggle dark mode</Tooltip>
       </div>
       <a href="https://www.npmjs.com/package/flowbite-svelte-blocks" class="hidden sm:block">
-        <DocBadge large class="ml-2 xl:ml-6 hover:bg-primary-600 hover:text-white dark:hover:bg-primary-800 dark:hover:text-white">
+        <DocBadge class="ml-2 xl:ml-6 hover:bg-primary-600 hover:text-white dark:hover:bg-primary-800 dark:hover:text-white">
           v{version}
         </DocBadge>
       </a>
@@ -77,7 +78,7 @@
     </Navbar>
   </header>
   <main class="grow">
-    <slot></slot>
+    {@render children()}
   </main>
 </div>
 
