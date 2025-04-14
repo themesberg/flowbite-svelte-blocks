@@ -13,47 +13,47 @@ Use this free example of a filter component to allow your users to select which 
 
 ```svelte example class="flex justify-center items-start h-[32rem]"
 <script>
-  import { Button, Dropdown, DropdownItem, Checkbox } from 'flowbite-svelte';
+  import { Button, Dropdown, Checkbox, DropdownItem } from 'flowbite-svelte';
   import { ChevronDownOutline } from 'flowbite-svelte-icons';
 </script>
 
 <Button>Filter by category<ChevronDownOutline class="w-3 h-3 ml-2 text-white dark:text-white" /></Button>
-<Dropdown class="w-44 p-3 space-y-3 text-sm">
-  <li>
-    <Checkbox>Apple (56)</Checkbox>
-  </li>
-  <li>
-    <Checkbox>Fitbit (56)</Checkbox>
-  </li>
-  <li>
-    <Checkbox>Dell (56)</Checkbox>
-  </li>
-  <li>
-    <Checkbox checked>Asus (97)</Checkbox>
-  </li>
-  <li>
-    <Checkbox checked>Logitech (97)</Checkbox>
-  </li>
-  <li>
-    <Checkbox checked>MSI (97)</Checkbox>
-  </li>
-  <li>
-    <Checkbox checked>Bosch (176)</Checkbox>
-  </li>
-  <li>
-    <Checkbox>Sony (234)</Checkbox>
-  </li>
-  <li>
-    <Checkbox checked>Samsung (76)</Checkbox>
-  </li>
-  <li>
-    <Checkbox>Canon (49)</Checkbox>
-  </li>
-  <li>
-    <Checkbox>Microsoft (45)</Checkbox>
-  </li>
-  <li>
-    <Checkbox>Razor (49)</Checkbox>
-  </li>
+<Dropdown simple>
+    <DropdownItem>
+      <Checkbox>Apple (56)</Checkbox>
+    </DropdownItem>
+    <DropdownItem>
+      <Checkbox>Fitbit (56)</Checkbox>
+    </DropdownItem>
+    <DropdownItem>
+      <Checkbox>Dell (56)</Checkbox>
+    </DropdownItem>
+    <DropdownItem>
+      <Checkbox checked>Asus (97)</Checkbox>
+    </DropdownItem>
+    <DropdownItem>
+      <Checkbox checked>Logitech (97)</Checkbox>
+    </DropdownItem>
+    <DropdownItem>
+      <Checkbox checked>MSI (97)</Checkbox>
+    </DropdownItem>
+    <DropdownItem>
+      <Checkbox checked>Bosch (176)</Checkbox>
+    </DropdownItem>
+    <DropdownItem>
+      <Checkbox>Sony (234)</Checkbox>
+    </DropdownItem>
+    <DropdownItem>
+      <Checkbox checked>Samsung (76)</Checkbox>
+    </DropdownItem>
+    <DropdownItem>
+      <Checkbox>Canon (49)</Checkbox>
+    </DropdownItem>
+    <DropdownItem>
+      <Checkbox>Microsoft (45)</Checkbox>
+    </DropdownItem>
+    <DropdownItem>
+      <Checkbox>Razor (49)</Checkbox>
+    </DropdownItem>
 </Dropdown>
 ```

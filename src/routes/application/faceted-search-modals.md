@@ -11,15 +11,16 @@ description: Use the faceted search component to allow users to narrow down sear
 
 Use this free example to show a list of checkbox components inside a modal to filter results by categories inside your application.
 
-```svelte example class="flex justify-center items-start h-64"
+```svelte example hideResponsiveButtons class="h-64"
 <script>
-  import { Button, Modal, Label, Input, Checkbox } from 'flowbite-svelte';
+  import { Button, Modal, Checkbox } from 'flowbite-svelte';
   let formModal = false;
 </script>
 
-<Button on:click={() => (formModal = true)}>Toggle modal</Button>
-
-<Modal bind:open={formModal} size="xs" autoclose={false} class="w-full">
+<div class="text-center">
+  <Button onclick={() => (formModal = true)}>Toggle modal</Button>
+</div>
+<Modal bind:open={formModal} size="xs" autoclose={false}>
   <form class="flex flex-col space-y-6" action="#" tabindex="-1" aria-hidden="true">
     <h3 class="text-xl font-medium text-gray-900 dark:text-white">Filter by category</h3>
     <div class="grid grid-cols-2 gap-2 md:grid-cols-3">

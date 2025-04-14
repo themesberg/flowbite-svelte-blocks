@@ -16,7 +16,7 @@ description: Get started with a collection of modal components based on the CRUD
 
 Use this free example of a modal component to update an existing data entry inside the database featuring text field inputs, selects, and a textarea.
 
-```svelte example
+```svelte example hideResponsiveButtons
 <script lang="ts">
   import { Section } from 'flowbite-svelte-blocks';
   import { Modal, Button, Input, Label, Select, Textarea } from 'flowbite-svelte';
@@ -43,11 +43,11 @@ Use this free example of a modal component to update an existing data entry insi
   };
 </script>
 
-<Section classSection="h-96">
+<Section sectionClass="h-96">
   <div class="flex justify-center m-5">
-    <Button on:click={() => (defaultModal = true)}>Update Product</Button>
+    <Button onclick={() => (defaultModal = true)}>Update Product</Button>
   </div>
-  <Modal title="Add Product" bind:open={defaultModal} autoclose class="min-w-full">
+  <Modal title="Add Product" bind:open={defaultModal} autoclose>
     <form>
       <div class="grid gap-4 mb-4 sm:grid-cols-2">
         <div>
@@ -70,11 +70,11 @@ Use this free example of a modal component to update an existing data entry insi
         </div>
         <div class="sm:col-span-2">
           <Label for="description" class="mb-2">Description</Label>
-          <Textarea id="description" placeholder="Your description here" rows="4" name="description" required value={productData.description} />
+          <Textarea id="description" placeholder="Your description here" rows={4} name="description" required value={productData.description} />
         </div>
         <div class="flex items-center space-x-4">
-          <Button type="submit" class="w-64" on:click={handleUpdate}>Update product</Button>
-          <Button type="submit" class="w-52" outline color="red" on:click={handleDelete}>Delete</Button>
+          <Button type="submit" class="w-64" onclick={handleUpdate}>Update product</Button>
+          <Button type="submit" class="w-52" outline color="red" onclick={handleDelete}>Delete</Button>
         </div>
       </div>
     </form>

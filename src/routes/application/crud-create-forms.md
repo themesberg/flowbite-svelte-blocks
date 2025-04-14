@@ -23,7 +23,7 @@ Use this free example of a form based on the CRUD layouts where you can create a
   const handleSubmit = () => {
     alert('Form submited.');
   };
-  let selected;
+  let selected = $state();
   let countries = [
     { value: 'tv', name: 'TV/Monitors' },
     { value: 'pc', name: 'PC' },
@@ -33,7 +33,7 @@ Use this free example of a form based on the CRUD layouts where you can create a
 
 <Section name="crudcreateform">
   <h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-white">Add a new product</h2>
-  <form on:submit={handleSubmit}>
+  <form onsubmit={handleSubmit}>
     <div class="grid gap-4 sm:grid-cols-2 sm:gap-6">
       <div class="sm:col-span-2">
         <Label for="name" class="mb-2">Product Name</Label>
@@ -59,7 +59,7 @@ Use this free example of a form based on the CRUD layouts where you can create a
       </div>
       <div class="sm:col-span-2">
         <Label for="description" class="mb-2">Description</Label>
-        <Textarea id="description" placeholder="Your description here" rows="4" name="description" required />
+        <Textarea id="description" placeholder="Your description here" rows={4} name="description" required />
       </div>
       <Button type="submit" class="w-32">Add product</Button>
     </div>

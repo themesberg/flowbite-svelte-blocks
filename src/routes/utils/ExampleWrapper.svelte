@@ -20,7 +20,7 @@
   src;
   // all meta tags of the code block
   meta;
-  // $inspect('meta:', meta.Wrapper);
+  $inspect('meta:', meta);
 
   /* eslint-disable  @typescript-eslint/no-explicit-any */
 

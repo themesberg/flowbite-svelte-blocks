@@ -11,11 +11,11 @@
   let { home = 'Blocks', category, title, description, breadcrumb_title, ...restProps }:Props = $props();
   
   let headerCls = breadcrumb_title ? '' : 'mx-auto max-w-8xl pt-8 px-4 lg:px-20 mx-auto max-w-8xl col-span-2 mb-2 lg:mb-0';
-  const capitalized = $derived(() => {
-    if (!category) return '';
+  let capitalized = $state()
+  if (category !== undefined){
     const [first, ...rest] = category;
-    return `${first.toUpperCase()}${rest.join('')}`;
-  });
+    capitalized = `${first.toUpperCase()}${rest.join('')}`;
+  };
   const allowedDirs = ['application', 'marketing', 'publisher'];
 </script>
 

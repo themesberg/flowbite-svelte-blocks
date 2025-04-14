@@ -5,6 +5,8 @@
 @source './src/**/*.{html,js,svelte,ts,md}';
 @source '../node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}';
 
+@plugin 'flowbite/plugin';
+
 @theme {
   --z-index-100: 100;
 

@@ -62,7 +62,7 @@ Use this example of a free comments box to show a submission form and a list of 
 
 </script>
 
-<Section name='comment' classSection='bg-white dark:bg-gray-900'>
+<Section name='comment' sectionClass='bg-white dark:bg-gray-900'>
   <Comment title="Discussion (20)">
     <form class="mb-6">
       <Label for="comment" class="sr-only">Your comment</Label>

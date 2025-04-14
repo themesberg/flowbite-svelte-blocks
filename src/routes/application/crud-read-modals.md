@@ -16,7 +16,7 @@ description: Use this collection of CRUD modal components to show information ab
 
 Use this free modal component to show a list of data entries from the database based on the CRUD layout system.
 
-```svelte example
+```svelte example hideResponsiveButtons
 <script lang="ts">
   import { Section } from 'flowbite-svelte-blocks';
   import { Button, Modal } from 'flowbite-svelte';
@@ -24,9 +24,9 @@ Use this free modal component to show a list of data entries from the database b
   let defaultModal = false;
 </script>
 
-<Section classSection="h-96">
+<Section sectionClass="h-96">
   <div class="flex justify-center m-5">
-    <Button on:click={() => (defaultModal = true)}>Show read modal</Button>
+    <Button onclick={() => (defaultModal = true)}>Show read modal</Button>
   </div>
   <Modal title="" bind:open={defaultModal} autoclose size="sm">
     <div class="flex justify-between mb-4 rounded-t sm:mb-5">

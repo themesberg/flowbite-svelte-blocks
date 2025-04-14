@@ -23,7 +23,7 @@ Use this free example of a "read" CRUD layout section to show details of an exis
 </script>
 
 <Section name="crudreadsection">
-  <Heading tag="h2" customSize="text-xl font-semibold leading-none text-gray-900 md:text-2xl" class="mb-2">Apple iMac 25"</Heading>
+  <Heading tag="h2" class="text-xl font-semibold leading-none text-gray-900 md:text-2xl mb-2">Apple iMac 25"</Heading>
   <P class="mb-4 leading-none md:text-2xl" weight="extrabold" size="xl">$2999</P>
   <dl>
     <dt class="mb-2 font-semibold leading-none text-gray-900 dark:text-white">Details</dt>

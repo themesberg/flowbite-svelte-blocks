@@ -16,31 +16,25 @@ description: Use this collection of drawer components coded with Tailwind CSS to
 
 Use this free drawer component to show details of a basic data entry from your database and show CRUD action buttons for editing and deleting.
 
-```svelte example
+```svelte example hideResponsiveButtons
 <script lang="ts">
   import { Section } from 'flowbite-svelte-blocks';
   import { Button, Drawer, CloseButton } from 'flowbite-svelte';
-  import { sineIn } from 'svelte/easing';
-  let hidden1 = true;
-  let transitionParams = {
-    x: -320,
-    duration: 200,
-    easing: sineIn
-  };
-</script>
 
-<Section classSection="h-96">
+  let hidden = true;
+</script>
+<Section sectionClass="h-96">
   <div class="text-center">
-    <Button on:click={() => (hidden1 = false)}>Read product</Button>
+    <Button onclick={() => (hidden = false)}>Read product</Button>
   </div>
 
-  <Drawer transitionType="fly" {transitionParams} bind:hidden={hidden1} id="sidebar1">
-    <div class="flex items-center">
+  <Drawer bind:hidden={hidden} id="sidebar1">
+    <div class="flex items-center justify-between">
       <div>
         <h4 id="drawer-label" class="mb-1.5 leading-none text-xl font-semibold text-gray-900 dark:text-white">Apple iMac 25"</h4>
         <p class="mb-5 text-xl font-bold text-gray-900 dark:text-white">$2999</p>
       </div>
-      <CloseButton on:click={() => (hidden1 = true)} class="mb-4 dark:text-white" />
+      <CloseButton onclick={() => (hidden = true)} class="mb-4 dark:text-white" />
     </div>
     <dl>
       <dt class="mb-2 font-semibold leading-none text-gray-900 dark:text-white">Details</dt>

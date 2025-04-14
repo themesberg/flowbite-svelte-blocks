@@ -91,7 +91,7 @@ Now you should be able to work with the Flowbite Svelte Blocks library and impor
 
 Add the following to `src/routes/+page.svelte` and if you see the following image, then your setting is complete.
 
-```svelte example
+```svelte example hideResponsiveButtons
 <script>
   import { Section, Page404 } from 'flowbite-svelte-blocks';
   import { Button } from 'flowbite-svelte';

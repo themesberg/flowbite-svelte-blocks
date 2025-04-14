@@ -50,6 +50,9 @@ importers:
       eslint-plugin-svelte:
         specifier: ^3.5.1
         version: 3.5.1(eslint@9.24.0(jiti@2.4.2))(svelte@5.26.2)
+      flowbite:
+        specifier: ^3.1.2
+        version: 3.1.2(rollup@4.40.0)
       flowbite-svelte:
         specifier: 1.0.0-next.10
         version: 1.0.0-next.10(rollup@4.40.0)(svelte@5.26.2)(tailwind-merge@3.2.0)(tailwind-variants@1.0.0(tailwindcss@4.1.3))

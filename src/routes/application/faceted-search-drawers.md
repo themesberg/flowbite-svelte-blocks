@@ -11,27 +11,21 @@ description: Get started with a collection of drawer components using a faceted 
 
 Use this free example of a drawer component to show a list of checkbox, radio and input field elements to filter search results.
 
-```svelte example class="flex justify-center items-start h-64"
+```svelte example hideResponsiveButtons class="h-64"
 <script>
-  import { Drawer, Button, CloseButton, Label, Input, Textarea, Checkbox, A, Heading, Rating, Radio } from 'flowbite-svelte';
-  import { sineIn } from 'svelte/easing';
+  import { Drawer, Button, CloseButton, Label, Input, Checkbox, A, Heading, Rating, Radio } from 'flowbite-svelte';
 
-  let hidden4 = true;
-  let transitionParams = {
-    x: -320,
-    duration: 200,
-    easing: sineIn
-  };
+  let hidden = true;
   let myRating = '3';
 </script>
 
 <div class="text-center">
-  <Button on:click={() => (hidden4 = false)}>Show drawer</Button>
+  <Button onclick={() => (hidden = false)}>Show drawer</Button>
 </div>
-<Drawer transitionType="fly" {transitionParams} bind:hidden={hidden4} id="sidebar4">
-  <div class="flex items-center">
+<Drawer  bind:hidden={hidden} id="sidebar4">
+  <div class="flex items-center justify-between">
     <Heading tag="h5" id="drawer-label" class="inline-flex items-center mb-6 text-base font-semibold text-gray-500 uppercase dark:text-gray-400">APPLY FILTERS</Heading>
-    <CloseButton on:click={() => (hidden4 = true)} class="mb-4 dark:text-white" />
+    <CloseButton onclick={() => (hidden = true)} class="mb-4 dark:text-white" />
   </div>
   <form action="#">
     <div class="space-y-6">

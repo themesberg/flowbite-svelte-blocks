@@ -3,14 +3,13 @@
   import type { Snippet } from 'svelte';
   interface Props{
     children: Snippet;
-    search: Snippet;
+    search?: Snippet;
     outerClass?: string;
-    headType?: 'search' | 'textbtn' | 'custom';
+    headerType?: 'search' | 'textbtn' | 'custom';
     slotClass?: string;
   }
-  let { children, search, outerClass, headType = 'search', slotClass }: Props = $props() 
+  let { children, search, outerClass, headerType = 'search', slotClass }: Props = $props() 
   let outerCls: string = twMerge('relative bg-white shadow-md dark:bg-gray-800 sm:rounded-lg', outerClass);
-  let headerType: 'search' | 'textbtn' | 'custom' = 'search';
   const innerClasses = {
     search: 'flex flex-col items-center justify-between p-4 space-y-3 md:flex-row md:space-y-0 md:space-x-4',
     textbtn: 'flex-row items-center justify-between p-4 space-y-3 sm:flex sm:space-y-0 sm:space-x-4',
@@ -22,7 +21,9 @@
 <div class={outerCls}>
   {#if headerType === 'search'}
     <div class={innerClasses[headerType]}>
-      {@render search()}
+      {#if search}
+        {@render search()}
+      {/if}
       <div class={slotCls}>
         {@render children()}
       </div>
