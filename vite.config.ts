@@ -32,10 +32,6 @@ export default defineConfig({
 			}
 		]
 	},
-  server: {
-    port: 8082,
-    strictPort: false
-  },
   resolve: {
     alias: {
       "flowbite-svelte-blocks": path.resolve(process.cwd(), "./src/lib/index.ts"),
