@@ -9,7 +9,7 @@ description: Get started with a collection of team sections built with Tailwind 
 
 <script>
   import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
-  const components = 'TeamWrapper, TeamHeader, TeamBody, TeamItem, Facebook, Github, Twitter, Section'
+  const components = 'TeamWrapper, TeamHeader, TeamBody, TeamItem, Facebook, GitHub, Twitter, Section'
 </script>
 
 ## Team member cards
@@ -18,7 +18,7 @@ Use this example to show information about your team members such as the name, o
 
 ```svelte example
 <script lang="ts">
-  import { Section, TeamWrapper, TeamHeader, TeamBody, TeamItem, Facebook, Github, Twitter } from 'flowbite-svelte-blocks';
+  import { Section, TeamWrapper, TeamHeader, TeamBody, TeamItem, Facebook, GitHub, Twitter } from 'flowbite-svelte-blocks';
 
   let members = [
     {

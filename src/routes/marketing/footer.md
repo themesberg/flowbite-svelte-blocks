@@ -19,7 +19,7 @@ Use this example of a footer section to show the logo of your brand, a descripti
 ```svelte example
 <script>
   import { Section } from 'flowbite-svelte-blocks';
-  import { Facebook, Instagram, Github, Twitter } from '../utils';
+  import { Facebook, Instagram, GitHub, Twitter } from '../utils';
   import { Footer, FooterBrand, FooterLinkGroup, FooterLink, FooterCopyright, FooterIcon } from 'flowbite-svelte';
 </script>
 
@@ -48,7 +48,7 @@ Use this footer section to show the logo of your brand, the sitemap, social medi
 ```svelte example
 <script>
   import { Section } from 'flowbite-svelte-blocks';
-  import { Facebook, Instagram, Github, Twitter } from '../utils';
+  import { Facebook, Instagram, GitHub, Twitter } from '../utils';
   import { Footer, FooterBrand, FooterLinkGroup, FooterLink, FooterCopyright, FooterIcon } from 'flowbite-svelte';
 </script>
 
