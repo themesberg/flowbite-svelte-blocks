@@ -2,8 +2,8 @@ import tailwindcss from '@tailwindcss/vite';
 import { svelteTesting } from '@testing-library/svelte/vite';
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
-import examples from "mdsvexamples/vite";
-import path from "path";
+import examples from 'mdsvexamples/vite';
+import path from 'path';
 
 export default defineConfig({
 	plugins: [tailwindcss(), sveltekit(), examples],
@@ -32,9 +32,9 @@ export default defineConfig({
 			}
 		]
 	},
-  resolve: {
-    alias: {
-      "flowbite-svelte-blocks": path.resolve(process.cwd(), "./src/lib/index.ts"),
-    }
-  }
+	resolve: {
+		alias: {
+			'flowbite-svelte-blocks': path.resolve(process.cwd(), './src/lib/index.ts')
+		}
+	}
 });

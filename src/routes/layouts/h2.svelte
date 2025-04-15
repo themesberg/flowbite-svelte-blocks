@@ -1,5 +1,7 @@
 <script>
-  import Anchor from './Anchor.svelte';
+	import Anchor from './Anchor.svelte';
 </script>
 
-<Anchor tag="h2" class="text-gray-900 dark:text-white leading-tight text-2xl font-bold"><slot></slot></Anchor>
+<Anchor tag="h2" class="text-2xl leading-tight font-bold text-gray-900 dark:text-white"
+	><slot></slot></Anchor
+>

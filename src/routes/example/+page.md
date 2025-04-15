@@ -31,7 +31,6 @@ description: Flowbite Svelte Blocks example website homepage.
   } from '../utils';
 </script>
 
-
 <Section name="heroVisual">
   <div class="mr-auto place-self-center lg:col-span-7">
     <HeroHeader

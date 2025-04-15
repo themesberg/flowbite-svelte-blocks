@@ -11,22 +11,13 @@ description: Learn how to get started with the free and open-source Flowbite Sve
 
 Learn how to get started with Flowbite Svelte Blocks by following the quickstart guide and start leveraging the interactive Svelte components coupled with Flowbite and Tailwind CSS.
 
-### Install SvelteKit
+### Install SvelteKit with TailwindCSS
 
 You can install SvelteKit or Svelte to start your app. For SvelteKit:
 
 ```bash example
 npm create svelte@latest my-app
 cd my-app
-pnpm i
-```
-
-### Install Tailwind CSS
-
-In order to enable the utility classes from Tailwind CSS install the package using NPM:
-
-```bash
-npx svelte-add@latest tailwindcss
 pnpm i
 ```
 
@@ -41,7 +32,7 @@ pnpm dev
 Run the following command to install all Flowbite Svelte Blocks dependencies and libraries:
 
 ```sh
-pnpm i -D flowbite-svelte flowbite-svelte-blocks flowbite-svelte-icons flowbite-typography
+pnpm i -D flowbite-svelte flowbite-svelte-blocks flowbite-svelte-icons flowbite-typography flowbite
 ```
 
 ### Configuration
@@ -57,6 +48,10 @@ In the provided code below, you can customize the primary color by modifying the
 
 @source './src/**/*.{html,js,svelte,ts,md}';
 @source '../node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}';
+@source '../node_modules/flowbite-svelte-icons/**/*.{html,js,svelte,ts}';
+@source '../node_modules/flowbite-svelte-blocks/**/*.{html,js,svelte,ts}';
+
+@plugin 'flowbite/plugin';
 
 @theme {
   --z-index-100: 100;
@@ -83,6 +78,12 @@ In the provided code below, you can customize the primary color by modifying the
   --color-secondary-800: #075985;
   --color-secondary-900: #0c4a6e;
 }
+
+@layer base {
+  button, [role="button"] {
+    cursor: pointer;
+  }
+}
 ```
 
 Now you should be able to work with the Flowbite Svelte Blocks library and import components.
@@ -93,18 +94,22 @@ Add the following to `src/routes/+page.svelte` and if you see the following imag
 
 ```svelte example hideResponsiveButtons
 <script>
-  import { Section, Page404 } from 'flowbite-svelte-blocks';
-  import { Button } from 'flowbite-svelte';
+	import { Section, Page404 } from 'flowbite-svelte-blocks';
+	import { Button } from 'flowbite-svelte';
 </script>
 
 <Section name="page404">
-  <Page404>
-    {#snippet h1()}404{/snippet}
-    {#snippet paragraph()}
-      <p class="mb-4 text-3xl tracking-tight font-bold text-gray-900 md:text-4xl dark:text-white">Something's missing.</p>
-      <p class="mb-4 text-lg font-light text-gray-500 dark:text-gray-400">Sorry, we can't find that page. You'll find lots to explore on the home page.</p>
-      <Button href="/" size="lg" color="red">Back to Homepage</Button>
-    {/snippet}
-  </Page404>
+	<Page404>
+		{#snippet h1()}404{/snippet}
+		{#snippet paragraph()}
+			<p class="mb-4 text-3xl font-bold tracking-tight text-gray-900 md:text-4xl dark:text-white">
+				Something's missing.
+			</p>
+			<p class="mb-4 text-lg font-light text-gray-500 dark:text-gray-400">
+				Sorry, we can't find that page. You'll find lots to explore on the home page.
+			</p>
+			<Button href="/" size="lg" color="red">Back to Homepage</Button>
+		{/snippet}
+	</Page404>
 </Section>
 ```
