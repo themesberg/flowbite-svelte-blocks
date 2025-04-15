@@ -80,14 +80,14 @@ Use this free blog template to show the content of an article using the Flowbite
         </form>
         {#each comments as comment, i}
           <CommentItem {comment} articleClass ={ i !== 0 ? 'border-t':''}>
-            <svelte:fragment slot="dropdownMenu">
+            {#snippet dropdownMenu()}
           <DotsHorizontalOutline class="dots-menu dark:text-white" />
           <Dropdown triggeredBy=".dots-menu">
             <DropdownItem>Edit</DropdownItem>
             <DropdownItem>Remove</DropdownItem>
             <DropdownItem>Report</DropdownItem>
           </Dropdown>
-        </svelte:fragment>
+        {/snippet}
           </CommentItem>
         {/each}
       </Comment>

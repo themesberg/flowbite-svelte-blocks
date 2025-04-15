@@ -24,10 +24,10 @@ Use this example to show a preview of a blog post including the title, descripti
 
 <Section name="blog">
   <BlogHead>
-    <svelte:fragment slot="h2">Our Blog</svelte:fragment>
-    <svelte:fragment slot="paragraph">
+    {#snippet h2()}Our Blog{/snippet}
+    {#snippet paragraph()}
       <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">We use an agile approach to test assumptions and connect with the needs of your audience early and often.</p>
-    </svelte:fragment>
+    {/snippet}
   </BlogHead>
   <BlogBodyWrapper>
     <ArticleWrapper>
@@ -39,16 +39,16 @@ Use this example to show a preview of a blog post including the title, descripti
         <span class="text-sm">14 days ago</span>
       </ArticleHead>
       <ArticleBody>
-        <svelte:fragment slot="h2"><a href="/">How to quickly deploy a static website</a></svelte:fragment>
-        <svelte:fragment slot="paragraph">
+        {#snippet h2()}<a href="/">How to quickly deploy a static website</a>{/snippet}
+        {#snippet paragraph()}
           <p class="mb-5 font-light text-gray-500 dark:text-gray-400">Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety of tools that even influence both web designers and developers influence both web designers and developers.</p>
-        </svelte:fragment>
+        {/snippet}
       </ArticleBody>
       <ArticleAuthor>
-        <svelte:fragment slot="author">
+        {#snippet author()}
           <img class="w-7 h-7 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png" alt="Jese Leos avatar" />
           <span class="font-medium dark:text-white"> Jese Leos </span>
-        </svelte:fragment>
+        {/snippet}
         <a href="/" class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
           Read more
           <ArrowRightOutline size="sm" class="ml-2" />
@@ -65,16 +65,16 @@ Use this example to show a preview of a blog post including the title, descripti
         <span class="text-sm">14 days ago</span>
       </ArticleHead>
       <ArticleBody>
-        <svelte:fragment slot="h2"><a href="/">Our first project with React</a></svelte:fragment>
-        <svelte:fragment slot="paragraph">
+        {#snippet h2()}<a href="/">Our first project with React</a>{/snippet}
+        {#snippet paragraph()}
           <p class="mb-5 font-light text-gray-500 dark:text-gray-400">Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety of tools that even influence both web designers and developers influence both web designers and developers.</p>
-        </svelte:fragment>
+        {/snippet}
       </ArticleBody>
       <ArticleAuthor>
-        <svelte:fragment slot="author">
+        {#snippet author()}
           <img class="w-7 h-7 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png" alt="Bonnie Green avatar" />
           <span class="font-medium dark:text-white"> Bonnie Green </span>
-        </svelte:fragment>
+        {/snippet}
         <a href="/" class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
           Read more
           <ArrowRightOutline size="sm" class="ml-2" />

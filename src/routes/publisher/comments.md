@@ -75,14 +75,14 @@ Use this example of a free comments box to show a submission form and a list of 
     </form>
     {#each comments as comment, i}
       <CommentItem {comment} articleClass ={ i !== 0 ? 'border-t border-gray-200 dark:border-gray-700 rounded-none':''}>
-        <svelte:fragment slot="dropdownMenu">
+        {#snippet dropdownMenu()}
       <DotsHorizontalOutline class="dots-menu dark:text-white" />
       <Dropdown triggeredBy=".dots-menu">
         <DropdownItem>Edit</DropdownItem>
         <DropdownItem>Remove</DropdownItem>
         <DropdownItem>Report</DropdownItem>
       </Dropdown>
-    </svelte:fragment>
+    {/snippet}
       </CommentItem>
     {/each}
   </Comment>

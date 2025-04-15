@@ -30,8 +30,8 @@ Use this default example with an announcement badge, heading, CTA buttons, and c
     <span class="text-sm font-medium">Flowbite is out! See what's new</span>
   </News>
   <HeroHeader>
-    <svelte:fragment slot="h1">We invest in the world’s potential</svelte:fragment>
-    <svelte:fragment slot="paragraph">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</svelte:fragment>
+    {#snippet h1()}We invest in the world’s potential{/snippet}
+    {#snippet paragraph()}Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.{/snippet}
   </HeroHeader>
 
   <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
@@ -48,7 +48,7 @@ Use this default example with an announcement badge, heading, CTA buttons, and c
     </a>
   </div>
   <HeroBody>
-    <svelte:fragment slot="head">FEATURED IN</svelte:fragment>
+    {#snippet head()}FEATURED IN{/snippet}
 
     <div class="flex flex-wrap justify-center items-center mt-8 text-gray-500 sm:justify-between">
       <a href="/" class="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400">
@@ -79,8 +79,8 @@ Use this example to show an image next to the heading and CTA buttons to improve
 <Section name="heroVisual">
   <div class="mr-auto place-self-center lg:col-span-7">
     <HeroHeader h1Class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white" pClass="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-      <svelte:fragment slot="h1">Payments tool for software companies</svelte:fragment>
-      <svelte:fragment slot="paragraph">From checkout to global sales tax compliance, companies around the world use Flowbite to simplify their payment stack.</svelte:fragment>
+      {#snippet h1()}Payments tool for software companies{/snippet}
+      {#snippet paragraph()}From checkout to global sales tax compliance, companies around the world use Flowbite to simplify their payment stack.{/snippet}
       <a href="/"><Button size="xl" color="red" class="inline-flex items-center justify-center mr-3">Get started<ArrowRightOutline size="md" class="ml-2 -mr-1" /></Button> </a>
       <a href="/"><Button color="light" size="xl" class="inline-flex items-center justify-center">Speak to Sales</Button> </a>
     </HeroHeader>

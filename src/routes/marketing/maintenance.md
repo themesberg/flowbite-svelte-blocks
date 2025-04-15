@@ -23,8 +23,8 @@ Use this example to let your users know that you are working on an important upd
 
 <Section name="maintenance">
   <Maintenance>
-    <svelte:fragment slot="h1">Under Maintenance</svelte:fragment>
-    <svelte:fragment slot="paragraph">Our Enterprise administrators are performing scheduled maintenance.</svelte:fragment>
+    {#snippet h1()}Under Maintenance{/snippet}
+    {#snippet paragraph()}Our Enterprise administrators are performing scheduled maintenance.{/snippet}
   </Maintenance>
 </Section>
 ```

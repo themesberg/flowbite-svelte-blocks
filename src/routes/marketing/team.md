@@ -59,7 +59,7 @@ Use this example to show information about your team members such as the name, o
 <Section name="team">
   <TeamWrapper>
     <TeamHeader>
-      <svelte:fragment slot="label">Our Team</svelte:fragment>
+      {#snippet label()}Our Team{/snippet}
       <p class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">Explore the whole collection of open-source web components and elements built with the utility classes from Tailwind</p>
     </TeamHeader>
     <TeamBody>
@@ -68,11 +68,11 @@ Use this example to show information about your team members such as the name, o
           <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
             {description}
           </p>
-          <svelte:fragment slot="social">
+          {#snippet social()}
             <Facebook href="/" />
             <Github href="/" />
             <Twitter href="/" />
-          </svelte:fragment>
+          {/snippet}
         </TeamItem>
       {/each}
     </TeamBody>

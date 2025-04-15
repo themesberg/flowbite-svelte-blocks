@@ -24,18 +24,18 @@ Use this example of three pricing cards showcasing the pricing plan title, descr
 
 <Section name="pricing">
   <PricingHead>
-    <svelte:fragment slot="h2">Designed for business teams like yours</svelte:fragment>
-    <svelte:fragment slot="paragraph">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</svelte:fragment>
+    {#snippet h2()}Designed for business teams like yours{/snippet}
+    {#snippet paragraph()}Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.{/snippet}
   </PricingHead>
   <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
     <PricingCard>
       <PricingBodyHead>
-        <svelte:fragment slot="h3">Starter</svelte:fragment>
-        <svelte:fragment slot="paragraph">Best option for personal use & for your next project.</svelte:fragment>
-        <svelte:fragment slot="price">
+        {#snippet h3()}Starter{/snippet}
+        {#snippet paragraph()}Best option for personal use & for your next project.{/snippet}
+        {#snippet price()}
           <span class="mr-2 text-5xl font-extrabold">$29</span>
           <span class="text-gray-500 dark:text-gray-400">/month</span>
-        </svelte:fragment>
+        {/snippet}
       </PricingBodyHead>
       <PricingItemWrapper>
         <PricingItem class="text-green-500 dark:text-green-400">
@@ -54,20 +54,20 @@ Use this example of three pricing cards showcasing the pricing plan title, descr
           <span>Free updates: <span class="font-semibold">6 months</span></span>
         </PricingItem>
 
-        <svelte:fragment slot="btn">
+        {#snippet btn()}
           <Button color="red">Get started</Button>
-        </svelte:fragment>
+        {/snippet}
       </PricingItemWrapper>
     </PricingCard>
 
     <PricingCard>
       <PricingBodyHead>
-        <svelte:fragment slot="h3">Company</svelte:fragment>
-        <svelte:fragment slot="paragraph">Relevant for multiple users, extended & premium support.</svelte:fragment>
-        <svelte:fragment slot="price">
+        {#snippet h3()}Company{/snippet}
+        {#snippet paragraph()}Relevant for multiple users, extended & premium support.{/snippet}
+        {#snippet price()}
           <span class="mr-2 text-5xl font-extrabold">$99</span>
           <span class="text-gray-500 dark:text-gray-400">/month</span>
-        </svelte:fragment>
+        {/snippet}
       </PricingBodyHead>
       <PricingItemWrapper>
         <PricingItem class="text-green-500 dark:text-green-400">
@@ -86,20 +86,20 @@ Use this example of three pricing cards showcasing the pricing plan title, descr
           <span>Free updates: <span class="font-semibold">24 months</span></span>
         </PricingItem>
 
-        <svelte:fragment slot="btn">
+        {#snippet btn()}
           <Button color="red">Get started</Button>
-        </svelte:fragment>
+        {/snippet}
       </PricingItemWrapper>
     </PricingCard>
 
     <PricingCard>
       <PricingBodyHead>
-        <svelte:fragment slot="h3">Enterprise</svelte:fragment>
-        <svelte:fragment slot="paragraph">Best for large scale uses and extended redistribution rights.</svelte:fragment>
-        <svelte:fragment slot="price">
+        {#snippet h3()}Enterprise{/snippet}
+        {#snippet paragraph()}Best for large scale uses and extended redistribution rights.{/snippet}
+        {#snippet price()}
           <span class="mr-2 text-5xl font-extrabold">$499</span>
           <span class="text-gray-500 dark:text-gray-400">/month</span>
-        </svelte:fragment>
+        {/snippet}
       </PricingBodyHead>
       <PricingItemWrapper>
         <PricingItem class="text-green-500 dark:text-green-400">
@@ -118,9 +118,9 @@ Use this example of three pricing cards showcasing the pricing plan title, descr
           <span>Free updates: <span class="font-semibold">36 months</span></span>
         </PricingItem>
 
-        <svelte:fragment slot="btn">
+        {#snippet btn()}
           <Button color="red">Get started</Button>
-        </svelte:fragment>
+        {/snippet}
       </PricingItemWrapper>
     </PricingCard>
   </div>

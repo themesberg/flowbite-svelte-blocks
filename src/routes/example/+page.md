@@ -42,11 +42,11 @@ description: Flowbite Svelte Blocks example website homepage.
       h1Class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white"
       pClass="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
     >
-      <svelte:fragment slot="h1">Payments tool for software companies</svelte:fragment>
-      <svelte:fragment slot="paragraph">
+      {#snippet h1()}Payments tool for software companies{/snippet}
+      {#snippet paragraph()}
         From checkout to global sales tax compliance, companies around the world use Flowbite to
         simplify their payment stack.
-      </svelte:fragment>
+      {/snippet}
       <a href="/"
         ><Button size="xl" class="inline-flex items-center justify-center mr-3"
           >Get started<ArrowRightOutline class="ml-2 -mr-1" /></Button
@@ -69,7 +69,7 @@ description: Flowbite Svelte Blocks example website homepage.
 
 <Section name="logos">
   <HeroHeader>
-    <svelte:fragment slot="h2">You’ll be in good company</svelte:fragment>
+    {#snippet h2()}You’ll be in good company{/snippet}
     <div
       class="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-6 dark:text-gray-400"
     >
@@ -101,91 +101,67 @@ description: Flowbite Svelte Blocks example website homepage.
     h2Class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
     pClass="text-gray-500 sm:text-xl dark:text-gray-400"
   >
-    <svelte:fragment slot="h2">You’ll be in good company</svelte:fragment>
-    <svelte:fragment slot="paragraph"
-      >Here at Flowbite we focus on markets where technology, innovation, and capital can unlock
-      long-term value and drive economic growth.</svelte:fragment
-    >
+    {#snippet h2()}You’ll be in good company{/snippet}
+    {#snippet paragraph()}
+    Here at Flowbite we focus on markets where technology, innovation, and capital can unlock
+      long-term value and drive economic growth.
+    {/snippet}
   </HeroHeader>
   <FeatureDefault>
     <FeatureItem>
-      <svelte:fragment slot="icon"
-        ><ChartPieSolid
+      {#snippet icon()}<ChartPieSolid
           class="text-primary-600 dark:text-primary-300"
-        /></svelte:fragment
-      >
-      <svelte:fragment slot="h3">Marketing</svelte:fragment>
-      <svelte:fragment slot="paragraph"
-        >Plan it, create it, launch it. Collaborate seamlessly with all the organization and hit
-        your marketing goals every month with our marketing plan.</svelte:fragment
-      >
+        />{/snippet}
+      {#snippet h3()}Marketing{/snippet}
+      {#snippet paragraph()}Plan it, create it, launch it. Collaborate seamlessly with all the organization and hit
+        your marketing goals every month with our marketing plan.{/snippet}
     </FeatureItem>
     <FeatureItem>
-      <svelte:fragment slot="icon"
-        ><LandmarkSolid
+      {#snippet icon()}<LandmarkSolid
           class="text-primary-600 dark:text-primary-300"
-        /></svelte:fragment
-      >
-      <svelte:fragment slot="h3">Legal</svelte:fragment>
-      <svelte:fragment slot="paragraph"
-        >Protect your organization, devices and stay compliant with our structured workflows and
-        custom permissions made for you.</svelte:fragment
-      >
+        />{/snippet}
+      {#snippet h3()}Legal{/snippet}
+      {#snippet paragraph()}Protect your organization, devices and stay compliant with our structured workflows and
+        custom permissions made for you.{/snippet}
     </FeatureItem>
     <FeatureItem>
-      <svelte:fragment slot="icon"
-        ><BriefcaseSolid
+      {#snippet icon()}<BriefcaseSolid
           class="text-primary-600 dark:text-primary-300"
-        /></svelte:fragment
-      >
-      <svelte:fragment slot="h3">Business Automation</svelte:fragment>
-      <svelte:fragment slot="paragraph"
-        >Auto-assign tasks, send Slack messages, and much more. Now power up with hundreds of new
-        templates to help you get started.</svelte:fragment
-      >
+        />{/snippet}
+      {#snippet h3()}Business Automation{/snippet}
+      {#snippet paragraph()}Auto-assign tasks, send Slack messages, and much more. Now power up with hundreds of new
+        templates to help you get started.{/snippet}
     </FeatureItem>
     <FeatureItem>
-      <svelte:fragment slot="icon"
-        ><DollarOutline
+      {#snippet icon()}<DollarOutline
           class="text-primary-600 dark:text-primary-300"
-        /></svelte:fragment
-      >
-      <svelte:fragment slot="h3">Finance</svelte:fragment>
-      <svelte:fragment slot="paragraph"
-        >Audit-proof software built for critical financial operations like month-end close and
-        quarterly budgeting.</svelte:fragment
-      >
+        />{/snippet}
+      {#snippet h3()}Finance{/snippet}
+      {#snippet paragraph()}Audit-proof software built for critical financial operations like month-end close and
+        quarterly budgeting.{/snippet}
     </FeatureItem>
     <FeatureItem>
-      <svelte:fragment slot="icon"
-        ><RocketSolid
+      {#snippet icon()}<RocketSolid
           class="text-primary-600 dark:text-primary-300"
-        /></svelte:fragment
-      >
-      <svelte:fragment slot="h3">Enterprise Design</svelte:fragment>
-      <svelte:fragment slot="paragraph"
-        >Craft beautiful, delightful experiences for both marketing and product with real
-        cross-company collaboration.</svelte:fragment
-      >
+        />{/snippet}
+      {#snippet h3()}Enterprise Design{/snippet}
+      {#snippet paragraph()}Craft beautiful, delightful experiences for both marketing and product with real
+        cross-company collaboration.{/snippet}
     </FeatureItem>
     <FeatureItem>
-      <svelte:fragment slot="icon"
-        ><CogOutline
+      {#snippet icon()}<CogOutline
           class="text-primary-600 dark:text-primary-300"
-        /></svelte:fragment
-      >
-      <svelte:fragment slot="h3">Operations</svelte:fragment>
-      <svelte:fragment slot="paragraph"
-        >Keep your company’s lights on with customizable, iterative, and structured workflows
-        built for all efficient teams and individual.</svelte:fragment
-      >
+        />{/snippet}
+      {#snippet h3()}Operations{/snippet}
+      {#snippet paragraph()}Keep your company’s lights on with customizable, iterative, and structured workflows
+        built for all efficient teams and individual.{/snippet}
     </FeatureItem>
   </FeatureDefault>
 </Section>
 
 <Section name="contentwithimg">
   <ContentWithImage>
-    <svelte:fragment slot="h2">We didn't reinvent the wheel</svelte:fragment>
+    {#snippet h2()}We didn't reinvent the wheel{/snippet}
     <p class="mb-4">
       We are strategists, designers and developers. Innovators and problem solvers. Small enough to
       be simple and quick, but big enough to deliver the scope you want at the pace you need. Small
@@ -197,7 +173,7 @@ description: Flowbite Svelte Blocks example website homepage.
       be simple and quick.
     </p>
 
-    <svelte:fragment slot="image">
+    {#snippet image()}
       <img
         class="w-full rounded-lg"
         src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png"
@@ -208,14 +184,14 @@ description: Flowbite Svelte Blocks example website homepage.
         src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png"
         alt="office content 2"
       />
-    </svelte:fragment>
+    {/snippet}
 
   </ContentWithImage>
 </Section>
 
 <Section name="content">
   <Content>
-    <svelte:fragment slot="h2">Powering innovation at 200,000+ companies worldwide</svelte:fragment>
+    {#snippet h2()}Powering innovation at 200,000+ companies worldwide{/snippet}
     <p class="mb-4 font-light">
       Track work across the enterprise through an open, collaborative platform. Link issues across
       Jira and ingest data from other software development tools, so your IT support and operations
@@ -238,7 +214,7 @@ description: Flowbite Svelte Blocks example website homepage.
 
 <Section name="headingwithctabutton">
   <Cta>
-    <svelte:fragment slot="h2">Start your free trial today</svelte:fragment>
+    {#snippet h2()}Start your free trial today{/snippet}
     <p class="mb-6 font-light text-gray-500 dark:text-gray-400 md:text-lg">
       Try Flowbite Platform for 30 days. No credit card required.
     </p>

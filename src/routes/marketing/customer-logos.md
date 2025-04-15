@@ -24,7 +24,7 @@ Use this example to show a list of logos of the companies that have used your pr
 
 <Section name="logos">
   <HeroHeader>
-    <svelte:fragment slot="h2">You’ll be in good company</svelte:fragment>
+    {#snippet h2()}You’ll be in good company{/snippet}
     <div class="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-6 dark:text-gray-400">
       <a href="/" class="flex justify-center items-center">
         <Airbnb />

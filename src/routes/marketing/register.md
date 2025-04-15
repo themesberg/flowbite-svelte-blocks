@@ -24,10 +24,10 @@ This example can be used to allow users to create an account on your website usi
 
 <Section name="register">
   <Register href="/">
-    <svelte:fragment slot="top">
+    {#snippet top()}
       <img class="w-8 h-8 mr-2" src="/images/logo.svg" alt="logo" />
       Flowbite
-    </svelte:fragment>
+    {/snippet}
     <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
       <form class="flex flex-col space-y-6" action="/">
         <h3 class="text-xl font-medium text-gray-900 dark:text-white p-0">Create and account</h3>

@@ -25,7 +25,7 @@ Use this example as a website section to allow website visitors to sign up for y
 
 <Section>
   <Newsletter>
-    <svelte:fragment slot="h2">Sign up for our newsletter</svelte:fragment>
+    {#snippet h2()}Sign up for our newsletter{/snippet}
     <p class="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl dark:text-gray-400">Stay up to date with the roadmap progress, announcements and exclusive discounts feel free to sign up with your email.</p>
     <form action="/">
       <div class="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
