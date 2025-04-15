@@ -9,7 +9,7 @@
   import YoutubeHome from './utils/icons/YoutubeHome.svelte';
   import ToolbarLink from './utils/ToolbarLink.svelte';
   import { ChevronDownOutline } from 'flowbite-svelte-icons';
-  import {Runatics} from 'Runatics';
+  // import {Runatics} from 'Runatics';
   import type { LayoutProps } from './$types';
 
   let { data, children }: LayoutProps = $props();
@@ -35,9 +35,7 @@
   let divClass = 'w-full ml-auto lg:block lg:w-auto order-1 lg:order-none';
   let ulClass = 'flex flex-col py-3 my-4 lg:flex-row lg:my-0 text-sm font-medium text-gray-900 dark:text-gray-300 gap-4';
 </script>
-{#if analyticsId}
-  <Runatics {analyticsId} />
-{/if}
+
 <div class="flex flex-col min-h-screen bg-white dark:bg-gray-900">
   <header class="sticky top-0 z-40 flex-none w-full mx-auto bg-white border-b border-gray-200 dark:border-gray-600 dark:bg-gray-800">
     <Navbar color="default" fluid class="flex items-center justify-between w-full mx-auto py-1.5 px-4">
