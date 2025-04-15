@@ -36,7 +36,8 @@ Use this example of a contact form coded with Tailwind CSS including the email, 
         <Input id="subject" name="subject" placeholder="Let us know how we can help you" required />
       </div>
       <div>
-        <Textarea id="subject" name="subject" placeholder="Leave a comment..." label="Your message" />
+        <Label for="textarea-id" class="mb-2">Your message</Label>
+        <Textarea id="subject" name="subject" placeholder="Leave a comment..." />
       </div>
       <Button>Send message</Button>
     </form>

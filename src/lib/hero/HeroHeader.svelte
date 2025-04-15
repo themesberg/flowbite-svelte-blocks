@@ -3,7 +3,7 @@
   import type { Snippet } from 'svelte';
   import type { HTMLAttributes } from 'svelte/elements';
   interface Props extends HTMLAttributes<HTMLDivElement>{
-    children: Snippet;
+    children?: Snippet;
     h1?: Snippet;
     h2?: Snippet;
     paragraph?: Snippet;
@@ -35,7 +35,9 @@
       {@render paragraph()}
     </p>
   {/if}
-  {@render children()}
+  {#if children}
+    {@render children()}
+  {/if}
 </div>
 
 <!--

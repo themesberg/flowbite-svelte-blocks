@@ -25,9 +25,7 @@ Use this example to show a preview of a blog post including the title, descripti
 <Section name="blog">
   <BlogHead>
     {#snippet h2()}Our Blog{/snippet}
-    {#snippet paragraph()}
       <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">We use an agile approach to test assumptions and connect with the needs of your audience early and often.</p>
-    {/snippet}
   </BlogHead>
   <BlogBodyWrapper>
     <ArticleWrapper>

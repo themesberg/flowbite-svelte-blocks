@@ -19,7 +19,7 @@ Use this example of a dismissable banner component to show extra information rel
 
 ```svelte example
 <script lang="ts">
-  import { Banner } from 'flowbite-svelte-blocks';
+  import { Banner } from '$lib';
   import { CloseButton } from 'flowbite-svelte';
 
   export let visible = true;

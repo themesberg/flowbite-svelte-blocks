@@ -70,7 +70,7 @@ Use this example to show information about your team members such as the name, o
           </p>
           {#snippet social()}
             <Facebook href="/" />
-            <Github href="/" />
+            <GitHub href="/" />
             <Twitter href="/" />
           {/snippet}
         </TeamItem>

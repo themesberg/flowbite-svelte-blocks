@@ -15,26 +15,22 @@ description: Flowbite Svelte Blocks example website homepage.
     ContentWithImage,
     Content,
     Cta
-  } from 'flowbite-svelte-blocks';
+  } from '$lib';
   import {
     Button
   } from 'flowbite-svelte';
   import { ArrowRightOutline, ChartPieSolid, LandmarkSolid, BriefcaseSolid, DollarOutline, RocketSolid, CogOutline, ChevronRightOutline } from 'flowbite-svelte-icons';
+  
   import {
     Airbnb,
-    Facebook,
     Google,
     Mailchimp,
     Mashable,
     Microsoft,
     Spotify,
-    Twitter,
-    Instagram,
-    MetaTag
   } from '../utils';
 </script>
 
-<MetaTag {breadcrumb_title} {title} {dir} {description} />
 
 <Section name="heroVisual">
   <div class="mr-auto place-self-center lg:col-span-7">
@@ -98,8 +94,8 @@ description: Flowbite Svelte Blocks example website homepage.
 <Section name="feature">
   <HeroHeader
     class="max-w-screen-md mb-8 lg:mb-16"
-    h2Class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
-    pClass="text-gray-500 sm:text-xl dark:text-gray-400"
+    h2Class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white text-left"
+    pClass="text-gray-500 sm:text-xl dark:text-gray-400 text-left sm:px-0 xl:px-0"
   >
     {#snippet h2()}You’ll be in good company{/snippet}
     {#snippet paragraph()}

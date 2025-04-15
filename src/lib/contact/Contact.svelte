@@ -5,8 +5,8 @@
     children: Snippet;
     h2?: Snippet;
     paragraph?: Snippet;
-    h2Class: string;
-    pClass: string;
+    h2Class?: string;
+    pClass?: string;
   }
   let {children, h2, paragraph, h2Class, pClass}: Props = $props();
   let h2Cls: string = twMerge('mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white', h2Class);
