@@ -103,6 +103,7 @@ export { default as TestimonialCardItem } from './testimonial/TestimonialCardIte
 
 // utils
 export { default as Facebook } from './utils/Facebook.svelte';
-export { default as Github } from './utils/Github.svelte';
+export { default as GitHub } from './utils/GitHub.svelte';
 export { default as Quotes } from './utils/Quotes.svelte';
 export { default as Twitter } from './utils/Twitter.svelte';
+export { default as Instagram } from './utils/Instagram.svelte';

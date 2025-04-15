@@ -45,8 +45,7 @@ Use this footer section to show the logo of your brand, the sitemap, social medi
 
 ```svelte example
 <script>
-  import { Section } from 'flowbite-svelte-blocks';
-  import { Facebook, Instagram, GitHub, Twitter } from '../utils';
+  import { Facebook, Instagram, GitHub, Twitter } from 'flowbite-svelte-blocks';
   import { Footer, FooterBrand, FooterLinkGroup, FooterLink, FooterCopyright, FooterIcon } from 'flowbite-svelte';
 </script>
 
@@ -89,10 +88,10 @@ Use this footer section to show the logo of your brand, the sitemap, social medi
   <div class="sm:flex sm:items-center sm:justify-between">
     <FooterCopyright href="/" by="Flowbite™" />
     <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-      <FooterIcon href="/" class="text-gray-400 hover:text-gray-900" icon={Facebook} />
-      <FooterIcon href="/" class="text-gray-400 hover:text-gray-900" icon={Instagram} />
-      <FooterIcon href="/" class="text-gray-400 hover:text-gray-900" icon={Twitter} />
-      <FooterIcon href="/" class="text-gray-400 hover:text-gray-900" icon={Github} />
+      <FooterIcon href="/" class="text-gray-400 hover:text-gray-900"><Facebook /></FooterIcon>
+      <FooterIcon href="/" class="text-gray-400 hover:text-gray-900"><Instagram /></FooterIcon>
+      <FooterIcon href="/" class="text-gray-400 hover:text-gray-900"><Twitter /></FooterIcon>
+      <FooterIcon href="/" class="text-gray-400 hover:text-gray-900"><GitHub /></FooterIcon>
     </div>
   </div>
 </Footer>
