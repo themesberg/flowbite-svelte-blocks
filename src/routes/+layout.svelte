@@ -85,7 +85,7 @@
 					<DropdownItem href="/example">Example</DropdownItem>
 				</Dropdown>
 				<NavLi href="/pages/quickstart">Quickstart</NavLi>
-				<NavLi href="https://flowbite-svelte.com">Flowbite-Svelte</NavLi>
+				<NavLi href="https://next.flowbite-svelte.com">Flowbite-Svelte</NavLi>
 				<NavLi href="https://flowbite-svelte-icons.codewithshin.com">Icons</NavLi>
 				
 			</NavUl>
