@@ -42,13 +42,7 @@
 			| 'testimonial';
 		class?: string;
 	}
-	let {
-		children,
-		sectionClass = 'relative py-6 sm:py-10',
-		divClass,
-		name = 'default',
-		class: className
-	}: Props = $props();
+	let { children, sectionClass = 'relative py-6 sm:py-10', divClass, name = 'default', class: className }: Props = $props();
 
 	const sectionClasses = {
 		advancedTable: {

@@ -27,8 +27,7 @@
 				/>
 			</svg>
 			<a
-				href="https://github.com/themesberg/flowbite-svelte/blob/main/src/lib{((rootDir) =>
-					path.split(rootDir)[1])(path.split('/').slice(0, -2).join('/'))}"
+				href="https://github.com/themesberg/flowbite-svelte/blob/main/src/lib{((rootDir) => path.split(rootDir)[1])(path.split('/').slice(0, -2).join('/'))}"
 				target="_blank"
 				rel="noreferrer"
 				class="hover:text-primary-500 hover:underline"

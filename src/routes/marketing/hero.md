@@ -31,13 +31,10 @@ Use this default example with an announcement badge, heading, CTA buttons, and c
 	</News>
 	<HeroHeader>
 		{#snippet h1()}We invest in the world’s potential{/snippet}
-		{#snippet paragraph()}Here at Flowbite we focus on markets where technology, innovation, and
-			capital can unlock long-term value and drive economic growth.{/snippet}
+		{#snippet paragraph()}Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.{/snippet}
 	</HeroHeader>
 
-	<div
-		class="mb-8 flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4 lg:mb-16"
-	>
+	<div class="mb-8 flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4 lg:mb-16">
 		<a href="/">
 			<Button size="lg" color="red">
 				Learn more <ArrowRightOutline size="md" class="-mr-1 ml-2" />
@@ -86,25 +83,13 @@ Use this example to show an image next to the heading and CTA buttons to improve
 			pClass="text-left max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400 sm:px-0 lg:px-0 xl:px-0"
 		>
 			{#snippet h1()}Payments tool for software companies{/snippet}
-			{#snippet paragraph()}From checkout to global sales tax compliance, companies around the world
-				use Flowbite to simplify their payment stack.{/snippet}
-			<a href="/"
-				><Button size="xl" color="red" class="mr-3 inline-flex items-center justify-center"
-					>Get started<ArrowRightOutline size="md" class="-mr-1 ml-2" /></Button
-				>
-			</a>
-			<a href="/"
-				><Button color="light" size="xl" class="inline-flex items-center justify-center"
-					>Speak to Sales</Button
-				>
-			</a>
+			{#snippet paragraph()}From checkout to global sales tax compliance, companies around the world use Flowbite to simplify their payment stack.{/snippet}
+			<a href="/"><Button size="xl" color="red" class="mr-3 inline-flex items-center justify-center">Get started<ArrowRightOutline size="md" class="-mr-1 ml-2" /></Button> </a>
+			<a href="/"><Button color="light" size="xl" class="inline-flex items-center justify-center">Speak to Sales</Button> </a>
 		</HeroHeader>
 	</div>
 	<div class="hidden lg:col-span-5 lg:mt-0 lg:flex">
-		<img
-			src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png"
-			alt="mockup"
-		/>
+		<img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png" alt="mockup" />
 	</div>
 </Section>
 ```

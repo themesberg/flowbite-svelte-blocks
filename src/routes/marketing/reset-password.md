@@ -44,14 +44,7 @@ Use this example with an email input and two password input fields to let the us
 					<Input type="password" name="confirm-password" placeholder="•••••" required />
 				</Label>
 				<div class="flex items-start">
-					<Checkbox
-						>I accept the <a
-							class="text-primary-600 dark:text-primary-500 font-medium hover:underline"
-							href="/"
-						>
-							Terms and Conditions</a
-						></Checkbox
-					>
+					<Checkbox>I accept the <a class="text-primary-600 dark:text-primary-500 font-medium hover:underline" href="/"> Terms and Conditions</a></Checkbox>
 				</div>
 				<Button type="submit" class="w-full1">Reset passwod</Button>
 			</form>

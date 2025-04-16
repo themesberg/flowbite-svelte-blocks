@@ -24,24 +24,21 @@ Use this example to show a list of company clients and case study previews insid
 		{
 			customer: 'Alphabet Inc.',
 			title: 'Official website',
-			description:
-				'Flowbite helps you connect with friends, family and communities of people who share your interests.',
+			description: 'Flowbite helps you connect with friends, family and communities of people who share your interests.',
 			href: '/',
 			linkTitle: 'View case study'
 		},
 		{
 			customer: 'Microsoft Corp.',
 			title: 'Management system',
-			description:
-				'Flowbite helps you connect with friends, family and communities of people who share your interests.',
+			description: 'Flowbite helps you connect with friends, family and communities of people who share your interests.',
 			href: '/',
 			linkTitle: 'View case study'
 		},
 		{
 			customer: 'Adobe Inc.',
 			title: 'Logo design',
-			description:
-				'Flowbite helps you connect with friends, family and communities of people who share your interests.',
+			description: 'Flowbite helps you connect with friends, family and communities of people who share your interests.',
 			href: '/',
 			linkTitle: 'View case study'
 		}
@@ -49,10 +46,7 @@ Use this example to show a list of company clients and case study previews insid
 </script>
 
 <Section name="portfolio" sectionClass="bg-white dark:bg-gray-900 antialiased">
-	<Portfolio
-		title="Our work"
-		subtitle="Crafted with skill and care to help our clients grow their business!"
-	>
+	<Portfolio title="Our work" subtitle="Crafted with skill and care to help our clients grow their business!">
 		{#each portfolios as item}
 			<PortfolioItem {item} />
 		{/each}

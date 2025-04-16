@@ -4,7 +4,7 @@ import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
 import examples from 'mdsvexamples/vite';
 import path from 'path';
-import pkg from "./package.json" with { type: "json" };
+import pkg from './package.json' with { type: 'json' };
 
 export default defineConfig({
 	plugins: [tailwindcss(), sveltekit(), examples],
@@ -39,7 +39,7 @@ export default defineConfig({
 		}
 	},
 	define: {
-    __NAME__: JSON.stringify(pkg.name),
-    __VERSION__: JSON.stringify(pkg.version)
-  }
+		__NAME__: JSON.stringify(pkg.name),
+		__VERSION__: JSON.stringify(pkg.version)
+	}
 });

@@ -11,13 +11,7 @@
 	import ExampleRtl from './ExampleRTL.svelte';
 	import { GitHub } from '$lib';
 
-	let {
-		src = undefined,
-		meta = undefined,
-		example,
-		code,
-		divClass = 'relative w-full mx-auto bg-linear-to-r bg-white dark:bg-gray-900 p-6'
-	} = $props();
+	let { src = undefined, meta = undefined, example, code, divClass = 'relative w-full mx-auto bg-linear-to-r bg-white dark:bg-gray-900 p-6' } = $props();
 
 	type NotificationDirection = 'ltr' | 'rtl' | 'auto';
 
@@ -34,9 +28,7 @@
 	let codeResponsiveContent: HTMLDivElement | undefined = $state();
 
 	// https://github.com/themesberg/flowbite-svelte/blob/main/src/routes/docs/components/accordion.md#always-open
-	const gitHub = new URL(
-		'https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/'
-	);
+	const gitHub = new URL('https://github.com/shinokada/flowbite-svelte-blocks/blob/main/src/routes/');
 
 	let path: URL | undefined = $state();
 
@@ -60,9 +52,7 @@
 
 	function init(node: HTMLElement) {
 		browserSupport = !!window?.navigator?.clipboard;
-		const button: HTMLButtonElement = node.ownerDocument.querySelector(
-			'button[aria-label="Dark mode"]'
-		) as HTMLButtonElement;
+		const button: HTMLButtonElement = node.ownerDocument.querySelector('button[aria-label="Dark mode"]') as HTMLButtonElement;
 		button?.addEventListener('click', updateDarkMode);
 
 		dark = node.ownerDocument.documentElement.classList.contains('dark');
@@ -129,12 +119,8 @@
 
 		iframeLoad = true;
 		// get only css and style frome head
-		const externalCss = document.querySelectorAll(
-			'head link[href*="https://"][rel="stylesheet"], head style'
-		);
-		const internalCss = Array.from(document.styleSheets).filter((el) =>
-			el.href?.includes(document.location.hostname)
-		);
+		const externalCss = document.querySelectorAll('head link[href*="https://"][rel="stylesheet"], head style');
+		const internalCss = Array.from(document.styleSheets).filter((el) => el.href?.includes(document.location.hostname));
 		// extract style to avoid multiple network request to css
 		const extractInlineCss = internalCss.reduce((acc, el) => {
 			acc += Array.from(el.cssRules)
@@ -148,10 +134,7 @@
 
 		const headContent = Array.from(externalCss).reduce((acc, el) => (acc += el.outerHTML), '');
 		// put the content of head in the head of the iframe
-		iframe.contentDocument.head.insertAdjacentHTML(
-			'beforeend',
-			`${headContent}${styleTag.outerHTML}` || ''
-		);
+		iframe.contentDocument.head.insertAdjacentHTML('beforeend', `${headContent}${styleTag.outerHTML}` || '');
 
 		// mount component
 		mount(ExampleHelper, {
@@ -186,9 +169,7 @@
 	$effect(() => {
 		if (iframe) {
 			// toggle dark mode class in the iframe
-			dark
-				? iframe?.contentDocument?.documentElement.classList.add('dark')
-				: iframe?.contentDocument?.documentElement.classList.remove('dark');
+			dark ? iframe?.contentDocument?.documentElement.classList.add('dark') : iframe?.contentDocument?.documentElement.classList.remove('dark');
 		}
 	});
 
@@ -202,45 +183,21 @@
 
 <div class="code-example mt-8" use:init>
 	{#if !meta.hideOutput}
-		<div
-			class="w-full rounded-t-xl border border-gray-200 bg-gray-50 p-4 dark:border-gray-600 dark:bg-gray-700"
-		>
+		<div class="w-full rounded-t-xl border border-gray-200 bg-gray-50 p-4 dark:border-gray-600 dark:bg-gray-700">
 			<div class="grid {meta.hideResponsiveButtons ? 'grid-cols-2' : 'grid-cols-2 sm:grid-cols-3'}">
 				{#if path}
-					<Button
-						size="xs"
-						color="alternative"
-						class="hover:text-primary-600 w-fit gap-2 dark:bg-gray-900"
-						href={'' + path}
-						target="_blank"
-						rel="noreferrer"
-					>
+					<Button size="xs" color="alternative" class="hover:text-primary-600 w-fit gap-2 dark:bg-gray-900" href={'' + path} target="_blank" rel="noreferrer">
 						<GitHub />Edit on GitHub
 					</Button>
 					{#if !meta.hideResponsiveButtons}
 						<div class="hidden justify-center gap-x-2 sm:flex">
-							<Button
-								size="xs"
-								color="alternative"
-								class="dark:bg-gray-900"
-								onclick={() => (responsiveDevice = 'desktop')}
-							>
+							<Button size="xs" color="alternative" class="dark:bg-gray-900" onclick={() => (responsiveDevice = 'desktop')}>
 								<DesktopPcOutline size="sm" />
 							</Button>
-							<Button
-								size="xs"
-								color="alternative"
-								class="dark:bg-gray-900"
-								onclick={() => (responsiveDevice = 'tablet')}
-							>
+							<Button size="xs" color="alternative" class="dark:bg-gray-900" onclick={() => (responsiveDevice = 'tablet')}>
 								<TabletOutline size="sm" />
 							</Button>
-							<Button
-								size="xs"
-								color="alternative"
-								class="dark:bg-gray-900"
-								onclick={() => (responsiveDevice = 'mobile')}
-							>
+							<Button size="xs" color="alternative" class="dark:bg-gray-900" onclick={() => (responsiveDevice = 'mobile')}>
 								<MobilePhoneOutline size="sm" />
 							</Button>
 						</div>
@@ -254,26 +211,11 @@
 		</div>
 
 		<div class="code-preview-wrapper">
-			<div
-				class="code-preview flex border-x border-gray-200 bg-white bg-linear-to-r p-0 dark:border-gray-600 dark:bg-gray-900"
-				class:dark
-				dir={rtl}
-			>
+			<div class="code-preview flex border-x border-gray-200 bg-white bg-linear-to-r p-0 dark:border-gray-600 dark:bg-gray-900" class:dark dir={rtl}>
 				<div class="code-responsive-wrapper w-full">
-					<div
-						class="code-responive-content {twJoin(
-							!meta.hideResponsiveButtons && 'mx-auto',
-							responsiveSize[responsiveDevice]
-						)}"
-						bind:this={codeResponsiveContent}
-					>
+					<div class="code-responive-content {twJoin(!meta.hideResponsiveButtons && 'mx-auto', responsiveSize[responsiveDevice])}" bind:this={codeResponsiveContent}>
 						{#if !meta.hideResponsiveButtons}
-							<iframe
-								bind:this={iframe}
-								class="h-full w-full"
-								title="iframe-code-content"
-								onload={injectContent}
-							></iframe>
+							<iframe bind:this={iframe} class="h-full w-full" title="iframe-code-content" onload={injectContent}></iframe>
 						{:else}
 							<div class={twMerge(divClass, meta.class)}>
 								{@render example()}
@@ -287,15 +229,10 @@
 	{#if !meta.hideSource}
 		<div class="code-syntax-wrapper">
 			<div class="code-syntax relative border-x border-y border-gray-200 dark:border-gray-600">
-				<div
-					class="grid w-full grid-cols-2 rounded-t-md border-b border-gray-200 bg-gray-50 dark:border-gray-600 dark:bg-gray-700"
-				>
+				<div class="grid w-full grid-cols-2 rounded-t-md border-b border-gray-200 bg-gray-50 dark:border-gray-600 dark:bg-gray-700">
 					<ul class="flex text-center text-sm font-medium text-gray-500 dark:text-gray-400">
 						<li>
-							<span
-								class="inline-block w-full border-e border-gray-200 bg-gray-100 p-2 px-3 text-gray-800 dark:border-gray-600 dark:bg-gray-800 dark:text-white"
-								>Svelte</span
-							>
+							<span class="inline-block w-full border-e border-gray-200 bg-gray-100 p-2 px-3 text-gray-800 dark:border-gray-600 dark:bg-gray-800 dark:text-white">Svelte</span>
 						</li>
 					</ul>
 					<div class="flex justify-end">
@@ -305,13 +242,7 @@
 								type="button"
 								class="hover:text-primary-700 copy-to-clipboard-button flex items-center border-s border-gray-200 bg-gray-100 px-3 py-2 text-xs font-medium text-gray-600 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:text-white"
 							>
-								<svg
-									class="me-2 h-4 w-4"
-									fill="none"
-									stroke="currentColor"
-									viewBox="0 0 24 24"
-									xmlns="http://www.w3.org/2000/svg"
-								>
+								<svg class="me-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 									<path
 										stroke-linecap="round"
 										stroke-linejoin="round"
@@ -328,9 +259,7 @@
 				<div class="relative">
 					<div class="overflow-hidden" class:max-h-72={!expand} tabindex="-1" use:checkOverflow>
 						<div class="highlight">
-							<pre
-								bind:this={codeEl}
-								class="language-svelte -mt-2! rounded-none!">{@render code?.()}</pre>
+							<pre bind:this={codeEl} class="language-svelte -mt-2! rounded-none!">{@render code?.()}</pre>
 						</div>
 					</div>
 					{#if showExpandButton && !expand}

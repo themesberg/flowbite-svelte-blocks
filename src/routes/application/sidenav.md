@@ -20,17 +20,7 @@ Use the default sidebar navigation to show a list of menu items with dropdown it
 <script lang="ts">
 	import { page } from '$app/state';
 	import { Section, SidebarBottomNav, SidebarBottomNavItem } from '$lib';
-	import {
-		Button,
-		Sidebar,
-		SidebarGroup,
-		SidebarItem,
-		SidebarWrapper,
-		SidebarDropdownItem,
-		SidebarDropdownWrapper,
-		Dropdown,
-		DropdownItem
-	} from 'flowbite-svelte';
+	import { Button, Sidebar, SidebarGroup, SidebarItem, SidebarWrapper, SidebarDropdownItem, SidebarDropdownWrapper, Dropdown, DropdownItem } from 'flowbite-svelte';
 
 	let spanClass = 'flex-1 ml-3 whitespace-nowrap';
 	let activeUrl = $derived(page.url.pathname);
@@ -46,10 +36,7 @@ Use the default sidebar navigation to show a list of menu items with dropdown it
 						class="h-6 w-6 text-gray-400 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
 						fill="currentColor"
 						viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg"
-						><path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z" /><path
-							d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"
-						/></svg
+						xmlns="http://www.w3.org/2000/svg"><path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z" /><path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z" /></svg
 					>
 				{/snippet}
 			</SidebarItem>
@@ -99,18 +86,13 @@ Use the default sidebar navigation to show a list of menu items with dropdown it
 						fill="currentColor"
 						viewBox="0 0 20 20"
 						xmlns="http://www.w3.org/2000/svg"
-						><path
-							d="M8.707 7.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l2-2a1 1 0 00-1.414-1.414L11 7.586V3a1 1 0 10-2 0v4.586l-.293-.293z"
-						/><path
+						><path d="M8.707 7.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l2-2a1 1 0 00-1.414-1.414L11 7.586V3a1 1 0 10-2 0v4.586l-.293-.293z" /><path
 							d="M3 5a2 2 0 012-2h1a1 1 0 010 2H5v7h2l1 2h4l1-2h2V5h-1a1 1 0 110-2h1a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"
 						/></svg
 					>
 				{/snippet}
 				{#snippet subtext()}
-					<span
-						class="ml-3 inline-flex h-3 w-3 items-center justify-center rounded-full bg-blue-200 p-3 text-sm font-medium text-blue-600 dark:bg-blue-400 dark:text-gray-900"
-						>6</span
-					>
+					<span class="ml-3 inline-flex h-3 w-3 items-center justify-center rounded-full bg-blue-200 p-3 text-sm font-medium text-blue-600 dark:bg-blue-400 dark:text-gray-900">6</span>
 				{/snippet}
 			</SidebarItem>
 			<SidebarDropdownWrapper label="Authentication">
@@ -121,11 +103,7 @@ Use the default sidebar navigation to show a list of menu items with dropdown it
 						fill="currentColor"
 						viewBox="0 0 20 20"
 						xmlns="http://www.w3.org/2000/svg"
-						><path
-							fill-rule="evenodd"
-							d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
-							clip-rule="evenodd"
-						/></svg
+						><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" /></svg
 					>
 				{/snippet}
 				<SidebarDropdownItem label="Sign In" href="/" />
@@ -158,9 +136,7 @@ Use the default sidebar navigation to show a list of menu items with dropdown it
 						fill="currentColor"
 						viewBox="0 0 20 20"
 						xmlns="http://www.w3.org/2000/svg"
-						><path
-							d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z"
-						/></svg
+						><path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z" /></svg
 					>
 				{/snippet}
 			</SidebarItem>
@@ -184,24 +160,14 @@ Use the default sidebar navigation to show a list of menu items with dropdown it
 		<SidebarGroup class="relative pt-40">
 			<SidebarBottomNav>
 				<SidebarBottomNavItem href="/" tooltip="Profile">
-					<svg
-						aria-hidden="true"
-						class="h-6 w-6"
-						fill="currentColor"
-						viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg"
+					<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
 						><path
 							d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z"
 						/></svg
 					>
 				</SidebarBottomNavItem>
 				<SidebarBottomNavItem href="/" tooltip="Settings page">
-					<svg
-						aria-hidden="true"
-						class="h-6 w-6"
-						fill="currentColor"
-						viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg"
+					<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
 						><path
 							fill-rule="evenodd"
 							d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
@@ -212,25 +178,11 @@ Use the default sidebar navigation to show a list of menu items with dropdown it
 				<Dropdown placement="top" triggeredBy="#countries">
 					<DropdownItem>
 						<div class="inline-flex items-center">
-							<svg
-								aria-hidden="true"
-								class="mr-2 h-3.5 w-3.5 rounded-full"
-								xmlns="http://www.w3.org/2000/svg"
-								id="flag-icon-css-us"
-								viewBox="0 0 512 512"
-							>
+							<svg aria-hidden="true" class="mr-2 h-3.5 w-3.5 rounded-full" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-us" viewBox="0 0 512 512">
 								<g fill-rule="evenodd">
 									<g stroke-width="1pt">
-										<path
-											fill="#bd3d44"
-											d="M0 0h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
-											transform="scale(3.9385)"
-										/>
-										<path
-											fill="#fff"
-											d="M0 10h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
-											transform="scale(3.9385)"
-										/>
+										<path fill="#bd3d44" d="M0 0h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z" transform="scale(3.9385)" />
+										<path fill="#fff" d="M0 10h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z" transform="scale(3.9385)" />
 									</g>
 									<path fill="#192f5d" d="M0 0h98.8v70H0z" transform="scale(3.9385)" />
 									<path
@@ -245,13 +197,7 @@ Use the default sidebar navigation to show a list of menu items with dropdown it
 					</DropdownItem>
 					<DropdownItem>
 						<div class="inline-flex items-center">
-							<svg
-								aria-hidden="true"
-								class="mr-2 h-3.5 w-3.5 rounded-full"
-								xmlns="http://www.w3.org/2000/svg"
-								id="flag-icon-css-de"
-								viewBox="0 0 512 512"
-							>
+							<svg aria-hidden="true" class="mr-2 h-3.5 w-3.5 rounded-full" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-de" viewBox="0 0 512 512">
 								<path fill="#ffce00" d="M0 341.3h512V512H0z" />
 								<path d="M0 0h512v170.7H0z" />
 								<path fill="#d00" d="M0 170.7h512v170.6H0z" />
@@ -261,13 +207,7 @@ Use the default sidebar navigation to show a list of menu items with dropdown it
 					</DropdownItem>
 					<DropdownItem>
 						<div class="inline-flex items-center">
-							<svg
-								aria-hidden="true"
-								class="mr-2 h-3.5 w-3.5 rounded-full"
-								xmlns="http://www.w3.org/2000/svg"
-								id="flag-icon-css-it"
-								viewBox="0 0 512 512"
-							>
+							<svg aria-hidden="true" class="mr-2 h-3.5 w-3.5 rounded-full" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-it" viewBox="0 0 512 512">
 								<g fill-rule="evenodd" stroke-width="1pt">
 									<path fill="#fff" d="M0 0h512v512H0z" />
 									<path fill="#009246" d="M0 0h170.7v512H0z" />
@@ -279,48 +219,16 @@ Use the default sidebar navigation to show a list of menu items with dropdown it
 					</DropdownItem>
 					<DropdownItem>
 						<div class="inline-flex items-center">
-							<svg
-								aria-hidden="true"
-								class="mr-2 h-3.5 w-3.5 rounded-full"
-								xmlns="http://www.w3.org/2000/svg"
-								xmlns:xlink="http://www.w3.org/1999/xlink"
-								id="flag-icon-css-cn"
-								viewBox="0 0 512 512"
-							>
+							<svg aria-hidden="true" class="mr-2 h-3.5 w-3.5 rounded-full" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="flag-icon-css-cn" viewBox="0 0 512 512">
 								<defs>
 									<path id="a" fill="#ffde00" d="M1-.3L-.7.8 0-1 .6.8-1-.3z" />
 								</defs>
 								<path fill="#de2910" d="M0 0h512v512H0z" />
-								<use
-									width="30"
-									height="20"
-									transform="matrix(76.8 0 0 76.8 128 128)"
-									xlink:href="#a"
-								/>
-								<use
-									width="30"
-									height="20"
-									transform="rotate(-121 142.6 -47) scale(25.5827)"
-									xlink:href="#a"
-								/>
-								<use
-									width="30"
-									height="20"
-									transform="rotate(-98.1 198 -82) scale(25.6)"
-									xlink:href="#a"
-								/>
-								<use
-									width="30"
-									height="20"
-									transform="rotate(-74 272.4 -114) scale(25.6137)"
-									xlink:href="#a"
-								/>
-								<use
-									width="30"
-									height="20"
-									transform="matrix(16 -19.968 19.968 16 256 230.4)"
-									xlink:href="#a"
-								/>
+								<use width="30" height="20" transform="matrix(76.8 0 0 76.8 128 128)" xlink:href="#a" />
+								<use width="30" height="20" transform="rotate(-121 142.6 -47) scale(25.5827)" xlink:href="#a" />
+								<use width="30" height="20" transform="rotate(-98.1 198 -82) scale(25.6)" xlink:href="#a" />
+								<use width="30" height="20" transform="rotate(-74 272.4 -114) scale(25.6137)" xlink:href="#a" />
+								<use width="30" height="20" transform="matrix(16 -19.968 19.968 16 256 230.4)" xlink:href="#a" />
 							</svg>
 							中文 (繁體)
 						</div>
@@ -330,35 +238,23 @@ Use the default sidebar navigation to show a list of menu items with dropdown it
 					class="inline-flex cursor-pointer justify-center rounded p-2 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
 					id="countries"
 				>
-					<svg
-						aria-hidden="true"
-						class="mt-0.5 h-5 w-5 rounded-full"
-						xmlns="http://www.w3.org/2000/svg"
-						xmlns:xlink="http://www.w3.org/1999/xlink"
-						viewBox="0 0 3900 3900"
-						><path fill="#b22234" d="M0 0h7410v3900H0z" /><path
-							d="M0 450h7410m0 600H0m0 600h7410m0 600H0m0 600h7410m0 600H0"
-							stroke="#fff"
-							stroke-width="300"
-						/><path fill="#3c3b6e" d="M0 0h2964v2100H0z" /><g fill="#fff"
+					<svg aria-hidden="true" class="mt-0.5 h-5 w-5 rounded-full" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 3900 3900"
+						><path fill="#b22234" d="M0 0h7410v3900H0z" /><path d="M0 450h7410m0 600H0m0 600h7410m0 600H0m0 600h7410m0 600H0" stroke="#fff" stroke-width="300" /><path
+							fill="#3c3b6e"
+							d="M0 0h2964v2100H0z"
+						/><g fill="#fff"
 							><g id="d"
 								><g id="c"
 									><g id="e"
 										><g id="b"
-											><path
-												id="a"
-												d="M247 90l70.534 217.082-184.66-134.164h228.253L176.466 307.082z"
-											/><use xlink:href="#a" y="420" /><use xlink:href="#a" y="840" /><use
+											><path id="a" d="M247 90l70.534 217.082-184.66-134.164h228.253L176.466 307.082z" /><use xlink:href="#a" y="420" /><use xlink:href="#a" y="840" /><use
 												xlink:href="#a"
 												y="1260"
 											/></g
 										><use xlink:href="#a" y="1680" /></g
 									><use xlink:href="#b" x="247" y="210" /></g
 								><use xlink:href="#c" x="494" /></g
-							><use xlink:href="#d" x="988" /><use xlink:href="#c" x="1976" /><use
-								xlink:href="#e"
-								x="2470"
-							/></g
+							><use xlink:href="#d" x="988" /><use xlink:href="#c" x="1976" /><use xlink:href="#e" x="2470" /></g
 						>
 					</svg>
 				</Button>

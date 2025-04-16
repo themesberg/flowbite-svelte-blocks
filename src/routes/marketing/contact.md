@@ -25,8 +25,7 @@ Use this example of a contact form coded with Tailwind CSS including the email, 
 <Section name="contact">
 	<Contact>
 		{#snippet h2()}Contact Us{/snippet}
-		{#snippet paragraph()}Got a technical issue? Want to send feedback about a beta feature? Need
-			details about our Business plan? Let us know.{/snippet}
+		{#snippet paragraph()}Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.{/snippet}
 		<form class="space-y-8">
 			<div>
 				<Label for="email" class="mb-2 block">Your email</Label>

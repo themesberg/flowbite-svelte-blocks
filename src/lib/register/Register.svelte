@@ -10,14 +10,8 @@
 	}
 	let { children, top, href, aClass, class: className }: Props = $props();
 	// let href: string = '';
-	let aCls: string = twMerge(
-		'flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white',
-		aClass
-	);
-	let divCls: string = twMerge(
-		'w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700',
-		className
-	);
+	let aCls: string = twMerge('flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white', aClass);
+	let divCls: string = twMerge('w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700', className);
 </script>
 
 {#if top}

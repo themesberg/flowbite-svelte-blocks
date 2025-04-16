@@ -26,19 +26,13 @@ Use this example to show a heading with a paragraph and a CTA link anywhere on y
 	<Content>
 		{#snippet h2()}Powering innovation at 200,000+ companies worldwide{/snippet}
 		<p class="mb-4 font-light">
-			Track work across the enterprise through an open, collaborative platform. Link issues across
-			Jira and ingest data from other software development tools, so your IT support and operations
-			teams have richer contextual information to rapidly respond to requests, incidents, and
-			changes.
+			Track work across the enterprise through an open, collaborative platform. Link issues across Jira and ingest data from other software development tools, so your IT support and operations teams
+			have richer contextual information to rapidly respond to requests, incidents, and changes.
 		</p>
 		<p class="mb-4 font-medium">
-			Deliver great service experiences fast - without the complexity of traditional ITSM
-			solutions.Accelerate critical development work, eliminate toil, and deploy changes with ease.
+			Deliver great service experiences fast - without the complexity of traditional ITSM solutions.Accelerate critical development work, eliminate toil, and deploy changes with ease.
 		</p>
-		<a
-			href="/"
-			class="text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700 inline-flex items-center font-medium"
-		>
+		<a href="/" class="text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700 inline-flex items-center font-medium">
 			Learn more
 			<ChevronRightOutline class="mt-0.5 ml-2" size="md" />
 		</a>
@@ -59,27 +53,14 @@ Use this example to show a couple of images next to a heading and paragraph to p
 	<ContentWithImage>
 		{#snippet h2()}We didn't reinvent the wheel{/snippet}
 		<p class="mb-4">
-			We are strategists, designers and developers. Innovators and problem solvers. Small enough to
-			be simple and quick, but big enough to deliver the scope you want at the pace you need. Small
-			enough to be simple and quick, but big enough to deliver the scope you want at the pace you
-			need.
+			We are strategists, designers and developers. Innovators and problem solvers. Small enough to be simple and quick, but big enough to deliver the scope you want at the pace you need. Small enough
+			to be simple and quick, but big enough to deliver the scope you want at the pace you need.
 		</p>
-		<p>
-			We are strategists, designers and developers. Innovators and problem solvers. Small enough to
-			be simple and quick.
-		</p>
+		<p>We are strategists, designers and developers. Innovators and problem solvers. Small enough to be simple and quick.</p>
 
 		{#snippet image()}
-			<img
-				class="w-full rounded-lg"
-				src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png"
-				alt="office content 1"
-			/>
-			<img
-				class="mt-4 w-full rounded-lg lg:mt-10"
-				src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png"
-				alt="office content 2"
-			/>
+			<img class="w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png" alt="office content 1" />
+			<img class="mt-4 w-full rounded-lg lg:mt-10" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png" alt="office content 2" />
 		{/snippet}
 	</ContentWithImage>
 </Section>

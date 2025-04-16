@@ -13,18 +13,7 @@ Use this free example of a drawer component to show a list of checkbox, radio an
 
 ```svelte example hideResponsiveButtons class="h-64"
 <script>
-	import {
-		Drawer,
-		Button,
-		CloseButton,
-		Label,
-		Input,
-		Checkbox,
-		A,
-		Heading,
-		Rating,
-		Radio
-	} from 'flowbite-svelte';
+	import { Drawer, Button, CloseButton, Label, Input, Checkbox, A, Heading, Rating, Radio } from 'flowbite-svelte';
 
 	let hidden = true;
 	let myRating = '3';
@@ -35,21 +24,14 @@ Use this free example of a drawer component to show a list of checkbox, radio an
 </div>
 <Drawer bind:hidden id="sidebar4">
 	<div class="flex items-center justify-between">
-		<Heading
-			tag="h5"
-			id="drawer-label"
-			class="mb-6 inline-flex items-center text-base font-semibold text-gray-500 uppercase dark:text-gray-400"
-			>APPLY FILTERS</Heading
-		>
+		<Heading tag="h5" id="drawer-label" class="mb-6 inline-flex items-center text-base font-semibold text-gray-500 uppercase dark:text-gray-400">APPLY FILTERS</Heading>
 		<CloseButton onclick={() => (hidden = true)} class="mb-4 dark:text-white" />
 	</div>
 	<form action="#">
 		<div class="space-y-6">
 			<!-- Categories -->
 			<div class="space-y-2">
-				<Heading tag="h6" class="text-base font-medium text-black dark:text-white"
-					>Categories</Heading
-				>
+				<Heading tag="h6" class="text-base font-medium text-black dark:text-white">Categories</Heading>
 				<div class="flex items-center">
 					<Checkbox>TV, Audio-Video</Checkbox>
 				</div>

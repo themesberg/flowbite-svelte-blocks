@@ -17,12 +17,10 @@
 	let trClass: string = $state('');
 	let trLastClass: string = $state('');
 	if (rowState === 'striped') {
-		trClass =
-			'border-b dark:bg-gray-800 dark:border-gray-700 odd:bg-white even:bg-gray-50 dark:odd:bg-gray-800 dark:even:bg-gray-700';
+		trClass = 'border-b dark:bg-gray-800 dark:border-gray-700 odd:bg-white even:bg-gray-50 dark:odd:bg-gray-800 dark:even:bg-gray-700';
 		trLastClass = 'odd:bg-white even:bg-gray-50 dark:odd:bg-gray-800 dark:even:bg-gray-700';
 	} else if (rowState === 'hover') {
-		trClass =
-			'bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600';
+		trClass = 'bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600';
 		trLastClass = 'bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600';
 	} else {
 		trClass = 'bg-white border-b dark:bg-gray-800 dark:border-gray-700';
@@ -36,10 +34,7 @@
 			<tr class={trLastClass}>
 				{#each item as cell, j}
 					{#if j === 0}
-						<th
-							scope="row"
-							class="px-6 py-4 font-medium whitespace-nowrap text-gray-900 dark:text-white"
-						>
+						<th scope="row" class="px-6 py-4 font-medium whitespace-nowrap text-gray-900 dark:text-white">
 							{#if html}
 								{@html cell}
 							{:else}
@@ -61,10 +56,7 @@
 			<tr class={trClass}>
 				{#each item as cell, j}
 					{#if j === 0}
-						<th
-							scope="row"
-							class="px-6 py-4 font-medium whitespace-nowrap text-gray-900 dark:text-white"
-						>
+						<th scope="row" class="px-6 py-4 font-medium whitespace-nowrap text-gray-900 dark:text-white">
 							{#if html}
 								{@html cell}
 							{:else}

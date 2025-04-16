@@ -125,13 +125,7 @@ pre[class*='language-'] {
 }
 
 /* when after preview */
-.code-preview-wrapper
-	+ .code-syntax-wrapper
-	> .code-syntax
-	> .relative
-	> [data-code-wrapper]
-	> .highlight
-	pre[class*='language-'],
+.code-preview-wrapper + .code-syntax-wrapper > .code-syntax > .relative > [data-code-wrapper] > .highlight pre[class*='language-'],
 .code-preview-wrapper + .code-syntax-wrapper > .code-syntax {
 	overflow: auto;
 	@apply mt-0 rounded-none;
@@ -141,13 +135,7 @@ pre[class*='language-'] {
 	@apply mb-4;
 }
 
-.code-preview-wrapper
-	+ .code-syntax-wrapper
-	> .code-syntax
-	> .relative
-	> [data-code-wrapper]
-	> .highlight
-	> pre[class*='language-'] {
+.code-preview-wrapper + .code-syntax-wrapper > .code-syntax > .relative > [data-code-wrapper] > .highlight > pre[class*='language-'] {
 	@apply m-0 bg-gray-50 p-4 dark:bg-gray-800;
 }
 
@@ -349,9 +337,7 @@ pre.language-svelte .token.comment {
 	padding: initial;
 }
 #carbonads {
-	font-family:
-		-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell,
-		'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	@apply m-0;
 }
 #carbonads {

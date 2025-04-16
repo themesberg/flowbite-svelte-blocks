@@ -1,12 +1,4 @@
-<svg
-	width="16"
-	height="11"
-	viewBox="0 0 16 11"
-	fill="none"
-	xmlns="http://www.w3.org/2000/svg"
-	role="img"
-	aria-label="arrow right"
->
+<svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="arrow right">
 	<path
 		fill-rule="evenodd"
 		clip-rule="evenodd"

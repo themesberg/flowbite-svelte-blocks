@@ -12,10 +12,7 @@
 	let { children, footer, Icon, class: className, figureFooterClass }: Props = $props();
 	// let icon: Component;
 	let figureCls: string = twMerge('max-w-screen-md mx-auto', className);
-	let figureFooterCls: string = twMerge(
-		'flex items-center justify-center mt-6 space-x-3',
-		figureFooterClass
-	);
+	let figureFooterCls: string = twMerge('flex items-center justify-center mt-6 space-x-3', figureFooterClass);
 </script>
 
 <figure class={figureCls}>

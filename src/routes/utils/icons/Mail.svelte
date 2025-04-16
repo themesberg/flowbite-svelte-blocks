@@ -6,16 +6,7 @@
 	let { size = '20', class: className }: Props = $props();
 </script>
 
-<svg
-	class={className}
-	width={size}
-	height={size}
-	viewBox="0 0 20 20"
-	fill="none"
-	xmlns="http://www.w3.org/2000/svg"
-	role="img"
-	aria-label="mail"
->
+<svg class={className} width={size} height={size} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="mail">
 	<path
 		d="M16.0009 4.5L16.001 4.5C16.3838 4.49993 16.7522 4.64622 17.0306 4.90892C17.2315 5.0984 17.3746 5.33809 17.4471 5.60038L10.0009 9.323L2.55475 5.60038C2.62725 5.33809 2.77036 5.0984 2.9712 4.90892C3.24965 4.64622 3.618 4.49993 4.00081 4.5H4.00091H16.0009Z"
 		fill="#9CA3AF"

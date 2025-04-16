@@ -57,10 +57,7 @@
 		<div class="flex flex-row justify-between gap-2.5 self-stretch">
 			{#if index > 1}
 				{@const { name, href } = sibling(false)}
-				<PaginationItem
-					{href}
-					class="hover:text-primary-700 dark:hover:text-primary-700 flex  items-center  gap-2.5"
-				>
+				<PaginationItem {href} class="hover:text-primary-700 dark:hover:text-primary-700 flex  items-center  gap-2.5">
 					<ArrowLeft />
 					{name}
 				</PaginationItem>
@@ -75,10 +72,7 @@
 			{#if index < components.length - 1}
 				{@const { name, href } = sibling(true)}
 
-				<PaginationItem
-					{href}
-					class="hover:text-primary-700 dark: dark:hover:text-primary-700 flex items-center gap-2.5"
-				>
+				<PaginationItem {href} class="hover:text-primary-700 dark: dark:hover:text-primary-700 flex items-center gap-2.5">
 					{name}
 					<ArrowRight />
 				</PaginationItem>

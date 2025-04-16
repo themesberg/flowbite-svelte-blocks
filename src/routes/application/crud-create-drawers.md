@@ -41,12 +41,7 @@ Use this free example of a drawer component to show a list of input field items 
 	</div>
 	<Drawer bind:hidden id="sidebar4">
 		<div class="flex items-center justify-between">
-			<h5
-				id="drawer-label"
-				class="mb-6 inline-flex items-center text-base font-semibold text-gray-500 uppercase dark:text-gray-400"
-			>
-				New Product
-			</h5>
+			<h5 id="drawer-label" class="mb-6 inline-flex items-center text-base font-semibold text-gray-500 uppercase dark:text-gray-400">New Product</h5>
 			<CloseButton onclick={handleCancel} class="mb-4 dark:text-white" />
 		</div>
 		<form action="#" class="mb-6">
@@ -75,19 +70,8 @@ Use this free example of a drawer component to show a list of input field items 
 			<div class="bottom-0 left-0 flex w-full justify-center space-x-4 pb-4 md:absolute md:px-4">
 				<Button type="submit" class="w-full">Add product</Button>
 				<Button class="w-full" color="light" onclick={handleCancel}>
-					<svg
-						aria-hidden="true"
-						class="-ml-1 h-5 w-5 sm:mr-1"
-						fill="none"
-						stroke="currentColor"
-						viewBox="0 0 24 24"
-						xmlns="http://www.w3.org/2000/svg"
-						><path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="2"
-							d="M6 18L18 6M6 6l12 12"
-						/></svg
+					<svg aria-hidden="true" class="-ml-1 h-5 w-5 sm:mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+						><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg
 					>
 					Cancel
 				</Button>

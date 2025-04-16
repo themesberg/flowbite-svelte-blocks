@@ -60,25 +60,11 @@ Use this free example to show a modal component with a form inside when creating
 				</div>
 				<div class="sm:col-span-2">
 					<Label for="description" class="mb-2">Description</Label>
-					<Textarea
-						id="description"
-						placeholder="Your description here"
-						rows={4}
-						name="description"
-						required
-					/>
+					<Textarea id="description" placeholder="Your description here" rows={4} name="description" required />
 				</div>
 				<Button type="submit" class="w-52">
-					<svg
-						class="mr-1 -ml-1 h-6 w-6"
-						fill="currentColor"
-						viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg"
-						><path
-							fill-rule="evenodd"
-							d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
-							clip-rule="evenodd"
-						/></svg
+					<svg class="mr-1 -ml-1 h-6 w-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+						><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd" /></svg
 					>
 					Add new product
 				</Button>

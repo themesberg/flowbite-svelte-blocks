@@ -13,14 +13,8 @@
 		aClass?: string;
 	}
 	let { item, class: className, pClass, h3Class, aClass }: Props = $props();
-	let divCls: string = twMerge(
-		'flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center',
-		className
-	);
-	let pCls: string = twMerge(
-		'w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0',
-		pClass
-	);
+	let divCls: string = twMerge('flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center', className);
+	let pCls: string = twMerge('w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0', pClass);
 	let h3Cls: string = twMerge('text-lg font-semibold text-gray-900 dark:text-white', h3Class);
 	let aCls: string = twMerge('hover:underline', aClass);
 </script>

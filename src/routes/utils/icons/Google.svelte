@@ -1,11 +1,4 @@
-<svg
-	class="h-9 hover:text-gray-900 dark:hover:text-white"
-	viewBox="0 0 86 29"
-	fill="currentColor"
-	xmlns="http://www.w3.org/2000/svg"
-	role="img"
-	aria-label="google"
->
+<svg class="h-9 hover:text-gray-900 dark:hover:text-white" viewBox="0 0 86 29" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="google">
 	<path
 		fill-rule="evenodd"
 		clip-rule="evenodd"

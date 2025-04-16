@@ -20,9 +20,7 @@ Use this example of a responsive navigation bar for your website by showing mult
 	<Navbar>
 		<NavBrand href="/">
 			<img src="/images/logo.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
-			<span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-				Flowbite
-			</span>
+			<span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"> Flowbite </span>
 		</NavBrand>
 		<div class="flex items-center lg:order-2">
 			<Button href="/" color="dark">Log in</Button>

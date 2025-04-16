@@ -6,11 +6,7 @@
 		articleClass?: string;
 		class?: string;
 	}
-	let {
-		children,
-		articleClass = 'p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700',
-		class: className
-	}: Props = $props();
+	let { children, articleClass = 'p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700', class: className }: Props = $props();
 	// export let articleClass: string = 'p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700';
 </script>
 

@@ -4,11 +4,7 @@
 	"events": [],
 	"props": [
 		["divClass", "string", "'space-y-4'"],
-		[
-			"customerClass",
-			"string",
-			"'bg-gray-100 text-gray-900 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300'"
-		],
+		["customerClass", "string", "'bg-gray-100 text-gray-900 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300'"],
 		["titleClass", "string", "'text-2xl font-bold leading-tight text-gray-900 dark:text-white'"],
 		["descriptionClass", "string", "'text-lg font-normal text-gray-500 dark:text-gray-400'"],
 		[

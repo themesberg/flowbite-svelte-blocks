@@ -13,34 +13,13 @@ Use this free example of a table component with a search bar, filter dropdown, a
 
 ```svelte example
 <script lang="ts">
-	import {
-		TableBody,
-		TableBodyCell,
-		TableBodyRow,
-		TableHead,
-		TableHeadCell,
-		TableSearch,
-		Button,
-		Dropdown,
-		DropdownItem,
-		Checkbox,
-		ButtonGroup,
-		List,
-		Li
-	} from 'flowbite-svelte';
+	import { TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell, TableSearch, Button, Dropdown, DropdownItem, Checkbox, ButtonGroup, List, Li } from 'flowbite-svelte';
 	import { Section } from 'flowbite-svelte-blocks';
 	import paginationData from '../utils/advancedTable.json';
-	import {
-		PlusOutline,
-		ChevronDownOutline,
-		FilterSolid,
-		ChevronRightOutline,
-		ChevronLeftOutline
-	} from 'flowbite-svelte-icons';
+	import { PlusOutline, ChevronDownOutline, FilterSolid, ChevronRightOutline, ChevronLeftOutline } from 'flowbite-svelte-icons';
 
 	let divClass = 'bg-white dark:bg-gray-800 relative shadow-md sm:rounded-lg overflow-hidden';
-	let innerDivClass =
-		'flex flex-col md:flex-row items-center justify-between space-y-3 md:space-y-0 md:space-x-4 p-4';
+	let innerDivClass = 'flex flex-col md:flex-row items-center justify-between space-y-3 md:space-y-0 md:space-x-4 p-4';
 	let searchClass = 'w-full md:w-1/2 relative';
 
 	let searchTerm = $state('');
@@ -96,29 +75,14 @@ Use this free example of a table component with a search bar, filter dropdown, a
 		renderPagination(paginationData.length);
 	});
 
-	let currentPageItems = $derived(
-		paginationData.slice(currentPosition, currentPosition + itemsPerPage)
-	);
-	let filteredItems = $derived(
-		paginationData.filter(
-			(item) => item.product_name.toLowerCase().indexOf(searchTerm.toLowerCase()) !== -1
-		)
-	);
+	let currentPageItems = $derived(paginationData.slice(currentPosition, currentPosition + itemsPerPage));
+	let filteredItems = $derived(paginationData.filter((item) => item.product_name.toLowerCase().indexOf(searchTerm.toLowerCase()) !== -1));
 </script>
 
 <Section name="advancedTable" sectionClass="bg-gray-50 dark:bg-gray-900 p-3 sm:p-5">
-	<TableSearch
-		placeholder="Search"
-		hoverable={true}
-		bind:inputValue={searchTerm}
-		{divClass}
-		{innerDivClass}
-		{searchClass}
-	>
+	<TableSearch placeholder="Search" hoverable={true} bind:inputValue={searchTerm} {divClass} {innerDivClass} {searchClass}>
 		{#snippet header()}
-			<div
-				class="flex w-full flex-shrink-0 flex-col items-stretch justify-end space-y-2 md:w-auto md:flex-row md:items-center md:space-y-0 md:space-x-3"
-			>
+			<div class="flex w-full flex-shrink-0 flex-col items-stretch justify-end space-y-2 md:w-auto md:flex-row md:items-center md:space-y-0 md:space-x-3">
 				<Button>
 					<PlusOutline class="mr-2 h-3.5 w-3.5" />Add product
 				</Button>
@@ -178,10 +142,7 @@ Use this free example of a table component with a search bar, filter dropdown, a
 			{/if}
 		</TableBody>
 		{#snippet footer()}
-			<div
-				class="flex flex-col items-start justify-between space-y-3 p-4 md:flex-row md:items-center md:space-y-0"
-				aria-label="Table navigation"
-			>
+			<div class="flex flex-col items-start justify-between space-y-3 p-4 md:flex-row md:items-center md:space-y-0" aria-label="Table navigation">
 				<span class="text-sm font-normal text-gray-500 dark:text-gray-400">
 					Showing
 					<span class="font-semibold text-gray-900 dark:text-white">{startRange}-{endRange}</span>
@@ -189,15 +150,11 @@ Use this free example of a table component with a search bar, filter dropdown, a
 					<span class="font-semibold text-gray-900 dark:text-white">{totalItems}</span>
 				</span>
 				<ButtonGroup>
-					<Button onclick={loadPreviousPage} disabled={currentPosition === 0}
-						><ChevronLeftOutline size="xs" class="m-1.5" /></Button
-					>
+					<Button onclick={loadPreviousPage} disabled={currentPosition === 0}><ChevronLeftOutline size="xs" class="m-1.5" /></Button>
 					{#each pagesToShow as pageNumber}
 						<Button onclick={() => goToPage(pageNumber)}>{pageNumber}</Button>
 					{/each}
-					<Button onclick={loadNextPage} disabled={totalPages === endPage}
-						><ChevronRightOutline size="xs" class="m-1.5" /></Button
-					>
+					<Button onclick={loadNextPage} disabled={totalPages === endPage}><ChevronRightOutline size="xs" class="m-1.5" /></Button>
 				</ButtonGroup>
 			</div>
 		{/snippet}

@@ -1,11 +1,4 @@
-<svg
-	class="h-6 hover:text-gray-900 dark:hover:text-white"
-	viewBox="0 0 124 21"
-	fill="currentColor"
-	xmlns="http://www.w3.org/2000/svg"
-	role="img"
-	aria-label="mashable"
->
+<svg class="h-6 hover:text-gray-900 dark:hover:text-white" viewBox="0 0 124 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="mashable">
 	<path
 		fill-rule="evenodd"
 		clip-rule="evenodd"
@@ -42,12 +35,7 @@
 		d="M93.8157 16.461C95.6802 16.461 97.0913 15.097 97.0913 12.897C97.0913 10.7263 95.6802 9.36232 93.8157 9.36232C92.8046 9.36232 91.5854 9.90645 90.9995 10.6911V15.1601C91.5854 15.9447 92.8061 16.461 93.8157 16.461ZM86.2891 20.201V0.069519H90.9995V7.34419C92.0485 6.01247 93.6688 5.2418 95.3784 5.26152C99.0778 5.26152 101.895 8.13032 101.895 12.897C101.895 17.847 99.0198 20.5633 95.3784 20.5633C93.7235 20.5633 92.2247 19.8989 90.9995 18.5114V20.2025H86.2891V20.201Z"
 		fill="currentColor"
 	/>
-	<path
-		fill-rule="evenodd"
-		clip-rule="evenodd"
-		d="M102.844 0.069519H107.554V20.2025H102.844V0.069519Z"
-		fill="currentColor"
-	/>
+	<path fill-rule="evenodd" clip-rule="evenodd" d="M102.844 0.069519H107.554V20.2025H102.844V0.069519Z" fill="currentColor" />
 	<path
 		fill-rule="evenodd"
 		clip-rule="evenodd"

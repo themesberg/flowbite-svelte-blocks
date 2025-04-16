@@ -11,10 +11,7 @@
 	}
 	let { children, h2, image, divClass, h2Class, imgClass }: Props = $props();
 	let divCls: string = twMerge('font-light text-gray-500 sm:text-lg dark:text-gray-400', divClass);
-	let h2Cls: string = twMerge(
-		'mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white',
-		h2Class
-	);
+	let h2Cls: string = twMerge('mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white', h2Class);
 	let imgCls: string = twMerge('grid grid-cols-2 gap-4 mt-8', imgClass);
 </script>
 

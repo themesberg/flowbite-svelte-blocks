@@ -9,14 +9,8 @@
 		pClass?: string;
 	}
 	let { children, h2, paragraph, h2Class, pClass }: Props = $props();
-	let h2Cls: string = twMerge(
-		'mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white',
-		h2Class
-	);
-	let pCls: string = twMerge(
-		'mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl',
-		pClass
-	);
+	let h2Cls: string = twMerge('mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white', h2Class);
+	let pCls: string = twMerge('mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl', pClass);
 </script>
 
 {#if h2}

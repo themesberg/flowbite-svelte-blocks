@@ -23,15 +23,8 @@ This free example can be used to show a copyright notice text with social media 
 </script>
 
 <Section>
-	<Footer
-		class="rounded-lg bg-white p-4 antialiased shadow sm:flex sm:items-center sm:justify-between sm:p-6 xl:p-8 dark:bg-gray-800"
-	>
-		<FooterCopyright
-			href="/"
-			by="Flowbite.com"
-			year={2022}
-			class="mb-4 text-center text-sm text-gray-500 sm:mb-0 dark:text-gray-400"
-		/>
+	<Footer class="rounded-lg bg-white p-4 antialiased shadow sm:flex sm:items-center sm:justify-between sm:p-6 xl:p-8 dark:bg-gray-800">
+		<FooterCopyright href="/" by="Flowbite.com" year={2022} class="mb-4 text-center text-sm text-gray-500 sm:mb-0 dark:text-gray-400" />
 		<FooterLinkGroup class="fflex items-center justify-center space-x-1">
 			<FooterLink href="/">
 				<svg aria-hidden="true" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">

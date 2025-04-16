@@ -10,15 +10,7 @@
 		alt?: string;
 		class?: string;
 	}
-	let {
-		children,
-		aClass = 'flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white',
-		imgClass = 'w-8 h-8 mr-2',
-		src,
-		href,
-		alt,
-		class: className
-	}: Props = $props();
+	let { children, aClass = 'flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white', imgClass = 'w-8 h-8 mr-2', src, href, alt, class: className }: Props = $props();
 	// export let aClass: string = 'flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white';
 	// export let imgClass: string = 'w-8 h-8 mr-2';
 	// export let src: string = '';

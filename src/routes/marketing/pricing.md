@@ -18,22 +18,14 @@ Use this example of three pricing cards showcasing the pricing plan title, descr
 
 ```svelte example
 <script lang="ts">
-	import {
-		Section,
-		PricingBodyHead,
-		PricingCard,
-		PricingItemWrapper,
-		PricingHead,
-		PricingItem
-	} from 'flowbite-svelte-blocks';
+	import { Section, PricingBodyHead, PricingCard, PricingItemWrapper, PricingHead, PricingItem } from 'flowbite-svelte-blocks';
 	import { Button } from 'flowbite-svelte';
 </script>
 
 <Section name="pricing">
 	<PricingHead>
 		{#snippet h2()}Designed for business teams like yours{/snippet}
-		{#snippet paragraph()}Here at Flowbite we focus on markets where technology, innovation, and
-			capital can unlock long-term value and drive economic growth.{/snippet}
+		{#snippet paragraph()}Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.{/snippet}
 	</PricingHead>
 	<div class="space-y-8 sm:gap-6 lg:grid lg:grid-cols-3 lg:space-y-0 xl:gap-10">
 		<PricingCard>

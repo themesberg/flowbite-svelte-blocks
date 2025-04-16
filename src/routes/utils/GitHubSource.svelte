@@ -16,12 +16,7 @@
 			clip-rule="evenodd"
 		/>
 	</svg>
-	<a
-		href="https://github.com/themesberg/flowbite-svelte/blob/main/src/lib/{href}"
-		target="_blank"
-		rel="noreferrer"
-		class="hover:text-primary-500 hover:underline"
-	>
+	<a href="https://github.com/themesberg/flowbite-svelte/blob/main/src/lib/{href}" target="_blank" rel="noreferrer" class="hover:text-primary-500 hover:underline">
 		{@render children()}: View Source Code
 	</a>
 </p>

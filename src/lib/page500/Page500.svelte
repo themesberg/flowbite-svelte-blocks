@@ -9,10 +9,7 @@
 	}
 	let { h1, paragraph, divClass, h1Class }: Props = $props();
 	let divCls: string = twMerge('mx-auto max-w-screen-sm text-center', divClass);
-	let h1Cls: string = twMerge(
-		'mb-4 text-7xl tracking-tight font-extrabold lg:text-9xl text-primary-600 dark:text-primary-500',
-		h1Class
-	);
+	let h1Cls: string = twMerge('mb-4 text-7xl tracking-tight font-extrabold lg:text-9xl text-primary-600 dark:text-primary-500', h1Class);
 </script>
 
 <div class={divCls}>

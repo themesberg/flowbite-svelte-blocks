@@ -29,9 +29,7 @@
 	let expanded = $state(true);
 	const INIT_COUNT = 18;
 
-	const sectionPosts = $derived(
-		section !== undefined ? data.posts[section] : Object.values(data.posts).flat()
-	);
+	const sectionPosts = $derived(section !== undefined ? data.posts[section] : Object.values(data.posts).flat());
 
 	const searchTermLower = $derived(searchTerm.toLowerCase());
 
@@ -50,12 +48,7 @@
 
 <Section class="max-w-8xl mx-auto">
 	<!-- This is likely the source of the error - TableSearch might not be designed to contain children -->
-	<TableSearch
-		placeholder="Search by name"
-		hoverable={true}
-		bind:inputValue={searchTerm}
-		divClass="relative overflow-x-auto mx-auto max-w-8xl"
-	/>
+	<TableSearch placeholder="Search by name" hoverable={true} bind:inputValue={searchTerm} divClass="relative overflow-x-auto mx-auto max-w-8xl" />
 
 	{#if header}
 		{@render header()}
@@ -74,12 +67,7 @@
 
 	{#if !expanded && components.length > INIT_COUNT}
 		<div class="mb-4 flex w-full justify-center">
-			<Button
-				size="md"
-				class="hover:text-primary-600 focus:text-primary-600 whitespace-nowrap"
-				color="alternative"
-				onclick={() => (expanded = true)}>View all components</Button
-			>
+			<Button size="md" class="hover:text-primary-600 focus:text-primary-600 whitespace-nowrap" color="alternative" onclick={() => (expanded = true)}>View all components</Button>
 		</div>
 	{/if}
 </Section>

@@ -17,9 +17,7 @@ Use this free example of a filter component to allow your users to select which 
 	import { ChevronDownOutline } from 'flowbite-svelte-icons';
 </script>
 
-<Button
-	>Filter by category<ChevronDownOutline class="ml-2 h-3 w-3 text-white dark:text-white" /></Button
->
+<Button>Filter by category<ChevronDownOutline class="ml-2 h-3 w-3 text-white dark:text-white" /></Button>
 <Dropdown simple>
 	<DropdownItem>
 		<Checkbox>Apple (56)</Checkbox>

@@ -46,8 +46,7 @@ Use this free blog template to show the content of an article using the Flowbite
 				profilePicture: 'https://flowbite.com/docs/images/people/profile-picture-3.jpg'
 			},
 			date: 'Mar. 12, 2022',
-			content:
-				'The article covers the essentials, challenges, myths and stages the UX designer should consider while creating the design strategy.',
+			content: 'The article covers the essentials, challenges, myths and stages the UX designer should consider while creating the design strategy.',
 			replies: []
 		},
 		{
@@ -57,8 +56,7 @@ Use this free blog template to show the content of an article using the Flowbite
 				profilePicture: 'https://flowbite.com/docs/images/people/profile-picture-4.jpg'
 			},
 			date: 'Jun. 23, 2022',
-			content:
-				'Thanks for sharing this. I do came from the Backend development and explored some of the tools to design my Side Projects.',
+			content: 'Thanks for sharing this. I do came from the Backend development and explored some of the tools to design my Side Projects.',
 			replies: []
 		}
 		// Add more comments and replies here
@@ -66,17 +64,14 @@ Use this free blog template to show the content of an article using the Flowbite
 </script>
 
 <Section name="blog" sectionClass="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900">
-	<article
-		class="format format-sm sm:format-base lg:format-lg format-blue dark:format-invert mx-auto w-full max-w-2xl"
-	>
+	<article class="format format-sm sm:format-base lg:format-lg format-blue dark:format-invert mx-auto w-full max-w-2xl">
 		<BlogTemplate {blog} />
 
 		<Section name="comment" sectionClass="not-format" class="px-0">
 			<Comment title="Discussion (20)">
 				<form class="mb-6">
 					<Label for="comment" class="sr-only">Your comment</Label>
-					<Textarea id="comment" rows={6} class="mb-4" placeholder="Write a comment..." required
-					></Textarea>
+					<Textarea id="comment" rows={6} class="mb-4" placeholder="Write a comment..." required></Textarea>
 					<Button type="submit" class="px-4 text-xs font-medium">Post comment</Button>
 				</form>
 				{#each comments as comment, i}

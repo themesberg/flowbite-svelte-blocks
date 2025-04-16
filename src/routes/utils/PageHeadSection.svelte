@@ -11,10 +11,7 @@
 </script>
 
 <div class="pb-8">
-	<Heading
-		class="mb-2 inline-block text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white"
-		tag="h1"
-	>
+	<Heading class="mb-2 inline-block text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white" tag="h1">
 		{title}
 	</Heading>
 

@@ -8,14 +8,8 @@
 		h2Class?: string;
 	}
 	let { children, h2, divClass, h2Class }: Props = $props();
-	let divCls: string = twMerge(
-		'max-w-screen-lg text-gray-500 sm:text-lg dark:text-gray-400',
-		divClass
-	);
-	let h2Cls: string = twMerge(
-		'mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white',
-		h2Class
-	);
+	let divCls: string = twMerge('max-w-screen-lg text-gray-500 sm:text-lg dark:text-gray-400', divClass);
+	let h2Cls: string = twMerge('mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white', h2Class);
 </script>
 
 <div class={divCls}>

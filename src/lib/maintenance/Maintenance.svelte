@@ -12,14 +12,8 @@
 	}
 	let { Icon = ToolsIcon, h1, paragraph, h1Class, pClass }: Props = $props();
 	// export let Icon = ToolsIcon;
-	let h1Cls: string = twMerge(
-		'mb-4 text-4xl font-bold tracking-tight leading-none text-gray-900 lg:mb-6 md:text-5xl xl:text-6xl dark:text-white',
-		h1Class
-	);
-	let pCls: string = twMerge(
-		'font-light text-gray-500 md:text-lg xl:text-xl dark:text-gray-400',
-		pClass
-	);
+	let h1Cls: string = twMerge('mb-4 text-4xl font-bold tracking-tight leading-none text-gray-900 lg:mb-6 md:text-5xl xl:text-6xl dark:text-white', h1Class);
+	let pCls: string = twMerge('font-light text-gray-500 md:text-lg xl:text-xl dark:text-gray-400', pClass);
 </script>
 
 <Icon />

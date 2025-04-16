@@ -29,32 +29,12 @@
 		pClass?: string;
 	}
 	// export let blog: Blog;
-	let {
-		children,
-		blog,
-		articleClass,
-		headerClass,
-		addressClass,
-		divClass,
-		h1Class,
-		authorClass,
-		imgClass,
-		pClass
-	}: Props = $props();
-	const articleCls: string = twMerge(
-		'mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert',
-		articleClass
-	);
+	let { children, blog, articleClass, headerClass, addressClass, divClass, h1Class, authorClass, imgClass, pClass }: Props = $props();
+	const articleCls: string = twMerge('mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert', articleClass);
 	const headerCls: string = twMerge('mb-4 lg:mb-6 not-format', headerClass);
 	const addressCls: string = twMerge('flex items-center mb-6 not-italic', addressClass);
-	const divCls: string = twMerge(
-		'inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white',
-		divClass
-	);
-	const h1Cls: string = twMerge(
-		'mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white',
-		h1Class
-	);
+	const divCls: string = twMerge('inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white', divClass);
+	const h1Cls: string = twMerge('mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white', h1Class);
 	const authorCls: string = twMerge('text-xl font-bold text-gray-900 dark:text-white', authorClass);
 	const imgCls: string = twMerge('mr-2 w-6 h-6 rounded-full', imgClass);
 	const pCls: string = twMerge('text-base font-light text-gray-500 dark:text-gray-400', pClass);

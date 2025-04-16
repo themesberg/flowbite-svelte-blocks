@@ -1,11 +1,4 @@
-<svg
-	class="h-9 hover:text-gray-900 dark:hover:text-white"
-	viewBox="0 0 125 35"
-	fill="currentColor"
-	xmlns="http://www.w3.org/2000/svg"
-	role="img"
-	aria-label="airbnb"
->
+<svg class="h-9 hover:text-gray-900 dark:hover:text-white" viewBox="0 0 125 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="airbnb">
 	<path
 		fill-rule="evenodd"
 		clip-rule="evenodd"

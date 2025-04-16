@@ -8,13 +8,7 @@
 		authorImgDiv?: string;
 		class?: string;
 	}
-	let {
-		children,
-		author,
-		authorDiv = 'flex justify-between items-center',
-		authorImgDiv = 'flex items-center space-x-4',
-		class: className
-	}: Props = $props();
+	let { children, author, authorDiv = 'flex justify-between items-center', authorImgDiv = 'flex items-center space-x-4', class: className }: Props = $props();
 	// export let authorDiv: string = 'flex justify-between items-center';
 	// export let authorImgDiv: string = 'flex items-center space-x-4';
 </script>

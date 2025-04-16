@@ -7,7 +7,7 @@
 		class?: string;
 		headerClass?: string;
 	}
-	let { children, header, class: className, headerClass }:Props = $props();
+	let { children, header, class: className, headerClass }: Props = $props();
 	let headerCls: string = twMerge('mx-auto max-w-screen-sm', headerClass);
 	let divCls: string = twMerge('grid mb-8 lg:mb-12 lg:grid-cols-2', className);
 </script>
@@ -18,9 +18,9 @@
 	</div>
 {/if}
 {#if children}
-<div class={divCls}>
-	{@render children()}
-</div>
+	<div class={divCls}>
+		{@render children()}
+	</div>
 {/if}
 
 <!--

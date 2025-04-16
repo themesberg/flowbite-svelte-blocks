@@ -22,8 +22,7 @@
 		},
 		heading: {
 			divClass: 'mx-auto max-w-screen-sm text-center',
-			h2Class:
-				'mb-4 text-4xl tracking-tight font-extrabold leading-tight text-gray-900 dark:text-white'
+			h2Class: 'mb-4 text-4xl tracking-tight font-extrabold leading-tight text-gray-900 dark:text-white'
 		},
 		none: {
 			divClass: '',

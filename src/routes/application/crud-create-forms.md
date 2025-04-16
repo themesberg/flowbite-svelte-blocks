@@ -59,13 +59,7 @@ Use this free example of a form based on the CRUD layouts where you can create a
 			</div>
 			<div class="sm:col-span-2">
 				<Label for="description" class="mb-2">Description</Label>
-				<Textarea
-					id="description"
-					placeholder="Your description here"
-					rows={4}
-					name="description"
-					required
-				/>
+				<Textarea id="description" placeholder="Your description here" rows={4} name="description" required />
 			</div>
 			<Button type="submit" class="w-32">Add product</Button>
 		</div>

@@ -7,12 +7,7 @@
 		h2Class?: string;
 		class?: string;
 	}
-	let {
-		children,
-		h2,
-		h2Class = 'mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white',
-		class: className
-	}: Props = $props();
+	let { children, h2, h2Class = 'mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white', class: className }: Props = $props();
 
 	// export let h2Class: string = 'mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white';
 </script>

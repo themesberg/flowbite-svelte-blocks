@@ -26,11 +26,8 @@ Use this example as a website section to allow website visitors to sign up for y
 <Section>
 	<Newsletter>
 		{#snippet h2()}Sign up for our newsletter{/snippet}
-		<p
-			class="mx-auto mb-8 max-w-2xl font-light text-gray-500 sm:text-xl md:mb-12 dark:text-gray-400"
-		>
-			Stay up to date with the roadmap progress, announcements and exclusive discounts feel free to
-			sign up with your email.
+		<p class="mx-auto mb-8 max-w-2xl font-light text-gray-500 sm:text-xl md:mb-12 dark:text-gray-400">
+			Stay up to date with the roadmap progress, announcements and exclusive discounts feel free to sign up with your email.
 		</p>
 		<form action="/">
 			<div class="mx-auto mb-3 max-w-screen-sm items-center space-y-4 sm:flex sm:space-y-0">
@@ -56,14 +53,8 @@ Use this example as a website section to allow website visitors to sign up for y
 					>
 				</div>
 			</div>
-			<div
-				class="newsletter-form-footer mx-auto max-w-screen-sm text-left text-sm text-gray-500 dark:text-gray-300"
-			>
-				We care about the protection of your data. <a
-					href="/"
-					class="text-primary-600 dark:text-primary-500 font-medium hover:underline"
-					>Read our Privacy Policy</a
-				>.
+			<div class="newsletter-form-footer mx-auto max-w-screen-sm text-left text-sm text-gray-500 dark:text-gray-300">
+				We care about the protection of your data. <a href="/" class="text-primary-600 dark:text-primary-500 font-medium hover:underline">Read our Privacy Policy</a>.
 			</div>
 		</form>
 	</Newsletter>

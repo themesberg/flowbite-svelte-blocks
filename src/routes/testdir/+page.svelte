@@ -31,8 +31,7 @@
 				profilePicture: 'https://flowbite.com/docs/images/people/profile-picture-3.jpg'
 			},
 			date: 'Mar. 12, 2022',
-			content:
-				'The article covers the essentials, challenges, myths and stages the UX designer should consider while creating the design strategy.',
+			content: 'The article covers the essentials, challenges, myths and stages the UX designer should consider while creating the design strategy.',
 			replies: []
 		},
 		{
@@ -42,8 +41,7 @@
 				profilePicture: 'https://flowbite.com/docs/images/people/profile-picture-4.jpg'
 			},
 			date: 'Jun. 23, 2022',
-			content:
-				'Thanks for sharing this. I do came from the Backend development and explored some of the tools to design my Side Projects.',
+			content: 'Thanks for sharing this. I do came from the Backend development and explored some of the tools to design my Side Projects.',
 			replies: []
 		}
 		// Add more comments and replies here
@@ -54,15 +52,11 @@
 	<Comment title="Discussion (20)">
 		<form class="mb-6">
 			<Label for="comment" class="sr-only">Your comment</Label>
-			<Textarea id="comment" rows={6} class="mb-4" placeholder="Write a comment..." required
-			></Textarea>
+			<Textarea id="comment" rows={6} class="mb-4" placeholder="Write a comment..." required></Textarea>
 			<Button type="submit" class="px-4 text-xs font-medium">Post comment</Button>
 		</form>
 		{#each comments as comment, i}
-			<CommentItem
-				{comment}
-				articleClass={i !== 0 ? 'border-t border-gray-200 dark:border-gray-700 rounded-none' : ''}
-			>
+			<CommentItem {comment} articleClass={i !== 0 ? 'border-t border-gray-200 dark:border-gray-700 rounded-none' : ''}>
 				{#snippet menuSlot()}
 					<DotsHorizontalOutline class="dots-menu dark:text-white" />
 					<Dropdown triggeredBy=".dots-menu">

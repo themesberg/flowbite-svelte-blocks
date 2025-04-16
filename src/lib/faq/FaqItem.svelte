@@ -10,10 +10,7 @@
 	}
 	let { children, h3, divClass, h3Class }: Props = $props();
 	let divCls: string = twMerge('mb-10', divClass);
-	let h3Cls: string = twMerge(
-		'flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white',
-		h3Class
-	);
+	let h3Cls: string = twMerge('flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white', h3Class);
 </script>
 
 <div class={divCls}>

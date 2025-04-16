@@ -30,12 +30,8 @@ Use this example of a footer section to show the logo of your brand, a descripti
 			name="Flowbite"
 			aClass="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white"
 		/>
-		<p class="my-6 text-gray-500 dark:text-gray-400">
-			Open-source library of over 400+ web components and interactive elements built for better web.
-		</p>
-		<FooterLinkGroup
-			class="mb-6 flex flex-wrap items-center justify-center text-gray-900 dark:text-white"
-		>
+		<p class="my-6 text-gray-500 dark:text-gray-400">Open-source library of over 400+ web components and interactive elements built for better web.</p>
+		<FooterLinkGroup class="mb-6 flex flex-wrap items-center justify-center text-gray-900 dark:text-white">
 			<FooterLink aClass="mr-4 hover:underline md:mr-6" href="/">About</FooterLink>
 			<FooterLink aClass="mr-4 hover:underline md:mr-6" href="/">Premium</FooterLink>
 			<FooterLink aClass="mr-4 hover:underline md:mr-6" href="/">Campaigns</FooterLink>
@@ -44,10 +40,7 @@ Use this example of a footer section to show the logo of your brand, a descripti
 			<FooterLink aClass="mr-4 hover:underline md:mr-6" href="/">FAQs</FooterLink>
 			<FooterLink aClass="mr-4 hover:underline md:mr-6" href="/">Contact</FooterLink>
 		</FooterLinkGroup>
-		<span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
-			>© 2021-2022 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All
-			Rights Reserved.</span
-		>
+		<span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2021-2022 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.</span>
 	</div>
 </Footer>
 ```
@@ -59,30 +52,14 @@ Use this footer section to show the logo of your brand, the sitemap, social medi
 ```svelte example
 <script>
 	import { Facebook, Instagram, GitHub, Twitter } from 'flowbite-svelte-blocks';
-	import {
-		Footer,
-		FooterBrand,
-		FooterLinkGroup,
-		FooterLink,
-		FooterCopyright,
-		FooterIcon
-	} from 'flowbite-svelte';
+	import { Footer, FooterBrand, FooterLinkGroup, FooterLink, FooterCopyright, FooterIcon } from 'flowbite-svelte';
 </script>
 
 <Footer footerType="socialmedia">
 	<div class="grid gap-12 lg:grid-cols-6 lg:gap-24">
 		<div class="col-span-2">
-			<FooterBrand
-				href="https://flowbite.com"
-				src="/images/logo.svg"
-				alt="Flowbite Logo"
-				name="Flowbite"
-				aClass="flex mb-6"
-			/>
-			<p class="text-gray-600 dark:text-gray-400">
-				Flowbite is an ecosystem built on top of Tailwind CSS including a component library, block
-				sections, a Figma design system and other resources.
-			</p>
+			<FooterBrand href="https://flowbite.com" src="/images/logo.svg" alt="Flowbite Logo" name="Flowbite" aClass="flex mb-6" />
+			<p class="text-gray-600 dark:text-gray-400">Flowbite is an ecosystem built on top of Tailwind CSS including a component library, block sections, a Figma design system and other resources.</p>
 		</div>
 		<div>
 			<h2 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">Resources</h2>
@@ -93,33 +70,23 @@ Use this footer section to show the logo of your brand, the sitemap, social medi
 			</FooterLinkGroup>
 		</div>
 		<div>
-			<h2 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">
-				HELP & SUPPORT
-			</h2>
+			<h2 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">HELP & SUPPORT</h2>
 			<FooterLinkGroup>
 				<FooterLink liClass="mb-4" href="https://discord.gg/4eeurUVvTy">Discord</FooterLink>
-				<FooterLink liClass="mb-4" href="https://github.com/themesberg/flowbite-svelte-blocks"
-					>GitHub</FooterLink
-				>
+				<FooterLink liClass="mb-4" href="https://github.com/themesberg/flowbite-svelte-blocks">GitHub</FooterLink>
 			</FooterLinkGroup>
 		</div>
 		<div>
 			<h2 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">Follow us</h2>
 			<FooterLinkGroup>
-				<FooterLink liClass="mb-4" href="https://github.com/shinokada/flowbite-svelte-blocks"
-					>Gihub</FooterLink
-				>
+				<FooterLink liClass="mb-4" href="https://github.com/shinokada/flowbite-svelte-blocks">Gihub</FooterLink>
 				<FooterLink liClass="mb-4" href="https://discord.gg/4eeurUVvTy">Discord</FooterLink>
 			</FooterLinkGroup>
 		</div>
 		<div>
 			<h2 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">Legal</h2>
 			<FooterLinkGroup>
-				<FooterLink
-					liClass="mb-4"
-					href="https://github.com/themesberg/flowbite-svelte-blocks/blob/main/License"
-					>LICENSE</FooterLink
-				>
+				<FooterLink liClass="mb-4" href="https://github.com/themesberg/flowbite-svelte-blocks/blob/main/License">LICENSE</FooterLink>
 			</FooterLinkGroup>
 		</div>
 	</div>

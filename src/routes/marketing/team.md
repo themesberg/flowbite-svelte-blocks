@@ -18,16 +18,7 @@ Use this example to show information about your team members such as the name, o
 
 ```svelte example
 <script lang="ts">
-	import {
-		Section,
-		TeamWrapper,
-		TeamHeader,
-		TeamBody,
-		TeamItem,
-		Facebook,
-		GitHub,
-		Twitter
-	} from 'flowbite-svelte-blocks';
+	import { Section, TeamWrapper, TeamHeader, TeamBody, TeamItem, Facebook, GitHub, Twitter } from 'flowbite-svelte-blocks';
 
 	let members = [
 		{
@@ -70,8 +61,7 @@ Use this example to show information about your team members such as the name, o
 		<TeamHeader>
 			{#snippet label()}Our Team{/snippet}
 			<p class="font-light text-gray-500 sm:text-xl lg:mb-16 dark:text-gray-400">
-				Explore the whole collection of open-source web components and elements built with the
-				utility classes from Tailwind
+				Explore the whole collection of open-source web components and elements built with the utility classes from Tailwind
 			</p>
 		</TeamHeader>
 		<TeamBody>

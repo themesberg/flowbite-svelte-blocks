@@ -6,10 +6,7 @@
 		class?: string;
 	}
 	let { children, class: className }: Props = $props();
-	let divCls: string = twMerge(
-		'hidden absolute bottom-0 left-0 justify-center p-4 space-x-4 w-full lg:flex bg-white dark:bg-gray-800 z-20',
-		className
-	);
+	let divCls: string = twMerge('hidden absolute bottom-0 left-0 justify-center p-4 space-x-4 w-full lg:flex bg-white dark:bg-gray-800 z-20', className);
 </script>
 
 <div class={divCls}>

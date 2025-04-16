@@ -41,16 +41,11 @@ This example includes a form with an email and password input accompanied by the
 				</Label>
 				<div class="flex items-start">
 					<Checkbox>Remember me</Checkbox>
-					<a href="/" class="ml-auto text-sm text-blue-700 hover:underline dark:text-blue-500"
-						>Forgot password?</a
-					>
+					<a href="/" class="ml-auto text-sm text-blue-700 hover:underline dark:text-blue-500">Forgot password?</a>
 				</div>
 				<Button type="submit" class="w-full1">Sign in</Button>
 				<p class="text-sm font-light text-gray-500 dark:text-gray-400">
-					Don’t have an account yet? <a
-						href="/"
-						class="text-primary-600 dark:text-primary-500 font-medium hover:underline">Sign up</a
-					>
+					Don’t have an account yet? <a href="/" class="text-primary-600 dark:text-primary-500 font-medium hover:underline">Sign up</a>
 				</p>
 			</form>
 		</div>

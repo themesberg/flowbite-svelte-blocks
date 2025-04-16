@@ -44,21 +44,11 @@ This example can be used to allow users to create an account on your website usi
 					<Input type="password" name="confirm-password" placeholder="•••••" required />
 				</Label>
 				<div class="flex items-start">
-					<Checkbox
-						>I accept the <a
-							class="text-primary-600 dark:text-primary-500 font-medium hover:underline"
-							href="/"
-						>
-							Terms and Conditions</a
-						></Checkbox
-					>
+					<Checkbox>I accept the <a class="text-primary-600 dark:text-primary-500 font-medium hover:underline" href="/"> Terms and Conditions</a></Checkbox>
 				</div>
 				<Button type="submit" class="w-full1">Create an account</Button>
 				<div class="text-sm font-medium text-gray-500 dark:text-gray-300">
-					Already have an account? <a
-						href="/"
-						class="text-primary-600 dark:text-primary-500 font-medium hover:underline">Login here</a
-					>
+					Already have an account? <a href="/" class="text-primary-600 dark:text-primary-500 font-medium hover:underline">Login here</a>
 				</div>
 			</form>
 		</div>
