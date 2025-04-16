@@ -4,7 +4,7 @@ title: Svelte Dashboard Navbars - Flowbite Svelte Blocks
 breadcrumb_title: Dashboard Navbars
 no_of_components: 0 component
 dir: application
-description: Get started with a premium collection of responsive navigation bars built for application and dashboard user interfaces built with Tailwind CSS.
+description: Get started with a free collection of responsive navigation bars built for application and dashboard user interfaces built with Tailwind CSS.
 ---
 
 ## Default navbar
