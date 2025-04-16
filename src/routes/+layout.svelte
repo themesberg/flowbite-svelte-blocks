@@ -78,15 +78,16 @@
 				<NavLi id="nav-menu1" class="cursor-pointer">
 					Categories<ChevronDownOutline class="ml-2 inline h-3 w-3 text-gray-500 dark:text-white" />
 				</NavLi>
-				<NavLi href="/pages/quickstart">Quickstart</NavLi>
-				<NavLi href="https://flowbite-svelte.com">Flowbite-Svelte</NavLi>
-				<NavLi href="https://flowbite-svelte-icons.codewithshin.com">Icons</NavLi>
 				<Dropdown simple triggeredBy="#nav-menu1" placement="bottom-start" class="z-20 w-44">
 					<DropdownItem href="/application">Application</DropdownItem>
 					<DropdownItem href="/marketing">Marketing</DropdownItem>
 					<DropdownItem href="/publisher">Publisher</DropdownItem>
 					<DropdownItem href="/example">Example</DropdownItem>
 				</Dropdown>
+				<NavLi href="/pages/quickstart">Quickstart</NavLi>
+				<NavLi href="https://flowbite-svelte.com">Flowbite-Svelte</NavLi>
+				<NavLi href="https://flowbite-svelte-icons.codewithshin.com">Icons</NavLi>
+				
 			</NavUl>
 			<div class="ml-auto flex items-center">
 				<ToolbarLink

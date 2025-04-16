@@ -26,7 +26,6 @@
 	src;
 	// all meta tags of the code block
 	meta;
-	// $inspect('meta:', meta);
 
 	/* eslint-disable  @typescript-eslint/no-explicit-any */
 
@@ -84,14 +83,13 @@
 			.filter((x) => x.id)
 			.slice(-1)
 			.shift();
-		console.log('section:', section);
+		// console.log('section:', section);
 		if (section) {
 			const pathname = new URL(node.baseURI).pathname;
 			path = new URL(pathname.slice(1) + '.md', gitHub);
 			path.hash = section.id.replaceAll('_', '-').replaceAll('/', '').toLowerCase();
 		}
 	}
-	// $inspect('path:', path);
 
 	const copyToClipboard = async (e: MouseEvent) => {
 		const REG_HEX = /&#x([a-fA-F0-9]+);/g;

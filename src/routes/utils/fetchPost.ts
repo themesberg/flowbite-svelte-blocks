@@ -74,7 +74,7 @@ export const fetchComponentData = async () => {
 	//     };
 	//   })
 	// );
-	console.log('josonFiles', josonFiles);
+	// console.log('josonFiles', josonFiles);
 
 	return {
 		jsonfiles: josonFiles

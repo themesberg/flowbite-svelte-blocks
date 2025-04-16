@@ -15,7 +15,6 @@ export const load: PageServerLoad = async ({ fetch }) => {
 			'https://discord.com/api/v9/invites/4eeurUVvTy?with_counts=true&with_expiration=true'
 		).then(json);
 
-		// console.log('from page.server: ', posts)
 		return { posts, github, npm, discord };
 	} catch (error) {
 		console.error(`Error in load function for /: ${error}`);
