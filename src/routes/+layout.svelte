@@ -31,7 +31,7 @@
 	let { data, children }: LayoutProps = $props();
 	const analyticsId = data.ANALYTICS_ID_FLOWBITE;
 
-	let version = import.meta.env.VITE_APP_VERSION;
+	const version = __VERSION__;
 
 	// to fix scrolling problem
 	afterNavigate((navigation) => {
