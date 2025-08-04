@@ -1,22 +1,3 @@
----
-layout: componentLayout
-title: Svelte Create Modals (CRUD) - Flowbite Svelte Blocks
-breadcrumb_title: CRUD Create Modals
-no_of_components: 1 free component
-dir: application
-description: Get started with a collection of modal components with form input elements to create new data models inside your dashboard based on Tailwind CSS.;
----
-
-<script>
-  import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
-  const components = 'Section'
-</script>
-
-## Default modal
-
-Use this free example to show a modal component with a form inside when creating a new instance of a product inside your application.
-
-```svelte example hideResponsiveButtons
 <script lang="ts">
 	import { Section } from 'flowbite-svelte-blocks';
 	import { Label, Input, Button, Modal, Textarea, Select } from 'flowbite-svelte';
@@ -72,6 +53,4 @@ Use this free example to show a modal component with a form inside when creating
 		</form>
 	</Modal>
 </Section>
-```
 
-<CompoAttributesViewer {components}/>

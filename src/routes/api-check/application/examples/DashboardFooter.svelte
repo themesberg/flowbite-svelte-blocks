@@ -1,22 +1,3 @@
----
-layout: componentLayout
-title: Svelte Dashboard Footers - Flowbite Svelte Blocks
-breadcrumb_title: Dashboard Footers
-no_of_components: 1 free component
-dir: application
-description: Get started with a collection of responsive footer components specially crafted for admin dashboard layouts and applications based on Tailwind CSS.
----
-
-<script>
-  import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
-  const components = 'Section'
-</script>
-
-## Default dashboard footer
-
-This free example can be used to show a copyright notice text with social media links using SVG icons and tooltips.
-
-```svelte example
 <script lang="ts">
 	import { Section } from 'flowbite-svelte-blocks';
 	import { Footer, FooterCopyright, FooterLinkGroup, FooterLink, Tooltip } from 'flowbite-svelte';
@@ -70,6 +51,3 @@ This free example can be used to show a copyright notice text with social media 
 		</FooterLinkGroup>
 	</Footer>
 </Section>
-```
-
-<CompoAttributesViewer {components}/>

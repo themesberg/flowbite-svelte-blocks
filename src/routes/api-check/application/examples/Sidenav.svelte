@@ -1,22 +1,3 @@
----
-layout: componentLayout
-title: Svelte Side Navigations - Flowbite Svelte Blocks
-breadcrumb_title: Side Navigations
-no_of_components: 1 free component
-dir: application
-description: Get started with the side nav component to show a list of menu items, dropdowns, actions, and user profile actions for your application and dashboard.
----
-
-<script>
-  import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
-  const components = 'SidebarBottomNav, SidebarBottomNavItem, Section'
-</script>
-
-## Default side navigation
-
-Use the default sidebar navigation to show a list of menu items with dropdown items and a list of options links at the bottom of the component.
-
-```svelte example class="h-[700px]"
 <script lang="ts">
 	import { page } from '$app/state';
 	import { SidebarBottomNav, SidebarBottomNavItem } from '$lib';
@@ -24,9 +5,12 @@ Use the default sidebar navigation to show a list of menu items with dropdown it
 
 	let spanClass = 'flex-1 ml-3 whitespace-nowrap';
 	let activeUrl = $derived(page.url.pathname);
+	  $effect(() => {
+    activeUrl = page.url.pathname;
+  });
 </script>
 
-<Sidebar class="absolute">
+<Sidebar {activeUrl} class="absolute">
 	<SidebarWrapper class="bg-white">
 		<SidebarGroup>
 			<SidebarItem label="Overview">
@@ -128,7 +112,7 @@ Use the default sidebar navigation to show a list of menu items with dropdown it
 					>
 				{/snippet}
 			</SidebarItem>
-			<SidebarItem label="Components" href="/" active={activeUrl === '/components/sidebar'}>
+			<SidebarItem label="Components" href="/">
 				{#snippet icon()}
 					<svg
 						aria-hidden="true"
@@ -262,6 +246,3 @@ Use the default sidebar navigation to show a list of menu items with dropdown it
 		</SidebarGroup>
 	</SidebarWrapper>
 </Sidebar>
-```
-
-<CompoAttributesViewer {components}/>

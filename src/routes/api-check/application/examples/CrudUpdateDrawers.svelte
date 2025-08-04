@@ -1,22 +1,3 @@
----
-layout: componentLayout
-title: Svelte Update Drawers (CRUD) - Flowbite Svelte Blocks
-breadcrumb_title: CRUD Update Drawers
-no_of_components: 1 free component
-dir: application
-description: Get started with a collection of drawer components that you can use to update existing data sets from your database inside your dashboard.
----
-
-<script>
-  import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
-  const components = 'Section'
-</script>
-
-## Default drawer
-
-Use this free and responsive example of a drawer component to update an existing data set featuring text input fields, select boxes, and textareas.
-
-```svelte example hideResponsiveButtons
 <script lang="ts">
 	import { Section } from 'flowbite-svelte-blocks';
 	import { Label, Input, Button, Drawer, CloseButton } from 'flowbite-svelte';
@@ -71,6 +52,3 @@ Use this free and responsive example of a drawer component to update an existing
 		</form>
 	</Drawer>
 </Section>
-```
-
-<CompoAttributesViewer {components}/>

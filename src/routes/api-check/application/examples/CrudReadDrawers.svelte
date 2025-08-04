@@ -1,22 +1,3 @@
----
-layout: componentLayout
-title: Svelte Read Drawers (CRUD) - Flowbite Svelte Blocks
-breadcrumb_title: CRUD Read Drawers
-no_of_components: 1 free component
-dir: application
-description: Use this collection of drawer components coded with Tailwind CSS to show details about an existing data entry from your database inside your web application.
----
-
-<script>
-  import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
-  const components = 'Section'
-</script>
-
-## Default drawer
-
-Use this free drawer component to show details of a basic data entry from your database and show CRUD action buttons for editing and deleting.
-
-```svelte example hideResponsiveButtons
 <script lang="ts">
 	import { Section } from 'flowbite-svelte-blocks';
 	import { Button, Drawer, CloseButton } from 'flowbite-svelte';
@@ -70,6 +51,3 @@ Use this free drawer component to show details of a basic data entry from your d
 		</div>
 	</Drawer>
 </Section>
-```
-
-<CompoAttributesViewer {components}/>

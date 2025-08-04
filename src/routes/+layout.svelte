@@ -61,9 +61,7 @@
 			</NavBrand>
 			<NavUl
 				class={divClass}
-				{ulClass}
-				nonActiveClass="md:!pl-3 md:!py-2 lg:!pl-0 text-gray-700 hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 dark:text-gray-400 lg:dark:text-white lg:dark:hover:text-primary-700 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent"
-				activeClass="md:!pl-3 md:!py-2 lg:!pl-0 text-white bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:dark:text-primary-700 dark:bg-primary-600 lg:dark:bg-transparent cursor-default"
+				classes={{ul:ulClass, active:"md:!pl-3 md:!py-2 lg:!pl-0 text-white bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:dark:text-primary-700 dark:bg-primary-600 lg:dark:bg-transparent cursor-default",  nonActive: "md:!pl-3 md:!py-2 lg:!pl-0 text-gray-700 hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 dark:text-gray-400 lg:dark:text-white lg:dark:hover:text-primary-700 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent"}}
 			>
 				<NavLi class="lg:mb-0 lg:px-2" href="/">Home</NavLi>
 				<NavLi id="nav-menu1" class="cursor-pointer">
@@ -160,30 +158,30 @@
 		<div>
 			<h2 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">Resources</h2>
 			<FooterLinkGroup>
-				<FooterLink liClass="mb-4" href="https://flowbite.com/">Flowbite</FooterLink>
-				<FooterLink liClass="mb-4" href="https://tailwindcss.com/">Tailwind CSS</FooterLink>
-				<FooterLink liClass="mb-4" href="https://flowbite-svelte.com/">Flowbite-Svelte</FooterLink>
-				<FooterLink liClass="mb-4" href="https://flowbite-svelte-icons.com/">Flowbite-Svelte-Icons</FooterLink>
+				<FooterLink class="mb-4" href="https://flowbite.com/">Flowbite</FooterLink>
+				<FooterLink class="mb-4" href="https://tailwindcss.com/">Tailwind CSS</FooterLink>
+				<FooterLink class="mb-4" href="https://flowbite-svelte.com/">Flowbite-Svelte</FooterLink>
+				<FooterLink class="mb-4" href="https://flowbite-svelte-icons.com/">Flowbite-Svelte-Icons</FooterLink>
 			</FooterLinkGroup>
 		</div>
 		<div>
 			<h2 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">HELP & SUPPORT</h2>
 			<FooterLinkGroup>
-				<FooterLink liClass="mb-4" href="https://discord.gg/4eeurUVvTy">Discord</FooterLink>
-				<FooterLink liClass="mb-4" href="https://github.com/themesberg/flowbite-svelte-blocks/issues">GitHub</FooterLink>
+				<FooterLink class="mb-4" href="https://discord.gg/4eeurUVvTy">Discord</FooterLink>
+				<FooterLink class="mb-4" href="https://github.com/themesberg/flowbite-svelte-blocks/issues">GitHub</FooterLink>
 			</FooterLinkGroup>
 		</div>
 		<div>
 			<h2 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">Follow us</h2>
 			<FooterLinkGroup>
-				<FooterLink liClass="mb-4" href="https://github.com/themesberg/flowbite-svelte-blocks">Github</FooterLink>
-				<FooterLink liClass="mb-4" href="https://discord.gg/4eeurUVvTy">Discord</FooterLink>
+				<FooterLink class="mb-4" href="https://github.com/themesberg/flowbite-svelte-blocks">Github</FooterLink>
+				<FooterLink class="mb-4" href="https://discord.gg/4eeurUVvTy">Discord</FooterLink>
 			</FooterLinkGroup>
 		</div>
 		<div>
 			<h2 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">Legal</h2>
 			<FooterLinkGroup>
-				<FooterLink liClass="mb-4" href="https://github.com/themesberg/flowbite-svelte-blocks/LICENSE">LICENSE</FooterLink>
+				<FooterLink class="mb-4" href="https://github.com/themesberg/flowbite-svelte-blocks/LICENSE">LICENSE</FooterLink>
 			</FooterLinkGroup>
 		</div>
 	</div>

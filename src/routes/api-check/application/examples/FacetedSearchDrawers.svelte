@@ -1,17 +1,3 @@
----
-layout: componentLayout
-title: Svelte Faceted Search Drawers - Flowbite Svelte Blocks
-breadcrumb_title: Faceted Search Drawers
-no_of_components: 1 free component
-dir: application
-description: Get started with a collection of drawer components using a faceted search interface to use multiple filters options to search for results in your application.
----
-
-## Default faceted search drawer
-
-Use this free example of a drawer component to show a list of checkbox, radio and input field elements to filter search results.
-
-```svelte example hideResponsiveButtons class="h-64"
 <script>
 	import { Drawer, Button, CloseButton, Label, Input, Checkbox, A, Heading, Rating, Radio } from 'flowbite-svelte';
 
@@ -101,4 +87,3 @@ Use this free example of a drawer component to show a list of checkbox, radio an
 		</div>
 	</form>
 </Drawer>
-```

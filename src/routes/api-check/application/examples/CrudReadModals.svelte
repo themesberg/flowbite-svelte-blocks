@@ -1,22 +1,3 @@
----
-layout: componentLayout
-title: Svelte Read Modals (CRUD) - Flowbite Svelte Blocks
-breadcrumb_title: CRUD Read Modals
-no_of_components: 1 free component
-dir: application
-description: Use this collection of CRUD modal components to show information about a data entry from your database and show a list of actions based.
----
-
-<script>
-  import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
-  const components = 'Section'
-</script>
-
-## Default modal
-
-Use this free modal component to show a list of data entries from the database based on the CRUD layout system.
-
-```svelte example hideResponsiveButtons
 <script lang="ts">
 	import { Section } from 'flowbite-svelte-blocks';
 	import { Button, Modal } from 'flowbite-svelte';
@@ -71,6 +52,3 @@ Use this free modal component to show a list of data entries from the database b
 		</div>
 	</Modal>
 </Section>
-```
-
-<CompoAttributesViewer {components}/>

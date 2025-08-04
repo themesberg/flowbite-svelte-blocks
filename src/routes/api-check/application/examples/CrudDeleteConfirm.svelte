@@ -1,22 +1,3 @@
----
-layout: componentLayout
-title: Svelte Delete Confirm (CRUD) - Flowbite Svelte Blocks
-breadcrumb_title: CRUD Delete Confirm
-no_of_components: 1 free component
-dir: application
-description: Get started with a collection of delete confirmation modal components based on the CRUD layout to make sure the user is ready to remove a selected item.
----
-
-<script>
-  import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
-  const components = 'Section'
-</script>
-
-## Default delete confirmation modal
-
-Use this free example of a modal component coded with Tailwind CSS to confirm with the user before deleting an item from the database.
-
-```svelte example hideResponsiveButtons
 <script lang="ts">
 	import { Section } from 'flowbite-svelte-blocks';
 	import { Button, Modal } from 'flowbite-svelte';
@@ -48,6 +29,3 @@ Use this free example of a modal component coded with Tailwind CSS to confirm wi
 		</div>
 	</Modal>
 </Section>
-```
-
-<CompoAttributesViewer {components}/>

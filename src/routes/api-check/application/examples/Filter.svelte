@@ -1,17 +1,3 @@
----
-layout: componentLayout
-title: Svelte Dropdown Filters - Flowbite Svelte Blocks
-breadcrumb_title: Dropdown Filters
-no_of_components: 1 free component
-dir: application
-description: Get started with a collection of dropdown filter components to allow users to query through search results by filtering categories, date ranges, keywords, and more.
----
-
-## Default dropdown filter
-
-Use this free example of a filter component to allow your users to select which categories to filter in the search results using checkbox components.
-
-```svelte example class="flex justify-center items-start h-[40rem]"
 <script>
 	import { Button, Dropdown, Checkbox, DropdownItem } from 'flowbite-svelte';
 	import { ChevronDownOutline } from 'flowbite-svelte-icons';
@@ -58,4 +44,3 @@ Use this free example of a filter component to allow your users to select which 
 		<Checkbox>Razor (49)</Checkbox>
 	</DropdownItem>
 </Dropdown>
-```

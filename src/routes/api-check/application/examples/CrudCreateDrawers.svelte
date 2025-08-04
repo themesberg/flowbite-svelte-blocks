@@ -1,22 +1,3 @@
----
-layout: componentLayout
-title: Svelte Create Drawers (CRUD) - Flowbite Svelte Blocks
-breadcrumb_title: CRUD Create Drawers
-no_of_components: 1 free component
-dir: application
-description: Get started with a collection of drawer components to create new data models in your application by including form elements.
----
-
-<script>
-  import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
-  const components = 'Section'
-</script>
-
-## Default drawer
-
-Use this free example of a drawer component to show a list of input field items to create a data entry inside your dashboard application.
-
-```svelte example hideResponsiveButtons
 <script lang="ts">
 	import { Section } from 'flowbite-svelte-blocks';
 	import { Drawer, Button, CloseButton, Label, Input, Textarea, Select } from 'flowbite-svelte';
@@ -79,6 +60,3 @@ Use this free example of a drawer component to show a list of input field items 
 		</form>
 	</Drawer>
 </Section>
-```
-
-<CompoAttributesViewer {components}/>

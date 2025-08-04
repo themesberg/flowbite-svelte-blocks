@@ -1,22 +1,3 @@
----
-layout: componentLayout
-title: Svelte Update Modals (CRUD) - Flowbite Svelte Blocks
-breadcrumb_title: CRUD Update Modals
-no_of_components: 1 free component
-dir: application
-description: Get started with a collection of modal components based on the CRUD layout to update an existing set of data from the database built with Tailwind CSS.
----
-
-<script>
-  import { TableProp, TableDefaultRow, CompoAttributesViewer } from '../utils'
-  const components = 'Section'
-</script>
-
-## Default modal
-
-Use this free example of a modal component to update an existing data entry inside the database featuring text field inputs, selects, and a textarea.
-
-```svelte example hideResponsiveButtons
 <script lang="ts">
 	import { Section } from 'flowbite-svelte-blocks';
 	import { Modal, Button, Input, Label, Select, Textarea } from 'flowbite-svelte';
@@ -81,6 +62,3 @@ Use this free example of a modal component to update an existing data entry insi
 		</form>
 	</Modal>
 </Section>
-```
-
-<CompoAttributesViewer {components}/>
