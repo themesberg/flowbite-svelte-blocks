@@ -32,7 +32,7 @@ pnpm dev
 Run the following command to install all Flowbite Svelte Blocks dependencies and libraries:
 
 ```sh
-pnpm i -D flowbite-svelte@next flowbite-svelte-blocks flowbite-svelte-icons flowbite-typography flowbite
+pnpm i -D flowbite-svelte flowbite-svelte-blocks flowbite-svelte-icons flowbite-typography flowbite
 ```
 
 ### Configuration

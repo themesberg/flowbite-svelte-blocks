@@ -4,7 +4,7 @@
 </script>
 
 <div class="mt-8 flex justify-center">
-<Button>Filter by category<ChevronDownOutline class="ml-2 h-3 w-3 text-white dark:text-white" /></Button>
+	<Button>Filter by category<ChevronDownOutline class="ml-2 h-3 w-3 text-white dark:text-white" /></Button>
 </div>
 <Dropdown simple>
 	<DropdownItem>

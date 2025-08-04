@@ -1,7 +1,7 @@
 <script lang="ts">
-  import H1 from "../../utils/api-check/H1.svelte";
-  import H2 from "../../utils/api-check/H2.svelte";
-  import * as ExampleComponents from "./examples";
+	import H1 from '../../utils/api-check/H1.svelte';
+	import H2 from '../../utils/api-check/H2.svelte';
+	import * as ExampleComponents from './examples';
 </script>
 
 <H1>Application</H1>
@@ -58,7 +58,7 @@
 
 <H2>Sidenav</H2>
 <div class="relative h-[700px]">
-<ExampleComponents.Sidenav />
+	<ExampleComponents.Sidenav />
 </div>
 
 <H2>TableFooters</H2>

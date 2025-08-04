@@ -66,7 +66,7 @@
 </script>
 
 <Section name="advancedTable" sectionClass="bg-gray-50 dark:bg-gray-900 p-3 sm:p-5">
-	<TableSearch placeholder="Search" hoverable={true} bind:inputValue={searchTerm} classes={{root:divClass, inner:innerDivClass, search:searchClass }} >
+	<TableSearch placeholder="Search" hoverable={true} bind:inputValue={searchTerm} classes={{ root: divClass, inner: innerDivClass, search: searchClass }}>
 		{#snippet header()}
 			<div class="flex w-full flex-shrink-0 flex-col items-stretch justify-end space-y-2 md:w-auto md:flex-row md:items-center md:space-y-0 md:space-x-3">
 				<Button>

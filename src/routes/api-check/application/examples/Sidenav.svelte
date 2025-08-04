@@ -5,9 +5,9 @@
 
 	let spanClass = 'flex-1 ml-3 whitespace-nowrap';
 	let activeUrl = $derived(page.url.pathname);
-	  $effect(() => {
-    activeUrl = page.url.pathname;
-  });
+	$effect(() => {
+		activeUrl = page.url.pathname;
+	});
 </script>
 
 <Sidebar {activeUrl} class="absolute">
