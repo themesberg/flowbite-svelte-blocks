@@ -16,9 +16,9 @@ Learn how to get started with Flowbite Svelte Blocks by following the quickstart
 You can install SvelteKit or Svelte to start your app. For SvelteKit:
 
 ```bash example
-npm create svelte@latest my-app
-cd my-app
-pnpm i
+npx sv create my-project
+// after installation
+cd my-project
 ```
 
 Run a local development server by running:
