@@ -10,7 +10,7 @@
 	});
 </script>
 
-<Sidebar {activeUrl} class="absolute">
+<Sidebar {activeUrl} position="absolute">
 	<SidebarWrapper class="bg-white">
 		<SidebarGroup>
 			<SidebarItem label="Overview">

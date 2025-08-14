@@ -26,7 +26,7 @@ Use the default sidebar navigation to show a list of menu items with dropdown it
 	let activeUrl = $derived(page.url.pathname);
 </script>
 
-<Sidebar class="absolute">
+<Sidebar position="absolute">
 	<SidebarWrapper class="bg-white">
 		<SidebarGroup>
 			<SidebarItem label="Overview">
