@@ -8,17 +8,17 @@ const __dirname = dirname(__filename);
 const path_to_layout = join(__dirname, './src/routes/layouts/+page.svelte');
 
 const config = defineConfig({
-	layout: {
-		componentLayout: path_to_layout
-	},
-	extensions: ['.svelte.md', '.md', '.svx'],
+  layout: {
+    componentLayout: path_to_layout
+  },
+  extensions: ['.svelte.md', '.md', '.svx'],
 
-	smartypants: {
-		dashes: 'oldschool'
-	},
+  smartypants: {
+    dashes: 'oldschool'
+  },
 
-	remarkPlugins: [[examples, { defaults: { Wrapper: '/src/routes/utils/ExampleWrapper.svelte' } }]],
-	rehypePlugins: []
+  remarkPlugins: [[examples, { defaults: { Wrapper: '/src/routes/utils/ExampleWrapper.svelte' } }]],
+  rehypePlugins: []
 });
 
 export default config;
